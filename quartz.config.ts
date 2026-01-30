@@ -22,7 +22,7 @@ const config: QuartzConfig = {
 	footer: {
 	    links: {
 		LinkedIn: "https://www.linkedin.com/in/yash-agrawall",
-		GitHub: "https://github.com/just-yash",
+		GitHub: "https://github.com/just-yash/knowledge-base",
 		Email: "mailto:yashagrawall333@gmail.com",
 	    },
 	  },
