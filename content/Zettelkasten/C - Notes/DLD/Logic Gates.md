@@ -1,8 +1,8 @@
 
-Date :  2025-12-28
-Couse :  [Logic Gates-DLD-GATE-GFG](https://www.youtube.com/live/t4jKBFuFZGA?si=QEMRw_jiVhhw3DQC&t=1286)
-Tags :   [[3 - Zettelkasten/B - Tags/DLD]]
-~ ***Yash Agrawall*** ~
+Date :  2025-12-28  
+Couse :  [Logic Gates-DLD-GATE-GFG](https://www.youtube.com/live/t4jKBFuFZGA?si=QEMRw_jiVhhw3DQC&t=1286)  
+Tags :   [[DLD]]  
+~ ***Yash Agrawall*** ~  
 
 ---
 # $Boolean$ $Algebra$ $Laws$

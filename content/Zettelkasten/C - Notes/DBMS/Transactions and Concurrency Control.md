@@ -1,7 +1,7 @@
 
-Date :  2025-12-30
-Tags :   [[3 - Zettelkasten/B - Tags/DBMS]]
-~ ***Yash Agrawall*** ~
+Date :  2025-12-30  
+Tags :   [[DBMS]]  
+~ ***Yash Agrawall*** ~  
 
 ---
 # Transactions and Concurrency Control

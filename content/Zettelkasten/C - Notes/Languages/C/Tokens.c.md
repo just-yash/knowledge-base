@@ -1,8 +1,8 @@
 
-Date :  2026-01-28  
-Tags :   [[Language]] ; [[C]]  
-~ ***Yash Agrawall*** ~  
-
+Date :  2026-01-28    
+Tags :   [[Language]] ; [[C]]    
+~ ***Yash Agrawall*** ~    
+ 
 ---
 # Tokens
 In the [[C]] programming language, a **token** is the smallest individual unit of a program that is meaningful to the [[Language Translators#2. Compiler|compiler]]. During compilation, the source code is first broken into tokens before further analysis.

@@ -1,7 +1,7 @@
 
-Date :  2026-01-09  
-Tags :   [[Maths]]  
-~ ***Yash Agrawall***~   
+Date :  2026-01-09    
+Tags :   [[Maths]]    
+~ ***Yash Agrawall***~     
 
 ---
 # Matrix

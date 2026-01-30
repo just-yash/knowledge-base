@@ -1,8 +1,9 @@
 
-Date :  21-10-2025
-Couse :   [Personal Financial Planning(Indian version)](https://www.udemy.com/course/personal-financial-planning-indian-version/learn/lecture/14024250#overview)
-Tags :   [[Finance]] ; [[Financial Planning]] ; [[udemy]] 
-
+Date :  21-10-2025    
+Couse :   [Personal Financial Planning(Indian version)](https://www.udemy.com/course/personal-financial-planning-indian-version/learn/lecture/14024250#overview)    
+Tags :   [[Finance]] ; [[Financial Planning]] ; [[udemy]]     
+~ ***Yash Agrawall*** ~    
+ 
 ---
 # Personal Financial Planning
 

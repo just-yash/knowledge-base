@@ -1,8 +1,8 @@
 
-Date :  2026-01-08
-Couse :  [Merge Sort](https://youtu.be/aaHL0KygWqE?si=8cuvQGMiep7QxQav&t=5454)
-Tags :   [[DSA]] ; [[Sort]]
-~ ***Yash Agrawall*** ~
+Date :  2026-01-08  
+Couse :  [Merge Sort](https://youtu.be/aaHL0KygWqE?si=8cuvQGMiep7QxQav&t=5454)  
+Tags :   [[DSA]] ; [[Sort]]  
+~ ***Yash Agrawall*** ~  
 
 ---
 # Merge Sort

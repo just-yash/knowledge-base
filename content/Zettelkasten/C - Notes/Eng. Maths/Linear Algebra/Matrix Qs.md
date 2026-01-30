@@ -1,8 +1,8 @@
 
-Date :  2026-01-20  
-Tags :   [[Maths]] ; [[Questions]]  
-~ ***Yash Agrawall*** ~     
-
+Date :  2026-01-20    
+Tags :   [[Maths]] ; [[Questions]]    
+~ ***Yash Agrawall*** ~       
+ 
 ---
 # Matrix Qs
 

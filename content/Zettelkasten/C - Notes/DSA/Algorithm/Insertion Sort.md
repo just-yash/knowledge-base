@@ -1,7 +1,7 @@
 
-Date :  2026-01-01
-Tags :   [[DSA]] ; [[Sort]]
-~ ***Yash Agrawall*** ~
+Date :  2026-01-01  
+Tags :   [[DSA]] ; [[Sort]]  
+~ ***Yash Agrawall*** ~  
 
 ---
 # Insertion Sort

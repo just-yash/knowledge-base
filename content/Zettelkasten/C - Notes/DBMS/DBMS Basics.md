@@ -1,7 +1,7 @@
 
-Date :  2025-12-27
-Tags :   [[3 - Zettelkasten/B - Tags/DBMS]] ; [[3 - Zettelkasten/B - Tags/GATE]]
-~ ***Yash Agrawall*** ~
+Date :  2025-12-27   
+Tags :   [[DBMS]] ; [[GATE]]   
+~ ***Yash Agrawall*** ~   
 
 ---
 # DBMS Basics

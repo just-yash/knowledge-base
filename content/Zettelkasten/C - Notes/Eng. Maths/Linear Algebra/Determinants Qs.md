@@ -1,7 +1,7 @@
 
-Date :  2026-01-18  
-Tags :   [[Maths]] ; [[Questions]]  
-~ ***Yash Agrawall*** ~   
+Date :  2026-01-18    
+Tags :   [[Maths]] ; [[Questions]]    
+~ ***Yash Agrawall*** ~     
 
 ---
 # Determinants Qs

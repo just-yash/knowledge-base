@@ -1,7 +1,8 @@
 
-Date :  21-10-2025
-Tags :   [[Finance]]
-
+Date :  21-10-2025  
+Tags :   [[Finance ]] 
+~ ***Yash Agrawall*** ~  
+  
 ---
 # Financial Learning
 

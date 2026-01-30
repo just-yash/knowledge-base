@@ -1,9 +1,11 @@
 
-Date :  2025-10-15
-Couse :  [Obsidian Course](https://www.youtube.com/watch?v=eLqQo38wC2Q) ; [Markdown Course](https://www.youtube.com/watch?v=_PPWWRV6gbA)
-Tags :  [[Language]] ; [[Markdown]]
-
-
+Date :  2025-10-15  
+Couse :  [Obsidian Course](https://www.youtube.com/watch?v=eLqQo38wC2Q) ; [Markdown Course](https://www.youtube.com/watch?v=_PPWWRV6gbA)  
+Tags :  [[Language]] ; [[Markdown]]  
+~ ***Yash Agrawall*** ~  
+  
+---
+  
 > Markdown has different flavours / versions. Each with some difference. Most common : GitHub Flavour`
 # Notes
 ``` markdown

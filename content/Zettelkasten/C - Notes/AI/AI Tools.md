@@ -1,6 +1,7 @@
 
-Date :  19-10-2025
-Tags :   [[Workshop]] ; [[Gen AI]] 
+Date :  19-10-2025  
+Tags :   [[Workshop]] ; [[Gen AI]]   
+~ ***Yash Agrawall*** ~  
 
 ---
 # AI Tools

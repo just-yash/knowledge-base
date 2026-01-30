@@ -1,8 +1,8 @@
 
-Date :  2026-01-09
-Tags :   [[GATE]] ; [[Maths]]
-~ ***Yash Agrawall*** ~
-
+Date :  2026-01-09  
+Tags :   [[GATE]] ; [[Maths ]] 
+~ ***Yash Agrawall*** ~  
+ 
 ---
 # Engineering Maths
 

@@ -1,7 +1,7 @@
 
-Date :  2025-12-28
-Tags :   [[3 - Zettelkasten/B - Tags/GATE]] ; [[3 - Zettelkasten/B - Tags/DLD]]
-~ ***Yash Agrawall*** ~
+Date :  2025-12-28  
+Tags :   [[GATE]] ; [[DLD]]  
+~ ***Yash Agrawall*** ~  
 
 ---
 # Basics

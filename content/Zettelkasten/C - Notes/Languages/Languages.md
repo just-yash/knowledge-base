@@ -2,9 +2,9 @@
 
 ---
 
-Date :  2026-01-27  
-Tags :  [[Language]]
-~ ***Yash Agrawall*** ~  
+Date :  2026-01-27    
+Tags :  [[Language]]  
+~ ***Yash Agrawall*** ~    
 
 ---
 > Language is how one entity communicates with other.

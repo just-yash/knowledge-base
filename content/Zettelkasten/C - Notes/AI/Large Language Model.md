@@ -1,6 +1,7 @@
 
-Date :  20-10-2025
-Tags :   [[3 - Zettelkasten/B - Tags/Workshop]] ; [[3 - Zettelkasten/B - Tags/Gen AI]] ; [[3 - Zettelkasten/B - Tags/LLM]] 
+Date :  20-10-2025  
+Tags :   [[Workshop]] ; [[Gen AI]] ; [[LLM]]   
+~ ***Yash Agrawall*** ~  
 
 ---
 # Large Language Model

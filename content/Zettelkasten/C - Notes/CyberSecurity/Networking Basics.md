@@ -1,6 +1,7 @@
 
-Date :  15-11-2025
-Tags :   [[3 - Zettelkasten/B - Tags/Linux]] ; [[3 - Zettelkasten/B - Tags/CyberSec]]
+Date :  15-11-2025  
+Tags :   [[Linux]] ; [[CyberSec]]  
+~ ***Yash Agrawall*** ~  
 
 ---
 # Networking Basics

@@ -1,7 +1,7 @@
   
-Date :  2026-01-23  
-Tags :   [[Maths]]  
-~ ***Yash Agrawall*** ~  
+Date :  2026-01-23    
+Tags :   [[Maths]]    
+~ ***Yash Agrawall*** ~    
   
 ---
 # Order of the greatest sub-matrix

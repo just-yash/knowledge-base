@@ -1,6 +1,7 @@
 
-Date :  18-10-2025
-Tags :   [[3 - Zettelkasten/B - Tags/Workshop]] ; [[3 - Zettelkasten/B - Tags/Gen AI]] ;  [[Introduction]]
+Date :  18-10-2025  
+Tags :   [[Workshop]] ; [[Gen AI]] ;  [[Introduction]]  
+~ ***Yash Agrawall*** ~   
 
 ---
 # Generative AI

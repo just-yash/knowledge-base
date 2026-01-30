@@ -1,8 +1,8 @@
 
-Date :  2026-01-26
-Tags :   [[Language]] ; [[C]]
-~ ***Yash Agrawall*** ~
-
+Date :  2026-01-26  
+Tags :   [[Language]] ; [[C]]  ; [[GATE]]
+~ ***Yash Agrawall*** ~  
+  
 ---
 # Basics_C
 

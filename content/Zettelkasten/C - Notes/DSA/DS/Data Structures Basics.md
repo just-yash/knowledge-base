@@ -1,7 +1,7 @@
 
-Date :  25-11-2025  
-Tags :   [[DSA]] ; [[GATE]]
-~ ***Yash Agrawall*** ~
+Date :  25-11-2025    
+Tags :   [[DSA]] ; [[GATE]]  
+~ ***Yash Agrawall*** ~  
 
 ---
 **Computer Science** is all about solving problems by designing **algorithms** what can be converted into efficient programs. The key challenge is optimizing **time** and **space**. (Time being the most important)
