@@ -7,7 +7,6 @@ title: Knowledge Index
 A living map of my thinking.
 
 ---
-
 ## 🧠 Core Domains
 
 - [[Cybersecurity]]
@@ -21,3 +20,9 @@ A living map of my thinking.
 - [[Mathematics]]
 
 ---
+## ✍️ Creativity 
+- [[Poetry Index|Poetry]]
+
+---
+## 🧍About
+- [[About Me]]
