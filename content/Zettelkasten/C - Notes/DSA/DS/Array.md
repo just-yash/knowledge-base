@@ -6,8 +6,8 @@ Tags :   [[DSA]]
 ---
 # Array
 - data structure that stores collection of elements of same type stored at contiguous memory locations and can be accessed using an index.  
-- `int num[5];` → `num[0]`  `num [1]`  `num[2]`  `num[3]`  `num[4]`
-				     2              8              7             6             0
+- `int num[5];` → `num[0]`  `num [1]`  `num[2]`  `num[3]`  `num[4]`  
+				 2              8              7             6             0
 				     
 ### Declaring an array in C++ & C
 general format : `datatype arrayName[array size];`
