@@ -5,7 +5,7 @@ title: Yash Agrawall
 This is a blank Quartz installation.
 See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
-[[hahaha]]
+yayyyy
 # Hello World
 
 yay
