@@ -16,9 +16,16 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "just-yash.github.io/knowledge-base",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
+	footer: {
+	    links: {
+		LinkedIn: "https://www.linkedin.com/in/yash-agrawall",
+		GitHub: "https://github.com/just-yash",
+		Email: "mailto:yashagrawall333@gmail.com",
+	    },
+	  },
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
