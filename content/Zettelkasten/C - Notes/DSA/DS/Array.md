@@ -155,22 +155,22 @@ int disp[2][4]={10,11,12,13,14,15,16,17};
 	- (j - L<sub>1</sub>) = number of elements before us in current column
 ![[Pasted image 20251220231554.png]]
 # Three Dimensional Array
-- A([L<sub>1</sub>]---[U<sub>1</sub)>]), ([L<sub>2</sub>]---[U<sub>2</sub)>]),([L<sub>3</sub>]---[U<sub>3</sub)>])
-- **Location of A[i , j , k] = B + W * [(i-L<sub>1</sub>) (U<sub>2</sub>-L<sub>2</sub>+1) (U<sub>3</sub>-L<sub>3</sub>+1) 
-											 	 	   + (j-L<sub>2</sub>)(U<sub>3</sub>-L<sub>3</sub>+1) 
-													   + (k-L<sub>3</sub>)]**
+- $A([L_1]...[U_1]), ([L_2]...[U_2]),([L_3]...[U_3])$
+- **Location of $A[i , j , k] = B + W * [(i-L_1) (U_2-L_2+1) (U_3-L_3+1)$ 
+					 $+ (j-L_2)(U_3-L_3+1)$ 
+					 $+ (k-L_3]$**
 ![[Pasted image 20251221131206.png]]
 ![[Pasted image 20251221130951.png]]
 # N Dimensional Array
-- A([L<sub>1</sub>]---[U<sub>1</sub)>]), ([L<sub>2</sub>]---[U<sub>2</sub)>]),([L<sub>3</sub>]---[U<sub>3</sub)>]), -------- ([L<sub>N</sub>]---[U<sub>N</sub>])
+- $A([L_1]...[U_1]), ([L_2]...[U_2]),([L_3]...[U_3]), ..... ([L_N]...[U_N])$
 
-- **Location of A [I, j, k, ---- , x] = B + W * (i-L<sub>1</sub>) (U<sub>2</sub>-L<sub>2</sub>+1) (U<sub>3</sub>-L<sub>3</sub>+1) (U<sub>4</sub>-L<sub>4</sub>+1) ---- (U<sub>n</sub>,-L<sub>n</sub>+1)
-                                                                 + (j-L<sub>2</sub>)(U<sub>3</sub>-L<sub>3</sub>+1) (U<sub>4</sub>-L<sub>4</sub>+1) ---- (U<sub>n</sub>-L<sub>n</sub>+1)**
-                                                                 **+ (k-L<sub>3</sub>)(U<sub>4</sub>-L<sub>4</sub>+1) ---- (U<sub>n</sub>-L<sub>n</sub>+1)**
-                                                                 **+**
-                                                                 **+**
-                                                                 **+** 
-                                                                 **+ (x-L<sub>n</sub>)**
+- **Location of $A [I, j, k, ... , x] = B + W * (i-L_1) (U_2-L_2+1) (U_3-L_3+1) (U_4-L_4+1) ... (U_n,-L_n+1)$
+                                   $+ (j-L_2)(U_3-L_3+1) (U_4-L_4+1) ... (U_n-L_n+1)$
+                           $+ (k-L_3)(U_4-L_4+1) ... (U_n-L_n+1)$**
+                           $+$
+                           $+$
+                           $+$
+                           $+ (x-L_n)$
 
 # Sparse and Dense Matrix
 - A matrix is considered *Sparse* if a large number of its *elements are zero*.
@@ -246,22 +246,22 @@ int disp[2][4]={10,11,12,13,14,15,16,17};
 # Questions
 
 ###### <span style="color:rgb(0, 176, 240)">Q1)</span> Let the base address of the first element of the array is 250 and each element of the array occupies 3 bytes in the memory, then address of the fifth element of a one- dimensional array a[10] ?
-<span style="color:rgb(0, 176, 240)">A1)</span>
-B = 250
-W = 3 Bytes
-k = 4
-<mark>a[k] = B + W * (k - Lower bound)</mark><br>a[4] = 250 + 3 * (4 - 0)<br>a[4] = 250 + 3 * (4 - 0)
-<span style="color:rgb(146, 208, 80)">a[4] = 262</span>
+<span style="color:rgb(0, 176, 240)">A1)</span>  
+B = 250  
+W = 3 Bytes  
+k = 4  
+<mark>a[k] = B + W * (k - Lower bound)</mark>  <br>a[4] = 250 + 3 * (4 - 0)  <br>a[4] = 250 + 3 * (4 - 0)  
+<span style="color:rgb(146, 208, 80)">a[4] = 262</span>  
 
 ---
 ###### <span style="color:rgb(0, 176, 240)">Q2)</span> An array has been declared as follows A: array [-6 --- 6] of elements where every element takes 4 bytes, if the base address of the array is 3500 find the address of array[0]?
 <span style="color:rgb(0, 176, 240)">A2)</span> 
-B = 3500
-Lower Bound = -6 ; Upper Bound = 6
-W = 4 Bytes
-k = 0
-<mark>a[k] = B + W * (k - Lower bound)</mark><br>a[0] = 3500 + 4 * (0 - (-6))<br>a[0] = 3500 + 4 * (0 + 6)<br>a[0] = 3500 + 24
-<span style="color:rgb(146, 208, 80)">a[0] = 3524</span>
+B = 3500  
+Lower Bound = -6 ; Upper Bound = 6  
+W = 4 Bytes  
+k = 0  
+<mark>a[k] = B + W * (k - Lower bound)</mark>  <br>a[0] = 3500 + 4 * (0 - (-6))<br>a[0] = 3500 + 4 * (0 + 6)  <br>a[0] = 3500 + 24
+<span style="color:rgb(146, 208, 80)">a[0] = 3524</span>  
 
 ---
 ###### <span style="color:rgb(0, 176, 240)">Q3)</span> A program P reads in 500 integers in the range [0 ... 100] experimenting the scores of 500 students. It then prints the frequency of each score above 50. What would be the best way for P to store the frequencies? <span style="color:rgb(255, 192, 0)">(GATE - 2005 - 2 Marks)[Asked in Cognizant 2016]</span>
@@ -273,8 +273,8 @@ k = 0
 
 ###### (D) A dynamically allocated array of 550 numbers
 
-<span style="color:rgb(0, 176, 240)">A3)</span>  <span style="color:rgb(146, 208, 80)">(A) An array of 50 numbers</span>
-Its storing the frequencies of students marks wise, and above 50 there are only 50 marks possible. 
+<span style="color:rgb(0, 176, 240)">A3)</span>  <span style="color:rgb(146, 208, 80)">(A) An array of 50 numbers</span>   
+Its storing the frequencies of students marks wise, and above 50 there are only 50 marks possible.   
 
 ---
 ###### <span style="color:rgb(0, 176, 240)">Q4)</span> Let A be a two dimensional array declared as follows: A: array [1 ... 10]  [1 ... 15] of integer; Assuming that each integer takes one memory location, the array is stored in row-major order and the first element of the array is stored at location 100, what is the address of the element a  [i]  [j] ? <span style="color:rgb(255, 192, 0)">(Gate-1998) (2 Marks)</span>
@@ -287,35 +287,35 @@ Its storing the frequencies of students marks wise, and above 50 there are only 
 
 ###### (D) 10j + i + 89
 
-<span style="color:rgb(0, 176, 240)">A4)</span>  <span style="color:rgb(146, 208, 80)">(A) 15i + j + 84</span>
-W = 1
-L<sub>1</sub> = 1 ; U<sub>1</sub> = 10
-L<sub>2</sub> = 1 ; U<sub>2</sub> = 15
-B = 100
-<mark>a[i]  [j] = B + W * [(U<sub>2</sub> - L<sub>2</sub> + 1)(i - L<sub>1</sub> ) +(j - L<sub>2</sub>)] </mark>
-a[i]  [j] = 100 + 1 * [(15 - 1 + 1)(i - 1 ) +(j - 1)] 
-a[i]  [j] = 100 + 1 * [15i - 16 +j] 
-a[i]  [j] = 100 + 15i - 16 +j
-a[i]  [j] = 15i + j + 84
+<span style="color:rgb(0, 176, 240)">A4)</span>  <span style="color:rgb(146, 208, 80)">(A) 15i + j + 84</span>  
+W = 1  
+L<sub>1</sub> = 1 ; U<sub>1</sub> = 10  
+L<sub>2</sub> = 1 ; U<sub>2</sub> = 15  
+B = 100  
+<mark>a[i]  [j] = B + W * [(U<sub>2</sub> - L<sub>2</sub> + 1)(i - L<sub>1</sub> ) +(j - L<sub>2</sub>)] </mark>  
+a[i]  [j] = 100 + 1 * [(15 - 1 + 1)(i - 1 ) +(j - 1)]   
+a[i]  [j] = 100 + 1 * [15i - 16 +j]   
+a[i]  [j] = 100 + 15i - 16 +j  
+a[i]  [j] = 15i + j + 84  
 
 ---
 ###### <span style="color:rgb(0, 176, 240)">Q5)</span> An array VAL[1 ... 15]  [1 ... 10] is stored in the memory with each element requiring 4 bytes of storage. If the base address of the array VAL is 1500, determine the location of VAL [12]  [9] when the array VAL is stored  (i) Row wise   (ii) Column wise.
 <span style="color:rgb(0, 176, 240)">A5)</span>
-W = 4 Bytes
-L<sub>1</sub> = 1 ; U<sub>1</sub> = 15
-L<sub>2</sub> = 1 ; U<sub>2</sub> = 10
-B = 1500
-i = 12 ; j = 9
-(i) Row wise: <mark>a [i]  [j] = B + W * [(U<sub>2</sub> - L<sub>2</sub> + 1)(i - L<sub>1</sub> ) +(j - L<sub>2</sub>)]</mark>
-a [12]  [9] = 1500 + 4 * [(10 - 1 + 1)(12 - 1 ) +(9 - 1)]
-a [12]  [9] = 1500 + 4 * 118
-a [12]  [9] = 1500 + 472
-<span style="color:rgb(146, 208, 80)">a [12]  [9] = 1972</span>
-(ii) Column wise: <mark>a [i]  [j] = B + W * [(U<sub>1</sub> - L<sub>1</sub> + 1)(j - L<sub>2</sub>) +(i - L<sub>1</sub> )]</mark>
-a [12]  [9] = 1500 + 4 * [(9 - 1)(15 - 1 +1) +(12 - 1)]
-a [12]  [9] = 1500 + 4 * 131
-a [12]  [9] = 1500 + 524
-<span style="color:rgb(146, 208, 80)">a [12]  [9] = 2024</span>
+W = 4 Bytes  
+L<sub>1</sub> = 1 ; U<sub>1</sub> = 15  
+L<sub>2</sub> = 1 ; U<sub>2</sub> = 10  
+B = 1500  
+i = 12 ; j = 9  
+(i) Row wise: <mark>a [i]  [j] = B + W * [(U<sub>2</sub> - L<sub>2</sub> + 1)(i - L<sub>1</sub> ) +(j - L<sub>2</sub>)]</mark>  
+a [12]  [9] = 1500 + 4 * [(10 - 1 + 1)(12 - 1 ) +(9 - 1)]  
+a [12]  [9] = 1500 + 4 * 118  
+a [12]  [9] = 1500 + 472   
+<span style="color:rgb(146, 208, 80)">a [12]  [9] = 1972</span>  
+(ii) Column wise: <mark>a [i]  [j] = B + W * [(U<sub>1</sub> - L<sub>1</sub> + 1)(j - L<sub>2</sub>) +(i - L<sub>1</sub> )]</mark>  
+a [12]  [9] = 1500 + 4 * [(9 - 1)(15 - 1 +1) +(12 - 1)]  
+a [12]  [9] = 1500 + 4 * 131  
+a [12]  [9] = 1500 + 524  
+<span style="color:rgb(146, 208, 80)">a [12]  [9] = 2024</span>  
 
 ---
 ###### <span style="color:rgb(0, 176, 240)">Q6</span><span style="color:rgb(0, 176, 240)">)</span>  Two matrices M1 and M2 are to be stored in arrays A and B respectively. Each array can be stored either in row-major or column-major order in contiguous memory locations. The time complexity of an algorithm to compute M1 × M2 will be ? <span style="color:rgb(255, 192, 0)">(Gate-2004) (2 Marks)</span>
@@ -328,7 +328,7 @@ a [12]  [9] = 1500 + 524
 
 ###### (D) independent of the storage scheme
 
-<span style="color:rgb(0, 176, 240)">A6)</span>  <span style="color:rgb(146, 208, 80)">(D) independent of the storage scheme</span>
+<span style="color:rgb(0, 176, 240)">A6)</span>  <span style="color:rgb(146, 208, 80)">(D) independent of the storage scheme</span>  
 
 ---
 ###### <span style="color:rgb(0, 176, 240)">Q7)</span> An n x n array v is defined as follows: v[i, j] = i-j for all i, j, 1 <= i <= n, 1 <= j <= n. The sum of the elements of the array v is ? <span style="color:rgb(0, 176, 240)"><span style="color:rgb(255, 192, 0)">(Gate-2000) (1 Marks)</span></span>
@@ -341,7 +341,7 @@ a [12]  [9] = 1500 + 524
 
 ###### (D) n2 (n+1)/2
 
-<span style="color:rgb(0, 176, 240)">A7)</span>  <span style="color:rgb(146, 208, 80)">(A) 0</span>
+<span style="color:rgb(0, 176, 240)">A7)</span>  <span style="color:rgb(146, 208, 80)">(A) 0</span>  
 
 ---
 ###### <span style="color:rgb(0, 176, 240)">Q8)</span> A Young tableau is a 2D array of integers increasing from left to right and from top to bottom. Any unfilled entries are marked with ∞, and hence there cannot be any entry to the right of, or below a ∞. The following Young tableau consists of unique entries <span style="color:rgb(255, 192, 0)">(GATE - 2015) (2 Marks)</span>
@@ -358,11 +358,11 @@ a [12]  [9] = 1500 + 524
 ###### (C) 6
 ###### (D) 18
 
-<span style="color:rgb(0, 176, 240)">A8)</span> <span style="color:rgb(146, 208, 80)">(B) 5</span>
-2       4       5     14
-3       6      18     23
-10    12     25     ∞
-31    ∞      ∞      ∞
+<span style="color:rgb(0, 176, 240)">A8)</span> <span style="color:rgb(146, 208, 80)">(B) 5</span>  
+2       4       5     14  
+3       6      18     23  
+10    12     25     ∞  
+31    ∞      ∞      ∞  
 
 ---
 ###### <span style="color:rgb(0, 176, 240)">Q9)</span> Let A be a square matrix of size n x n. Consider the following program. What is the expected output? <span style="color:rgb(255, 192, 0)">(GATE - 2014)(1 Marks)  [Asked in Hexaware 2017]    [Asked in Accenture]</span>
@@ -387,8 +387,8 @@ for i = 1 to n do
 ###### (C) Adding 100 to the upper diagonal elements and subtracting 100 from diagonal elements of A
 ###### (D) None of the above
 
-<span style="color:rgb(0, 176, 240)">A9)</span>  <span style="color:rgb(146, 208, 80)">(A) The matrix A itself</span>
-its in loop, so we swap twice. once for i then for j. 
+<span style="color:rgb(0, 176, 240)">A9)</span>  <span style="color:rgb(146, 208, 80)">(A) The matrix A itself</span>  
+its in loop, so we swap twice. once for i then for j.   
 
 ---
 ###### <span style="color:rgb(0, 176, 240)">Q10)</span> Suppose you are given an array s[1 .. n] and a procedure reverse (s, i, j) which reverses the order of elements in a between positions i and j (both inclusive). What does the following sequence do? <span style="color:rgb(255, 192, 0)">(GATE - 2014) (1 Marks)</span>
@@ -405,7 +405,7 @@ its in loop, so we swap twice. once for i then for j.
 
 ###### (D) None of the above
 
-<span style="color:rgb(0, 176, 240)">A10)</span> <span style="color:rgb(146, 208, 80)">(A) Rotates s left by k positions</span>
+<span style="color:rgb(0, 176, 240)">A10)</span> <span style="color:rgb(146, 208, 80)">(A) Rotates s left by k positions</span>  
 
 ---
 # References 

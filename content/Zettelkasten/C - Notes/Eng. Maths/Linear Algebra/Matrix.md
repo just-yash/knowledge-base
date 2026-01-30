@@ -13,29 +13,38 @@ Tags :   [[Maths]]
 ## Important Types
 
 - ### Row & Column Matrix
-	- **Row Matrix** : 1 Row ; Multiple Columns $$\begin{bmatrix}
+	- **Row Matrix** : 1 Row ; Multiple Columns 
+$$
+\begin{bmatrix}
 1 & -3 & 4
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 	-  **Column Matrix** : 1 Column ; Multiple Rows
-$$\begin{bmatrix}
+$$
+\begin{bmatrix}
 1 \\
 -3 \\
 4
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 ---
 - ### Null Matrix or Zero Matrix
 	- It should be square matrix
 	- All the elements must be 0
-	$$\begin{bmatrix}
+$$
+\begin{bmatrix}
 0 & 0 & 0 \\
 0 & 0 & 0 \\
 0 & 0 & 0
-\end{bmatrix}_{3*3}$$$$\begin{bmatrix}
+\end{bmatrix}_{3*3}
+$$$$
+\begin{bmatrix}
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0
-\end{bmatrix}_{4*4}$$
+\end{bmatrix}_{4*4}
+$$
 ---
 - ### Diagonal Matrix
 	- Non-diagonal elements are zero. 
@@ -184,72 +193,81 @@ $$\overline{A} = \begin{bmatrix}
 2 & 4 + i
 \end{bmatrix}$$
 ---
-# Symmetric Matrix
+# Symmetric Matrix  
 
-- Square Matrix
-- $[A]=[A]^T$
-	- ${[A]-[A]^{T} = [0]}$
-- $a_{ij} = a_{ji}$
-- diagonal elements can be anything
+- Square Matrix  
+- $[A]=[A]^T$  
+	- ${[A]-[A]^{T} = [0]}$  
+- $a_{ij} = a_{ji}$  
+- diagonal elements can be anything  
 
 $$\begin{bmatrix}
 a & b & c \\
 b & e & d \\
 c & d & f
 \end{bmatrix}$$
-- Eg : if all elements are same, identity, scalar matrix
+- Eg : if all elements are same, identity, scalar matrix  
 
-- Null Matrix is both Symmetric as well as Skew-Symmetric
-### Properties of Symmetric Matrix
-- If $A$ & $B$ are two Symmetric matrix and $AB=[0]$ then : 
-	Case 1: $A=0$ ; $B=0$
-	Case 2: $A ≠ 0$ ; $B = 0$ 
-	Case 3: $A = 0$ ; $B ≠ 0$
-	Case 4: $A ≠ 0$ ; $B ≠ 0$ → $A$ & $B$ are singular matrices
-	- This is because if we multiple either with there inverse, the other one is coming out to be NULL. But they are not NULL ⇒ inverse doesn't exit ⇒ Δ = 0 … Hence both are Singular Matrices
+- Null Matrix is both Symmetric as well as Skew-Symmetric  
+### Properties of Symmetric Matrix  
+- If $A$ & $B$ are two Symmetric matrix and $AB=[0]$ then :   
+	Case 1: $A=0$ ; $B=0$  
+	Case 2: $A ≠ 0$ ; $B = 0$   
+	Case 3: $A = 0$ ; $B ≠ 0$  
+	Case 4: $A ≠ 0$ ; $B ≠ 0$ → $A$ & $B$ are singular matrices  
+	- This is because if we multiple either with there inverse, the other one is coming out to be NULL. But they are not NULL ⇒ inverse doesn't exit ⇒ Δ = 0 … Hence both are Singular Matrices  
 
 ---
 # Skew-Symmetric Matrix 
 
--  Square Matrix
-- $[A]=-[A]^{T}$
-	- $[A]+[A]^{T}=[0]$
-- $[A]=[a_{ij}]_{n*n}=$
-	- 0  ;   i = j   ; All diagonal elements are 0. 
-	- $a_{ij}=-a_{ji}$  ;  i ≠ j
-$$\begin{bmatrix}
+-  Square Matrix  
+- $[A]=-[A]^{T}$  
+	- $[A]+[A]^{T}=[0]$  
+- $[A]=[a_{ij}]_{n*n}=$  
+	- 0  ;   i = j   ; All diagonal elements are 0.   
+	- $a_{ij}=-a_{ji}$  ;  i ≠ j  
+$$
+\begin{bmatrix}
 0 & a & b \\
 -a & 0 & -c \\
 -b & c & 0
-\end{bmatrix}$$
-### Properties of a Skew Symmetric Matrix
-- $∑a_{ij} = 0$  → sum of all elements = 0
-- if n is odd → Δ = 0 → singular matrix
-- if n is even → Δ may or may not be 0
-- if a skew-symmetric matrix is multiplied even no. of times it will become a symmetric matrix
-- if a skew-symmetric matrix is multiplied odd no. of times it will again become a skew-symmetric matrix
+\end{bmatrix}
+$$
+### Properties of a Skew Symmetric Matrix  
+- $∑a_{ij} = 0$  → sum of all elements = 0  
+- if n is odd → Δ = 0 → singular matrix  
+- if n is even → Δ may or may not be 0  
+- if a skew-symmetric matrix is multiplied even no. of times it will become a symmetric matrix  
+- if a skew-symmetric matrix is multiplied odd no. of times it will again become a skew-symmetric matrix  
 
-### One of the possible skew-symmetric matrix
+### One of the possible skew-symmetric matrix  
 
-- $a_{ij}=i^m-j^m$ : $1 ≤ m ≤ ∞$ 
+- $a_{ij}=i^m-j^m$ : $1 ≤ m ≤ ∞$   
 
 ---
-# Every Matrix is a sum of a symmetric and skew-symmetric Matrix
+# Every Matrix is a sum of a symmetric and skew-symmetric Matrix  
 
-$$A=\frac{A+A^T}{2}+\frac{A-A^T}{2}$$
-$$Symmetric → \frac{A+A^T}{2}$$
-$$Skew-Symmetric →\frac{A-A^T}{2}$$ ---
-# Orthogonal Matrix
-- Square Matrix
-- $A^T=A^{-1}$
-- $AA^T=A^TA=I$
-- $|A|= ± 1$
+$$
+A=\frac{A+A^T}{2}+\frac{A-A^T}{2}
+$$  
+$$
+Symmetric → \frac{A+A^T}{2}
+$$  
+$$
+Skew-Symmetric →\frac{A-A^T}{2}
+$$  
+ ---
+# Orthogonal Matrix  
+- Square Matrix  
+- $A^T=A^{-1}$  
+- $AA^T=A^TA=I$  
+- $|A|= ± 1$  
 ### Properties of a Orthogonal Matrix
-The following conditions should be simultaneously true in a matrix to be Orthogonal. 
+The following conditions should be simultaneously true in a matrix to be Orthogonal.   
 
-1. Sum of squares of elements of each row or each column is 1
-	- Every row/column is a unit vector
-2. Dot product of any two distinct rows or any two distinct columns is 0.
+1. Sum of squares of elements of each row or each column is 1  
+	- Every row/column is a unit vector  
+2. Dot product of any two distinct rows or any two distinct columns is 0.  
 
 Eg : $$A=\begin{bmatrix}
 a_1 & a_2 & a_3 \\
