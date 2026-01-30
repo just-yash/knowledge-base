@@ -1,7 +1,7 @@
 
-Date :  {{date}}
+Date :  {{date}}  
 Tags :   
-~ ***Yash Agrawall*** ~
+~ ***Yash Agrawall*** ~  
 
 ---
 # {{Title}}

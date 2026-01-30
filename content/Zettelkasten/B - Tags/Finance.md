@@ -1,7 +1,7 @@
 
-Date :  2026-01-30
-Tags :   [[Finance]]
-~ ***Yash Agrawall*** ~
+Date :  2026-01-30  
+Tags :   [[Finance]]  
+~ ***Yash Agrawall*** ~  
 
 ---
 # Finance
