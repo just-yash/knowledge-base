@@ -1,6 +1,9 @@
 /* Fade-in page load */
 @use "./base.scss";
+<<<<<<< HEAD
 @use "./themes";
+=======
+>>>>>>> 70efb175a2ce2e789bd871243c247f42a136ed51
 body {
   animation: fadeIn 0.25s ease-in, breathe 12s ease-in-out infinite;
 }
@@ -52,7 +55,28 @@ pre {
   backdrop-filter: blur(4px);
   border-radius: 8px;
 }
+<<<<<<< HEAD
 
 body {
   background: red !important;
+=======
+body {
+  line-height: 1.65;
+}
+
+p {
+  max-width: 70ch;
+}
+a {
+  color: #7aa2f7;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+h2 {
+  margin-top: 2.5rem;
+}
+
+h3 {
+  margin-top: 2rem;
+>>>>>>> 70efb175a2ce2e789bd871243c247f42a136ed51
 }
