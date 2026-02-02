@@ -21,6 +21,7 @@ A data type specifies :
 | float     | 4 bytes       | Decimal (single precision) |
 | double    | 8 bytes       | Decimal (double precision) |
 | void      | 0 bytes       | Represents no Value.       |
+
 → size depends on [[Language Translators#2. Compiler|compiler]] and system architecture. 
 
 ### Type Modifiers 

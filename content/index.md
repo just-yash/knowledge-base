@@ -9,8 +9,6 @@ A living map of my thinking.
 ---
 ## 🧠 Core Domains
 
-- [[Cybersecurity]]
-- [[Artificial Intelligence]]
 - [[Programming]]
 - [[Data Structures & Algorithms]]
 - [[Operating Systems]]
@@ -18,6 +16,8 @@ A living map of my thinking.
 - [[Database Management System]]
 - [[Finance]]
 - [[Mathematics]]
+- [[Cybersecurity]]
+- [[Artificial Intelligence]]
 
 ---
 ## ✍️ Creativity 
