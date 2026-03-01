@@ -19,6 +19,7 @@ A living map of my thinking.
 - [[Cybersecurity]]
 - [[Artificial Intelligence]]
 
+
 ---
 ## ✍️ Creativity 
 - [[Poetry Index|Poetry]]
