@@ -1,0 +1,24 @@
+/* ================================
+   QUARTZ GRAPH COLORS (CANVAS)
+   ================================ */
+
+/* DARK MODE */
+:root[saved-theme="dark"] {
+  --graph-line-color: rgba(255, 255, 255, 0.65);
+  --graph-node-color: #7aa2f7;
+  --graph-node-hover-color: #a5b4fc;
+}
+
+/* LIGHT MODE */
+:root[saved-theme="light"] {
+  --graph-line-color: rgba(0, 0, 0, 0.55);
+  --graph-node-color: #2563eb;
+  --graph-node-hover-color: #1d4ed8;
+}
+
+/* Optional glow */
+.graph canvas {
+  filter: drop-shadow(0 0 2px rgba(122,162,247,0.4));
+}
+
+
