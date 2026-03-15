@@ -19,13 +19,13 @@ Tags :   [[DBMS]] ; [[GATE]]
 ### Data Base
 - organised collection of data stored and accessed electronically from a computer system.
 
+### Relational Data Base
+- Data that inter connected or inter linked in some or the other way. 
+
 ### Data Base Management System
 - Software that interacts with end users, applications and database itself to capture and analyse the data
 - DBMS Software additionally encompasses the core facilities provided to administer the database. 
-- The sum total of the database, the DBMS and the associated application(Security, encryption, input output, etc) can be referred to as a "**Database Management System**".
-
-### Relational Data Base
-- Data that inter connected or inter linked in some or the other way. 
+- The sum total of the database, the DBMS and the associated application(Security, encryption, input output, efficiency, etc) can be referred to as a "**Database Management System**".
 
 ### Problem with File System
 1. **Data Redundancy and Inconsistency** :  Redundancy → having multiple copies of same data. Inconsistency → information about the data varies or is inconsistent.
@@ -39,7 +39,9 @@ Tags :   [[DBMS]] ; [[GATE]]
 ### Instance and Schemas
 - Instance : Collection of information stored in the database at a particular moment
 - Schema : The overall design of the database
-
+###### Example : 
+`int i = 10;`  
+`int i` is the schema ; `10` is the instance.  
 # Chapters:
 1. [[ Transactions and Concurrency Control]] 
 2. ER Model

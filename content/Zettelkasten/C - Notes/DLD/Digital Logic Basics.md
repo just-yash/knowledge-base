@@ -9,7 +9,7 @@ Tags :   [[GATE]] ; [[DLD]]
 - Deals with the study and application of electricity, electronics and electromagnetism and heavy voltage devices like transformers, motors, etc.
 - Parent Branch of Electronic Engineering
 ##### Electronic Engineering:
-- Low voltage devices(semiconductors, transistors, diodes, ICs, etc) 
+- Low voltage devices(semiconductors, transistors, diodes, ICs, microcontrollers, etc) 
 - VLSI Devices and systems
 
 Electronic Systems are generally of two types:
@@ -50,7 +50,7 @@ Electronic Systems are generally of two types:
 
 # Boolean Algebra
 - Introduced by George Boole
-	- The Mathematical Analysis of Logic (1847)
+	- The Mathematical Analysis of [[Logical Operators|logic]] (1847)
 	- An investigation of the Laws of Thought (1854)
 - George Boole introduced the concept of Binary number system in the studies of mathematical theory of logic and developed its algebra knows as Boolean Algebra.
 - Signals use just two discrete values and are therefore called Binary.
@@ -59,6 +59,7 @@ Electronic Systems are generally of two types:
 	- Conjugation (∧)
 	- Disjunction (∨)
 	- Negation (¬ or ~)
+- [[Primary Logical Operators Across Different Domains]]
 
 # Turing Machine
 - Church-Turing thesis states that any algorithmic procedure that can be carried out by human beings/Computer can be carried out by a Turing Machine (1936).
@@ -106,28 +107,28 @@ A)
 2) Write the Boolean Expression
 	- SOP : Remembers 1
 		- W (L, D, E) = ∑<sub>m</sub> (1, 4, 6, 7) 
-	- POS : Remembers 2
+	- POS : Remembers 0
 		- W (L, D, E) = ∏<sub>M</sub> (0, 2, 3, 5)
 
-| Light | Day | Engine | Warning |
-| ----- | --- | ------ | ------- |
-| 0     | 0   | 0      | 0       |
-| 0     | 0   | 1      | 1       |
-| 0     | 1   | 0      | 0       |
-| 0     | 1   | 1      | 0       |
-| 1     | 0   | 0      | 1       |
-| 1     | 0   | 1      | 0       |
-| 1     | 1   | 0      | 1       |
-| 1     | 1   | 1      | 1       |
+| sl. no. | Light(a) | Day(b) | Engine(c) | Warning |
+| ------- | -------- | ------ | --------- | ------- |
+| 0       | 0        | 0      | 0         | 0       |
+| 1       | 0        | 0      | 1         | 1       |
+| 2       | 0        | 1      | 0         | 0       |
+| 3       | 0        | 1      | 1         | 0       |
+| 4       | 1        | 0      | 0         | 1       |
+| 5       | 1        | 0      | 1         | 0       |
+| 6       | 1        | 1      | 0         | 1       |
+| 7       | 1        | 1      | 1         | 1       |
 3) Minimize Boolean expression 
 	- W = a'b'c + ab'c' + abc' + abc
-	K-map :
+	[[K-Map]] :
 
-|     | ab  |              a'b' |          a'b |                ab |               ab' |
-| --- | --- | ----------------: | -----------: | ----------------: | ----------------: |
-| c   |     |                00 |           01 |                11 |                10 |
-| c'  | 0   |      <sub>0</sub> | <sub>2</sub> | 1    <sub>6</sub> | 1    <sub>4</sub> |
-| c   |     | 1    <sub>1</sub> | <sub>3</sub> | 1    <sub>7</sub> |      <sub>5</sub> |
+|     | ab  |                  a'b' |          a'b |                    ab |                   ab' |
+| --- | --- | --------------------: | -----------: | --------------------: | --------------------: |
+| c   |     |                    00 |           01 |                    11 |                    10 |
+| c'  | 0   |          <sub>0</sub> | <sub>2</sub> | ==1==    <sub>6</sub> | ==1==    <sub>4</sub> |
+| c   | 1   | ==1==    <sub>1</sub> | <sub>3</sub> | ==1==    <sub>7</sub> |          <sub>5</sub> |
 
 W =  a'b'c + ab  + ac'
 
@@ -135,7 +136,6 @@ W =  a'b'c + ab  + ac'
 W = ac' + ab + a'b'c
 
 ![[Pasted image 20251228182025.png]]
-
 
 ---
 # Syllabus
@@ -150,7 +150,7 @@ W = ac' + ab + a'b'c
 	8. Inhibition
 2. Minimization
 	1. <span style="color:rgb(255, 192, 0)">Boolean Algebra</span>
-	2. <span style="color:rgb(255, 192, 0)">K-Map</span>
+	2. [[K-Map]]
 3. Combinational Circuit
 	1. <span style="color:rgb(255, 192, 0)">Comparator </span>
 	2. <span style="color:rgb(255, 192, 0)">MUX</span>

@@ -233,7 +233,7 @@ iv) False
 ⇒ $P'Q' + P'R + PQR' = P'(Q'+R') + P(Q + R')$  
 No, $⊕$ is not distributive over $→$   
 
-> For certainty we can use K-Map
+> For certainty we can use [[K-Map]]
 
 ---
 > Qs can also come like this: A new operator might be given with its Truth Table and we have to check for its Commutativity and Associativity.
@@ -490,7 +490,6 @@ j) Q → P
 k) P ∧ Q  
 l) P ∨ Q  
 m) P' → Q  
-
 
 ---
 # Summary 

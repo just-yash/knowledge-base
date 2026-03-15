@@ -23,10 +23,11 @@ Tags :   [[DBMS]]
 - The smallest unit which have atomicity in DBMS view is a Transaction. 
 - So in order to keep the data base consistent, we must concentrate on each transaction.
 - Transaction should posses **ACID** properties. 
-				$A = Atomicity$
-				$C = Consistency$
-				$I = Isolation$
-				$D = Durability$
+				$A = Atomicity$  
+				$C = Consistency$  
+				$I = Isolation$  
+				$D = Durability$  
+
 ### Atomicity 
 - A Transaction is an atomic unit of processing; it should either be performed in its entirety or not performed at all.
 - It is the responsibility of _Recovery Control Manager / Transaction Control Manager of DBMS_ to ensure atomicity.
@@ -64,8 +65,9 @@ Tags :   [[DBMS]]
 	- good database performance, less weighting time.
 	- Overlapping I/O activity with CPU increases throughput and response time
 
+---
 # Problems due to Concurrent Execution of Transaction.
-The local Buffer is common for every executing transaction. Every Transaction believes that its operating in isolation
+The local Buffer is common for every executing transaction. Every Transaction believes that its operating in isolation  
 - Dirty Read Problem / Read - Write Problem
 	- The transaction reads a data item updated by another uncommitted transaction, this transaction may in future be aborted or failed. The reading transactions end with incorrect results.
 	- For eg: Here T1 write and changes the value of A, which is then read by T2. But when T1 aborted the Transaction → it reverted back to the original value of A, but for T2 the value of A is still the one it read.
@@ -111,11 +113,95 @@ The local Buffer is common for every executing transaction. Every Transaction be
 |         | Delete(A) |
 | Read(A) |           |
 
+---
+# Solution is Schedule
+- When two or more transaction executed together or one after another then they can be bundled up into a higher unit of execution called schedule
+- A schedule of $n$ transactions $T_1,$ $T_2,$ $T_3,$ $…,$ $T_n$ is an ordering of the operations of the transactions. 
+- Operations from different transactions can be interleaved in the schedule $S$. 
+- However, schedule for a set of transaction must contain all the instruction of those transaction and for each transaction $T_i$ that participates in the schedule $S$, the operations of $T_i$ is $S$ must appear in the same order in which they occur in $T_i$.
 
+---
+## Serial Schedule 
+- A serial schedule consists of sequence if first action belonging to different transactions, where instructions belonging to one single transaction appear together.
+- Before complete execution of one transaction another transaction cannot be started.
+- for a set of $n$ transactions, there exists $n!$ different valid serial schedules. Every serial schedule lead database into consistent state. Throughput of system is less.
+- consistent but not efficient and concurrent
+###### Example : 
 
+| $T_0$    | $T_1$    |
+| -------- | -------- |
+| read(A)  |          |
+| write(A) |          |
+| read(B)  |          |
+| write(B) |          |
+|          | read(A)  |
+|          | write(A) |
+|          | read(B)  |
+|          | write(B) |
 
+---
+## Non-Serial Schedule 
+- A schedule in which sequence of instructions of a transaction appear in the same order as they appear in individual transaction but the instructions may be interleaved with the instructions of different transactions 
+- Concurrent execution of transactions takes place
+- for a set of $n$ transactions, where each transaction conations $n_1$, $n_2$, ..., $n_n$ respectively. 
+	- the total no. of possible schedules will be : $$\frac{(n_1 + n_2 + n_3 +...+n_n)}{(n_1! n_2! n_3!...n_n!)}$$
+	- the total no. of possible non-serial schedules will be : $$\frac{(n_1 + n_2 + n_3 +...+n_n)}{(n_1! n_2! n_3!...n_n!)} - n!$$
+	- concurrent and efficient but no guarantee of consistency
+###### Example : 
 
+| $T_2$   | $T_3$    |
+| ------- | -------- |
+| read(B) |          |
+|         | read(B)  |
+|         | write(B) |
+| read(A) |          |
+|         | read(A)  |
+|         | write(A) |
 
+---
+## Conclusion of Schedules 
+- We do not have any method of proof that a schedule is consistent
+- But we can understand that a serial schedule is always consistent
+- if somehow we proof that a non-serial schedule will also have same effects as of a serial schedule then we get a proof that this particular non-serial schedule will also be consistent
+- "Find those schedules that are logically equal to serial schedules"
+
+### Serializability
+#### Conflicting Instructions : 
+Instructions are said to be conflicting to each other if these three conditions are satisfied : 
+1. They must belong to different transactions.
+2. They must operate on same data value.
+3. There must be at least one `write()` operation.
+
+#### Conflict Equivalent : 
+- If one schedule can be converted to another schedule by swapping of non-conflicting instruction then they are called conflict equivalent schedule 
+###### Example : Conflict Equivalent Schedules
+
+| T1         | T2         |
+| ---------- | ---------- |
+| R(A)       |            |
+| A = A - 50 |            |
+|            | R(B)       |
+|            | B = B + 50 |
+| R(B)       |            |
+| B = B + 50 |            |
+|            | R(A)       |
+|            | A = A + 10 |
+
+| T1         | T2         |
+| ---------- | ---------- |
+|            | R(B)       |
+|            | B = B + 50 |
+| R(A)       |            |
+| A = A - 50 |            |
+| R(B)       |            |
+| B = B + 50 |            |
+|            | R(A)       |
+|            | A = A + 10 |
+
+#### Conflict Serializable
+- Schedules which are conflict equivalent to a serial schedule are called conflict serializable schedule. 
+- if a schedule S can be transformed into a schedule S' by a series of swaps of non-conflicting instructions, we say that S and S' are conflict equivalent
+- A schedule S is conflict serializable, if it is conflict equivalent to a serial schedule
 
 ---
 # Questions
@@ -135,6 +221,173 @@ The local Buffer is common for every executing transaction. Every Transaction be
 ###### d) none
 
 <span style="color:rgb(0, 176, 240)">A2)</span>   <span style="color:rgb(146, 208, 80)">c) both aborted & committed</span>
+
+---
+###### <span style="color:rgb(0, 176, 240)">Q3)</span> The following schedule is suffering from ?
+
+| T1   | T2                                |
+| ---- | --------------------------------- |
+| R(y) |                                   |
+|      | R(x)<br>R(y)<br>y = x + y<br>W(y) |
+| R(y) |                                   |
+###### a) Lost Update Problem
+###### b) Unrepeatable read problem 
+###### c) Both A and B
+###### d) Neither A nor B
+
+<span style="color:rgb(0, 176, 240)">A3)</span> <span style="color:rgb(146, 208, 80)">b) Unrepeatable read problem</span>
+
+---
+###### Q4) Which of the following scenario may lead to unrecoverable error in a database system?
+###### (A) A transaction writes a data item after it is read by an uncommitted transaction
+###### (B) A transaction reads a data item after it is read by an uncommitted transaction
+###### (C) A transaction reads a data item after it is written by a committed transaction
+###### (D) A transaction reads a data item after it is written by an uncommitted transaction
+
+A4) (D) A transaction reads a data item after it is written by an uncommitted transaction
+
+---
+###### Q5) Consider a schedule of transactions T1 and T2. Here, RX stands for Read(X) and WX stands for Write(X). Which one of the following schedules is conflict equivalent to the above schedule?
+
+| T1     | T2     |
+| ------ | ------ |
+| RA     |        |
+|        | RB     |
+|        | WB     |
+| RC     |        |
+|        | RD     |
+| WD     |        |
+|        | WC     |
+| WB     |        |
+| Commit |        |
+|        | Commit |
+###### a) 
+
+| T1     | T2     |
+| ------ | ------ |
+|        | RB     |
+|        | WB     |
+|        | RD     |
+| RA     |        |
+| RC     |        |
+| WD     |        |
+| WB     |        |
+|        | WC     |
+| Commit |        |
+|        | Commit |
+
+###### b) 
+
+| T1     | T2     |
+| ------ | ------ |
+| RA     |        |
+| RC     |        |
+| WD     |        |
+| WB     |        |
+|        | RB     |
+|        | WB     |
+|        | RD     |
+|        | WC     |
+| Commit |        |
+|        | Commit |
+
+###### c) 
+
+| T1     | T2     |
+| ------ | ------ |
+| RA     |        |
+| RC     |        |
+| WD     |        |
+|        | RB     |
+|        | WB     |
+|        | RD     |
+| WB     |        |
+|        | WC     |
+| Commit |        |
+|        | Commit |
+
+###### d) 
+
+| T1     | T2     |
+| ------ | ------ |
+|        | RB     |
+|        | WB     |
+|        | RD     |
+|        | WC     |
+| RA     |        |
+| RC     |        |
+| WD     |        |
+| WB     |        |
+| Commit |        |
+|        | Commit |
+
+A5) a  
+
+---
+###### Q6) Let Ri(z) and Wi(z) denote read and write operations on a data element z by transaction Ti, respectively. Consider the schedule S with four transactions. S: R4(x) R2(x) R3(x) R1(y) W1(y) W2(x) W3(y) R4(y) Which one of the following serial schedules is conflict equivalent to S?
+
+###### (а) Т1 → Т3 → Т4 → Т2
+###### (b) Т1 → Т4 → Т3 → Т2
+###### (с) Т4 → Т1 → Т3 → Т2
+###### (d) Т3 → T1 → Т4 → Т2
+
+A6)  a
+
+| T1   | T2   | T3   | T4   |
+| ---- | ---- | ---- | ---- |
+|      |      |      | R(x) |
+|      | R(x) |      |      |
+|      |      | R(x) |      |
+| R(y) |      |      |      |
+| W(y) |      |      |      |
+|      | W(x) |      |      |
+|      |      | W(y) |      |
+|      |      |      | R(y) |
+
+![[Pasted image 20260307144405.png]]
+T1 → T3 → T4 → T2
+
+---
+###### Q7) Let ri(z) and wi(z) denote read and write operations respectively on a data item z by a transaction Ti. Consider the following two schedules. 
+###### S1 : r1(x) r1(y) r2(x) r2(y) w2(y) w1(x)
+###### S2 : r1(x) r2(x) r2(y) w2(y) r1(y) w1(x)
+###### Which one of the following options is correct?
+###### a) S1 is conflict serializable, and S2 is not conflict serializable
+###### b) S1 is not conflict serializable, and S2 is conflict serializable
+###### c) Both S1 and S2 are conflict serializable
+###### d) Neither S1 nor S2 is conflict serializable
+
+A7)  b) S1 is not conflict serializable, and S2 is conflict serializable
+S1 : 
+
+| T1   | T2   |
+| ---- | ---- |
+| r(x) |      |
+| r(y) |      |
+|      | r(x) |
+|      | r(y) |
+|      | w(y) |
+| w(x) |      |
+
+S2 : 
+
+| T1   | T2   |
+| ---- | ---- |
+| r(x) |      |
+|      | r(x) |
+|      | r(y) |
+|      | w(y) |
+| r(y) |      |
+| w(x) |      |
+
+S1 is not conflict serializable as it forms a cycle 
+![[Pasted image 20260307225750.png]]
+
+S2 is conflict serializable as it doesn't form a cycle
+![[Pasted image 20260307225852.png]]
+
+---
+
 
 
 

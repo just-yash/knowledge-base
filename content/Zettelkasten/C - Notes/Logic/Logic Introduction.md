@@ -70,7 +70,6 @@ More in Detail in [[Predicate.logic|Predicate]]
 
 More in Detail in [[Translations.logic|Translations]]
 
-
 ---
 # References 
 

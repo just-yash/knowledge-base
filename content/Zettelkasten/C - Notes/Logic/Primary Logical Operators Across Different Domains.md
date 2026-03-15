@@ -1,6 +1,6 @@
 
 Date :  2026-02-20  
-Tags :   [[Maths]] ; [[Operators]] ; [[Set]]
+Tags :   [[Maths]] ; [[Operators]] ; [[Set]] ; [[DLD]]
 ~ ***Yash Agrawall*** ~  
 
 ---
@@ -214,7 +214,7 @@ Hence Proved
 ---
 # Minimization
 - For minimization use these properties 
-- Use K-Map for bigger expressions
+- Use [[K-Map]] for bigger expressions
 
 
 ---

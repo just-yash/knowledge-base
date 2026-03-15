@@ -12,8 +12,12 @@ Tags :   [[Maths]] ; [[DLD]]
 	- Each AND term is a product of literals  
 - Variables may be missing in individual terms  
 - SOP / DNF is not necessarily canonical  
+- in SOP we consider 1
+- SOP is a 2 level implementation 
+	- AND-OR Implementation 
+	- NAND-NAND Implementation
 - Example:
-	- SOP : AB + A'C + B  
+	- SOP : AB + A'C + B  = ∑ (0, 1, 2, 3, 6, 7)
 	- Truth Table:
 
 | A   | B   | C   | AB  | A'C | B   | AB + A'C + B |
@@ -36,8 +40,12 @@ Tags :   [[Maths]] ; [[DLD]]
 - An expression is in POS / CNF if it is written as AND (· / ∧) of OR terms  
 	- Each OR term is a sum of literals  
 - Variables may be missing in individual terms  
+- in POS we consider 0
+- POS is a 2 level Implementation
+	- OR-AND Implementation 
+	- NOR-NOR Implementation
 - Example:
-	- POS : (A + B)(A' + C)  
+	- POS : (A + B)(A' + C)  = ∏ (0, 1, 4, 6)
 	- Truth Table:
 
 | A   | B   | C   | A+B | A'+C | (A+B)(A'+C) |
@@ -99,6 +107,10 @@ Tags :   [[Maths]] ; [[DLD]]
 > Canonical SOP is in Boolean Algebra  
 > PDNF is in Logic
 
+To convert SOP / DNF to Canonical SOP / PDNF : 
+- Multiply with the sum of the missing term and its compliment 
+- Eg : F(a, b, c) : ab + b'c + ac' = ab(c + c') + (a + a')b'c + a(b + b')c' = abc + abc' + ab'c + a'b'c + abc' + ab'c' 
+
 ---
 ## Maxterms (M)
 - A maxterm is a sum (OR term) that contains all variables  
@@ -150,11 +162,16 @@ Tags :   [[Maths]] ; [[DLD]]
 > Canonical POS is in Boolean Algebra  
 > PCNF is in Logic
 
+To convert POS / CNF to Canonical POS / PCNF : 
+- Add the multiplication of the missing term and its compliment 
+- Eg : F(a, b, c) : (a + b)(b' + c)(a + c') = (a + b + cc')(aa' + b' + c)(a + bb' + c') = (a + b + c)
+(a + b + c')(a + b' + c)(a' + b' + c)(a + b + c')(a + b' + c')
+
 ---
 ## Unified Problem-Solving Strategy
 - Logic, Boolean Algebra, and Set Theory follow the same algebraic laws  
 - Any expression can be converted to Boolean Algebra  
-- Simplification is done using Boolean identities or K-Map  
+- Simplification is done using Boolean identities or [[K-Map]]
 - The simplified result is then converted back to the original domain  
 
 ---
@@ -375,7 +392,7 @@ Hence b is the correct option
 	- Every Boolean function has a **unique PDNF and PCNF**
 	- CNF and DNF need not be unique
 - For n variables:
-	- Total possible Boolean functions = 2^(2ⁿ)
+	- Total possible Boolean functions = $2^{(2^n)}$
 
 ---
 ## Tautology / Contradiction / Contingency
@@ -412,7 +429,7 @@ Hence b is the correct option
 ---
 ## Fast Problem-Solving Rules
 - Convert Logic / Set expressions to Boolean Algebra
-- Solve using Boolean identities or K-map
+- Solve using Boolean identities or [[K-Map]]
 - Convert back if required
 - Exactly two of (p, q, r) true:
 	- pqr' + pq'r + p'qr

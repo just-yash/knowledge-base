@@ -548,7 +548,7 @@ sizeof x++;   // x is not incremented and directly evaluated saving time
 ```
 
 ### Associativity of sizeof operator 
-- unary operator : Right to Left ( ← )
+- unary operator : Right to Left ( ← ) ^6bbec9
 
 ---
 ## 10.  Type Casting Operator 
