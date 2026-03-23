@@ -1,6 +1,6 @@
 
 Date :  2026-02-14  
-Tags :   [[C]]  ; [[datatypes]] ; [[functions]]  
+Tags :   [[C]]  ; [[datatypes]] ; [[2 - Zettelkasten/B - Tags/functions]]  
 ~ *Yash Agrawall* ~  
 
 ---

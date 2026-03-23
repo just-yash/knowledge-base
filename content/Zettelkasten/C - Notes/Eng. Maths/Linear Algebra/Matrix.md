@@ -57,7 +57,7 @@ $$diag(1 , -3, 4)=\begin{bmatrix}
 \end{bmatrix}$$
 ---
 - ### Upper Triangular & Lower Triangular Matrix
-	- **Upper Triangular** :
+	- **Upper Triangular** : ^5cfafd
 		- it must be a square matrix
 		- Elements below the diagonal are all 0
 		- Rest → not all 0

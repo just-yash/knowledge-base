@@ -12,7 +12,7 @@ This builds **thinking power**, not calculation stamina.
 
 Study in _this exact order_:
 
-- [[2 - Zettelkasten/C - Notes/Eng. Maths/Linear Algebra/Matrix]]
+- [[Matrix]]
     
 - Matrix operations
     
