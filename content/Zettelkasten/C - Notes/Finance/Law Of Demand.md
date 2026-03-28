@@ -29,6 +29,8 @@ Tags : [[Finance]]
 
 - A tabular representation showing the relationship between price and quantity demanded.
 
+###### Example 
+
 | Price (in ₹) | Quantity Demanded of commodity $x$ (in units) |
 | :----------- | :-------------------------------------------- |
 | 5            | 1                                             |
@@ -41,26 +43,23 @@ Tags : [[Finance]]
 
 - Graphical representation of the demand schedule.
 - Shows a **downward sloping** curve from left to right due to the inverse relationship.
+###### Example
 ![[Pasted image 20260318161648.png]]
 
 ---
 ## Key Characteristics
 
 ### Inverse Nature
-
 - Directly opposite movement between price and quantity.
 
 ### Qualitative Statement
-
 - Indicates the **direction** of change in demand (increase/decrease).
 - Does not indicate the exact **magnitude** of change.
 
 ### No Proportional Relationship
-
 - Percentage change in price does not equal the percentage change in quantity demanded.
 
 ### One-Sided Relationship
-
 - Analyzes how changes in price affect quantity demanded, not vice versa.
 
 ---

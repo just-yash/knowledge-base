@@ -156,7 +156,7 @@ If consumers expect the price of cars to rise in the future, the current demand 
 - Air Conditioners in Summer Season
 
 ---
-## 7. Distribution of Income
+## 8. Distribution of Income
 - More equal distribution typically increases demand for consumer goods.
 
 ---

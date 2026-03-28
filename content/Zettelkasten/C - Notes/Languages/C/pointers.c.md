@@ -100,7 +100,7 @@ printf("%d", **p1);       // 5
 # Pointer Arithmetic
 - relative to the `sizeof(datatype)`
 ##### Addition / Subtraction 
-- `ptr + n` moves the pointer by $n × sizeof(type)$ bytes
+- `ptr + n` moves the pointer by $n \times \text{sizeof}(type)$ bytes
 - Subtraction of two pointers 
 	- gives the no. of elements between them
 	- not the no. of bytes
@@ -141,78 +141,12 @@ printf("%d", *(p + 1));       // 20
 ---
 ### Special Pointer Types
 
-| **Type**             | **Description**                                          | **Key Note for Exams**                                                                                                                              |
-| -------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Null Pointer**     | Points to `NULL` (0).                                    | Used to prevent crashes; check `if(ptr != NULL)`.                                                                                                   |
-| **Void Pointer**     | A generic pointer (`void *ptr`).                         | Can hold address of any type but **cannot be dereferenced** without [[Type Conversion.c#2. Explicit Type Conversion (Type Casting)\|type casting]]. |
-| **Wild Pointer**     | An uninitialized pointer.                                | Danger! Points to an arbitrary memory location.                                                                                                     |
-| **Dangling Pointer** | Points to a memory location that has been freed/deleted. | Occurs after `free(ptr)` if `ptr` isn't set to `NULL`.                                                                                              |
-
-## void pointer
-- generic pointer which can hold address of any [[datatypes|datatype]].
-- [[Tokens.c#2. Declaration|declaration]] : `void *p;`
-```c
-void *p;
-int x = 5; 
-p = &x;
-```
-
-### Issue in dereferencing 
-```c
-void * p;
-int x = 5;
-p = &x;
-printf("%d", *p);
-```
-- [[Errors|Error]] : pointer doesn't know how many bytes it needs to consider here.
-- to fix this [[Errors|error]] we need to use [[Type Conversion.c#2. Explicit Type Conversion (Type Casting)|type casting]] 
-```c
-// type casting doesnt work like this : 
-
-void *p;
-int x = 5; 
-p = &(int*)x;
-p = (int*)&x;
-```
-- this is the same as `p = &x`
-
-- correct way :
-```c
-void *p;
-int x= 5;
-p = &x;
-printf("%d", *(int*)p);  // 5
-```
-
-- we know that the [[Operators.c#^6bbec9|precedence of a unary operator]] is right ← left. 
-- so this will also not work : 
-```c
-void *p;
-int x= 5;
-p = &x;
-printf("%d", (int*)*p);  
-```
-
-### Summary - void pointer 
-
-| **Operation**          | **Allowed?**  | **Reason**                                                                       |
-| ---------------------- | ------------- | -------------------------------------------------------------------------------- |
-| **Assignment**         | ✅ Yes<br>❌ No | `p = &x;` is always fine.<br>`*p = 10;` compiler doesn't know the size of `void` |
-| **Pointer Arithmetic** | ❌ No          | `p++` fails because the compiler doesn't know the step size.                     |
-| **Dereferencing**      | ❌ No          | Needs explicit typecasting first `*(type*)p`                                     |
-| **Comparison**         | ✅ Yes         | You can check `if (p1 == p2)` to see if they point to the same spot.             |
-
-#### Type Casting for post increment : 
-```c
-((int *)p)++;
-```
-
-#### Type Casting for pre increment : 
-```c
-++(int *)p;
-```
-
-
+| **Type**                         | **Description**                                          | **Key Note for Exams**                                                                                                                              |
+| -------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Null Pointer**                 | Points to `NULL` (0).                                    | Used to prevent crashes; check `if(ptr != NULL)`.                                                                                                   |
+| [[void pointer.c\|void pointer]] | A generic pointer (`void *ptr`).                         | Can hold address of any type but **cannot be dereferenced** without [[Type Conversion.c#2. Explicit Type Conversion (Type Casting)\|type casting]]. |
+| **Wild Pointer**                 | An uninitialized pointer.                                | Danger! Points to an arbitrary memory location.                                                                                                     |
+| **Dangling Pointer**             | Points to a memory location that has been freed/deleted. | Occurs after `free(ptr)` if `ptr` isn't set to `NULL`.                                                                                              |
 
 
 

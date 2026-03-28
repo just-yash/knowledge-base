@@ -80,7 +80,6 @@ $$E_d = \frac{\frac{\Delta{Q_d}}{Q_d}×100}{\frac{\Delta{P}}{P}×100}=\frac{\Del
 ---
 # Degrees of Elasticity of Demand
 - Flatter the curve more is the Elasticity
-- 
 
 ### 1. Perfectly Elastic Demand
 
@@ -229,6 +228,27 @@ $$
     <td>110</td>
   </tr>
 </table>
+
+---
+
+| **Degree**               | **Description**                                                                                   | **Numerical Value** | **Graphical Representation**                               | Demand Curve                         |
+| ------------------------ | ------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------------- | ------------------------------------ |
+| **Unitary Elastic**      | Percentage change in demand is exactly equal to the percentage change in price.                   | $E_d = 1$           | **Rectangular Hyperbola**; curve slopes downward smoothly. | ![[Pasted image 20260319142927.png]] |
+| **Relatively Elastic**   | Demand changes by a larger percentage than the price change (Luxury goods).                       | $E_d > 1$           | **Flatter** downward sloping curve.                        | ![[Pasted image 20260319143726.png]] |
+| **Relatively Inelastic** | Demand changes by a smaller percentage than the price change (Necessities).                       | $E_d < 1$           | **Steeper** downward sloping curve.                        | ![[Pasted image 20260319144059.png]] |
+| **Perfectly Inelastic**  | Demand remains constant regardless of any change in price (Life-saving drugs).                    | $E_d = 0$           | **Vertical line** parallel to the Y-axis.                  | ![[Pasted image 20260319142613.png]] |
+| **Perfectly Elastic**    | Consumers are prepared to buy all they can at one price, but demand drops to zero if price rises. | $E_d = \infty$      | **Horizontal line** parallel to the X-axis.                | ![[Pasted image 20260319142137.png]] |
+
+---
+# Relation of goods with respect to Elasticity
+
+| Value of $(E_d$) | Type of Goods | Nature           |
+| ---------------- | ------------- | ---------------- |
+| $( E_d > 0 )$    | Substitutes   | Direct relation  |
+| $( E_d < 0 )$    | Complements   | Inverse relation |
+| $( E_d = 0 )$    | Unrelated     | No relation      |
+| $( >1 )$         | Elastic       | Strong response  |
+| $( <1 )$         | Inelastic     | Weak response    |
 
 
 ---
