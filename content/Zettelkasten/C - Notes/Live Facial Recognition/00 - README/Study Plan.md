@@ -1,298 +1,453 @@
-
-Date :  2026-03-29  
-Tags :  [[Research]] ; [[security]]   
-~ ***Yash Agrawall*** ~  
+Date : 2026-03-29  
+Tags : [[Research]] [[Security]]  
+~ ***Yash Agrawall*** ~
 
 ---
 # 🔹 PHASE 1 — Core Pipeline (Days 1–4)
 
-> Goal: Understand how identity is extracted from a face
+> Goal: Identity extraction (FOUNDATION)
 
 ---
 
-## Day 1 → Face Detection
+## Day 1 → Face Detection (Concept + Models)
 
-From Claude:  
+From Claude:
 → 1.1 Stage 1
 
-Create:
+### Study:
 
-Face Detection.md
+#### Concept
+- What is face detection
+- Pipeline role
+
+#### Methods & Models (MANDATORY)
+- Sliding Window (Viola-Jones)
+- Anchor-based vs Anchor-free
+- MTCNN
+- RetinaFace
+- SCRFD
+- YOLO-Face variants
+
+#### Metrics
+- Precision / Recall
+- WIDER FACE (Easy / Medium / Hard)
+
+Create:
+[[Face Detection]]
 
 ---
-
-## Day 2 → Face Alignment
+## Day 2 → Face Alignment (Concept + Models)
 
 → 1.1 Stage 2
 
+### Study:
+
+#### Concept
+- Why alignment is required
+- Landmark normalization
+
+#### Methods & Models
+- 5-point vs 68-point landmarks
+- DAN (Deep Alignment Network)
+- PFLD
+- 3DDFA (3D alignment)
+
+#### Concepts
+- Yaw / Pitch / Roll
+
+Create:
+[[Face Alignment]]
+
 ---
+## Day 3 → Face Embedding (Concept + Models)
 
-## Day 3 → Face Embedding
+→ 1.1 Stage 3  
+→ 2.1 CNN Models  
+→ 2.2 Transformer Models  
 
-→ 1.1 Stage 3
+### Study:
+
+#### Concept
+- Embedding space
+- Intra-class vs inter-class
+
+#### Models (MANDATORY)
+- DeepFace
+- FaceNet (Triplet Loss)
+- VGGFace
+- SphereFace
+- CosFace (LMCL)
+- ArcFace
+- MagFace
+- AdaFace
+
+#### Loss Functions
+- Contrastive Loss
+- Triplet Loss
+- Margin-based Softmax
+
+#### Transformer Models
+- ViT (Vision Transformer)
+- FaceTransformer
+- TransFace
+- UniFormer
+
+Create:
+[[Face Embedding]]
 
 ---
-
-## Day 4 → Face Matching
+## Day 4 → Face Matching (Concept + Systems)
 
 → 1.1 Stage 4
 
+### Study:
+
+#### Concept
+- Similarity search
+- Verification vs Identification
+
+#### Math
+- Cosine similarity
+- Threshold (τ)
+
+#### Systems (MANDATORY)
+- FAISS
+  - IVF
+  - HNSW
+  - PQ
+- ScaNN
+- Milvus
+
+Create:
+[[Face Matching]]
+
 ---
-
 ## 🎯 End of Phase 1
-
-You should understand:
 
 Image → Face → Vector → Identity
 
 ---
-
 # 🔹 PHASE 2 — Time + Motion (Days 5–6)
 
-> Goal: Understand how system tracks people over time
+> Goal: Identity over time (CONTINUITY)
 
 ---
 
-## Day 5 → Multi-Object Tracking
+## Day 5 → Multi-Object Tracking (Concept + Models)
 
-→ Section 2.4
+→ 2.4 Multi-Object Tracking
+
+### Study:
+
+#### Concept
+- Tracking = short-term identity
+- Tracklet ≠ Identity
+
+#### Core Components
+- IoU
+- Kalman Filter
+- Hungarian Algorithm
+
+#### Models (MANDATORY)
+- SORT
+- DeepSORT
+- ByteTrack
+- OC-SORT
+- BoT-SORT
+- StrongSORT
+
+#### Metrics
+- MOTA
+- IDF1
+- HOTA
 
 Create:
-
-Multi-Object Tracking.md
+[[Multi-Object Tracking]]
 
 ---
 
-## Day 6 → Tracklets + Identity over time
+## Day 6 → Tracking Deep Dive (Failure + Internals)
 
-→ from tracking section
+→ 1.3 Challenges
+
+### Study:
+
+#### Failure Modes
+- Occlusion
+- ID Switch
+- Track Fragmentation
+- Drift
+- Lighting variation
+- Scale mismatch
+
+#### Deep Concepts
+- Motion vs Appearance vs Spatial signals
+- Cost function importance
 
 ---
 
 ## 🎯 End of Phase 2
 
-You understand:
-
-Frame → Frame → Same person tracked
+Tracking = identity under continuity assumptions
 
 ---
 
-# 🔹 PHASE 3 — Multi-Camera Intelligence (Days 7–9)
+# 🔹 PHASE 3 — Identity Beyond Continuity (Days 7–9)
 
-> Goal: Understand how identity persists across cameras
+> Goal: Identity when tracking fails
 
 ---
 
-## Day 7 → ReID (Person Re-Identification)
+## Day 7 → ReID (Concept + Models)
 
-→ Section 2.3
+→ 2.3 Person Re-Identification
+
+### Study:
+
+#### Concept
+- ReID = identity across discontinuity
+- Relation to tracking failure
+
+#### Models (MANDATORY)
+- OSNet
+- FastReID
+
+#### Concepts
+- Appearance embeddings
+- Feature invariance
+
+Create:
+[[ReID]]
 
 ---
 
 ## Day 8 → Cross-Camera Matching
 
-→ Section 1.2
+→ 1.2
+
+### Study:
+
+- Cross-camera identity matching
+- Overlapping vs non-overlapping cameras
+- Spatio-temporal constraints
+
+Create:
+[[Cross-Camera Matching]]
 
 ---
 
-## Day 9 → Camera Calibration (light)
+## Day 9 → Camera Calibration
 
-→ Section 1.2
+→ 1.2
+
+### Study:
+
+- Camera calibration
+- Time synchronization
+- Multi-camera alignment
+
+Create:
+[[Camera Calibration]]
 
 ---
 
 ## 🎯 End of Phase 3
 
-You understand:
-
-Camera A → Camera B → Same person
+Tracking fails → ReID recovers identity
 
 ---
 
 # 🔹 PHASE 4 — System Thinking (Days 10–12)
 
-> Goal: Understand how full system is built
+> Goal: Full system design
 
 ---
 
 ## Day 10 → System Architecture
 
-→ Section 4
+→ 4.1
+
+### Study:
+
+- Camera network topology
+- Data flow
+
+Create:
+[[System Architecture]]
 
 ---
 
-## Day 11 → Edge vs Cloud
+## Day 11 → Edge vs Cloud Systems
 
-→ Section 4
+→ 4.1
+
+### Study:
+
+- Edge vs Cloud vs Hybrid
+- Latency vs compute trade-offs
+
+Create:
+[[Edge vs Cloud Systems]]
 
 ---
 
-## Day 12 → Global ID + Identity Fusion
+## Day 12 → Identity Association (Fusion)
 
-→ Section 4
+→ 2.6  
+→ 4.1  
+
+### Study:
+
+#### Signals
+- IoU (spatial)
+- Motion (Kalman)
+- ReID (appearance)
+
+#### Concepts
+- Graph-based matching
+- Global identity assignment
+
+Create:
+[[Identity Association]]
 
 ---
 
 ## 🎯 End of Phase 4
 
-You understand:
-
-City-scale system pipeline
+System = multi-signal identity engine
 
 ---
 
-# 🔹 PHASE 5 — Real-World Problems (Days 13–14)
-
-> Goal: Understand why things break
+# 🔹 PHASE 5 — Threat Detection (Days 13–15)
 
 ---
 
-## Day 13 → Challenges
+## Day 13 → Behavioral Analysis
 
-→ Section 1.3
+→ 5.1
 
-Focus:
-
-- Occlusion
-- Identity switching
-
----
-
-## Day 14 → Bias + Privacy (light)
-
-→ Section 8
+- Loitering detection
+- Suspicious movement
+- Abandoned object detection
 
 ---
 
-# 🔹 PHASE 6 — Application Layer (Days 15–16)
+## Day 14 → Action Recognition
 
-> Goal: What the system is used for
+→ 5.3
 
----
-
-## Day 15 → Threat Detection
-
-→ Section 5
+- Violence detection
+- Weapon detection
 
 ---
 
-## Day 16 → Anomaly Detection
+## Day 15 → Anomaly Detection
 
-→ Section 5
+→ 5.4
 
----
-
-# 🔹 PHASE 7 — Models (Days 17–20)
-
-> Goal: Understand how performance is improved
+- Unusual crowd behavior
 
 ---
 
-## Day 17 → ArcFace (intuitive)
-
-→ Section 2
+# 🔹 PHASE 6 — Data + Deployment (Days 16–17)
 
 ---
 
-## Day 18 → DeepSORT + ByteTrack
+## Day 16 → Datasets & Benchmarks
 
-→ Section 2
+→ 6
 
----
-
-## Day 19 → ReID Models (OSNet etc.)
-
-→ Section 2
-
----
-
-## Day 20 → Transformers (light)
-
-→ Section 2
+- Face datasets
+- ReID datasets
+- MOT datasets
+- Anomaly datasets
 
 ---
 
-# 🔹 PHASE 8 — Research Mode (Week 4+)
+## Day 17 → Real-World Systems
 
-> Goal: Start thinking like a researcher
+→ 7
+
+- Distributed systems
+- Latency optimization
+- Storage & retrieval
+- API design
 
 ---
 
-## Read:
+# 🔹 PHASE 7 — Risks + Security (Days 18–19)
 
-→ Section 3 (papers)
+---
 
-Start with:
+## Day 18 → Challenges & Limitations
+
+→ 8
+
+- Bias
+- Scalability
+- Cross-camera errors
+
+---
+
+## Day 19 → Security Risks
+
+→ 9
+
+- Spoofing
+- Deepfakes
+- Adversarial attacks
+
+---
+
+# 🔹 PHASE 8 — Research Mode (Day 20+)
+
+---
+
+## Read Papers
+
+→ 3
 
 - ArcFace
 - ByteTrack
+- OSNet / FastReID
 
 ---
 
-## Also explore:
-
-- Section 10 (future)
-- Section 11 (implementation roadmap)
-
----
-
-# 🧠 DAILY ROUTINE (Non-Negotiable)
-
-For EVERY topic:
+# 🧠 DAILY ROUTINE (STRICT)
 
 1. Read (20–30 min)
-2. Fill template
-3. Write 3 bullet summary
-4. Draw 1 diagram
-5. Answer:
-    - What problem does this solve?
-    - Where does it fit?
+2. Write note
+3. Add models INSIDE the note
+4. Write 3 bullet summary
+5. Draw 1 diagram
+6. Answer:
+   - What problem does this solve?
+   - Where does it fit?
 
 ---
 
-# ⚠️ STRICT RULES
+# ⚠️ RULES
 
-## Rule 1
-
-👉 One concept per day
-
----
-
-## Rule 2
-
-👉 Skip what you don’t understand
-
----
-
-## Rule 3
-
-👉 Don’t read full document linearly
-
----
-
-## Rule 4
-
-👉 Don’t optimize system anymore
+- One concept per day + ALL its models
+- Never postpone models
+- Skip details, NOT concepts
+- Don’t read linearly
 
 ---
 
 # 🧠 FINAL SYSTEM
 
-Claude Doc → Source  
-  
-Your Notes → Understanding  
-  
-README → Map  
-  
-STUDY_PLAN → Method
+Detection → Alignment → Embedding → Matching  
+→ Tracking → ReID → Identity Association  
+→ System → Application → Deployment
 
 ---
 
-# 🧠 Folder Logic (Final Mental Model)
+# 🧠 Folder Logic
 
-01 - Pipeline        → how identity is extracted
-02 - Models          → how it's implemented
-03 - Multi-Camera    → how identity persists
-04 - Threat          → what system does
-05 - Papers          → research
-06 - Concepts        → reusable ideas
+01 - Pipeline  
+02 - Models  
+03 - Multi-Camera  
+04 - Threat Detection  
+05 - Papers  
+06 - Concepts  

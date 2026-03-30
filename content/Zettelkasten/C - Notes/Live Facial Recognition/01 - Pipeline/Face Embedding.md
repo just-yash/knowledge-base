@@ -1,6 +1,6 @@
 
-Date : 2026-03-30
-Tags : [[Research]] ; [[Computer Vision]]
+Date : 2026-03-30  
+Tags : [[Research]] ; [[Computer Vision]]  
 ~***Yash Agrawall***~
 
 ---
@@ -42,6 +42,19 @@ Turn every face into a unique “fingerprint number” so similar faces have sim
 	- Same Person → vectors close together
 - **Inter-class separability** → different identities far apart
 	- Different people → vectors far apart
+- Embedding quality depends on:  
+	- backbone (feature extraction)  
+	- loss function (space shaping)  
+- Backbone learns features  
+- Loss function defines separation
+
+### Training Pipeline 
+
+1. Input image → Face Alignment  
+2. Pass through backbone (ResNet / ViT)  
+3. Get feature vector  
+4. Apply loss function (ArcFace / Triplet etc.)  
+5. Optimize embedding space
 
 ### Embedding Space  
   
@@ -50,7 +63,29 @@ Turn every face into a unique “fingerprint number” so similar faces have sim
 	- small distance → same person  
 	- large distance → different person
 
-### Loss Functions (How model learns this)
+### Backbone Network 
+
+- Most systems use **ResNet (Residual Network)** 
+- dominant architecture for face recognition
+- Residual connections enable very deep networks without vanishing gradients
+- CNN based model 
+- SotA
+- Variants : 
+	- ResNet-50
+	- ResNet-100
+	- IR-50 / IR-100 (Identity Residual used in InsightFace)
+- Role : 
+	- Extract deep facial features before embedding
+
+### Loss Functions and Model Evolution (Very Important)
+
+#### Early Models
+- DeepFace 
+	- first deep learning approach
+	- CNN based Model
+- VGGFace 
+	- deeper CNN baseline
+
 #### Metric Learning 
 - **Contrastive Loss**  
 	- pulls same faces together  
@@ -68,36 +103,78 @@ Turn every face into a unique “fingerprint number” so similar faces have sim
   
 - **CosFace(LMCL - Large Margin Cosine Loss)**  
 	- Additive cosine margin($m$)  
+	- cosine margin improvement 
+	- SotA
 $$\cos(\theta) - m$$
   
-- **[[ArcFace]]**  
+- [[ArcFace]]  
 	- works in angular (hyper-spherical) space
+	- CNN based model
 	-  Additive angular margin($m$)  
 $$\cos(\theta + m)$$
 	- Geometrically cleaner than CosFace → superior separation
+	- Additive Angular Margin loss on the normalized hypersphere
+	- Training pipeline: IR-100 backbone + ArcFace loss on MS1MV2 (5.8M images, 85K identities)
+	- Benchmark scores (SotA) : 
+		- 99.83% on LFW
+		- 96.98% on IJB-C (TAR@FAR=1e-4)
   
 - **MagFace**  
 	- Magnitude Aware ArcFace
+	- CNN based model
 	- low-quality faces (occluded, blurry) get smaller magnitudes 
 	- enables quality-aware matching
+	- SotA
   
-- **AdaFace**  
+- **AdaFace**
 	- adapts margin based on image quality  
+	- CNN based model
 	- important for low-quality surveillance data → handles low-quality crops
+	- SotA
+
+- **InsightFace**
+	- Open-source face analysis library
+	- CNN based framework/library
+	- implements : ArcFace + RetinaFace + associated tools
+	- Most widely used face recognition framework
+	- Provides ONNX-exported models for deployment.
+	- SotA 
 
 #### Transformer-Based Models 
 
-- **ViT(Vision Transformer)** 
-	- splits image into patches 
-	- uses self-attention instead of convolution (CNN)
+- **ViT(Vision Transformer)** **(2020)** 
+	- treats image as a sequence of non-overlapping 16 × 16 patches 
+	- each patch is embedded as a token 
+	- uses self attention which operates globally over all patches instead of convolution (CNN)
+	- with large training datasets, ViT surpasses CNN baselines
+	- for face recognition : 
+		- ViT requires face specific augmentation strategies → random masking of facial regions 
+		- global self attention captures long-range facial part relationships 
+			- symmetry, holistic face structure, etc 
+		- patch-dropping during training 
+			- improves occlusion robustness
 
 - **FaceTransformer(2021)** 
 	- ViT(Vision Transformer) backbone for face embedding
 	- With sufficient training data, matches ResNet-100 performance 
 
+- **Swim Transformer** **(2021)**
+	- hierarchical feature maps 
+	- shifted window attention 
+	- more computationally efficient than ViT 
+	- achieves SotA on several face recognition benchmarks 
+	- feasible for real-time inference 
+
+- **ElasticFace(2022)** 
+	- Random elastic margins in [[ArcFace]]
+	- samples margin $m$ from a distribution rather than fixing it
+	- works with both CNN and Transformer backbones 
+	- improves generalization (more portable)
+
 - **TransFace(2023)** 
 	- Patch-based ViT + face-specific augmentation 
-	- achieves SotA(State-of-the-Art) on IJB-C(IARPA Janus Benchmark-C)
+	- handles occlusion via patch augmentation
+	- achieves SotA on IJB-C(IARPA Janus Benchmark-C) with 97.87% TAR@FAR=1e-4
 		- IARPA : Intelligence Advanced Research Projects Activity → U.S. govt. research agency
 		- Janus → Name of face recognition research program
 		- Benchmark → Standard dataset for evaluation
@@ -142,7 +219,7 @@ $$\cos(\theta + m)$$
 
 - [[FaceNet]] → uses triplet loss
 - [[ArcFace]] → most widely used margin-based method 
-- [[AdaFace]] → robust for low-quality images 
+- AdaFace → robust for low-quality images 
 
 ---
 ## 📚 Related Papers

@@ -119,6 +119,16 @@ printf("%d", *(int*)p);  // 5
     
 - It is **not guaranteed** to safely store function pointers.
     
+---
+### Validity of Operations 
+
+| **Expression** | **Type of p** | **Validity** | **Reasoning**                   |
+| -------------- | ------------- | ------------ | ------------------------------- |
+| `p + 1`        | `void *`      | **Invalid**  | `void` has no size.             |
+| `*(int *)p`    | `int *`       | **Valid**    | Explicit cast to `int` pointer. |
+| `(int *)p + 1` | `int *`       | **Valid**    | Arithmetic on `int` pointer.    |
+| `++(int *)p`   | `int *`       | **Invalid**  | Assoc. evaluated `++p` first.   |
+| `((int *)p)++` | `int *`       | **Valid**    | Cast forced by parentheses.     |
 
 ---
 

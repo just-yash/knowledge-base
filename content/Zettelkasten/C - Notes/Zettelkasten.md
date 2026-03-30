@@ -172,7 +172,7 @@
 - [[Number System]] — Natural, whole, integers, rational, irrational, real, complex
 - [[Set Theory]] — Definitions, operations (union, intersection, complement, difference, XOR), power sets, cardinality laws
 - [[Relations]] — Cartesian product, relation types (reflexive, symmetric, antisymmetric, transitive, equivalence, partial order), closures, Warshall's algorithm
-- [[Functions]] — Injection, surjection, bijection, composition, inverse; counting formulas
+- [[2 - Zettelkasten/C - Notes/Eng. Maths/Discrete Mathematics/Sets/Functions]] — Injection, surjection, bijection, composition, inverse; counting formulas
 - [[POSET]] — Partial order, Hasse diagrams, lattice theory, complement, distributive, Boolean lattices
 
 #### Graph Theory

@@ -1,6 +1,6 @@
 
-Date : 2026-03-29
-Tags : [[Research]] ; [[Computer Vision]]
+Date : 2026-03-29  
+Tags : [[Research]] ; [[Computer Vision]]  
 ~***Yash Agrawall***~
 
 ---
@@ -46,7 +46,7 @@ Tags : [[Research]] ; [[Computer Vision]]
 
 3. Warp the image
 	- Apply transformation → get a standardized face crop (112×112)
-		- 112 × 112 : used in FaceNet, [[ArcFace]], etc 
+		- 112 × 112 : used in [[FaceNet]], [[ArcFace]], etc 
 
 ---
 ## ⚠️ Limitations (Why This Alone Is Not Enough)
