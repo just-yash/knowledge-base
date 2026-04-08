@@ -3,7 +3,7 @@ name: Deploy Knowledge Site
 on:
   push:
     branches:
-      - main
+      - knowledge-site
   workflow_dispatch:
 
 permissions:
