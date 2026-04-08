@@ -1,0 +1,7 @@
+{
+  "siteName": "Yash Agrawall's Zettelkasten",
+  "tagline": "A public thinking garden for systems, study notes, and creative work.",
+  "contentDir": "content",
+  "outputDir": "docs",
+  "basePath": "."
+}
