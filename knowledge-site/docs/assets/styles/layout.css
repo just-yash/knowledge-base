@@ -76,12 +76,13 @@
 
 .topbar-right {
   justify-content: flex-end;
+  gap: 0.55rem;
 }
 
 .topbar-center {
   min-width: 0;
   display: grid;
-  grid-template-columns: minmax(0, auto) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, auto) minmax(0, 1fr);
   gap: 0.75rem;
   align-items: center;
 }
@@ -140,7 +141,7 @@
   }
 
   .topbar-center {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, auto) minmax(0, 1fr);
   }
 
   .meta-host {
@@ -201,7 +202,7 @@
   .topbar-center {
     grid-column: 1 / -1;
     grid-row: 2;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
     gap: 0.65rem;
   }
 
