@@ -36,7 +36,7 @@ Tags :  [[Maths]] ; [[Graph]]
 - when every vertex of the subgraph is matched 
 - it happens only when the main graph's $|v|$ (vertex count) is even 
 	- its a necessary condition, but not sufficient 
-- A [[tree]] doesn't have a perfect match 
+- A [[Tree_DM]] doesn't have a perfect match 
 - for a [[Graph Theory#Complete Graph ($K_n$)|Complete Graph]] $K_n$ :
 	- no. of perfect matchings are : $$\frac{[(2n)!]}{n! \times 2^n}$$
 ---

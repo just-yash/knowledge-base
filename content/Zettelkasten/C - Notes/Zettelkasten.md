@@ -106,7 +106,7 @@
 - [[Array]] ← already covered in C section
 - [[Linked List]] ← already covered in C section
 - [[Stack]] ← already covered in C section
-- [[Tree]] _(stub — expand later)_
+- [[Tree_DM]] _(stub — expand later)_
 
 ### 2.3 Algorithms
 

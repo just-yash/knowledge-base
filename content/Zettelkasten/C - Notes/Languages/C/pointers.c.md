@@ -78,7 +78,7 @@ printf("%d", *2000);  // suppose 2000 is the address of x
 	- Increases speed 
 	- Decreases Computational load
 - [[DSA]]
-	- Essential for building non-contiguous structures like [[Linked List]] & [[Tree]]
+	- Essential for building non-contiguous structures like [[Linked List]] & [[Tree_DSA|Tree]]
 - Hardware Interaction 
 	- Assessing specific memory - mapped I/O addresses.
 

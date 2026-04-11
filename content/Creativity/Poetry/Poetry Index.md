@@ -24,7 +24,7 @@ A collection of my poems exploring emotion, loss, identity, society, and growth.
 ## Existential / Philosophy
 - [[Human Paradox]]
 - [[Death]]
-- [[3 - Creativity/Poetry/Matrix]]
+- [[Creativity/Poetry/Matrix|Matrix]]
 - [[Modern Madness]]
 
 ## Identity & Social Pressure
