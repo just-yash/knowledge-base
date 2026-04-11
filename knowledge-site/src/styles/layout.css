@@ -183,9 +183,15 @@
     padding: 1rem;
   }
 
+  #topbar-slot {
+    min-height: var(--mobile-panel-top, 6.65rem);
+  }
+
   .topbar {
-    position: sticky;
+    position: fixed;
     top: max(0.5rem, env(safe-area-inset-top));
+    left: 1rem;
+    right: 1rem;
     z-index: 40;
     grid-template-columns: auto minmax(0, 1fr) auto;
     gap: 0.62rem 0.72rem;
