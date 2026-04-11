@@ -12,19 +12,20 @@ Aether Atlas is a GitHub Pages-ready static website that publishes Obsidian-styl
 ## Project Structure
 
 ```text
-knowledge-site/
-|-- content/
-|-- ../docs/ (generated output at repository root)
-|-- scripts/
-|   `-- build_site.py
-|   `-- build_site.ps1
-|   `-- sync_vault.ps1
-|-- site.config.json
-`-- src/
-    |-- components/
-    |-- pages/
+knowledge-base/
+|-- docs/                  (generated output for publishing)
+`-- knowledge-site/
+    |-- content/
     |-- scripts/
-    `-- styles/
+    |   `-- build_site.py
+    |   `-- build_site.ps1
+    |   `-- sync_vault.ps1
+    |-- site.config.json
+    `-- src/
+        |-- components/
+        |-- pages/
+        |-- scripts/
+        `-- styles/
 ```
 
 ## How It Works
