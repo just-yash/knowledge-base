@@ -184,7 +184,7 @@ function renderGraphChrome(data, route) {
   const source = graphSourceNote(data, route);
   const fromLabel = source?.title || "Vault Home";
   document.getElementById("note-breadcrumb").innerHTML = "Vault<span class=\"breadcrumb-separator\">/</span>Graph View";
-  document.getElementById("note-title").textContent = `Graph View \u2014 from: ${fromLabel}`;
+  document.getElementById("note-title").textContent = `Graph View — from: ${fromLabel}`;
   document.getElementById("note-tags").innerHTML = [
     `<span class="tag-chip">Graph View</span>`,
     `<span class="tag-chip">from: ${escapeHtml(fromLabel)}</span>`,
