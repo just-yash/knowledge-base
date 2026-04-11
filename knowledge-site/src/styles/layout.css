@@ -1,20 +1,20 @@
 .site-frame {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: 0.95rem;
   padding: 1.25rem;
-  min-height: 100vh;
-  overflow: visible;
+  min-height: 100dvh;
+  --topbar-height: 4.9rem;
 }
 
 .workspace-grid {
   display: grid;
   grid-template-columns: 300px minmax(0, 1fr) 255px;
   gap: var(--grid-gap);
-  align-items: start;
+  align-items: stretch;
   flex: 0 0 auto;
-  min-height: clamp(42rem, calc(100vh - 8rem), 60rem);
-  overflow: visible;
+  height: calc(100dvh - var(--topbar-height) - 3.7rem);
+  min-height: 0;
 }
 
 .sidebar-host,
@@ -23,30 +23,21 @@
   min-width: 0;
   min-height: 0;
   background: transparent;
-  overflow: visible;
-  align-self: start;
+  overflow: hidden;
+  align-self: stretch;
 }
 
 .sidebar-host {
-  position: sticky;
-  top: 1rem;
-  height: min(56rem, calc(100vh - 2rem));
-  max-height: calc(100vh - 2rem);
-  min-height: clamp(38rem, calc(100vh - 2rem), 56rem);
+  height: 100%;
 }
 
 .meta-host {
-  position: sticky;
-  top: 1rem;
-  height: min(56rem, calc(100vh - 2rem));
-  max-height: calc(100vh - 2rem);
-  min-height: clamp(36rem, calc(100vh - 2rem), 56rem);
+  height: 100%;
 }
 
 .note-host {
   display: flex;
-  height: clamp(42rem, calc(100vh - 2rem), 60rem);
-  min-height: clamp(42rem, calc(100vh - 8rem), 60rem);
+  height: 100%;
 }
 
 .site-frame > header,
@@ -60,12 +51,28 @@
   z-index: 30;
   isolation: isolate;
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 0.85rem;
   align-items: center;
-  padding: 0.8rem 0.95rem;
+  min-height: var(--topbar-height);
+  padding: 0.75rem 0.9rem;
   border-radius: var(--radius-xl);
   overflow: visible;
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.topbar-center {
+  display: grid;
+  grid-template-columns: minmax(0, max-content) minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: center;
+  min-width: 0;
 }
 
 .brand-block {
@@ -79,14 +86,6 @@
   font-size: clamp(1.22rem, 1.55vw, 1.58rem);
   line-height: 1.06;
   text-wrap: balance;
-}
-
-.topbar-actions {
-  display: flex;
-  gap: 0.55rem;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
 }
 
 .topbar-search {
@@ -121,25 +120,18 @@
 @media (max-width: 1120px) {
   .workspace-grid {
     grid-template-columns: 270px minmax(0, 1fr);
-    min-height: auto;
+    height: calc(100dvh - var(--topbar-height) - 3.7rem);
   }
 
-  .topbar {
-    grid-template-columns: minmax(240px, 290px) minmax(0, 1fr) auto;
+  .topbar-center {
+    grid-template-columns: minmax(200px, max-content) minmax(0, 1fr);
   }
 
   .meta-host {
     grid-column: 1 / -1;
     position: static;
-    top: auto;
-    height: auto;
-    max-height: none;
-    min-height: 20rem;
-  }
-
-  .note-host {
-    height: clamp(38rem, calc(100vh - 2rem), 56rem);
-    min-height: clamp(38rem, calc(100vh - 6rem), 56rem);
+    height: 100%;
+    min-height: 0;
   }
 }
 
@@ -164,20 +156,22 @@
 
 @media (max-width: 860px) {
   .site-frame {
-    min-height: 100vh;
+    min-height: 100dvh;
     padding: 1rem;
+    --topbar-height: auto;
   }
 
   .topbar {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .topbar-center {
     grid-template-columns: 1fr;
+    gap: 0.65rem;
   }
 
   .workspace-grid {
     grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-  .note-host {
     height: auto;
     min-height: 0;
   }
