@@ -8,7 +8,7 @@ import { renderFolderMetaPanel, renderGraphMetaPanel, renderMetaPanel } from "./
 import { initTheme } from "./theme.js";
 import { focusGraphNode, initGraph, mountGraphPage, unmountGraphPage } from "./graph.js";
 
-let lastOpenedNote = null;
+let lastViewedNote = null;
 
 function escapeHtml(value) {
   return value
@@ -177,7 +177,7 @@ function graphSourceNote(data, route) {
   if (route?.slug) {
     return data.lookups.noteBySlug.get(route.slug) || null;
   }
-  return lastOpenedNote;
+  return lastViewedNote;
 }
 
 function renderGraphChrome(data, route) {
@@ -185,7 +185,7 @@ function renderGraphChrome(data, route) {
   const fromLabel = source?.title || "Vault Home";
   document.getElementById("note-breadcrumb").innerHTML = "Vault<span class=\"breadcrumb-separator\">/</span>Graph View";
   const graphTitle = document.getElementById("note-title");
-  graphTitle.textContent = `Graph View — from: ${fromLabel}`;
+  graphTitle.textContent = `Graph View - from: ${fromLabel}`;
   graphTitle.setAttribute("aria-label", `Graph view from ${fromLabel}`);
   document.getElementById("note-tags").innerHTML = [
     `<span class="tag-chip">Graph View</span>`,
@@ -349,7 +349,7 @@ async function renderRoute(data) {
   highlightActiveSidebar(route);
   setPageTitle(data.site.name, note.title);
   applyFade();
-  lastOpenedNote = note;
+  lastViewedNote = note;
   focusGraphNode(note);
   closeFloatingPanels();
   syncPanelToggleLabels();
