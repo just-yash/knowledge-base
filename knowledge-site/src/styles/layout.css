@@ -179,12 +179,13 @@
 
 @media (max-width: 860px) {
   .site-frame {
+    --mobile-topbar-fallback: 6.65rem;
     min-height: 100vh;
     padding: 1rem;
   }
 
   #topbar-slot {
-    min-height: var(--mobile-panel-top, 6.65rem);
+    min-height: var(--mobile-panel-top, var(--mobile-topbar-fallback));
   }
 
   .topbar {
@@ -234,10 +235,10 @@
 
   .sidebar-host {
     position: fixed;
-    inset: var(--mobile-panel-top, 6.65rem) auto 1rem 1rem;
+    inset: var(--mobile-panel-top, var(--mobile-topbar-fallback)) auto 1rem 1rem;
     width: min(82vw, 320px);
-    height: calc(100vh - var(--mobile-panel-top, 6.65rem) - 1rem);
-    max-height: calc(100vh - var(--mobile-panel-top, 6.65rem) - 1rem);
+    height: calc(100vh - var(--mobile-panel-top, var(--mobile-topbar-fallback)) - 1rem);
+    max-height: calc(100vh - var(--mobile-panel-top, var(--mobile-topbar-fallback)) - 1rem);
     z-index: 26;
     transform: translateX(-115%);
     transition: transform 220ms ease;
@@ -250,10 +251,10 @@
 
   .meta-host {
     position: fixed;
-    inset: var(--mobile-panel-top, 6.65rem) 1rem 1rem auto;
+    inset: var(--mobile-panel-top, var(--mobile-topbar-fallback)) 1rem 1rem auto;
     width: min(82vw, 340px);
-    height: calc(100vh - var(--mobile-panel-top, 6.65rem) - 1rem);
-    max-height: calc(100vh - var(--mobile-panel-top, 6.65rem) - 1rem);
+    height: calc(100vh - var(--mobile-panel-top, var(--mobile-topbar-fallback)) - 1rem);
+    max-height: calc(100vh - var(--mobile-panel-top, var(--mobile-topbar-fallback)) - 1rem);
     z-index: 26;
     transform: translateX(115%);
     transition: transform 220ms ease;
