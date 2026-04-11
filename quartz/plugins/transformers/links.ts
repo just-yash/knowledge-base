@@ -154,11 +154,8 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
                       ? { ...transformOptions, strategy: "relative" }
                       : transformOptions
 
-                  dest = node.properties.src = transformLink(
-                    file.data.slug!,
-                    dest,
-                    resourceTransformOptions,
-                  )
+                  dest = transformLink(file.data.slug!, dest, resourceTransformOptions)
+                  node.properties.src = dest
                 }
               }
             })
