@@ -14,7 +14,7 @@ Aether Atlas is a GitHub Pages-ready static website that publishes Obsidian-styl
 ```text
 knowledge-site/
 |-- content/
-|-- docs/
+|-- ../docs/ (generated output at repository root)
 |-- scripts/
 |   `-- build_site.py
 |   `-- build_site.ps1
@@ -48,8 +48,8 @@ knowledge-site/
    powershell -ExecutionPolicy Bypass -File knowledge-site/scripts/build_site.ps1
    ```
 
-3. The script scans the vault, resolves wikilinks, computes backlinks, builds sidebar data, copies assets, and writes a GitHub Pages-ready site into `knowledge-site/docs/`.
-4. Publish `knowledge-site/docs/` with GitHub Pages.
+3. The script scans the vault, resolves wikilinks, computes backlinks, builds sidebar data, copies assets, and writes a GitHub Pages-ready site into `/docs` at the repository root.
+4. Publish `/docs` with GitHub Pages.
 
 ## Supported Authoring Features
 
@@ -72,7 +72,7 @@ knowledge-site/
 2. Open repository settings.
 3. Go to `Pages`.
 4. Set source to `Deploy from a branch`.
-5. Select your branch and `/knowledge-site/docs`.
+5. Select your branch and `/docs`.
 
 ### Option 2: GitHub Actions
 
@@ -82,7 +82,7 @@ Use an action that runs:
 python knowledge-site/scripts/build_site.py
 ```
 
-and uploads `knowledge-site/docs` as the static artifact.
+and uploads `/docs` as the static artifact.
 
 ## Customizing for a Real Vault
 
