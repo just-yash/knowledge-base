@@ -148,13 +148,13 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
                 }
 
                 if (!isAbsoluteUrl(node.properties.src, { httpOnly: false })) {
-                  let dest = node.properties.src as RelativeURL
+                  const src = node.properties.src as RelativeURL
                   const resourceTransformOptions: TransformOptions =
-                    dest.startsWith("./") || dest.startsWith("../")
+                    src.startsWith("./") || src.startsWith("../")
                       ? { ...transformOptions, strategy: "relative" }
                       : transformOptions
 
-                  dest = transformLink(file.data.slug!, dest, resourceTransformOptions)
+                  const dest = transformLink(file.data.slug!, src, resourceTransformOptions)
                   node.properties.src = dest
                 }
               }
