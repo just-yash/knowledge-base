@@ -186,7 +186,7 @@
   .topbar {
     position: sticky;
     top: max(0.5rem, env(safe-area-inset-top));
-    z-index: 260;
+    z-index: 40;
     grid-template-columns: auto minmax(0, 1fr) auto;
     gap: 0.62rem 0.72rem;
   }
