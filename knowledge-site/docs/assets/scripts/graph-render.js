@@ -60,6 +60,11 @@ function drawRoundedRect(ctx, x, y, width, height, radius) {
   ctx.closePath();
 }
 
+/**
+ * Returns a deterministic pseudo-random value in [0, 1) for stable node jitter.
+ * @param {string} value
+ * @returns {number}
+ */
 function seededNoise(value) {
   let hash = 2166136261;
   for (let index = 0; index < value.length; index += 1) {
