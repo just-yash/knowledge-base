@@ -87,6 +87,16 @@ function closeFloatingPanels() {
   document.body.classList.remove("sidebar-open", "meta-open");
 }
 
+function syncMobilePanelOffset() {
+  const topbar = document.querySelector(".topbar");
+  if (!topbar) {
+    return;
+  }
+
+  const offset = Math.max(88, Math.ceil(topbar.getBoundingClientRect().bottom + 12));
+  document.documentElement.style.setProperty("--mobile-panel-top", `${offset}px`);
+}
+
 function setIconButton(button, icon, label, active = false) {
   if (!button) {
     return;
@@ -99,6 +109,7 @@ function setIconButton(button, icon, label, active = false) {
 }
 
 function syncPanelToggleLabels() {
+  syncMobilePanelOffset();
   const leftToggle = document.getElementById("left-panel-toggle");
   const rightToggle = document.getElementById("right-panel-toggle");
   if (!leftToggle || !rightToggle) {

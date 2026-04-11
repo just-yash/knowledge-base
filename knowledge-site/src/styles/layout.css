@@ -144,7 +144,7 @@
   }
 
   .meta-host {
-    grid-column: 1 / -1;
+    grid-column: 2;
     position: static;
     top: auto;
     height: auto;
@@ -184,15 +184,33 @@
   }
 
   .topbar {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 0.62rem 0.72rem;
+  }
+
+  .topbar-left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .topbar-right {
+    grid-column: 3;
+    grid-row: 1;
   }
 
   .topbar-center {
+    grid-column: 1 / -1;
+    grid-row: 2;
     grid-template-columns: 1fr auto;
+    gap: 0.65rem;
   }
 
   .brand-block {
     grid-column: 1 / -1;
+  }
+
+  .brand-title {
+    font-size: clamp(1.04rem, 4.8vw, 1.32rem);
   }
 
   .workspace-grid {
@@ -207,12 +225,14 @@
 
   .sidebar-host {
     position: fixed;
-    inset: 5.5rem auto 1rem 1rem;
+    inset: var(--mobile-panel-top, 6.65rem) auto 1rem 1rem;
     width: min(82vw, 320px);
-    height: auto;
-    z-index: 25;
+    height: calc(100vh - var(--mobile-panel-top, 6.65rem) - 1rem);
+    max-height: calc(100vh - var(--mobile-panel-top, 6.65rem) - 1rem);
+    z-index: 26;
     transform: translateX(-115%);
     transition: transform 220ms ease;
+    overflow: hidden;
   }
 
   body.sidebar-open .sidebar-host {
@@ -221,16 +241,23 @@
 
   .meta-host {
     position: fixed;
-    inset: 5.5rem 1rem 1rem auto;
+    inset: var(--mobile-panel-top, 6.65rem) 1rem 1rem auto;
     width: min(82vw, 340px);
-    height: auto;
-    z-index: 25;
+    height: calc(100vh - var(--mobile-panel-top, 6.65rem) - 1rem);
+    max-height: calc(100vh - var(--mobile-panel-top, 6.65rem) - 1rem);
+    z-index: 26;
     transform: translateX(115%);
     transition: transform 220ms ease;
     grid-column: auto;
+    overflow: hidden;
   }
 
   body.meta-open .meta-host {
     transform: translateX(0);
+  }
+
+  body.sidebar-open,
+  body.meta-open {
+    overflow: hidden;
   }
 }

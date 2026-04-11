@@ -77,7 +77,7 @@ function seededNoise(value) {
 function initializeNodePositions(nodes) {
   const goldenAngle = Math.PI * (3 - Math.sqrt(5));
   const maxDegree = Math.max(...nodes.map((node) => node.degree || 0), 1);
-  const graphRadius = 18 + Math.sqrt(nodes.length + 1) * 16;
+  const graphRadius = 22 + Math.sqrt(nodes.length + 1) * 18;
 
   nodes.forEach((node, index) => {
     const degreeRatio = Math.min(1, (node.degree || 0) / maxDegree);
@@ -351,11 +351,11 @@ function runPhysics(state) {
     return;
   }
 
-  const chargeStrength = 1650 * state.alpha;
-  const centerStrength = 0.0032 * state.alpha;
-  const radialStrength = 0.003 * state.alpha;
-  const linkStrength = 0.0125 * state.alpha;
-  const damping = 0.8;
+  const chargeStrength = 2100 * state.alpha;
+  const centerStrength = 0.0028 * state.alpha;
+  const radialStrength = 0.0034 * state.alpha;
+  const linkStrength = 0.0115 * state.alpha;
+  const damping = 0.82;
   let totalMotion = 0;
 
   for (let index = 0; index < nodes.length; index += 1) {
@@ -441,9 +441,9 @@ function runPhysics(state) {
     totalMotion += Math.abs(node.vx) + Math.abs(node.vy);
   }
 
-  state.alpha = Math.max(0, state.alpha * 0.975 - 0.0008);
-  if (totalMotion > 0.12) {
-    state.alpha = Math.max(state.alpha, 0.012);
+  state.alpha = Math.max(0, state.alpha * 0.978 - 0.0006);
+  if (totalMotion > 0.08) {
+    state.alpha = Math.max(state.alpha, 0.014);
   }
 }
 
