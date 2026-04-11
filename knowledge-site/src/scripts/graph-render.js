@@ -60,15 +60,30 @@ function drawRoundedRect(ctx, x, y, width, height, radius) {
   ctx.closePath();
 }
 
+function seededNoise(value) {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return ((hash >>> 0) % 10000) / 10000;
+}
+
 function initializeNodePositions(nodes) {
   const goldenAngle = Math.PI * (3 - Math.sqrt(5));
+  const maxDegree = Math.max(...nodes.map((node) => node.degree || 0), 1);
+  const graphRadius = 18 + Math.sqrt(nodes.length + 1) * 16;
 
   nodes.forEach((node, index) => {
+    const degreeRatio = Math.min(1, (node.degree || 0) / maxDegree);
+    const orbitRadius = graphRadius * (0.2 + (1 - degreeRatio) * 0.8);
+    node.orbitRadius = orbitRadius;
+
     if (!Number.isFinite(node.x) || !Number.isFinite(node.y)) {
-      const radius = 16 * Math.sqrt(index + 1);
-      const angle = index * goldenAngle;
-      node.x = Math.cos(angle) * radius;
-      node.y = Math.sin(angle) * radius;
+      const jitter = (seededNoise(node.id || `${index}`) - 0.5) * Math.PI * 0.14;
+      const angle = index * goldenAngle + jitter;
+      node.x = Math.cos(angle) * orbitRadius;
+      node.y = Math.sin(angle) * orbitRadius;
     }
 
     node.vx = Number.isFinite(node.vx) ? node.vx : 0;
@@ -331,9 +346,10 @@ function runPhysics(state) {
     return;
   }
 
-  const chargeStrength = 1700 * state.alpha;
+  const chargeStrength = 1650 * state.alpha;
   const centerStrength = 0.0032 * state.alpha;
-  const linkStrength = 0.013 * state.alpha;
+  const radialStrength = 0.003 * state.alpha;
+  const linkStrength = 0.0125 * state.alpha;
   const damping = 0.8;
   let totalMotion = 0;
 
@@ -407,6 +423,11 @@ function runPhysics(state) {
 
     node.vx += -node.x * centerStrength;
     node.vy += -node.y * centerStrength;
+    const distanceFromCenter = Math.sqrt(node.x * node.x + node.y * node.y) || 0.0001;
+    const orbitRadius = node.orbitRadius || 0;
+    const radialDelta = orbitRadius - distanceFromCenter;
+    node.vx += (node.x / distanceFromCenter) * radialDelta * radialStrength;
+    node.vy += (node.y / distanceFromCenter) * radialDelta * radialStrength;
     node.vx *= damping;
     node.vy *= damping;
     node.x += node.vx;

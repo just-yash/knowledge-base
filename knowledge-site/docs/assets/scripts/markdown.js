@@ -19,8 +19,41 @@ let markedConfigured = false;
 let activeRenderContext = null;
 
 function extractLeadingFrontmatter(markdown) {
+  function looksLikeFrontmatterBlock(block) {
+    const lines = String(block || "")
+      .split(/\r?\n/)
+      .map((line) => line.trim())
+      .filter(Boolean);
+
+    if (!lines.length) {
+      return false;
+    }
+
+    const keyPattern = /^[a-zA-Z0-9_-]+\s*:/;
+    if (!keyPattern.test(lines[0])) {
+      return false;
+    }
+
+    let currentKey = false;
+    for (const line of lines) {
+      if (keyPattern.test(line)) {
+        currentKey = true;
+        continue;
+      }
+      if (line.startsWith("- ") && currentKey) {
+        continue;
+      }
+      return false;
+    }
+
+    return true;
+  }
+
   const match = /^---\s*\r?\n([\s\S]*?)\r?\n---(?=\r?\n|$)/.exec(markdown);
   if (!match) {
+    return { body: markdown, hadFrontmatter: false };
+  }
+  if (!looksLikeFrontmatterBlock(match[1])) {
     return { body: markdown, hadFrontmatter: false };
   }
 
@@ -79,8 +112,8 @@ function extractLeadingManualFrontmatter(markdown) {
   };
 }
 
-function buildFrontmatterEntries(currentNote, hadFrontmatter) {
-  if (!hadFrontmatter || !currentNote?.metadata) {
+function buildFrontmatterEntries(currentNote) {
+  if (!currentNote?.metadata) {
     return [];
   }
 
@@ -428,10 +461,10 @@ export async function renderMarkdown(markdown, data, currentNote) {
   configureMarked(marked);
 
   const purify = createDOMPurify(window);
-  const { body: markdownBody, hadFrontmatter } = extractLeadingFrontmatter(markdown);
+  const { body: markdownBody } = extractLeadingFrontmatter(markdown);
   const { body: markdownWithoutManualFrontmatter, items: manualFrontmatterItems } = extractLeadingManualFrontmatter(markdownBody);
   const normalized = normalizeNoteMarkdown(markdownWithoutManualFrontmatter, currentNote);
-  const frontmatterEntries = buildFrontmatterEntries(currentNote, hadFrontmatter);
+  const frontmatterEntries = buildFrontmatterEntries(currentNote);
   activeRenderContext = {
     data,
     currentNote,

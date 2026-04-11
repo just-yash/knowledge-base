@@ -178,7 +178,7 @@ async function buildPreviewRenderer(container, state) {
     },
     onNodeClick(node) {
       setActiveGraphNode(node.id);
-      navigateToGraph(node.slug);
+      navigateToNote(node.slug);
     },
     onBackgroundClick() {
       state.hoverNodeId = null;

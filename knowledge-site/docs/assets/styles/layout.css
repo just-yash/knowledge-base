@@ -60,12 +60,30 @@
   z-index: 30;
   isolation: isolate;
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 0.85rem;
   align-items: center;
   padding: 0.8rem 0.95rem;
   border-radius: var(--radius-xl);
   overflow: visible;
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-right {
+  justify-content: flex-end;
+}
+
+.topbar-center {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  align-items: center;
 }
 
 .brand-block {
@@ -81,16 +99,9 @@
   text-wrap: balance;
 }
 
-.topbar-actions {
-  display: flex;
-  gap: 0.55rem;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
 .topbar-search {
   position: relative;
+  min-width: 0;
 }
 
 .search-icon {
@@ -125,7 +136,11 @@
   }
 
   .topbar {
-    grid-template-columns: minmax(240px, 290px) minmax(0, 1fr) auto;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .topbar-center {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
   }
 
   .meta-host {
@@ -170,6 +185,14 @@
 
   .topbar {
     grid-template-columns: 1fr;
+  }
+
+  .topbar-center {
+    grid-template-columns: 1fr auto;
+  }
+
+  .brand-block {
+    grid-column: 1 / -1;
   }
 
   .workspace-grid {
