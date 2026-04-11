@@ -1,17 +1,20 @@
-# Quartz v4
+# Aether Atlas Knowledge Base
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+This repository is configured to publish **Aether Atlas only**.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+## Build and publish
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+- Build locally:
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+  ```bash
+  python knowledge-site/scripts/build_site.py
+  ```
 
-## Sponsors
+- Output directory:
+  - `site/`
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+- GitHub Pages deployment:
+  - Workflow: `.github/workflows/deploy-knowledge-site.yml`
+
+For full usage details, see:
+- `knowledge-site/README.md`
