@@ -67,7 +67,7 @@ knowledge-base/
 
 ## GitHub Pages Setup
 
-### Option 1: GitHub Actions
+### GitHub Actions
 
 Use an action that runs:
 
