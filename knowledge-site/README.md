@@ -50,7 +50,7 @@ knowledge-base/
    ```
 
 3. The script scans the vault, resolves wikilinks, computes backlinks, builds sidebar data, copies assets, and writes a GitHub Pages-ready site into `/site` at the repository root.
-4. Publish `/site` with GitHub Pages Actions artifact upload.
+4. Publish `/site` via GitHub Pages using GitHub Actions artifact upload.
 
 ## Supported Authoring Features
 
