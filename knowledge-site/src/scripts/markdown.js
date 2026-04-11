@@ -53,7 +53,7 @@ function extractLeadingFrontmatter(markdown) {
   if (!match) {
     return { body: markdown, hadFrontmatter: false };
   }
-  if (!looksLikeFrontmatterBlock(match.group(1))) {
+  if (!looksLikeFrontmatterBlock(match[1])) {
     return { body: markdown, hadFrontmatter: false };
   }
 
