@@ -114,10 +114,26 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const headerFont = cfg.theme.typography.header
       const bodyFont = cfg.theme.typography.body
       const fonts = await getSatoriFonts(headerFont, bodyFont)
+      if (fonts.length === 0) {
+        console.warn(
+          styleText("yellow", "Warning: Skipping CustomOgImages because no fonts could be loaded"),
+        )
+        return
+      }
 
       for (const [_tree, vfile] of content) {
         if (vfile.data.frontmatter?.socialImage !== undefined) continue
-        yield processOgImage(ctx, vfile.data, fonts, fullOptions)
+        try {
+          yield processOgImage(ctx, vfile.data, fonts, fullOptions)
+        } catch (error) {
+          const details = error instanceof Error ? error.message : String(error)
+          console.warn(
+            styleText(
+              "yellow",
+              `Warning: Failed to generate OG image for '${vfile.data.slug ?? "unknown"}': ${details}`,
+            ),
+          )
+        }
       }
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
@@ -125,13 +141,29 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const headerFont = cfg.theme.typography.header
       const bodyFont = cfg.theme.typography.body
       const fonts = await getSatoriFonts(headerFont, bodyFont)
+      if (fonts.length === 0) {
+        console.warn(
+          styleText("yellow", "Warning: Skipping CustomOgImages because no fonts could be loaded"),
+        )
+        return
+      }
 
       // find all slugs that changed or were added
       for (const changeEvent of changeEvents) {
         if (!changeEvent.file) continue
         if (changeEvent.file.data.frontmatter?.socialImage !== undefined) continue
         if (changeEvent.type === "add" || changeEvent.type === "change") {
-          yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
+          try {
+            yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
+          } catch (error) {
+            const details = error instanceof Error ? error.message : String(error)
+            console.warn(
+              styleText(
+                "yellow",
+                `Warning: Failed to generate OG image for '${changeEvent.file.data.slug ?? "unknown"}': ${details}`,
+              ),
+            )
+          }
         }
       }
     },

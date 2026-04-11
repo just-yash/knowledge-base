@@ -292,7 +292,7 @@ function drawNode(ctx, state, node) {
   ctx.restore();
 }
 
-function fitToVisible(state, padding = 36) {
+function fitToVisible(state, padding = 18) {
   const nodes = state.visibleNodes.length ? state.visibleNodes : state.model.nodes;
   if (!nodes.length || !state.width || !state.height) {
     return;
@@ -331,10 +331,10 @@ function runPhysics(state) {
     return;
   }
 
-  const chargeStrength = 2200 * state.alpha;
-  const centerStrength = 0.0025 * state.alpha;
-  const linkStrength = 0.014 * state.alpha;
-  const damping = 0.86;
+  const chargeStrength = 1250 * state.alpha;
+  const centerStrength = 0.0055 * state.alpha;
+  const linkStrength = 0.02 * state.alpha;
+  const damping = 0.88;
   let totalMotion = 0;
 
   for (let index = 0; index < nodes.length; index += 1) {
@@ -380,7 +380,7 @@ function runPhysics(state) {
       dy = 0.001;
     }
 
-    const desiredLength = 34 + Math.min(Math.max(source.degree || 0, target.degree || 0), 18) * 1.9;
+    const desiredLength = 22 + Math.min(Math.max(source.degree || 0, target.degree || 0), 16) * 1.2;
     const delta = distance - desiredLength;
     const force = delta * linkStrength;
     const forceX = (dx / distance) * force;
@@ -535,14 +535,14 @@ export async function createGraphRenderer(container, model, callbacks = {}) {
     visibleNodeIds: null,
     visibleNodes: model.nodes,
     visibleLinks: model.links,
-    minZoom: 0.18,
+    minZoom: 0.22,
     maxZoom: 8,
     width: 0,
     height: 0,
     scale: 1,
     offsetX: 0,
     offsetY: 0,
-    alpha: 0.26,
+    alpha: 0.34,
     pixelRatio: window.devicePixelRatio || 1,
     needsDraw: true,
     rafId: 0,

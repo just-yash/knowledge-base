@@ -16,7 +16,7 @@
   gap: 1rem;
   height: 100%;
   min-height: 0;
-  overflow: visible;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -63,11 +63,16 @@
   gap: 0.28rem;
   margin-top: 1rem;
   padding-right: 0.3rem;
-  overflow: auto;
+  overflow: hidden;
   overscroll-behavior: auto;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
   scroll-behavior: smooth;
+}
+
+.sidebar:hover .sidebar-tree,
+.sidebar:focus-within .sidebar-tree {
+  overflow-y: auto;
 }
 
 .tree-folder,
@@ -169,12 +174,17 @@
   display: grid;
   align-content: start;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
   overscroll-behavior: auto;
   scrollbar-gutter: stable both-edges;
   scrollbar-width: thin;
   scroll-behavior: smooth;
+}
+
+.note-panel:hover,
+.note-panel:focus-within {
+  overflow-y: auto;
 }
 
 .note-chrome {
@@ -183,7 +193,7 @@
   gap: 1rem;
   align-items: center;
   margin-bottom: 1rem;
-  width: min(100%, 54rem);
+  width: min(100%, 52rem);
   margin-inline: auto;
 }
 
@@ -216,7 +226,7 @@
   display: grid;
   gap: 0.55rem;
   margin-bottom: 1.4rem;
-  width: min(100%, 54rem);
+  width: min(100%, 52rem);
   margin-inline: auto;
 }
 
@@ -228,7 +238,7 @@
 }
 
 .note-body {
-  width: min(100%, 54rem);
+  width: min(100%, 52rem);
   margin-inline: auto;
   font-size: 1.02rem;
   line-height: 1.8;
@@ -862,13 +872,18 @@ body[data-theme="dark"] .note-body mark {
   padding: 0.95rem;
   height: 100%;
   max-height: none;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
   overscroll-behavior: auto;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
   scroll-behavior: smooth;
   font-size: 0.93rem;
+}
+
+.meta-panel:hover,
+.meta-panel:focus-within {
+  overflow-y: auto;
 }
 
 .meta-panel.graph-meta-mode {
@@ -906,13 +921,18 @@ body[data-theme="dark"] .note-body mark {
   display: grid;
   gap: 0.45rem;
   align-content: start;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
   max-height: 100%;
   padding-right: 0.2rem;
   min-height: 0;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
+}
+
+.backlinks-list:hover,
+.backlinks-list:focus-within {
+  overflow-y: auto;
 }
 
 .backlinks-list > * {

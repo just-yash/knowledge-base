@@ -517,6 +517,10 @@ p {
   line-height: 1.6rem;
 }
 
+body[data-slug*="/Poetry/"] article p {
+  white-space: pre-wrap;
+}
+
 .table-container {
   overflow-x: auto;
 
@@ -554,7 +558,9 @@ tr {
 }
 
 img {
+  width: 100%;
   max-width: 100%;
+  height: auto;
   border-radius: 5px;
   margin: 1rem 0;
   content-visibility: auto;
@@ -621,11 +627,17 @@ ol.overflow {
   overflow-y: hidden;
 }
 
-.external-embed.youtube,
-iframe.pdf {
+.external-embed.youtube {
   aspect-ratio: 16 / 9;
-  height: 100%;
   width: 100%;
+  border-radius: 5px;
+}
+
+iframe.pdf {
+  display: block;
+  width: 100%;
+  min-height: 70vh;
+  border: none;
   border-radius: 5px;
 }
 
