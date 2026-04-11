@@ -8,6 +8,8 @@ import { renderFolderMetaPanel, renderGraphMetaPanel, renderMetaPanel } from "./
 import { initTheme } from "./theme.js";
 import { focusGraphNode, initGraph, mountGraphPage, unmountGraphPage } from "./graph.js";
 
+let lastOpenedNote = null;
+
 function escapeHtml(value) {
   return value
     .replaceAll("&", "&amp;")
@@ -171,11 +173,21 @@ function renderFolderChrome(folder) {
   ].join("");
 }
 
+function graphSourceNote(data, route) {
+  if (route?.slug) {
+    return data.lookups.noteBySlug.get(route.slug) || null;
+  }
+  return lastOpenedNote;
+}
+
 function renderGraphChrome(data, route) {
-  document.getElementById("note-breadcrumb").innerHTML = "Vault";
-  document.getElementById("note-title").textContent = "Knowledge Graph";
+  const source = graphSourceNote(data, route);
+  const fromLabel = source?.title || "Vault Home";
+  document.getElementById("note-breadcrumb").innerHTML = "Vault<span class=\"breadcrumb-separator\">/</span>Graph View";
+  document.getElementById("note-title").textContent = `Graph View \u2014 from: ${fromLabel}`;
   document.getElementById("note-tags").innerHTML = [
     `<span class="tag-chip">Graph View</span>`,
+    `<span class="tag-chip">from: ${escapeHtml(fromLabel)}</span>`,
     `<span class="tag-chip">${data.graph.nodes.length} notes</span>`,
     `<span class="tag-chip">${data.graph.edges.length} links</span>`
   ]
@@ -228,13 +240,13 @@ function renderFolderBody(folder) {
   `;
 }
 
-function renderGraphBody() {
+function renderGraphBody(sourceLabel = "Vault Home") {
   return `
     <section class="graph-page">
       <header class="graph-page-header">
         <p class="eyebrow">Graph View</p>
         <h2>Explore the full note graph</h2>
-        <p class="graph-page-copy" data-graph-status>Hover notes to inspect them. Click any node to open its note.</p>
+        <p class="graph-page-copy" data-graph-status>Graph View — from: ${escapeHtml(sourceLabel)}. Hover notes to inspect neighbors, then click any node to open its note.</p>
       </header>
       <div class="graph-page-shell">
         <div id="graph-page-canvas" class="graph-canvas graph-canvas-full"></div>
@@ -299,12 +311,13 @@ async function renderRoute(data) {
   }
 
   if (route.type === "graph") {
+    const source = graphSourceNote(data, route);
     renderGraphChrome(data, route);
     notePanel.classList.add("is-graph-mode");
-    document.getElementById("note-body").innerHTML = renderGraphBody();
+    document.getElementById("note-body").innerHTML = renderGraphBody(source?.title || "Vault Home");
     renderGraphMetaPanel(data);
     highlightActiveSidebar(null);
-    setPageTitle(data.site.name, "Knowledge Graph");
+    setPageTitle(data.site.name, "Graph View");
     applyFade();
     closeFloatingPanels();
     syncPanelToggleLabels();
@@ -334,6 +347,7 @@ async function renderRoute(data) {
   highlightActiveSidebar(route);
   setPageTitle(data.site.name, note.title);
   applyFade();
+  lastOpenedNote = note;
   focusGraphNode(note);
   closeFloatingPanels();
   syncPanelToggleLabels();
