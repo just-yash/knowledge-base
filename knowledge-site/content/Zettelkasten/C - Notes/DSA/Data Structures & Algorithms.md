@@ -11,7 +11,7 @@ Tags :   [[DSA]] ; [[GATE]]
 - [[Array]]
 - [[Linked List]]
 - [[Stack]]
-- [[Tree_DSA|Tree]]
+- [[Tree]]
 
 ## [[Algorithm]]
 - [[Algorithm Basics]]

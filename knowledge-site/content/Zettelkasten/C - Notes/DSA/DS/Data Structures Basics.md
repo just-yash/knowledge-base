@@ -71,8 +71,6 @@ The different types of data structures that we are going to study, they are the 
 | Data elements can be traversed in a single run                                                                            | Data elements cant be traversed in a single run     |
 | array, stack, queue, linked list                                                                                          | Trees, graphs, heaps                                |
 
-^15c09e
-
 #### Homogeneous Data Structures
 - contain only similar type of data. 
 - simplest Eg: Array containing only integers or array containing only strings, etc.
@@ -86,7 +84,7 @@ The different types of data structures that we are going to study, they are the 
 2. [[Stack]]
 3. [[Queue]]
 4. [[Linked List]]
-5. [[Tree_DSA]]
+5. [[Tree]]
 6. [[Graph]]
 7. [[Hashing]]
 

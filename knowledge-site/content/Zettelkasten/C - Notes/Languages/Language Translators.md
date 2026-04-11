@@ -83,7 +83,7 @@ Examples :
 - Each Language VM understands only its own bytecode. 
 
 Eg :
-- [[Java]] Source (.java) → Java Compiler → Bytecode(.class)
+- Java Source (.java) → Java Compiler → Bytecode(.class)
 - Python Source (.py) → Python Compiler → Bytecode (.pyc)
 
 ---

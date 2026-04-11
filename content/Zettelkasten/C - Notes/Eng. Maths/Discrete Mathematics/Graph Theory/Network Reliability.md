@@ -47,7 +47,7 @@ Tags : [[Graph]] ; [[Maths]]
     
 ###### Example
 
-In a [[Tree_DM|tree]] with $n$ vertices, every edge is a bridge because removing any edge splits the [[Tree_DM]] into two separate components.
+In a [[Tree|tree]] with $n$ vertices, every edge is a bridge because removing any edge splits the [[tree]] into two separate components.
 
 ---
 ## Cut-Sets

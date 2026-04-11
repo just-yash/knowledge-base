@@ -107,7 +107,7 @@ The minimum number of colors required to color the vertices of a graph such that
 
 - [[Graph Theory#^e04fc8|Trivial graph]] : $\chi(G) = 1$
 
-- [[Tree_DM]] : $\chi(G) = 2$
+- [[Tree]] : $\chi(G) = 2$
   
 ---
 # Questions 
