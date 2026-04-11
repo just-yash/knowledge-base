@@ -87,7 +87,7 @@ Examples:
 - Fortran
 
 ---
-### II. Object-Oriented Programming (OOP) Paradigm
+### II. Object-Oriented Programming ([[OOPs]]) Paradigm
 - Program organized around objects
 - Objects contain data and methods
 
@@ -95,7 +95,7 @@ Core Concepts:
 - Encapsulation
 - Inheritance
 - Polymorphism
-- Abstraction
+- [[DB System Concepts#Data Abstraction|Abstraction]]
 
 Characteristics:
 - Models real-world entities
@@ -137,7 +137,7 @@ Example:
 ---
 ## C. Declarative / Domain - Oriented Languages
 - 4GL
-	- very high abstraction 
+	- very high [[DB System Concepts#Data Abstraction|abstraction]] 
 	- narrow domain focus
 	- Minimal Code
 	- Productivity over Control

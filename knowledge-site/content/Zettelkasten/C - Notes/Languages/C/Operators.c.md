@@ -29,6 +29,7 @@ int b;
 b = 2%5    // 2   if numerator < denominator : numerator
 ```
 
+- Operands of `%` Modulus operator must be `int`
 - Division of 2 integers will always give an integer. 
 - Division of 1 int and 1 float / double will give 1 float / double. 
 	- c always prefers the larger datatype. 
@@ -479,7 +480,7 @@ here a = 5 which is greater than 3. condition is true
 
 ###### Example : Finding the greatest of 3 numbers using 2 other variables
 ![[Pasted image 20260205235238.png]]
-The above [[Tree]] is called Decision Tree.
+The above [[Tree_DSA|tree]] is called Decision Tree.
 ```c
 int a, b, c, d, e;
 d = a > b ? a : b;
@@ -525,6 +526,8 @@ a = 3 ? 4 ? 2 : 4 : 3 : 5
 ## 9. sizeof Operator
 - unary operator 
 - gives size in terms of bytes of its operand
+- result is `unsigned int` type
+- Operand can be : [[Tokens.c#2.1 Variables|variables]] , Expression , [[Tokens.c#3. Constants / Literals|literals]] , [[datatypes|datatype]]  
 - depends on the compiler
 ### Rules
 - Parentheses is optional
