@@ -63,18 +63,12 @@
   gap: 0.28rem;
   margin-top: 1rem;
   padding-right: 0.3rem;
-  overflow: hidden;
+  overflow-y: auto;
   overscroll-behavior: auto;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
   scroll-behavior: smooth;
 }
-
-.sidebar:hover .sidebar-tree,
-.sidebar:focus-within .sidebar-tree {
-  overflow-y: auto;
-}
-
 .tree-folder,
 .tree-note {
   display: grid;
