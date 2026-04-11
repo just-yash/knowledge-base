@@ -63,8 +63,7 @@
   gap: 0.28rem;
   margin-top: 1rem;
   padding-right: 0.3rem;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   overscroll-behavior: auto;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
