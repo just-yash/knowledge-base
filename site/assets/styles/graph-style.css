@@ -1,0 +1,171 @@
+.graph-panel {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  flex: 0 0 auto;
+  gap: 0.72rem;
+  padding: 0.95rem;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+  color: var(--graph-text);
+  background: var(--graph-panel-bg);
+  border: 1px solid var(--graph-border);
+  box-shadow: var(--shadow);
+}
+
+.graph-header {
+  min-width: 0;
+  display: grid;
+  gap: 0.18rem;
+}
+
+.graph-launch {
+  display: grid;
+  gap: 0.24rem;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+
+.graph-launch:hover .graph-active-note,
+.graph-launch:focus-visible .graph-active-note {
+  color: var(--accent-strong);
+}
+
+.graph-launch:focus-visible {
+  outline: 2px solid rgba(139, 91, 52, 0.28);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.graph-launch h2,
+.graph-page-header h2 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  line-height: 1.08;
+  color: var(--graph-text);
+}
+
+.graph-launch h2 {
+  font-size: 1.16rem;
+}
+
+.graph-panel .eyebrow,
+.graph-page .eyebrow {
+  color: var(--graph-text-soft);
+}
+
+.graph-active-note,
+.graph-page-copy {
+  margin: 0;
+  color: var(--graph-text-soft);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.graph-canvas-shell,
+.graph-page-shell {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  min-height: 0;
+  border-radius: 24px;
+  border: 1px solid var(--graph-shell-border);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.03)),
+    var(--graph-shell-bg);
+}
+
+.graph-canvas-shell {
+  padding: 0.45rem;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
+  height: auto;
+}
+
+.graph-page-shell {
+  padding: 0.65rem;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.graph-canvas {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 40%),
+    var(--graph-canvas-bg);
+}
+
+.graph-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+.graph-canvas canvas:active {
+  cursor: grabbing;
+}
+
+.graph-canvas-full {
+  min-height: 0;
+  height: 100%;
+}
+
+.note-panel.is-graph-mode {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.note-panel.is-graph-mode .note-body {
+  display: grid;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.graph-page {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 1rem;
+  height: 100%;
+  min-height: 0;
+}
+
+.graph-page-header {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.graph-page-header h2 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+@media (max-width: 860px) {
+  .graph-panel {
+    height: auto;
+    min-height: 0;
+  }
+
+  .graph-canvas-shell {
+    aspect-ratio: 1 / 1;
+    min-height: 0;
+  }
+
+  .graph-canvas-full {
+    min-height: 22rem;
+  }
+}
