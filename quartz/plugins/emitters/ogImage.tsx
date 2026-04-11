@@ -125,11 +125,12 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
         if (vfile.data.frontmatter?.socialImage !== undefined) continue
         try {
           yield processOgImage(ctx, vfile.data, fonts, fullOptions)
-        } catch {
+        } catch (error) {
+          const details = error instanceof Error ? error.message : String(error)
           console.warn(
             styleText(
               "yellow",
-              `Warning: Failed to generate OG image for '${vfile.data.slug ?? "unknown"}'`,
+              `Warning: Failed to generate OG image for '${vfile.data.slug ?? "unknown"}': ${details}`,
             ),
           )
         }
@@ -154,11 +155,12 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
         if (changeEvent.type === "add" || changeEvent.type === "change") {
           try {
             yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
-          } catch {
+          } catch (error) {
+            const details = error instanceof Error ? error.message : String(error)
             console.warn(
               styleText(
                 "yellow",
-                `Warning: Failed to generate OG image for '${changeEvent.file.data.slug ?? "unknown"}'`,
+                `Warning: Failed to generate OG image for '${changeEvent.file.data.slug ?? "unknown"}': ${details}`,
               ),
             )
           }

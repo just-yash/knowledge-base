@@ -93,17 +93,26 @@ export async function fetchTtf(
     const cssResponse = await fetch(
       `https://fonts.googleapis.com/css2?family=${fontName}:wght@${weight}`,
     )
-    const css = await cssResponse.text()
-
-    // Extract .ttf url from css file
-    const urlRegex = /url\((https:\/\/fonts.gstatic.com\/s\/.*?.ttf)\)/g
-    const match = urlRegex.exec(css)
-
-    if (!cssResponse.ok || !match) {
+    if (!cssResponse.ok) {
       console.warn(
         styleText(
           "yellow",
-          `Warning: Failed to fetch font ${rawFontName} (${weight}) from Google Fonts`,
+          `Warning: Failed to fetch font ${rawFontName} (${weight}) from Google Fonts: ${cssResponse.status} ${cssResponse.statusText}`,
+        ),
+      )
+      return
+    }
+
+    const css = await cssResponse.text()
+
+    // Extract .ttf url from css file
+    const urlRegex = /url\((https:\/\/fonts[.]gstatic[.]com\/s\/.*?.ttf)\)/g
+    const match = urlRegex.exec(css)
+    if (!match) {
+      console.warn(
+        styleText(
+          "yellow",
+          `Warning: Could not find a TTF URL for font ${rawFontName} (${weight}) in Google Fonts CSS`,
         ),
       )
       return
@@ -126,11 +135,12 @@ export async function fetchTtf(
     await fs.writeFile(cachePath, fontData)
 
     return fontData
-  } catch {
+  } catch (error) {
+    const details = error instanceof Error ? error.message : String(error)
     console.warn(
       styleText(
         "yellow",
-        `Warning: Failed to fetch font ${rawFontName} (${weight}), OG image generation may be skipped`,
+        `Warning: Failed to fetch font ${rawFontName} (${weight}), OG image generation may be skipped: ${details}`,
       ),
     )
     return undefined
