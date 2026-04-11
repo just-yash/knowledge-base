@@ -517,7 +517,7 @@ p {
   line-height: 1.6rem;
 }
 
-article p {
+body[data-slug*="/Poetry/"] article p {
   white-space: pre-wrap;
 }
 
