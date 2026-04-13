@@ -1,4 +1,4 @@
-3
+
 Date : 2026-03-30  
 Tags : [[Research]] ; [[Computer Vision]]  
 ~***Yash Agrawall***~
@@ -27,7 +27,7 @@ Tags : [[Research]] ; [[Computer Vision]]
 - Output : Feature Vector (embedding, typically 128 - 512 dimensions)
 
 ---
-##  Intuition (Explain Like I’m 12)
+## 🧩 Intuition (Explain Like I’m 12)
 Turn every face into a unique “fingerprint number” so similar faces have similar numbers.
 
 ---

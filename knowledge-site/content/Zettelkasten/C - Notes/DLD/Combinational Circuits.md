@@ -10,6 +10,7 @@ Tags :  [[DLD]]
 	- memory (previous values) are irrelevant
 - When [[Logic Gates]] are connected together to produce a specified output on certain specified combinations of input variables, with no memory involved, then the resulting circuit is called a combinational circuit
 - it can have n no. of inputs and m no. of outputs
+ ![[Pasted image 20260407195532.png]]
 - Applications : 
 	- the part of the Computer that deals with Arithmetic Logic (ALU) uses a number of Combinational Circuits
 	- Half adders, Full adders, Half Subtractors, Full Subtractor, Multiplexer, Demultiplexer, Encoder, Decoder are also made by using combinational logic. 
@@ -37,3 +38,4 @@ Tags :  [[DLD]]
 ---
 # References 
 
+1.  [Digital Logic YouTube Lecture for GATE](https://www.youtube.com/watch?v=lH0sYax5Yg0)

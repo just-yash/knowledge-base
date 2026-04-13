@@ -121,18 +121,62 @@ A1) d
 A2) c) gcdbfea   
 
 ---
+###### Q3) The height of a tree is defined as the number of edges on the longest path in the tree. The function shown in the pseudocode below is invoked as height(root) to compute the height of a binary tree rooted at the tree pointer root.
 
+```c
+ int height (treeptr n)
+{ if (n == NULL) return -1;
+   if (n -> left == NULL)
+            if (n -> right == NULL) return 0;
+            else return    B1;
+   else { h1 = height (n -> left);
+   if (n -> right == NULL) return (1+h1);
+   else { h2 = height (n -> right);
+   return   B2; 
+    }
+  }   
+}
+```
+###### The appropriate expressions for the two boxes B1 and B2 are
+###### (A) B1:(1+height(n->right)), B2: (1+max(h1,h2)) 
+###### (B) B1:(height(n->right)), B2 : (1+ max(h1,h2)) 
+###### (C) B1 : height(n->right), B2 : max(h1,h2) 
+###### (D) B1: (1+height(n->right)), B2 : max(h1,h2)
 
-
-
+A3) B1:(1+height(n->right)), B2: (1+max(h1,h2))   
 
 ---
-# Summary 
+###### Q4) Consider the following C program segment
+```c
+struct CellNode
+{
+  struct CelINode *leftchild;
+  int element;
+  struct CelINode *rightChild;
+}
+ 
+int Dosomething(struct CelINode *ptr)
+{
+    int value = 0;
+    if (ptr != NULL)
+    {
+      if (ptr->leftChild != NULL)
+        value = 1 + DoSomething(ptr->leftChild);
+      if (ptr->rightChild != NULL)
+        value = max(value, 1 + DoSomething(ptr->rightChild));
+    }
+    return (value);
+} 
+```
+###### The value returned by the function DoSomething when a pointer to the root of a non-empty tree is passed as argument is
+###### (A) The number of leaf nodes in the tree 
+###### (B) The number of nodes in the tree 
+###### (C) The number of internal nodes in the tree 
+###### (D) The height of the tree
 
-
-
-
+A4) (D) The height of the tree  
 
 ---
 # References 
 
+1. [YouTube Lecture](https://youtu.be/2o2vX0ZqQ_Y?si=smcAhkXJLgfI-91V)

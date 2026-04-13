@@ -216,27 +216,6 @@ int main() {
     
 - Reduces **type safety**, so must be used carefully.
     
-
----
-
-If you want next: I can convert this into **1-page revision sheet / MCQs / viva traps (very useful for exams)**.
-
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
 ---
 # References 
 
