@@ -85,11 +85,14 @@ Degree = 3
 ---
 ## Keys 
 
+- Should have no Redundant values
+- Needed to identify a table 
+
 ---
 ### Super Key
 
 - Any set of attributes that uniquely identifies a tuple.
-- May contain extra attributes.
+- May contain extra attributes → not minimal 
 
 ###### Example:
 
@@ -100,7 +103,8 @@ Degree = 3
 ---
 ### Candidate Key
 
-- Minimal super key.
+- Key is to be always a minimal super key 
+- It is to be designed in such a way that it has minimal attributes 
 - No redundant attributes.
 
 ###### Example:
@@ -112,6 +116,7 @@ Degree = 3
 ---
 ### Primary Key
 
+- Any one of the candidate key is called a primary key (we choose)
 - Candidate key selected to uniquely identify tuples.
 - Must be:
     - Unique
@@ -136,6 +141,8 @@ Degree = 3
 ---
 ### Foreign Key
 
+- When establishing a relationship between 2 tables → a common attribute 
+	- Primary key of one table common with Candidate key of another 
 - Attribute in one relation referring to primary key of another.
 
 ###### Example:
@@ -153,12 +160,18 @@ Student(DeptID) references Department(DeptID)
 ---
 ### Entity Integrity 
 
-- Primary key cannot be NULL 
+- Once a Candidate key is set as Primary → it cant be NULL 
+- Otherwise integrity breaks
 
 ---
 ### Referential Integrity 
 
-- Foreign key must match an existing value in referenced table or be NULL 
+- A constraint that ensures consistency between related relations
+- A **foreign key (FK)** in one relation must refer to a **primary key (PK)** in another relation
+- The FK attribute in relation R1(Referencing Relation) must have the **same domain** as the PK of relation R2(Referenced Relation)
+- For every tuple t₁ in R1:
+	- Either FK value = some PK value in R2
+	- Or FK value is **NULL**
 
 ---
 ### Domain Constraints 
@@ -171,7 +184,7 @@ Student(DeptID) references Department(DeptID)
 ---
 ### Key Constraints 
 
-- Key must be unique across tuples 
+- Two distinct tuples at any state of relation cannot have identical values for the attributes in the key 
 
 ---
 ## Characteristics of Relations 

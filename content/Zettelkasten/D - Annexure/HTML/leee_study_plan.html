@@ -1,0 +1,275 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:1rem 0;font-family:var(--font-sans);color:var(--color-text-primary)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.5rem}
+.tag{font-size:11px;padding:2px 8px;border-radius:4px;border:.5px solid;white-space:nowrap}
+.t-new{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info)}
+.t-rev{background:var(--color-background-success);color:var(--color-text-success);border-color:var(--color-border-success)}
+.t-apt{background:var(--color-background-warning);color:var(--color-text-warning);border-color:var(--color-border-warning)}
+.t-pyq{background:var(--color-background-secondary);color:var(--color-text-secondary);border-color:var(--color-border-tertiary)}
+.t-exam{background:#FAECE7;color:#993C1D;border-color:#F0997B}
+.t-mock{background:#EEEDFE;color:#534AB7;border-color:#AFA9EC}
+.day-row{display:grid;grid-template-columns:80px 1fr;gap:0;border-bottom:.5px solid var(--color-border-tertiary);padding:.65rem 0}
+.day-row:last-child{border-bottom:none}
+.dlabel{font-size:13px;color:var(--color-text-secondary);padding-right:.75rem;border-right:.5px solid var(--color-border-tertiary)}
+.dlabel strong{display:block;font-size:14px;font-weight:500;color:var(--color-text-primary)}
+.dcontent{padding-left:1rem}
+.dtitle{font-size:14px;font-weight:500;margin-bottom:.4rem}
+.blocks{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:.4rem}
+.note{font-size:12px;color:var(--color-text-secondary);line-height:1.6;margin-top:.3rem}
+.section-head{font-size:12px;font-weight:500;letter-spacing:.05em;color:var(--color-text-secondary);text-transform:uppercase;margin:1.5rem 0 .75rem;padding-bottom:.4rem;border-bottom:.5px solid var(--color-border-tertiary)}
+.phase-bar{width:3px;height:100%;position:absolute;left:0;top:0;border-radius:2px}
+.phase-wrap{position:relative;padding-left:1rem}
+.bar-internal{border-left:3px solid #EF9F27;padding-left:1rem}
+.bar-new{border-left:3px solid #85B7EB;padding-left:1rem}
+.bar-rev{border-left:3px solid #5DCAA5;padding-left:1rem}
+.bar-sem{border-left:3px solid #7F77DD;padding-left:1rem}
+.time-split{display:flex;gap:4px;margin-top:.4rem;flex-wrap:wrap}
+.tseg{font-size:11px;padding:1px 6px;border-radius:3px}
+.ts-new{background:var(--color-background-info);color:var(--color-text-info)}
+.ts-rev{background:var(--color-background-success);color:var(--color-text-success)}
+.ts-apt{background:var(--color-background-warning);color:var(--color-text-warning)}
+.ts-pyq{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+</style>
+
+<div class="wrap">
+
+<div class="legend">
+<span class="tag t-new">New topic</span>
+<span class="tag t-rev">Revision</span>
+<span class="tag t-apt">Aptitude</span>
+<span class="tag t-pyq">PYQs</span>
+<span class="tag t-exam">Internal exam</span>
+<span class="tag t-mock">Mock / full test</span>
+</div>
+
+<div class="section-head">Phase 1 — Internals + Aptitude Start (Apr 15–18)</div>
+<div class="bar-internal">
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 15</strong>Today</div>
+<div class="dcontent">
+<div class="dtitle">Internals: Engg Eco + Java</div>
+<div class="blocks"><span class="tag t-exam">Exams 9:45 & 11:00</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">After exams: Do your first aptitude session. Use GATE General Aptitude PYQs — quantitative reasoning, number series, syllogisms. Just 45 min. Get a feel for the format. No pressure today.</div>
+<div class="time-split"><span class="tseg ts-apt">Apt: 45 min</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 16</strong>Exam Day</div>
+<div class="dcontent">
+<div class="dtitle">Internals: FLAT + DBMS</div>
+<div class="blocks"><span class="tag t-exam">Exams 9:45 & 11:00</span><span class="tag t-apt">Aptitude 45 min</span><span class="tag t-rev">DM Revision 1.5 hrs</span></div>
+<div class="note">After exams: 45 min aptitude (verbal reasoning + data interpretation). Then revise DM — Sets, Relations, Functions. You know it. Just sharpen it. No new topics today.</div>
+<div class="time-split"><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-rev">Revision: 1.5 hrs</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 17</strong>Free</div>
+<div class="dcontent">
+<div class="dtitle">Probability Day 1 + Aptitude + DM Revision</div>
+<div class="blocks"><span class="tag t-new">Probability</span><span class="tag t-apt">Aptitude 45 min</span><span class="tag t-rev">DM Graph/Logic</span></div>
+<div class="note">Morning 9–12: Probability — axioms, conditional prob, Bayes, random variables, PMF/PDF/CDF. 3 hrs.<br>Afternoon 2–4: Aptitude — 45 min timed session + 1 hr GATE DM PYQs (logic, graph theory).<br>Evening 6–8: Probability problems. Bayes practice specifically — it appears every year.</div>
+<div class="time-split"><span class="tseg ts-new">New: 5 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-rev">Rev: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 18</strong>Exam Day</div>
+<div class="dcontent">
+<div class="dtitle">DM Internal + Probability Day 2</div>
+<div class="blocks"><span class="tag t-exam">DM Exam 11:00</span><span class="tag t-apt">Aptitude 45 min</span><span class="tag t-new">Probability distributions</span></div>
+<div class="note">Morning before exam: light DM skim. After exam: 45 min aptitude (logical reasoning). Then Probability — Binomial, Poisson, Gaussian, Exponential distributions with problems. 2.5 hrs.</div>
+<div class="time-split"><span class="tseg ts-new">New: 2.5 hrs</span><span class="tseg ts-apt">Apt: 45 min</span></div>
+</div>
+</div>
+
+</div>
+
+<div class="section-head">Phase 2 — Balanced Learning + Revision (Apr 19 – May 1)</div>
+<div class="bar-new">
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 19</strong>Day 1</div>
+<div class="dcontent">
+<div class="dtitle">Probability complete + C revision</div>
+<div class="blocks"><span class="tag t-new">Probability wrap-up</span><span class="tag t-rev">C Pointers revision</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: Finish probability — moments, functions of RVs, mixed problems. 2.5 hrs.<br>Afternoon: Aptitude 45 min. Then revise C — pointers, void pointers, pointer arithmetic, complex declarations. You know this but exam questions are tricky. 2 hrs.<br>Evening: 15 GATE Probability PYQs timed.</div>
+<div class="time-split"><span class="tseg ts-new">New: 2.5 hrs</span><span class="tseg ts-rev">Rev: 2 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 20</strong>Day 2</div>
+<div class="dcontent">
+<div class="dtitle">Survival Calculus + DLD revision</div>
+<div class="blocks"><span class="tag t-new">Calculus (survival)</span><span class="tag t-rev">K-Map + Boolean Laws</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: Calculus — limits, L'Hôpital, basic differentiation, maxima/minima, basic integration. 3 hrs. Stop here. No ODEs.<br>Afternoon: Aptitude 45 min. Then revise K-Map minimisation, Boolean Laws, SOP/POS, NAND/NOR universal gates. 2 hrs.<br>Evening: 10 Calculus PYQs + 10 DLD PYQs. 1 hr.</div>
+<div class="time-split"><span class="tseg ts-new">New: 3 hrs</span><span class="tseg ts-rev">Rev: 2 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 21</strong>Day 3</div>
+<div class="dcontent">
+<div class="dtitle">Eigenvalues + DSA Tree/Stack revision</div>
+<div class="blocks"><span class="tag t-new">Eigenvalues + Eigenvectors</span><span class="tag t-rev">Trees + Stacks</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: Eigenvalues — characteristic polynomial, finding eigenvalues and eigenvectors. 2.5 hrs.<br>Afternoon: Aptitude 45 min. Revise Binary Trees — traversal output questions, BST operations, height formulas. 2 hrs.<br>Evening: Stack PYQs — postfix/prefix, recursion tracing. 1 hr. These are easy marks.</div>
+<div class="time-split"><span class="tseg ts-new">New: 2.5 hrs</span><span class="tseg ts-rev">Rev: 3 hrs</span><span class="tseg ts-apt">Apt: 45 min</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 22</strong>Day 4</div>
+<div class="dcontent">
+<div class="dtitle">System of Equations + Sorting revision</div>
+<div class="blocks"><span class="tag t-new">System of Linear Equations</span><span class="tag t-rev">All Sorting Algorithms</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: System of linear equations — Gaussian elimination, rank conditions, infinite/no/unique solution. 2.5 hrs.<br>Afternoon: Aptitude 45 min. Build one master table: all sorting algorithms with time/space complexity, stability, internal/external. 2 hrs.<br>Evening: 15 sorting PYQs. Sorting complexity questions are direct 1-mark guaranteed marks.</div>
+<div class="time-split"><span class="tseg ts-new">New: 2.5 hrs</span><span class="tseg ts-rev">Rev: 2 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 23</strong>Day 5</div>
+<div class="dcontent">
+<div class="dtitle">Queue + Hashing + DM Logic revision</div>
+<div class="blocks"><span class="tag t-new">Queue</span><span class="tag t-new">Hashing</span><span class="tag t-rev">Logic + Arguments</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: Queue — operations, circular queue, dequeue. 1.5 hrs. Then Hashing — chaining, open addressing, load factor, collision resolution. 1.5 hrs.<br>Afternoon: Aptitude 45 min. Revise Propositional Logic — tautology, validity, rules of inference, arguments. This is a guaranteed DM question. 2 hrs.<br>Evening: 10 DSA PYQs + 10 DM Logic PYQs.</div>
+<div class="time-split"><span class="tseg ts-new">New: 3 hrs</span><span class="tseg ts-rev">Rev: 2 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 24</strong>Day 6</div>
+<div class="dcontent">
+<div class="dtitle">Heap Sort + Quick Sort + Linked List revision</div>
+<div class="blocks"><span class="tag t-new">Heap Sort</span><span class="tag t-new">Quick Sort</span><span class="tag t-rev">Linked Lists</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: Heap Sort — heapify, build-max-heap, process. Quick Sort — partition, pivot strategies, worst/avg case. 2.5 hrs.<br>Afternoon: Aptitude 45 min. Revise Linked List — traversal, reversal, insertion/deletion, circular/doubly. Output tracing questions. 2 hrs.<br>Evening: 10 Heap/Quick Sort PYQs + output trace practice.</div>
+<div class="time-split"><span class="tseg ts-new">New: 2.5 hrs</span><span class="tseg ts-rev">Rev: 2 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 25</strong>Day 7</div>
+<div class="dcontent">
+<div class="dtitle">Sequential Circuits + C Arrays/Strings revision</div>
+<div class="blocks"><span class="tag t-new">D + JK Flip-flop</span><span class="tag t-new">Counters</span><span class="tag t-rev">C Arrays + Strings</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: D Flip-flop, JK Flip-flop — characteristic equations, truth tables. Mod-N counters. 2.5 hrs.<br>Afternoon: Aptitude 45 min. Revise C arrays — 1D/2D address calculation, row/column major. String functions. 2 hrs.<br>Evening: 10 DLD sequential PYQs. These are often 1-mark direct questions.</div>
+<div class="time-split"><span class="tseg ts-new">New: 2.5 hrs</span><span class="tseg ts-rev">Rev: 2 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 26</strong>Day 8</div>
+<div class="dcontent">
+<div class="dtitle">Combinational Circuits + C Operators revision</div>
+<div class="blocks"><span class="tag t-new">MUX + Decoder + Adder</span><span class="tag t-rev">C Operators + Control Flow</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: MUX (2:1, 4:1, implementing functions), Decoder (2:4, 3:8, SOP impl), Half/Full Adder. 2.5 hrs.<br>Afternoon: Aptitude 45 min. Revise C operators — precedence, increment/decrement traps, ternary, sizeof. Output prediction questions. 2 hrs.<br>Evening: 10 combinational circuit PYQs. 1 hr.</div>
+<div class="time-split"><span class="tseg ts-new">New: 2.5 hrs</span><span class="tseg ts-rev">Rev: 2 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 27</strong>Day 9</div>
+<div class="dcontent">
+<div class="dtitle">C Functions + Structures + Bitwise</div>
+<div class="blocks"><span class="tag t-new">Functions</span><span class="tag t-new">Structures</span><span class="tag t-new">Bitwise</span><span class="tag t-rev">Graph Theory DM</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: C Functions — scope, call by value/reference. Structures — dot operator, pointer to struct. Bitwise — shift operations, masking. 3 hrs. This is the last new C topic.<br>Afternoon: Aptitude 45 min. Revise DM Graph Theory — Euler path, Hamiltonian, chromatic number, planarity. 1.5 hrs.<br>Evening: 10 C PYQs focusing on output tracing with functions and bitwise. 1 hr.</div>
+<div class="time-split"><span class="tseg ts-new">New: 3 hrs</span><span class="tseg ts-rev">Rev: 1.5 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+</div>
+
+<div class="bar-rev">
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 28</strong>Day 10</div>
+<div class="dcontent">
+<div class="dtitle">REVISION DAY — No new topics</div>
+<div class="blocks"><span class="tag t-rev">Full DM Revision</span><span class="tag t-rev">Full DLD Revision</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: DM full revision — logic, set theory, relations, POSET, graph theory, group theory. Mark weak spots. 3 hrs.<br>Afternoon: Aptitude 45 min (timed, simulate exam pressure). Full DLD revision — gates, K-Map, combinational, sequential, number systems. 2.5 hrs.<br>Evening: 15 mixed DM + DLD PYQs. Speed matters here — time yourself.</div>
+<div class="time-split"><span class="tseg ts-rev">Rev: 5.5 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 29</strong>Day 11</div>
+<div class="dcontent">
+<div class="dtitle">REVISION DAY — Maths full sweep</div>
+<div class="blocks"><span class="tag t-rev">Probability revision</span><span class="tag t-rev">Linear Algebra revision</span><span class="tag t-rev">Calculus revision</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: Probability — all distributions, Bayes problems, expectation/variance. Write formulas from memory. 2.5 hrs.<br>Afternoon: Aptitude 45 min. Linear Algebra — rank, eigenvalues, system of equations. 1.5 hrs. Calculus — maxima/minima problems, limits. 1 hr.<br>Evening: 20 Maths PYQs mixed — find your worst distribution/topic and revisit it.</div>
+<div class="time-split"><span class="tseg ts-rev">Rev: 5 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>Apr 30</strong>Day 12</div>
+<div class="dcontent">
+<div class="dtitle">REVISION DAY — DSA + C full sweep</div>
+<div class="blocks"><span class="tag t-rev">Full DSA Revision</span><span class="tag t-rev">Full C Revision</span><span class="tag t-apt">Aptitude 45 min</span></div>
+<div class="note">Morning: DSA — Arrays, LL, Stacks, Trees, Sorting (all), Queue, Hashing, BFS/DFS. Build one-page complexity cheat sheet from memory. 3 hrs.<br>Afternoon: Aptitude 45 min. C full sweep — operators, pointers, control flow, recursion, structures. 2 hrs.<br>Evening: 20 mixed DSA + C PYQs. Mark any gap — note it for May 1 morning.</div>
+<div class="time-split"><span class="tseg ts-rev">Rev: 5 hrs</span><span class="tseg ts-apt">Apt: 45 min</span><span class="tseg ts-pyq">PYQ: 1 hr</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>May 1</strong>Day 13</div>
+<div class="dcontent">
+<div class="dtitle">MOCK TEST DAY</div>
+<div class="blocks"><span class="tag t-mock">Official Mock Test</span><span class="tag t-rev">Gap fixing</span></div>
+<div class="note">Morning 9–10: Fix the gaps you noted on Apr 30. Only weak spots. No new topics.<br>Afternoon 2–5 PM: Take the official LEEE mock at ugadmissions.iiit.ac.in — both Aptitude (60 min) + Subject (120 min). Exact same time slot as real exam. Conditions matter.<br>Evening: Analyse every wrong answer. Categorise: silly mistake vs knowledge gap. Fix knowledge gaps only. Sleep by 10:30 PM.</div>
+<div class="time-split"><span class="tseg ts-rev">Gap fix: 1 hr</span><span class="tseg ts-mock">Mock: 3 hrs</span><span class="tseg ts-rev">Analysis: 1.5 hrs</span></div>
+</div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>May 2</strong>EXAM</div>
+<div class="dcontent">
+<div class="dtitle">LEEE 2026 — 2:00 PM to 5:00 PM</div>
+<div class="blocks"><span class="tag t-exam">Aptitude 60 min</span><span class="tag t-exam">Subject 120 min</span></div>
+<div class="note">Morning: Write all distribution formulas, sorting complexities, and key DM identities from memory on paper. Then relax. No studying after 12 PM.<br>Exam strategy — Aptitude: do not overthink. Verbal and logical sections reward instinct not overthinking.<br>Subject: DM → Sorting → C output questions → DLD → Probability → Linear Algebra. Hardest topics last.</div>
+</div>
+</div>
+
+</div>
+
+<div class="section-head">Phase 3 — Semester Recovery (May 3–15)</div>
+<div class="bar-sem">
+
+<div class="day-row">
+<div class="dlabel"><strong>May 3–4</strong></div>
+<div class="dcontent"><div class="dtitle">Engg Economics → exam May 5</div>
+<div class="note">2 days, theory only. Definitions, NPV, IRR, break-even analysis. Cramable.</div></div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>May 5–6</strong></div>
+<div class="dcontent"><div class="dtitle">Java OOP → exam May 7</div>
+<div class="note">Your C base covers most of it. Focus: inheritance, polymorphism, interfaces, exception handling.</div></div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>May 7–10</strong></div>
+<div class="dcontent"><div class="dtitle">FLAT → exam May 11</div>
+<div class="note">3 days. DFA/NFA → CFG/PDA → TM basics → P vs NP conceptually.</div></div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>May 11–12</strong></div>
+<div class="dcontent"><div class="dtitle">DBMS → exam May 13</div>
+<div class="note">Your Transactions + ER Model notes are strong. Add SQL, Normalization. 2 days.</div></div>
+</div>
+
+<div class="day-row">
+<div class="dlabel"><strong>May 13–14</strong></div>
+<div class="dcontent"><div class="dtitle">Discrete Mathematics → exam May 15</div>
+<div class="note">You know this from LEEE prep. 1 day revision. Spare day is buffer.</div></div>
+</div>
+
+</div>
+
+</div>

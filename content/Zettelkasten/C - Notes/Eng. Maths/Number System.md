@@ -45,31 +45,7 @@ Tags : [[Maths]]
 - A number that represents a quantity along a continuous line, containing all of the [[Number System#Rational Numbers (Q)|rational]] & [[Number System#Irrational Numbers (Q' / $I_r$)|irrational]] numbers.
 
 ---
-## Complex Numbers (C)
+## [[Complex Numbers]] (C)
 - A number that can be expressed in the form of `a + bi`, where `a` and `b` are real umbers and `i` is imaginary unit (iota) that satisfies the equation $i^2=-1$ 
 
-
-
-
-
-
-
-
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References 
-
