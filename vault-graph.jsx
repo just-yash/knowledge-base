@@ -19,9 +19,9 @@ const DEFAULT_CFG = {
   linkThickness:      1.0,
   // forces
   centerForce:  0.022,
-  repelForce:   1400,
-  linkForce:    0.07,
-  linkDistance: 90,
+  repelForce:   2400,
+  linkForce:    0.055,
+  linkDistance: 65,
 };
 
 // ─── Force Graph Simulation ───────────────────────────────────────────────────
@@ -30,8 +30,8 @@ class ForceGraph {
     this.width  = width;
     this.height = height;
     this.alpha  = 1;
-    this.alphaDecay   = 0.013;
-    this.velocityDecay = 0.55;
+    this.alphaDecay   = 0.010;
+    this.velocityDecay = 0.42;
     // Mutable physics config — caller can update at runtime
     this.cfg = { ...DEFAULT_CFG, ...cfg };
 
@@ -44,14 +44,14 @@ class ForceGraph {
 
     this.nodes = nodes.map(n => {
       const deg = this.adjacency.get(n.id)?.size || 0;
-      const spread = Math.min(width, height) * 0.30;
+      const spread = Math.min(width, height) * 0.55;
       return {
         ...n,
         x: width  / 2 + (Math.random() - 0.5) * spread,
         y: height / 2 + (Math.random() - 0.5) * spread,
         vx: 0, vy: 0,
         degree: deg,
-        r: Math.max(1.5, Math.min(3.5, 1.5 + deg * 0.18)),
+        r: Math.max(2, Math.min(7, 2 + deg * 0.28)),
       };
     });
 
@@ -69,14 +69,12 @@ class ForceGraph {
     const cx = width / 2, cy = height / 2;
     const n2 = nodes.length;
 
-    const K2      = cfg.repelForce / (n2 || 1);
-    const cutoff2 = 280 * 280;
+    const K2 = cfg.repelForce / (n2 || 1);
     for (let i = 0; i < n2; i++) {
       for (let j = i + 1; j < n2; j++) {
         const a = nodes[i], b = nodes[j];
         let dx = b.x - a.x, dy = b.y - a.y;
         const dist2 = dx * dx + dy * dy || 0.01;
-        if (dist2 > cutoff2) continue;
         const dist = Math.sqrt(dist2);
         const force = K2 / dist2 * alpha;
         const fx = force * dx / dist, fy = force * dy / dist;
