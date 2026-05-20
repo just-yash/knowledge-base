@@ -162,8 +162,8 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
       : isActiveEdge;
 
     const edgeColor = isLight
-      ? lit ? 'rgba(0,0,0,0.38)' : dimUnlit ? 'rgba(0,0,0,0.06)' : 'rgba(0,0,0,0.18)'
-      : lit ? 'rgba(255,255,255,0.50)' : dimUnlit ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.13)';
+      ? lit ? 'rgba(0,0,0,0.45)' : dimUnlit ? 'rgba(0,0,0,0.07)' : 'rgba(0,0,0,0.18)'
+      : lit ? 'rgba(255,255,255,0.55)' : dimUnlit ? 'rgba(255,255,255,0.08)' : 'rgba(255,255,255,0.13)';
     const lw = (lit ? 1.4 : 0.75) * lt;
 
     ctx.beginPath();
@@ -199,12 +199,12 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
 
     ctx.beginPath();
     ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
-    const dim = (dimUnlit || (activeNeighbours.size > 0 && !hov)) && !isLit && !isActive;
+    // Only dim during hover — default state keeps all nodes fully visible
+    const dim = dimUnlit && !isLit && !isActive && !isHov;
     ctx.fillStyle = isActive ? (isLight ? '#1a1b1e' : '#ffffff')
       : isHov     ? (isLight ? '#1a1b1e' : '#fff')
-      : dim       ? (isLight ? 'rgba(0,0,0,0.18)' : 'rgba(255,255,255,0.18)')
       : color;
-    ctx.globalAlpha = dim ? 0.30 : 1;
+    ctx.globalAlpha = dim ? 0.15 : 1;
     ctx.fill();
     ctx.globalAlpha = 1;
   }
@@ -215,7 +215,7 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
     for (const n of g.nodes) {
       if (n.id === hov?.id) continue; // hovered label drawn separately below
       const isActive = n.id === activeId;
-      const dim = (activeNeighbours.size > 0 && !hov) && !activeNeighbours.has(n.id);
+      const dim = dimUnlit && !(hov ? highlighted.has(n.id) : false) && n.id !== activeId;
       const a = labelAlpha * (isActive ? 1 : dim ? 0.3 : 0.65);
       if (a < 0.04) continue;
       ctx.globalAlpha = a;
