@@ -49,4 +49,4 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
 | Write creatively   | [[MOC - Writing and Creativity]]                                                                     |
 | Understand AI      | [[MOC - AI and Machine Learning]]                                                                    |
 | Security skills    | [[MOC - Cybersecurity]]                                                                              |
-| Improve this vault | [[MOC - Zettelkasten Method]]                                                                        |
+

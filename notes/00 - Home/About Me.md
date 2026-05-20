@@ -1,8 +1,7 @@
-tags: [[yash]] 
-Date: 2026-05-20
+
+Tags : [[yash]]   
 
 ---
-
 # About Me
 
 > *This is the human behind the vault. Every note here is a fragment of how I think, what I'm building, and who I'm becoming.*
@@ -11,12 +10,11 @@ Date: 2026-05-20
 
 ## Who I Am
 
-My name is **Yash Agrawal**. I'm a second-year Computer Science and Engineering student at **IGIT Sarang**, and I think of myself less as a student and more as someone who builds things and documents everything.
+My name is **Yash Agrawal**. I'm a 3<sup>rd</sup> year  Computer Science and Engineering student at **IGIT Sarang**, and I think of myself less as a student and more as someone who builds things and documents everything.
 
 I don't learn passively. I learn by writing, connecting, and building — which is why this vault exists. The [[Zettelkasten]] isn't a side project; it's the clearest picture of how my mind actually works.
 
 ---
-
 ## What I'm Building
 
 ### 🔬 Research — Multi-Camera Surveillance
@@ -30,10 +28,6 @@ My most serious technical work right now. I'm building a **multi-camera threat d
 
 The goal isn't just a working prototype — it's a **publishable research paper** and a portfolio-grade AI security system. See [[MOC - Computer Vision and Surveillance]] for the full pipeline.
 
-### ☕ Zaffee — A Brand in Progress
-
-I'm building **Zaffee**, my own brand. The finance I study, the startup frameworks I document, the marketing I read about — it all feeds into this. It's where the entrepreneurial thinking gets applied.
-
 ### 🧠 This Knowledge Base
 
 This vault — 668+ notes, 226+ connections — is probably the work I'm most proud of. I built it independently, without being told to, because I needed a system that matched how I actually think.
@@ -41,7 +35,6 @@ This vault — 668+ notes, 226+ connections — is probably the work I'm most pr
 It covers everything I'm learning and everything I'm building, structured so one idea leads to the next. I keep it public because good ideas should travel.
 
 ---
-
 ## What I Know (and Am Learning)
 
 ### Core CS
@@ -98,12 +91,11 @@ I also study **finance** — not as an end in itself, but because building Zaffe
 
 ## Right Now
 
-| What | Where |
-|---|---|
-| **Internship** | Darwin platform — Mercer Marsh Benefits (Marsh McLennan). Learning enterprise SaaS at scale. |
-| **Research** | Multi-camera surveillance. Environment setup phase. First milestone: single-camera detection working. |
-| **Studying** | DBMS, Operating Systems, DSA — in parallel with self-directed AI and cybersecurity tracks. |
-| **Building** | Zaffee. Early stage. |
+| What           | Where                                                                                                 |
+| -------------- | ----------------------------------------------------------------------------------------------------- |
+| **Internship** | Darwin platform — Mercer Marsh Benefits (Marsh McLennan). Learning enterprise SaaS at scale.          |
+| **Research**   | Multi-camera surveillance. Environment setup phase. First milestone: single-camera detection working. |
+| **Studying**   | DBMS, Operating Systems, DSA — in parallel with self-directed AI and cybersecurity tracks.            |
 
 ---
 
@@ -111,6 +103,7 @@ I also study **finance** — not as an end in itself, but because building Zaffe
 
 - **GitHub** — [just-yash](https://github.com/just-yash)
 - **Email** — yashagrawall333@gmail.com
+- **Instagram** — [just._ yash](www.instagram.com/just._yash)
 
 ---
 
