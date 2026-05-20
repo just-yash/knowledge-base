@@ -157,6 +157,7 @@ function resolveObsidianEmbeds(md) {
 //   [[Note|Alias]]
 //   [[Note#Heading]]
 //   [[Note#Heading|Alias]]
+//   [[Note#^blockId|Alias]]   ← block references (^id), navigate to note only
 function processWikiLinks(html) {
   return html.replace(/\[\[([^\]]+)\]\]/g, (_, inner) => {
     // Split alias (everything after the first |)
@@ -164,20 +165,22 @@ function processWikiLinks(html) {
     const refPart = pipeIdx >= 0 ? inner.slice(0, pipeIdx).trim() : inner.trim();
     const alias   = pipeIdx >= 0 ? inner.slice(pipeIdx + 1).trim() : '';
 
-    // Split heading (everything after the first # in the ref)
+    // Split anchor (everything after the first #)
     const hashIdx  = refPart.indexOf('#');
     const noteName = hashIdx >= 0 ? refPart.slice(0, hashIdx).trim() : refPart;
-    const heading  = hashIdx >= 0 ? refPart.slice(hashIdx + 1).trim() : '';
+    const anchor   = hashIdx >= 0 ? refPart.slice(hashIdx + 1).trim() : '';
 
-    // Display text: explicit alias → noteName (never show raw #heading)
+    // Display text: alias → noteName (never expose raw #heading or ^blockId)
     const display = alias || noteName;
 
     // Resolve note ID from the name part only
     const noteId = (window.findNoteByName ? findNoteByName(noteName) : null) || '';
 
-    // Slugify heading the same way marked.js does (for scroll-to after navigation)
-    const headingId = heading
-      ? heading.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-{2,}/g, '-')
+    // Block references start with ^ — we navigate to the note but can't scroll to the block
+    // Heading references are slugified to match the id marked.js stamps on <h> elements
+    const isBlockRef = anchor.startsWith('^');
+    const headingId  = (!isBlockRef && anchor)
+      ? anchor.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-{2,}/g, '-')
       : '';
 
     const esc = (s) => s.replace(/"/g, '&quot;');
