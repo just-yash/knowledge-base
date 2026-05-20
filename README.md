@@ -89,22 +89,13 @@ node watch-vault.js
 
 ## Updating the vault
 
-Two steps:
-
-1. **Rebuild the data file** after adding/editing notes in Obsidian:
-    
-    ```bash
-    node build-vault.js
-    ```
-    
-2. **Commit and push** the regenerated `vault-data.js`:
-    
-    ```bash
-    git add vault-data.js
-    git commit -m "chore: rebuild vault"
-    git push origin obsidian
-    ```
-    
+```bash
+node build-vault.js
+git add vault-data.js
+git commit -m "chore: rebuild vault"
+git pull origin obsidian --rebase
+git push origin obsidian
+```
 
 GitHub Pages deploys automatically in ~1 minute after the push.
 
