@@ -16,8 +16,8 @@ class ForceGraph {
     this.width = width;
     this.height = height;
     this.alpha = 1;
-    this.alphaDecay = 0.011;   // slower cooling → settles more gracefully
-    this.velocityDecay = 0.42;
+    this.alphaDecay = 0.013;
+    this.velocityDecay = 0.55;  // more damping → less oscillation
 
     // Adjacency map for highlight lookups
     this.adjacency = new Map();
@@ -29,13 +29,15 @@ class ForceGraph {
 
     this.nodes = nodes.map(n => {
       const deg = this.adjacency.get(n.id)?.size || 0;
+      // Tighter initial placement so center gravity keeps them in frame
+      const spread = Math.min(width, height) * 0.30;
       return {
         ...n,
-        x: width / 2 + (Math.random() - 0.5) * Math.min(width, height) * 0.65,
-        y: height / 2 + (Math.random() - 0.5) * Math.min(width, height) * 0.65,
+        x: width  / 2 + (Math.random() - 0.5) * spread,
+        y: height / 2 + (Math.random() - 0.5) * spread,
         vx: 0, vy: 0,
         degree: deg,
-        r: Math.max(2.5, Math.min(5.5, 2.5 + deg * 0.35)),
+        r: Math.max(2.5, Math.min(6, 2.5 + deg * 0.32)),
       };
     });
 
@@ -51,44 +53,48 @@ class ForceGraph {
     if (this.alpha < 0.001) return false;
     const { nodes, edges, width, height, alpha } = this;
     const cx = width / 2, cy = height / 2;
+    const n2 = nodes.length;
 
-    // Repulsion — O(n²) fine for ≤ 40 nodes
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i + 1; j < nodes.length; j++) {
+    // Repulsion with cutoff — ignores pairs > 180px apart to avoid
+    // blowing up when many nodes are present
+    const K2 = 900 / (n2 || 1);   // scale strength by node count
+    for (let i = 0; i < n2; i++) {
+      for (let j = i + 1; j < n2; j++) {
         const a = nodes[i], b = nodes[j];
         let dx = b.x - a.x, dy = b.y - a.y;
         const dist2 = dx * dx + dy * dy || 0.01;
+        if (dist2 > 180 * 180) continue;          // cutoff
         const dist = Math.sqrt(dist2);
-        const force = 2600 / dist2 * alpha;
+        const force = K2 / dist2 * alpha;
         const fx = force * dx / dist, fy = force * dy / dist;
         a.vx -= fx; a.vy -= fy;
         b.vx += fx; b.vy += fy;
       }
     }
 
-    // Attraction along edges
+    // Spring attraction along edges
+    const idealLen = 55;
     for (const e of edges) {
       const dx = e.target.x - e.source.x;
       const dy = e.target.y - e.source.y;
       const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-      const ideal = 80;
-      const force = ((dist - ideal) / dist) * 0.06 * alpha;
+      const force = ((dist - idealLen) / dist) * 0.07 * alpha;
       e.source.vx += force * dx; e.source.vy += force * dy;
       e.target.vx -= force * dx; e.target.vy -= force * dy;
     }
 
-    // Weak center gravity
+    // Centre gravity — keeps the cluster together, no wall clamping needed
     for (const n of nodes) {
-      n.vx += (cx - n.x) * 0.009 * alpha;
-      n.vy += (cy - n.y) * 0.009 * alpha;
+      n.vx += (cx - n.x) * 0.022 * alpha;
+      n.vy += (cy - n.y) * 0.022 * alpha;
     }
 
-    // Integrate
+    // Integrate — NO hard boundary clamp (that's what caused the rectangle)
     for (const n of nodes) {
       n.vx *= this.velocityDecay;
       n.vy *= this.velocityDecay;
-      n.x = Math.max(n.r + 3, Math.min(width - n.r - 3, n.x + n.vx));
-      n.y = Math.max(n.r + 3, Math.min(height - n.r - 3, n.y + n.vy));
+      n.x += n.vx;
+      n.y += n.vy;
     }
 
     this.alpha -= this.alphaDecay;
@@ -167,18 +173,18 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
     ctx.globalAlpha = 1;
   }
 
-  // Always-visible labels (scaled by zoom / labelAlpha)
-  if (showLabels && labelAlpha > 0) {
-    ctx.font = '10.5px "IBM Plex Sans", sans-serif';
+  // Labels — only when very zoomed in (caller controls labelAlpha)
+  if (showLabels && labelAlpha > 0.02) {
+    ctx.font = '10px "IBM Plex Sans", sans-serif';
     for (const n of g.nodes) {
       if (n.id === hov?.id) continue; // hovered label drawn separately below
       const isActive = n.id === activeId;
       const dim = (activeNeighbours.size > 0 && !hov) && !activeNeighbours.has(n.id);
-      const alpha = labelAlpha * (isActive ? 0.95 : dim ? 0.22 : 0.55);
-      if (alpha < 0.05) continue;
-      ctx.globalAlpha = alpha;
-      ctx.fillStyle = isActive ? '#ffffff' : 'rgba(210,212,220,1)';
-      ctx.fillText(n.label || n.id, n.x + n.r + 5, n.y + 4);
+      const a = labelAlpha * (isActive ? 1 : dim ? 0.3 : 0.65);
+      if (a < 0.04) continue;
+      ctx.globalAlpha = a;
+      ctx.fillStyle = isActive ? '#ffffff' : 'rgba(210,215,225,1)';
+      ctx.fillText(n.label || n.id, n.x + n.r + 4, n.y + 3.5);
     }
     ctx.globalAlpha = 1;
   }
@@ -405,7 +411,8 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
       g.tick();
       const W = canvas.offsetWidth, H = canvas.offsetHeight;
       const zoom = zoomRef.current;
-      const labelAlpha = Math.min(1, Math.max(0, (zoom - 0.35) / 0.55));
+      // Labels only appear when zoomed in very far (>3.5×) — fades in over 3.5→5
+      const labelAlpha = Math.min(1, Math.max(0, (zoom - 3.5) / 1.5));
 
       ctx.save();
       ctx.clearRect(0, 0, canvas.width, canvas.height);
