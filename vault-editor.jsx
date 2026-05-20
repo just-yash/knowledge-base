@@ -84,6 +84,31 @@
   marked.setOptions({ renderer, gfm: true, breaks: false, html: true });
 })();
 
+// ─── Wiki-link title→id resolver (runs once at load time) ────────────────────
+(function buildNoteLookup() {
+  const map = {};
+  const notes = window.VAULT_NOTES || {};
+  for (const [id, note] of Object.entries(notes)) {
+    if (note.title) {
+      // exact title
+      map[note.title.toLowerCase()] = id;
+      // title without extension (e.g. "AVL Tree" for file "AVL Tree")
+      const bare = note.title.replace(/\.[^.]+$/, '');
+      map[bare.toLowerCase()] = id;
+    }
+  }
+  window.findNoteByName = function(name) {
+    if (!name) return null;
+    const lower = name.toLowerCase().trim();
+    // 1. direct map hit
+    if (map[lower]) return map[lower];
+    // 2. partial: ends-with match for "Folder/Note" style wikilinks
+    const parts = lower.split('/');
+    const last = parts[parts.length - 1];
+    return map[last] || null;
+  };
+})();
+
 // ─── Pre-process: ![[image.ext]] → <img> using VAULT_ASSETS ─────────────────
 function resolveObsidianEmbeds(md) {
   return md.replace(/!\[\[([^\]]+?\.(png|jpg|jpeg|gif|svg|webp))\]\]/gi, (_, filename) => {

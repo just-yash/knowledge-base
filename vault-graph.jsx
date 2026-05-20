@@ -16,8 +16,8 @@ class ForceGraph {
     this.width = width;
     this.height = height;
     this.alpha = 1;
-    this.alphaDecay = 0.015;
-    this.velocityDecay = 0.38;
+    this.alphaDecay = 0.011;   // slower cooling → settles more gracefully
+    this.velocityDecay = 0.42;
 
     // Adjacency map for highlight lookups
     this.adjacency = new Map();
@@ -71,16 +71,16 @@ class ForceGraph {
       const dx = e.target.x - e.source.x;
       const dy = e.target.y - e.source.y;
       const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-      const ideal = 70;
-      const force = ((dist - ideal) / dist) * 0.055 * alpha;
+      const ideal = 80;
+      const force = ((dist - ideal) / dist) * 0.06 * alpha;
       e.source.vx += force * dx; e.source.vy += force * dy;
       e.target.vx -= force * dx; e.target.vy -= force * dy;
     }
 
     // Weak center gravity
     for (const n of nodes) {
-      n.vx += (cx - n.x) * 0.012 * alpha;
-      n.vy += (cy - n.y) * 0.012 * alpha;
+      n.vx += (cx - n.x) * 0.009 * alpha;
+      n.vy += (cy - n.y) * 0.009 * alpha;
     }
 
     // Integrate
@@ -106,7 +106,8 @@ class ForceGraph {
 }
 
 // ─── Draw helpers ─────────────────────────────────────────────────────────────
-function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit) {
+// showLabels: draw name tags for all nodes; labelAlpha: 0–1 fade-in by zoom level
+function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false, labelAlpha = 0) {
   ctx.clearRect(0, 0, W, H);
 
   const hov = hovNode;
@@ -115,19 +116,26 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit) {
     highlighted.add(hov.id);
     g.adjacency.get(hov.id)?.forEach(id => highlighted.add(id));
   }
+  // Also highlight neighbours of active note when nothing is hovered
+  const activeNeighbours = new Set();
+  if (!hov && activeId) {
+    activeNeighbours.add(activeId);
+    g.adjacency.get(activeId)?.forEach(id => activeNeighbours.add(id));
+  }
 
   // Edges
   for (const e of g.edges) {
+    const isActiveEdge = activeNeighbours.has(e.source.id) && activeNeighbours.has(e.target.id);
     const lit = hov
       ? highlighted.has(e.source.id) && highlighted.has(e.target.id)
-      : (e.source.id === activeId || e.target.id === activeId);
+      : isActiveEdge;
     ctx.beginPath();
     ctx.moveTo(e.source.x, e.source.y);
     ctx.lineTo(e.target.x, e.target.y);
     ctx.strokeStyle = lit
-      ? 'rgba(255,255,255,0.45)'
-      : dimUnlit ? 'rgba(255,255,255,0.04)' : 'rgba(255,255,255,0.1)';
-    ctx.lineWidth = lit ? 1.2 : 0.7;
+      ? 'rgba(255,255,255,0.50)'
+      : dimUnlit ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.13)';
+    ctx.lineWidth = lit ? 1.4 : 0.75;
     ctx.stroke();
   }
 
@@ -135,57 +143,76 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit) {
   for (const n of g.nodes) {
     const isActive = n.id === activeId;
     const isHov = n.id === hov?.id;
-    const isLit = hov ? highlighted.has(n.id) : isActive;
-    const color = GROUP_COLORS[n.group] || 'rgba(255,255,255,0.6)';
-    const r = n.r + (isActive ? 1.8 : isHov ? 1.2 : 0);
+    const isLit = hov ? highlighted.has(n.id) : activeNeighbours.has(n.id);
+    const color = GROUP_COLORS[n.group] || 'rgba(255,255,255,0.65)';
+    const r = n.r + (isActive ? 2 : isHov ? 1.5 : 0);
 
     // Glow ring for active/hovered
     if (isActive || isHov) {
       ctx.beginPath();
-      ctx.arc(n.x, n.y, r + 4.5, 0, Math.PI * 2);
-      ctx.fillStyle = isActive ? 'rgba(107,141,214,0.22)' : 'rgba(255,255,255,0.1)';
+      ctx.arc(n.x, n.y, r + 5, 0, Math.PI * 2);
+      ctx.fillStyle = isActive ? 'rgba(107,141,214,0.28)' : 'rgba(255,255,255,0.12)';
       ctx.fill();
     }
 
     ctx.beginPath();
     ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
-    const dim = dimUnlit && !isLit && !isActive;
+    const dim = (dimUnlit || (activeNeighbours.size > 0 && !hov)) && !isLit && !isActive;
     ctx.fillStyle = isActive ? '#ffffff'
-      : dim ? 'rgba(255,255,255,0.15)'
       : isHov ? '#fff'
+      : dim ? 'rgba(255,255,255,0.18)'
       : color;
-    ctx.globalAlpha = dim ? 0.35 : 1;
+    ctx.globalAlpha = dim ? 0.30 : 1;
     ctx.fill();
     ctx.globalAlpha = 1;
   }
 
-  // Label for hovered
+  // Always-visible labels (scaled by zoom / labelAlpha)
+  if (showLabels && labelAlpha > 0) {
+    ctx.font = '10.5px "IBM Plex Sans", sans-serif';
+    for (const n of g.nodes) {
+      if (n.id === hov?.id) continue; // hovered label drawn separately below
+      const isActive = n.id === activeId;
+      const dim = (activeNeighbours.size > 0 && !hov) && !activeNeighbours.has(n.id);
+      const alpha = labelAlpha * (isActive ? 0.95 : dim ? 0.22 : 0.55);
+      if (alpha < 0.05) continue;
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = isActive ? '#ffffff' : 'rgba(210,212,220,1)';
+      ctx.fillText(n.label || n.id, n.x + n.r + 5, n.y + 4);
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // Hovered node label — prominent pill
   if (hov) {
     const label = hov.label || hov.id;
-    ctx.font = '10px IBM Plex Sans, sans-serif';
+    ctx.font = 'bold 11px "IBM Plex Sans", sans-serif';
     const tw = ctx.measureText(label).width;
-    const lx = Math.min(W - tw - 8, Math.max(4, hov.x - tw / 2));
-    const ly = hov.y - hov.r - 7;
-    ctx.fillStyle = 'rgba(18,19,22,0.9)';
+    const lx = Math.min(W - tw - 14, Math.max(4, hov.x - tw / 2));
+    const ly = hov.y - hov.r - 9;
+    ctx.globalAlpha = 0.95;
+    ctx.fillStyle = 'rgba(14,15,18,0.92)';
     ctx.beginPath();
-    ctx.roundRect(lx - 5, ly - 12, tw + 10, 17, 3);
+    ctx.roundRect(lx - 6, ly - 13, tw + 12, 18, 4);
     ctx.fill();
-    ctx.fillStyle = 'rgba(255,255,255,0.9)';
+    ctx.fillStyle = '#ffffff';
     ctx.fillText(label, lx, ly);
+    ctx.globalAlpha = 1;
   }
 }
 
-// ─── Mini Graph (in sidebar) — pan + zoom + click-to-navigate ────────────────
+// ─── Mini Graph (in sidebar) — pan + zoom + node-drag + click-to-navigate ─────
 const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
   const canvasRef    = useRef(null);
   const graphRef     = useRef(null);
   const rafRef       = useRef(null);
   const hovRef       = useRef(null);
+  const dragNodeRef  = useRef(null);
   const activeRef    = useRef(currentNote);
   const panRef       = useRef({ x: 0, y: 0, dragging: false, lx: 0, ly: 0, moved: false });
   const zoomRef      = useRef(1);
-  const [hovId, setHovId] = useState(null);
-  const [dragging, setDragging] = useState(false);
+  const [hovId, setHovId]       = useState(null);
+  const [cursor, setCursor]     = useState('grab');
 
   useEffect(() => { activeRef.current = currentNote; }, [currentNote]);
 
@@ -195,7 +222,7 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
 
     const dpr = window.devicePixelRatio || 1;
     const W = canvas.offsetWidth || 220;
-    const H = canvas.offsetHeight || 138;
+    const H = canvas.offsetHeight || 160;
     canvas.width  = W * dpr;
     canvas.height = H * dpr;
     const ctx = canvas.getContext('2d');
@@ -204,8 +231,15 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
     graphRef.current = new ForceGraph([...GRAPH_NODES], [...GRAPH_EDGES], W, H);
 
     const loop = () => {
-      graphRef.current?.tick();
       const g = graphRef.current;
+      if (!g) return;
+      // Pin dragged node
+      if (dragNodeRef.current) {
+        dragNodeRef.current.vx = 0;
+        dragNodeRef.current.vy = 0;
+        if (g.alpha < 0.3) g.alpha = 0.3;
+      }
+      g.tick();
       const { x: px, y: py } = panRef.current;
       const zoom = zoomRef.current;
 
@@ -214,7 +248,7 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
       ctx.translate(W / 2 + px, H / 2 + py);
       ctx.scale(zoom, zoom);
       ctx.translate(-W / 2, -H / 2);
-      drawGraph(ctx, g, W, H, activeRef.current, hovRef.current, false);
+      drawGraph(ctx, g, W, H, activeRef.current, hovRef.current, false, false, 0);
       ctx.restore();
 
       rafRef.current = requestAnimationFrame(loop);
@@ -224,7 +258,6 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
     return () => cancelAnimationFrame(rafRef.current);
   }, []);
 
-  // Convert screen → graph coordinates
   const toGraph = useCallback((cx, cy) => {
     const canvas = canvasRef.current;
     if (!canvas) return { x: 0, y: 0 };
@@ -239,6 +272,13 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
   }, []);
 
   const onMouseMove = useCallback((e) => {
+    const { x, y } = toGraph(e.clientX, e.clientY);
+    if (dragNodeRef.current) {
+      dragNodeRef.current.x = x;
+      dragNodeRef.current.y = y;
+      panRef.current.moved = true;
+      return;
+    }
     const p = panRef.current;
     if (p.dragging) {
       p.x += e.clientX - p.lx;
@@ -247,18 +287,32 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
       p.moved = true;
       return;
     }
-    const { x, y } = toGraph(e.clientX, e.clientY);
     const node = graphRef.current?.getNodeAt(x, y, 14);
     hovRef.current = node || null;
     setHovId(node?.id || null);
+    setCursor(node ? 'pointer' : 'grab');
   }, [toGraph]);
 
   const onMouseDown = useCallback((e) => {
-    panRef.current = { ...panRef.current, dragging: true, lx: e.clientX, ly: e.clientY, moved: false };
-    setDragging(true);
-  }, []);
+    const { x, y } = toGraph(e.clientX, e.clientY);
+    const node = graphRef.current?.getNodeAt(x, y, 14);
+    if (node) {
+      dragNodeRef.current = node;
+      panRef.current.moved = false;
+      setCursor('grabbing');
+    } else {
+      panRef.current = { ...panRef.current, dragging: true, lx: e.clientX, ly: e.clientY, moved: false };
+      setCursor('grabbing');
+    }
+  }, [toGraph]);
 
   const onMouseUp = useCallback((e) => {
+    if (dragNodeRef.current) {
+      dragNodeRef.current.vx = 0; dragNodeRef.current.vy = 0;
+      dragNodeRef.current = null;
+      setCursor('grab');
+      return;
+    }
     const p = panRef.current;
     if (!p.moved) {
       const { x, y } = toGraph(e.clientX, e.clientY);
@@ -266,17 +320,19 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
       if (node && window.VAULT_NOTES?.[node.id]) onNavigate(node.id);
     }
     p.dragging = false; p.moved = false;
-    setDragging(false);
+    setCursor('grab');
   }, [toGraph, onNavigate]);
 
   const onMouseLeave = useCallback(() => {
     hovRef.current = null; setHovId(null);
-    panRef.current.dragging = false; setDragging(false);
+    if (dragNodeRef.current) { dragNodeRef.current.vx = 0; dragNodeRef.current.vy = 0; dragNodeRef.current = null; }
+    panRef.current.dragging = false;
+    setCursor('grab');
   }, []);
 
   const onWheel = useCallback((e) => {
     e.preventDefault();
-    zoomRef.current = Math.max(0.3, Math.min(5, zoomRef.current * (e.deltaY < 0 ? 1.12 : 0.89)));
+    zoomRef.current = Math.max(0.3, Math.min(6, zoomRef.current * (e.deltaY < 0 ? 1.12 : 0.89)));
   }, []);
 
   return (
@@ -289,21 +345,21 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
         onMouseLeave={onMouseLeave}
         onWheel={onWheel}
         style={{
-          width: '100%', height: 173, display: 'block',
+          width: '100%', height: 160, display: 'block',
           borderRadius: 6, border: '1px solid var(--border)',
           background: 'var(--bg-graph)',
-          cursor: dragging ? 'grabbing' : hovId && window.VAULT_NOTES?.[hovId] ? 'pointer' : 'grab',
+          cursor,
         }}
       />
       <button onClick={onOpenFull} title="Open full graph view" style={{
         position: 'absolute', bottom: 7, right: 8,
-        background: 'rgba(14,15,18,0.75)', backdropFilter: 'blur(4px)',
-        border: '1px solid rgba(255,255,255,0.1)', borderRadius: 4,
-        padding: '2px 8px', fontSize: 10, color: 'rgba(255,255,255,0.4)',
+        background: 'rgba(14,15,18,0.78)', backdropFilter: 'blur(4px)',
+        border: '1px solid rgba(255,255,255,0.12)', borderRadius: 4,
+        padding: '2px 8px', fontSize: 10, color: 'rgba(255,255,255,0.5)',
         cursor: 'pointer', transition: 'color 0.15s',
       }}
-      onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
-      onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.4)'}
+      onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.85)'}
+      onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.5)'}
       >
         Graph view
       </button>
@@ -313,14 +369,16 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
 
 // ─── Full Graph Modal ─────────────────────────────────────────────────────────
 const FullGraph = ({ currentNote, onNavigate, onClose }) => {
-  const canvasRef  = useRef(null);
-  const graphRef   = useRef(null);
-  const rafRef     = useRef(null);
-  const hovRef     = useRef(null);
-  const activeRef  = useRef(currentNote);
-  const panRef     = useRef({ x: 0, y: 0, dragging: false, lx: 0, ly: 0, moved: false });
-  const zoomRef    = useRef(1);
-  const [hovId, setHovId] = useState(null);
+  const canvasRef    = useRef(null);
+  const graphRef     = useRef(null);
+  const rafRef       = useRef(null);
+  const hovRef       = useRef(null);
+  const dragNodeRef  = useRef(null);
+  const activeRef    = useRef(currentNote);
+  const panRef       = useRef({ x: 0, y: 0, dragging: false, lx: 0, ly: 0, moved: false });
+  const zoomRef      = useRef(1);
+  const [hovId, setHovId]   = useState(null);
+  const [cursor, setCursor] = useState('grab');
 
   useEffect(() => { activeRef.current = currentNote; }, [currentNote]);
 
@@ -329,42 +387,35 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
     if (!canvas || !window.GRAPH_NODES) return;
 
     const dpr = window.devicePixelRatio || 1;
-    const resize = () => {
-      canvas.width  = canvas.offsetWidth  * dpr;
-      canvas.height = canvas.offsetHeight * dpr;
-    };
-    resize();
+    canvas.width  = canvas.offsetWidth  * dpr;
+    canvas.height = canvas.offsetHeight * dpr;
 
     const W = canvas.offsetWidth, H = canvas.offsetHeight;
     graphRef.current = new ForceGraph([...GRAPH_NODES], [...GRAPH_EDGES], W, H);
     const ctx = canvas.getContext('2d');
 
     const loop = () => {
-      graphRef.current?.tick();
       const g = graphRef.current;
+      if (!g) return;
+      if (dragNodeRef.current) {
+        dragNodeRef.current.vx = 0;
+        dragNodeRef.current.vy = 0;
+        if (g.alpha < 0.3) g.alpha = 0.3;
+      }
+      g.tick();
       const W = canvas.offsetWidth, H = canvas.offsetHeight;
+      const zoom = zoomRef.current;
+      const labelAlpha = Math.min(1, Math.max(0, (zoom - 0.35) / 0.55));
 
       ctx.save();
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.scale(dpr, dpr);
-
       const { x: px, y: py } = panRef.current;
-      const zoom = zoomRef.current;
       ctx.translate(W / 2 + px, H / 2 + py);
       ctx.scale(zoom, zoom);
       ctx.translate(-W / 2, -H / 2);
 
-      drawGraph(ctx, g, W, H, activeRef.current, hovRef.current, !!hovRef.current);
-
-      // Node labels for all nodes when zoomed in
-      if (zoom > 1.2) {
-        ctx.font = '10px IBM Plex Sans, sans-serif';
-        for (const n of g.nodes) {
-          if (n.id === hovRef.current?.id) continue; // already drawn by drawGraph
-          ctx.fillStyle = 'rgba(255,255,255,0.38)';
-          ctx.fillText(n.label || n.id, n.x + n.r + 4, n.y + 4);
-        }
-      }
+      drawGraph(ctx, g, W, H, activeRef.current, hovRef.current, !!hovRef.current, true, labelAlpha);
 
       ctx.restore();
       rafRef.current = requestAnimationFrame(loop);
@@ -374,7 +425,6 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
     return () => cancelAnimationFrame(rafRef.current);
   }, []);
 
-  // Convert screen → graph coordinates (accounting for pan + zoom)
   const toGraph = useCallback((cx, cy) => {
     const canvas = canvasRef.current;
     if (!canvas) return { x: 0, y: 0 };
@@ -389,35 +439,59 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
   }, []);
 
   const onMouseMove = useCallback((e) => {
+    const { x, y } = toGraph(e.clientX, e.clientY);
+    if (dragNodeRef.current) {
+      dragNodeRef.current.x = x;
+      dragNodeRef.current.y = y;
+      panRef.current.moved = true;
+      return;
+    }
     const p = panRef.current;
     if (p.dragging) {
       p.x += e.clientX - p.lx; p.y += e.clientY - p.ly;
       p.lx = e.clientX; p.ly = e.clientY; p.moved = true;
       return;
     }
-    const { x, y } = toGraph(e.clientX, e.clientY);
     const node = graphRef.current?.getNodeAt(x, y, 16);
     hovRef.current = node || null;
     setHovId(node?.id || null);
+    setCursor(node ? 'pointer' : 'grab');
   }, [toGraph]);
 
   const onMouseDown = useCallback((e) => {
-    panRef.current = { ...panRef.current, dragging: true, lx: e.clientX, ly: e.clientY, moved: false };
-  }, []);
+    const { x, y } = toGraph(e.clientX, e.clientY);
+    const node = graphRef.current?.getNodeAt(x, y, 16);
+    if (node) {
+      dragNodeRef.current = node;
+      panRef.current.moved = false;
+      setCursor('grabbing');
+    } else {
+      panRef.current = { ...panRef.current, dragging: true, lx: e.clientX, ly: e.clientY, moved: false };
+      setCursor('grabbing');
+    }
+  }, [toGraph]);
 
   const onMouseUp = useCallback((e) => {
+    if (dragNodeRef.current) {
+      dragNodeRef.current.vx = 0; dragNodeRef.current.vy = 0;
+      dragNodeRef.current = null;
+      setCursor('grab');
+      return;
+    }
     const p = panRef.current;
     if (!p.moved) {
       const { x, y } = toGraph(e.clientX, e.clientY);
       const node = graphRef.current?.getNodeAt(x, y, 16);
-      if (node && window.VAULT_NOTES?.[node.id]) { onNavigate(node.id); onClose(); }
+      // Single-click navigates but keeps the graph open (like Obsidian)
+      if (node && window.VAULT_NOTES?.[node.id]) { onNavigate(node.id); }
     }
     p.dragging = false; p.moved = false;
-  }, [toGraph, onNavigate, onClose]);
+    setCursor('grab');
+  }, [toGraph, onNavigate]);
 
   const onWheel = useCallback((e) => {
     e.preventDefault();
-    zoomRef.current = Math.max(0.25, Math.min(5, zoomRef.current * (e.deltaY < 0 ? 1.12 : 0.89)));
+    zoomRef.current = Math.max(0.2, Math.min(8, zoomRef.current * (e.deltaY < 0 ? 1.12 : 0.89)));
   }, []);
 
   // Keyboard: Escape to close
@@ -482,12 +556,17 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
           onMouseMove={onMouseMove}
           onMouseDown={onMouseDown}
           onMouseUp={onMouseUp}
-          onMouseLeave={() => { hovRef.current = null; setHovId(null); panRef.current.dragging = false; }}
+          onMouseLeave={() => {
+            hovRef.current = null; setHovId(null);
+            if (dragNodeRef.current) { dragNodeRef.current.vx = 0; dragNodeRef.current.vy = 0; dragNodeRef.current = null; }
+            panRef.current.dragging = false;
+            setCursor('grab');
+          }}
           onWheel={onWheel}
           style={{
             flex: 1, width: '100%', display: 'block',
             background: 'var(--bg-graph)',
-            cursor: hovId ? 'pointer' : panRef.current?.dragging ? 'grabbing' : 'grab',
+            cursor,
           }}
         />
 

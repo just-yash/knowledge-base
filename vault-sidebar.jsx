@@ -93,7 +93,7 @@ const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, cu
         <span style={{ flexShrink: 0, color: 'var(--text-muted)', display: 'flex' }}>
           <Icon name={isExpanded ? 'chevron-down' : 'chevron-right'} size={11} strokeWidth={2.5} />
         </span>
-        <span style={{ flexShrink: 0, display: 'flex', opacity: 0.7 }}>
+        <span style={{ flexShrink: 0, display: 'flex', opacity: 0.9 }}>
           <Icon name={FOLDER_ICONS[folder.id] || 'folder'} size={13} strokeWidth={1.6} />
         </span>
         <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
@@ -137,6 +137,7 @@ const FileRow = ({ item, depth, isActive, onSelect }) => {
 
   return (
     <button
+      data-sidebar-note={item.id}
       onClick={onSelect}
       style={{
         display: 'flex', alignItems: 'center', gap: 5,
@@ -144,16 +145,16 @@ const FileRow = ({ item, depth, isActive, onSelect }) => {
         padding: `3px 8px 3px ${indent}px`,
         cursor: clickable ? 'pointer' : 'default',
         borderRadius: 4, textAlign: 'left', userSelect: 'none',
-        fontSize: 14, transition: 'background 0.1s, color 0.1s',
+        fontSize: 13, transition: 'background 0.1s, color 0.1s',
         borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
         background: isActive ? 'var(--bg-active)' : 'none',
-        color: isActive ? 'var(--text-primary)' : isStub ? 'var(--text-muted)' : isAsset ? 'var(--text-secondary)' : 'var(--text-secondary)',
+        color: isActive ? 'var(--text-primary)' : isStub ? 'var(--text-muted)' : 'var(--text-secondary)',
         paddingLeft: isActive ? `${indent - 2}px` : `${indent}px`,
       }}
       onMouseEnter={e => { if (!isActive && clickable) { e.currentTarget.style.background = 'var(--bg-hover)'; e.currentTarget.style.color = 'var(--text-primary)'; }}}
       onMouseLeave={e => { if (!isActive) { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = isStub ? 'var(--text-muted)' : 'var(--text-secondary)'; }}}
     >
-      <span style={{ flexShrink: 0, display: 'flex', opacity: isActive ? 0.8 : 0.5 }}>
+      <span style={{ flexShrink: 0, display: 'flex', opacity: isActive ? 1 : 0.8 }}>
         <Icon name={icon} size={12} strokeWidth={1.5} />
       </span>
       <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
@@ -167,7 +168,7 @@ const FileRow = ({ item, depth, isActive, onSelect }) => {
 };
 
 // ─── Sidebar Header (actions row) ─────────────────────────────────────────────
-const SidebarHeader = ({ onExpandAll, onCollapseAll, onSearch, onHome }) => (
+const SidebarHeader = ({ onAutoReveal, onCollapseAll, onSearch, onHome }) => (
   <div style={{
     display: 'flex', alignItems: 'center',
     padding: '5px 6px 5px 8px',
@@ -183,16 +184,16 @@ const SidebarHeader = ({ onExpandAll, onCollapseAll, onSearch, onHome }) => (
     onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-hover)'}
     onMouseLeave={e => e.currentTarget.style.background = 'none'}
     >
-      <Icon name="book-open" size={13} strokeWidth={1.8} style={{ color: 'var(--accent)', opacity: 0.8, flexShrink: 0 }} />
-      <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--text-muted)', letterSpacing: '0.06em', textTransform: 'uppercase', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+      <Icon name="book-open" size={13} strokeWidth={1.8} style={{ color: 'var(--accent)', opacity: 0.9, flexShrink: 0 }} />
+      <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--text-secondary)', letterSpacing: '0.06em', textTransform: 'uppercase', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
         Yash-Zattelkasten
       </span>
     </button>
     <div style={{ display: 'flex', gap: 1 }}>
       {[
-        { icon: 'search',   title: 'Search (⌘K)', action: onSearch },
-        { icon: 'maximize', title: 'Expand all',   action: onExpandAll },
-        { icon: 'minimize', title: 'Collapse all', action: onCollapseAll },
+        { icon: 'search',   title: 'Search (⌘K)',              action: onSearch },
+        { icon: 'locate',   title: 'Reveal current file',      action: onAutoReveal },
+        { icon: 'minimize', title: 'Collapse all',             action: onCollapseAll },
       ].map(({ icon, title, action }) => (
         <button key={icon} title={title} onClick={action} style={{
           width: 27, height: 27, display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -314,21 +315,21 @@ const LeftSidebar = ({
   theme, onThemeToggle,
   currentNote, onNoteSelect,
   expandedFolders, onFolderToggle,
-  onExpandAll, onCollapseAll,
+  onAutoReveal, onCollapseAll,
   onSearch, onHome, onOpenGraph,
 }) => (
   <div style={{ display: 'flex', flexShrink: 0, height: '100%', overflow: 'hidden' }}>
     <div style={{
-      width: open ? 300 : 0,
+      width: open ? 220 : 0,
       flexShrink: 0, overflow: 'hidden',
       transition: 'width 0.22s cubic-bezier(0.4,0,0.2,1)',
       background: 'var(--bg-sidebar)',
       borderRight: '1px solid var(--border)',
       display: 'flex', flexDirection: 'column',
     }}>
-      <div style={{ width: 300, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
+      <div style={{ width: 220, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
         <SidebarHeader
-          onExpandAll={onExpandAll}
+          onAutoReveal={onAutoReveal}
           onCollapseAll={onCollapseAll}
           onSearch={onSearch}
           onHome={onHome}

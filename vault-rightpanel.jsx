@@ -312,7 +312,7 @@ const RightPanel = ({ open, currentNote, onNoteNavigate, onClose }) => {
 
   return (
     <div style={{
-      width: open ? 325 : 0,
+      width: open ? 260 : 0,
       flexShrink: 0,
       overflow: 'hidden',
       transition: 'width 0.22s cubic-bezier(0.4,0,0.2,1)',
@@ -320,7 +320,7 @@ const RightPanel = ({ open, currentNote, onNoteNavigate, onClose }) => {
       borderLeft: '1px solid var(--border)',
       display: 'flex', flexDirection: 'column',
     }}>
-      <div style={{ width: 325, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
+      <div style={{ width: 260, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
         <RightPanelHeader note={note} onClose={onClose} />
         <div style={{ flex: 1, overflowY: 'auto' }} className="scrollable">
           <OutlineSection note={note} onHeadingClick={handleHeadingClick} />

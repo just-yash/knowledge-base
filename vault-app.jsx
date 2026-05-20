@@ -236,9 +236,41 @@ const App = () => {
     });
   }, [nav]);
 
-  const handleExpandAll = useCallback(() => {
-    setExpandedFolders(VAULT_FOLDERS.map(f => f.id));
-  }, []);
+  // Auto-reveal: expand folders and scroll to the current note in the sidebar
+  const handleAutoReveal = useCallback(() => {
+    const noteId = nav.current;
+    if (!noteId) return;
+
+    // Walk the folder tree to find which folder IDs need to be expanded
+    function findFolderPath(children, targetId, parentIds) {
+      for (const item of children) {
+        if (item.type === 'folder') {
+          const result = findFolderPath(item.children || [], targetId, [...parentIds, item.id]);
+          if (result) return result;
+        } else if (item.id === targetId) {
+          return parentIds;
+        }
+      }
+      return null;
+    }
+
+    for (const topFolder of VAULT_FOLDERS) {
+      const path = findFolderPath(topFolder.children || [], noteId, [topFolder.id]);
+      if (path) {
+        setExpandedFolders(prev => {
+          const s = new Set(Array.isArray(prev) ? prev : []);
+          path.forEach(id => s.add(id));
+          return [...s];
+        });
+        // Scroll the sidebar item into view after folders expand
+        setTimeout(() => {
+          const el = document.querySelector(`[data-sidebar-note="${noteId}"]`);
+          el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 160);
+        break;
+      }
+    }
+  }, [nav.current]);
 
   const handleCollapseAll = useCallback(() => {
     setExpandedFolders([]);
@@ -286,7 +318,7 @@ const App = () => {
           onNoteSelect={handleNoteNavigate}
           expandedFolders={expandedSet}
           onFolderToggle={handleFolderToggle}
-          onExpandAll={handleExpandAll}
+          onAutoReveal={handleAutoReveal}
           onCollapseAll={handleCollapseAll}
           onSearch={() => setCmdOpen(true)}
           onHome={() => handleNoteNavigate('index')}
