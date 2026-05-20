@@ -89,9 +89,26 @@ node watch-vault.js
 
 ## Updating the vault
 
-1. Edit `.md` files inside `notes/` using Obsidian or any editor
-2. Run `node build-vault.js` to regenerate `vault-data.js`
-3. Commit and push to the `obsidian` branch — GitHub Pages serves it automatically
+Two steps:
+
+1. **Rebuild the data file** after adding/editing notes in Obsidian:
+    
+    ```bash
+    node build-vault.js
+    ```
+    
+2. **Commit and push** the regenerated `vault-data.js`:
+    
+    ```bash
+    git add vault-data.js
+    git commit -m "chore: rebuild vault"
+    git push origin obsidian
+    ```
+    
+
+GitHub Pages deploys automatically in ~1 minute after the push.
+
+If you want auto-rebuild while writing in Obsidian, run `node watch-vault.js` — it watches the `notes/` folder and reruns the build on every save. You'd still need to do the git push manually when you're ready to publish.
 
 ---
 
