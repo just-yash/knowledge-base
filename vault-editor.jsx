@@ -109,16 +109,46 @@
   };
 })();
 
-// ─── Pre-process: ![[image.ext]] → <img> using VAULT_ASSETS ─────────────────
+// ─── Shield math from marked (marked mangles _ * inside $…$) ────────────────
+// Replace all math blocks with safe placeholders before marked runs,
+// then restore them afterwards so KaTeX auto-render can see them.
+const MATH_TOKEN = 'MTHSHLD';
+function shieldMath(md) {
+  const store = [];
+  const ph = (match) => { const i = store.length; store.push(match); return `${MATH_TOKEN}${i}X`; };
+  // Display math $$…$$ first (greedy would eat inline, so non-greedy + dotall)
+  let out = md.replace(/\$\$([\s\S]*?)\$\$/g, ph);
+  // LaTeX \[…\] display
+  out = out.replace(/\\\[([\s\S]*?)\\\]/g, ph);
+  // Inline $…$ — single line only, not empty
+  out = out.replace(/\$([^\n$`]{1,400}?)\$/g, ph);
+  // Inline \(…\)
+  out = out.replace(/\\\((.+?)\\\)/g, ph);
+  return { out, store };
+}
+function unshieldMath(html, store) {
+  return html.replace(new RegExp(`${MATH_TOKEN}(\\d+)X`, 'g'), (_, i) => store[+i]);
+}
+
+// ─── Pre-process: ![[image.ext]] → raw <img> tag ─────────────────────────────
+// Using <img> directly (not markdown ![]) so spaces in paths never break parsing.
+// Also strips Obsidian alias syntax: ![[img.png|200]] → just the filename.
 function resolveObsidianEmbeds(md) {
-  return md.replace(/!\[\[([^\]]+?\.(png|jpg|jpeg|gif|svg|webp))\]\]/gi, (_, filename) => {
-    const assetPath = window.VAULT_ASSETS?.[filename];
-    if (assetPath) {
-      return `![${filename}](${assetPath})`;
+  return md.replace(
+    /!\[\[([^\]|#\n]+?\.(png|jpg|jpeg|gif|svg|webp))(?:\|[^\]]*)?\]\]/gi,
+    (_, filename) => {
+      const bare = filename.trim();
+      // Try exact filename, then just the last path segment
+      const assetPath = window.VAULT_ASSETS?.[bare]
+        ?? window.VAULT_ASSETS?.[bare.split('/').pop()];
+      const src = assetPath
+        ? assetPath.split('/').map(encodeURIComponent).join('/')
+        : 'notes/07%20-%20Annexure/Excalidraw/' + encodeURIComponent(bare);
+      const alt = bare.replace(/"/g, '&quot;');
+      // Blank lines force marked to treat this as a block, not inline
+      return `\n\n<img src="${src}" alt="${alt}" />\n\n`;
     }
-    // fallback: try direct path guess
-    return `![${filename}](notes/07 - Annexure/Excalidraw/${filename})`;
-  });
+  );
 }
 
 // ─── Post-process: [[WikiLinks]] → clickable spans ───────────────────────────
@@ -316,8 +346,15 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
 
   const rendered = React.useMemo(() => {
     if (!note || !window.marked) return '';
-    const preprocessed = resolveObsidianEmbeds(note.content);
-    let html = marked.parse(preprocessed);
+    // 1. Convert ![[image]] → <img> HTML
+    const withImgs = resolveObsidianEmbeds(note.content);
+    // 2. Shield $…$ and $$…$$ from marked so _ and * aren't mangled
+    const { out: shielded, store } = shieldMath(withImgs);
+    // 3. Parse markdown
+    let html = marked.parse(shielded);
+    // 4. Restore math blocks (KaTeX auto-render will handle them in useEffect)
+    html = unshieldMath(html, store);
+    // 5. Linkify [[WikiLinks]]
     html = processWikiLinks(html);
     return html;
   }, [note?.id]);
