@@ -118,17 +118,22 @@ const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, cu
               item={child}
               depth={depth + 1}
               isActive={currentNote === child.id}
-              onSelect={() => child.type === 'note' ? onNoteSelect(child.id) : null}
+              onSelect={() => (child.type === 'note' || child.type === 'asset' || child.type === 'image') ? onNoteSelect(child.id) : null}
             />
       ))}
     </div>
   );
 };
 
+const FILE_ICON = { tag: 'hash', asset: 'file-text', image: 'image', excalidraw: 'pen-tool', stub: 'file' };
+
 const FileRow = ({ item, depth, isActive, onSelect }) => {
-  const indent = depth * 14 + 8;
-  const isTag = item.type === 'tag';
-  const isStub = item.type === 'stub';
+  const indent   = depth * 14 + 8;
+  const isTag    = item.type === 'tag';
+  const isStub   = item.type === 'stub' || item.type === 'excalidraw';
+  const isAsset  = item.type === 'asset' || item.type === 'image';
+  const clickable = !isStub;
+  const icon     = FILE_ICON[item.type] || 'file';
 
   return (
     <button
@@ -137,25 +142,25 @@ const FileRow = ({ item, depth, isActive, onSelect }) => {
         display: 'flex', alignItems: 'center', gap: 5,
         width: '100%', border: 'none',
         padding: `3px 8px 3px ${indent}px`,
-        cursor: isStub ? 'default' : 'pointer',
+        cursor: clickable ? 'pointer' : 'default',
         borderRadius: 4, textAlign: 'left', userSelect: 'none',
         fontSize: 14, transition: 'background 0.1s, color 0.1s',
         borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
         background: isActive ? 'var(--bg-active)' : 'none',
-        color: isActive ? 'var(--text-primary)' : isStub ? 'var(--text-muted)' : 'var(--text-secondary)',
+        color: isActive ? 'var(--text-primary)' : isStub ? 'var(--text-muted)' : isAsset ? 'var(--text-secondary)' : 'var(--text-secondary)',
         paddingLeft: isActive ? `${indent - 2}px` : `${indent}px`,
       }}
-      onMouseEnter={e => { if (!isActive && !isStub) { e.currentTarget.style.background = 'var(--bg-hover)'; e.currentTarget.style.color = 'var(--text-primary)'; }}}
+      onMouseEnter={e => { if (!isActive && clickable) { e.currentTarget.style.background = 'var(--bg-hover)'; e.currentTarget.style.color = 'var(--text-primary)'; }}}
       onMouseLeave={e => { if (!isActive) { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = isStub ? 'var(--text-muted)' : 'var(--text-secondary)'; }}}
     >
       <span style={{ flexShrink: 0, display: 'flex', opacity: isActive ? 0.8 : 0.5 }}>
-        <Icon name={isTag ? 'hash' : 'file'} size={12} strokeWidth={1.5} />
+        <Icon name={icon} size={12} strokeWidth={1.5} />
       </span>
       <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
         {item.name}
       </span>
       {isStub && (
-        <span style={{ fontSize: 9, opacity: 0.4, fontStyle: 'italic', marginRight: 4 }}>empty</span>
+        <span style={{ fontSize: 9, opacity: 0.4, fontStyle: 'italic', marginRight: 4 }}>excalidraw</span>
       )}
     </button>
   );

@@ -112,14 +112,20 @@ function walkDir(dir, relPath) {
       if (SKIP_DIRS.has(entry.name)) continue;
       result.push(...walkDir(fullPath, entryRel));
     } else if (entry.isFile()) {
-      const isExcalidraw = entry.name.endsWith('.excalidraw.md') || entry.name.endsWith('.excalidraw');
-      const isPdf        = entry.name.endsWith('.pdf');
-      const isGitkeep    = entry.name === '.gitkeep';
-      if (isGitkeep) continue;
-      if (entry.name.endsWith('.md') && !isExcalidraw) {
+      const name         = entry.name;
+      const isExcalidraw = name.endsWith('.excalidraw.md') || name.endsWith('.excalidraw');
+      const isPdf        = name.endsWith('.pdf');
+      const isHtml       = name.endsWith('.html');
+      const isImage      = /\.(png|jpg|jpeg|gif|svg|webp)$/i.test(name);
+      if (name === '.gitkeep') continue;
+      if (name.endsWith('.md') && !isExcalidraw) {
         result.push({ fullPath, relPath: entryRel, stub: false });
-      } else if (isExcalidraw || isPdf) {
-        result.push({ fullPath, relPath: entryRel, stub: true });
+      } else if (isPdf || isHtml) {
+        result.push({ fullPath, relPath: entryRel, stub: 'asset', ext: isPdf ? 'pdf' : 'html' });
+      } else if (isImage) {
+        result.push({ fullPath, relPath: entryRel, stub: 'image', ext: name.split('.').pop().toLowerCase() });
+      } else if (isExcalidraw) {
+        result.push({ fullPath, relPath: entryRel, stub: 'excalidraw' });
       }
     }
   }
@@ -135,7 +141,7 @@ const titleToId = {};
 const idCounts  = {};
 
 for (const { relPath } of allFiles) {
-  const parts    = relPath.replace(/\.(md|pdf|excalidraw)$/, '').split(/[\\/]/);
+  const parts    = relPath.replace(/\.(md|pdf|html|excalidraw|png|jpg|jpeg|gif|svg|webp)$/i, '').split(/[\\/]/);
   const filename = parts[parts.length - 1];
   let   id       = slugify(filename);
 
@@ -152,8 +158,8 @@ for (const { relPath } of allFiles) {
 const fileInfos = [];
 const usedIds   = {};
 
-for (const { fullPath, relPath, stub } of allFiles) {
-  const parts      = relPath.replace(/\.(md|pdf|excalidraw)$/, '').split(/[\\/]/);
+for (const { fullPath, relPath, stub, ext } of allFiles) {
+  const parts      = relPath.replace(/\.(md|pdf|html|excalidraw|png|jpg|jpeg|gif|svg|webp)$/i, '').split(/[\\/]/);
   const filename   = parts[parts.length - 1];
   const topFolder  = parts[0];
   const subFolders = parts.slice(1, -1);   // intermediate dirs
@@ -162,7 +168,7 @@ for (const { fullPath, relPath, stub } of allFiles) {
   if (usedIds[id]) id = slugify(parts[parts.length - 2]) + '-' + id;
   usedIds[id] = true;
 
-  fileInfos.push({ fullPath, relPath, filename, topFolder, subFolders, id, stub: !!stub });
+  fileInfos.push({ fullPath, relPath, filename, topFolder, subFolders, id, stub: stub || false, ext: ext || null });
 }
 
 // Rebuild titleToId with final IDs
@@ -173,22 +179,43 @@ for (const { filename, id } of fileInfos) {
 
 // Second pass: parse each file
 const notes = {};
-for (const { fullPath, relPath, filename, topFolder, subFolders, id, stub } of fileInfos) {
+for (const { fullPath, relPath, filename, topFolder, subFolders, id, stub, ext } of fileInfos) {
   const stats      = fs.statSync(fullPath);
   const folderMeta = FOLDER_META[topFolder] || { id: slugify(topFolder), group: null };
   const folderName = topFolder;
   const fullPathArr = [folderName, ...subFolders, filename];
 
   if (stub) {
-    // Excalidraw / PDF — show as sidebar stub, no content
-    const ext = relPath.endsWith('.pdf') ? 'pdf' : 'excalidraw';
+    // Build web-accessible URL (relative to repo root)
+    const webPath = 'notes/' + relPath.split(/[\\/]/).map(s => encodeURIComponent(s)).join('/');
+    const rawPath = 'notes/' + relPath.replace(/\\/g, '/');
+
+    let content = '';
+    let sidebarType = 'stub';
+
+    if (stub === 'asset' && ext === 'pdf') {
+      sidebarType = 'asset';
+      content = `# ${filename}\n\n<div style="width:100%;height:82vh">\n<iframe src="${rawPath}" style="width:100%;height:100%;border:none;border-radius:6px" title="${filename}"></iframe>\n</div>\n\n[Open in new tab ↗](${rawPath})`;
+    } else if (stub === 'asset' && ext === 'html') {
+      sidebarType = 'asset';
+      content = `# ${filename}\n\n<div style="width:100%;height:82vh">\n<iframe src="${rawPath}" style="width:100%;height:100%;border:none;border-radius:6px" title="${filename}"></iframe>\n</div>\n\n[Open in new tab ↗](${rawPath})`;
+    } else if (stub === 'image') {
+      sidebarType = 'asset';
+      content = `# ${filename}\n\n<div style="text-align:center">\n<img src="${rawPath}" alt="${filename}" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />\n</div>`;
+    } else {
+      // Excalidraw — truly not viewable
+      content = `# ${filename}\n\n*Excalidraw drawing — open in Obsidian to view.*`;
+    }
+
     notes[id] = {
       id, title: filename,
       folder: folderName, path: fullPathArr,
-      tags: [ext], date: stats.mtime.toISOString().slice(0,10),
+      tags: [stub], date: stats.mtime.toISOString().slice(0,10),
       outline: [], links: [], backlinks: [], wordCount: 0,
-      content: `# ${filename}\n\n*This is a ${ext === 'pdf' ? 'PDF document' : 'visual Excalidraw drawing'} — not viewable in the web vault.*`,
-      _topFolder: topFolder, _subFolders: subFolders, _group: null, _stub: true,
+      content,
+      _topFolder: topFolder, _subFolders: subFolders, _group: null,
+      _stub: sidebarType,
+      _webPath: rawPath,
     };
     continue;
   }
@@ -242,7 +269,7 @@ function buildFolderTree(topFolderName) {
   for (const note of Object.values(notes)) {
     if (note._topFolder !== topFolderName) continue;
     if (note._subFolders.length === 0) {
-      direct.push({ id: note.id, name: note.title, type: note._stub ? 'stub' : 'note' });
+      direct.push({ id: note.id, name: note.title, type: note._stub || 'note' });
     } else {
       // nest under subfolder(s)
       const key = note._subFolders.join('/');
@@ -251,7 +278,7 @@ function buildFolderTree(topFolderName) {
         const subName = note._subFolders[0];
         children[key] = { id: subId, name: subName, type: 'folder', children: [] };
       }
-      children[key].children.push({ id: note.id, name: note.title, type: note._stub ? 'stub' : 'note' });
+      children[key].children.push({ id: note.id, name: note.title, type: note._stub || 'note' });
     }
   }
 
@@ -295,6 +322,17 @@ for (const note of Object.values(notes)) {
   }
 }
 
+// ── Build VAULT_ASSETS (filename → web path for image embeds) ────────────────
+const VAULT_ASSETS = {};
+for (const note of Object.values(notes)) {
+  if (note._stub === 'asset' || note._stub === 'image') {
+    // map bare filename to web path
+    const parts    = note._webPath.split('/');
+    const filename = decodeURIComponent(parts[parts.length - 1]);
+    VAULT_ASSETS[filename] = note._webPath;
+  }
+}
+
 // ── Serialize ─────────────────────────────────────────────────────────────────
 
 function serializeNote(n) {
@@ -327,11 +365,14 @@ const GRAPH_NODES = ${JSON.stringify(GRAPH_NODES, null, 2)};
 
 const GRAPH_EDGES = ${JSON.stringify(GRAPH_EDGES, null, 2)};
 
+const VAULT_ASSETS = ${JSON.stringify(VAULT_ASSETS, null, 2)};
+
 // Expose to window so JSX components can access via window.*
 window.VAULT_NOTES   = VAULT_NOTES;
 window.VAULT_FOLDERS = VAULT_FOLDERS;
 window.GRAPH_NODES   = GRAPH_NODES;
 window.GRAPH_EDGES   = GRAPH_EDGES;
+window.VAULT_ASSETS  = VAULT_ASSETS;
 `;
 
 fs.writeFileSync(OUTPUT, out, 'utf8');

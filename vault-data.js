@@ -40069,7 +40069,7 @@ _Last updated: 25th March 2026 · Built for deep, sequential learning._
     title: "Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint",
     folder: "04 - Research",
     path: ["04 - Research","Multi-Camera-Surveillance","Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 0,
@@ -40078,7 +40078,11 @@ _Last updated: 25th March 2026 · Built for deep, sequential learning._
     outline: [],
     content: `# Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/04 - Research/Multi-Camera-Surveillance/Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint"></iframe>
+</div>
+
+[Open in new tab ↗](notes/04 - Research/Multi-Camera-Surveillance/Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint.pdf)`
   },
 
   'architecture': {
@@ -40464,7 +40468,7 @@ We propose a real-time pipeline for multi-camera person re-identification that e
     title: "Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026)",
     folder: "04 - Research",
     path: ["04 - Research","Multi-Camera-Surveillance","Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026)"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 0,
@@ -40473,7 +40477,11 @@ We propose a real-time pipeline for multi-camera person re-identification that e
     outline: [],
     content: `# Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026)
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/04 - Research/Multi-Camera-Surveillance/Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026).pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026)"></iframe>
+</div>
+
+[Open in new tab ↗](notes/04 - Research/Multi-Camera-Surveillance/Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026).pdf)`
   },
 
   'a-desolated-guy': {
@@ -42045,7 +42053,7 @@ These topics appeared only once in the last three years. Prioritize the stable t
     title: "AEC COMPLETE TILL 1 NOV 2025",
     folder: "06 - Archive",
     path: ["06 - Archive","AEC","AEC COMPLETE TILL 1 NOV 2025"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2025-11-01",
     modified: "2025-11-01",
     wordCount: 0,
@@ -42054,7 +42062,11 @@ These topics appeared only once in the last three years. Prioritize the stable t
     outline: [],
     content: `# AEC COMPLETE TILL 1 NOV 2025
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/AEC/AEC COMPLETE TILL 1 NOV 2025.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="AEC COMPLETE TILL 1 NOV 2025"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/AEC/AEC COMPLETE TILL 1 NOV 2025.pdf)`
   },
 
   'aec': {
@@ -43256,7 +43268,7 @@ Your exam is **academic**, so:
     title: "AEC",
     folder: "06 - Archive",
     path: ["06 - Archive","AEC","AEC"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2025-11-01",
     modified: "2025-11-01",
     wordCount: 0,
@@ -43265,7 +43277,11 @@ Your exam is **academic**, so:
     outline: [],
     content: `# AEC
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/AEC/AEC.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="AEC"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/AEC/AEC.pdf)`
   },
 
   'database-management-system-dbms-cse-14th': {
@@ -43273,7 +43289,7 @@ Your exam is **academic**, so:
     title: "Database Management System (DBMS) - CSE 14th",
     folder: "06 - Archive",
     path: ["06 - Archive","DBMS","Database Management System (DBMS) - CSE 14th"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-04-08",
     modified: "2026-04-08",
     wordCount: 0,
@@ -43282,7 +43298,11 @@ Your exam is **academic**, so:
     outline: [],
     content: `# Database Management System (DBMS) - CSE 14th
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/DBMS/Database Management System (DBMS) - CSE 14th.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Database Management System (DBMS) - CSE 14th"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/DBMS/Database Management System (DBMS) - CSE 14th.pdf)`
   },
 
   'dbms-4th-sem': {
@@ -43290,7 +43310,7 @@ Your exam is **academic**, so:
     title: "DBMS 4th Sem",
     folder: "06 - Archive",
     path: ["06 - Archive","DBMS","DBMS 4th Sem"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-04-10",
     modified: "2026-04-10",
     wordCount: 0,
@@ -43299,7 +43319,11 @@ Your exam is **academic**, so:
     outline: [],
     content: `# DBMS 4th Sem
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/DBMS/DBMS 4th Sem.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="DBMS 4th Sem"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/DBMS/DBMS 4th Sem.pdf)`
   },
 
   'dbms-exam-strategy-analysis': {
@@ -46275,7 +46299,7 @@ Index : Unique identifiers to each array element: range 0 to size-1
     title: "EE college notes",
     folder: "06 - Archive",
     path: ["06 - Archive","EE","EE college notes"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-03-29",
     modified: "2026-03-29",
     wordCount: 0,
@@ -46284,7 +46308,11 @@ Index : Unique identifiers to each array element: range 0 to size-1
     outline: [],
     content: `# EE college notes
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/EE/EE college notes.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="EE college notes"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/EE/EE college notes.pdf)`
   },
 
   'ee-module-i-pyqs': {
@@ -47340,7 +47368,7 @@ $$Price \\propto \\frac{1}{Demand} \\propto Supply$$
     title: "EE",
     folder: "06 - Archive",
     path: ["06 - Archive","EE","EE"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-03-16",
     modified: "2026-03-16",
     wordCount: 0,
@@ -47349,7 +47377,11 @@ $$Price \\propto \\frac{1}{Demand} \\propto Supply$$
     outline: [],
     content: `# EE
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/EE/EE.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="EE"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/EE/EE.pdf)`
   },
 
   'eenotesbysir': {
@@ -47357,7 +47389,7 @@ $$Price \\propto \\frac{1}{Demand} \\propto Supply$$
     title: "EENOTESBYSIR",
     folder: "06 - Archive",
     path: ["06 - Archive","EE","EENOTESBYSIR"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-04",
     modified: "2026-05-04",
     wordCount: 0,
@@ -47366,7 +47398,11 @@ $$Price \\propto \\frac{1}{Demand} \\propto Supply$$
     outline: [],
     content: `# EENOTESBYSIR
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/EE/EENOTESBYSIR.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="EENOTESBYSIR"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/EE/EENOTESBYSIR.pdf)`
   },
 
   'engineering-economics': {
@@ -47902,7 +47938,7 @@ About **70% of exam marks come from just these areas:**
     title: "CYK",
     folder: "06 - Archive",
     path: ["06 - Archive","FLAT","CYK"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-08",
     modified: "2026-05-08",
     wordCount: 0,
@@ -47911,7 +47947,11 @@ About **70% of exam marks come from just these areas:**
     outline: [],
     content: `# CYK
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/FLAT/CYK.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="CYK"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/FLAT/CYK.pdf)`
   },
 
   'flat-4th-sem': {
@@ -47919,7 +47959,7 @@ About **70% of exam marks come from just these areas:**
     title: "FLAT 4th Sem",
     folder: "06 - Archive",
     path: ["06 - Archive","FLAT","FLAT 4th Sem"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -47928,7 +47968,11 @@ About **70% of exam marks come from just these areas:**
     outline: [],
     content: `# FLAT 4th Sem
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/FLAT/FLAT 4th Sem.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="FLAT 4th Sem"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/FLAT/FLAT 4th Sem.pdf)`
   },
 
   'flat-exam-analysis': {
@@ -48318,7 +48362,7 @@ These are repeated directly in your papers.
     title: "flat material",
     folder: "06 - Archive",
     path: ["06 - Archive","FLAT","flat material"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-08",
     modified: "2026-05-08",
     wordCount: 0,
@@ -48327,7 +48371,11 @@ These are repeated directly in your papers.
     outline: [],
     content: `# flat material
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/FLAT/flat material.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="flat material"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/FLAT/flat material.pdf)`
   },
 
   'flat-notes-2': {
@@ -48696,7 +48744,7 @@ w = $q_{0}abba$
     title: "Formal Language and Automata Theory (FLAT) Notes CSE 14th",
     folder: "06 - Archive",
     path: ["06 - Archive","FLAT","Formal Language and Automata Theory (FLAT) Notes CSE 14th"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-08",
     modified: "2026-05-08",
     wordCount: 0,
@@ -48705,7 +48753,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# Formal Language and Automata Theory (FLAT) Notes CSE 14th
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/FLAT/Formal Language and Automata Theory (FLAT) Notes CSE 14th.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Formal Language and Automata Theory (FLAT) Notes CSE 14th"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/FLAT/Formal Language and Automata Theory (FLAT) Notes CSE 14th.pdf)`
   },
 
   'p-np-np-complete-and-np-hard-problems-in-computer-science-baeldung-on-computer-science': {
@@ -48713,7 +48765,7 @@ w = $q_{0}abba$
     title: "P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science",
     folder: "06 - Archive",
     path: ["06 - Archive","FLAT","P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-08",
     modified: "2026-05-08",
     wordCount: 0,
@@ -48722,7 +48774,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/FLAT/P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/FLAT/P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science.pdf)`
   },
 
   'turing-machine-from-net': {
@@ -48730,7 +48786,7 @@ w = $q_{0}abba$
     title: "Turing Machine from net",
     folder: "06 - Archive",
     path: ["06 - Archive","FLAT","Turing Machine from net"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-08",
     modified: "2026-05-08",
     wordCount: 0,
@@ -48739,7 +48795,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# Turing Machine from net
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/FLAT/Turing Machine from net.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Turing Machine from net"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/FLAT/Turing Machine from net.pdf)`
   },
 
   'awt-and-swing': {
@@ -48747,7 +48807,7 @@ w = $q_{0}abba$
     title: "AWT and Swing",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","AWT and Swing"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -48756,7 +48816,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# AWT and Swing
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/AWT and Swing.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="AWT and Swing"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/AWT and Swing.pdf)`
   },
 
   'c-vs-java': {
@@ -48764,7 +48828,7 @@ w = $q_{0}abba$
     title: "C++ vs Java",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","C++ vs Java"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -48773,7 +48837,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# C++ vs Java
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/C++ vs Java.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="C++ vs Java"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/C++ vs Java.pdf)`
   },
 
   'difference-between-jdk-jre-and-jvm-javatpoint': {
@@ -48781,7 +48849,7 @@ w = $q_{0}abba$
     title: "Difference between JDK, JRE and JVM - javatpoint",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","Difference between JDK, JRE and JVM - javatpoint"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -48790,7 +48858,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# Difference between JDK, JRE and JVM - javatpoint
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/Difference between JDK, JRE and JVM - javatpoint.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Difference between JDK, JRE and JVM - javatpoint"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/Difference between JDK, JRE and JVM - javatpoint.pdf)`
   },
 
   'faetures-of-java': {
@@ -48798,7 +48870,7 @@ w = $q_{0}abba$
     title: "faetures of java",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","faetures of java"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -48807,7 +48879,32 @@ w = $q_{0}abba$
     outline: [],
     content: `# faetures of java
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/faetures of java.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="faetures of java"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/faetures of java.pdf)`
+  },
+
+  'igitoopjavaexamstrategy': {
+    id: 'igitoopjavaexamstrategy',
+    title: "IGIT_OOP_Java_Exam_Strategy",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","IGIT_OOP_Java_Exam_Strategy"],
+    tags: ["asset"],
+    created: "2026-04-04",
+    modified: "2026-04-04",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# IGIT_OOP_Java_Exam_Strategy
+
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/IGIT_OOP_Java_Exam_Strategy.html" style="width:100%;height:100%;border:none;border-radius:6px" title="IGIT_OOP_Java_Exam_Strategy"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/IGIT_OOP_Java_Exam_Strategy.html)`
   },
 
   'interface-in-java': {
@@ -48815,7 +48912,7 @@ w = $q_{0}abba$
     title: "Interface in Java",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","Interface in Java"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -48824,7 +48921,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# Interface in Java
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/Interface in Java.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Interface in Java"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/Interface in Java.pdf)`
   },
 
   'java-java-overview': {
@@ -48832,7 +48933,7 @@ w = $q_{0}abba$
     title: "Java - Overview",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","Java - Overview"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -48841,7 +48942,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# Java - Overview
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/Java - Overview.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Java - Overview"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/Java - Overview.pdf)`
   },
 
   'java-4th-sem-igit': {
@@ -48849,7 +48954,7 @@ w = $q_{0}abba$
     title: "JAVA 4th Sem IGIT",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","JAVA 4th Sem IGIT"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-04-03",
     modified: "2026-04-03",
     wordCount: 0,
@@ -48858,7 +48963,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# JAVA 4th Sem IGIT
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/JAVA 4th Sem IGIT.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="JAVA 4th Sem IGIT"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/JAVA 4th Sem IGIT.pdf)`
   },
 
   'java-exam': {
@@ -49015,7 +49124,7 @@ w = $q_{0}abba$
     title: "java mod 1",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","java mod 1"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49024,7 +49133,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# java mod 1
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/java mod 1.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="java mod 1"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/java mod 1.pdf)`
   },
 
   'java-mod-2': {
@@ -49032,7 +49145,7 @@ w = $q_{0}abba$
     title: "java mod 2",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","java mod 2"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49041,7 +49154,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# java mod 2
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/java mod 2.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="java mod 2"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/java mod 2.pdf)`
   },
 
   'java-mod-3': {
@@ -49049,7 +49166,7 @@ w = $q_{0}abba$
     title: "java mod 3",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","java mod 3"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49058,7 +49175,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# java mod 3
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/java mod 3.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="java mod 3"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/java mod 3.pdf)`
   },
 
   'java-notes-cse-14': {
@@ -49066,7 +49187,7 @@ w = $q_{0}abba$
     title: "Java Notes CSE 14",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","Java Notes CSE 14"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-04-06",
     modified: "2026-04-06",
     wordCount: 0,
@@ -49075,7 +49196,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# Java Notes CSE 14
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/Java Notes CSE 14.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Java Notes CSE 14"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/Java Notes CSE 14.pdf)`
   },
 
   'java-package': {
@@ -49083,7 +49208,7 @@ w = $q_{0}abba$
     title: "Java Package",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","Java Package"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49092,7 +49217,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# Java Package
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/Java Package.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Java Package"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/Java Package.pdf)`
   },
 
   'javaexecution': {
@@ -49100,7 +49229,7 @@ w = $q_{0}abba$
     title: "javaexecution",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","javaexecution"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49109,7 +49238,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# javaexecution
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/javaexecution.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="javaexecution"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/javaexecution.pdf)`
   },
 
   'javafundamental': {
@@ -49117,7 +49250,7 @@ w = $q_{0}abba$
     title: "javafundamental",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","javafundamental"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49126,7 +49259,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# javafundamental
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/javafundamental.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="javafundamental"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/javafundamental.pdf)`
   },
 
   'javaintro': {
@@ -49134,7 +49271,7 @@ w = $q_{0}abba$
     title: "javaintro",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","javaintro"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49143,7 +49280,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# javaintro
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/javaintro.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="javaintro"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/javaintro.pdf)`
   },
 
   'mannual-till-looping': {
@@ -49151,7 +49292,7 @@ w = $q_{0}abba$
     title: "mannual till looping",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","mannual till looping"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49160,7 +49301,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# mannual till looping
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/mannual till looping.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="mannual till looping"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/mannual till looping.pdf)`
   },
 
   'module-5-jdbcppt': {
@@ -49168,7 +49313,7 @@ w = $q_{0}abba$
     title: "Module 5 - JDBC.ppt",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","Module 5 - JDBC.ppt"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49177,7 +49322,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# Module 5 - JDBC.ppt
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/Module 5 - JDBC.ppt.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Module 5 - JDBC.ppt"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/Module 5 - JDBC.ppt.pdf)`
   },
 
   'module-1-strings-handlingppt': {
@@ -49185,7 +49334,7 @@ w = $q_{0}abba$
     title: "Module-1 Strings Handling.ppt",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","Module-1 Strings Handling.ppt"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49194,7 +49343,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# Module-1 Strings Handling.ppt
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/Module-1 Strings Handling.ppt.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Module-1 Strings Handling.ppt"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/Module-1 Strings Handling.ppt.pdf)`
   },
 
   'multithreading': {
@@ -49202,7 +49355,7 @@ w = $q_{0}abba$
     title: "multithreading",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","multithreading"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49211,7 +49364,11 @@ w = $q_{0}abba$
     outline: [],
     content: `# multithreading
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/multithreading.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="multithreading"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/multithreading.pdf)`
   },
 
   'pyq-analysisjava': {
@@ -49466,7 +49623,7 @@ EXTRACTION TRACE TABLE
     title: "string handling",
     folder: "06 - Archive",
     path: ["06 - Archive","JAVA","string handling"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-05-07",
     modified: "2026-05-07",
     wordCount: 0,
@@ -49475,7 +49632,32 @@ EXTRACTION TRACE TABLE
     outline: [],
     content: `# string handling
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/JAVA/string handling.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="string handling"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/JAVA/string handling.pdf)`
+  },
+
+  'leee-study-plan': {
+    id: 'leee-study-plan',
+    title: "leee-study-plan",
+    folder: "06 - Archive",
+    path: ["06 - Archive","LEEE","leee-study-plan"],
+    tags: ["asset"],
+    created: "2026-04-18",
+    modified: "2026-04-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# leee-study-plan
+
+<div style="width:100%;height:82vh">
+<iframe src="notes/06 - Archive/LEEE/leee-study-plan.html" style="width:100%;height:100%;border:none;border-radius:6px" title="leee-study-plan"></iframe>
+</div>
+
+[Open in new tab ↗](notes/06 - Archive/LEEE/leee-study-plan.html)`
   },
 
   'leee': {
@@ -50891,7 +51073,7 @@ Loop repeats
     title: "Algorithm",
     folder: "07 - Annexure",
     path: ["07 - Annexure","Documents","Algorithm"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2025-12-23",
     modified: "2025-12-23",
     wordCount: 0,
@@ -50900,7 +51082,11 @@ Loop repeats
     outline: [],
     content: `# Algorithm
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/07 - Annexure/Documents/Algorithm.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Algorithm"></iframe>
+</div>
+
+[Open in new tab ↗](notes/07 - Annexure/Documents/Algorithm.pdf)`
   },
 
   'cormen-introduction-to-algorithms': {
@@ -50908,7 +51094,7 @@ Loop repeats
     title: "cormen-introduction-to-algorithms",
     folder: "07 - Annexure",
     path: ["07 - Annexure","Documents","cormen-introduction-to-algorithms"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2025-12-23",
     modified: "2025-12-23",
     wordCount: 0,
@@ -50917,7 +51103,11 @@ Loop repeats
     outline: [],
     content: `# cormen-introduction-to-algorithms
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/07 - Annexure/Documents/cormen-introduction-to-algorithms.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="cormen-introduction-to-algorithms"></iframe>
+</div>
+
+[Open in new tab ↗](notes/07 - Annexure/Documents/cormen-introduction-to-algorithms.pdf)`
   },
 
   'dsgate': {
@@ -50925,7 +51115,7 @@ Loop repeats
     title: "ds_gate",
     folder: "07 - Annexure",
     path: ["07 - Annexure","Documents","ds_gate"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2025-12-21",
     modified: "2025-12-21",
     wordCount: 0,
@@ -50934,7 +51124,11 @@ Loop repeats
     outline: [],
     content: `# ds_gate
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/07 - Annexure/Documents/ds_gate.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="ds_gate"></iframe>
+</div>
+
+[Open in new tab ↗](notes/07 - Annexure/Documents/ds_gate.pdf)`
   },
 
   'viola-jones2001-object-detection': {
@@ -50942,7 +51136,7 @@ Loop repeats
     title: "Viola Jones(2001) - Object Detection",
     folder: "07 - Annexure",
     path: ["07 - Annexure","Documents","Viola Jones(2001) - Object Detection"],
-    tags: ["pdf"],
+    tags: ["asset"],
     created: "2026-03-29",
     modified: "2026-03-29",
     wordCount: 0,
@@ -50951,7 +51145,11 @@ Loop repeats
     outline: [],
     content: `# Viola Jones(2001) - Object Detection
 
-*This is a PDF document — not viewable in the web vault.*`
+<div style="width:100%;height:82vh">
+<iframe src="notes/07 - Annexure/Documents/Viola Jones(2001) - Object Detection.pdf" style="width:100%;height:100%;border:none;border-radius:6px" title="Viola Jones(2001) - Object Detection"></iframe>
+</div>
+
+[Open in new tab ↗](notes/07 - Annexure/Documents/Viola Jones(2001) - Object Detection.pdf)`
   },
 
   'drawing-2025-12-23-1327excalidraw': {
@@ -50968,7 +51166,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2025-12-23 1327.excalidraw
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'excalidraw-drawing-2025-12-23-1327excalidraw': {
@@ -50985,7 +51183,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2025-12-23 1327.excalidraw
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'drawing-2026-01-20-0034excalidraw': {
@@ -51002,7 +51200,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-01-20 0034.excalidraw
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'excalidraw-drawing-2026-01-20-0034excalidraw': {
@@ -51019,7 +51217,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-01-20 0034.excalidraw
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'drawing-2026-01-29-2111excalidraw': {
@@ -51036,7 +51234,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-01-29 2111.excalidraw
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'drawing-2026-02-10-0912excalidraw': {
@@ -51053,7 +51251,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-02-10 0912.excalidraw
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'excalidraw-drawing-2026-02-10-0912excalidraw': {
@@ -51070,7 +51268,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-02-10 0912.excalidraw
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'drawing-2026-04-02-0301': {
@@ -51087,7 +51285,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-04-02 0301
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'drawing-2026-04-09-2309': {
@@ -51104,7 +51302,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-04-09 2309
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'drawing-2026-04-10-0510excalidraw': {
@@ -51121,7 +51319,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-04-10 0510.excalidraw
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'excalidraw-drawing-2026-04-10-0510excalidraw': {
@@ -51138,7 +51336,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-04-10 0510.excalidraw
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'drawing-2026-04-13-0104': {
@@ -51155,7 +51353,7 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-04-13 0104
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
   },
 
   'drawing-2026-04-16-0650': {
@@ -51172,7 +51370,5517 @@ Loop repeats
     outline: [],
     content: `# Drawing 2026-04-16 0650
 
-*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+*Excalidraw drawing — open in Obsidian to view.*`
+  },
+
+  'pasted-image-20251018171249': {
+    id: 'pasted-image-20251018171249',
+    title: "Pasted image 20251018171249",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20251018171249"],
+    tags: ["image"],
+    created: "2025-10-18",
+    modified: "2025-10-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251018171249
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20251018171249.png" alt="Pasted image 20251018171249" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251115192926': {
+    id: 'pasted-image-20251115192926',
+    title: "Pasted image 20251115192926",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20251115192926"],
+    tags: ["image"],
+    created: "2025-11-15",
+    modified: "2025-11-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251115192926
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20251115192926.png" alt="Pasted image 20251115192926" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251223133057': {
+    id: 'pasted-image-20251223133057',
+    title: "Pasted image 20251223133057",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20251223133057"],
+    tags: ["image"],
+    created: "2025-12-23",
+    modified: "2025-12-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251223133057
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20251223133057.png" alt="Pasted image 20251223133057" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251228155311': {
+    id: 'pasted-image-20251228155311',
+    title: "Pasted image 20251228155311",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20251228155311"],
+    tags: ["image"],
+    created: "2025-12-28",
+    modified: "2025-12-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251228155311
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20251228155311.png" alt="Pasted image 20251228155311" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251228182025': {
+    id: 'pasted-image-20251228182025',
+    title: "Pasted image 20251228182025",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20251228182025"],
+    tags: ["image"],
+    created: "2025-12-28",
+    modified: "2025-12-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251228182025
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20251228182025.png" alt="Pasted image 20251228182025" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251228233716': {
+    id: 'pasted-image-20251228233716',
+    title: "Pasted image 20251228233716",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20251228233716"],
+    tags: ["image"],
+    created: "2025-12-28",
+    modified: "2025-12-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251228233716
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20251228233716.png" alt="Pasted image 20251228233716" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260103185330': {
+    id: 'pasted-image-20260103185330',
+    title: "Pasted image 20260103185330",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260103185330"],
+    tags: ["image"],
+    created: "2026-01-03",
+    modified: "2026-01-03",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260103185330
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260103185330.png" alt="Pasted image 20260103185330" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260103190053': {
+    id: 'pasted-image-20260103190053',
+    title: "Pasted image 20260103190053",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260103190053"],
+    tags: ["image"],
+    created: "2026-01-03",
+    modified: "2026-01-03",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260103190053
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260103190053.png" alt="Pasted image 20260103190053" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260103192720': {
+    id: 'pasted-image-20260103192720',
+    title: "Pasted image 20260103192720",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260103192720"],
+    tags: ["image"],
+    created: "2026-01-03",
+    modified: "2026-01-03",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260103192720
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260103192720.png" alt="Pasted image 20260103192720" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109182127': {
+    id: 'pasted-image-20260109182127',
+    title: "Pasted image 20260109182127",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109182127"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109182127
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109182127.png" alt="Pasted image 20260109182127" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109183208': {
+    id: 'pasted-image-20260109183208',
+    title: "Pasted image 20260109183208",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109183208"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109183208
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109183208.png" alt="Pasted image 20260109183208" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109192929': {
+    id: 'pasted-image-20260109192929',
+    title: "Pasted image 20260109192929",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109192929"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109192929
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109192929.png" alt="Pasted image 20260109192929" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109194756': {
+    id: 'pasted-image-20260109194756',
+    title: "Pasted image 20260109194756",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109194756"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109194756
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109194756.png" alt="Pasted image 20260109194756" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109194917': {
+    id: 'pasted-image-20260109194917',
+    title: "Pasted image 20260109194917",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109194917"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109194917
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109194917.png" alt="Pasted image 20260109194917" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109195646': {
+    id: 'pasted-image-20260109195646',
+    title: "Pasted image 20260109195646",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109195646"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109195646
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109195646.png" alt="Pasted image 20260109195646" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109195751': {
+    id: 'pasted-image-20260109195751',
+    title: "Pasted image 20260109195751",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109195751"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109195751
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109195751.png" alt="Pasted image 20260109195751" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109204303': {
+    id: 'pasted-image-20260109204303',
+    title: "Pasted image 20260109204303",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109204303"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109204303
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109204303.png" alt="Pasted image 20260109204303" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109211905': {
+    id: 'pasted-image-20260109211905',
+    title: "Pasted image 20260109211905",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109211905"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109211905
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109211905.png" alt="Pasted image 20260109211905" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109225451': {
+    id: 'pasted-image-20260109225451',
+    title: "Pasted image 20260109225451",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109225451"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109225451
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109225451.png" alt="Pasted image 20260109225451" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109232036': {
+    id: 'pasted-image-20260109232036',
+    title: "Pasted image 20260109232036",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109232036"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109232036
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109232036.png" alt="Pasted image 20260109232036" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260109233729': {
+    id: 'pasted-image-20260109233729',
+    title: "Pasted image 20260109233729",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260109233729"],
+    tags: ["image"],
+    created: "2026-01-09",
+    modified: "2026-01-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260109233729
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260109233729.png" alt="Pasted image 20260109233729" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260112200533': {
+    id: 'pasted-image-20260112200533',
+    title: "Pasted image 20260112200533",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260112200533"],
+    tags: ["image"],
+    created: "2026-01-12",
+    modified: "2026-01-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260112200533
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260112200533.png" alt="Pasted image 20260112200533" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260112202252': {
+    id: 'pasted-image-20260112202252',
+    title: "Pasted image 20260112202252",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260112202252"],
+    tags: ["image"],
+    created: "2026-01-12",
+    modified: "2026-01-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260112202252
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260112202252.png" alt="Pasted image 20260112202252" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260112204148': {
+    id: 'pasted-image-20260112204148',
+    title: "Pasted image 20260112204148",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260112204148"],
+    tags: ["image"],
+    created: "2026-01-12",
+    modified: "2026-01-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260112204148
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260112204148.png" alt="Pasted image 20260112204148" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260113000418': {
+    id: 'pasted-image-20260113000418',
+    title: "Pasted image 20260113000418",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260113000418"],
+    tags: ["image"],
+    created: "2026-01-12",
+    modified: "2026-01-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260113000418
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260113000418.png" alt="Pasted image 20260113000418" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260113001928': {
+    id: 'pasted-image-20260113001928',
+    title: "Pasted image 20260113001928",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260113001928"],
+    tags: ["image"],
+    created: "2026-01-12",
+    modified: "2026-01-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260113001928
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260113001928.png" alt="Pasted image 20260113001928" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260118222704': {
+    id: 'pasted-image-20260118222704',
+    title: "Pasted image 20260118222704",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260118222704"],
+    tags: ["image"],
+    created: "2026-01-18",
+    modified: "2026-01-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260118222704
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260118222704.png" alt="Pasted image 20260118222704" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260119194011': {
+    id: 'pasted-image-20260119194011',
+    title: "Pasted image 20260119194011",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260119194011"],
+    tags: ["image"],
+    created: "2026-01-19",
+    modified: "2026-01-19",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260119194011
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260119194011.png" alt="Pasted image 20260119194011" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260120004114': {
+    id: 'pasted-image-20260120004114',
+    title: "Pasted image 20260120004114",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260120004114"],
+    tags: ["image"],
+    created: "2026-01-19",
+    modified: "2026-01-19",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260120004114
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260120004114.png" alt="Pasted image 20260120004114" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260123194908': {
+    id: 'pasted-image-20260123194908',
+    title: "Pasted image 20260123194908",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260123194908"],
+    tags: ["image"],
+    created: "2026-01-23",
+    modified: "2026-01-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260123194908
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260123194908.png" alt="Pasted image 20260123194908" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260129211512': {
+    id: 'pasted-image-20260129211512',
+    title: "Pasted image 20260129211512",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260129211512"],
+    tags: ["image"],
+    created: "2026-01-29",
+    modified: "2026-01-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260129211512
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260129211512.png" alt="Pasted image 20260129211512" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260205235238': {
+    id: 'pasted-image-20260205235238',
+    title: "Pasted image 20260205235238",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260205235238"],
+    tags: ["image"],
+    created: "2026-02-05",
+    modified: "2026-02-05",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260205235238
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260205235238.png" alt="Pasted image 20260205235238" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260210093026': {
+    id: 'pasted-image-20260210093026',
+    title: "Pasted image 20260210093026",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260210093026"],
+    tags: ["image"],
+    created: "2026-02-10",
+    modified: "2026-02-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260210093026
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260210093026.png" alt="Pasted image 20260210093026" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260210093320': {
+    id: 'pasted-image-20260210093320',
+    title: "Pasted image 20260210093320",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260210093320"],
+    tags: ["image"],
+    created: "2026-02-10",
+    modified: "2026-02-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260210093320
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260210093320.png" alt="Pasted image 20260210093320" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260223015645': {
+    id: 'pasted-image-20260223015645',
+    title: "Pasted image 20260223015645",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260223015645"],
+    tags: ["image"],
+    created: "2026-02-22",
+    modified: "2026-02-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260223015645
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260223015645.png" alt="Pasted image 20260223015645" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260307144405': {
+    id: 'pasted-image-20260307144405',
+    title: "Pasted image 20260307144405",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260307144405"],
+    tags: ["image"],
+    created: "2026-03-07",
+    modified: "2026-03-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260307144405
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260307144405.png" alt="Pasted image 20260307144405" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260307225750': {
+    id: 'pasted-image-20260307225750',
+    title: "Pasted image 20260307225750",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260307225750"],
+    tags: ["image"],
+    created: "2026-03-07",
+    modified: "2026-03-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260307225750
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260307225750.png" alt="Pasted image 20260307225750" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260307225852': {
+    id: 'pasted-image-20260307225852',
+    title: "Pasted image 20260307225852",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260307225852"],
+    tags: ["image"],
+    created: "2026-03-07",
+    modified: "2026-03-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260307225852
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260307225852.png" alt="Pasted image 20260307225852" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260317210445': {
+    id: 'pasted-image-20260317210445',
+    title: "Pasted image 20260317210445",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260317210445"],
+    tags: ["image"],
+    created: "2026-03-17",
+    modified: "2026-03-17",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260317210445
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260317210445.png" alt="Pasted image 20260317210445" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260317212340': {
+    id: 'pasted-image-20260317212340',
+    title: "Pasted image 20260317212340",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260317212340"],
+    tags: ["image"],
+    created: "2026-03-17",
+    modified: "2026-03-17",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260317212340
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260317212340.png" alt="Pasted image 20260317212340" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318012812': {
+    id: 'pasted-image-20260318012812',
+    title: "Pasted image 20260318012812",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260318012812"],
+    tags: ["image"],
+    created: "2026-03-17",
+    modified: "2026-03-17",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318012812
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260318012812.png" alt="Pasted image 20260318012812" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318014009': {
+    id: 'pasted-image-20260318014009',
+    title: "Pasted image 20260318014009",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260318014009"],
+    tags: ["image"],
+    created: "2026-03-17",
+    modified: "2026-03-17",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318014009
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260318014009.png" alt="Pasted image 20260318014009" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260320133054': {
+    id: 'pasted-image-20260320133054',
+    title: "Pasted image 20260320133054",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260320133054"],
+    tags: ["image"],
+    created: "2026-03-20",
+    modified: "2026-03-20",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260320133054
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260320133054.png" alt="Pasted image 20260320133054" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321165530': {
+    id: 'pasted-image-20260321165530',
+    title: "Pasted image 20260321165530",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260321165530"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321165530
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260321165530.png" alt="Pasted image 20260321165530" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321165557': {
+    id: 'pasted-image-20260321165557',
+    title: "Pasted image 20260321165557",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260321165557"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321165557
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260321165557.png" alt="Pasted image 20260321165557" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321165757': {
+    id: 'pasted-image-20260321165757',
+    title: "Pasted image 20260321165757",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260321165757"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321165757
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260321165757.png" alt="Pasted image 20260321165757" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321170004': {
+    id: 'pasted-image-20260321170004',
+    title: "Pasted image 20260321170004",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260321170004"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321170004
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260321170004.png" alt="Pasted image 20260321170004" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321170906': {
+    id: 'pasted-image-20260321170906',
+    title: "Pasted image 20260321170906",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260321170906"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321170906
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260321170906.png" alt="Pasted image 20260321170906" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171007': {
+    id: 'pasted-image-20260321171007',
+    title: "Pasted image 20260321171007",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260321171007"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171007
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260321171007.png" alt="Pasted image 20260321171007" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321224549': {
+    id: 'pasted-image-20260321224549',
+    title: "Pasted image 20260321224549",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260321224549"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321224549
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260321224549.png" alt="Pasted image 20260321224549" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322182701': {
+    id: 'pasted-image-20260322182701',
+    title: "Pasted image 20260322182701",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260322182701"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322182701
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260322182701.png" alt="Pasted image 20260322182701" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322182928': {
+    id: 'pasted-image-20260322182928',
+    title: "Pasted image 20260322182928",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260322182928"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322182928
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260322182928.png" alt="Pasted image 20260322182928" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322183145': {
+    id: 'pasted-image-20260322183145',
+    title: "Pasted image 20260322183145",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260322183145"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322183145
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260322183145.png" alt="Pasted image 20260322183145" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322183435': {
+    id: 'pasted-image-20260322183435',
+    title: "Pasted image 20260322183435",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260322183435"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322183435
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260322183435.png" alt="Pasted image 20260322183435" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322183643': {
+    id: 'pasted-image-20260322183643',
+    title: "Pasted image 20260322183643",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260322183643"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322183643
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260322183643.png" alt="Pasted image 20260322183643" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322184913': {
+    id: 'pasted-image-20260322184913',
+    title: "Pasted image 20260322184913",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260322184913"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322184913
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260322184913.png" alt="Pasted image 20260322184913" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323003904': {
+    id: 'pasted-image-20260323003904',
+    title: "Pasted image 20260323003904",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260323003904"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323003904
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260323003904.png" alt="Pasted image 20260323003904" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323005220': {
+    id: 'pasted-image-20260323005220',
+    title: "Pasted image 20260323005220",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260323005220"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323005220
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260323005220.png" alt="Pasted image 20260323005220" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323011707': {
+    id: 'pasted-image-20260323011707',
+    title: "Pasted image 20260323011707",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260323011707"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323011707
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260323011707.png" alt="Pasted image 20260323011707" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323170140': {
+    id: 'pasted-image-20260323170140',
+    title: "Pasted image 20260323170140",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260323170140"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323170140
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260323170140.png" alt="Pasted image 20260323170140" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323170331': {
+    id: 'pasted-image-20260323170331',
+    title: "Pasted image 20260323170331",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260323170331"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323170331
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260323170331.png" alt="Pasted image 20260323170331" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323170439': {
+    id: 'pasted-image-20260323170439',
+    title: "Pasted image 20260323170439",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260323170439"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323170439
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260323170439.png" alt="Pasted image 20260323170439" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323172848': {
+    id: 'pasted-image-20260323172848',
+    title: "Pasted image 20260323172848",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260323172848"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323172848
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260323172848.png" alt="Pasted image 20260323172848" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260324141608': {
+    id: 'pasted-image-20260324141608',
+    title: "Pasted image 20260324141608",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260324141608"],
+    tags: ["image"],
+    created: "2026-03-24",
+    modified: "2026-03-24",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260324141608
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260324141608.png" alt="Pasted image 20260324141608" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260324141637': {
+    id: 'pasted-image-20260324141637',
+    title: "Pasted image 20260324141637",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260324141637"],
+    tags: ["image"],
+    created: "2026-03-24",
+    modified: "2026-03-24",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260324141637
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260324141637.png" alt="Pasted image 20260324141637" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260324141715': {
+    id: 'pasted-image-20260324141715',
+    title: "Pasted image 20260324141715",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260324141715"],
+    tags: ["image"],
+    created: "2026-03-24",
+    modified: "2026-03-24",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260324141715
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260324141715.png" alt="Pasted image 20260324141715" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260324141742': {
+    id: 'pasted-image-20260324141742',
+    title: "Pasted image 20260324141742",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260324141742"],
+    tags: ["image"],
+    created: "2026-03-24",
+    modified: "2026-03-24",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260324141742
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260324141742.png" alt="Pasted image 20260324141742" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260324141810': {
+    id: 'pasted-image-20260324141810',
+    title: "Pasted image 20260324141810",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260324141810"],
+    tags: ["image"],
+    created: "2026-03-24",
+    modified: "2026-03-24",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260324141810
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260324141810.png" alt="Pasted image 20260324141810" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326005712': {
+    id: 'pasted-image-20260326005712',
+    title: "Pasted image 20260326005712",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260326005712"],
+    tags: ["image"],
+    created: "2026-03-25",
+    modified: "2026-03-25",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326005712
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260326005712.png" alt="Pasted image 20260326005712" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327191056': {
+    id: 'pasted-image-20260327191056',
+    title: "Pasted image 20260327191056",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260327191056"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327191056
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260327191056.png" alt="Pasted image 20260327191056" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327193630': {
+    id: 'pasted-image-20260327193630',
+    title: "Pasted image 20260327193630",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260327193630"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327193630
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260327193630.png" alt="Pasted image 20260327193630" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327194042': {
+    id: 'pasted-image-20260327194042',
+    title: "Pasted image 20260327194042",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260327194042"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327194042
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260327194042.png" alt="Pasted image 20260327194042" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327194418': {
+    id: 'pasted-image-20260327194418',
+    title: "Pasted image 20260327194418",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260327194418"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327194418
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260327194418.png" alt="Pasted image 20260327194418" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327194813': {
+    id: 'pasted-image-20260327194813',
+    title: "Pasted image 20260327194813",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260327194813"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327194813
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260327194813.png" alt="Pasted image 20260327194813" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327222055': {
+    id: 'pasted-image-20260327222055',
+    title: "Pasted image 20260327222055",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260327222055"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327222055
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260327222055.png" alt="Pasted image 20260327222055" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327222801': {
+    id: 'pasted-image-20260327222801',
+    title: "Pasted image 20260327222801",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260327222801"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327222801
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260327222801.png" alt="Pasted image 20260327222801" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260328015452': {
+    id: 'pasted-image-20260328015452',
+    title: "Pasted image 20260328015452",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260328015452"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260328015452
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260328015452.png" alt="Pasted image 20260328015452" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260402030544': {
+    id: 'pasted-image-20260402030544',
+    title: "Pasted image 20260402030544",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260402030544"],
+    tags: ["image"],
+    created: "2026-04-01",
+    modified: "2026-04-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260402030544
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260402030544.png" alt="Pasted image 20260402030544" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260402031013': {
+    id: 'pasted-image-20260402031013',
+    title: "Pasted image 20260402031013",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260402031013"],
+    tags: ["image"],
+    created: "2026-04-01",
+    modified: "2026-04-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260402031013
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260402031013.png" alt="Pasted image 20260402031013" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260409231416': {
+    id: 'pasted-image-20260409231416',
+    title: "Pasted image 20260409231416",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260409231416"],
+    tags: ["image"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260409231416
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260409231416.png" alt="Pasted image 20260409231416" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410053243': {
+    id: 'pasted-image-20260410053243',
+    title: "Pasted image 20260410053243",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260410053243"],
+    tags: ["image"],
+    created: "2026-04-10",
+    modified: "2026-04-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410053243
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260410053243.png" alt="Pasted image 20260410053243" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410070432': {
+    id: 'pasted-image-20260410070432',
+    title: "Pasted image 20260410070432",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260410070432"],
+    tags: ["image"],
+    created: "2026-04-10",
+    modified: "2026-04-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410070432
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260410070432.png" alt="Pasted image 20260410070432" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410070833': {
+    id: 'pasted-image-20260410070833',
+    title: "Pasted image 20260410070833",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260410070833"],
+    tags: ["image"],
+    created: "2026-04-10",
+    modified: "2026-04-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410070833
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260410070833.png" alt="Pasted image 20260410070833" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410175645': {
+    id: 'pasted-image-20260410175645',
+    title: "Pasted image 20260410175645",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260410175645"],
+    tags: ["image"],
+    created: "2026-04-10",
+    modified: "2026-04-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410175645
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260410175645.png" alt="Pasted image 20260410175645" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410225530': {
+    id: 'pasted-image-20260410225530',
+    title: "Pasted image 20260410225530",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260410225530"],
+    tags: ["image"],
+    created: "2026-04-10",
+    modified: "2026-04-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410225530
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260410225530.png" alt="Pasted image 20260410225530" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410230302': {
+    id: 'pasted-image-20260410230302',
+    title: "Pasted image 20260410230302",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260410230302"],
+    tags: ["image"],
+    created: "2026-04-10",
+    modified: "2026-04-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410230302
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260410230302.png" alt="Pasted image 20260410230302" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260413021436': {
+    id: 'pasted-image-20260413021436',
+    title: "Pasted image 20260413021436",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260413021436"],
+    tags: ["image"],
+    created: "2026-04-12",
+    modified: "2026-04-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260413021436
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260413021436.png" alt="Pasted image 20260413021436" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260414043703': {
+    id: 'pasted-image-20260414043703',
+    title: "Pasted image 20260414043703",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260414043703"],
+    tags: ["image"],
+    created: "2026-04-13",
+    modified: "2026-04-13",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260414043703
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260414043703.png" alt="Pasted image 20260414043703" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260414051359': {
+    id: 'pasted-image-20260414051359',
+    title: "Pasted image 20260414051359",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260414051359"],
+    tags: ["image"],
+    created: "2026-04-13",
+    modified: "2026-04-13",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260414051359
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260414051359.png" alt="Pasted image 20260414051359" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260414051522': {
+    id: 'pasted-image-20260414051522',
+    title: "Pasted image 20260414051522",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260414051522"],
+    tags: ["image"],
+    created: "2026-04-13",
+    modified: "2026-04-13",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260414051522
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260414051522.png" alt="Pasted image 20260414051522" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260414051812': {
+    id: 'pasted-image-20260414051812',
+    title: "Pasted image 20260414051812",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260414051812"],
+    tags: ["image"],
+    created: "2026-04-13",
+    modified: "2026-04-13",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260414051812
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260414051812.png" alt="Pasted image 20260414051812" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260414052732': {
+    id: 'pasted-image-20260414052732',
+    title: "Pasted image 20260414052732",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260414052732"],
+    tags: ["image"],
+    created: "2026-04-13",
+    modified: "2026-04-13",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260414052732
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260414052732.png" alt="Pasted image 20260414052732" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260414110447': {
+    id: 'pasted-image-20260414110447',
+    title: "Pasted image 20260414110447",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260414110447"],
+    tags: ["image"],
+    created: "2026-04-14",
+    modified: "2026-04-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260414110447
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260414110447.png" alt="Pasted image 20260414110447" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260414110830': {
+    id: 'pasted-image-20260414110830',
+    title: "Pasted image 20260414110830",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260414110830"],
+    tags: ["image"],
+    created: "2026-04-14",
+    modified: "2026-04-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260414110830
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260414110830.png" alt="Pasted image 20260414110830" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260414202614': {
+    id: 'pasted-image-20260414202614',
+    title: "Pasted image 20260414202614",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260414202614"],
+    tags: ["image"],
+    created: "2026-04-14",
+    modified: "2026-04-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260414202614
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260414202614.png" alt="Pasted image 20260414202614" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260414203431': {
+    id: 'pasted-image-20260414203431',
+    title: "Pasted image 20260414203431",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260414203431"],
+    tags: ["image"],
+    created: "2026-04-14",
+    modified: "2026-04-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260414203431
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260414203431.png" alt="Pasted image 20260414203431" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260416065235': {
+    id: 'pasted-image-20260416065235',
+    title: "Pasted image 20260416065235",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260416065235"],
+    tags: ["image"],
+    created: "2026-04-16",
+    modified: "2026-04-16",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260416065235
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260416065235.png" alt="Pasted image 20260416065235" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260416070120': {
+    id: 'pasted-image-20260416070120',
+    title: "Pasted image 20260416070120",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Pasted image 20260416070120"],
+    tags: ["image"],
+    created: "2026-04-16",
+    modified: "2026-04-16",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260416070120
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Excalidraw/Pasted image 20260416070120.png" alt="Pasted image 20260416070120" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'animation-of-sorting-algorithms': {
+    id: 'animation-of-sorting-algorithms',
+    title: "animation of sorting algorithms",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","animation of sorting algorithms"],
+    tags: ["image"],
+    created: "2025-12-23",
+    modified: "2025-12-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# animation of sorting algorithms
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/animation of sorting algorithms.gif" alt="animation of sorting algorithms" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251022144224': {
+    id: 'pasted-image-20251022144224',
+    title: "Pasted image 20251022144224",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251022144224"],
+    tags: ["image"],
+    created: "2025-10-22",
+    modified: "2025-10-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251022144224
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251022144224.png" alt="Pasted image 20251022144224" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251022144329': {
+    id: 'pasted-image-20251022144329',
+    title: "Pasted image 20251022144329",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251022144329"],
+    tags: ["image"],
+    created: "2025-10-22",
+    modified: "2025-10-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251022144329
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251022144329.png" alt="Pasted image 20251022144329" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251101133013': {
+    id: 'pasted-image-20251101133013',
+    title: "Pasted image 20251101133013",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251101133013"],
+    tags: ["image"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251101133013
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251101133013.png" alt="Pasted image 20251101133013" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251101133140': {
+    id: 'pasted-image-20251101133140',
+    title: "Pasted image 20251101133140",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251101133140"],
+    tags: ["image"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251101133140
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251101133140.png" alt="Pasted image 20251101133140" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251101133239': {
+    id: 'pasted-image-20251101133239',
+    title: "Pasted image 20251101133239",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251101133239"],
+    tags: ["image"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251101133239
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251101133239.png" alt="Pasted image 20251101133239" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251101133344': {
+    id: 'pasted-image-20251101133344',
+    title: "Pasted image 20251101133344",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251101133344"],
+    tags: ["image"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251101133344
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251101133344.png" alt="Pasted image 20251101133344" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251101133402': {
+    id: 'pasted-image-20251101133402',
+    title: "Pasted image 20251101133402",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251101133402"],
+    tags: ["image"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251101133402
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251101133402.png" alt="Pasted image 20251101133402" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251101133602': {
+    id: 'pasted-image-20251101133602',
+    title: "Pasted image 20251101133602",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251101133602"],
+    tags: ["image"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251101133602
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251101133602.png" alt="Pasted image 20251101133602" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251101133622': {
+    id: 'pasted-image-20251101133622',
+    title: "Pasted image 20251101133622",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251101133622"],
+    tags: ["image"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251101133622
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251101133622.png" alt="Pasted image 20251101133622" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251101133653': {
+    id: 'pasted-image-20251101133653',
+    title: "Pasted image 20251101133653",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251101133653"],
+    tags: ["image"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251101133653
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251101133653.png" alt="Pasted image 20251101133653" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251104151012': {
+    id: 'pasted-image-20251104151012',
+    title: "Pasted image 20251104151012",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251104151012"],
+    tags: ["image"],
+    created: "2025-11-04",
+    modified: "2025-11-04",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251104151012
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251104151012.png" alt="Pasted image 20251104151012" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251106193658': {
+    id: 'pasted-image-20251106193658',
+    title: "Pasted image 20251106193658",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251106193658"],
+    tags: ["image"],
+    created: "2025-11-06",
+    modified: "2025-11-06",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251106193658
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251106193658.png" alt="Pasted image 20251106193658" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251113182358': {
+    id: 'pasted-image-20251113182358',
+    title: "Pasted image 20251113182358",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251113182358"],
+    tags: ["image"],
+    created: "2025-11-13",
+    modified: "2025-11-13",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251113182358
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251113182358.png" alt="Pasted image 20251113182358" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251114173340': {
+    id: 'pasted-image-20251114173340',
+    title: "Pasted image 20251114173340",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251114173340"],
+    tags: ["image"],
+    created: "2025-11-14",
+    modified: "2025-11-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251114173340
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251114173340.png" alt="Pasted image 20251114173340" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251115183633': {
+    id: 'pasted-image-20251115183633',
+    title: "Pasted image 20251115183633",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251115183633"],
+    tags: ["image"],
+    created: "2025-11-15",
+    modified: "2025-11-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251115183633
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251115183633.png" alt="Pasted image 20251115183633" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251115183729': {
+    id: 'pasted-image-20251115183729',
+    title: "Pasted image 20251115183729",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251115183729"],
+    tags: ["image"],
+    created: "2025-11-15",
+    modified: "2025-11-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251115183729
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251115183729.png" alt="Pasted image 20251115183729" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251115183942': {
+    id: 'pasted-image-20251115183942',
+    title: "Pasted image 20251115183942",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251115183942"],
+    tags: ["image"],
+    created: "2025-11-15",
+    modified: "2025-11-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251115183942
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251115183942.png" alt="Pasted image 20251115183942" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251115184038': {
+    id: 'pasted-image-20251115184038',
+    title: "Pasted image 20251115184038",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251115184038"],
+    tags: ["image"],
+    created: "2025-11-15",
+    modified: "2025-11-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251115184038
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251115184038.png" alt="Pasted image 20251115184038" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251115184240': {
+    id: 'pasted-image-20251115184240',
+    title: "Pasted image 20251115184240",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251115184240"],
+    tags: ["image"],
+    created: "2025-11-15",
+    modified: "2025-11-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251115184240
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251115184240.png" alt="Pasted image 20251115184240" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251124133526': {
+    id: 'pasted-image-20251124133526',
+    title: "Pasted image 20251124133526",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251124133526"],
+    tags: ["image"],
+    created: "2025-11-24",
+    modified: "2025-11-24",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251124133526
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251124133526.png" alt="Pasted image 20251124133526" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251125105504': {
+    id: 'pasted-image-20251125105504',
+    title: "Pasted image 20251125105504",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251125105504"],
+    tags: ["image"],
+    created: "2025-11-25",
+    modified: "2025-11-25",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251125105504
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251125105504.png" alt="Pasted image 20251125105504" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251125110245': {
+    id: 'pasted-image-20251125110245',
+    title: "Pasted image 20251125110245",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251125110245"],
+    tags: ["image"],
+    created: "2025-11-25",
+    modified: "2025-11-25",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251125110245
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251125110245.png" alt="Pasted image 20251125110245" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251125110913': {
+    id: 'pasted-image-20251125110913',
+    title: "Pasted image 20251125110913",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251125110913"],
+    tags: ["image"],
+    created: "2025-11-25",
+    modified: "2025-11-25",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251125110913
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251125110913.png" alt="Pasted image 20251125110913" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251127103042': {
+    id: 'pasted-image-20251127103042',
+    title: "Pasted image 20251127103042",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251127103042"],
+    tags: ["image"],
+    created: "2025-11-27",
+    modified: "2025-11-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251127103042
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251127103042.png" alt="Pasted image 20251127103042" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251127103133': {
+    id: 'pasted-image-20251127103133',
+    title: "Pasted image 20251127103133",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251127103133"],
+    tags: ["image"],
+    created: "2025-11-27",
+    modified: "2025-11-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251127103133
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251127103133.png" alt="Pasted image 20251127103133" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251127103227': {
+    id: 'pasted-image-20251127103227',
+    title: "Pasted image 20251127103227",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251127103227"],
+    tags: ["image"],
+    created: "2025-11-27",
+    modified: "2025-11-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251127103227
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251127103227.png" alt="Pasted image 20251127103227" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251127104145': {
+    id: 'pasted-image-20251127104145',
+    title: "Pasted image 20251127104145",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251127104145"],
+    tags: ["image"],
+    created: "2025-11-27",
+    modified: "2025-11-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251127104145
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251127104145.png" alt="Pasted image 20251127104145" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251127105002': {
+    id: 'pasted-image-20251127105002',
+    title: "Pasted image 20251127105002",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251127105002"],
+    tags: ["image"],
+    created: "2025-11-27",
+    modified: "2025-11-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251127105002
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251127105002.png" alt="Pasted image 20251127105002" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251127110128': {
+    id: 'pasted-image-20251127110128',
+    title: "Pasted image 20251127110128",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251127110128"],
+    tags: ["image"],
+    created: "2025-11-27",
+    modified: "2025-11-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251127110128
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251127110128.png" alt="Pasted image 20251127110128" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251127191741': {
+    id: 'pasted-image-20251127191741',
+    title: "Pasted image 20251127191741",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251127191741"],
+    tags: ["image"],
+    created: "2025-11-27",
+    modified: "2025-11-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251127191741
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251127191741.png" alt="Pasted image 20251127191741" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251127192326': {
+    id: 'pasted-image-20251127192326',
+    title: "Pasted image 20251127192326",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251127192326"],
+    tags: ["image"],
+    created: "2025-11-27",
+    modified: "2025-11-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251127192326
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251127192326.png" alt="Pasted image 20251127192326" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251127195805': {
+    id: 'pasted-image-20251127195805',
+    title: "Pasted image 20251127195805",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251127195805"],
+    tags: ["image"],
+    created: "2025-11-27",
+    modified: "2025-11-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251127195805
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251127195805.png" alt="Pasted image 20251127195805" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251128120208': {
+    id: 'pasted-image-20251128120208',
+    title: "Pasted image 20251128120208",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251128120208"],
+    tags: ["image"],
+    created: "2025-11-28",
+    modified: "2025-11-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251128120208
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251128120208.png" alt="Pasted image 20251128120208" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251128120331': {
+    id: 'pasted-image-20251128120331',
+    title: "Pasted image 20251128120331",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251128120331"],
+    tags: ["image"],
+    created: "2025-11-28",
+    modified: "2025-11-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251128120331
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251128120331.png" alt="Pasted image 20251128120331" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251206015645': {
+    id: 'pasted-image-20251206015645',
+    title: "Pasted image 20251206015645",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251206015645"],
+    tags: ["image"],
+    created: "2025-12-05",
+    modified: "2025-12-05",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251206015645
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251206015645.png" alt="Pasted image 20251206015645" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251206015714': {
+    id: 'pasted-image-20251206015714',
+    title: "Pasted image 20251206015714",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251206015714"],
+    tags: ["image"],
+    created: "2025-12-05",
+    modified: "2025-12-05",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251206015714
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251206015714.png" alt="Pasted image 20251206015714" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251206015746': {
+    id: 'pasted-image-20251206015746',
+    title: "Pasted image 20251206015746",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251206015746"],
+    tags: ["image"],
+    created: "2025-12-05",
+    modified: "2025-12-05",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251206015746
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251206015746.png" alt="Pasted image 20251206015746" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251209204536': {
+    id: 'pasted-image-20251209204536',
+    title: "Pasted image 20251209204536",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251209204536"],
+    tags: ["image"],
+    created: "2025-12-09",
+    modified: "2025-12-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251209204536
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251209204536.png" alt="Pasted image 20251209204536" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251209204544': {
+    id: 'pasted-image-20251209204544',
+    title: "Pasted image 20251209204544",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251209204544"],
+    tags: ["image"],
+    created: "2025-12-09",
+    modified: "2025-12-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251209204544
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251209204544.png" alt="Pasted image 20251209204544" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251209204618': {
+    id: 'pasted-image-20251209204618',
+    title: "Pasted image 20251209204618",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251209204618"],
+    tags: ["image"],
+    created: "2025-12-09",
+    modified: "2025-12-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251209204618
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251209204618.png" alt="Pasted image 20251209204618" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251209204626': {
+    id: 'pasted-image-20251209204626',
+    title: "Pasted image 20251209204626",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251209204626"],
+    tags: ["image"],
+    created: "2025-12-09",
+    modified: "2025-12-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251209204626
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251209204626.png" alt="Pasted image 20251209204626" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251209204646': {
+    id: 'pasted-image-20251209204646',
+    title: "Pasted image 20251209204646",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251209204646"],
+    tags: ["image"],
+    created: "2025-12-09",
+    modified: "2025-12-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251209204646
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251209204646.png" alt="Pasted image 20251209204646" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251209204653': {
+    id: 'pasted-image-20251209204653',
+    title: "Pasted image 20251209204653",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251209204653"],
+    tags: ["image"],
+    created: "2025-12-09",
+    modified: "2025-12-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251209204653
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251209204653.png" alt="Pasted image 20251209204653" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251209204723': {
+    id: 'pasted-image-20251209204723',
+    title: "Pasted image 20251209204723",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251209204723"],
+    tags: ["image"],
+    created: "2025-12-09",
+    modified: "2025-12-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251209204723
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251209204723.png" alt="Pasted image 20251209204723" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251209204729': {
+    id: 'pasted-image-20251209204729',
+    title: "Pasted image 20251209204729",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251209204729"],
+    tags: ["image"],
+    created: "2025-12-09",
+    modified: "2025-12-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251209204729
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251209204729.png" alt="Pasted image 20251209204729" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251220231515': {
+    id: 'pasted-image-20251220231515',
+    title: "Pasted image 20251220231515",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251220231515"],
+    tags: ["image"],
+    created: "2025-12-20",
+    modified: "2025-12-20",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251220231515
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251220231515.png" alt="Pasted image 20251220231515" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251220231554': {
+    id: 'pasted-image-20251220231554',
+    title: "Pasted image 20251220231554",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251220231554"],
+    tags: ["image"],
+    created: "2025-12-20",
+    modified: "2025-12-20",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251220231554
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251220231554.png" alt="Pasted image 20251220231554" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251221130951': {
+    id: 'pasted-image-20251221130951',
+    title: "Pasted image 20251221130951",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251221130951"],
+    tags: ["image"],
+    created: "2025-12-21",
+    modified: "2025-12-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251221130951
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251221130951.png" alt="Pasted image 20251221130951" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251221131206': {
+    id: 'pasted-image-20251221131206',
+    title: "Pasted image 20251221131206",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251221131206"],
+    tags: ["image"],
+    created: "2025-12-21",
+    modified: "2025-12-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251221131206
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251221131206.png" alt="Pasted image 20251221131206" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251221141606': {
+    id: 'pasted-image-20251221141606',
+    title: "Pasted image 20251221141606",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251221141606"],
+    tags: ["image"],
+    created: "2025-12-21",
+    modified: "2025-12-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251221141606
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251221141606.png" alt="Pasted image 20251221141606" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251223134715': {
+    id: 'pasted-image-20251223134715',
+    title: "Pasted image 20251223134715",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251223134715"],
+    tags: ["image"],
+    created: "2025-12-23",
+    modified: "2025-12-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251223134715
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251223134715.png" alt="Pasted image 20251223134715" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251223155433': {
+    id: 'pasted-image-20251223155433',
+    title: "Pasted image 20251223155433",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251223155433"],
+    tags: ["image"],
+    created: "2025-12-23",
+    modified: "2025-12-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251223155433
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251223155433.png" alt="Pasted image 20251223155433" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251228140213': {
+    id: 'pasted-image-20251228140213',
+    title: "Pasted image 20251228140213",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251228140213"],
+    tags: ["image"],
+    created: "2025-12-28",
+    modified: "2025-12-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251228140213
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251228140213.png" alt="Pasted image 20251228140213" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251228162023': {
+    id: 'pasted-image-20251228162023',
+    title: "Pasted image 20251228162023",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251228162023"],
+    tags: ["image"],
+    created: "2025-12-28",
+    modified: "2025-12-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251228162023
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251228162023.png" alt="Pasted image 20251228162023" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251228173226': {
+    id: 'pasted-image-20251228173226',
+    title: "Pasted image 20251228173226",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251228173226"],
+    tags: ["image"],
+    created: "2025-12-28",
+    modified: "2025-12-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251228173226
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251228173226.png" alt="Pasted image 20251228173226" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251229000415': {
+    id: 'pasted-image-20251229000415',
+    title: "Pasted image 20251229000415",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251229000415"],
+    tags: ["image"],
+    created: "2025-12-28",
+    modified: "2025-12-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251229000415
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251229000415.png" alt="Pasted image 20251229000415" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251230222040': {
+    id: 'pasted-image-20251230222040',
+    title: "Pasted image 20251230222040",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251230222040"],
+    tags: ["image"],
+    created: "2025-12-30",
+    modified: "2025-12-30",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251230222040
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251230222040.png" alt="Pasted image 20251230222040" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251231215621': {
+    id: 'pasted-image-20251231215621',
+    title: "Pasted image 20251231215621",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251231215621"],
+    tags: ["image"],
+    created: "2025-12-31",
+    modified: "2025-12-31",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251231215621
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251231215621.png" alt="Pasted image 20251231215621" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251231215704': {
+    id: 'pasted-image-20251231215704',
+    title: "Pasted image 20251231215704",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251231215704"],
+    tags: ["image"],
+    created: "2025-12-31",
+    modified: "2025-12-31",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251231215704
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251231215704.png" alt="Pasted image 20251231215704" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251231215841': {
+    id: 'pasted-image-20251231215841',
+    title: "Pasted image 20251231215841",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251231215841"],
+    tags: ["image"],
+    created: "2025-12-31",
+    modified: "2025-12-31",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251231215841
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251231215841.png" alt="Pasted image 20251231215841" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251231222750': {
+    id: 'pasted-image-20251231222750',
+    title: "Pasted image 20251231222750",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251231222750"],
+    tags: ["image"],
+    created: "2025-12-31",
+    modified: "2025-12-31",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251231222750
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251231222750.png" alt="Pasted image 20251231222750" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251231230604': {
+    id: 'pasted-image-20251231230604',
+    title: "Pasted image 20251231230604",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251231230604"],
+    tags: ["image"],
+    created: "2025-12-31",
+    modified: "2025-12-31",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251231230604
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251231230604.png" alt="Pasted image 20251231230604" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20251231232203': {
+    id: 'pasted-image-20251231232203',
+    title: "Pasted image 20251231232203",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20251231232203"],
+    tags: ["image"],
+    created: "2025-12-31",
+    modified: "2025-12-31",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20251231232203
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20251231232203.png" alt="Pasted image 20251231232203" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260108223729': {
+    id: 'pasted-image-20260108223729',
+    title: "Pasted image 20260108223729",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260108223729"],
+    tags: ["image"],
+    created: "2026-01-08",
+    modified: "2026-01-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260108223729
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260108223729.png" alt="Pasted image 20260108223729" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260113164618': {
+    id: 'pasted-image-20260113164618',
+    title: "Pasted image 20260113164618",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260113164618"],
+    tags: ["image"],
+    created: "2026-01-13",
+    modified: "2026-01-13",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260113164618
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260113164618.png" alt="Pasted image 20260113164618" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260116004756': {
+    id: 'pasted-image-20260116004756',
+    title: "Pasted image 20260116004756",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260116004756"],
+    tags: ["image"],
+    created: "2026-01-15",
+    modified: "2026-01-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260116004756
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260116004756.png" alt="Pasted image 20260116004756" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260116103954': {
+    id: 'pasted-image-20260116103954',
+    title: "Pasted image 20260116103954",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260116103954"],
+    tags: ["image"],
+    created: "2026-01-16",
+    modified: "2026-01-16",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260116103954
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260116103954.png" alt="Pasted image 20260116103954" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260308235559': {
+    id: 'pasted-image-20260308235559',
+    title: "Pasted image 20260308235559",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260308235559"],
+    tags: ["image"],
+    created: "2026-03-08",
+    modified: "2026-03-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260308235559
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260308235559.png" alt="Pasted image 20260308235559" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260311095941': {
+    id: 'pasted-image-20260311095941',
+    title: "Pasted image 20260311095941",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260311095941"],
+    tags: ["image"],
+    created: "2026-03-11",
+    modified: "2026-03-11",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260311095941
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260311095941.png" alt="Pasted image 20260311095941" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260311140029': {
+    id: 'pasted-image-20260311140029',
+    title: "Pasted image 20260311140029",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260311140029"],
+    tags: ["image"],
+    created: "2026-03-11",
+    modified: "2026-03-11",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260311140029
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260311140029.png" alt="Pasted image 20260311140029" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260311140316': {
+    id: 'pasted-image-20260311140316',
+    title: "Pasted image 20260311140316",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260311140316"],
+    tags: ["image"],
+    created: "2026-03-11",
+    modified: "2026-03-11",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260311140316
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260311140316.png" alt="Pasted image 20260311140316" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260313223143': {
+    id: 'pasted-image-20260313223143',
+    title: "Pasted image 20260313223143",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260313223143"],
+    tags: ["image"],
+    created: "2026-03-13",
+    modified: "2026-03-13",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260313223143
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260313223143.png" alt="Pasted image 20260313223143" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260314160310': {
+    id: 'pasted-image-20260314160310',
+    title: "Pasted image 20260314160310",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260314160310"],
+    tags: ["image"],
+    created: "2026-03-14",
+    modified: "2026-03-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260314160310
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260314160310.png" alt="Pasted image 20260314160310" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260314230121': {
+    id: 'pasted-image-20260314230121',
+    title: "Pasted image 20260314230121",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260314230121"],
+    tags: ["image"],
+    created: "2026-03-14",
+    modified: "2026-03-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260314230121
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260314230121.png" alt="Pasted image 20260314230121" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260315003702': {
+    id: 'pasted-image-20260315003702',
+    title: "Pasted image 20260315003702",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260315003702"],
+    tags: ["image"],
+    created: "2026-03-14",
+    modified: "2026-03-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260315003702
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260315003702.png" alt="Pasted image 20260315003702" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260315143606': {
+    id: 'pasted-image-20260315143606',
+    title: "Pasted image 20260315143606",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260315143606"],
+    tags: ["image"],
+    created: "2026-03-15",
+    modified: "2026-03-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260315143606
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260315143606.png" alt="Pasted image 20260315143606" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260315143635': {
+    id: 'pasted-image-20260315143635',
+    title: "Pasted image 20260315143635",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260315143635"],
+    tags: ["image"],
+    created: "2026-03-15",
+    modified: "2026-03-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260315143635
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260315143635.png" alt="Pasted image 20260315143635" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260315150241': {
+    id: 'pasted-image-20260315150241',
+    title: "Pasted image 20260315150241",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260315150241"],
+    tags: ["image"],
+    created: "2026-03-15",
+    modified: "2026-03-15",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260315150241
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260315150241.png" alt="Pasted image 20260315150241" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318152627': {
+    id: 'pasted-image-20260318152627',
+    title: "Pasted image 20260318152627",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260318152627"],
+    tags: ["image"],
+    created: "2026-03-18",
+    modified: "2026-03-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318152627
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260318152627.png" alt="Pasted image 20260318152627" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318152745': {
+    id: 'pasted-image-20260318152745',
+    title: "Pasted image 20260318152745",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260318152745"],
+    tags: ["image"],
+    created: "2026-03-18",
+    modified: "2026-03-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318152745
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260318152745.png" alt="Pasted image 20260318152745" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318161648': {
+    id: 'pasted-image-20260318161648',
+    title: "Pasted image 20260318161648",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260318161648"],
+    tags: ["image"],
+    created: "2026-03-18",
+    modified: "2026-03-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318161648
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260318161648.png" alt="Pasted image 20260318161648" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318224239': {
+    id: 'pasted-image-20260318224239',
+    title: "Pasted image 20260318224239",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260318224239"],
+    tags: ["image"],
+    created: "2026-03-18",
+    modified: "2026-03-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318224239
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260318224239.png" alt="Pasted image 20260318224239" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318225337': {
+    id: 'pasted-image-20260318225337',
+    title: "Pasted image 20260318225337",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260318225337"],
+    tags: ["image"],
+    created: "2026-03-18",
+    modified: "2026-03-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318225337
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260318225337.png" alt="Pasted image 20260318225337" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318225525': {
+    id: 'pasted-image-20260318225525',
+    title: "Pasted image 20260318225525",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260318225525"],
+    tags: ["image"],
+    created: "2026-03-18",
+    modified: "2026-03-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318225525
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260318225525.png" alt="Pasted image 20260318225525" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318230210': {
+    id: 'pasted-image-20260318230210',
+    title: "Pasted image 20260318230210",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260318230210"],
+    tags: ["image"],
+    created: "2026-03-18",
+    modified: "2026-03-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318230210
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260318230210.png" alt="Pasted image 20260318230210" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260318232341': {
+    id: 'pasted-image-20260318232341',
+    title: "Pasted image 20260318232341",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260318232341"],
+    tags: ["image"],
+    created: "2026-03-18",
+    modified: "2026-03-18",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260318232341
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260318232341.png" alt="Pasted image 20260318232341" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260319142137': {
+    id: 'pasted-image-20260319142137',
+    title: "Pasted image 20260319142137",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260319142137"],
+    tags: ["image"],
+    created: "2026-03-19",
+    modified: "2026-03-19",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260319142137
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260319142137.png" alt="Pasted image 20260319142137" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260319142613': {
+    id: 'pasted-image-20260319142613',
+    title: "Pasted image 20260319142613",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260319142613"],
+    tags: ["image"],
+    created: "2026-03-19",
+    modified: "2026-03-19",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260319142613
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260319142613.png" alt="Pasted image 20260319142613" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260319142927': {
+    id: 'pasted-image-20260319142927',
+    title: "Pasted image 20260319142927",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260319142927"],
+    tags: ["image"],
+    created: "2026-03-19",
+    modified: "2026-03-19",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260319142927
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260319142927.png" alt="Pasted image 20260319142927" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260319143726': {
+    id: 'pasted-image-20260319143726',
+    title: "Pasted image 20260319143726",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260319143726"],
+    tags: ["image"],
+    created: "2026-03-19",
+    modified: "2026-03-19",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260319143726
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260319143726.png" alt="Pasted image 20260319143726" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260319144059': {
+    id: 'pasted-image-20260319144059',
+    title: "Pasted image 20260319144059",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260319144059"],
+    tags: ["image"],
+    created: "2026-03-19",
+    modified: "2026-03-19",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260319144059
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260319144059.png" alt="Pasted image 20260319144059" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260320014321': {
+    id: 'pasted-image-20260320014321',
+    title: "Pasted image 20260320014321",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260320014321"],
+    tags: ["image"],
+    created: "2026-03-19",
+    modified: "2026-03-19",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260320014321
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260320014321.png" alt="Pasted image 20260320014321" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171117': {
+    id: 'pasted-image-20260321171117',
+    title: "Pasted image 20260321171117",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171117"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171117
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171117.png" alt="Pasted image 20260321171117" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171140': {
+    id: 'pasted-image-20260321171140',
+    title: "Pasted image 20260321171140",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171140"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171140
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171140.png" alt="Pasted image 20260321171140" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171450': {
+    id: 'pasted-image-20260321171450',
+    title: "Pasted image 20260321171450",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171450"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171450
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171450.png" alt="Pasted image 20260321171450" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171459': {
+    id: 'pasted-image-20260321171459',
+    title: "Pasted image 20260321171459",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171459"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171459
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171459.png" alt="Pasted image 20260321171459" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171510': {
+    id: 'pasted-image-20260321171510',
+    title: "Pasted image 20260321171510",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171510"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171510
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171510.png" alt="Pasted image 20260321171510" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171706': {
+    id: 'pasted-image-20260321171706',
+    title: "Pasted image 20260321171706",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171706"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171706
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171706.png" alt="Pasted image 20260321171706" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171719': {
+    id: 'pasted-image-20260321171719',
+    title: "Pasted image 20260321171719",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171719"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171719
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171719.png" alt="Pasted image 20260321171719" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171737': {
+    id: 'pasted-image-20260321171737',
+    title: "Pasted image 20260321171737",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171737"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171737
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171737.png" alt="Pasted image 20260321171737" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171944': {
+    id: 'pasted-image-20260321171944',
+    title: "Pasted image 20260321171944",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171944"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171944
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171944.png" alt="Pasted image 20260321171944" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321171954': {
+    id: 'pasted-image-20260321171954',
+    title: "Pasted image 20260321171954",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321171954"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321171954
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321171954.png" alt="Pasted image 20260321171954" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321172005': {
+    id: 'pasted-image-20260321172005',
+    title: "Pasted image 20260321172005",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321172005"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321172005
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321172005.png" alt="Pasted image 20260321172005" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321225527': {
+    id: 'pasted-image-20260321225527',
+    title: "Pasted image 20260321225527",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321225527"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321225527
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321225527.png" alt="Pasted image 20260321225527" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321230352': {
+    id: 'pasted-image-20260321230352',
+    title: "Pasted image 20260321230352",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321230352"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321230352
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321230352.png" alt="Pasted image 20260321230352" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260321231317': {
+    id: 'pasted-image-20260321231317',
+    title: "Pasted image 20260321231317",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260321231317"],
+    tags: ["image"],
+    created: "2026-03-21",
+    modified: "2026-03-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260321231317
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260321231317.png" alt="Pasted image 20260321231317" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322181020': {
+    id: 'pasted-image-20260322181020',
+    title: "Pasted image 20260322181020",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260322181020"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322181020
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260322181020.png" alt="Pasted image 20260322181020" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322181151': {
+    id: 'pasted-image-20260322181151',
+    title: "Pasted image 20260322181151",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260322181151"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322181151
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260322181151.png" alt="Pasted image 20260322181151" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322181553': {
+    id: 'pasted-image-20260322181553',
+    title: "Pasted image 20260322181553",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260322181553"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322181553
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260322181553.png" alt="Pasted image 20260322181553" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322181630': {
+    id: 'pasted-image-20260322181630',
+    title: "Pasted image 20260322181630",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260322181630"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322181630
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260322181630.png" alt="Pasted image 20260322181630" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260322201449': {
+    id: 'pasted-image-20260322201449',
+    title: "Pasted image 20260322201449",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260322201449"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260322201449
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260322201449.png" alt="Pasted image 20260322201449" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323002146': {
+    id: 'pasted-image-20260323002146',
+    title: "Pasted image 20260323002146",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260323002146"],
+    tags: ["image"],
+    created: "2026-03-22",
+    modified: "2026-03-22",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323002146
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260323002146.png" alt="Pasted image 20260323002146" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323164032': {
+    id: 'pasted-image-20260323164032',
+    title: "Pasted image 20260323164032",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260323164032"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323164032
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260323164032.png" alt="Pasted image 20260323164032" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323164453': {
+    id: 'pasted-image-20260323164453',
+    title: "Pasted image 20260323164453",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260323164453"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323164453
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260323164453.png" alt="Pasted image 20260323164453" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323164511': {
+    id: 'pasted-image-20260323164511',
+    title: "Pasted image 20260323164511",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260323164511"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323164511
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260323164511.png" alt="Pasted image 20260323164511" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323165142': {
+    id: 'pasted-image-20260323165142',
+    title: "Pasted image 20260323165142",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260323165142"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323165142
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260323165142.png" alt="Pasted image 20260323165142" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323165853': {
+    id: 'pasted-image-20260323165853',
+    title: "Pasted image 20260323165853",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260323165853"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323165853
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260323165853.png" alt="Pasted image 20260323165853" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260323170902': {
+    id: 'pasted-image-20260323170902',
+    title: "Pasted image 20260323170902",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260323170902"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260323170902
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260323170902.png" alt="Pasted image 20260323170902" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260324042236': {
+    id: 'pasted-image-20260324042236',
+    title: "Pasted image 20260324042236",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260324042236"],
+    tags: ["image"],
+    created: "2026-03-23",
+    modified: "2026-03-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260324042236
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260324042236.png" alt="Pasted image 20260324042236" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260325235711': {
+    id: 'pasted-image-20260325235711',
+    title: "Pasted image 20260325235711",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260325235711"],
+    tags: ["image"],
+    created: "2026-03-25",
+    modified: "2026-03-25",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260325235711
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260325235711.png" alt="Pasted image 20260325235711" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326000319': {
+    id: 'pasted-image-20260326000319',
+    title: "Pasted image 20260326000319",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260326000319"],
+    tags: ["image"],
+    created: "2026-03-25",
+    modified: "2026-03-25",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326000319
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260326000319.png" alt="Pasted image 20260326000319" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326033139': {
+    id: 'pasted-image-20260326033139',
+    title: "Pasted image 20260326033139",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260326033139"],
+    tags: ["image"],
+    created: "2026-03-25",
+    modified: "2026-03-25",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326033139
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260326033139.png" alt="Pasted image 20260326033139" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326033715': {
+    id: 'pasted-image-20260326033715',
+    title: "Pasted image 20260326033715",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260326033715"],
+    tags: ["image"],
+    created: "2026-03-25",
+    modified: "2026-03-25",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326033715
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260326033715.png" alt="Pasted image 20260326033715" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326174757': {
+    id: 'pasted-image-20260326174757',
+    title: "Pasted image 20260326174757",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260326174757"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326174757
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260326174757.png" alt="Pasted image 20260326174757" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326174842': {
+    id: 'pasted-image-20260326174842',
+    title: "Pasted image 20260326174842",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260326174842"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326174842
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260326174842.png" alt="Pasted image 20260326174842" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326175017': {
+    id: 'pasted-image-20260326175017',
+    title: "Pasted image 20260326175017",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260326175017"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326175017
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260326175017.png" alt="Pasted image 20260326175017" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326175108': {
+    id: 'pasted-image-20260326175108',
+    title: "Pasted image 20260326175108",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260326175108"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326175108
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260326175108.png" alt="Pasted image 20260326175108" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326235125': {
+    id: 'pasted-image-20260326235125',
+    title: "Pasted image 20260326235125",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260326235125"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326235125
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260326235125.png" alt="Pasted image 20260326235125" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260326235207': {
+    id: 'pasted-image-20260326235207',
+    title: "Pasted image 20260326235207",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260326235207"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260326235207
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260326235207.png" alt="Pasted image 20260326235207" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327000031': {
+    id: 'pasted-image-20260327000031',
+    title: "Pasted image 20260327000031",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327000031"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327000031
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327000031.png" alt="Pasted image 20260327000031" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327000543': {
+    id: 'pasted-image-20260327000543',
+    title: "Pasted image 20260327000543",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327000543"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327000543
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327000543.png" alt="Pasted image 20260327000543" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327000638': {
+    id: 'pasted-image-20260327000638',
+    title: "Pasted image 20260327000638",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327000638"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327000638
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327000638.png" alt="Pasted image 20260327000638" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327000834': {
+    id: 'pasted-image-20260327000834',
+    title: "Pasted image 20260327000834",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327000834"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327000834
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327000834.png" alt="Pasted image 20260327000834" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327001045': {
+    id: 'pasted-image-20260327001045',
+    title: "Pasted image 20260327001045",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327001045"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327001045
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327001045.png" alt="Pasted image 20260327001045" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327001633': {
+    id: 'pasted-image-20260327001633',
+    title: "Pasted image 20260327001633",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327001633"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327001633
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327001633.png" alt="Pasted image 20260327001633" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327003621': {
+    id: 'pasted-image-20260327003621',
+    title: "Pasted image 20260327003621",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327003621"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327003621
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327003621.png" alt="Pasted image 20260327003621" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327043713': {
+    id: 'pasted-image-20260327043713',
+    title: "Pasted image 20260327043713",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327043713"],
+    tags: ["image"],
+    created: "2026-03-26",
+    modified: "2026-03-26",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327043713
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327043713.png" alt="Pasted image 20260327043713" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327173414': {
+    id: 'pasted-image-20260327173414',
+    title: "Pasted image 20260327173414",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327173414"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327173414
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327173414.png" alt="Pasted image 20260327173414" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327173726': {
+    id: 'pasted-image-20260327173726',
+    title: "Pasted image 20260327173726",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327173726"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327173726
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327173726.png" alt="Pasted image 20260327173726" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327173906': {
+    id: 'pasted-image-20260327173906',
+    title: "Pasted image 20260327173906",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327173906"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327173906
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327173906.png" alt="Pasted image 20260327173906" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327191945': {
+    id: 'pasted-image-20260327191945',
+    title: "Pasted image 20260327191945",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327191945"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327191945
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327191945.png" alt="Pasted image 20260327191945" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327191955': {
+    id: 'pasted-image-20260327191955',
+    title: "Pasted image 20260327191955",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327191955"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327191955
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327191955.png" alt="Pasted image 20260327191955" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327192006': {
+    id: 'pasted-image-20260327192006',
+    title: "Pasted image 20260327192006",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327192006"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327192006
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327192006.png" alt="Pasted image 20260327192006" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327192018': {
+    id: 'pasted-image-20260327192018',
+    title: "Pasted image 20260327192018",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327192018"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327192018
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327192018.png" alt="Pasted image 20260327192018" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260327223710': {
+    id: 'pasted-image-20260327223710',
+    title: "Pasted image 20260327223710",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260327223710"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260327223710
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260327223710.png" alt="Pasted image 20260327223710" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260328004331': {
+    id: 'pasted-image-20260328004331',
+    title: "Pasted image 20260328004331",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260328004331"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260328004331
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260328004331.png" alt="Pasted image 20260328004331" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260328015151': {
+    id: 'pasted-image-20260328015151',
+    title: "Pasted image 20260328015151",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260328015151"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260328015151
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260328015151.png" alt="Pasted image 20260328015151" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260328021426': {
+    id: 'pasted-image-20260328021426',
+    title: "Pasted image 20260328021426",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260328021426"],
+    tags: ["image"],
+    created: "2026-03-27",
+    modified: "2026-03-27",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260328021426
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260328021426.png" alt="Pasted image 20260328021426" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260328151222': {
+    id: 'pasted-image-20260328151222',
+    title: "Pasted image 20260328151222",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260328151222"],
+    tags: ["image"],
+    created: "2026-03-28",
+    modified: "2026-03-28",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260328151222
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260328151222.png" alt="Pasted image 20260328151222" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260329191659': {
+    id: 'pasted-image-20260329191659',
+    title: "Pasted image 20260329191659",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260329191659"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260329191659
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260329191659.png" alt="Pasted image 20260329191659" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260329235134': {
+    id: 'pasted-image-20260329235134',
+    title: "Pasted image 20260329235134",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260329235134"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260329235134
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260329235134.png" alt="Pasted image 20260329235134" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330002309': {
+    id: 'pasted-image-20260330002309',
+    title: "Pasted image 20260330002309",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330002309"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330002309
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330002309.png" alt="Pasted image 20260330002309" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330002338': {
+    id: 'pasted-image-20260330002338',
+    title: "Pasted image 20260330002338",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330002338"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330002338
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330002338.png" alt="Pasted image 20260330002338" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330002349': {
+    id: 'pasted-image-20260330002349',
+    title: "Pasted image 20260330002349",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330002349"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330002349
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330002349.png" alt="Pasted image 20260330002349" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330004213': {
+    id: 'pasted-image-20260330004213',
+    title: "Pasted image 20260330004213",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330004213"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330004213
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330004213.png" alt="Pasted image 20260330004213" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330004242': {
+    id: 'pasted-image-20260330004242',
+    title: "Pasted image 20260330004242",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330004242"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330004242
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330004242.png" alt="Pasted image 20260330004242" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330004345': {
+    id: 'pasted-image-20260330004345',
+    title: "Pasted image 20260330004345",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330004345"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330004345
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330004345.png" alt="Pasted image 20260330004345" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330005132': {
+    id: 'pasted-image-20260330005132',
+    title: "Pasted image 20260330005132",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330005132"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330005132
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330005132.png" alt="Pasted image 20260330005132" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330005519': {
+    id: 'pasted-image-20260330005519',
+    title: "Pasted image 20260330005519",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330005519"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330005519
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330005519.png" alt="Pasted image 20260330005519" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330005547': {
+    id: 'pasted-image-20260330005547',
+    title: "Pasted image 20260330005547",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330005547"],
+    tags: ["image"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330005547
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330005547.png" alt="Pasted image 20260330005547" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260330151428': {
+    id: 'pasted-image-20260330151428',
+    title: "Pasted image 20260330151428",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260330151428"],
+    tags: ["image"],
+    created: "2026-03-30",
+    modified: "2026-03-30",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260330151428
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260330151428.png" alt="Pasted image 20260330151428" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260402032705': {
+    id: 'pasted-image-20260402032705',
+    title: "Pasted image 20260402032705",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260402032705"],
+    tags: ["image"],
+    created: "2026-04-01",
+    modified: "2026-04-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260402032705
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260402032705.png" alt="Pasted image 20260402032705" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260402033532': {
+    id: 'pasted-image-20260402033532',
+    title: "Pasted image 20260402033532",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260402033532"],
+    tags: ["image"],
+    created: "2026-04-01",
+    modified: "2026-04-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260402033532
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260402033532.png" alt="Pasted image 20260402033532" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260407195532': {
+    id: 'pasted-image-20260407195532',
+    title: "Pasted image 20260407195532",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260407195532"],
+    tags: ["image"],
+    created: "2026-04-07",
+    modified: "2026-04-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260407195532
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260407195532.png" alt="Pasted image 20260407195532" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260407211608': {
+    id: 'pasted-image-20260407211608',
+    title: "Pasted image 20260407211608",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260407211608"],
+    tags: ["image"],
+    created: "2026-04-07",
+    modified: "2026-04-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260407211608
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260407211608.png" alt="Pasted image 20260407211608" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260407211842': {
+    id: 'pasted-image-20260407211842',
+    title: "Pasted image 20260407211842",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260407211842"],
+    tags: ["image"],
+    created: "2026-04-07",
+    modified: "2026-04-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260407211842
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260407211842.png" alt="Pasted image 20260407211842" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260408014635': {
+    id: 'pasted-image-20260408014635',
+    title: "Pasted image 20260408014635",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260408014635"],
+    tags: ["image"],
+    created: "2026-04-07",
+    modified: "2026-04-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260408014635
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260408014635.png" alt="Pasted image 20260408014635" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260408014646': {
+    id: 'pasted-image-20260408014646',
+    title: "Pasted image 20260408014646",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260408014646"],
+    tags: ["image"],
+    created: "2026-04-07",
+    modified: "2026-04-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260408014646
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260408014646.png" alt="Pasted image 20260408014646" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260408020741': {
+    id: 'pasted-image-20260408020741',
+    title: "Pasted image 20260408020741",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260408020741"],
+    tags: ["image"],
+    created: "2026-04-07",
+    modified: "2026-04-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260408020741
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260408020741.png" alt="Pasted image 20260408020741" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260408194732': {
+    id: 'pasted-image-20260408194732',
+    title: "Pasted image 20260408194732",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260408194732"],
+    tags: ["image"],
+    created: "2026-04-08",
+    modified: "2026-04-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260408194732
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260408194732.png" alt="Pasted image 20260408194732" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260408195452': {
+    id: 'pasted-image-20260408195452',
+    title: "Pasted image 20260408195452",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260408195452"],
+    tags: ["image"],
+    created: "2026-04-08",
+    modified: "2026-04-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260408195452
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260408195452.png" alt="Pasted image 20260408195452" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260408195652': {
+    id: 'pasted-image-20260408195652',
+    title: "Pasted image 20260408195652",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260408195652"],
+    tags: ["image"],
+    created: "2026-04-08",
+    modified: "2026-04-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260408195652
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260408195652.png" alt="Pasted image 20260408195652" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410011429': {
+    id: 'pasted-image-20260410011429',
+    title: "Pasted image 20260410011429",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260410011429"],
+    tags: ["image"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410011429
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260410011429.png" alt="Pasted image 20260410011429" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410013517': {
+    id: 'pasted-image-20260410013517',
+    title: "Pasted image 20260410013517",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260410013517"],
+    tags: ["image"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410013517
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260410013517.png" alt="Pasted image 20260410013517" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410013843': {
+    id: 'pasted-image-20260410013843',
+    title: "Pasted image 20260410013843",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260410013843"],
+    tags: ["image"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410013843
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260410013843.png" alt="Pasted image 20260410013843" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410014712': {
+    id: 'pasted-image-20260410014712',
+    title: "Pasted image 20260410014712",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260410014712"],
+    tags: ["image"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410014712
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260410014712.png" alt="Pasted image 20260410014712" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410032419': {
+    id: 'pasted-image-20260410032419',
+    title: "Pasted image 20260410032419",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260410032419"],
+    tags: ["image"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410032419
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260410032419.png" alt="Pasted image 20260410032419" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260410045940': {
+    id: 'pasted-image-20260410045940',
+    title: "Pasted image 20260410045940",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260410045940"],
+    tags: ["image"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260410045940
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260410045940.png" alt="Pasted image 20260410045940" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260413023025': {
+    id: 'pasted-image-20260413023025',
+    title: "Pasted image 20260413023025",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260413023025"],
+    tags: ["image"],
+    created: "2026-04-12",
+    modified: "2026-04-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260413023025
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260413023025.png" alt="Pasted image 20260413023025" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260413035629': {
+    id: 'pasted-image-20260413035629',
+    title: "Pasted image 20260413035629",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260413035629"],
+    tags: ["image"],
+    created: "2026-04-12",
+    modified: "2026-04-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260413035629
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260413035629.png" alt="Pasted image 20260413035629" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260413050401': {
+    id: 'pasted-image-20260413050401',
+    title: "Pasted image 20260413050401",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260413050401"],
+    tags: ["image"],
+    created: "2026-04-12",
+    modified: "2026-04-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260413050401
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260413050401.png" alt="Pasted image 20260413050401" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260413051958': {
+    id: 'pasted-image-20260413051958',
+    title: "Pasted image 20260413051958",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260413051958"],
+    tags: ["image"],
+    created: "2026-04-12",
+    modified: "2026-04-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260413051958
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260413051958.png" alt="Pasted image 20260413051958" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260417000758': {
+    id: 'pasted-image-20260417000758',
+    title: "Pasted image 20260417000758",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260417000758"],
+    tags: ["image"],
+    created: "2026-04-16",
+    modified: "2026-04-16",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260417000758
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260417000758.png" alt="Pasted image 20260417000758" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260417064208': {
+    id: 'pasted-image-20260417064208',
+    title: "Pasted image 20260417064208",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260417064208"],
+    tags: ["image"],
+    created: "2026-04-17",
+    modified: "2026-04-17",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260417064208
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260417064208.png" alt="Pasted image 20260417064208" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260508181410': {
+    id: 'pasted-image-20260508181410',
+    title: "Pasted image 20260508181410",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260508181410"],
+    tags: ["image"],
+    created: "2026-05-08",
+    modified: "2026-05-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260508181410
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260508181410.png" alt="Pasted image 20260508181410" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260508182015': {
+    id: 'pasted-image-20260508182015',
+    title: "Pasted image 20260508182015",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260508182015"],
+    tags: ["image"],
+    created: "2026-05-08",
+    modified: "2026-05-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260508182015
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260508182015.png" alt="Pasted image 20260508182015" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260508182815': {
+    id: 'pasted-image-20260508182815',
+    title: "Pasted image 20260508182815",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260508182815"],
+    tags: ["image"],
+    created: "2026-05-08",
+    modified: "2026-05-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260508182815
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260508182815.png" alt="Pasted image 20260508182815" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'pasted-image-20260508185202': {
+    id: 'pasted-image-20260508185202',
+    title: "Pasted image 20260508185202",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260508185202"],
+    tags: ["image"],
+    created: "2026-05-08",
+    modified: "2026-05-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260508185202
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260508185202.png" alt="Pasted image 20260508185202" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'screenshot-2025-10-20-180039': {
+    id: 'screenshot-2025-10-20-180039',
+    title: "Screenshot 2025-10-20 180039",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Screenshot 2025-10-20 180039"],
+    tags: ["image"],
+    created: "2025-10-20",
+    modified: "2025-10-20",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Screenshot 2025-10-20 180039
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Screenshot 2025-10-20 180039.png" alt="Screenshot 2025-10-20 180039" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'upscalemedia-transformed': {
+    id: 'upscalemedia-transformed',
+    title: "upscalemedia-transformed",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","upscalemedia-transformed"],
+    tags: ["image"],
+    created: "2025-12-31",
+    modified: "2025-12-31",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# upscalemedia-transformed
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/upscalemedia-transformed.webp" alt="upscalemedia-transformed" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
+  'whatsapp-image-2025-12-23-at-24816-pm': {
+    id: 'whatsapp-image-2025-12-23-at-24816-pm',
+    title: "WhatsApp Image 2025-12-23 at 2.48.16 PM",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","WhatsApp Image 2025-12-23 at 2.48.16 PM"],
+    tags: ["image"],
+    created: "2025-12-23",
+    modified: "2025-12-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# WhatsApp Image 2025-12-23 at 2.48.16 PM
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/WhatsApp Image 2025-12-23 at 2.48.16 PM.jpeg" alt="WhatsApp Image 2025-12-23 at 2.48.16 PM" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
   },
 
   'ai': {
@@ -53777,7 +59485,7 @@ const VAULT_FOLDERS = [
           {
             "id": "advanced-facial-recognition-in-crowds-multi-camera-threat-detection-blueprint",
             "name": "Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "architecture",
@@ -53807,7 +59515,7 @@ const VAULT_FOLDERS = [
           {
             "id": "research-roadmap-multi-camera-face-recognition-threat-detection-2026",
             "name": "Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026)",
-            "type": "stub"
+            "type": "asset"
           }
         ]
       }
@@ -53942,7 +59650,7 @@ const VAULT_FOLDERS = [
           {
             "id": "aec-complete-till-1-nov-2025",
             "name": "AEC COMPLETE TILL 1 NOV 2025",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "aec",
@@ -53952,7 +59660,7 @@ const VAULT_FOLDERS = [
           {
             "id": "aec-aec",
             "name": "AEC",
-            "type": "stub"
+            "type": "asset"
           }
         ]
       },
@@ -53964,12 +59672,12 @@ const VAULT_FOLDERS = [
           {
             "id": "database-management-system-dbms-cse-14th",
             "name": "Database Management System (DBMS) - CSE 14th",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "dbms-4th-sem",
             "name": "DBMS 4th Sem",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "dbms-exam-strategy-analysis",
@@ -54035,7 +59743,7 @@ const VAULT_FOLDERS = [
           {
             "id": "ee-college-notes",
             "name": "EE college notes",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "ee-module-i-pyqs",
@@ -54060,12 +59768,12 @@ const VAULT_FOLDERS = [
           {
             "id": "ee",
             "name": "EE",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "eenotesbysir",
             "name": "EENOTESBYSIR",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "engineering-economics",
@@ -54082,12 +59790,12 @@ const VAULT_FOLDERS = [
           {
             "id": "cyk",
             "name": "CYK",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "flat-4th-sem",
             "name": "FLAT 4th Sem",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "flat-exam-analysis",
@@ -54097,7 +59805,7 @@ const VAULT_FOLDERS = [
           {
             "id": "flat-material",
             "name": "flat material",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "flat-notes-2",
@@ -54112,17 +59820,17 @@ const VAULT_FOLDERS = [
           {
             "id": "formal-language-and-automata-theory-flat-notes-cse-14th",
             "name": "Formal Language and Automata Theory (FLAT) Notes CSE 14th",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "p-np-np-complete-and-np-hard-problems-in-computer-science-baeldung-on-computer-science",
             "name": "P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "turing-machine-from-net",
             "name": "Turing Machine from net",
-            "type": "stub"
+            "type": "asset"
           }
         ]
       },
@@ -54134,37 +59842,42 @@ const VAULT_FOLDERS = [
           {
             "id": "awt-and-swing",
             "name": "AWT and Swing",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "c-vs-java",
             "name": "C++ vs Java",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "difference-between-jdk-jre-and-jvm-javatpoint",
             "name": "Difference between JDK, JRE and JVM - javatpoint",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "faetures-of-java",
             "name": "faetures of java",
-            "type": "stub"
+            "type": "asset"
+          },
+          {
+            "id": "igitoopjavaexamstrategy",
+            "name": "IGIT_OOP_Java_Exam_Strategy",
+            "type": "asset"
           },
           {
             "id": "interface-in-java",
             "name": "Interface in Java",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "java-java-overview",
             "name": "Java - Overview",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "java-4th-sem-igit",
             "name": "JAVA 4th Sem IGIT",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "java-exam",
@@ -54174,62 +59887,62 @@ const VAULT_FOLDERS = [
           {
             "id": "java-mod-1",
             "name": "java mod 1",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "java-mod-2",
             "name": "java mod 2",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "java-mod-3",
             "name": "java mod 3",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "java-notes-cse-14",
             "name": "Java Notes CSE 14",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "java-package",
             "name": "Java Package",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "javaexecution",
             "name": "javaexecution",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "javafundamental",
             "name": "javafundamental",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "javaintro",
             "name": "javaintro",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "mannual-till-looping",
             "name": "mannual till looping",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "module-5-jdbcppt",
             "name": "Module 5 - JDBC.ppt",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "module-1-strings-handlingppt",
             "name": "Module-1 Strings Handling.ppt",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "multithreading",
             "name": "multithreading",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "pyq-analysisjava",
@@ -54239,7 +59952,7 @@ const VAULT_FOLDERS = [
           {
             "id": "string-handling",
             "name": "string handling",
-            "type": "stub"
+            "type": "asset"
           }
         ]
       },
@@ -54248,6 +59961,11 @@ const VAULT_FOLDERS = [
         "name": "LEEE",
         "type": "folder",
         "children": [
+          {
+            "id": "leee-study-plan",
+            "name": "leee-study-plan",
+            "type": "asset"
+          },
           {
             "id": "leee",
             "name": "LEEE",
@@ -54298,22 +60016,22 @@ const VAULT_FOLDERS = [
           {
             "id": "algorithm",
             "name": "Algorithm",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "cormen-introduction-to-algorithms",
             "name": "cormen-introduction-to-algorithms",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "dsgate",
             "name": "ds_gate",
-            "type": "stub"
+            "type": "asset"
           },
           {
             "id": "viola-jones2001-object-detection",
             "name": "Viola Jones(2001) - Object Detection",
-            "type": "stub"
+            "type": "asset"
           }
         ]
       },
@@ -54386,6 +60104,1463 @@ const VAULT_FOLDERS = [
             "id": "drawing-2026-04-16-0650",
             "name": "Drawing 2026-04-16 0650",
             "type": "stub"
+          },
+          {
+            "id": "pasted-image-20251018171249",
+            "name": "Pasted image 20251018171249",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251115192926",
+            "name": "Pasted image 20251115192926",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251223133057",
+            "name": "Pasted image 20251223133057",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251228155311",
+            "name": "Pasted image 20251228155311",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251228182025",
+            "name": "Pasted image 20251228182025",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251228233716",
+            "name": "Pasted image 20251228233716",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260103185330",
+            "name": "Pasted image 20260103185330",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260103190053",
+            "name": "Pasted image 20260103190053",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260103192720",
+            "name": "Pasted image 20260103192720",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109182127",
+            "name": "Pasted image 20260109182127",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109183208",
+            "name": "Pasted image 20260109183208",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109192929",
+            "name": "Pasted image 20260109192929",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109194756",
+            "name": "Pasted image 20260109194756",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109194917",
+            "name": "Pasted image 20260109194917",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109195646",
+            "name": "Pasted image 20260109195646",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109195751",
+            "name": "Pasted image 20260109195751",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109204303",
+            "name": "Pasted image 20260109204303",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109211905",
+            "name": "Pasted image 20260109211905",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109225451",
+            "name": "Pasted image 20260109225451",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109232036",
+            "name": "Pasted image 20260109232036",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260109233729",
+            "name": "Pasted image 20260109233729",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260112200533",
+            "name": "Pasted image 20260112200533",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260112202252",
+            "name": "Pasted image 20260112202252",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260112204148",
+            "name": "Pasted image 20260112204148",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260113000418",
+            "name": "Pasted image 20260113000418",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260113001928",
+            "name": "Pasted image 20260113001928",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260118222704",
+            "name": "Pasted image 20260118222704",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260119194011",
+            "name": "Pasted image 20260119194011",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260120004114",
+            "name": "Pasted image 20260120004114",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260123194908",
+            "name": "Pasted image 20260123194908",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260129211512",
+            "name": "Pasted image 20260129211512",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260205235238",
+            "name": "Pasted image 20260205235238",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260210093026",
+            "name": "Pasted image 20260210093026",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260210093320",
+            "name": "Pasted image 20260210093320",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260223015645",
+            "name": "Pasted image 20260223015645",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260307144405",
+            "name": "Pasted image 20260307144405",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260307225750",
+            "name": "Pasted image 20260307225750",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260307225852",
+            "name": "Pasted image 20260307225852",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260317210445",
+            "name": "Pasted image 20260317210445",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260317212340",
+            "name": "Pasted image 20260317212340",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318012812",
+            "name": "Pasted image 20260318012812",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318014009",
+            "name": "Pasted image 20260318014009",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260320133054",
+            "name": "Pasted image 20260320133054",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321165530",
+            "name": "Pasted image 20260321165530",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321165557",
+            "name": "Pasted image 20260321165557",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321165757",
+            "name": "Pasted image 20260321165757",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321170004",
+            "name": "Pasted image 20260321170004",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321170906",
+            "name": "Pasted image 20260321170906",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171007",
+            "name": "Pasted image 20260321171007",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321224549",
+            "name": "Pasted image 20260321224549",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322182701",
+            "name": "Pasted image 20260322182701",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322182928",
+            "name": "Pasted image 20260322182928",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322183145",
+            "name": "Pasted image 20260322183145",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322183435",
+            "name": "Pasted image 20260322183435",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322183643",
+            "name": "Pasted image 20260322183643",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322184913",
+            "name": "Pasted image 20260322184913",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323003904",
+            "name": "Pasted image 20260323003904",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323005220",
+            "name": "Pasted image 20260323005220",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323011707",
+            "name": "Pasted image 20260323011707",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323170140",
+            "name": "Pasted image 20260323170140",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323170331",
+            "name": "Pasted image 20260323170331",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323170439",
+            "name": "Pasted image 20260323170439",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323172848",
+            "name": "Pasted image 20260323172848",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260324141608",
+            "name": "Pasted image 20260324141608",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260324141637",
+            "name": "Pasted image 20260324141637",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260324141715",
+            "name": "Pasted image 20260324141715",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260324141742",
+            "name": "Pasted image 20260324141742",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260324141810",
+            "name": "Pasted image 20260324141810",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326005712",
+            "name": "Pasted image 20260326005712",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327191056",
+            "name": "Pasted image 20260327191056",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327193630",
+            "name": "Pasted image 20260327193630",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327194042",
+            "name": "Pasted image 20260327194042",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327194418",
+            "name": "Pasted image 20260327194418",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327194813",
+            "name": "Pasted image 20260327194813",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327222055",
+            "name": "Pasted image 20260327222055",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327222801",
+            "name": "Pasted image 20260327222801",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260328015452",
+            "name": "Pasted image 20260328015452",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260402030544",
+            "name": "Pasted image 20260402030544",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260402031013",
+            "name": "Pasted image 20260402031013",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260409231416",
+            "name": "Pasted image 20260409231416",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410053243",
+            "name": "Pasted image 20260410053243",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410070432",
+            "name": "Pasted image 20260410070432",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410070833",
+            "name": "Pasted image 20260410070833",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410175645",
+            "name": "Pasted image 20260410175645",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410225530",
+            "name": "Pasted image 20260410225530",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410230302",
+            "name": "Pasted image 20260410230302",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260413021436",
+            "name": "Pasted image 20260413021436",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260414043703",
+            "name": "Pasted image 20260414043703",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260414051359",
+            "name": "Pasted image 20260414051359",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260414051522",
+            "name": "Pasted image 20260414051522",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260414051812",
+            "name": "Pasted image 20260414051812",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260414052732",
+            "name": "Pasted image 20260414052732",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260414110447",
+            "name": "Pasted image 20260414110447",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260414110830",
+            "name": "Pasted image 20260414110830",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260414202614",
+            "name": "Pasted image 20260414202614",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260414203431",
+            "name": "Pasted image 20260414203431",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260416065235",
+            "name": "Pasted image 20260416065235",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260416070120",
+            "name": "Pasted image 20260416070120",
+            "type": "asset"
+          }
+        ]
+      },
+      {
+        "id": "annexure-images",
+        "name": "Images",
+        "type": "folder",
+        "children": [
+          {
+            "id": "animation-of-sorting-algorithms",
+            "name": "animation of sorting algorithms",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251022144224",
+            "name": "Pasted image 20251022144224",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251022144329",
+            "name": "Pasted image 20251022144329",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251101133013",
+            "name": "Pasted image 20251101133013",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251101133140",
+            "name": "Pasted image 20251101133140",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251101133239",
+            "name": "Pasted image 20251101133239",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251101133344",
+            "name": "Pasted image 20251101133344",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251101133402",
+            "name": "Pasted image 20251101133402",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251101133602",
+            "name": "Pasted image 20251101133602",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251101133622",
+            "name": "Pasted image 20251101133622",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251101133653",
+            "name": "Pasted image 20251101133653",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251104151012",
+            "name": "Pasted image 20251104151012",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251106193658",
+            "name": "Pasted image 20251106193658",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251113182358",
+            "name": "Pasted image 20251113182358",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251114173340",
+            "name": "Pasted image 20251114173340",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251115183633",
+            "name": "Pasted image 20251115183633",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251115183729",
+            "name": "Pasted image 20251115183729",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251115183942",
+            "name": "Pasted image 20251115183942",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251115184038",
+            "name": "Pasted image 20251115184038",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251115184240",
+            "name": "Pasted image 20251115184240",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251124133526",
+            "name": "Pasted image 20251124133526",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251125105504",
+            "name": "Pasted image 20251125105504",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251125110245",
+            "name": "Pasted image 20251125110245",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251125110913",
+            "name": "Pasted image 20251125110913",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251127103042",
+            "name": "Pasted image 20251127103042",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251127103133",
+            "name": "Pasted image 20251127103133",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251127103227",
+            "name": "Pasted image 20251127103227",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251127104145",
+            "name": "Pasted image 20251127104145",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251127105002",
+            "name": "Pasted image 20251127105002",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251127110128",
+            "name": "Pasted image 20251127110128",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251127191741",
+            "name": "Pasted image 20251127191741",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251127192326",
+            "name": "Pasted image 20251127192326",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251127195805",
+            "name": "Pasted image 20251127195805",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251128120208",
+            "name": "Pasted image 20251128120208",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251128120331",
+            "name": "Pasted image 20251128120331",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251206015645",
+            "name": "Pasted image 20251206015645",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251206015714",
+            "name": "Pasted image 20251206015714",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251206015746",
+            "name": "Pasted image 20251206015746",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251209204536",
+            "name": "Pasted image 20251209204536",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251209204544",
+            "name": "Pasted image 20251209204544",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251209204618",
+            "name": "Pasted image 20251209204618",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251209204626",
+            "name": "Pasted image 20251209204626",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251209204646",
+            "name": "Pasted image 20251209204646",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251209204653",
+            "name": "Pasted image 20251209204653",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251209204723",
+            "name": "Pasted image 20251209204723",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251209204729",
+            "name": "Pasted image 20251209204729",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251220231515",
+            "name": "Pasted image 20251220231515",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251220231554",
+            "name": "Pasted image 20251220231554",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251221130951",
+            "name": "Pasted image 20251221130951",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251221131206",
+            "name": "Pasted image 20251221131206",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251221141606",
+            "name": "Pasted image 20251221141606",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251223134715",
+            "name": "Pasted image 20251223134715",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251223155433",
+            "name": "Pasted image 20251223155433",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251228140213",
+            "name": "Pasted image 20251228140213",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251228162023",
+            "name": "Pasted image 20251228162023",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251228173226",
+            "name": "Pasted image 20251228173226",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251229000415",
+            "name": "Pasted image 20251229000415",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251230222040",
+            "name": "Pasted image 20251230222040",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251231215621",
+            "name": "Pasted image 20251231215621",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251231215704",
+            "name": "Pasted image 20251231215704",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251231215841",
+            "name": "Pasted image 20251231215841",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251231222750",
+            "name": "Pasted image 20251231222750",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251231230604",
+            "name": "Pasted image 20251231230604",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20251231232203",
+            "name": "Pasted image 20251231232203",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260108223729",
+            "name": "Pasted image 20260108223729",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260113164618",
+            "name": "Pasted image 20260113164618",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260116004756",
+            "name": "Pasted image 20260116004756",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260116103954",
+            "name": "Pasted image 20260116103954",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260308235559",
+            "name": "Pasted image 20260308235559",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260311095941",
+            "name": "Pasted image 20260311095941",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260311140029",
+            "name": "Pasted image 20260311140029",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260311140316",
+            "name": "Pasted image 20260311140316",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260313223143",
+            "name": "Pasted image 20260313223143",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260314160310",
+            "name": "Pasted image 20260314160310",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260314230121",
+            "name": "Pasted image 20260314230121",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260315003702",
+            "name": "Pasted image 20260315003702",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260315143606",
+            "name": "Pasted image 20260315143606",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260315143635",
+            "name": "Pasted image 20260315143635",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260315150241",
+            "name": "Pasted image 20260315150241",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318152627",
+            "name": "Pasted image 20260318152627",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318152745",
+            "name": "Pasted image 20260318152745",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318161648",
+            "name": "Pasted image 20260318161648",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318224239",
+            "name": "Pasted image 20260318224239",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318225337",
+            "name": "Pasted image 20260318225337",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318225525",
+            "name": "Pasted image 20260318225525",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318230210",
+            "name": "Pasted image 20260318230210",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260318232341",
+            "name": "Pasted image 20260318232341",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260319142137",
+            "name": "Pasted image 20260319142137",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260319142613",
+            "name": "Pasted image 20260319142613",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260319142927",
+            "name": "Pasted image 20260319142927",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260319143726",
+            "name": "Pasted image 20260319143726",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260319144059",
+            "name": "Pasted image 20260319144059",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260320014321",
+            "name": "Pasted image 20260320014321",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171117",
+            "name": "Pasted image 20260321171117",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171140",
+            "name": "Pasted image 20260321171140",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171450",
+            "name": "Pasted image 20260321171450",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171459",
+            "name": "Pasted image 20260321171459",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171510",
+            "name": "Pasted image 20260321171510",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171706",
+            "name": "Pasted image 20260321171706",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171719",
+            "name": "Pasted image 20260321171719",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171737",
+            "name": "Pasted image 20260321171737",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171944",
+            "name": "Pasted image 20260321171944",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321171954",
+            "name": "Pasted image 20260321171954",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321172005",
+            "name": "Pasted image 20260321172005",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321225527",
+            "name": "Pasted image 20260321225527",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321230352",
+            "name": "Pasted image 20260321230352",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260321231317",
+            "name": "Pasted image 20260321231317",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322181020",
+            "name": "Pasted image 20260322181020",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322181151",
+            "name": "Pasted image 20260322181151",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322181553",
+            "name": "Pasted image 20260322181553",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322181630",
+            "name": "Pasted image 20260322181630",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260322201449",
+            "name": "Pasted image 20260322201449",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323002146",
+            "name": "Pasted image 20260323002146",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323164032",
+            "name": "Pasted image 20260323164032",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323164453",
+            "name": "Pasted image 20260323164453",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323164511",
+            "name": "Pasted image 20260323164511",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323165142",
+            "name": "Pasted image 20260323165142",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323165853",
+            "name": "Pasted image 20260323165853",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260323170902",
+            "name": "Pasted image 20260323170902",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260324042236",
+            "name": "Pasted image 20260324042236",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260325235711",
+            "name": "Pasted image 20260325235711",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326000319",
+            "name": "Pasted image 20260326000319",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326033139",
+            "name": "Pasted image 20260326033139",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326033715",
+            "name": "Pasted image 20260326033715",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326174757",
+            "name": "Pasted image 20260326174757",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326174842",
+            "name": "Pasted image 20260326174842",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326175017",
+            "name": "Pasted image 20260326175017",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326175108",
+            "name": "Pasted image 20260326175108",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326235125",
+            "name": "Pasted image 20260326235125",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260326235207",
+            "name": "Pasted image 20260326235207",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327000031",
+            "name": "Pasted image 20260327000031",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327000543",
+            "name": "Pasted image 20260327000543",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327000638",
+            "name": "Pasted image 20260327000638",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327000834",
+            "name": "Pasted image 20260327000834",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327001045",
+            "name": "Pasted image 20260327001045",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327001633",
+            "name": "Pasted image 20260327001633",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327003621",
+            "name": "Pasted image 20260327003621",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327043713",
+            "name": "Pasted image 20260327043713",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327173414",
+            "name": "Pasted image 20260327173414",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327173726",
+            "name": "Pasted image 20260327173726",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327173906",
+            "name": "Pasted image 20260327173906",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327191945",
+            "name": "Pasted image 20260327191945",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327191955",
+            "name": "Pasted image 20260327191955",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327192006",
+            "name": "Pasted image 20260327192006",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327192018",
+            "name": "Pasted image 20260327192018",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260327223710",
+            "name": "Pasted image 20260327223710",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260328004331",
+            "name": "Pasted image 20260328004331",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260328015151",
+            "name": "Pasted image 20260328015151",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260328021426",
+            "name": "Pasted image 20260328021426",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260328151222",
+            "name": "Pasted image 20260328151222",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260329191659",
+            "name": "Pasted image 20260329191659",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260329235134",
+            "name": "Pasted image 20260329235134",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330002309",
+            "name": "Pasted image 20260330002309",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330002338",
+            "name": "Pasted image 20260330002338",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330002349",
+            "name": "Pasted image 20260330002349",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330004213",
+            "name": "Pasted image 20260330004213",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330004242",
+            "name": "Pasted image 20260330004242",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330004345",
+            "name": "Pasted image 20260330004345",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330005132",
+            "name": "Pasted image 20260330005132",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330005519",
+            "name": "Pasted image 20260330005519",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330005547",
+            "name": "Pasted image 20260330005547",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260330151428",
+            "name": "Pasted image 20260330151428",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260402032705",
+            "name": "Pasted image 20260402032705",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260402033532",
+            "name": "Pasted image 20260402033532",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260407195532",
+            "name": "Pasted image 20260407195532",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260407211608",
+            "name": "Pasted image 20260407211608",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260407211842",
+            "name": "Pasted image 20260407211842",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260408014635",
+            "name": "Pasted image 20260408014635",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260408014646",
+            "name": "Pasted image 20260408014646",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260408020741",
+            "name": "Pasted image 20260408020741",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260408194732",
+            "name": "Pasted image 20260408194732",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260408195452",
+            "name": "Pasted image 20260408195452",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260408195652",
+            "name": "Pasted image 20260408195652",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410011429",
+            "name": "Pasted image 20260410011429",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410013517",
+            "name": "Pasted image 20260410013517",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410013843",
+            "name": "Pasted image 20260410013843",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410014712",
+            "name": "Pasted image 20260410014712",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410032419",
+            "name": "Pasted image 20260410032419",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260410045940",
+            "name": "Pasted image 20260410045940",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260413023025",
+            "name": "Pasted image 20260413023025",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260413035629",
+            "name": "Pasted image 20260413035629",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260413050401",
+            "name": "Pasted image 20260413050401",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260413051958",
+            "name": "Pasted image 20260413051958",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260417000758",
+            "name": "Pasted image 20260417000758",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260417064208",
+            "name": "Pasted image 20260417064208",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260508181410",
+            "name": "Pasted image 20260508181410",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260508182015",
+            "name": "Pasted image 20260508182015",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260508182815",
+            "name": "Pasted image 20260508182815",
+            "type": "asset"
+          },
+          {
+            "id": "pasted-image-20260508185202",
+            "name": "Pasted image 20260508185202",
+            "type": "asset"
+          },
+          {
+            "id": "screenshot-2025-10-20-180039",
+            "name": "Screenshot 2025-10-20 180039",
+            "type": "asset"
+          },
+          {
+            "id": "upscalemedia-transformed",
+            "name": "upscalemedia-transformed",
+            "type": "asset"
+          },
+          {
+            "id": "whatsapp-image-2025-12-23-at-24816-pm",
+            "name": "WhatsApp Image 2025-12-23 at 2.48.16 PM",
+            "type": "asset"
           }
         ]
       }
@@ -58110,8 +65285,343 @@ const GRAPH_EDGES = [
   }
 ];
 
+const VAULT_ASSETS = {
+  "Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint.pdf": "notes/04 - Research/Multi-Camera-Surveillance/Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint.pdf",
+  "Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026).pdf": "notes/04 - Research/Multi-Camera-Surveillance/Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026).pdf",
+  "AEC COMPLETE TILL 1 NOV 2025.pdf": "notes/06 - Archive/AEC/AEC COMPLETE TILL 1 NOV 2025.pdf",
+  "AEC.pdf": "notes/06 - Archive/AEC/AEC.pdf",
+  "Database Management System (DBMS) - CSE 14th.pdf": "notes/06 - Archive/DBMS/Database Management System (DBMS) - CSE 14th.pdf",
+  "DBMS 4th Sem.pdf": "notes/06 - Archive/DBMS/DBMS 4th Sem.pdf",
+  "EE college notes.pdf": "notes/06 - Archive/EE/EE college notes.pdf",
+  "EE.pdf": "notes/06 - Archive/EE/EE.pdf",
+  "EENOTESBYSIR.pdf": "notes/06 - Archive/EE/EENOTESBYSIR.pdf",
+  "CYK.pdf": "notes/06 - Archive/FLAT/CYK.pdf",
+  "FLAT 4th Sem.pdf": "notes/06 - Archive/FLAT/FLAT 4th Sem.pdf",
+  "flat material.pdf": "notes/06 - Archive/FLAT/flat material.pdf",
+  "Formal Language and Automata Theory (FLAT) Notes CSE 14th.pdf": "notes/06 - Archive/FLAT/Formal Language and Automata Theory (FLAT) Notes CSE 14th.pdf",
+  "P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science.pdf": "notes/06 - Archive/FLAT/P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science.pdf",
+  "Turing Machine from net.pdf": "notes/06 - Archive/FLAT/Turing Machine from net.pdf",
+  "AWT and Swing.pdf": "notes/06 - Archive/JAVA/AWT and Swing.pdf",
+  "C++ vs Java.pdf": "notes/06 - Archive/JAVA/C++ vs Java.pdf",
+  "Difference between JDK, JRE and JVM - javatpoint.pdf": "notes/06 - Archive/JAVA/Difference between JDK, JRE and JVM - javatpoint.pdf",
+  "faetures of java.pdf": "notes/06 - Archive/JAVA/faetures of java.pdf",
+  "IGIT_OOP_Java_Exam_Strategy.html": "notes/06 - Archive/JAVA/IGIT_OOP_Java_Exam_Strategy.html",
+  "Interface in Java.pdf": "notes/06 - Archive/JAVA/Interface in Java.pdf",
+  "Java - Overview.pdf": "notes/06 - Archive/JAVA/Java - Overview.pdf",
+  "JAVA 4th Sem IGIT.pdf": "notes/06 - Archive/JAVA/JAVA 4th Sem IGIT.pdf",
+  "java mod 1.pdf": "notes/06 - Archive/JAVA/java mod 1.pdf",
+  "java mod 2.pdf": "notes/06 - Archive/JAVA/java mod 2.pdf",
+  "java mod 3.pdf": "notes/06 - Archive/JAVA/java mod 3.pdf",
+  "Java Notes CSE 14.pdf": "notes/06 - Archive/JAVA/Java Notes CSE 14.pdf",
+  "Java Package.pdf": "notes/06 - Archive/JAVA/Java Package.pdf",
+  "javaexecution.pdf": "notes/06 - Archive/JAVA/javaexecution.pdf",
+  "javafundamental.pdf": "notes/06 - Archive/JAVA/javafundamental.pdf",
+  "javaintro.pdf": "notes/06 - Archive/JAVA/javaintro.pdf",
+  "mannual till looping.pdf": "notes/06 - Archive/JAVA/mannual till looping.pdf",
+  "Module 5 - JDBC.ppt.pdf": "notes/06 - Archive/JAVA/Module 5 - JDBC.ppt.pdf",
+  "Module-1 Strings Handling.ppt.pdf": "notes/06 - Archive/JAVA/Module-1 Strings Handling.ppt.pdf",
+  "multithreading.pdf": "notes/06 - Archive/JAVA/multithreading.pdf",
+  "string handling.pdf": "notes/06 - Archive/JAVA/string handling.pdf",
+  "leee-study-plan.html": "notes/06 - Archive/LEEE/leee-study-plan.html",
+  "Algorithm.pdf": "notes/07 - Annexure/Documents/Algorithm.pdf",
+  "cormen-introduction-to-algorithms.pdf": "notes/07 - Annexure/Documents/cormen-introduction-to-algorithms.pdf",
+  "ds_gate.pdf": "notes/07 - Annexure/Documents/ds_gate.pdf",
+  "Viola Jones(2001) - Object Detection.pdf": "notes/07 - Annexure/Documents/Viola Jones(2001) - Object Detection.pdf",
+  "Pasted image 20251018171249.png": "notes/07 - Annexure/Excalidraw/Pasted image 20251018171249.png",
+  "Pasted image 20251115192926.png": "notes/07 - Annexure/Excalidraw/Pasted image 20251115192926.png",
+  "Pasted image 20251223133057.png": "notes/07 - Annexure/Excalidraw/Pasted image 20251223133057.png",
+  "Pasted image 20251228155311.png": "notes/07 - Annexure/Excalidraw/Pasted image 20251228155311.png",
+  "Pasted image 20251228182025.png": "notes/07 - Annexure/Excalidraw/Pasted image 20251228182025.png",
+  "Pasted image 20251228233716.png": "notes/07 - Annexure/Excalidraw/Pasted image 20251228233716.png",
+  "Pasted image 20260103185330.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260103185330.png",
+  "Pasted image 20260103190053.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260103190053.png",
+  "Pasted image 20260103192720.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260103192720.png",
+  "Pasted image 20260109182127.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109182127.png",
+  "Pasted image 20260109183208.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109183208.png",
+  "Pasted image 20260109192929.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109192929.png",
+  "Pasted image 20260109194756.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109194756.png",
+  "Pasted image 20260109194917.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109194917.png",
+  "Pasted image 20260109195646.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109195646.png",
+  "Pasted image 20260109195751.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109195751.png",
+  "Pasted image 20260109204303.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109204303.png",
+  "Pasted image 20260109211905.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109211905.png",
+  "Pasted image 20260109225451.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109225451.png",
+  "Pasted image 20260109232036.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109232036.png",
+  "Pasted image 20260109233729.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260109233729.png",
+  "Pasted image 20260112200533.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260112200533.png",
+  "Pasted image 20260112202252.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260112202252.png",
+  "Pasted image 20260112204148.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260112204148.png",
+  "Pasted image 20260113000418.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260113000418.png",
+  "Pasted image 20260113001928.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260113001928.png",
+  "Pasted image 20260118222704.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260118222704.png",
+  "Pasted image 20260119194011.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260119194011.png",
+  "Pasted image 20260120004114.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260120004114.png",
+  "Pasted image 20260123194908.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260123194908.png",
+  "Pasted image 20260129211512.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260129211512.png",
+  "Pasted image 20260205235238.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260205235238.png",
+  "Pasted image 20260210093026.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260210093026.png",
+  "Pasted image 20260210093320.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260210093320.png",
+  "Pasted image 20260223015645.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260223015645.png",
+  "Pasted image 20260307144405.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260307144405.png",
+  "Pasted image 20260307225750.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260307225750.png",
+  "Pasted image 20260307225852.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260307225852.png",
+  "Pasted image 20260317210445.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260317210445.png",
+  "Pasted image 20260317212340.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260317212340.png",
+  "Pasted image 20260318012812.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260318012812.png",
+  "Pasted image 20260318014009.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260318014009.png",
+  "Pasted image 20260320133054.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260320133054.png",
+  "Pasted image 20260321165530.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260321165530.png",
+  "Pasted image 20260321165557.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260321165557.png",
+  "Pasted image 20260321165757.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260321165757.png",
+  "Pasted image 20260321170004.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260321170004.png",
+  "Pasted image 20260321170906.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260321170906.png",
+  "Pasted image 20260321171007.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260321171007.png",
+  "Pasted image 20260321224549.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260321224549.png",
+  "Pasted image 20260322182701.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260322182701.png",
+  "Pasted image 20260322182928.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260322182928.png",
+  "Pasted image 20260322183145.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260322183145.png",
+  "Pasted image 20260322183435.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260322183435.png",
+  "Pasted image 20260322183643.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260322183643.png",
+  "Pasted image 20260322184913.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260322184913.png",
+  "Pasted image 20260323003904.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260323003904.png",
+  "Pasted image 20260323005220.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260323005220.png",
+  "Pasted image 20260323011707.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260323011707.png",
+  "Pasted image 20260323170140.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260323170140.png",
+  "Pasted image 20260323170331.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260323170331.png",
+  "Pasted image 20260323170439.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260323170439.png",
+  "Pasted image 20260323172848.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260323172848.png",
+  "Pasted image 20260324141608.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260324141608.png",
+  "Pasted image 20260324141637.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260324141637.png",
+  "Pasted image 20260324141715.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260324141715.png",
+  "Pasted image 20260324141742.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260324141742.png",
+  "Pasted image 20260324141810.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260324141810.png",
+  "Pasted image 20260326005712.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260326005712.png",
+  "Pasted image 20260327191056.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260327191056.png",
+  "Pasted image 20260327193630.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260327193630.png",
+  "Pasted image 20260327194042.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260327194042.png",
+  "Pasted image 20260327194418.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260327194418.png",
+  "Pasted image 20260327194813.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260327194813.png",
+  "Pasted image 20260327222055.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260327222055.png",
+  "Pasted image 20260327222801.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260327222801.png",
+  "Pasted image 20260328015452.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260328015452.png",
+  "Pasted image 20260402030544.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260402030544.png",
+  "Pasted image 20260402031013.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260402031013.png",
+  "Pasted image 20260409231416.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260409231416.png",
+  "Pasted image 20260410053243.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260410053243.png",
+  "Pasted image 20260410070432.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260410070432.png",
+  "Pasted image 20260410070833.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260410070833.png",
+  "Pasted image 20260410175645.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260410175645.png",
+  "Pasted image 20260410225530.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260410225530.png",
+  "Pasted image 20260410230302.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260410230302.png",
+  "Pasted image 20260413021436.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260413021436.png",
+  "Pasted image 20260414043703.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260414043703.png",
+  "Pasted image 20260414051359.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260414051359.png",
+  "Pasted image 20260414051522.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260414051522.png",
+  "Pasted image 20260414051812.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260414051812.png",
+  "Pasted image 20260414052732.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260414052732.png",
+  "Pasted image 20260414110447.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260414110447.png",
+  "Pasted image 20260414110830.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260414110830.png",
+  "Pasted image 20260414202614.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260414202614.png",
+  "Pasted image 20260414203431.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260414203431.png",
+  "Pasted image 20260416065235.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260416065235.png",
+  "Pasted image 20260416070120.png": "notes/07 - Annexure/Excalidraw/Pasted image 20260416070120.png",
+  "animation of sorting algorithms.gif": "notes/07 - Annexure/Images/animation of sorting algorithms.gif",
+  "Pasted image 20251022144224.png": "notes/07 - Annexure/Images/Pasted image 20251022144224.png",
+  "Pasted image 20251022144329.png": "notes/07 - Annexure/Images/Pasted image 20251022144329.png",
+  "Pasted image 20251101133013.png": "notes/07 - Annexure/Images/Pasted image 20251101133013.png",
+  "Pasted image 20251101133140.png": "notes/07 - Annexure/Images/Pasted image 20251101133140.png",
+  "Pasted image 20251101133239.png": "notes/07 - Annexure/Images/Pasted image 20251101133239.png",
+  "Pasted image 20251101133344.png": "notes/07 - Annexure/Images/Pasted image 20251101133344.png",
+  "Pasted image 20251101133402.png": "notes/07 - Annexure/Images/Pasted image 20251101133402.png",
+  "Pasted image 20251101133602.png": "notes/07 - Annexure/Images/Pasted image 20251101133602.png",
+  "Pasted image 20251101133622.png": "notes/07 - Annexure/Images/Pasted image 20251101133622.png",
+  "Pasted image 20251101133653.png": "notes/07 - Annexure/Images/Pasted image 20251101133653.png",
+  "Pasted image 20251104151012.png": "notes/07 - Annexure/Images/Pasted image 20251104151012.png",
+  "Pasted image 20251106193658.png": "notes/07 - Annexure/Images/Pasted image 20251106193658.png",
+  "Pasted image 20251113182358.png": "notes/07 - Annexure/Images/Pasted image 20251113182358.png",
+  "Pasted image 20251114173340.png": "notes/07 - Annexure/Images/Pasted image 20251114173340.png",
+  "Pasted image 20251115183633.png": "notes/07 - Annexure/Images/Pasted image 20251115183633.png",
+  "Pasted image 20251115183729.png": "notes/07 - Annexure/Images/Pasted image 20251115183729.png",
+  "Pasted image 20251115183942.png": "notes/07 - Annexure/Images/Pasted image 20251115183942.png",
+  "Pasted image 20251115184038.png": "notes/07 - Annexure/Images/Pasted image 20251115184038.png",
+  "Pasted image 20251115184240.png": "notes/07 - Annexure/Images/Pasted image 20251115184240.png",
+  "Pasted image 20251124133526.png": "notes/07 - Annexure/Images/Pasted image 20251124133526.png",
+  "Pasted image 20251125105504.png": "notes/07 - Annexure/Images/Pasted image 20251125105504.png",
+  "Pasted image 20251125110245.png": "notes/07 - Annexure/Images/Pasted image 20251125110245.png",
+  "Pasted image 20251125110913.png": "notes/07 - Annexure/Images/Pasted image 20251125110913.png",
+  "Pasted image 20251127103042.png": "notes/07 - Annexure/Images/Pasted image 20251127103042.png",
+  "Pasted image 20251127103133.png": "notes/07 - Annexure/Images/Pasted image 20251127103133.png",
+  "Pasted image 20251127103227.png": "notes/07 - Annexure/Images/Pasted image 20251127103227.png",
+  "Pasted image 20251127104145.png": "notes/07 - Annexure/Images/Pasted image 20251127104145.png",
+  "Pasted image 20251127105002.png": "notes/07 - Annexure/Images/Pasted image 20251127105002.png",
+  "Pasted image 20251127110128.png": "notes/07 - Annexure/Images/Pasted image 20251127110128.png",
+  "Pasted image 20251127191741.png": "notes/07 - Annexure/Images/Pasted image 20251127191741.png",
+  "Pasted image 20251127192326.png": "notes/07 - Annexure/Images/Pasted image 20251127192326.png",
+  "Pasted image 20251127195805.png": "notes/07 - Annexure/Images/Pasted image 20251127195805.png",
+  "Pasted image 20251128120208.png": "notes/07 - Annexure/Images/Pasted image 20251128120208.png",
+  "Pasted image 20251128120331.png": "notes/07 - Annexure/Images/Pasted image 20251128120331.png",
+  "Pasted image 20251206015645.png": "notes/07 - Annexure/Images/Pasted image 20251206015645.png",
+  "Pasted image 20251206015714.png": "notes/07 - Annexure/Images/Pasted image 20251206015714.png",
+  "Pasted image 20251206015746.png": "notes/07 - Annexure/Images/Pasted image 20251206015746.png",
+  "Pasted image 20251209204536.png": "notes/07 - Annexure/Images/Pasted image 20251209204536.png",
+  "Pasted image 20251209204544.png": "notes/07 - Annexure/Images/Pasted image 20251209204544.png",
+  "Pasted image 20251209204618.png": "notes/07 - Annexure/Images/Pasted image 20251209204618.png",
+  "Pasted image 20251209204626.png": "notes/07 - Annexure/Images/Pasted image 20251209204626.png",
+  "Pasted image 20251209204646.png": "notes/07 - Annexure/Images/Pasted image 20251209204646.png",
+  "Pasted image 20251209204653.png": "notes/07 - Annexure/Images/Pasted image 20251209204653.png",
+  "Pasted image 20251209204723.png": "notes/07 - Annexure/Images/Pasted image 20251209204723.png",
+  "Pasted image 20251209204729.png": "notes/07 - Annexure/Images/Pasted image 20251209204729.png",
+  "Pasted image 20251220231515.png": "notes/07 - Annexure/Images/Pasted image 20251220231515.png",
+  "Pasted image 20251220231554.png": "notes/07 - Annexure/Images/Pasted image 20251220231554.png",
+  "Pasted image 20251221130951.png": "notes/07 - Annexure/Images/Pasted image 20251221130951.png",
+  "Pasted image 20251221131206.png": "notes/07 - Annexure/Images/Pasted image 20251221131206.png",
+  "Pasted image 20251221141606.png": "notes/07 - Annexure/Images/Pasted image 20251221141606.png",
+  "Pasted image 20251223134715.png": "notes/07 - Annexure/Images/Pasted image 20251223134715.png",
+  "Pasted image 20251223155433.png": "notes/07 - Annexure/Images/Pasted image 20251223155433.png",
+  "Pasted image 20251228140213.png": "notes/07 - Annexure/Images/Pasted image 20251228140213.png",
+  "Pasted image 20251228162023.png": "notes/07 - Annexure/Images/Pasted image 20251228162023.png",
+  "Pasted image 20251228173226.png": "notes/07 - Annexure/Images/Pasted image 20251228173226.png",
+  "Pasted image 20251229000415.png": "notes/07 - Annexure/Images/Pasted image 20251229000415.png",
+  "Pasted image 20251230222040.png": "notes/07 - Annexure/Images/Pasted image 20251230222040.png",
+  "Pasted image 20251231215621.png": "notes/07 - Annexure/Images/Pasted image 20251231215621.png",
+  "Pasted image 20251231215704.png": "notes/07 - Annexure/Images/Pasted image 20251231215704.png",
+  "Pasted image 20251231215841.png": "notes/07 - Annexure/Images/Pasted image 20251231215841.png",
+  "Pasted image 20251231222750.png": "notes/07 - Annexure/Images/Pasted image 20251231222750.png",
+  "Pasted image 20251231230604.png": "notes/07 - Annexure/Images/Pasted image 20251231230604.png",
+  "Pasted image 20251231232203.png": "notes/07 - Annexure/Images/Pasted image 20251231232203.png",
+  "Pasted image 20260108223729.png": "notes/07 - Annexure/Images/Pasted image 20260108223729.png",
+  "Pasted image 20260113164618.png": "notes/07 - Annexure/Images/Pasted image 20260113164618.png",
+  "Pasted image 20260116004756.png": "notes/07 - Annexure/Images/Pasted image 20260116004756.png",
+  "Pasted image 20260116103954.png": "notes/07 - Annexure/Images/Pasted image 20260116103954.png",
+  "Pasted image 20260308235559.png": "notes/07 - Annexure/Images/Pasted image 20260308235559.png",
+  "Pasted image 20260311095941.png": "notes/07 - Annexure/Images/Pasted image 20260311095941.png",
+  "Pasted image 20260311140029.png": "notes/07 - Annexure/Images/Pasted image 20260311140029.png",
+  "Pasted image 20260311140316.png": "notes/07 - Annexure/Images/Pasted image 20260311140316.png",
+  "Pasted image 20260313223143.png": "notes/07 - Annexure/Images/Pasted image 20260313223143.png",
+  "Pasted image 20260314160310.png": "notes/07 - Annexure/Images/Pasted image 20260314160310.png",
+  "Pasted image 20260314230121.png": "notes/07 - Annexure/Images/Pasted image 20260314230121.png",
+  "Pasted image 20260315003702.png": "notes/07 - Annexure/Images/Pasted image 20260315003702.png",
+  "Pasted image 20260315143606.png": "notes/07 - Annexure/Images/Pasted image 20260315143606.png",
+  "Pasted image 20260315143635.png": "notes/07 - Annexure/Images/Pasted image 20260315143635.png",
+  "Pasted image 20260315150241.png": "notes/07 - Annexure/Images/Pasted image 20260315150241.png",
+  "Pasted image 20260318152627.png": "notes/07 - Annexure/Images/Pasted image 20260318152627.png",
+  "Pasted image 20260318152745.png": "notes/07 - Annexure/Images/Pasted image 20260318152745.png",
+  "Pasted image 20260318161648.png": "notes/07 - Annexure/Images/Pasted image 20260318161648.png",
+  "Pasted image 20260318224239.png": "notes/07 - Annexure/Images/Pasted image 20260318224239.png",
+  "Pasted image 20260318225337.png": "notes/07 - Annexure/Images/Pasted image 20260318225337.png",
+  "Pasted image 20260318225525.png": "notes/07 - Annexure/Images/Pasted image 20260318225525.png",
+  "Pasted image 20260318230210.png": "notes/07 - Annexure/Images/Pasted image 20260318230210.png",
+  "Pasted image 20260318232341.png": "notes/07 - Annexure/Images/Pasted image 20260318232341.png",
+  "Pasted image 20260319142137.png": "notes/07 - Annexure/Images/Pasted image 20260319142137.png",
+  "Pasted image 20260319142613.png": "notes/07 - Annexure/Images/Pasted image 20260319142613.png",
+  "Pasted image 20260319142927.png": "notes/07 - Annexure/Images/Pasted image 20260319142927.png",
+  "Pasted image 20260319143726.png": "notes/07 - Annexure/Images/Pasted image 20260319143726.png",
+  "Pasted image 20260319144059.png": "notes/07 - Annexure/Images/Pasted image 20260319144059.png",
+  "Pasted image 20260320014321.png": "notes/07 - Annexure/Images/Pasted image 20260320014321.png",
+  "Pasted image 20260321171117.png": "notes/07 - Annexure/Images/Pasted image 20260321171117.png",
+  "Pasted image 20260321171140.png": "notes/07 - Annexure/Images/Pasted image 20260321171140.png",
+  "Pasted image 20260321171450.png": "notes/07 - Annexure/Images/Pasted image 20260321171450.png",
+  "Pasted image 20260321171459.png": "notes/07 - Annexure/Images/Pasted image 20260321171459.png",
+  "Pasted image 20260321171510.png": "notes/07 - Annexure/Images/Pasted image 20260321171510.png",
+  "Pasted image 20260321171706.png": "notes/07 - Annexure/Images/Pasted image 20260321171706.png",
+  "Pasted image 20260321171719.png": "notes/07 - Annexure/Images/Pasted image 20260321171719.png",
+  "Pasted image 20260321171737.png": "notes/07 - Annexure/Images/Pasted image 20260321171737.png",
+  "Pasted image 20260321171944.png": "notes/07 - Annexure/Images/Pasted image 20260321171944.png",
+  "Pasted image 20260321171954.png": "notes/07 - Annexure/Images/Pasted image 20260321171954.png",
+  "Pasted image 20260321172005.png": "notes/07 - Annexure/Images/Pasted image 20260321172005.png",
+  "Pasted image 20260321225527.png": "notes/07 - Annexure/Images/Pasted image 20260321225527.png",
+  "Pasted image 20260321230352.png": "notes/07 - Annexure/Images/Pasted image 20260321230352.png",
+  "Pasted image 20260321231317.png": "notes/07 - Annexure/Images/Pasted image 20260321231317.png",
+  "Pasted image 20260322181020.png": "notes/07 - Annexure/Images/Pasted image 20260322181020.png",
+  "Pasted image 20260322181151.png": "notes/07 - Annexure/Images/Pasted image 20260322181151.png",
+  "Pasted image 20260322181553.png": "notes/07 - Annexure/Images/Pasted image 20260322181553.png",
+  "Pasted image 20260322181630.png": "notes/07 - Annexure/Images/Pasted image 20260322181630.png",
+  "Pasted image 20260322201449.png": "notes/07 - Annexure/Images/Pasted image 20260322201449.png",
+  "Pasted image 20260323002146.png": "notes/07 - Annexure/Images/Pasted image 20260323002146.png",
+  "Pasted image 20260323164032.png": "notes/07 - Annexure/Images/Pasted image 20260323164032.png",
+  "Pasted image 20260323164453.png": "notes/07 - Annexure/Images/Pasted image 20260323164453.png",
+  "Pasted image 20260323164511.png": "notes/07 - Annexure/Images/Pasted image 20260323164511.png",
+  "Pasted image 20260323165142.png": "notes/07 - Annexure/Images/Pasted image 20260323165142.png",
+  "Pasted image 20260323165853.png": "notes/07 - Annexure/Images/Pasted image 20260323165853.png",
+  "Pasted image 20260323170902.png": "notes/07 - Annexure/Images/Pasted image 20260323170902.png",
+  "Pasted image 20260324042236.png": "notes/07 - Annexure/Images/Pasted image 20260324042236.png",
+  "Pasted image 20260325235711.png": "notes/07 - Annexure/Images/Pasted image 20260325235711.png",
+  "Pasted image 20260326000319.png": "notes/07 - Annexure/Images/Pasted image 20260326000319.png",
+  "Pasted image 20260326033139.png": "notes/07 - Annexure/Images/Pasted image 20260326033139.png",
+  "Pasted image 20260326033715.png": "notes/07 - Annexure/Images/Pasted image 20260326033715.png",
+  "Pasted image 20260326174757.png": "notes/07 - Annexure/Images/Pasted image 20260326174757.png",
+  "Pasted image 20260326174842.png": "notes/07 - Annexure/Images/Pasted image 20260326174842.png",
+  "Pasted image 20260326175017.png": "notes/07 - Annexure/Images/Pasted image 20260326175017.png",
+  "Pasted image 20260326175108.png": "notes/07 - Annexure/Images/Pasted image 20260326175108.png",
+  "Pasted image 20260326235125.png": "notes/07 - Annexure/Images/Pasted image 20260326235125.png",
+  "Pasted image 20260326235207.png": "notes/07 - Annexure/Images/Pasted image 20260326235207.png",
+  "Pasted image 20260327000031.png": "notes/07 - Annexure/Images/Pasted image 20260327000031.png",
+  "Pasted image 20260327000543.png": "notes/07 - Annexure/Images/Pasted image 20260327000543.png",
+  "Pasted image 20260327000638.png": "notes/07 - Annexure/Images/Pasted image 20260327000638.png",
+  "Pasted image 20260327000834.png": "notes/07 - Annexure/Images/Pasted image 20260327000834.png",
+  "Pasted image 20260327001045.png": "notes/07 - Annexure/Images/Pasted image 20260327001045.png",
+  "Pasted image 20260327001633.png": "notes/07 - Annexure/Images/Pasted image 20260327001633.png",
+  "Pasted image 20260327003621.png": "notes/07 - Annexure/Images/Pasted image 20260327003621.png",
+  "Pasted image 20260327043713.png": "notes/07 - Annexure/Images/Pasted image 20260327043713.png",
+  "Pasted image 20260327173414.png": "notes/07 - Annexure/Images/Pasted image 20260327173414.png",
+  "Pasted image 20260327173726.png": "notes/07 - Annexure/Images/Pasted image 20260327173726.png",
+  "Pasted image 20260327173906.png": "notes/07 - Annexure/Images/Pasted image 20260327173906.png",
+  "Pasted image 20260327191945.png": "notes/07 - Annexure/Images/Pasted image 20260327191945.png",
+  "Pasted image 20260327191955.png": "notes/07 - Annexure/Images/Pasted image 20260327191955.png",
+  "Pasted image 20260327192006.png": "notes/07 - Annexure/Images/Pasted image 20260327192006.png",
+  "Pasted image 20260327192018.png": "notes/07 - Annexure/Images/Pasted image 20260327192018.png",
+  "Pasted image 20260327223710.png": "notes/07 - Annexure/Images/Pasted image 20260327223710.png",
+  "Pasted image 20260328004331.png": "notes/07 - Annexure/Images/Pasted image 20260328004331.png",
+  "Pasted image 20260328015151.png": "notes/07 - Annexure/Images/Pasted image 20260328015151.png",
+  "Pasted image 20260328021426.png": "notes/07 - Annexure/Images/Pasted image 20260328021426.png",
+  "Pasted image 20260328151222.png": "notes/07 - Annexure/Images/Pasted image 20260328151222.png",
+  "Pasted image 20260329191659.png": "notes/07 - Annexure/Images/Pasted image 20260329191659.png",
+  "Pasted image 20260329235134.png": "notes/07 - Annexure/Images/Pasted image 20260329235134.png",
+  "Pasted image 20260330002309.png": "notes/07 - Annexure/Images/Pasted image 20260330002309.png",
+  "Pasted image 20260330002338.png": "notes/07 - Annexure/Images/Pasted image 20260330002338.png",
+  "Pasted image 20260330002349.png": "notes/07 - Annexure/Images/Pasted image 20260330002349.png",
+  "Pasted image 20260330004213.png": "notes/07 - Annexure/Images/Pasted image 20260330004213.png",
+  "Pasted image 20260330004242.png": "notes/07 - Annexure/Images/Pasted image 20260330004242.png",
+  "Pasted image 20260330004345.png": "notes/07 - Annexure/Images/Pasted image 20260330004345.png",
+  "Pasted image 20260330005132.png": "notes/07 - Annexure/Images/Pasted image 20260330005132.png",
+  "Pasted image 20260330005519.png": "notes/07 - Annexure/Images/Pasted image 20260330005519.png",
+  "Pasted image 20260330005547.png": "notes/07 - Annexure/Images/Pasted image 20260330005547.png",
+  "Pasted image 20260330151428.png": "notes/07 - Annexure/Images/Pasted image 20260330151428.png",
+  "Pasted image 20260402032705.png": "notes/07 - Annexure/Images/Pasted image 20260402032705.png",
+  "Pasted image 20260402033532.png": "notes/07 - Annexure/Images/Pasted image 20260402033532.png",
+  "Pasted image 20260407195532.png": "notes/07 - Annexure/Images/Pasted image 20260407195532.png",
+  "Pasted image 20260407211608.png": "notes/07 - Annexure/Images/Pasted image 20260407211608.png",
+  "Pasted image 20260407211842.png": "notes/07 - Annexure/Images/Pasted image 20260407211842.png",
+  "Pasted image 20260408014635.png": "notes/07 - Annexure/Images/Pasted image 20260408014635.png",
+  "Pasted image 20260408014646.png": "notes/07 - Annexure/Images/Pasted image 20260408014646.png",
+  "Pasted image 20260408020741.png": "notes/07 - Annexure/Images/Pasted image 20260408020741.png",
+  "Pasted image 20260408194732.png": "notes/07 - Annexure/Images/Pasted image 20260408194732.png",
+  "Pasted image 20260408195452.png": "notes/07 - Annexure/Images/Pasted image 20260408195452.png",
+  "Pasted image 20260408195652.png": "notes/07 - Annexure/Images/Pasted image 20260408195652.png",
+  "Pasted image 20260410011429.png": "notes/07 - Annexure/Images/Pasted image 20260410011429.png",
+  "Pasted image 20260410013517.png": "notes/07 - Annexure/Images/Pasted image 20260410013517.png",
+  "Pasted image 20260410013843.png": "notes/07 - Annexure/Images/Pasted image 20260410013843.png",
+  "Pasted image 20260410014712.png": "notes/07 - Annexure/Images/Pasted image 20260410014712.png",
+  "Pasted image 20260410032419.png": "notes/07 - Annexure/Images/Pasted image 20260410032419.png",
+  "Pasted image 20260410045940.png": "notes/07 - Annexure/Images/Pasted image 20260410045940.png",
+  "Pasted image 20260413023025.png": "notes/07 - Annexure/Images/Pasted image 20260413023025.png",
+  "Pasted image 20260413035629.png": "notes/07 - Annexure/Images/Pasted image 20260413035629.png",
+  "Pasted image 20260413050401.png": "notes/07 - Annexure/Images/Pasted image 20260413050401.png",
+  "Pasted image 20260413051958.png": "notes/07 - Annexure/Images/Pasted image 20260413051958.png",
+  "Pasted image 20260417000758.png": "notes/07 - Annexure/Images/Pasted image 20260417000758.png",
+  "Pasted image 20260417064208.png": "notes/07 - Annexure/Images/Pasted image 20260417064208.png",
+  "Pasted image 20260508181410.png": "notes/07 - Annexure/Images/Pasted image 20260508181410.png",
+  "Pasted image 20260508182015.png": "notes/07 - Annexure/Images/Pasted image 20260508182015.png",
+  "Pasted image 20260508182815.png": "notes/07 - Annexure/Images/Pasted image 20260508182815.png",
+  "Pasted image 20260508185202.png": "notes/07 - Annexure/Images/Pasted image 20260508185202.png",
+  "Screenshot 2025-10-20 180039.png": "notes/07 - Annexure/Images/Screenshot 2025-10-20 180039.png",
+  "upscalemedia-transformed.webp": "notes/07 - Annexure/Images/upscalemedia-transformed.webp",
+  "WhatsApp Image 2025-12-23 at 2.48.16 PM.jpeg": "notes/07 - Annexure/Images/WhatsApp Image 2025-12-23 at 2.48.16 PM.jpeg"
+};
+
 // Expose to window so JSX components can access via window.*
 window.VAULT_NOTES   = VAULT_NOTES;
 window.VAULT_FOLDERS = VAULT_FOLDERS;
 window.GRAPH_NODES   = GRAPH_NODES;
 window.GRAPH_EDGES   = GRAPH_EDGES;
+window.VAULT_ASSETS  = VAULT_ASSETS;

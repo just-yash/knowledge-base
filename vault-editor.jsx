@@ -81,8 +81,20 @@
     return `<${tag}${startAttr}${cls}>${body}</${tag}>`;
   };
 
-  marked.setOptions({ renderer, gfm: true, breaks: false });
+  marked.setOptions({ renderer, gfm: true, breaks: false, html: true });
 })();
+
+// ─── Pre-process: ![[image.ext]] → <img> using VAULT_ASSETS ─────────────────
+function resolveObsidianEmbeds(md) {
+  return md.replace(/!\[\[([^\]]+?\.(png|jpg|jpeg|gif|svg|webp))\]\]/gi, (_, filename) => {
+    const assetPath = window.VAULT_ASSETS?.[filename];
+    if (assetPath) {
+      return `![${filename}](${assetPath})`;
+    }
+    // fallback: try direct path guess
+    return `![${filename}](notes/07 - Annexure/Excalidraw/${filename})`;
+  });
+}
 
 // ─── Post-process: [[WikiLinks]] → clickable spans ───────────────────────────
 function processWikiLinks(html) {
@@ -279,7 +291,8 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
 
   const rendered = React.useMemo(() => {
     if (!note || !window.marked) return '';
-    let html = marked.parse(note.content);
+    const preprocessed = resolveObsidianEmbeds(note.content);
+    let html = marked.parse(preprocessed);
     html = processWikiLinks(html);
     return html;
   }, [note?.id]);
