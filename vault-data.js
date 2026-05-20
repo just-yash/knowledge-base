@@ -40064,6 +40064,23 @@ _Last updated: 25th March 2026 · Built for deep, sequential learning._
 # References`
   },
 
+  'advanced-facial-recognition-in-crowds-multi-camera-threat-detection-blueprint': {
+    id: 'advanced-facial-recognition-in-crowds-multi-camera-threat-detection-blueprint',
+    title: "Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint",
+    folder: "04 - Research",
+    path: ["04 - Research","Multi-Camera-Surveillance","Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint"],
+    tags: ["pdf"],
+    created: "2026-05-14",
+    modified: "2026-05-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
   'architecture': {
     id: 'architecture',
     title: "Architecture",
@@ -40440,6 +40457,23 @@ We propose a real-time pipeline for multi-camera person re-identification that e
 ## References
 
 > [Populate from Literature Review]`
+  },
+
+  'research-roadmap-multi-camera-face-recognition-threat-detection-2026': {
+    id: 'research-roadmap-multi-camera-face-recognition-threat-detection-2026',
+    title: "Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026)",
+    folder: "04 - Research",
+    path: ["04 - Research","Multi-Camera-Surveillance","Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026)"],
+    tags: ["pdf"],
+    created: "2026-05-14",
+    modified: "2026-05-14",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026)
+
+*This is a PDF document — not viewable in the web vault.*`
   },
 
   'a-desolated-guy': {
@@ -41494,7 +41528,7 @@ This poem portrays the past as an ever-present companion—one that does not fad
     modified: "2026-05-11",
     wordCount: 2180,
     backlinks: ["aec"],
-    links: ["aec"],
+    links: ["aec-aec"],
     outline: [{"level":3,"text":"PYQ Paper: 2024-25","id":"pyq-paper-2024-25"},{"level":3,"text":"PYQ Paper: 2023-24","id":"pyq-paper-2023-24"},{"level":3,"text":"PYQ Paper: 2022-23","id":"pyq-paper-2022-23"},{"level":3,"text":"The \"Guaranteed Easy\" List (From PYQs)","id":"the-guaranteed-easy-list-from-pyqs"},{"level":3,"text":"Your \"Life or Death\" Plan","id":"your-life-or-death-plan"},{"level":3,"text":"2. Stability Analysis: Does the Pattern Change?","id":"2-stability-analysis-does-the-pattern-change"},{"level":3,"text":"3. Unique Topics (The \"Wildcards\")","id":"3-unique-topics-the-wildcards"}],
     content: `### **PYQ Paper: 2024-25**
 
@@ -42006,6 +42040,23 @@ These topics appeared only once in the last three years. Prioritize the stable t
 - [[AEC]]`
   },
 
+  'aec-complete-till-1-nov-2025': {
+    id: 'aec-complete-till-1-nov-2025',
+    title: "AEC COMPLETE TILL 1 NOV 2025",
+    folder: "06 - Archive",
+    path: ["06 - Archive","AEC","AEC COMPLETE TILL 1 NOV 2025"],
+    tags: ["pdf"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# AEC COMPLETE TILL 1 NOV 2025
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
   'aec': {
     id: 'aec',
     title: "AEC",
@@ -42015,7 +42066,7 @@ These topics appeared only once in the last three years. Prioritize the stable t
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 8560,
-    backlinks: ["aec-2"],
+    backlinks: [],
     links: ["aec-2"],
     outline: [{"level":2,"text":"1-2 Marks → Short Direct Qs","id":"1-2-marks-short-direct-qs"},{"level":2,"text":"5-7 Marks → draw a standard circuit and derive the key expression for its gain, frequency, etc.","id":"5-7-marks-draw-a-standard-circuit-and-derive-the-key-expression-for-its-gain-frequency-etc"},{"level":2,"text":"5-7 Marks → Calculate everything","id":"5-7-marks-calculate-everything"},{"level":2,"text":"3-5 Marks → Differentiate Template","id":"3-5-marks-differentiate-template"},{"level":2,"text":"5 marks → Short Notes → slightly less common but still important topics","id":"5-marks-short-notes-slightly-less-common-but-still-important-topics"},{"level":3,"text":"📄 Paper: Jan 2023","id":"paper-jan-2023"},{"level":3,"text":"📄 Paper: Dec 2023-2024","id":"paper-dec-2023-2024"},{"level":3,"text":"📄 Paper: 2024-25","id":"paper-2024-25"},{"level":3,"text":"Tier 1: High Frequency (Guaranteed Topics)","id":"tier-1-high-frequency-guaranteed-topics"},{"level":3,"text":"Tier 2: Medium Frequency (Likely Topics)","id":"tier-2-medium-frequency-likely-topics"},{"level":3,"text":"Tier 3: Low Frequency (Wildcard Topics)","id":"tier-3-low-frequency-wildcard-topics"},{"level":2,"text":"✅ JAN 2023 PAPER – EASY / LOW-MEM / NO-DERIVATION","id":"jan-2023-paper-easy-low-mem-no-derivation"}],
     content: `# Core Concepts
@@ -43198,6 +43249,57 @@ Your exam is **academic**, so:
 - [[AEC COMPLETE TILL 1 NOV 2025.pdf]]
 
 - [[AEC 2|AEC 2]]`
+  },
+
+  'aec-aec': {
+    id: 'aec-aec',
+    title: "AEC",
+    folder: "06 - Archive",
+    path: ["06 - Archive","AEC","AEC"],
+    tags: ["pdf"],
+    created: "2025-11-01",
+    modified: "2025-11-01",
+    wordCount: 0,
+    backlinks: ["aec-2"],
+    links: [],
+    outline: [],
+    content: `# AEC
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'database-management-system-dbms-cse-14th': {
+    id: 'database-management-system-dbms-cse-14th',
+    title: "Database Management System (DBMS) - CSE 14th",
+    folder: "06 - Archive",
+    path: ["06 - Archive","DBMS","Database Management System (DBMS) - CSE 14th"],
+    tags: ["pdf"],
+    created: "2026-04-08",
+    modified: "2026-04-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Database Management System (DBMS) - CSE 14th
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'dbms-4th-sem': {
+    id: 'dbms-4th-sem',
+    title: "DBMS 4th Sem",
+    folder: "06 - Archive",
+    path: ["06 - Archive","DBMS","DBMS 4th Sem"],
+    tags: ["pdf"],
+    created: "2026-04-10",
+    modified: "2026-04-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# DBMS 4th Sem
+
+*This is a PDF document — not viewable in the web vault.*`
   },
 
   'dbms-exam-strategy-analysis': {
@@ -46168,6 +46270,23 @@ Index : Unique identifiers to each array element: range 0 to size-1
 # References`
   },
 
+  'ee-college-notes': {
+    id: 'ee-college-notes',
+    title: "EE college notes",
+    folder: "06 - Archive",
+    path: ["06 - Archive","EE","EE college notes"],
+    tags: ["pdf"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# EE college notes
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
   'ee-module-i-pyqs': {
     id: 'ee-module-i-pyqs',
     title: "EE Module I PYQs",
@@ -47216,6 +47335,40 @@ $$Price \\propto \\frac{1}{Demand} \\propto Supply$$
 # Summary`
   },
 
+  'ee': {
+    id: 'ee',
+    title: "EE",
+    folder: "06 - Archive",
+    path: ["06 - Archive","EE","EE"],
+    tags: ["pdf"],
+    created: "2026-03-16",
+    modified: "2026-03-16",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# EE
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'eenotesbysir': {
+    id: 'eenotesbysir',
+    title: "EENOTESBYSIR",
+    folder: "06 - Archive",
+    path: ["06 - Archive","EE","EENOTESBYSIR"],
+    tags: ["pdf"],
+    created: "2026-05-04",
+    modified: "2026-05-04",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# EENOTESBYSIR
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
   'engineering-economics': {
     id: 'engineering-economics',
     title: "Engineering Economics",
@@ -47744,6 +47897,40 @@ About **70% of exam marks come from just these areas:**
 # Summary`
   },
 
+  'cyk': {
+    id: 'cyk',
+    title: "CYK",
+    folder: "06 - Archive",
+    path: ["06 - Archive","FLAT","CYK"],
+    tags: ["pdf"],
+    created: "2026-05-08",
+    modified: "2026-05-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# CYK
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'flat-4th-sem': {
+    id: 'flat-4th-sem',
+    title: "FLAT 4th Sem",
+    folder: "06 - Archive",
+    path: ["06 - Archive","FLAT","FLAT 4th Sem"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# FLAT 4th Sem
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
   'flat-exam-analysis': {
     id: 'flat-exam-analysis',
     title: "FLAT Exam Analysis",
@@ -48126,6 +48313,23 @@ These are repeated directly in your papers.
 # Summary`
   },
 
+  'flat-material': {
+    id: 'flat-material',
+    title: "flat material",
+    folder: "06 - Archive",
+    path: ["06 - Archive","FLAT","flat material"],
+    tags: ["pdf"],
+    created: "2026-05-08",
+    modified: "2026-05-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# flat material
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
   'flat-notes-2': {
     id: 'flat-notes-2',
     title: "FLAT Notes 2",
@@ -48487,6 +48691,176 @@ w = $q_{0}abba$
 # Summary`
   },
 
+  'formal-language-and-automata-theory-flat-notes-cse-14th': {
+    id: 'formal-language-and-automata-theory-flat-notes-cse-14th',
+    title: "Formal Language and Automata Theory (FLAT) Notes CSE 14th",
+    folder: "06 - Archive",
+    path: ["06 - Archive","FLAT","Formal Language and Automata Theory (FLAT) Notes CSE 14th"],
+    tags: ["pdf"],
+    created: "2026-05-08",
+    modified: "2026-05-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Formal Language and Automata Theory (FLAT) Notes CSE 14th
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'p-np-np-complete-and-np-hard-problems-in-computer-science-baeldung-on-computer-science': {
+    id: 'p-np-np-complete-and-np-hard-problems-in-computer-science-baeldung-on-computer-science',
+    title: "P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science",
+    folder: "06 - Archive",
+    path: ["06 - Archive","FLAT","P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science"],
+    tags: ["pdf"],
+    created: "2026-05-08",
+    modified: "2026-05-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'turing-machine-from-net': {
+    id: 'turing-machine-from-net',
+    title: "Turing Machine from net",
+    folder: "06 - Archive",
+    path: ["06 - Archive","FLAT","Turing Machine from net"],
+    tags: ["pdf"],
+    created: "2026-05-08",
+    modified: "2026-05-08",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Turing Machine from net
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'awt-and-swing': {
+    id: 'awt-and-swing',
+    title: "AWT and Swing",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","AWT and Swing"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# AWT and Swing
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'c-vs-java': {
+    id: 'c-vs-java',
+    title: "C++ vs Java",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","C++ vs Java"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# C++ vs Java
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'difference-between-jdk-jre-and-jvm-javatpoint': {
+    id: 'difference-between-jdk-jre-and-jvm-javatpoint',
+    title: "Difference between JDK, JRE and JVM - javatpoint",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","Difference between JDK, JRE and JVM - javatpoint"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Difference between JDK, JRE and JVM - javatpoint
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'faetures-of-java': {
+    id: 'faetures-of-java',
+    title: "faetures of java",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","faetures of java"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# faetures of java
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'interface-in-java': {
+    id: 'interface-in-java',
+    title: "Interface in Java",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","Interface in Java"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Interface in Java
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'java-java-overview': {
+    id: 'java-java-overview',
+    title: "Java - Overview",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","Java - Overview"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Java - Overview
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'java-4th-sem-igit': {
+    id: 'java-4th-sem-igit',
+    title: "JAVA 4th Sem IGIT",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","JAVA 4th Sem IGIT"],
+    tags: ["pdf"],
+    created: "2026-04-03",
+    modified: "2026-04-03",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# JAVA 4th Sem IGIT
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
   'java-exam': {
     id: 'java-exam',
     title: "Java Exam",
@@ -48634,6 +49008,210 @@ w = $q_{0}abba$
 # Summary
 ---
 # References`
+  },
+
+  'java-mod-1': {
+    id: 'java-mod-1',
+    title: "java mod 1",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","java mod 1"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# java mod 1
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'java-mod-2': {
+    id: 'java-mod-2',
+    title: "java mod 2",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","java mod 2"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# java mod 2
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'java-mod-3': {
+    id: 'java-mod-3',
+    title: "java mod 3",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","java mod 3"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# java mod 3
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'java-notes-cse-14': {
+    id: 'java-notes-cse-14',
+    title: "Java Notes CSE 14",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","Java Notes CSE 14"],
+    tags: ["pdf"],
+    created: "2026-04-06",
+    modified: "2026-04-06",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Java Notes CSE 14
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'java-package': {
+    id: 'java-package',
+    title: "Java Package",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","Java Package"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Java Package
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'javaexecution': {
+    id: 'javaexecution',
+    title: "javaexecution",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","javaexecution"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# javaexecution
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'javafundamental': {
+    id: 'javafundamental',
+    title: "javafundamental",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","javafundamental"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# javafundamental
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'javaintro': {
+    id: 'javaintro',
+    title: "javaintro",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","javaintro"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# javaintro
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'mannual-till-looping': {
+    id: 'mannual-till-looping',
+    title: "mannual till looping",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","mannual till looping"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# mannual till looping
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'module-5-jdbcppt': {
+    id: 'module-5-jdbcppt',
+    title: "Module 5 - JDBC.ppt",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","Module 5 - JDBC.ppt"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Module 5 - JDBC.ppt
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'module-1-strings-handlingppt': {
+    id: 'module-1-strings-handlingppt',
+    title: "Module-1 Strings Handling.ppt",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","Module-1 Strings Handling.ppt"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Module-1 Strings Handling.ppt
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'multithreading': {
+    id: 'multithreading',
+    title: "multithreading",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","multithreading"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# multithreading
+
+*This is a PDF document — not viewable in the web vault.*`
   },
 
   'pyq-analysisjava': {
@@ -48881,6 +49459,23 @@ EXTRACTION TRACE TABLE
 
 ---
 # Questions`
+  },
+
+  'string-handling': {
+    id: 'string-handling',
+    title: "string handling",
+    folder: "06 - Archive",
+    path: ["06 - Archive","JAVA","string handling"],
+    tags: ["pdf"],
+    created: "2026-05-07",
+    modified: "2026-05-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# string handling
+
+*This is a PDF document — not viewable in the web vault.*`
   },
 
   'leee': {
@@ -50291,6 +50886,295 @@ Loop repeats
 |\`quit\` input|Case-insensitive \`.lower()\` check|`
   },
 
+  'algorithm': {
+    id: 'algorithm',
+    title: "Algorithm",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Documents","Algorithm"],
+    tags: ["pdf"],
+    created: "2025-12-23",
+    modified: "2025-12-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Algorithm
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'cormen-introduction-to-algorithms': {
+    id: 'cormen-introduction-to-algorithms',
+    title: "cormen-introduction-to-algorithms",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Documents","cormen-introduction-to-algorithms"],
+    tags: ["pdf"],
+    created: "2025-12-23",
+    modified: "2025-12-23",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# cormen-introduction-to-algorithms
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'dsgate': {
+    id: 'dsgate',
+    title: "ds_gate",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Documents","ds_gate"],
+    tags: ["pdf"],
+    created: "2025-12-21",
+    modified: "2025-12-21",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# ds_gate
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'viola-jones2001-object-detection': {
+    id: 'viola-jones2001-object-detection',
+    title: "Viola Jones(2001) - Object Detection",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Documents","Viola Jones(2001) - Object Detection"],
+    tags: ["pdf"],
+    created: "2026-03-29",
+    modified: "2026-03-29",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Viola Jones(2001) - Object Detection
+
+*This is a PDF document — not viewable in the web vault.*`
+  },
+
+  'drawing-2025-12-23-1327excalidraw': {
+    id: 'drawing-2025-12-23-1327excalidraw',
+    title: "Drawing 2025-12-23 1327.excalidraw",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2025-12-23 1327.excalidraw"],
+    tags: ["excalidraw"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2025-12-23 1327.excalidraw
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'excalidraw-drawing-2025-12-23-1327excalidraw': {
+    id: 'excalidraw-drawing-2025-12-23-1327excalidraw',
+    title: "Drawing 2025-12-23 1327.excalidraw",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2025-12-23 1327.excalidraw"],
+    tags: ["excalidraw"],
+    created: "2026-05-11",
+    modified: "2026-05-11",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2025-12-23 1327.excalidraw
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'drawing-2026-01-20-0034excalidraw': {
+    id: 'drawing-2026-01-20-0034excalidraw',
+    title: "Drawing 2026-01-20 0034.excalidraw",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-01-20 0034.excalidraw"],
+    tags: ["excalidraw"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-01-20 0034.excalidraw
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'excalidraw-drawing-2026-01-20-0034excalidraw': {
+    id: 'excalidraw-drawing-2026-01-20-0034excalidraw',
+    title: "Drawing 2026-01-20 0034.excalidraw",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-01-20 0034.excalidraw"],
+    tags: ["excalidraw"],
+    created: "2026-05-11",
+    modified: "2026-05-11",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-01-20 0034.excalidraw
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'drawing-2026-01-29-2111excalidraw': {
+    id: 'drawing-2026-01-29-2111excalidraw',
+    title: "Drawing 2026-01-29 2111.excalidraw",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-01-29 2111.excalidraw"],
+    tags: ["excalidraw"],
+    created: "2026-05-11",
+    modified: "2026-05-11",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-01-29 2111.excalidraw
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'drawing-2026-02-10-0912excalidraw': {
+    id: 'drawing-2026-02-10-0912excalidraw',
+    title: "Drawing 2026-02-10 0912.excalidraw",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-02-10 0912.excalidraw"],
+    tags: ["excalidraw"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-02-10 0912.excalidraw
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'excalidraw-drawing-2026-02-10-0912excalidraw': {
+    id: 'excalidraw-drawing-2026-02-10-0912excalidraw',
+    title: "Drawing 2026-02-10 0912.excalidraw",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-02-10 0912.excalidraw"],
+    tags: ["excalidraw"],
+    created: "2026-05-11",
+    modified: "2026-05-11",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-02-10 0912.excalidraw
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'drawing-2026-04-02-0301': {
+    id: 'drawing-2026-04-02-0301',
+    title: "Drawing 2026-04-02 0301",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-04-02 0301"],
+    tags: ["excalidraw"],
+    created: "2026-04-01",
+    modified: "2026-04-01",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-04-02 0301
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'drawing-2026-04-09-2309': {
+    id: 'drawing-2026-04-09-2309',
+    title: "Drawing 2026-04-09 2309",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-04-09 2309"],
+    tags: ["excalidraw"],
+    created: "2026-04-09",
+    modified: "2026-04-09",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-04-09 2309
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'drawing-2026-04-10-0510excalidraw': {
+    id: 'drawing-2026-04-10-0510excalidraw',
+    title: "Drawing 2026-04-10 0510.excalidraw",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-04-10 0510.excalidraw"],
+    tags: ["excalidraw"],
+    created: "2026-04-10",
+    modified: "2026-04-10",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-04-10 0510.excalidraw
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'excalidraw-drawing-2026-04-10-0510excalidraw': {
+    id: 'excalidraw-drawing-2026-04-10-0510excalidraw',
+    title: "Drawing 2026-04-10 0510.excalidraw",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-04-10 0510.excalidraw"],
+    tags: ["excalidraw"],
+    created: "2026-05-11",
+    modified: "2026-05-11",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-04-10 0510.excalidraw
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'drawing-2026-04-13-0104': {
+    id: 'drawing-2026-04-13-0104',
+    title: "Drawing 2026-04-13 0104",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-04-13 0104"],
+    tags: ["excalidraw"],
+    created: "2026-04-12",
+    modified: "2026-04-12",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-04-13 0104
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
+  'drawing-2026-04-16-0650': {
+    id: 'drawing-2026-04-16-0650',
+    title: "Drawing 2026-04-16 0650",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Excalidraw","Drawing 2026-04-16 0650"],
+    tags: ["excalidraw"],
+    created: "2026-04-16",
+    modified: "2026-04-16",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Drawing 2026-04-16 0650
+
+*This is a visual Excalidraw drawing — not viewable in the web vault.*`
+  },
+
   'ai': {
     id: 'ai',
     title: "AI",
@@ -50306,8 +51190,8 @@ Loop repeats
     content: ``
   },
 
-  'algorithm': {
-    id: 'algorithm',
+  '08-tags-algorithm': {
+    id: '08-tags-algorithm',
     title: "Algorithm",
     folder: "08 - Tags",
     path: ["08 - Tags","Algorithm"],
@@ -52891,6 +53775,11 @@ const VAULT_FOLDERS = [
         "type": "folder",
         "children": [
           {
+            "id": "advanced-facial-recognition-in-crowds-multi-camera-threat-detection-blueprint",
+            "name": "Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint",
+            "type": "stub"
+          },
+          {
             "id": "architecture",
             "name": "Architecture",
             "type": "note"
@@ -52914,6 +53803,11 @@ const VAULT_FOLDERS = [
             "id": "paper-draft",
             "name": "Paper-Draft",
             "type": "note"
+          },
+          {
+            "id": "research-roadmap-multi-camera-face-recognition-threat-detection-2026",
+            "name": "Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026)",
+            "type": "stub"
           }
         ]
       }
@@ -53046,9 +53940,19 @@ const VAULT_FOLDERS = [
             "type": "note"
           },
           {
+            "id": "aec-complete-till-1-nov-2025",
+            "name": "AEC COMPLETE TILL 1 NOV 2025",
+            "type": "stub"
+          },
+          {
             "id": "aec",
             "name": "AEC",
             "type": "note"
+          },
+          {
+            "id": "aec-aec",
+            "name": "AEC",
+            "type": "stub"
           }
         ]
       },
@@ -53057,6 +53961,16 @@ const VAULT_FOLDERS = [
         "name": "DBMS",
         "type": "folder",
         "children": [
+          {
+            "id": "database-management-system-dbms-cse-14th",
+            "name": "Database Management System (DBMS) - CSE 14th",
+            "type": "stub"
+          },
+          {
+            "id": "dbms-4th-sem",
+            "name": "DBMS 4th Sem",
+            "type": "stub"
+          },
           {
             "id": "dbms-exam-strategy-analysis",
             "name": "DBMS Exam Strategy & Analysis",
@@ -53119,6 +54033,11 @@ const VAULT_FOLDERS = [
         "type": "folder",
         "children": [
           {
+            "id": "ee-college-notes",
+            "name": "EE college notes",
+            "type": "stub"
+          },
+          {
             "id": "ee-module-i-pyqs",
             "name": "EE Module I PYQs",
             "type": "note"
@@ -53139,6 +54058,16 @@ const VAULT_FOLDERS = [
             "type": "note"
           },
           {
+            "id": "ee",
+            "name": "EE",
+            "type": "stub"
+          },
+          {
+            "id": "eenotesbysir",
+            "name": "EENOTESBYSIR",
+            "type": "stub"
+          },
+          {
             "id": "engineering-economics",
             "name": "Engineering Economics",
             "type": "note"
@@ -53151,9 +54080,24 @@ const VAULT_FOLDERS = [
         "type": "folder",
         "children": [
           {
+            "id": "cyk",
+            "name": "CYK",
+            "type": "stub"
+          },
+          {
+            "id": "flat-4th-sem",
+            "name": "FLAT 4th Sem",
+            "type": "stub"
+          },
+          {
             "id": "flat-exam-analysis",
             "name": "FLAT Exam Analysis",
             "type": "note"
+          },
+          {
+            "id": "flat-material",
+            "name": "flat material",
+            "type": "stub"
           },
           {
             "id": "flat-notes-2",
@@ -53164,6 +54108,21 @@ const VAULT_FOLDERS = [
             "id": "flat-notes",
             "name": "FLAT Notes",
             "type": "note"
+          },
+          {
+            "id": "formal-language-and-automata-theory-flat-notes-cse-14th",
+            "name": "Formal Language and Automata Theory (FLAT) Notes CSE 14th",
+            "type": "stub"
+          },
+          {
+            "id": "p-np-np-complete-and-np-hard-problems-in-computer-science-baeldung-on-computer-science",
+            "name": "P, NP, NP-Complete and NP-Hard Problems in Computer Science _ Baeldung on Computer Science",
+            "type": "stub"
+          },
+          {
+            "id": "turing-machine-from-net",
+            "name": "Turing Machine from net",
+            "type": "stub"
           }
         ]
       },
@@ -53173,14 +54132,114 @@ const VAULT_FOLDERS = [
         "type": "folder",
         "children": [
           {
+            "id": "awt-and-swing",
+            "name": "AWT and Swing",
+            "type": "stub"
+          },
+          {
+            "id": "c-vs-java",
+            "name": "C++ vs Java",
+            "type": "stub"
+          },
+          {
+            "id": "difference-between-jdk-jre-and-jvm-javatpoint",
+            "name": "Difference between JDK, JRE and JVM - javatpoint",
+            "type": "stub"
+          },
+          {
+            "id": "faetures-of-java",
+            "name": "faetures of java",
+            "type": "stub"
+          },
+          {
+            "id": "interface-in-java",
+            "name": "Interface in Java",
+            "type": "stub"
+          },
+          {
+            "id": "java-java-overview",
+            "name": "Java - Overview",
+            "type": "stub"
+          },
+          {
+            "id": "java-4th-sem-igit",
+            "name": "JAVA 4th Sem IGIT",
+            "type": "stub"
+          },
+          {
             "id": "java-exam",
             "name": "Java Exam",
             "type": "note"
           },
           {
+            "id": "java-mod-1",
+            "name": "java mod 1",
+            "type": "stub"
+          },
+          {
+            "id": "java-mod-2",
+            "name": "java mod 2",
+            "type": "stub"
+          },
+          {
+            "id": "java-mod-3",
+            "name": "java mod 3",
+            "type": "stub"
+          },
+          {
+            "id": "java-notes-cse-14",
+            "name": "Java Notes CSE 14",
+            "type": "stub"
+          },
+          {
+            "id": "java-package",
+            "name": "Java Package",
+            "type": "stub"
+          },
+          {
+            "id": "javaexecution",
+            "name": "javaexecution",
+            "type": "stub"
+          },
+          {
+            "id": "javafundamental",
+            "name": "javafundamental",
+            "type": "stub"
+          },
+          {
+            "id": "javaintro",
+            "name": "javaintro",
+            "type": "stub"
+          },
+          {
+            "id": "mannual-till-looping",
+            "name": "mannual till looping",
+            "type": "stub"
+          },
+          {
+            "id": "module-5-jdbcppt",
+            "name": "Module 5 - JDBC.ppt",
+            "type": "stub"
+          },
+          {
+            "id": "module-1-strings-handlingppt",
+            "name": "Module-1 Strings Handling.ppt",
+            "type": "stub"
+          },
+          {
+            "id": "multithreading",
+            "name": "multithreading",
+            "type": "stub"
+          },
+          {
             "id": "pyq-analysisjava",
             "name": "PYQ Analysis_JAVA",
             "type": "note"
+          },
+          {
+            "id": "string-handling",
+            "name": "string handling",
+            "type": "stub"
           }
         ]
       },
@@ -53226,6 +54285,113 @@ const VAULT_FOLDERS = [
     ]
   },
   {
+    "id": "annexure",
+    "name": "07 - Annexure",
+    "icon": "paperclip",
+    "expanded": false,
+    "children": [
+      {
+        "id": "annexure-documents",
+        "name": "Documents",
+        "type": "folder",
+        "children": [
+          {
+            "id": "algorithm",
+            "name": "Algorithm",
+            "type": "stub"
+          },
+          {
+            "id": "cormen-introduction-to-algorithms",
+            "name": "cormen-introduction-to-algorithms",
+            "type": "stub"
+          },
+          {
+            "id": "dsgate",
+            "name": "ds_gate",
+            "type": "stub"
+          },
+          {
+            "id": "viola-jones2001-object-detection",
+            "name": "Viola Jones(2001) - Object Detection",
+            "type": "stub"
+          }
+        ]
+      },
+      {
+        "id": "annexure-excalidraw",
+        "name": "Excalidraw",
+        "type": "folder",
+        "children": [
+          {
+            "id": "drawing-2025-12-23-1327excalidraw",
+            "name": "Drawing 2025-12-23 1327.excalidraw",
+            "type": "stub"
+          },
+          {
+            "id": "excalidraw-drawing-2025-12-23-1327excalidraw",
+            "name": "Drawing 2025-12-23 1327.excalidraw",
+            "type": "stub"
+          },
+          {
+            "id": "drawing-2026-01-20-0034excalidraw",
+            "name": "Drawing 2026-01-20 0034.excalidraw",
+            "type": "stub"
+          },
+          {
+            "id": "excalidraw-drawing-2026-01-20-0034excalidraw",
+            "name": "Drawing 2026-01-20 0034.excalidraw",
+            "type": "stub"
+          },
+          {
+            "id": "drawing-2026-01-29-2111excalidraw",
+            "name": "Drawing 2026-01-29 2111.excalidraw",
+            "type": "stub"
+          },
+          {
+            "id": "drawing-2026-02-10-0912excalidraw",
+            "name": "Drawing 2026-02-10 0912.excalidraw",
+            "type": "stub"
+          },
+          {
+            "id": "excalidraw-drawing-2026-02-10-0912excalidraw",
+            "name": "Drawing 2026-02-10 0912.excalidraw",
+            "type": "stub"
+          },
+          {
+            "id": "drawing-2026-04-02-0301",
+            "name": "Drawing 2026-04-02 0301",
+            "type": "stub"
+          },
+          {
+            "id": "drawing-2026-04-09-2309",
+            "name": "Drawing 2026-04-09 2309",
+            "type": "stub"
+          },
+          {
+            "id": "drawing-2026-04-10-0510excalidraw",
+            "name": "Drawing 2026-04-10 0510.excalidraw",
+            "type": "stub"
+          },
+          {
+            "id": "excalidraw-drawing-2026-04-10-0510excalidraw",
+            "name": "Drawing 2026-04-10 0510.excalidraw",
+            "type": "stub"
+          },
+          {
+            "id": "drawing-2026-04-13-0104",
+            "name": "Drawing 2026-04-13 0104",
+            "type": "stub"
+          },
+          {
+            "id": "drawing-2026-04-16-0650",
+            "name": "Drawing 2026-04-16 0650",
+            "type": "stub"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "tags-folder",
     "name": "08 - Tags",
     "icon": "hash",
@@ -53237,7 +54403,7 @@ const VAULT_FOLDERS = [
         "type": "note"
       },
       {
-        "id": "algorithm",
+        "id": "08-tags-algorithm",
         "name": "Algorithm",
         "type": "note"
       },

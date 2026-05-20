@@ -111,8 +111,16 @@ function walkDir(dir, relPath) {
     if (entry.isDirectory()) {
       if (SKIP_DIRS.has(entry.name)) continue;
       result.push(...walkDir(fullPath, entryRel));
-    } else if (entry.isFile() && entry.name.endsWith('.md') && !entry.name.endsWith('.excalidraw.md')) {
-      result.push({ fullPath, relPath: entryRel });
+    } else if (entry.isFile()) {
+      const isExcalidraw = entry.name.endsWith('.excalidraw.md') || entry.name.endsWith('.excalidraw');
+      const isPdf        = entry.name.endsWith('.pdf');
+      const isGitkeep    = entry.name === '.gitkeep';
+      if (isGitkeep) continue;
+      if (entry.name.endsWith('.md') && !isExcalidraw) {
+        result.push({ fullPath, relPath: entryRel, stub: false });
+      } else if (isExcalidraw || isPdf) {
+        result.push({ fullPath, relPath: entryRel, stub: true });
+      }
     }
   }
   return result;
@@ -127,7 +135,7 @@ const titleToId = {};
 const idCounts  = {};
 
 for (const { relPath } of allFiles) {
-  const parts    = relPath.replace(/\.md$/, '').split(/[\\/]/);
+  const parts    = relPath.replace(/\.(md|pdf|excalidraw)$/, '').split(/[\\/]/);
   const filename = parts[parts.length - 1];
   let   id       = slugify(filename);
 
@@ -144,8 +152,8 @@ for (const { relPath } of allFiles) {
 const fileInfos = [];
 const usedIds   = {};
 
-for (const { fullPath, relPath } of allFiles) {
-  const parts      = relPath.replace(/\.md$/, '').split(/[\\/]/);
+for (const { fullPath, relPath, stub } of allFiles) {
+  const parts      = relPath.replace(/\.(md|pdf|excalidraw)$/, '').split(/[\\/]/);
   const filename   = parts[parts.length - 1];
   const topFolder  = parts[0];
   const subFolders = parts.slice(1, -1);   // intermediate dirs
@@ -154,7 +162,7 @@ for (const { fullPath, relPath } of allFiles) {
   if (usedIds[id]) id = slugify(parts[parts.length - 2]) + '-' + id;
   usedIds[id] = true;
 
-  fileInfos.push({ fullPath, relPath, filename, topFolder, subFolders, id });
+  fileInfos.push({ fullPath, relPath, filename, topFolder, subFolders, id, stub: !!stub });
 }
 
 // Rebuild titleToId with final IDs
@@ -165,9 +173,27 @@ for (const { filename, id } of fileInfos) {
 
 // Second pass: parse each file
 const notes = {};
-for (const { fullPath, relPath, filename, topFolder, subFolders, id } of fileInfos) {
+for (const { fullPath, relPath, filename, topFolder, subFolders, id, stub } of fileInfos) {
+  const stats      = fs.statSync(fullPath);
+  const folderMeta = FOLDER_META[topFolder] || { id: slugify(topFolder), group: null };
+  const folderName = topFolder;
+  const fullPathArr = [folderName, ...subFolders, filename];
+
+  if (stub) {
+    // Excalidraw / PDF — show as sidebar stub, no content
+    const ext = relPath.endsWith('.pdf') ? 'pdf' : 'excalidraw';
+    notes[id] = {
+      id, title: filename,
+      folder: folderName, path: fullPathArr,
+      tags: [ext], date: stats.mtime.toISOString().slice(0,10),
+      outline: [], links: [], backlinks: [], wordCount: 0,
+      content: `# ${filename}\n\n*This is a ${ext === 'pdf' ? 'PDF document' : 'visual Excalidraw drawing'} — not viewable in the web vault.*`,
+      _topFolder: topFolder, _subFolders: subFolders, _group: null, _stub: true,
+    };
+    continue;
+  }
+
   const raw    = fs.readFileSync(fullPath, 'utf8');
-  const stats  = fs.statSync(fullPath);
   const { header, body } = parseHeader(raw);
 
   const tags    = extractTags(header);
@@ -182,10 +208,6 @@ for (const { fullPath, relPath, filename, topFolder, subFolders, id } of fileInf
       .filter(Boolean)
       .filter(lid => lid !== id)
   )];
-
-  const folderMeta = FOLDER_META[topFolder] || { id: slugify(topFolder), group: null };
-  const folderName = topFolder;
-  const fullPathArr = [folderName, ...subFolders, filename];
 
   notes[id] = {
     id, title: filename,
@@ -220,7 +242,7 @@ function buildFolderTree(topFolderName) {
   for (const note of Object.values(notes)) {
     if (note._topFolder !== topFolderName) continue;
     if (note._subFolders.length === 0) {
-      direct.push({ id: note.id, name: note.title, type: 'note' });
+      direct.push({ id: note.id, name: note.title, type: note._stub ? 'stub' : 'note' });
     } else {
       // nest under subfolder(s)
       const key = note._subFolders.join('/');
@@ -229,7 +251,7 @@ function buildFolderTree(topFolderName) {
         const subName = note._subFolders[0];
         children[key] = { id: subId, name: subName, type: 'folder', children: [] };
       }
-      children[key].children.push({ id: note.id, name: note.title, type: 'note' });
+      children[key].children.push({ id: note.id, name: note.title, type: note._stub ? 'stub' : 'note' });
     }
   }
 
