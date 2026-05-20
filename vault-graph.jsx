@@ -37,7 +37,7 @@ class ForceGraph {
         y: height / 2 + (Math.random() - 0.5) * spread,
         vx: 0, vy: 0,
         degree: deg,
-        r: Math.max(2.5, Math.min(6, 2.5 + deg * 0.32)),
+        r: Math.max(1.5, Math.min(3.5, 1.5 + deg * 0.18)),
       };
     });
 
@@ -57,13 +57,13 @@ class ForceGraph {
 
     // Repulsion with cutoff — ignores pairs > 180px apart to avoid
     // blowing up when many nodes are present
-    const K2 = 900 / (n2 || 1);   // scale strength by node count
+    const K2 = 1400 / (n2 || 1);   // more repulsion so nodes spread further
     for (let i = 0; i < n2; i++) {
       for (let j = i + 1; j < n2; j++) {
         const a = nodes[i], b = nodes[j];
         let dx = b.x - a.x, dy = b.y - a.y;
         const dist2 = dx * dx + dy * dy || 0.01;
-        if (dist2 > 180 * 180) continue;          // cutoff
+        if (dist2 > 280 * 280) continue;          // wider cutoff
         const dist = Math.sqrt(dist2);
         const force = K2 / dist2 * alpha;
         const fx = force * dx / dist, fy = force * dy / dist;
@@ -73,7 +73,7 @@ class ForceGraph {
     }
 
     // Spring attraction along edges
-    const idealLen = 55;
+    const idealLen = 90;  // wider spacing between connected nodes
     for (const e of edges) {
       const dx = e.target.x - e.source.x;
       const dy = e.target.y - e.source.y;
@@ -151,13 +151,13 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
     const isHov = n.id === hov?.id;
     const isLit = hov ? highlighted.has(n.id) : activeNeighbours.has(n.id);
     const color = GROUP_COLORS[n.group] || 'rgba(255,255,255,0.65)';
-    const r = n.r + (isActive ? 2 : isHov ? 1.5 : 0);
+    const r = n.r + (isActive ? 1.2 : isHov ? 0.8 : 0);
 
     // Glow ring for active/hovered
     if (isActive || isHov) {
       ctx.beginPath();
-      ctx.arc(n.x, n.y, r + 5, 0, Math.PI * 2);
-      ctx.fillStyle = isActive ? 'rgba(107,141,214,0.28)' : 'rgba(255,255,255,0.12)';
+      ctx.arc(n.x, n.y, r + 3.5, 0, Math.PI * 2);
+      ctx.fillStyle = isActive ? 'rgba(107,141,214,0.25)' : 'rgba(255,255,255,0.10)';
       ctx.fill();
     }
 
