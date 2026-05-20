@@ -432,54 +432,46 @@ const ConnectBar = ({ scrollRef }) => {
 
   return (
     <div style={{
-      display: 'flex', alignItems: 'center', gap: 24,
-      padding: '12px 24px',
+      display: 'flex', alignItems: 'center', gap: 12,
+      padding: '5px 16px',
       background: 'var(--bg-tabs)',
       borderTop: '1px solid var(--border)',
-      flexShrink: 0,
+      flexShrink: 0, height: 36,
     }}>
-      {/* Left: text */}
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-secondary)', marginBottom: 2, fontFamily: "'IBM Plex Sans', sans-serif" }}>
-          Connect
-        </div>
-        <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--text-heading)', fontFamily: "'Lora', Georgia, serif", lineHeight: 1.2, marginBottom: 2 }}>
-          Find Yash Around The Web
-        </div>
-        <div style={{ fontSize: 12, color: 'var(--text-secondary)', fontFamily: "'IBM Plex Sans', sans-serif" }}>
-          This knowledge garden is public, but the conversation does not have to stop here.
-        </div>
-      </div>
+      {/* Label */}
+      <span style={{ fontSize: 11, color: 'var(--text-muted)', fontFamily: "'IBM Plex Sans', sans-serif", flexShrink: 0 }}>
+        Find me on
+      </span>
 
-      {/* Right: social icon buttons */}
-      <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexShrink: 0 }}>
+      {/* Social icon buttons */}
+      <div style={{ display: 'flex', gap: 4, alignItems: 'center', flexShrink: 0 }}>
         {SOCIAL_LINKS.map(({ id, icon, href, title }) => (
           <a key={id} href={href} title={title} target="_blank" rel="noopener noreferrer" style={{
-            width: 34, height: 34, borderRadius: '50%',
+            width: 26, height: 26, borderRadius: '50%',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            background: 'rgba(255,255,255,0.1)', color: 'var(--text-primary)',
-            border: '1px solid var(--border-strong)',
-            transition: 'background 0.15s, color 0.15s, transform 0.12s',
+            background: 'none', color: 'var(--text-muted)',
+            border: '1px solid var(--border)',
+            transition: 'background 0.15s, color 0.15s, border-color 0.15s',
             textDecoration: 'none', flexShrink: 0,
           }}
-          onMouseEnter={e => { e.currentTarget.style.background = 'var(--accent-soft)'; e.currentTarget.style.color = 'var(--accent)'; e.currentTarget.style.transform = 'scale(1.1)'; }}
-          onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.transform = 'scale(1)'; }}
+          onMouseEnter={e => { e.currentTarget.style.background = 'var(--accent-soft)'; e.currentTarget.style.color = 'var(--accent)'; e.currentTarget.style.borderColor = 'var(--accent)'; }}
+          onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.borderColor = 'var(--border)'; }}
           >
             {icon}
           </a>
         ))}
         {/* Scroll to top */}
         <button onClick={scrollToTop} title="Scroll to top" style={{
-          width: 34, height: 34, borderRadius: '50%',
+          width: 26, height: 26, borderRadius: '50%',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          background: 'rgba(255,255,255,0.1)', color: 'var(--text-primary)',
-          border: '1px solid var(--border-strong)', cursor: 'pointer',
-          transition: 'background 0.15s, color 0.15s, transform 0.12s', flexShrink: 0,
+          background: 'none', color: 'var(--text-muted)',
+          border: '1px solid var(--border)', cursor: 'pointer',
+          transition: 'background 0.15s, color 0.15s, border-color 0.15s', flexShrink: 0,
         }}
-        onMouseEnter={e => { e.currentTarget.style.background = 'var(--accent-soft)'; e.currentTarget.style.color = 'var(--accent)'; e.currentTarget.style.transform = 'scale(1.1)'; }}
-        onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.transform = 'scale(1)'; }}
+        onMouseEnter={e => { e.currentTarget.style.background = 'var(--accent-soft)'; e.currentTarget.style.color = 'var(--accent)'; e.currentTarget.style.borderColor = 'var(--accent)'; }}
+        onMouseLeave={e => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.borderColor = 'var(--border)'; }}
         >
-          <Icon name="arrow-up" size={14} strokeWidth={2} />
+          <Icon name="arrow-up" size={12} strokeWidth={2} />
         </button>
       </div>
     </div>
