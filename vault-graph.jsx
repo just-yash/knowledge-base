@@ -18,10 +18,10 @@ const DEFAULT_CFG = {
   nodeSize:           1.0,
   linkThickness:      1.0,
   // forces
-  centerForce:  0.022,
-  repelForce:   2400,
-  linkForce:    0.055,
-  linkDistance: 65,
+  centerForce:  0.005,
+  repelForce:   4500,
+  linkForce:    0.04,
+  linkDistance: 80,
 };
 
 // ─── Force Graph Simulation ───────────────────────────────────────────────────
