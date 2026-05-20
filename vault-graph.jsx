@@ -51,7 +51,7 @@ class ForceGraph {
         y: height / 2 + (Math.random() - 0.5) * spread,
         vx: 0, vy: 0,
         degree: deg,
-        r: Math.max(2, Math.min(7, 2 + deg * 0.28)),
+        r: Math.max(1.5, Math.min(5, 1.5 + deg * 0.18)),
       };
     });
 
