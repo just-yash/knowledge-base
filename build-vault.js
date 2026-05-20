@@ -4,7 +4,7 @@
 const fs   = require('fs');
 const path = require('path');
 
-const VAULT_ROOT = 'C:\\Users\\YASH\\OneDrive\\obsidian\\Yash-Zattelkasten';
+const VAULT_ROOT = path.join(__dirname, 'notes');
 const OUTPUT     = path.join(__dirname, 'vault-data.js');
 
 const SKIP_DIRS  = new Set(['Private', '.obsidian', 'Projects', '.trash']);

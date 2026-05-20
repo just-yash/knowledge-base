@@ -1,0 +1,349 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);color:var(--color-text-primary, #1a1a1a);font-size:14px;background:var(--color-background-primary, #ffffff)}
+.header{padding:1rem 0 .75rem;border-bottom:.5px solid var(--color-border-tertiary);margin-bottom:1rem}
+.header h2{font-size:18px;font-weight:500;margin-bottom:.4rem}
+.progress-bar-wrap{height:6px;background:var(--color-background-secondary);border-radius:3px;overflow:hidden;margin:.5rem 0}
+.progress-bar{height:100%;background:#1D9E75;border-radius:3px;transition:width .4s}
+.stats{display:flex;gap:1rem;font-size:12px;color:var(--color-text-secondary)}
+.stat-val{font-weight:500;color:var(--color-text-primary)}
+.day-card{border:.5px solid var(--color-border-tertiary);border-radius:8px;margin-bottom:.75rem;overflow:hidden}
+.day-header{display:flex;align-items:center;justify-content:space-between;padding:.6rem .9rem;cursor:pointer;user-select:none;background:var(--color-background-secondary)}
+.day-header:hover{background:var(--color-background-tertiary)}
+.day-left{display:flex;align-items:center;gap:.6rem}
+.day-date{font-weight:500;font-size:13px}
+.day-title{font-size:13px;color:var(--color-text-secondary)}
+.day-right{display:flex;align-items:center;gap:.6rem}
+.day-mini-progress{font-size:11px;color:var(--color-text-tertiary)}
+.day-complete-badge{font-size:11px;padding:2px 8px;border-radius:4px;background:var(--color-background-success);color:var(--color-text-success);border:.5px solid var(--color-border-success)}
+.day-partial-badge{font-size:11px;padding:2px 8px;border-radius:4px;background:var(--color-background-warning);color:var(--color-text-warning);border:.5px solid var(--color-border-warning)}
+.chevron{font-size:12px;color:var(--color-text-tertiary);transition:transform .2s}
+.chevron.open{transform:rotate(180deg)}
+.day-body{padding:.75rem .9rem;border-top:.5px solid var(--color-border-tertiary)}
+.task-row{display:flex;align-items:flex-start;gap:.6rem;padding:.35rem 0;border-bottom:.5px solid var(--color-border-tertiary);cursor:pointer}
+.task-row:last-child{border-bottom:none}
+.task-row:hover .task-label{color:var(--color-text-primary)}
+.checkbox{width:16px;height:16px;border:1.5px solid var(--color-border-secondary, #888);border-radius:3px;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;transition:all .15s;background:var(--color-background-primary, #ffffff)}
+.checkbox.checked{background:#1D9E75;border-color:#1D9E75}
+.check-icon{color:white;font-size:11px;font-weight:500;line-height:1}
+.task-content{flex:1}
+.task-label{font-size:13px;color:var(--color-text-secondary);line-height:1.5;transition:color .15s}
+.task-label.done{text-decoration:line-through;color:var(--color-text-tertiary)}
+.task-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:.25rem}
+.tag{font-size:10px;padding:1px 6px;border-radius:3px;border:.5px solid}
+.t-new{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info)}
+.t-rev{background:var(--color-background-success);color:var(--color-text-success);border-color:var(--color-border-success)}
+.t-apt{background:var(--color-background-warning);color:var(--color-text-warning);border-color:var(--color-border-warning)}
+.t-pyq{background:var(--color-background-secondary);color:var(--color-text-secondary);border-color:var(--color-border-tertiary)}
+.t-exam{background:#FAECE7;color:#993C1D;border-color:#F0997B}
+.t-mock{background:#EEEDFE;color:#534AB7;border-color:#AFA9EC}
+.phase-label{font-size:11px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--color-text-tertiary);padding:.5rem 0 .3rem;margin-top:.5rem}
+.today-indicator{font-size:10px;padding:2px 6px;border-radius:3px;background:var(--color-background-info);color:var(--color-text-info);border:.5px solid var(--color-border-info)}
+.reset-btn{font-size:12px;padding:4px 10px;border-radius:4px;border:.5px solid var(--color-border-secondary);background:transparent;color:var(--color-text-secondary);cursor:pointer}
+.reset-btn:hover{background:var(--color-background-secondary)}
+</style>
+
+<div style="padding:0 0 2rem">
+<div class="header">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <h2>LEEE 2026 Study Tracker</h2>
+    <button class="reset-btn" onclick="resetAll()">Reset all</button>
+  </div>
+  <div class="progress-bar-wrap"><div class="progress-bar" id="main-bar" style="width:0%"></div></div>
+  <div class="stats">
+    <span><span class="stat-val" id="done-count">0</span> tasks done</span>
+    <span><span class="stat-val" id="total-count">0</span> total</span>
+    <span><span class="stat-val" id="pct">0%</span> complete</span>
+    <span style="margin-left:auto;color:var(--color-text-tertiary)">May 2 — exam day</span>
+  </div>
+</div>
+<div id="plan-container"></div>
+</div>
+
+<script>
+const PLAN = [
+  {phase:"Phase 1 — Internals + Aptitude Start",phaseColor:"#EF9F27",days:[
+    {id:"d1",date:"Apr 15",label:"Internals: Engg Eco + Java",tasks:[
+      {id:"t1",label:"Engg Eco exam (9:45 AM)",tags:["exam"]},
+      {id:"t2",label:"Java OOP exam (11:00 AM)",tags:["exam"]},
+      {id:"t3",label:"First aptitude session — GATE General Aptitude PYQs, 45 min. Get a feel for format.",tags:["apt"]}
+    ]},
+    {id:"d2",date:"Apr 16",label:"Internals: FLAT + DBMS",tasks:[
+      {id:"t4",label:"FLAT exam (9:45 AM)",tags:["exam"]},
+      {id:"t5",label:"DBMS exam (11:00 AM)",tags:["exam"]},
+      {id:"t6",label:"Aptitude session — verbal reasoning + data interpretation, 45 min",tags:["apt"]},
+      {id:"t7",label:"DM revision — Sets, Relations, Functions. Sharpen what you know. 1.5 hrs",tags:["rev"]}
+    ]},
+    {id:"d3",date:"Apr 17",label:"Probability Day 1 + DM Revision",tasks:[
+      {id:"t8",label:"Probability: axioms, sample space, conditional probability, Bayes theorem. 3 hrs",tags:["new"]},
+      {id:"t9",label:"Probability: random variables, PMF, PDF, CDF, expectation, variance. 2 hrs",tags:["new"]},
+      {id:"t10",label:"Aptitude session — 45 min timed",tags:["apt"]},
+      {id:"t11",label:"GATE DM PYQs — logic and graph theory. 1 hr",tags:["pyq"]},
+      {id:"t12",label:"Bayes theorem extra practice problems. 30 min",tags:["new"]}
+    ]},
+    {id:"d4",date:"Apr 18",label:"DM Internal + Probability Day 2",tasks:[
+      {id:"t13",label:"DM exam (11:00 AM) — light skim in the morning",tags:["exam"]},
+      {id:"t14",label:"Aptitude session — logical reasoning, 45 min",tags:["apt"]},
+      {id:"t15",label:"Probability: Binomial, Bernoulli, Geometric distributions with problems. 1.5 hrs",tags:["new"]},
+      {id:"t16",label:"Probability: Poisson, Gaussian, Exponential distributions with problems. 1.5 hrs",tags:["new"]}
+    ]}
+  ]},
+  {phase:"Phase 2 — Balanced Learning + Revision",phaseColor:"#5DCAA5",days:[
+    {id:"d5",date:"Apr 19",label:"Probability complete + C Pointers revision",tasks:[
+      {id:"t17",label:"Probability: moments, functions of RVs, mixed distribution problems. 2.5 hrs",tags:["new"]},
+      {id:"t18",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t19",label:"Revise C — pointers, void pointers, pointer arithmetic, complex declarations. 2 hrs",tags:["rev"]},
+      {id:"t20",label:"15 GATE Probability PYQs timed. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d6",date:"Apr 20",label:"Survival Calculus + DLD Revision",tasks:[
+      {id:"t21",label:"Calculus: limits, L'Hôpital's rule, basic differentiation, maxima/minima. 1.5 hrs",tags:["new"]},
+      {id:"t22",label:"Calculus: basic integration, definite integrals, series convergence (ratio test only). 1.5 hrs",tags:["new"]},
+      {id:"t23",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t24",label:"Revise K-Map minimisation, Boolean laws, SOP/POS, NAND/NOR universal gates. 2 hrs",tags:["rev"]},
+      {id:"t25",label:"10 Calculus PYQs + 10 DLD PYQs timed. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d7",date:"Apr 21",label:"Eigenvalues + DSA Tree/Stack Revision",tasks:[
+      {id:"t26",label:"Eigenvalues: characteristic polynomial, finding eigenvalues and eigenvectors. 2.5 hrs",tags:["new"]},
+      {id:"t27",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t28",label:"Revise Binary Trees — traversal output Qs, BST operations, height/node formulas. 2 hrs",tags:["rev"]},
+      {id:"t29",label:"Stack PYQs — postfix/prefix evaluation, recursion tracing. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d8",date:"Apr 22",label:"System of Equations + Sorting Revision",tasks:[
+      {id:"t30",label:"System of linear equations: Gaussian elimination, rank, infinite/no/unique solution. 2.5 hrs",tags:["new"]},
+      {id:"t31",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t32",label:"Build one master sorting table from memory: all algorithms, time/space, stability. 2 hrs",tags:["rev"]},
+      {id:"t33",label:"15 sorting complexity PYQs — these are direct 1-mark guaranteed marks. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d9",date:"Apr 23",label:"Queue + Hashing + DM Logic Revision",tasks:[
+      {id:"t34",label:"Queue: circular queue, dequeue, all operations and time complexity. 1.5 hrs",tags:["new"]},
+      {id:"t35",label:"Hashing: chaining, open addressing, load factor, collision resolution. 1.5 hrs",tags:["new"]},
+      {id:"t36",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t37",label:"Revise Propositional Logic — tautology, validity, rules of inference, arguments. 2 hrs",tags:["rev"]},
+      {id:"t38",label:"10 DSA PYQs + 10 DM Logic PYQs. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d10",date:"Apr 24",label:"Heap Sort + Quick Sort + Linked List Revision",tasks:[
+      {id:"t39",label:"Heap Sort: heapify, build-max-heap, full process. 1.5 hrs",tags:["new"]},
+      {id:"t40",label:"Quick Sort: partition logic, pivot strategies, worst/avg/best case. 1 hr",tags:["new"]},
+      {id:"t41",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t42",label:"Revise Linked List — traversal, reversal, insertion/deletion, circular/doubly. 2 hrs",tags:["rev"]},
+      {id:"t43",label:"10 sorting PYQs + output trace practice. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d11",date:"Apr 25",label:"Sequential Circuits + C Arrays/Strings Revision",tasks:[
+      {id:"t44",label:"D Flip-flop: characteristic equation, truth table, timing diagram. 1 hr",tags:["new"]},
+      {id:"t45",label:"JK Flip-flop: characteristic equation, race condition. Mod-N counters. 1.5 hrs",tags:["new"]},
+      {id:"t46",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t47",label:"Revise C arrays — 1D/2D address calculation, row/column major formulas. 1.5 hrs",tags:["rev"]},
+      {id:"t48",label:"Revise string functions — strlen, strcpy, strcat, strcmp usage. 30 min",tags:["rev"]},
+      {id:"t49",label:"10 DLD sequential circuit PYQs. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d12",date:"Apr 26",label:"Combinational Circuits + C Operators Revision",tasks:[
+      {id:"t50",label:"MUX: 2:1, 4:1, implementing Boolean functions with MUX. 1.5 hrs",tags:["new"]},
+      {id:"t51",label:"Decoder: 2:4, 3:8, implementing SOP using decoder. Half/Full Adder. 1.5 hrs",tags:["new"]},
+      {id:"t52",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t53",label:"Revise C operators: precedence traps, increment/decrement, ternary, sizeof. 2 hrs",tags:["rev"]},
+      {id:"t54",label:"10 combinational circuit PYQs. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d13",date:"Apr 27",label:"C Functions + Structures + Bitwise + DM Graph Revision",tasks:[
+      {id:"t55",label:"C Functions: scope, call by value vs reference, return types. 1 hr",tags:["new"]},
+      {id:"t56",label:"C Structures: declaration, dot operator, pointer to struct, nested struct. 1 hr",tags:["new"]},
+      {id:"t57",label:"Bitwise operators: AND, OR, XOR, NOT, left/right shift, masking tricks. 1 hr",tags:["new"]},
+      {id:"t58",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t59",label:"Revise DM Graph Theory — Euler path/circuit, Hamiltonian, chromatic number, planarity. 1.5 hrs",tags:["rev"]},
+      {id:"t60",label:"10 C output tracing PYQs with functions and bitwise. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d14",date:"Apr 28",label:"REVISION DAY — DM + DLD",tasks:[
+      {id:"t61",label:"DM full revision: logic, set theory, relations, POSET, graph theory, group theory. Mark weak spots. 3 hrs",tags:["rev"]},
+      {id:"t62",label:"Aptitude session — timed, simulate exam pressure. 45 min",tags:["apt"]},
+      {id:"t63",label:"DLD full revision: gates, K-Map, combinational, sequential, number systems. 2.5 hrs",tags:["rev"]},
+      {id:"t64",label:"15 mixed DM + DLD PYQs — time yourself strictly. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d15",date:"Apr 29",label:"REVISION DAY — Full Maths Sweep",tasks:[
+      {id:"t65",label:"Probability: all distributions, Bayes, expectation/variance. Write formulas from memory. 2.5 hrs",tags:["rev"]},
+      {id:"t66",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t67",label:"Linear Algebra: rank, eigenvalues, system of equations. 1.5 hrs",tags:["rev"]},
+      {id:"t68",label:"Calculus: maxima/minima problems, limits. 1 hr",tags:["rev"]},
+      {id:"t69",label:"20 mixed Maths PYQs — identify worst topic and revisit. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d16",date:"Apr 30",label:"REVISION DAY — DSA + C Full Sweep",tasks:[
+      {id:"t70",label:"DSA full revision: Arrays, LL, Stacks, Trees, Sorting, Queue, Hashing, BFS/DFS. Build complexity cheat sheet from memory. 3 hrs",tags:["rev"]},
+      {id:"t71",label:"Aptitude session — 45 min",tags:["apt"]},
+      {id:"t72",label:"C full sweep: operators, pointers, control flow, recursion, structures. 2 hrs",tags:["rev"]},
+      {id:"t73",label:"20 mixed DSA + C PYQs. Note every wrong answer for May 1 morning. 1 hr",tags:["pyq"]}
+    ]},
+    {id:"d17",date:"May 1",label:"Mock Test Day",tasks:[
+      {id:"t74",label:"Morning: fix gaps noted on Apr 30. Weak spots only. No new topics. 1 hr",tags:["rev"]},
+      {id:"t75",label:"2:00–5:00 PM: Official LEEE mock at ugadmissions.iiit.ac.in — Aptitude (60 min) + Subject (120 min). Exact same time slot as real exam.",tags:["mock"]},
+      {id:"t76",label:"Evening: analyse every wrong answer. Categorise: silly mistake vs knowledge gap. Fix knowledge gaps. 1.5 hrs",tags:["rev"]},
+      {id:"t77",label:"Sleep by 10:30 PM",tags:["rev"]}
+    ]},
+    {id:"d18",date:"May 2",label:"LEEE 2026 — EXAM DAY",tasks:[
+      {id:"t78",label:"Morning: write all formulas (distributions, sorting, DM identities) from memory on paper. Stop by 12 PM.",tags:["rev"]},
+      {id:"t79",label:"2:00–3:00 PM: Aptitude section — 60 min. Don't overthink verbal/logical questions.",tags:["exam"]},
+      {id:"t80",label:"3:00–5:00 PM: Subject section — 120 min. Order: DM → Sorting → C output → DLD → Probability → Linear Algebra.",tags:["exam"]}
+    ]}
+  ]},
+  {phase:"Phase 3 — Semester Recovery",phaseColor:"#7F77DD",days:[
+    {id:"d19",date:"May 3–4",label:"Engg Economics → exam May 5",tasks:[
+      {id:"t81",label:"Engg Eco: NPV, IRR, break-even, cost analysis — theory and definitions. 2 days.",tags:["rev"]}
+    ]},
+    {id:"d20",date:"May 5–6",label:"Java OOP → exam May 7",tasks:[
+      {id:"t82",label:"Java: class, object, inheritance, polymorphism, interfaces, exception handling. 2 days.",tags:["rev"]}
+    ]},
+    {id:"d21",date:"May 7–10",label:"FLAT → exam May 11",tasks:[
+      {id:"t83",label:"FLAT Day 1: DFA, NFA, epsilon-NFA, subset construction.",tags:["rev"]},
+      {id:"t84",label:"FLAT Day 2: CFG, derivations, parse trees, PDA.",tags:["rev"]},
+      {id:"t85",label:"FLAT Day 3: TM basics, P vs NP conceptually, RE and CFL hierarchy.",tags:["rev"]}
+    ]},
+    {id:"d22",date:"May 11–12",label:"DBMS → exam May 13",tasks:[
+      {id:"t86",label:"DBMS: SQL queries and Relational Algebra. 1 day.",tags:["rev"]},
+      {id:"t87",label:"DBMS: Normalization 1NF–3NF, functional dependencies. 1 day.",tags:["rev"]}
+    ]},
+    {id:"d23",date:"May 13–14",label:"Discrete Mathematics → exam May 15",tasks:[
+      {id:"t88",label:"DM: full revision — you know this cold from LEEE prep. 1 day.",tags:["rev"]},
+      {id:"t89",label:"Buffer day — rest or revise weak semester topics.",tags:["rev"]}
+    ]}
+  ]}
+];
+
+const TAG_CLASS = {new:"t-new",rev:"t-rev",apt:"t-apt",pyq:"t-pyq",exam:"t-exam",mock:"t-mock"};
+const TAG_LABEL = {new:"New topic",rev:"Revision",apt:"Aptitude",pyq:"PYQs",exam:"Exam",mock:"Mock test"};
+
+let checked = {};
+let open = {};
+const TODAY = "Apr 18";
+
+async function loadState(){
+  try{
+    const r = await window.storage.get("leee-tracker-v2");
+    if(r && r.value){const s=JSON.parse(r.value);checked=s.checked||{};open=s.open||{};}
+  }catch(e){checked={};open={};}
+}
+
+async function saveState(){
+  try{await window.storage.set("leee-tracker-v2",JSON.stringify({checked,open}));}catch(e){}
+}
+
+function getAllTaskIds(){
+  const ids=[];
+  PLAN.forEach(p=>p.days.forEach(d=>d.tasks.forEach(t=>ids.push(t.id))));
+  return ids;
+}
+
+function updateStats(){
+  const all=getAllTaskIds();
+  const done=all.filter(id=>checked[id]).length;
+  const pct=all.length?Math.round(done/all.length*100):0;
+  document.getElementById("done-count").textContent=done;
+  document.getElementById("total-count").textContent=all.length;
+  document.getElementById("pct").textContent=pct+"%";
+  document.getElementById("main-bar").style.width=pct+"%";
+}
+
+function getDayProgress(day){
+  const total=day.tasks.length;
+  const done=day.tasks.filter(t=>checked[t.id]).length;
+  return{done,total};
+}
+
+function toggleTask(tid,dayId){
+  checked[tid]=!checked[tid];
+  saveState();
+  const el=document.getElementById("cb-"+tid);
+  const lbl=document.getElementById("lbl-"+tid);
+  if(el){el.className="checkbox"+(checked[tid]?" checked":"");el.innerHTML=checked[tid]?'<span class="check-icon">✓</span>':"";}
+  if(lbl){lbl.className="task-label"+(checked[tid]?" done":"");}
+  updateDayBadge(dayId);
+  updateStats();
+}
+
+function updateDayBadge(dayId){
+  const day=PLAN.flatMap(p=>p.days).find(d=>d.id===dayId);
+  if(!day)return;
+  const {done,total}=getDayProgress(day);
+  const badge=document.getElementById("badge-"+dayId);
+  const mini=document.getElementById("mini-"+dayId);
+  if(mini)mini.textContent=done+"/"+total;
+  if(badge){
+    if(done===total){badge.className="day-complete-badge";badge.textContent="Complete";}
+    else if(done>0){badge.className="day-partial-badge";badge.textContent=done+"/"+total+" done";}
+    else{badge.className="";badge.textContent="";}
+  }
+}
+
+function toggleDay(dayId){
+  open[dayId]=!open[dayId];
+  saveState();
+  const body=document.getElementById("body-"+dayId);
+  const chev=document.getElementById("chev-"+dayId);
+  if(body){body.style.display=open[dayId]?"block":"none";}
+  if(chev){chev.className="chevron"+(open[dayId]?" open":"");}
+}
+
+async function resetAll(){
+  if(!confirm("Reset all progress?"))return;
+  checked={};open={};
+  await saveState();
+  render();
+}
+
+function render(){
+  const container=document.getElementById("plan-container");
+  container.innerHTML="";
+
+  PLAN.forEach(phase=>{
+    const pDiv=document.createElement("div");
+    pDiv.style.cssText="margin-bottom:1.5rem;border-left:3px solid "+phase.phaseColor+";padding-left:1rem";
+    const ph=document.createElement("div");
+    ph.className="phase-label";
+    ph.textContent=phase.phase;
+    pDiv.appendChild(ph);
+
+    phase.days.forEach(day=>{
+      const isOpen=open[day.id]!==undefined?open[day.id]:(day.date===TODAY);
+      if(open[day.id]===undefined)open[day.id]=isOpen;
+
+      const {done,total}=getDayProgress(day);
+      const isComplete=done===total;
+      const isPartial=done>0&&!isComplete;
+      const isToday=day.date===TODAY;
+
+      const card=document.createElement("div");
+      card.className="day-card";
+      card.style.borderColor=isComplete?"var(--color-border-success)":"var(--color-border-tertiary)";
+
+      card.innerHTML=`
+        <div class="day-header" onclick="toggleDay('${day.id}')">
+          <div class="day-left">
+            <span class="day-date">${day.date}</span>
+            ${isToday?'<span class="today-indicator">today</span>':""}
+            <span class="day-title">${day.label}</span>
+          </div>
+          <div class="day-right">
+            <span class="day-mini-progress" id="mini-${day.id}">${done}/${total}</span>
+            <span id="badge-${day.id}" class="${isComplete?"day-complete-badge":isPartial?"day-partial-badge":""}">${isComplete?"Complete":isPartial?done+"/"+total+" done":""}</span>
+            <span class="chevron${isOpen?" open":""}" id="chev-${day.id}">▾</span>
+          </div>
+        </div>
+        <div class="day-body" id="body-${day.id}" style="display:${isOpen?"block":"none"}">
+          ${day.tasks.map(task=>`
+            <div class="task-row" onclick="toggleTask('${task.id}','${day.id}')">
+              <div class="checkbox${checked[task.id]?" checked":""}" id="cb-${task.id}">${checked[task.id]?'<span class="check-icon">✓</span>':""}</div>
+              <div class="task-content">
+                <div class="task-label${checked[task.id]?" done":""}" id="lbl-${task.id}">${task.label}</div>
+                <div class="task-tags">${task.tags.map(tg=>`<span class="tag ${TAG_CLASS[tg]}">${TAG_LABEL[tg]}</span>`).join("")}</div>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+      pDiv.appendChild(card);
+    });
+    container.appendChild(pDiv);
+  });
+
+  updateStats();
+}
+
+loadState().then(render);
+</script>

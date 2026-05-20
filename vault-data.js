@@ -310,7 +310,7 @@ Mastering cybersecurity enables penetration testing as a monetisable skill, stre
     modified: "2026-05-11",
     wordCount: 438,
     backlinks: ["index"],
-    links: ["data-structures-basics","algorithm-basics","array","linked-list","stack","binary-tree","binary-tree-traversal","complete-binary-tree","binary-search-tree","avl-tree","heap-tree","treedsa","recursion","sorting","bubble-sort","selection-sort","insertion-sort","merge-sort","dsa","gate","c","graph","maths","sort"],
+    links: ["data-structures-basics","algorithm-basics","array","linked-list","stack","binary-tree","binary-tree-traversal","complete-binary-tree","binary-search-tree","avl-tree","heap-tree","treedsa","recursion","sorting","bubble-sort","insertion-sort","merge-sort","dsa","gate","c","graph","maths","sort"],
     outline: [{"level":3,"text":"Overview","id":"overview"},{"level":3,"text":"Linear Structures","id":"linear-structures"},{"level":3,"text":"Trees","id":"trees"},{"level":3,"text":"Sorting Algorithms","id":"sorting-algorithms"}],
     content: `# Purpose 
 
@@ -18158,7 +18158,7 @@ input          stored value         interpreted as
     modified: "2026-01-01",
     wordCount: 261,
     backlinks: ["moc-data-structures-and-algorithms","zettelkasten"],
-    links: ["merge-sort","selection-sort","bubble-sort"],
+    links: ["merge-sort","bubble-sort"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `## Core Idea 
 
@@ -33979,114 +33979,6 @@ This approach takes 2–3 days total and gives you a genuine, defensible underst
 # References`
   },
 
-  'selection-sort': {
-    id: 'selection-sort',
-    title: "Selection Sort",
-    folder: "03 - Notes",
-    path: ["03 - Notes","Selection Sort"],
-    tags: ["sort","dsa","note"],
-    created: "2025-12-23",
-    modified: "2025-12-23",
-    wordCount: 373,
-    backlinks: ["moc-data-structures-and-algorithms","insertion-sort","sorting","zettelkasten"],
-    links: ["sorting"],
-    outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Selection Sort(Analysis)","id":"selection-sortanalysis"}],
-    content: `## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-# Selection Sort
-- Divides the input list into two part
-	- a sorted sub-list of items which is built up from left to right at the front(left) of the list.
-	- a unsorted sub-list of the remaining items that occupy the rest of the list.
-- Selection Sort sorts from the beginning.
-- Selection-based sort
-	- if there are n elements
-		- sub-lists 1 : 1 sorted ; n-1 unsorted 
-		- sub-lists 2 : 2 sorted ; n-2 unsorted
-		- 
-		- 
-		- 
-		- sub-lists n - 1 : n - 1 sorted ; 1 unsorted == n sorted ; 0 unsorted 
-![[Pasted image 20251223155433.png]]
-\`\`\`python
-l = list(map(int, input("Enter the list: ").split()))
-
-def selectionSort(a):
-    for i in range(len(a)):
-        loc = i
-        for j in range(i + 1, len(a)):
-            if a[loc] > a[j]:  
-                loc = j
-        a[i], a[loc] = a[loc], a[i]
-        
-selectionSort(l)
-print(l)
-\`\`\`
-
-> Time Complexity : O(n<sup>2</sup>)
-> 	internal for loop: O(n)
-> 	external for loop: O(n)
-> 	nested for loops: O((n<sup>2</sup>)
-
-### Selection Sort(Analysis)
-- Depends on Structure 
-- Internal sort Algorithm
-	- here we declared two other variables, but this doesn't change with the no. of elements. 
-- Unstable sort Algorithm
-- **Best** and **Worst** case Time Complexity = O(n<sup>2</sup>)
-- Algorithmic Approach: Selection-based sort
-
----
-# Questions
-###### <span style="color:rgb(0, 176, 240)">Q1)</span> Which one of the following is the tightest upper bound that represents the number of swaps required to sort n numbers using selection sort? <span style="color:rgb(255, 192, 0)">(Gate-2013) (1 Marks)</span>
-
-or 
-###### What is the number of swaps required to sort n elements using selection sort, in the worst case? <span style="color:rgb(255, 192, 0)">(Gate-2009) (1 Marks)</span>
-###### A) O(log n)
-
-###### B) O(n)
-
-###### C) O(n log n)
-
-###### D) O(n<sup>2</sup>)
-
-<span style="color:rgb(0, 176, 240)">A1)</span>   <span style="color:rgb(146, 208, 80)">B) O(n)</span>
-The Q is not asking the time complexity.
-Its asking the no. of swaps required. 
-In selection sort for each iteration we do 1 swap in the worst case. Hence, in the worst case we will do n no. of swaps. 
-
-
----
-# Summary 
-
-
-
-
-
----
-# References 
-
-1. [[Sorting]]
-2. [Selection Sort - YouTube Lecture](https://youtu.be/aaHL0KygWqE?si=ha9NIwW-vtT-b37o&t=2154)
-3. [Algorithm Book](cormen-introduction-to-algorithms.pdf)
-4. [Algorithm Notes PDF - knowledgeGATE](Algorithm.pdf)`
-  },
-
   'sequence-and-series': {
     id: 'sequence-and-series',
     title: "Sequence and Series",
@@ -35163,8 +35055,8 @@ Eg : Operating System, Linker, Loader
     created: "2025-12-23",
     modified: "2025-12-23",
     wordCount: 189,
-    backlinks: ["moc-data-structures-and-algorithms","algorithm-basics","bubble-sort","face-matching","selection-sort","zettelkasten"],
-    links: ["selection-sort","bubble-sort","face-matching","algorithm-basics"],
+    backlinks: ["moc-data-structures-and-algorithms","algorithm-basics","bubble-sort","face-matching","zettelkasten"],
+    links: ["bubble-sort","face-matching","algorithm-basics"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `## Core Idea 
 
@@ -39858,7 +39750,7 @@ return 0;
     modified: "2026-05-11",
     wordCount: 1593,
     backlinks: ["moc-zettelkasten-method"],
-    links: ["index","languages","language-translators","errors","operators","basicsc","tokensc","datatypesc","primary-datatypesc","type-conversionc","escape-sequencesc","input-outputconsolec","1st-c-program","operatorsc","control-structuresc","simple-ifc","if-elsec","nested-ifc","else-if-ladderc","switch-casec","whilec","do-whilec","forc","nestedloopc","breakc","continuec","char-functionsc","stringsc","pattern-questionsc","array","linked-list","stack","pointersc","python-basics","printpy","markdown-basic","data-structures-basics","treedm","algorithm-basics","sorting","bubble-sort","selection-sort","insertion-sort","merge-sort","digital-logic-basics","logic-gates","primary-logical-operators-across-different-domains","duality","complementation","normal-form-sop-and-pos","k-map","combinational-circuits","adder","matrix-qs","determinants","determinants-qs","rank-of-a-matrix","rank-of-a-matrix-qs","discrete-mathematics-introduction","logic-introduction","propositions","well-formed-formula","logical-operators","questions-on-minimization","arguments","predicate-logic","number-system","set-theory","relations","poset","graph-theory","dbms-basics","transactions-and-concurrency-control","linux-foundation","kali-linux-overview","ethical-hacking","setting-up-virtual-machine-or-lab","stages-of-hacking","networking-basics","generative-ai","large-language-model","ai-tools","coding-assistant","tools-with-claude-code","prompts","fpya","magic-of-compounding","health-insurances","rate-of-interest","economics","basic-problems-of-an-economy","demand","law-of-demand","demand-function","elasticity-of-demand","supply","supply-function","a-desolated-guy","fragments-of-a-fading-mind","the-weight-of-yesterday","shadows-of-adulthood","strength-in-solitude","system","beyond-now","burnt-petals","that-friend","my-best-friend","cancer","human-paradox","death","modern-madness","his-story","the-cursed-child","the-next-chapter","poetry-index"],
+    links: ["index","languages","language-translators","errors","operators","basicsc","tokensc","datatypesc","primary-datatypesc","type-conversionc","escape-sequencesc","input-outputconsolec","1st-c-program","operatorsc","control-structuresc","simple-ifc","if-elsec","nested-ifc","else-if-ladderc","switch-casec","whilec","do-whilec","forc","nestedloopc","breakc","continuec","char-functionsc","stringsc","pattern-questionsc","array","linked-list","stack","pointersc","python-basics","printpy","markdown-basic","data-structures-basics","treedm","algorithm-basics","sorting","bubble-sort","insertion-sort","merge-sort","digital-logic-basics","logic-gates","primary-logical-operators-across-different-domains","duality","complementation","normal-form-sop-and-pos","k-map","combinational-circuits","adder","matrix-qs","determinants","determinants-qs","rank-of-a-matrix","rank-of-a-matrix-qs","discrete-mathematics-introduction","logic-introduction","propositions","well-formed-formula","logical-operators","questions-on-minimization","arguments","predicate-logic","number-system","set-theory","relations","poset","graph-theory","dbms-basics","transactions-and-concurrency-control","linux-foundation","kali-linux-overview","ethical-hacking","setting-up-virtual-machine-or-lab","stages-of-hacking","networking-basics","generative-ai","large-language-model","ai-tools","coding-assistant","tools-with-claude-code","prompts","fpya","magic-of-compounding","health-insurances","rate-of-interest","economics","basic-problems-of-an-economy","demand","law-of-demand","demand-function","elasticity-of-demand","supply","supply-function","a-desolated-guy","fragments-of-a-fading-mind","the-weight-of-yesterday","shadows-of-adulthood","strength-in-solitude","system","beyond-now","burnt-petals","that-friend","my-best-friend","cancer","human-paradox","death","modern-madness","his-story","the-cursed-child","the-next-chapter","poetry-index"],
     outline: [{"level":2,"text":"0. Start Here","id":"0-start-here"},{"level":2,"text":"1. 💻 Programming Foundations","id":"1-programming-foundations"},{"level":3,"text":"1.1 Languages & Theory","id":"11-languages-theory"},{"level":3,"text":"1.2 C Programming","id":"12-c-programming"},{"level":3,"text":"1.3 Python","id":"13-python"},{"level":3,"text":"1.4 Markdown","id":"14-markdown"},{"level":2,"text":"2. 🧮 Data Structures & Algorithms","id":"2-data-structures-algorithms"},{"level":3,"text":"2.1 Foundations","id":"21-foundations"},{"level":3,"text":"2.2 Data Structures","id":"22-data-structures"},{"level":3,"text":"2.3 Algorithms","id":"23-algorithms"},{"level":3,"text":"2.4 Full Index","id":"24-full-index"},{"level":2,"text":"3. 🔢 Digital Logic Design (DLD)","id":"3-digital-logic-design-dld"}],
     content: `## 0. Start Here
 
@@ -52856,11 +52748,6 @@ const VAULT_FOLDERS = [
         "type": "note"
       },
       {
-        "id": "selection-sort",
-        "name": "Selection Sort",
-        "type": "note"
-      },
-      {
         "id": "sequence-and-series",
         "name": "Sequence and Series",
         "type": "note"
@@ -54603,11 +54490,6 @@ const GRAPH_NODES = [
     "group": "notes"
   },
   {
-    "id": "selection-sort",
-    "label": "Selection Sort",
-    "group": "notes"
-  },
-  {
     "id": "sequence-and-series",
     "label": "Sequence and Series",
     "group": "notes"
@@ -55083,10 +54965,6 @@ const GRAPH_EDGES = [
   {
     "source": "moc-data-structures-and-algorithms",
     "target": "bubble-sort"
-  },
-  {
-    "source": "moc-data-structures-and-algorithms",
-    "target": "selection-sort"
   },
   {
     "source": "moc-data-structures-and-algorithms",
@@ -56210,10 +56088,6 @@ const GRAPH_EDGES = [
   },
   {
     "source": "insertion-sort",
-    "target": "selection-sort"
-  },
-  {
-    "source": "insertion-sort",
     "target": "bubble-sort"
   },
   {
@@ -56477,10 +56351,6 @@ const GRAPH_EDGES = [
     "target": "set-theory"
   },
   {
-    "source": "selection-sort",
-    "target": "sorting"
-  },
-  {
     "source": "set-theory",
     "target": "primary-logical-operators-across-different-domains"
   },
@@ -56711,10 +56581,6 @@ const GRAPH_EDGES = [
   {
     "source": "zettelkasten",
     "target": "bubble-sort"
-  },
-  {
-    "source": "zettelkasten",
-    "target": "selection-sort"
   },
   {
     "source": "zettelkasten",

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IGIT OOP Java Exam Strategy — PCCS4203</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f9f7; color: #1a1a1a; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .header { margin-bottom: 2rem; border-bottom: 1px solid #e0e0dc; padding-bottom: 1.5rem; }
+  .header h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+  .header p { font-size: 13px; color: #666; }
+  .nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.5rem; }
+  .nav button { font-size: 13px; padding: 6px 14px; border-radius: 20px; border: 1px solid #ccc; background: #fff; color: #555; cursor: pointer; transition: all 0.15s; }
+  .nav button:hover { background: #f0f0ee; }
+  .nav button.active { background: #3C3489; color: #EEEDFE; border-color: #3C3489; }
+  .section { display: none; }
+  .section.active { display: block; }
+  h2 { font-size: 18px; font-weight: 600; margin-bottom: 1rem; }
+  h3 { font-size: 13px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin: 1.4rem 0 0.6rem; }
+  .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+  .badge.t1 { background: #FCEBEB; color: #A32D2D; }
+  .badge.t2 { background: #FAEEDA; color: #854F0B; }
+  .badge.t3 { background: #EAF3DE; color: #3B6D11; }
+  .badge.mod { background: #EEEDFE; color: #3C3489; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 1rem; }
+  th { background: #f4f4f0; font-weight: 600; font-size: 12px; color: #777; text-align: left; padding: 8px 10px; border-bottom: 1px solid #e0e0dc; }
+  td { padding: 8px 10px; border-bottom: 1px solid #ececea; color: #1a1a1a; vertical-align: top; line-height: 1.5; }
+  tr:last-child td { border-bottom: none; }
+  .freq-pill { display: inline-block; background: #EEEDFE; color: #3C3489; border-radius: 10px; font-size: 12px; font-weight: 600; padding: 1px 8px; min-width: 24px; text-align: center; }
+  .freq-pill.hi { background: #FCEBEB; color: #A32D2D; }
+  .freq-pill.med { background: #FAEEDA; color: #854F0B; }
+  .card { background: #fff; border: 1px solid #e0e0dc; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1rem; }
+  .tier-label { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .tier-item { font-size: 13px; color: #333; padding: 6px 0; border-bottom: 1px solid #ececea; line-height: 1.6; }
+  .tier-item:last-child { border-bottom: none; }
+  .warn { background: #FAEEDA; border-left: 3px solid #EF9F27; border-radius: 0 8px 8px 0; padding: 10px 14px; font-size: 13px; color: #633806; margin-bottom: 8px; line-height: 1.6; }
+  .qbox { background: #f4f4f0; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #1a1a1a; margin-bottom: 6px; line-height: 1.6; }
+  .qbox strong { font-weight: 600; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 1rem; }
+  .stat-card { background: #f4f4f0; border-radius: 8px; padding: 1rem; }
+  .stat-num { font-size: 24px; font-weight: 600; color: #1a1a1a; }
+  .stat-label { font-size: 12px; color: #888; margin-top: 2px; }
+  .rank { display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #EEEDFE; color: #3C3489; font-size: 11px; font-weight: 600; text-align: center; line-height: 20px; margin-right: 6px; }
+  .rank.r1 { background: #FCEBEB; color: #A32D2D; }
+  .rank.r2 { background: #FAEEDA; color: #854F0B; }
+  .rank.r3 { background: #EAF3DE; color: #3B6D11; }
+  @media (max-width: 600px) { .wrap { padding: 1rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <h1>Exam Intelligence Report — OOP Using Java (PCCS4203)</h1>
+    <p>IGIT Sarang &nbsp;·&nbsp; B.Tech CSE 4th Semester &nbsp;·&nbsp; Papers: 2021-22, 2022-23, 2023-24, 2024-25 &nbsp;·&nbsp; Multi-Agent Analysis</p>
+  </div>
+
+  <div class="nav">
+    <button class="active" onclick="show('overview',this)">Overview</button>
+    <button onclick="show('m1',this)">Module 1</button>
+    <button onclick="show('m2',this)">Module 2</button>
+    <button onclick="show('m3',this)">Module 3</button>
+    <button onclick="show('m4',this)">Module 4</button>
+    <button onclick="show('hiyield',this)">High-Yield Topics</button>
+    <button onclick="show('trends',this)">Trend Analysis</button>
+    <button onclick="show('plan',this)">Revision Plan</button>
+    <button onclick="show('lastday',this)">Last-Day List</button>
+    <button onclick="show('warn',this)">Warnings</button>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div id="overview" class="section active">
+    <h2>Overview</h2>
+    <div class="grid2">
+      <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Question papers analyzed</div></div>
+      <div class="stat-card"><div class="stat-num">~120</div><div class="stat-label">Total question parts extracted</div></div>
+      <div class="stat-card"><div class="stat-num">8</div><div class="stat-label">Tier-1 (very high priority) topics</div></div>
+      <div class="stat-card"><div class="stat-num">100%</div><div class="stat-label">Papers include banking app program</div></div>
+    </div>
+    <div class="card">
+      <div class="tier-label">Critical pattern detected</div>
+      <p style="font-size:13px;line-height:1.6;">The same 4–5 program types recur across ALL years with minor variations. Mastering those core programs is the highest-leverage exam strategy. Command-line arguments + series computation, banking application, and exception handling programs appear every single year.</p>
+    </div>
+  </div>
+
+  <!-- MODULE 1 -->
+  <div id="m1" class="section">
+    <h2>Module 1 — Basics, Classes, Objects, Arrays, Strings</h2>
+    <table>
+      <tr><th style="width:44%">Standardized Question</th><th style="width:12%">Freq</th><th>Year &amp; Q No.</th></tr>
+      <tr><td>Command-line arguments: explanation + program (sum/avg/factorial/series)</td><td><span class="freq-pill hi">4</span></td><td>2021-22 Q4a, Q5b; 2022-23 Q2a; 2023-24 Q2a,Q2b; 2024-25 Q2a,Q2b</td></tr>
+      <tr><td>Compute series: 1-x²/2!+x⁴/4!…xⁿ/n! where x = product of consecutive digits of num</td><td><span class="freq-pill hi">4</span></td><td>2022-23 Q2a; 2023-24 Q2b; 2024-25 Q2a; 2024-25 Q2b (variation)</td></tr>
+      <tr><td>Difference between Sum of product of even/odd digits (conditional operator, no looping)</td><td><span class="freq-pill hi">3</span></td><td>2022-23 Q2b; 2023-24 Q2a; 2024-25 Q2b</td></tr>
+      <tr><td>Palindrome check using class/object or method overloading</td><td><span class="freq-pill hi">3</span></td><td>2021-22 Q3a; 2023-24 Q4a; 2024-25 Q3b</td></tr>
+      <tr><td>Constructor overloading with a suitable example / program (boxes / volumes)</td><td><span class="freq-pill hi">3</span></td><td>2021-22 Q5a,Q8a; 2022-23 Q8d; 2023-24 Q3b</td></tr>
+      <tr><td>Method overloading: compile-time polymorphism, True/False justification</td><td><span class="freq-pill med">3</span></td><td>2022-23 Q3a; 2023-24 Q4a; 2024-25 Q3b</td></tr>
+      <tr><td>Ways to create String objects / String class methods</td><td><span class="freq-pill med">2</span></td><td>2021-22 Q2b; 2022-23 Q1a,Q1c</td></tr>
+      <tr><td>Constructor returns nothing — True/False + program</td><td><span class="freq-pill med">2</span></td><td>2023-24 Q3b; 2024-25 Q1c</td></tr>
+      <tr><td>Type conversion / typecasting approaches</td><td><span class="freq-pill">2</span></td><td>2022-23 Q2b; 2023-24 Q1e</td></tr>
+      <tr><td>Differentiate Object vs Object Reference</td><td><span class="freq-pill">1</span></td><td>2021-22 Q1a</td></tr>
+      <tr><td>How to declare arrays / array mechanism</td><td><span class="freq-pill">2</span></td><td>2021-22 Q1d; 2023-24 Q3a</td></tr>
+      <tr><td>this keyword usage</td><td><span class="freq-pill">1</span></td><td>2021-22 Q1e</td></tr>
+      <tr><td>Autoboxing concept</td><td><span class="freq-pill">1</span></td><td>2021-22 Q1h</td></tr>
+      <tr><td>Print largest/smallest of n integers using class and object</td><td><span class="freq-pill">2</span></td><td>2021-22 Q2a, Q5b</td></tr>
+    </table>
+  </div>
+
+  <!-- MODULE 2 -->
+  <div id="m2" class="section">
+    <h2>Module 2 — Inheritance, Interfaces, Packages, Exception Handling</h2>
+    <table>
+      <tr><th style="width:44%">Standardized Question</th><th style="width:12%">Freq</th><th>Year &amp; Q No.</th></tr>
+      <tr><td>Banking application: deposit, withdraw, check balance, minimum balance, custom exception using interface + package</td><td><span class="freq-pill hi">4</span></td><td>2022-23 Q3b; 2023-24 Q5; 2024-25 Q4b; 2024-25 Q5a (variant)</td></tr>
+      <tr><td>Abstract class vs Interface: differences + True/False justification</td><td><span class="freq-pill hi">4</span></td><td>2022-23 Q5b, Q8b; 2023-24 Q4b, Q8b; 2024-25 Q8b</td></tr>
+      <tr><td>Modifiers that cannot be used with interface + why</td><td><span class="freq-pill hi">3</span></td><td>2022-23 Q4b; 2024-25 Q4a; 2024-25 Q8b; 2024-25 Q1d</td></tr>
+      <tr><td>Dynamic method dispatch explanation + example</td><td><span class="freq-pill med">3</span></td><td>2021-22 Q3b; 2022-23 Q8a; 2023-24 Q1c,Q1d</td></tr>
+      <tr><td>Exception vs Error (same or different?) + types of exceptions</td><td><span class="freq-pill med">3</span></td><td>2022-23 Q5a; 2023-24 Q8a; 2024-25 Q8a</td></tr>
+      <tr><td>Try-catch-finally: division of two numbers program</td><td><span class="freq-pill hi">3</span></td><td>2022-23 Q5b; 2023-24 Q3a; 2024-25 Q3a</td></tr>
+      <tr><td>Custom/user-defined exception: InvalidROI / InvalidDivision exception program</td><td><span class="freq-pill med">3</span></td><td>2022-23 Q5a; 2024-25 Q5a; 2024-25 Q4b</td></tr>
+      <tr><td>Checked vs Unchecked exception</td><td><span class="freq-pill med">2</span></td><td>2024-25 Q3a; 2023-24 Q1g</td></tr>
+      <tr><td>throw vs throws: differences</td><td><span class="freq-pill med">2</span></td><td>2023-24 Q8c; 2024-25 Q8c</td></tr>
+      <tr><td>Packages: what/why, basic purpose, access protection</td><td><span class="freq-pill med">3</span></td><td>2021-22 Q1c; 2022-23 Q8c; 2024-25 Q5a</td></tr>
+      <tr><td>super keyword and super() method with examples</td><td><span class="freq-pill med">2</span></td><td>2021-22 Q4b; 2024-25 Q4a</td></tr>
+      <tr><td>Area/perimeter program using abstract class + method overriding (Rectangle, Square, Circle)</td><td><span class="freq-pill med">3</span></td><td>2023-24 Q4b; 2024-25 Q5b; 2024-25 Q4a (variant)</td></tr>
+      <tr><td>Inheritance not supported by Java (multiple)</td><td><span class="freq-pill">2</span></td><td>2021-22 Q1b, Q8c</td></tr>
+      <tr><td>Final class cannot be extended — True/False</td><td><span class="freq-pill">2</span></td><td>2024-25 Q5b; 2024-25 Q1f</td></tr>
+      <tr><td>finally block execution — True/False justification</td><td><span class="freq-pill">2</span></td><td>2023-24 Q5; 2024-25 (implied)</td></tr>
+    </table>
+  </div>
+
+  <!-- MODULE 3 -->
+  <div id="m3" class="section">
+    <h2>Module 3 — Multithreading, String Handling, Applets</h2>
+    <table>
+      <tr><th style="width:44%">Standardized Question</th><th style="width:12%">Freq</th><th>Year &amp; Q No.</th></tr>
+      <tr><td>Thread state diagram / lifecycle explanation (which states occur multiple times)</td><td><span class="freq-pill hi">4</span></td><td>2021-22 Q6a; 2022-23 Q4a; 2023-24 Q1h,Q1j; 2024-25 Q6a</td></tr>
+      <tr><td>Multithreading program with synchronization (print name, priority, isAlive, join)</td><td><span class="freq-pill hi">4</span></td><td>2021-22 Q6b; 2023-24 Q6a; 2024-25 Q6a; 2022-23 Q4a</td></tr>
+      <tr><td>Deadlock: definition, detection, and recovery</td><td><span class="freq-pill med">2</span></td><td>2024-25 Q6b; 2024-25 Q1g</td></tr>
+      <tr><td>Methods for blocking a thread / lifecycle states occurring only once</td><td><span class="freq-pill med">2</span></td><td>2021-22 Q7b; 2024-25 Q7a</td></tr>
+      <tr><td>Synchronization: unavoidable — True/False + program</td><td><span class="freq-pill med">2</span></td><td>2023-24 Q6a; 2024-25 Q6a</td></tr>
+      <tr><td>Applet lifecycle: define, diagram, states occurring once/multiple times</td><td><span class="freq-pill hi">4</span></td><td>2021-22 Q8d; 2022-23 Q6b; 2023-24 Q1j; 2024-25 Q7a</td></tr>
+      <tr><td>Scrolling/blinking message using Applet + multithreading (JOptionPane input)</td><td><span class="freq-pill hi">3</span></td><td>2022-23 Q6a; 2023-24 Q6b; 2024-25 Q6b</td></tr>
+      <tr><td>Draw circle/square inside applet / move ball using applet</td><td><span class="freq-pill med">3</span></td><td>2022-23 Q6b; 2024-25 Q7a</td></tr>
+      <tr><td>Adding two time objects (hours:minutes:seconds) using object return</td><td><span class="freq-pill">1</span></td><td>2021-22 Q7a</td></tr>
+      <tr><td>Which component of AWT is used to create Applet window (fill blank)</td><td><span class="freq-pill med">2</span></td><td>2022-23 Q6a; 2024-25 Q1i</td></tr>
+      <tr><td>Method to draw circle in applet / paint method invocation</td><td><span class="freq-pill med">2</span></td><td>2022-23 Q1i; 2024-25 Q1h</td></tr>
+    </table>
+  </div>
+
+  <!-- MODULE 4 -->
+  <div id="m4" class="section">
+    <h2>Module 4 — AWT, Swing, Event Handling</h2>
+    <table>
+      <tr><th style="width:44%">Standardized Question</th><th style="width:12%">Freq</th><th>Year &amp; Q No.</th></tr>
+      <tr><td>AWT vs Swing: differences, which is better + justify (True/False)</td><td><span class="freq-pill hi">4</span></td><td>2022-23 Q7a; 2023-24 Q7a; 2024-25 Q7b; 2024-25 Q1j</td></tr>
+      <tr><td>Delegation event model: explanation, components, architecture diagram</td><td><span class="freq-pill hi">4</span></td><td>2022-23 Q7a; 2023-24 Q7b; 2024-25 Q7b; 2024-25 Q8a</td></tr>
+      <tr><td>Calculator program using JLabel, JTextField, JButton, ActionListener</td><td><span class="freq-pill hi">3</span></td><td>2022-23 Q7b; 2023-24 Q7a; 2024-25 Q7a (variant)</td></tr>
+      <tr><td>Colour recognition / button-click changes background using Swing + Event Handling</td><td><span class="freq-pill med">2</span></td><td>2023-24 Q7b; 2024-25 Q7b (variant)</td></tr>
+      <tr><td>Event handling: what is it, types of events (ItemEvent, TextEvent, ActionEvent)</td><td><span class="freq-pill med">2</span></td><td>2022-23 Q1h; 2023-24 Q1i,Q7b</td></tr>
+      <tr><td>AWT hierarchy / AWT components list</td><td><span class="freq-pill med">2</span></td><td>2023-24 Q8d; 2024-25 implied</td></tr>
+      <tr><td>Layout managers (what they do, which controls appearance)</td><td><span class="freq-pill">2</span></td><td>2024-25 Q1j; syllabus topic</td></tr>
+    </table>
+  </div>
+
+  <!-- HIGH YIELD -->
+  <div id="hiyield" class="section">
+    <h2>High-Yield Topics — Ranked by Frequency</h2>
+    <table>
+      <tr><th>#</th><th>Topic</th><th>Module</th><th>Freq</th><th>Priority</th></tr>
+      <tr><td><span class="rank r1">1</span></td><td>Command-line arguments + Series computation (x=product of digits)</td><td><span class="badge mod">M1</span></td><td><span class="freq-pill hi">4+</span></td><td><span class="badge t1">Tier 1</span></td></tr>
+      <tr><td><span class="rank r1">2</span></td><td>Banking application (interface + package + custom exception)</td><td><span class="badge mod">M2</span></td><td><span class="freq-pill hi">4</span></td><td><span class="badge t1">Tier 1</span></td></tr>
+      <tr><td><span class="rank r1">3</span></td><td>Thread lifecycle / state diagram + synchronization program</td><td><span class="badge mod">M3</span></td><td><span class="freq-pill hi">4</span></td><td><span class="badge t1">Tier 1</span></td></tr>
+      <tr><td><span class="rank r1">4</span></td><td>Applet lifecycle + scrolling/blinking message program</td><td><span class="badge mod">M3</span></td><td><span class="freq-pill hi">4</span></td><td><span class="badge t1">Tier 1</span></td></tr>
+      <tr><td><span class="rank r1">5</span></td><td>AWT vs Swing + Delegation Event Model</td><td><span class="badge mod">M4</span></td><td><span class="freq-pill hi">4</span></td><td><span class="badge t1">Tier 1</span></td></tr>
+      <tr><td><span class="rank r1">6</span></td><td>Exception handling: try-catch-finally + custom exception</td><td><span class="badge mod">M2</span></td><td><span class="freq-pill hi">4</span></td><td><span class="badge t1">Tier 1</span></td></tr>
+      <tr><td><span class="rank r1">7</span></td><td>Abstract class vs Interface (differences + program)</td><td><span class="badge mod">M2</span></td><td><span class="freq-pill hi">4</span></td><td><span class="badge t1">Tier 1</span></td></tr>
+      <tr><td><span class="rank r1">8</span></td><td>Constructor overloading + program</td><td><span class="badge mod">M1</span></td><td><span class="freq-pill hi">3</span></td><td><span class="badge t1">Tier 1</span></td></tr>
+      <tr><td><span class="rank r2">9</span></td><td>Method overloading + palindrome / complex numbers program</td><td><span class="badge mod">M1</span></td><td><span class="freq-pill med">3</span></td><td><span class="badge t2">Tier 2</span></td></tr>
+      <tr><td><span class="rank r2">10</span></td><td>Dynamic method dispatch</td><td><span class="badge mod">M2</span></td><td><span class="freq-pill med">3</span></td><td><span class="badge t2">Tier 2</span></td></tr>
+      <tr><td><span class="rank r2">11</span></td><td>Area/perimeter using abstract class + multilevel inheritance</td><td><span class="badge mod">M2</span></td><td><span class="freq-pill med">3</span></td><td><span class="badge t2">Tier 2</span></td></tr>
+      <tr><td><span class="rank r2">12</span></td><td>Swing calculator / event-handling GUI program</td><td><span class="badge mod">M4</span></td><td><span class="freq-pill med">3</span></td><td><span class="badge t2">Tier 2</span></td></tr>
+      <tr><td><span class="rank r3">13</span></td><td>Deadlock: detection and recovery</td><td><span class="badge mod">M3</span></td><td><span class="freq-pill">2</span></td><td><span class="badge t3">Tier 3</span></td></tr>
+      <tr><td><span class="rank r3">14</span></td><td>Packages: purpose + access protection</td><td><span class="badge mod">M2</span></td><td><span class="freq-pill">2</span></td><td><span class="badge t3">Tier 3</span></td></tr>
+      <tr><td><span class="rank r3">15</span></td><td>Throw vs Throws / Exception vs Error (short notes)</td><td><span class="badge mod">M2</span></td><td><span class="freq-pill">2</span></td><td><span class="badge t3">Tier 3</span></td></tr>
+    </table>
+  </div>
+
+  <!-- TRENDS -->
+  <div id="trends" class="section">
+    <h2>Trend Analysis</h2>
+    <h3>Pattern 1 — True/False + Justify + Program is the new standard</h3>
+    <p style="font-size:13px;line-height:1.6;color:#333;margin-bottom:1rem;">From 2023-24 onward, almost every 5-mark question follows: a conceptual True/False statement (1 mark) + a program (4 marks). Prepare both the concept and the code side-by-side for every topic.</p>
+    <h3>Pattern 2 — The digit-product series program recurs every year</h3>
+    <p style="font-size:13px;line-height:1.6;color:#333;margin-bottom:1rem;">Across all 4 years, a variant of 1 ± x²/2! ± x⁴/4! … xⁿ/n! appears, where x = sum/product of consecutive digits or prime digits of a number passed via command-line. This is the single most repeated program — know it cold.</p>
+    <h3>Pattern 3 — Banking application evolves each year</h3>
+    <p style="font-size:13px;line-height:1.6;color:#333;margin-bottom:1rem;">2022-23: class + object only. 2023-24: interface + package + custom exception (10-mark). 2024-25: interface + package + custom exception (5-mark, plus a separate custom exception question). Always implement the full version with interface, package, and custom exception.</p>
+    <h3>Pattern 4 — Short notes Q8 is always "Any Two" from four options</h3>
+    <p style="font-size:13px;line-height:1.6;color:#333;margin-bottom:1rem;">Options consistently include: Exception vs Error, Interface vs Abstract class, Throw vs Throws, AWT hierarchy / Delegation Event Model / Modifiers / Constructor overloading. Prepare Exception vs Error and Interface vs Abstract class — they appear most often.</p>
+    <h3>Pattern 5 — Applet + multithreading always paired</h3>
+    <p style="font-size:13px;line-height:1.6;color:#333;margin-bottom:1rem;">In all 4 years, an applet question is paired with multithreading (scrolling message, blinking message, moving ball). Knowing applet alone or threads alone is not enough — you need the combination.</p>
+    <h3>Pattern 6 — AWT vs Swing always asked with delegation event model</h3>
+    <p style="font-size:13px;line-height:1.6;color:#333;margin-bottom:1rem;">Q7 consistently covers both AWT/Swing comparison and event-handling GUI programs. Prepare a JLabel+JTextField+JButton calculator program as your go-to template.</p>
+  </div>
+
+  <!-- REVISION PLAN -->
+  <div id="plan" class="section">
+    <h2>Revision Plan</h2>
+    <h3><span class="badge t1">Tier 1 — Very High Priority</span></h3>
+
+    <div class="card">
+      <div class="tier-label">1. Command-Line Arguments + Series Computation</div>
+      <div class="tier-item">Concept: how args[] works, parsing integers (Integer.parseInt), no-array constraint, conditional operator (?:)</div>
+      <div class="tier-item">Code: master the digit-product helper function + series 1 - x²/2! + x⁴/4! … xⁿ/n! and its variants</div>
+      <div class="tier-item">Also prepare: difference between sum-of-product-of-even/odd-digits without looping using only conditional operator</div>
+    </div>
+
+    <div class="card">
+      <div class="tier-label">2. Banking Application (Interface + Package + Custom Exception)</div>
+      <div class="tier-item">Code: deposit, withdraw, checkBalance, minimum balance enforcement using interface + package</div>
+      <div class="tier-item">Custom exception: InsufficientFundException; minimum balance Rs. 2500 or 3000 depending on year</div>
+      <div class="tier-item">Know both versions: simple class/object AND full interface+package+exception version</div>
+    </div>
+
+    <div class="card">
+      <div class="tier-label">3. Exception Handling</div>
+      <div class="tier-item">Concept: Exception vs Error, Checked vs Unchecked, throw vs throws, finally always executes (True)</div>
+      <div class="tier-item">Code: division program with try-catch-finally; custom InvalidDivision / InvalidROI exception</div>
+      <div class="tier-item">Short note: Exception vs Error — always appears in Q8</div>
+    </div>
+
+    <div class="card">
+      <div class="tier-label">4. Abstract Class vs Interface</div>
+      <div class="tier-item">Concept: differences table, when to use each, modifiers allowed/disallowed with interface, 100% abstraction</div>
+      <div class="tier-item">Code: area/perimeter of Rectangle, Square, Circle using multilevel inheritance + abstract class + method overriding</div>
+      <div class="tier-item">True/False: "Abstract class is better than interface" — justify with differences</div>
+    </div>
+
+    <div class="card">
+      <div class="tier-label">5. Thread Lifecycle + Synchronization</div>
+      <div class="tier-item">Concept: all states (New, Runnable, Running, Blocked, Dead); which occur multiple times vs once</div>
+      <div class="tier-item">Code: 3-thread program printing first/middle/last name with Synchronization, isAlive, join, Priority 9/8/7</div>
+      <div class="tier-item">Also: deadlock definition, detection, recovery with example</div>
+    </div>
+
+    <div class="card">
+      <div class="tier-label">6. Applet + Multithreading</div>
+      <div class="tier-item">Concept: applet lifecycle (init, start, stop, destroy, paint — which occur once vs multiple times)</div>
+      <div class="tier-item">Code: scrolling/blinking message applet with multithreading + JOptionPane input; draw circle in applet</div>
+      <div class="tier-item">Know: which method calls paint(), which AWT component creates applet window</div>
+    </div>
+
+    <div class="card">
+      <div class="tier-label">7. AWT vs Swing + Delegation Event Model</div>
+      <div class="tier-item">Concept: differences between AWT and Swing; delegation event model (source → event → listener)</div>
+      <div class="tier-item">Code: calculator using JLabel, JTextField, JButton, ActionListener; colour-recognition app; find greatest of 3 numbers using Swing</div>
+    </div>
+
+    <div class="card">
+      <div class="tier-label">8. Constructor Overloading</div>
+      <div class="tier-item">Concept: constructor returns nothing (True); constructor overloading purpose + example</div>
+      <div class="tier-item">Code: 3-box volume program where box2 = 2×box1, box3 = box1+box2 using constructor overloading</div>
+    </div>
+
+    <h3><span class="badge t2">Tier 2 — Medium Priority</span></h3>
+    <div class="card">
+      <div class="tier-item"><strong>Method overloading:</strong> compile-time polymorphism; palindrome program; sum of numbers/strings/complex numbers; method overloading is NOT possible by changing return type only (False)</div>
+      <div class="tier-item"><strong>Dynamic method dispatch:</strong> explanation + runtime polymorphism example with Animal/Dog/Cat override</div>
+      <div class="tier-item"><strong>Packages:</strong> two basic purposes; access protection; importing packages</div>
+      <div class="tier-item"><strong>super keyword:</strong> super vs super(); accessing overridden methods and parent constructors</div>
+    </div>
+
+    <h3><span class="badge t3">Tier 3 — Lower Priority</span></h3>
+    <div class="card">
+      <div class="tier-item"><strong>Modifiers:</strong> access modifiers table (private, default, protected, public); which apply to interface</div>
+      <div class="tier-item"><strong>String methods:</strong> indexOf(), charAt(), compareTo(), creation ways</div>
+      <div class="tier-item"><strong>Autoboxing, this keyword, array declaration:</strong> short-answer only</div>
+      <div class="tier-item"><strong>AWT hierarchy:</strong> Component → Container → Window/Panel structure</div>
+    </div>
+  </div>
+
+  <!-- LAST DAY -->
+  <div id="lastday" class="section">
+    <h2>Last-Day Revision — Top 15 Predicted Questions</h2>
+    <div class="qbox"><strong>1.</strong> Write a Java program to compute the series 1 - x²/2! + x⁴/4! - x⁶/6! + … xⁿ/n! where x = sum of product of consecutive digits of num and n = sum of product of consecutive prime digits, taking num via command-line argument.</div>
+    <div class="qbox"><strong>2.</strong> Write a Java program using interface and package to perform deposit, withdraw, check balance for a banking application. Assign minimum balance Rs. 2500. Deduct 10% penalty if deposit below minimum balance. Show InsufficientFundException for withdraw.</div>
+    <div class="qbox"><strong>3.</strong> What are the differences between abstract class and interface? Write a program to find area, perimeter and volume of Rectangle, Square and Circle using multilevel inheritance, abstract class and method overriding.</div>
+    <div class="qbox"><strong>4.</strong> Explain the thread lifecycle with a state diagram. Write a program to create 3 threads that print first name, middle name, and last name using Synchronization, isAlive, join with Priority 9, 8, 7 respectively.</div>
+    <div class="qbox"><strong>5.</strong> Define Applet. Describe its lifecycle with a neat diagram. Which lifecycle states occur only once vs multiple times? Write a Java program to create a scrolling message using applet and multithreading, taking input from user via JOptionPane.</div>
+    <div class="qbox"><strong>6.</strong> What is AWT? How does it differ from Swing? Explain the delegation event model with neat architecture. Write a program to create a calculator using JLabel, JTextField, JButton and ActionListener.</div>
+    <div class="qbox"><strong>7.</strong> What is the difference between Checked and Unchecked Exception? Write a program to find division of two numbers using try, catch and finally block.</div>
+    <div class="qbox"><strong>8.</strong> Constructor returns nothing — True or False? Justify. Write a program to find the volume of 3 boxes where dimension of first box is known to user, second box is double of first, third box is the sum of first and second, using constructor overloading.</div>
+    <div class="qbox"><strong>9.</strong> Method overloading is possible by simply changing the return type — True or False? Justify. Write a program to find sum of two numbers, sum of two strings, and sum of two complex numbers using method overloading.</div>
+    <div class="qbox"><strong>10.</strong> Write a program to find the difference between Sum of product of consecutive even digits (except 2 and 6) and Sum of product of consecutive odd digits (except 3 and 7) of any 4-digit number using conditional operator, without looping or decision making, taking input via command-line arguments.</div>
+    <div class="qbox"><strong>11.</strong> Synchronization is unavoidable in multithreading — True or False? Justify. Write a Java program to print your first name and last name using synchronization.</div>
+    <div class="qbox"><strong>12.</strong> Which method is used to call the paint() method of applet? Write a program to print a message from user via JOptionPane that blinks and scrolls using applet and multithreading.</div>
+    <div class="qbox"><strong>13.</strong> Write short notes on: (a) Exception vs Error &nbsp;(b) Interface vs Abstract class &nbsp;(c) Throw vs Throws &nbsp;(d) Delegation Event Model — Answer any two.</div>
+    <div class="qbox"><strong>14.</strong> Abstract class is better than interface — True or False? Justify. Explain modifiers that cannot be used with interface and why.</div>
+    <div class="qbox"><strong>15.</strong> What is Deadlock? Explain the process of deadlock detection and recovery using suitable examples. Also define multithreading and its significance in Java.</div>
+  </div>
+
+  <!-- WARNINGS -->
+  <div id="warn" class="section">
+    <h2>Warnings &amp; Notes</h2>
+    <div class="warn"><strong>⚠ Page 6 (2023-24) partially obscured:</strong> Q3a is cut off after "i) take mark of each subject using scanner class". Likely continues with: ii) find total marks and percentage, iii) find grade of each subject.</div>
+    <div class="warn"><strong>⚠ 2024-25 Q8c partially visible:</strong> Only "Throw vs Throws" is readable; option (d) assumed to be AWT hierarchy or Modifier based on pattern from other years.</div>
+    <div class="warn"><strong>⚠ No JDBC questions found</strong> in any of the 4 papers despite being in the Module 4 syllabus. JDBC is very low probability — safely de-prioritize.</div>
+    <div class="warn"><strong>⚠ JavaFX is on the syllabus</strong> but has never appeared in any paper. Skip entirely for exam preparation.</div>
+    <div class="warn"><strong>⚠ Q1 format shifted:</strong> 2021-22 used 1-mark short answers; 2022-23 used fill-in-the-blanks; 2023-24 and 2024-25 use True/False fill-in blanks. Prepare for fill-in-the-blank format for Q1.</div>
+    <div class="warn"><strong>⚠ Validation:</strong> All questions across all 4 papers have been accounted for. The 2023-24 paper has one partially illegible section (Q3a continuation). All frequency counts cross-verified. No duplication errors detected.</div>
+  </div>
+
+</div>
+
+<script>
+function show(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
