@@ -40,7 +40,7 @@ const OutlineSection = ({ note, onHeadingClick }) => {
                 style={{
                   display: 'block', width: '100%', border: 'none',
                   padding: `3px 14px 3px ${isActive ? indent - 2 : indent}px`,
-                  textAlign: 'left', cursor: 'pointer', fontSize: 12.5,
+                  textAlign: 'left', cursor: 'pointer', fontSize: 14,
                   borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
                   background: isActive ? 'var(--bg-active)' : 'none',
                   color: isActive
@@ -96,7 +96,7 @@ const NoteCard = ({ noteId, onNavigate, showExcerpt = false }) => {
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: 5, marginBottom: showExcerpt ? 3 : 0 }}>
         <Icon name="file" size={11} strokeWidth={1.5} style={{ color: 'var(--text-muted)', flexShrink: 0 }} />
-        <span style={{ fontSize: 12.5, color: 'var(--text-secondary)', fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+        <span style={{ fontSize: 14, color: 'var(--text-secondary)', fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
           {note.title}
         </span>
       </div>
@@ -312,7 +312,7 @@ const RightPanel = ({ open, currentNote, onNoteNavigate, onClose }) => {
 
   return (
     <div style={{
-      width: open ? 260 : 0,
+      width: open ? 325 : 0,
       flexShrink: 0,
       overflow: 'hidden',
       transition: 'width 0.22s cubic-bezier(0.4,0,0.2,1)',
@@ -320,7 +320,7 @@ const RightPanel = ({ open, currentNote, onNoteNavigate, onClose }) => {
       borderLeft: '1px solid var(--border)',
       display: 'flex', flexDirection: 'column',
     }}>
-      <div style={{ width: 260, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
+      <div style={{ width: 325, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
         <RightPanelHeader note={note} onClose={onClose} />
         <div style={{ flex: 1, overflowY: 'auto' }} className="scrollable">
           <OutlineSection note={note} onHeadingClick={handleHeadingClick} />

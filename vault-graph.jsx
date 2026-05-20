@@ -289,7 +289,7 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
         onMouseLeave={onMouseLeave}
         onWheel={onWheel}
         style={{
-          width: '100%', height: 138, display: 'block',
+          width: '100%', height: 173, display: 'block',
           borderRadius: 6, border: '1px solid var(--border)',
           background: 'var(--bg-graph)',
           cursor: dragging ? 'grabbing' : hovId && window.VAULT_NOTES?.[hovId] ? 'pointer' : 'grab',

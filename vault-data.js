@@ -58109,3 +58109,9 @@ const GRAPH_EDGES = [
     "target": "the-next-chapter"
   }
 ];
+
+// Expose to window so JSX components can access via window.*
+window.VAULT_NOTES   = VAULT_NOTES;
+window.VAULT_FOLDERS = VAULT_FOLDERS;
+window.GRAPH_NODES   = GRAPH_NODES;
+window.GRAPH_EDGES   = GRAPH_EDGES;

@@ -186,7 +186,7 @@ const App = () => {
   const [cmdQuery,    setCmdQuery]    = useState('');
   const [openTabs,    setOpenTabs]    = usePersisted('vault-tabs',  ['index']);
   const [readingWidth,setReadingWidth]= usePersisted('vault-rw',    'normal');
-  const [fontSize,    setFontSize]    = usePersisted('vault-fs',    15);
+  const [fontSize,    setFontSize]    = usePersisted('vault-fs',    17);
   const [expandedFolders, setExpandedFolders] = usePersisted('vault-expanded', ['notes']);
 
   const nav = useNavHistory(

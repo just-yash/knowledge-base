@@ -13,7 +13,7 @@ const RailButton = ({ id, icon, title, active, onClick, themeIcon }) => (
     title={title}
     onClick={() => onClick(id)}
     style={{
-      width: 34, height: 34, display: 'flex', alignItems: 'center',
+      width: 42, height: 42, display: 'flex', alignItems: 'center',
       justifyContent: 'center', background: active ? 'var(--bg-active)' : 'none',
       border: 'none', borderRadius: 6, cursor: 'pointer',
       color: active ? 'var(--accent)' : 'var(--text-muted)',
@@ -28,7 +28,7 @@ const RailButton = ({ id, icon, title, active, onClick, themeIcon }) => (
 
 const IconRail = ({ activeSection, onSectionClick, theme, onThemeToggle }) => (
   <div style={{
-    width: 38, flexShrink: 0,
+    width: 48, flexShrink: 0,
     background: 'var(--bg-rail)',
     borderRight: '1px solid var(--border)',
     display: 'flex', flexDirection: 'column',
@@ -83,7 +83,7 @@ const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, cu
           width: '100%', background: 'none', border: 'none',
           padding: `3px 8px 3px ${indent}px`,
           cursor: 'pointer', borderRadius: 4,
-          color: 'var(--text-secondary)', fontSize: 12.5,
+          color: 'var(--text-secondary)', fontSize: 14,
           transition: 'background 0.1s, color 0.1s',
           textAlign: 'left', userSelect: 'none',
         }}
@@ -139,7 +139,7 @@ const FileRow = ({ item, depth, isActive, onSelect }) => {
         padding: `3px 8px 3px ${indent}px`,
         cursor: isStub ? 'default' : 'pointer',
         borderRadius: 4, textAlign: 'left', userSelect: 'none',
-        fontSize: 12.5, transition: 'background 0.1s, color 0.1s',
+        fontSize: 14, transition: 'background 0.1s, color 0.1s',
         borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
         background: isActive ? 'var(--bg-active)' : 'none',
         color: isActive ? 'var(--text-primary)' : isStub ? 'var(--text-muted)' : 'var(--text-secondary)',
@@ -190,7 +190,7 @@ const SidebarHeader = ({ onExpandAll, onCollapseAll, onSearch, onHome }) => (
         { icon: 'minimize', title: 'Collapse all', action: onCollapseAll },
       ].map(({ icon, title, action }) => (
         <button key={icon} title={title} onClick={action} style={{
-          width: 22, height: 22, display: 'flex', alignItems: 'center', justifyContent: 'center',
+          width: 27, height: 27, display: 'flex', alignItems: 'center', justifyContent: 'center',
           background: 'none', border: 'none', borderRadius: 4, cursor: 'pointer',
           color: 'var(--text-muted)', transition: 'color 0.12s, background 0.12s', flexShrink: 0,
         }}
@@ -210,7 +210,7 @@ const MiniGraphPlaceholder = ({ onOpenGraph }) => (
     onClick={onOpenGraph}
     style={{
       margin: '8px 8px 6px',
-      height: 130,
+      height: 163,
       background: 'var(--bg-graph)',
       borderRadius: 6,
       border: '1px solid var(--border)',
@@ -314,14 +314,14 @@ const LeftSidebar = ({
 }) => (
   <div style={{ display: 'flex', flexShrink: 0, height: '100%', overflow: 'hidden' }}>
     <div style={{
-      width: open ? 240 : 0,
+      width: open ? 300 : 0,
       flexShrink: 0, overflow: 'hidden',
       transition: 'width 0.22s cubic-bezier(0.4,0,0.2,1)',
       background: 'var(--bg-sidebar)',
       borderRight: '1px solid var(--border)',
       display: 'flex', flexDirection: 'column',
     }}>
-      <div style={{ width: 240, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
+      <div style={{ width: 300, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
         <SidebarHeader
           onExpandAll={onExpandAll}
           onCollapseAll={onCollapseAll}
