@@ -114,7 +114,7 @@ Type : #Note
 
 ### 2.4 Full Index
 
-- [[Data Structures & Algorithms]] — Master index for this domain
+- [[DSA]] — Master index for this domain
 
 ---
 
@@ -279,39 +279,4 @@ Type : #Note
 
 ---
 
-## ⚡ Quick Reference Links
-
-| Topic              | Jump To                                                |
-| ------------------ | ------------------------------------------------------ |
-| C Operators        | [[Operators.c]]                                        |
-| Boolean Laws       | [[Primary Logical Operators Across Different Domains]] |
-| K-Map Rules        | [[K-Map]]                                              |
-| ACID Properties    | [[Transactions and Concurrency Control]]               |
-| Hacking Stages     | [[Stages of Hacking]]                                  |
-| Array Formulas     | [[Array]]                                              |
-| Sorting Comparison | [[Sorting]]                                            |
-| Demand Laws        | [[Law Of Demand]]                                      |
-| Matrix Types       | [[03 - Notes/Matrix]]                                             |
-
----
-
 _Last updated: 25th March 2026 · Built for deep, sequential learning._
-
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

@@ -31,8 +31,6 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
 ## Business and Finance
 
 - [[MOC - Finance]] — economics, demand/supply, personal finance, compounding
-- [[MOC - Startup Thinking]] — skill monetisation, product ideas, founder frameworks
-- [[MOC - Zaffee Brand]] — Zaffee coffee brand: strategy, market, operations, GTM
 
 ---
 ## Personal and Creative
@@ -43,13 +41,12 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
 ---
 # Quick Navigation
 
-| Goal | Start Here |
-|---|---|
-| GATE prep | [[MOC - Engineering Mathematics]], [[MOC - Data Structures and Algorithms]], [[MOC - Digital Logic]] |
-| Research work | [[MOC - Computer Vision and Surveillance]] |
-| Build Zaffee | [[MOC - Zaffee Brand]], [[MOC - Finance]] |
-| Write code | [[MOC - Languages]], [[MOC - Data Structures and Algorithms]] |
-| Write creatively | [[MOC - Writing and Creativity]] |
-| Understand AI | [[MOC - AI and Machine Learning]] |
-| Security skills | [[MOC - Cybersecurity]] |
-| Improve this vault | [[MOC - Zettelkasten Method]] |
+| Goal               | Start Here                                                                                           |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| GATE prep          | [[MOC - Engineering Mathematics]], [[MOC - Data Structures and Algorithms]], [[MOC - Digital Logic]] |
+| Research work      | [[MOC - Computer Vision and Surveillance]]                                                           |
+| Write code         | [[MOC - Languages]], [[MOC - Data Structures and Algorithms]]                                        |
+| Write creatively   | [[MOC - Writing and Creativity]]                                                                     |
+| Understand AI      | [[MOC - AI and Machine Learning]]                                                                    |
+| Security skills    | [[MOC - Cybersecurity]]                                                                              |
+| Improve this vault | [[MOC - Zettelkasten Method]]                                                                        |

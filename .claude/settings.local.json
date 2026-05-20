@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(node build-vault.js)",
+      "Bash(node -e ' *)",
+      "Bash(git add *)",
+      "Bash(gh api *)",
+      "PowerShell(gh api repos/just-yash/knowledge-base/pages 2>&1)",
+      "Bash(node 'C:\\\\Users\\\\YASH\\\\Obsidian_Public_Vault\\\\build-vault.js')",
+      "Bash(grep -E \"\\\\.\\(png|jpg|jpeg|gif|svg|webp|html|pdf\\)$\")",
+      "Bash(grep -n \"marked\\\\|renderMarkdown\\\\|html\\\\|innerHTML\\\\|dangerously\\\\|content\\\\|!\\\\\\\\[\\\\\\\\[\" 'C:\\\\Users\\\\YASH\\\\Obsidian_Public_Vault\\\\vault-editor.jsx')"
+    ]
+  }
+}

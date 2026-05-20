@@ -10,16 +10,31 @@ const GROUP_COLORS = {
   raw:      '#d4a96a',  // amber
 };
 
+// ─── Default physics / display config ────────────────────────────────────────
+const DEFAULT_CFG = {
+  // display
+  arrows:             false,
+  textFadeThreshold:  3.5,
+  nodeSize:           1.0,
+  linkThickness:      1.0,
+  // forces
+  centerForce:  0.022,
+  repelForce:   1400,
+  linkForce:    0.07,
+  linkDistance: 90,
+};
+
 // ─── Force Graph Simulation ───────────────────────────────────────────────────
 class ForceGraph {
-  constructor(nodes, edges, width, height) {
-    this.width = width;
+  constructor(nodes, edges, width, height, cfg = {}) {
+    this.width  = width;
     this.height = height;
-    this.alpha = 1;
-    this.alphaDecay = 0.013;
-    this.velocityDecay = 0.55;  // more damping → less oscillation
+    this.alpha  = 1;
+    this.alphaDecay   = 0.013;
+    this.velocityDecay = 0.55;
+    // Mutable physics config — caller can update at runtime
+    this.cfg = { ...DEFAULT_CFG, ...cfg };
 
-    // Adjacency map for highlight lookups
     this.adjacency = new Map();
     nodes.forEach(n => this.adjacency.set(n.id, new Set()));
     edges.forEach(e => {
@@ -29,7 +44,6 @@ class ForceGraph {
 
     this.nodes = nodes.map(n => {
       const deg = this.adjacency.get(n.id)?.size || 0;
-      // Tighter initial placement so center gravity keeps them in frame
       const spread = Math.min(width, height) * 0.30;
       return {
         ...n,
@@ -51,19 +65,18 @@ class ForceGraph {
 
   tick() {
     if (this.alpha < 0.001) return false;
-    const { nodes, edges, width, height, alpha } = this;
+    const { nodes, edges, width, height, alpha, cfg } = this;
     const cx = width / 2, cy = height / 2;
     const n2 = nodes.length;
 
-    // Repulsion with cutoff — ignores pairs > 180px apart to avoid
-    // blowing up when many nodes are present
-    const K2 = 1400 / (n2 || 1);   // more repulsion so nodes spread further
+    const K2      = cfg.repelForce / (n2 || 1);
+    const cutoff2 = 280 * 280;
     for (let i = 0; i < n2; i++) {
       for (let j = i + 1; j < n2; j++) {
         const a = nodes[i], b = nodes[j];
         let dx = b.x - a.x, dy = b.y - a.y;
         const dist2 = dx * dx + dy * dy || 0.01;
-        if (dist2 > 280 * 280) continue;          // wider cutoff
+        if (dist2 > cutoff2) continue;
         const dist = Math.sqrt(dist2);
         const force = K2 / dist2 * alpha;
         const fx = force * dx / dist, fy = force * dy / dist;
@@ -72,29 +85,25 @@ class ForceGraph {
       }
     }
 
-    // Spring attraction along edges
-    const idealLen = 90;  // wider spacing between connected nodes
     for (const e of edges) {
       const dx = e.target.x - e.source.x;
       const dy = e.target.y - e.source.y;
       const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-      const force = ((dist - idealLen) / dist) * 0.07 * alpha;
+      const force = ((dist - cfg.linkDistance) / dist) * cfg.linkForce * alpha;
       e.source.vx += force * dx; e.source.vy += force * dy;
       e.target.vx -= force * dx; e.target.vy -= force * dy;
     }
 
-    // Centre gravity — keeps the cluster together, no wall clamping needed
     for (const n of nodes) {
-      n.vx += (cx - n.x) * 0.022 * alpha;
-      n.vy += (cy - n.y) * 0.022 * alpha;
+      n.vx += (cx - n.x) * cfg.centerForce * alpha;
+      n.vy += (cy - n.y) * cfg.centerForce * alpha;
     }
 
-    // Integrate — NO hard boundary clamp (that's what caused the rectangle)
     for (const n of nodes) {
       n.vx *= this.velocityDecay;
       n.vy *= this.velocityDecay;
-      n.x += n.vx;
-      n.y += n.vy;
+      n.x  += n.vx;
+      n.y  += n.vy;
     }
 
     this.alpha -= this.alphaDecay;
@@ -111,18 +120,32 @@ class ForceGraph {
   }
 }
 
+// ─── Arrow head helper ────────────────────────────────────────────────────────
+function drawArrowhead(ctx, sx, sy, tx, ty, targetR, size = 5) {
+  const angle = Math.atan2(ty - sy, tx - sx);
+  const ex = tx - targetR * Math.cos(angle);
+  const ey = ty - targetR * Math.sin(angle);
+  ctx.beginPath();
+  ctx.moveTo(ex, ey);
+  ctx.lineTo(ex - size * Math.cos(angle - Math.PI / 6), ey - size * Math.sin(angle - Math.PI / 6));
+  ctx.lineTo(ex - size * Math.cos(angle + Math.PI / 6), ey - size * Math.sin(angle + Math.PI / 6));
+  ctx.closePath();
+  ctx.fill();
+}
+
 // ─── Draw helpers ─────────────────────────────────────────────────────────────
-// showLabels: draw name tags for all nodes; labelAlpha: 0–1 fade-in by zoom level
-function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false, labelAlpha = 0) {
+// cfg: live display/physics config from settings panel
+function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false, labelAlpha = 0, cfg = {}) {
   ctx.clearRect(0, 0, W, H);
 
-  const hov = hovNode;
+  const hov        = hovNode;
+  const ns         = cfg.nodeSize       || 1.0;
+  const lt         = cfg.linkThickness  || 1.0;
   const highlighted = new Set();
   if (hov) {
     highlighted.add(hov.id);
     g.adjacency.get(hov.id)?.forEach(id => highlighted.add(id));
   }
-  // Also highlight neighbours of active note when nothing is hovered
   const activeNeighbours = new Set();
   if (!hov && activeId) {
     activeNeighbours.add(activeId);
@@ -135,23 +158,34 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
     const lit = hov
       ? highlighted.has(e.source.id) && highlighted.has(e.target.id)
       : isActiveEdge;
+
+    const edgeColor = lit
+      ? 'rgba(255,255,255,0.50)'
+      : dimUnlit ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.13)';
+    const lw = (lit ? 1.4 : 0.75) * lt;
+
     ctx.beginPath();
     ctx.moveTo(e.source.x, e.source.y);
     ctx.lineTo(e.target.x, e.target.y);
-    ctx.strokeStyle = lit
-      ? 'rgba(255,255,255,0.50)'
-      : dimUnlit ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.13)';
-    ctx.lineWidth = lit ? 1.4 : 0.75;
+    ctx.strokeStyle = edgeColor;
+    ctx.lineWidth   = lw;
     ctx.stroke();
+
+    // Arrowheads
+    if (cfg.arrows) {
+      const targetDispR = e.target.r * ns + (e.target.id === activeId ? 1.2 : e.target.id === hov?.id ? 0.8 : 0);
+      ctx.fillStyle = edgeColor;
+      drawArrowhead(ctx, e.source.x, e.source.y, e.target.x, e.target.y, targetDispR + 2, 5 * lt);
+    }
   }
 
   // Nodes
   for (const n of g.nodes) {
     const isActive = n.id === activeId;
-    const isHov = n.id === hov?.id;
-    const isLit = hov ? highlighted.has(n.id) : activeNeighbours.has(n.id);
-    const color = GROUP_COLORS[n.group] || 'rgba(255,255,255,0.65)';
-    const r = n.r + (isActive ? 1.2 : isHov ? 0.8 : 0);
+    const isHov    = n.id === hov?.id;
+    const isLit    = hov ? highlighted.has(n.id) : activeNeighbours.has(n.id);
+    const color    = GROUP_COLORS[n.group] || 'rgba(255,255,255,0.65)';
+    const r        = n.r * ns + (isActive ? 1.2 : isHov ? 0.8 : 0);
 
     // Glow ring for active/hovered
     if (isActive || isHov) {
@@ -165,8 +199,8 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
     ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
     const dim = (dimUnlit || (activeNeighbours.size > 0 && !hov)) && !isLit && !isActive;
     ctx.fillStyle = isActive ? '#ffffff'
-      : isHov ? '#fff'
-      : dim ? 'rgba(255,255,255,0.18)'
+      : isHov     ? '#fff'
+      : dim       ? 'rgba(255,255,255,0.18)'
       : color;
     ctx.globalAlpha = dim ? 0.30 : 1;
     ctx.fill();
@@ -184,18 +218,18 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
       if (a < 0.04) continue;
       ctx.globalAlpha = a;
       ctx.fillStyle = isActive ? '#ffffff' : 'rgba(210,215,225,1)';
-      ctx.fillText(n.label || n.id, n.x + n.r + 4, n.y + 3.5);
+      ctx.fillText(n.label || n.id, n.x + n.r * ns + 4, n.y + 3.5);
     }
     ctx.globalAlpha = 1;
   }
 
-  // Hovered node label — prominent pill
+  // Hovered node label — prominent pill (always visible)
   if (hov) {
     const label = hov.label || hov.id;
     ctx.font = 'bold 11px "IBM Plex Sans", sans-serif';
     const tw = ctx.measureText(label).width;
     const lx = Math.min(W - tw - 14, Math.max(4, hov.x - tw / 2));
-    const ly = hov.y - hov.r - 9;
+    const ly = hov.y - hov.r * ns - 9;
     ctx.globalAlpha = 0.95;
     ctx.fillStyle = 'rgba(14,15,18,0.92)';
     ctx.beginPath();
@@ -206,6 +240,205 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
     ctx.globalAlpha = 1;
   }
 }
+
+// ─── Settings Panel ───────────────────────────────────────────────────────────
+const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
+  const [displayOpen, setDisplayOpen] = useState(true);
+  const [forcesOpen,  setForcesOpen]  = useState(true);
+  const [panelOpen,   setPanelOpen]   = useState(true);
+
+  // Section header button (collapsible)
+  const SectionBtn = ({ label, isOpen, onToggle }) => (
+    <button
+      onClick={onToggle}
+      style={{
+        display: 'flex', alignItems: 'center', gap: 6, width: '100%',
+        background: 'none', border: 'none', cursor: 'pointer',
+        padding: '6px 12px 4px', textAlign: 'left',
+        color: 'rgba(180,182,187,0.7)', fontSize: 10.5,
+        fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.07em',
+        transition: 'color 0.12s',
+      }}
+      onMouseEnter={e => e.currentTarget.style.color = 'rgba(220,222,226,0.9)'}
+      onMouseLeave={e => e.currentTarget.style.color = 'rgba(180,182,187,0.7)'}
+    >
+      <svg width="8" height="8" viewBox="0 0 8 8" style={{
+        transform: isOpen ? 'rotate(90deg)' : 'none',
+        transition: 'transform 0.15s',
+        flexShrink: 0, color: 'inherit',
+      }}>
+        <path d="M2 1l4 3-4 3" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+      {label}
+    </button>
+  );
+
+  // Slider row
+  const SliderRow = ({ label, field, min, max, step, display }) => (
+    <div style={{ marginBottom: 9 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 3 }}>
+        <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>{label}</span>
+        <span style={{
+          fontSize: 10.5, color: 'var(--text-secondary)',
+          fontVariantNumeric: 'tabular-nums', minWidth: 32, textAlign: 'right',
+        }}>
+          {display ? display(cfg[field]) : cfg[field]}
+        </span>
+      </div>
+      <input
+        type="range" min={min} max={max} step={step}
+        value={cfg[field]}
+        onChange={e => onChange({ [field]: parseFloat(e.target.value) })}
+        style={{
+          width: '100%', cursor: 'pointer',
+          accentColor: 'var(--accent)',
+          appearance: 'auto', height: 2,
+        }}
+      />
+    </div>
+  );
+
+  // Collapsed state — show small icon button
+  if (!panelOpen) {
+    return (
+      <button
+        onClick={() => setPanelOpen(true)}
+        title="Graph settings"
+        style={{
+          position: 'absolute', bottom: 12, left: 12,
+          background: 'rgba(14,15,18,0.85)', backdropFilter: 'blur(6px)',
+          border: '1px solid rgba(255,255,255,0.13)', borderRadius: 6,
+          width: 30, height: 30,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          cursor: 'pointer', color: 'var(--text-muted)',
+          transition: 'color 0.15s, border-color 0.15s',
+        }}
+        onMouseEnter={e => { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)'; }}
+        onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-muted)';   e.currentTarget.style.borderColor = 'rgba(255,255,255,0.13)'; }}
+      >
+        <Icon name="sliders" size={14} strokeWidth={1.6} />
+      </button>
+    );
+  }
+
+  // Full panel
+  return (
+    <div style={{
+      position: 'absolute', bottom: 12, left: 12,
+      background: 'rgba(12,13,16,0.93)', backdropFilter: 'blur(10px)',
+      border: '1px solid rgba(255,255,255,0.11)', borderRadius: 8,
+      width: 212, overflow: 'hidden',
+      boxShadow: '0 6px 28px rgba(0,0,0,0.55)',
+      zIndex: 10,
+    }}>
+      {/* Panel header */}
+      <div style={{
+        display: 'flex', alignItems: 'center',
+        padding: '8px 12px 7px',
+        borderBottom: '1px solid rgba(255,255,255,0.07)',
+      }}>
+        <Icon name="sliders" size={12} strokeWidth={1.8} style={{ color: 'var(--text-muted)', marginRight: 6 }} />
+        <span style={{ fontSize: 12, fontWeight: 600, color: 'var(--text-primary)', flex: 1 }}>
+          Graph settings
+        </span>
+        <button
+          onClick={() => setPanelOpen(false)}
+          style={{
+            background: 'none', border: 'none', cursor: 'pointer',
+            color: 'var(--text-muted)', padding: 2, borderRadius: 3,
+            display: 'flex', transition: 'color 0.12s',
+          }}
+          onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
+          onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
+        >
+          <Icon name="x" size={12} strokeWidth={2} />
+        </button>
+      </div>
+
+      {/* ── Display section ── */}
+      <div style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+        <SectionBtn label="Display" isOpen={displayOpen} onToggle={() => setDisplayOpen(o => !o)} />
+        {displayOpen && (
+          <div style={{ padding: '4px 12px 10px' }}>
+            {/* Arrows toggle */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
+              <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>Arrows</span>
+              <label style={{
+                position: 'relative', display: 'inline-block',
+                width: 30, height: 16, cursor: 'pointer', flexShrink: 0,
+              }}>
+                <input
+                  type="checkbox"
+                  checked={cfg.arrows}
+                  onChange={e => onChange({ arrows: e.target.checked })}
+                  style={{ opacity: 0, width: 0, height: 0, position: 'absolute' }}
+                />
+                {/* Track */}
+                <span style={{
+                  position: 'absolute', inset: 0, borderRadius: 10,
+                  background: cfg.arrows ? 'var(--accent)' : 'rgba(255,255,255,0.15)',
+                  transition: 'background 0.2s',
+                }} />
+                {/* Thumb */}
+                <span style={{
+                  position: 'absolute', top: 2.5,
+                  left: cfg.arrows ? 15 : 3,
+                  width: 11, height: 11, borderRadius: '50%',
+                  background: '#fff',
+                  transition: 'left 0.18s',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.4)',
+                }} />
+              </label>
+            </div>
+
+            <SliderRow label="Text fade threshold" field="textFadeThreshold"
+              min={0} max={8} step={0.1} display={v => v.toFixed(1)} />
+            <SliderRow label="Node size" field="nodeSize"
+              min={0.5} max={3} step={0.05} display={v => v.toFixed(2)} />
+            <SliderRow label="Link thickness" field="linkThickness"
+              min={0.5} max={3} step={0.05} display={v => v.toFixed(2)} />
+
+            {/* Animate button */}
+            <button
+              onClick={onAnimate}
+              style={{
+                marginTop: 4, width: '100%', padding: '5px 0',
+                background: 'rgba(107,141,214,0.13)',
+                border: '1px solid rgba(107,141,214,0.32)',
+                borderRadius: 5, fontSize: 11,
+                color: '#7fa0e0', fontWeight: 500,
+                cursor: 'pointer', transition: 'background 0.15s',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5,
+              }}
+              onMouseEnter={e => e.currentTarget.style.background = 'rgba(107,141,214,0.24)'}
+              onMouseLeave={e => e.currentTarget.style.background = 'rgba(107,141,214,0.13)'}
+            >
+              <Icon name="zap" size={11} strokeWidth={2} />
+              Animate
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* ── Forces section ── */}
+      <div>
+        <SectionBtn label="Forces" isOpen={forcesOpen} onToggle={() => setForcesOpen(o => !o)} />
+        {forcesOpen && (
+          <div style={{ padding: '4px 12px 12px' }}>
+            <SliderRow label="Center force" field="centerForce"
+              min={0.001} max={0.12} step={0.001} display={v => v.toFixed(3)} />
+            <SliderRow label="Repel force" field="repelForce"
+              min={100} max={3000} step={25} display={v => Math.round(v)} />
+            <SliderRow label="Link force" field="linkForce"
+              min={0.005} max={0.35} step={0.005} display={v => v.toFixed(3)} />
+            <SliderRow label="Link distance" field="linkDistance"
+              min={20} max={300} step={5} display={v => Math.round(v)} />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
 // ─── Mini Graph (in sidebar) — pan + zoom + node-drag + click-to-navigate ─────
 const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
@@ -239,7 +472,6 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
     const loop = () => {
       const g = graphRef.current;
       if (!g) return;
-      // Pin dragged node
       if (dragNodeRef.current) {
         dragNodeRef.current.vx = 0;
         dragNodeRef.current.vy = 0;
@@ -254,7 +486,7 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
       ctx.translate(W / 2 + px, H / 2 + py);
       ctx.scale(zoom, zoom);
       ctx.translate(-W / 2, -H / 2);
-      drawGraph(ctx, g, W, H, activeRef.current, hovRef.current, false, false, 0);
+      drawGraph(ctx, g, W, H, activeRef.current, hovRef.current, false, false, 0, DEFAULT_CFG);
       ctx.restore();
 
       rafRef.current = requestAnimationFrame(loop);
@@ -383,10 +615,39 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
   const activeRef    = useRef(currentNote);
   const panRef       = useRef({ x: 0, y: 0, dragging: false, lx: 0, ly: 0, moved: false });
   const zoomRef      = useRef(1);
-  const [hovId, setHovId]   = useState(null);
-  const [cursor, setCursor] = useState('grab');
+  // cfg ref for use inside RAF loop (avoids stale closure)
+  const cfgRef       = useRef({ ...DEFAULT_CFG });
+
+  const [hovId,    setHovId]    = useState(null);
+  const [cursor,   setCursor]   = useState('grab');
+  // State copy drives settings panel re-render
+  const [graphCfg, setGraphCfg] = useState({ ...DEFAULT_CFG });
 
   useEffect(() => { activeRef.current = currentNote; }, [currentNote]);
+
+  // Update both ref + state; push to simulation
+  const updateCfg = useCallback((updates) => {
+    const next = { ...cfgRef.current, ...updates };
+    cfgRef.current = next;
+    setGraphCfg({ ...next });
+    if (graphRef.current) {
+      graphRef.current.cfg = next;
+      // Auto-reheat on force changes so effect is visible immediately
+      const forceKeys = ['centerForce', 'repelForce', 'linkForce', 'linkDistance'];
+      const touchedForce = forceKeys.some(k => k in updates);
+      if (touchedForce && graphRef.current.alpha < 0.15) {
+        graphRef.current.alpha = 0.35;
+      }
+    }
+  }, []);
+
+  // Animate button: fully reheat simulation
+  const handleAnimate = useCallback(() => {
+    if (graphRef.current) {
+      graphRef.current.alpha = 1;
+      graphRef.current.alphaDecay = 0.013;
+    }
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -397,7 +658,7 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
     canvas.height = canvas.offsetHeight * dpr;
 
     const W = canvas.offsetWidth, H = canvas.offsetHeight;
-    graphRef.current = new ForceGraph([...GRAPH_NODES], [...GRAPH_EDGES], W, H);
+    graphRef.current = new ForceGraph([...GRAPH_NODES], [...GRAPH_EDGES], W, H, cfgRef.current);
     const ctx = canvas.getContext('2d');
 
     const loop = () => {
@@ -409,20 +670,24 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
         if (g.alpha < 0.3) g.alpha = 0.3;
       }
       g.tick();
-      const W = canvas.offsetWidth, H = canvas.offsetHeight;
+      const cW = canvas.offsetWidth, cH = canvas.offsetHeight;
       const zoom = zoomRef.current;
-      // Labels only appear when zoomed in very far (>3.5×) — fades in over 3.5→5
-      const labelAlpha = Math.min(1, Math.max(0, (zoom - 3.5) / 1.5));
+      const cfg  = cfgRef.current;
+
+      // Label fade: threshold 0 → always show; else fade in above threshold zoom
+      const labelAlpha = cfg.textFadeThreshold <= 0
+        ? 1
+        : Math.min(1, Math.max(0, (zoom - cfg.textFadeThreshold) / 1.5));
 
       ctx.save();
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.scale(dpr, dpr);
       const { x: px, y: py } = panRef.current;
-      ctx.translate(W / 2 + px, H / 2 + py);
+      ctx.translate(cW / 2 + px, cH / 2 + py);
       ctx.scale(zoom, zoom);
-      ctx.translate(-W / 2, -H / 2);
+      ctx.translate(-cW / 2, -cH / 2);
 
-      drawGraph(ctx, g, W, H, activeRef.current, hovRef.current, !!hovRef.current, true, labelAlpha);
+      drawGraph(ctx, g, cW, cH, activeRef.current, hovRef.current, !!hovRef.current, true, labelAlpha, cfg);
 
       ctx.restore();
       rafRef.current = requestAnimationFrame(loop);
@@ -557,25 +822,34 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
           </button>
         </div>
 
-        {/* Canvas */}
-        <canvas
-          ref={canvasRef}
-          onMouseMove={onMouseMove}
-          onMouseDown={onMouseDown}
-          onMouseUp={onMouseUp}
-          onMouseLeave={() => {
-            hovRef.current = null; setHovId(null);
-            if (dragNodeRef.current) { dragNodeRef.current.vx = 0; dragNodeRef.current.vy = 0; dragNodeRef.current = null; }
-            panRef.current.dragging = false;
-            setCursor('grab');
-          }}
-          onWheel={onWheel}
-          style={{
-            flex: 1, width: '100%', display: 'block',
-            background: 'var(--bg-graph)',
-            cursor,
-          }}
-        />
+        {/* Canvas area — position:relative so settings panel anchors inside it */}
+        <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
+          <canvas
+            ref={canvasRef}
+            onMouseMove={onMouseMove}
+            onMouseDown={onMouseDown}
+            onMouseUp={onMouseUp}
+            onMouseLeave={() => {
+              hovRef.current = null; setHovId(null);
+              if (dragNodeRef.current) { dragNodeRef.current.vx = 0; dragNodeRef.current.vy = 0; dragNodeRef.current = null; }
+              panRef.current.dragging = false;
+              setCursor('grab');
+            }}
+            onWheel={onWheel}
+            style={{
+              width: '100%', height: '100%', display: 'block',
+              background: 'var(--bg-graph)',
+              cursor,
+            }}
+          />
+
+          {/* Settings panel — floats over canvas bottom-left */}
+          <GraphSettingsPanel
+            cfg={graphCfg}
+            onChange={updateCfg}
+            onAnimate={handleAnimate}
+          />
+        </div>
 
         {/* Footer */}
         <div style={{
@@ -589,7 +863,11 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
               {VAULT_NOTES[hovId].title}
             </span>
           )}
-          <span style={{ marginLeft: 'auto' }}>Active: <strong style={{ color: 'var(--text-secondary)' }}>{currentNote ? (VAULT_NOTES[currentNote]?.title || currentNote) : '—'}</strong></span>
+          <span style={{ marginLeft: 'auto' }}>
+            Active: <strong style={{ color: 'var(--text-secondary)' }}>
+              {currentNote ? (VAULT_NOTES[currentNote]?.title || currentNote) : '—'}
+            </strong>
+          </span>
         </div>
       </div>
     </div>
