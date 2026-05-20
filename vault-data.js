@@ -9,9 +9,9 @@ const VAULT_NOTES = {
     tags: ["moc"],
     created: "2026-05-11",
     modified: "2026-05-11",
-    wordCount: 361,
+    wordCount: 328,
     backlinks: ["zettelkasten"],
-    links: ["moc-ai-and-machine-learning","moc-computer-vision-and-surveillance","moc-cybersecurity","moc-data-structures-and-algorithms","moc-database-systems","moc-digital-logic","moc-engineering-mathematics","moc-languages","moc-logic-and-philosophy","moc-operating-systems","moc-finance","moc-startup-thinking","moc-zaffee-brand","moc-writing-and-creativity","moc-zettelkasten-method"],
+    links: ["moc-ai-and-machine-learning","moc-computer-vision-and-surveillance","moc-cybersecurity","moc-data-structures-and-algorithms","moc-database-systems","moc-digital-logic","moc-engineering-mathematics","moc-languages","moc-logic-and-philosophy","moc-operating-systems","moc-finance","moc-writing-and-creativity","moc-zettelkasten-method"],
     outline: [{"level":2,"text":"Computer Science and Engineering","id":"computer-science-and-engineering"},{"level":2,"text":"Research","id":"research"},{"level":2,"text":"Business and Finance","id":"business-and-finance"},{"level":2,"text":"Personal and Creative","id":"personal-and-creative"}],
     content: `# Vault Index — All Maps of Content
 
@@ -40,8 +40,6 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
 ## Business and Finance
 
 - [[MOC - Finance]] — economics, demand/supply, personal finance, compounding
-- [[MOC - Startup Thinking]] — skill monetisation, product ideas, founder frameworks
-- [[MOC - Zaffee Brand]] — Zaffee coffee brand: strategy, market, operations, GTM
 
 ---
 ## Personal and Creative
@@ -52,16 +50,15 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
 ---
 # Quick Navigation
 
-| Goal | Start Here |
-|---|---|
-| GATE prep | [[MOC - Engineering Mathematics]], [[MOC - Data Structures and Algorithms]], [[MOC - Digital Logic]] |
-| Research work | [[MOC - Computer Vision and Surveillance]] |
-| Build Zaffee | [[MOC - Zaffee Brand]], [[MOC - Finance]] |
-| Write code | [[MOC - Languages]], [[MOC - Data Structures and Algorithms]] |
-| Write creatively | [[MOC - Writing and Creativity]] |
-| Understand AI | [[MOC - AI and Machine Learning]] |
-| Security skills | [[MOC - Cybersecurity]] |
-| Improve this vault | [[MOC - Zettelkasten Method]] |`
+| Goal               | Start Here                                                                                           |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| GATE prep          | [[MOC - Engineering Mathematics]], [[MOC - Data Structures and Algorithms]], [[MOC - Digital Logic]] |
+| Research work      | [[MOC - Computer Vision and Surveillance]]                                                           |
+| Write code         | [[MOC - Languages]], [[MOC - Data Structures and Algorithms]]                                        |
+| Write creatively   | [[MOC - Writing and Creativity]]                                                                     |
+| Understand AI      | [[MOC - AI and Machine Learning]]                                                                    |
+| Security skills    | [[MOC - Cybersecurity]]                                                                              |
+| Improve this vault | [[MOC - Zettelkasten Method]]                                                                        |`
   },
 
   'moc-ai-and-machine-learning': {
@@ -310,7 +307,7 @@ Mastering cybersecurity enables penetration testing as a monetisable skill, stre
     modified: "2026-05-11",
     wordCount: 438,
     backlinks: ["index"],
-    links: ["data-structures-basics","algorithm-basics","array","linked-list","stack","binary-tree","binary-tree-traversal","complete-binary-tree","binary-search-tree","avl-tree","heap-tree","treedsa","recursion","sorting","bubble-sort","insertion-sort","merge-sort","dsa","gate","c","graph","maths","sort"],
+    links: ["data-structures-basics","algorithm-basics","array","linked-list","stack","binary-tree","binary-tree-traversal","complete-binary-tree","binary-search-tree","avl-tree","heap-tree","treedsa","recursion","sorting","bubble-sort","selection-sort","insertion-sort","merge-sort","dsa","gate","c","graph","maths","sort"],
     outline: [{"level":3,"text":"Overview","id":"overview"},{"level":3,"text":"Linear Structures","id":"linear-structures"},{"level":3,"text":"Trees","id":"trees"},{"level":3,"text":"Sorting Algorithms","id":"sorting-algorithms"}],
     content: `# Purpose 
 
@@ -678,8 +675,8 @@ Mastering engineering maths enables GATE cracking, provides the mathematical gro
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 414,
-    backlinks: ["index","moc-startup-thinking","moc-zaffee-brand"],
-    links: ["economics","basic-problems-of-an-economy","demand","law-of-demand","demand-function","elasticity-of-demand","supply","law-of-supply","supply-function","elasticity-of-supply","fpya","health-insurances","rate-of-interest","magic-of-compounding","finance","financial-planning","compounding","health-insurance","moc-zaffee-brand","moc-startup-thinking"],
+    backlinks: ["index","moc-startup-thinking"],
+    links: ["economics","basic-problems-of-an-economy","demand","law-of-demand","demand-function","elasticity-of-demand","supply","law-of-supply","supply-function","elasticity-of-supply","fpya","health-insurances","rate-of-interest","magic-of-compounding","finance","financial-planning","compounding","health-insurance","moc-startup-thinking"],
     outline: [{"level":3,"text":"Economics Foundations","id":"economics-foundations"},{"level":3,"text":"Demand","id":"demand"},{"level":3,"text":"Supply","id":"supply"},{"level":3,"text":"Personal Finance","id":"personal-finance"},{"level":3,"text":"Compounding","id":"compounding"}],
     content: `# Purpose 
 
@@ -1029,8 +1026,8 @@ Mastering operating systems is required for GATE, provides the conceptual model 
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 315,
-    backlinks: ["index","moc-finance","moc-zaffee-brand"],
-    links: ["business","ideas","finance","ai","moc-zaffee-brand","moc-finance","moc-ai-and-machine-learning"],
+    backlinks: ["moc-finance"],
+    links: ["business","ideas","finance","ai","moc-finance","moc-ai-and-machine-learning"],
     outline: [{"level":3,"text":"Skills and Wealth Building","id":"skills-and-wealth-building"},{"level":3,"text":"Product and Startup Ideas","id":"product-and-startup-ideas"}],
     content: `# Purpose 
 
@@ -1102,7 +1099,7 @@ Mastering startup thinking enables generating and validating ideas fast, identif
     modified: "2026-05-11",
     wordCount: 502,
     backlinks: ["index"],
-    links: ["fragments-of-a-fading-mind","poetry-index","a-desolated-guy","beyond-now","death","strength-in-solitude","the-weight-of-yesterday","cancer","human-paradox","modern-madness","system","shadows-of-adulthood","the-cursed-child","the-next-chapter","burnt-petals","his-story","my-best-friend","that-friend","poetry","moc-zaffee-brand"],
+    links: ["fragments-of-a-fading-mind","poetry-index","a-desolated-guy","beyond-now","death","strength-in-solitude","the-weight-of-yesterday","cancer","human-paradox","modern-madness","system","shadows-of-adulthood","the-cursed-child","the-next-chapter","burnt-petals","his-story","my-best-friend","that-friend","poetry"],
     outline: [{"level":3,"text":"Published Work","id":"published-work"},{"level":3,"text":"Isolation and Existence","id":"isolation-and-existence"},{"level":3,"text":"Society and Systems","id":"society-and-systems"},{"level":3,"text":"Identity and Growth","id":"identity-and-growth"},{"level":3,"text":"Relationships and Loss","id":"relationships-and-loss"}],
     content: `# Purpose 
 
@@ -1178,92 +1175,6 @@ Mastering this domain enables building a personal writing brand, producing more 
 - What is the through-line theme across all poems that could anchor the next book?
 - How do I use poetry and prose writing as a brand-building tool without it feeling performative?
 - What is the minimum output cadence — poems per month — that keeps writing as a compounding asset?
-
----
-# References 
-
--`
-  },
-
-  'moc-zaffee-brand': {
-    id: 'moc-zaffee-brand',
-    title: "MOC - Zaffee Brand",
-    folder: "01 - MOCs",
-    path: ["01 - MOCs","MOC - Zaffee Brand"],
-    tags: ["moc"],
-    created: "2026-05-11",
-    modified: "2026-05-11",
-    wordCount: 451,
-    backlinks: ["index","moc-finance","moc-startup-thinking","moc-writing-and-creativity"],
-    links: ["coffee","business","ideas","finance","india","bbsr","moc-startup-thinking","moc-finance"],
-    outline: [{"level":3,"text":"Market and Competitive Intelligence","id":"market-and-competitive-intelligence"},{"level":3,"text":"Brand Strategy and Positioning","id":"brand-strategy-and-positioning"},{"level":3,"text":"Operations and Financial Modelling","id":"operations-and-financial-modelling"},{"level":3,"text":"Go-To-Market and Sales","id":"go-to-market-and-sales"}],
-    content: `# Purpose 
-
-> Why does this MOC exist? 
-This MOC maps everything related to Zaffee — the premium single-origin coffee brand from Koraput — from market research and competitor analysis to brand strategy, financial modelling, and go-to-market execution.
-
-> What problem does it solve? 
-Zaffee research, strategy notes, financial models, and competitive intelligence were scattered across a single folder with no ordering from foundational context to execution steps.
-
-> What does mastering this domain enable?
-Mastering this domain enables launching Zaffee with clear positioning, correct unit economics, a funded roadmap, and a brand story that commands premium pricing in a competitive market.
-
----
-# Main Areas 
-
-- Market and Competitive Intelligence
-- Brand Strategy and Positioning
-- Operations and Financial Modelling
-- Go-To-Market and Sales
-
----
-# Study Flow 
-
-### Market and Competitive Intelligence
-- [[Coffee Fundamentals]] — what coffee is, how it is grown, processed, and graded; single-origin advantage
-- [[Indian Coffee Market - Competitor Breakdown]] — analysis of key competitors in the Indian specialty coffee market
-- [[Market Analysis]] — size, segments, trends, and opportunity in the Indian coffee market
-- [[Zaffee_Competitor_Analysis]] — comprehensive competitive intelligence across all major D2C coffee brands
-- [[Coffee Brand Analysis]] — brand positioning analysis across competitors
-
-### Brand Strategy and Positioning
-- [[Coffee Brand Strategy_BBSR]] — Zaffee brand strategy for the Bhubaneswar market
-- [[Coffee_Brand_Strategy_BBSR]] — detailed brand strategy document with positioning, pricing, and channels
-- [[PPT]] — Zaffee pitch deck content and narrative structure
-
-### Operations and Financial Modelling
-- [[Coffee Powder and Machinery]] — sourcing, processing equipment, and production requirements
-- [[Coffee Business RoadMap]] — phased roadmap from MVP to scale for the Zaffee brand
-- [[Minimum Revenue Required to Start Coffee Brand]] — break-even and minimum viable revenue analysis
-- [[Coffee_Minimum_Capital_BBSR]] — minimum capital requirement for Bhubaneswar launch
-- [[Sample Order]] — sample order structure, quantities, and pricing for initial customers
-
-### Go-To-Market and Sales
-- [[Coffee Brand Strategy_BBSR]] — channel strategy and first-customer acquisition plan
-
----
-# Related Tags 
-
-[[coffee]] ; [[business]] ; [[Ideas]] ; [[Finance]] ; [[India]] ; [[bbsr]]
-
----
-# Related Research 
-
--
-
----
-# Related Projects 
-
-- [[MOC - Startup Thinking]]
-- [[MOC - Finance]]
-
----
-# Open Questions
-> What do you still not understand in this domain? What would the next paper or project need to address?
-
-- What is the actual cost-per-bag at 50, 100, and 500 unit order volumes — does the unit economics work at each stage?
-- What is the correct positioning — premium gifting, specialty subscription, or B2B café supply — for first revenue in ≤30 days?
-- How do we build the Koraput origin story into marketing without it sounding like a CSR narrative?
 
 ---
 # References 
@@ -18158,7 +18069,7 @@ input          stored value         interpreted as
     modified: "2026-01-01",
     wordCount: 261,
     backlinks: ["moc-data-structures-and-algorithms","zettelkasten"],
-    links: ["merge-sort","bubble-sort"],
+    links: ["merge-sort","selection-sort","bubble-sort"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `## Core Idea 
 
@@ -33979,6 +33890,114 @@ This approach takes 2–3 days total and gives you a genuine, defensible underst
 # References`
   },
 
+  'selection-sort': {
+    id: 'selection-sort',
+    title: "Selection Sort",
+    folder: "03 - Notes",
+    path: ["03 - Notes","Selection Sort"],
+    tags: ["sort","dsa","note"],
+    created: "2025-12-23",
+    modified: "2025-12-23",
+    wordCount: 373,
+    backlinks: ["moc-data-structures-and-algorithms","insertion-sort","sorting","zettelkasten"],
+    links: ["sorting"],
+    outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Selection Sort(Analysis)","id":"selection-sortanalysis"}],
+    content: `## Core Idea 
+
+
+
+
+---
+## Explanation 
+
+
+
+
+---
+## Why It Matters 
+
+
+
+
+---
+# Selection Sort
+- Divides the input list into two part
+	- a sorted sub-list of items which is built up from left to right at the front(left) of the list.
+	- a unsorted sub-list of the remaining items that occupy the rest of the list.
+- Selection Sort sorts from the beginning.
+- Selection-based sort
+	- if there are n elements
+		- sub-lists 1 : 1 sorted ; n-1 unsorted 
+		- sub-lists 2 : 2 sorted ; n-2 unsorted
+		- 
+		- 
+		- 
+		- sub-lists n - 1 : n - 1 sorted ; 1 unsorted == n sorted ; 0 unsorted 
+![[Pasted image 20251223155433.png]]
+\`\`\`python
+l = list(map(int, input("Enter the list: ").split()))
+
+def selectionSort(a):
+    for i in range(len(a)):
+        loc = i
+        for j in range(i + 1, len(a)):
+            if a[loc] > a[j]:  
+                loc = j
+        a[i], a[loc] = a[loc], a[i]
+        
+selectionSort(l)
+print(l)
+\`\`\`
+
+> Time Complexity : O(n<sup>2</sup>)
+> 	internal for loop: O(n)
+> 	external for loop: O(n)
+> 	nested for loops: O((n<sup>2</sup>)
+
+### Selection Sort(Analysis)
+- Depends on Structure 
+- Internal sort Algorithm
+	- here we declared two other variables, but this doesn't change with the no. of elements. 
+- Unstable sort Algorithm
+- **Best** and **Worst** case Time Complexity = O(n<sup>2</sup>)
+- Algorithmic Approach: Selection-based sort
+
+---
+# Questions
+###### <span style="color:rgb(0, 176, 240)">Q1)</span> Which one of the following is the tightest upper bound that represents the number of swaps required to sort n numbers using selection sort? <span style="color:rgb(255, 192, 0)">(Gate-2013) (1 Marks)</span>
+
+or 
+###### What is the number of swaps required to sort n elements using selection sort, in the worst case? <span style="color:rgb(255, 192, 0)">(Gate-2009) (1 Marks)</span>
+###### A) O(log n)
+
+###### B) O(n)
+
+###### C) O(n log n)
+
+###### D) O(n<sup>2</sup>)
+
+<span style="color:rgb(0, 176, 240)">A1)</span>   <span style="color:rgb(146, 208, 80)">B) O(n)</span>
+The Q is not asking the time complexity.
+Its asking the no. of swaps required. 
+In selection sort for each iteration we do 1 swap in the worst case. Hence, in the worst case we will do n no. of swaps. 
+
+
+---
+# Summary 
+
+
+
+
+
+---
+# References 
+
+1. [[Sorting]]
+2. [Selection Sort - YouTube Lecture](https://youtu.be/aaHL0KygWqE?si=ha9NIwW-vtT-b37o&t=2154)
+3. [Algorithm Book](cormen-introduction-to-algorithms.pdf)
+4. [Algorithm Notes PDF - knowledgeGATE](Algorithm.pdf)`
+  },
+
   'sequence-and-series': {
     id: 'sequence-and-series',
     title: "Sequence and Series",
@@ -35055,8 +35074,8 @@ Eg : Operating System, Linker, Loader
     created: "2025-12-23",
     modified: "2025-12-23",
     wordCount: 189,
-    backlinks: ["moc-data-structures-and-algorithms","algorithm-basics","bubble-sort","face-matching","zettelkasten"],
-    links: ["bubble-sort","face-matching","algorithm-basics"],
+    backlinks: ["moc-data-structures-and-algorithms","algorithm-basics","bubble-sort","face-matching","selection-sort","zettelkasten"],
+    links: ["selection-sort","bubble-sort","face-matching","algorithm-basics"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `## Core Idea 
 
@@ -39746,11 +39765,11 @@ return 0;
     folder: "03 - Notes",
     path: ["03 - Notes","Zettelkasten"],
     tags: ["note"],
-    created: "2026-05-11",
-    modified: "2026-05-11",
-    wordCount: 1593,
+    created: "2026-05-20",
+    modified: "2026-05-20",
+    wordCount: 1487,
     backlinks: ["moc-zettelkasten-method"],
-    links: ["index","languages","language-translators","errors","operators","basicsc","tokensc","datatypesc","primary-datatypesc","type-conversionc","escape-sequencesc","input-outputconsolec","1st-c-program","operatorsc","control-structuresc","simple-ifc","if-elsec","nested-ifc","else-if-ladderc","switch-casec","whilec","do-whilec","forc","nestedloopc","breakc","continuec","char-functionsc","stringsc","pattern-questionsc","array","linked-list","stack","pointersc","python-basics","printpy","markdown-basic","data-structures-basics","treedm","algorithm-basics","sorting","bubble-sort","insertion-sort","merge-sort","digital-logic-basics","logic-gates","primary-logical-operators-across-different-domains","duality","complementation","normal-form-sop-and-pos","k-map","combinational-circuits","adder","matrix-qs","determinants","determinants-qs","rank-of-a-matrix","rank-of-a-matrix-qs","discrete-mathematics-introduction","logic-introduction","propositions","well-formed-formula","logical-operators","questions-on-minimization","arguments","predicate-logic","number-system","set-theory","relations","poset","graph-theory","dbms-basics","transactions-and-concurrency-control","linux-foundation","kali-linux-overview","ethical-hacking","setting-up-virtual-machine-or-lab","stages-of-hacking","networking-basics","generative-ai","large-language-model","ai-tools","coding-assistant","tools-with-claude-code","prompts","fpya","magic-of-compounding","health-insurances","rate-of-interest","economics","basic-problems-of-an-economy","demand","law-of-demand","demand-function","elasticity-of-demand","supply","supply-function","a-desolated-guy","fragments-of-a-fading-mind","the-weight-of-yesterday","shadows-of-adulthood","strength-in-solitude","system","beyond-now","burnt-petals","that-friend","my-best-friend","cancer","human-paradox","death","modern-madness","his-story","the-cursed-child","the-next-chapter","poetry-index"],
+    links: ["index","languages","language-translators","errors","operators","basicsc","tokensc","datatypesc","primary-datatypesc","type-conversionc","escape-sequencesc","input-outputconsolec","1st-c-program","operatorsc","control-structuresc","simple-ifc","if-elsec","nested-ifc","else-if-ladderc","switch-casec","whilec","do-whilec","forc","nestedloopc","breakc","continuec","char-functionsc","stringsc","pattern-questionsc","array","linked-list","stack","pointersc","python-basics","printpy","markdown-basic","data-structures-basics","treedm","algorithm-basics","sorting","bubble-sort","selection-sort","insertion-sort","merge-sort","dsa","digital-logic-basics","logic-gates","primary-logical-operators-across-different-domains","duality","complementation","normal-form-sop-and-pos","k-map","combinational-circuits","adder","matrix-qs","determinants","determinants-qs","rank-of-a-matrix","rank-of-a-matrix-qs","discrete-mathematics-introduction","logic-introduction","propositions","well-formed-formula","logical-operators","questions-on-minimization","arguments","predicate-logic","number-system","set-theory","relations","poset","graph-theory","dbms-basics","transactions-and-concurrency-control","linux-foundation","kali-linux-overview","ethical-hacking","setting-up-virtual-machine-or-lab","stages-of-hacking","networking-basics","generative-ai","large-language-model","ai-tools","coding-assistant","tools-with-claude-code","prompts","fpya","magic-of-compounding","health-insurances","rate-of-interest","economics","basic-problems-of-an-economy","demand","law-of-demand","demand-function","elasticity-of-demand","supply","supply-function","a-desolated-guy","fragments-of-a-fading-mind","the-weight-of-yesterday","shadows-of-adulthood","strength-in-solitude","system","beyond-now","burnt-petals","that-friend","my-best-friend","cancer","human-paradox","death","modern-madness","his-story","the-cursed-child","the-next-chapter","poetry-index"],
     outline: [{"level":2,"text":"0. Start Here","id":"0-start-here"},{"level":2,"text":"1. 💻 Programming Foundations","id":"1-programming-foundations"},{"level":3,"text":"1.1 Languages & Theory","id":"11-languages-theory"},{"level":3,"text":"1.2 C Programming","id":"12-c-programming"},{"level":3,"text":"1.3 Python","id":"13-python"},{"level":3,"text":"1.4 Markdown","id":"14-markdown"},{"level":2,"text":"2. 🧮 Data Structures & Algorithms","id":"2-data-structures-algorithms"},{"level":3,"text":"2.1 Foundations","id":"21-foundations"},{"level":3,"text":"2.2 Data Structures","id":"22-data-structures"},{"level":3,"text":"2.3 Algorithms","id":"23-algorithms"},{"level":3,"text":"2.4 Full Index","id":"24-full-index"},{"level":2,"text":"3. 🔢 Digital Logic Design (DLD)","id":"3-digital-logic-design-dld"}],
     content: `## 0. Start Here
 
@@ -39861,7 +39880,7 @@ return 0;
 
 ### 2.4 Full Index
 
-- [[Data Structures & Algorithms]] — Master index for this domain
+- [[DSA]] — Master index for this domain
 
 ---
 
@@ -40026,42 +40045,7 @@ return 0;
 
 ---
 
-## ⚡ Quick Reference Links
-
-| Topic              | Jump To                                                |
-| ------------------ | ------------------------------------------------------ |
-| C Operators        | [[Operators.c]]                                        |
-| Boolean Laws       | [[Primary Logical Operators Across Different Domains]] |
-| K-Map Rules        | [[K-Map]]                                              |
-| ACID Properties    | [[Transactions and Concurrency Control]]               |
-| Hacking Stages     | [[Stages of Hacking]]                                  |
-| Array Formulas     | [[Array]]                                              |
-| Sorting Comparison | [[Sorting]]                                            |
-| Demand Laws        | [[Law Of Demand]]                                      |
-| Matrix Types       | [[03 - Notes/Matrix]]                                             |
-
----
-
-_Last updated: 25th March 2026 · Built for deep, sequential learning._
-
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References`
+_Last updated: 25th March 2026 · Built for deep, sequential learning._`
   },
 
   'advanced-facial-recognition-in-crowds-multi-camera-threat-detection-blueprint': {
@@ -56922,7 +56906,7 @@ Loop repeats
     created: "2026-04-11",
     modified: "2026-04-11",
     wordCount: 0,
-    backlinks: ["moc-zaffee-brand"],
+    backlinks: [],
     links: [],
     outline: [],
     content: ``
@@ -56937,7 +56921,7 @@ Loop repeats
     created: "2026-04-11",
     modified: "2026-04-11",
     wordCount: 0,
-    backlinks: ["moc-startup-thinking","moc-zaffee-brand"],
+    backlinks: ["moc-startup-thinking"],
     links: [],
     outline: [],
     content: ``
@@ -57034,7 +57018,7 @@ Loop repeats
     created: "2026-03-16",
     modified: "2026-03-16",
     wordCount: 0,
-    backlinks: ["moc-zaffee-brand"],
+    backlinks: [],
     links: [],
     outline: [],
     content: ``
@@ -57210,7 +57194,7 @@ Loop repeats
     created: "2025-11-25",
     modified: "2025-11-25",
     wordCount: 0,
-    backlinks: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-languages","pointersc"],
+    backlinks: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-languages","pointersc","zettelkasten"],
     links: [],
     outline: [],
     content: ``
@@ -57240,7 +57224,7 @@ Loop repeats
     created: "2026-01-30",
     modified: "2026-01-30",
     wordCount: 23,
-    backlinks: ["moc-engineering-mathematics","moc-finance","moc-startup-thinking","moc-zaffee-brand"],
+    backlinks: ["moc-engineering-mathematics","moc-finance","moc-startup-thinking"],
     links: ["fpya","health-insurance","magic-of-compounding"],
     outline: [],
     content: `# Finance
@@ -57399,7 +57383,7 @@ Loop repeats
     created: "2025-10-19",
     modified: "2025-10-19",
     wordCount: 0,
-    backlinks: ["moc-startup-thinking","moc-zaffee-brand"],
+    backlinks: ["moc-startup-thinking"],
     links: [],
     outline: [],
     content: ``
@@ -57414,7 +57398,7 @@ Loop repeats
     created: "2026-02-21",
     modified: "2026-02-21",
     wordCount: 0,
-    backlinks: ["moc-zaffee-brand"],
+    backlinks: [],
     links: [],
     outline: [],
     content: ``
@@ -58472,11 +58456,6 @@ const VAULT_FOLDERS = [
         "type": "note"
       },
       {
-        "id": "moc-zaffee-brand",
-        "name": "MOC - Zaffee Brand",
-        "type": "note"
-      },
-      {
         "id": "moc-zettelkasten-method",
         "name": "MOC - Zettelkasten Method",
         "type": "note"
@@ -59337,6 +59316,11 @@ const VAULT_FOLDERS = [
       {
         "id": "research-rating",
         "name": "Research Rating",
+        "type": "note"
+      },
+      {
+        "id": "selection-sort",
+        "name": "Selection Sort",
         "type": "note"
       },
       {
@@ -62021,11 +62005,6 @@ const GRAPH_NODES = [
     "group": "moc"
   },
   {
-    "id": "moc-zaffee-brand",
-    "label": "MOC - Zaffee Brand",
-    "group": "moc"
-  },
-  {
     "id": "moc-zettelkasten-method",
     "label": "MOC - Zettelkasten Method",
     "group": "moc"
@@ -62831,6 +62810,11 @@ const GRAPH_NODES = [
     "group": "notes"
   },
   {
+    "id": "selection-sort",
+    "label": "Selection Sort",
+    "group": "notes"
+  },
+  {
     "id": "sequence-and-series",
     "label": "Sequence and Series",
     "group": "notes"
@@ -63129,14 +63113,6 @@ const GRAPH_EDGES = [
   },
   {
     "source": "index",
-    "target": "moc-startup-thinking"
-  },
-  {
-    "source": "index",
-    "target": "moc-zaffee-brand"
-  },
-  {
-    "source": "index",
     "target": "moc-writing-and-creativity"
   },
   {
@@ -63306,6 +63282,10 @@ const GRAPH_EDGES = [
   {
     "source": "moc-data-structures-and-algorithms",
     "target": "bubble-sort"
+  },
+  {
+    "source": "moc-data-structures-and-algorithms",
+    "target": "selection-sort"
   },
   {
     "source": "moc-data-structures-and-algorithms",
@@ -63597,10 +63577,6 @@ const GRAPH_EDGES = [
   },
   {
     "source": "moc-finance",
-    "target": "moc-zaffee-brand"
-  },
-  {
-    "source": "moc-finance",
     "target": "moc-startup-thinking"
   },
   {
@@ -63837,10 +63813,6 @@ const GRAPH_EDGES = [
   },
   {
     "source": "moc-startup-thinking",
-    "target": "moc-zaffee-brand"
-  },
-  {
-    "source": "moc-startup-thinking",
     "target": "moc-ai-and-machine-learning"
   },
   {
@@ -63914,10 +63886,6 @@ const GRAPH_EDGES = [
   {
     "source": "moc-writing-and-creativity",
     "target": "that-friend"
-  },
-  {
-    "source": "moc-writing-and-creativity",
-    "target": "moc-zaffee-brand"
   },
   {
     "source": "moc-zettelkasten-method",
@@ -64429,6 +64397,10 @@ const GRAPH_EDGES = [
   },
   {
     "source": "insertion-sort",
+    "target": "selection-sort"
+  },
+  {
+    "source": "insertion-sort",
     "target": "bubble-sort"
   },
   {
@@ -64692,6 +64664,10 @@ const GRAPH_EDGES = [
     "target": "set-theory"
   },
   {
+    "source": "selection-sort",
+    "target": "sorting"
+  },
+  {
     "source": "set-theory",
     "target": "primary-logical-operators-across-different-domains"
   },
@@ -64922,6 +64898,10 @@ const GRAPH_EDGES = [
   {
     "source": "zettelkasten",
     "target": "bubble-sort"
+  },
+  {
+    "source": "zettelkasten",
+    "target": "selection-sort"
   },
   {
     "source": "zettelkasten",
