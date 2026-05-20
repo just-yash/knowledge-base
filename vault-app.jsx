@@ -190,11 +190,21 @@ const App = () => {
   const [expandedFolders, setExpandedFolders] = usePersisted('vault-expanded', ['notes']);
 
   const nav = useNavHistory(
-    (() => { try { return JSON.parse(localStorage.getItem('vault-current')) || 'index'; } catch { return 'index'; } })()
+    (() => {
+      try {
+        // Hash in URL takes priority (shared links like #python-libraries)
+        const hash = window.location.hash.slice(1);
+        if (hash && window.VAULT_NOTES?.[hash]) return hash;
+        return JSON.parse(localStorage.getItem('vault-current')) || 'index';
+      } catch { return 'index'; }
+    })()
   );
 
-  // Persist current note
-  useEffect(() => { try { localStorage.setItem('vault-current', JSON.stringify(nav.current)); } catch {} }, [nav.current]);
+  // Persist current note + keep URL hash in sync (makes every note linkable)
+  useEffect(() => {
+    try { localStorage.setItem('vault-current', JSON.stringify(nav.current)); } catch {}
+    if (nav.current) window.location.hash = nav.current;
+  }, [nav.current]);
 
   // Apply theme to <html>
   useEffect(() => { document.documentElement.setAttribute('data-theme', theme); }, [theme]);
@@ -231,7 +241,10 @@ const App = () => {
   const handleTabClose = useCallback((id) => {
     setOpenTabs(tabs => {
       const next = tabs.filter(t => t !== id);
-      if (nav.current === id && next.length > 0) nav.navigate(next[next.length - 1]);
+      if (nav.current === id) {
+        // Navigate to the adjacent tab, or fall back to index when last tab closed
+        nav.navigate(next.length > 0 ? next[next.length - 1] : 'index');
+      }
       return next;
     });
   }, [nav]);
@@ -328,7 +341,7 @@ const App = () => {
         {/* Center editor */}
         <NoteEditor
           currentNote={nav.current}
-          openTabs={openTabs.length > 0 ? openTabs : ['python-libraries']}
+          openTabs={openTabs.length > 0 ? openTabs : ['index']}
           onTabClick={handleNoteNavigate}
           onTabClose={handleTabClose}
           onNewTab={() => setCmdOpen(true)}

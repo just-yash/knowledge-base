@@ -273,6 +273,7 @@ const TabBar = ({ tabs, currentNote, onTabClick, onTabClose, onNewTab,
 // ─── Note toolbar (breadcrumb + actions) ──────────────────────────────────────
 const NoteToolbar = ({ note, focusMode, onFocusToggle, onNavBack, onNavForward, canBack, canForward }) => {
   const [isFullscreen, setIsFullscreen] = React.useState(false);
+  const [copied,       setCopied]       = React.useState(false);
 
   React.useEffect(() => {
     const handler = () => setIsFullscreen(!!document.fullscreenElement);
@@ -281,12 +282,28 @@ const NoteToolbar = ({ note, focusMode, onFocusToggle, onNavBack, onNavForward, 
   }, []);
 
   const toggleFullscreen = () => {
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen?.();
-    } else {
-      document.exitFullscreen?.();
-    }
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+    else document.exitFullscreen?.();
   };
+
+  const handleShare = () => {
+    const url = `${window.location.origin}${window.location.pathname}#${note.id}`;
+    navigator.clipboard.writeText(url).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }).catch(() => {
+      // Fallback: select a temp input
+      const inp = document.createElement('input');
+      inp.value = url;
+      document.body.appendChild(inp);
+      inp.select();
+      document.execCommand('copy');
+      document.body.removeChild(inp);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
   if (!note) return null;
   function navBtn(disabled) {
     return {
@@ -317,23 +334,35 @@ const NoteToolbar = ({ note, focusMode, onFocusToggle, onNavBack, onNavForward, 
         ))}
       </div>
 
-      <div style={{ display:'flex', gap:2 }}>
+      <div style={{ display:'flex', gap:2, alignItems:'center' }}>
+        {/* Share / copy link button */}
+        <button
+          title={copied ? 'Link copied!' : 'Copy link to this note'}
+          onClick={handleShare}
+          style={{
+            display:'flex', alignItems:'center', gap:4, height:26, padding:'0 8px',
+            background: copied ? 'rgba(123,201,160,0.12)' : 'none',
+            border: 'none', borderRadius:4, cursor:'pointer',
+            color: copied ? '#7bc9a0' : 'var(--text-muted)',
+            fontSize:11, fontWeight:500,
+            transition:'color 0.15s, background 0.15s',
+          }}
+          onMouseEnter={e => { if (!copied) { e.currentTarget.style.color='var(--text-primary)'; e.currentTarget.style.background='var(--bg-hover)'; }}}
+          onMouseLeave={e => { if (!copied) { e.currentTarget.style.color='var(--text-muted)';   e.currentTarget.style.background='none'; }}}
+        >
+          <Icon name={copied ? 'check' : 'link'} size={13} strokeWidth={copied ? 2.2 : 1.8}/>
+          <span style={{ fontSize:11 }}>{copied ? 'Copied!' : 'Share'}</span>
+        </button>
+
         <button title={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'} onClick={toggleFullscreen} style={{
           width:26, height:26, display:'flex', alignItems:'center', justifyContent:'center',
           background: isFullscreen ? 'var(--bg-active)' : 'none', border:'none', borderRadius:4,
           cursor:'pointer', color: isFullscreen ? 'var(--accent)' : 'var(--text-muted)',
           transition:'color 0.12s, background 0.12s',
-        }}>
-          <Icon name={isFullscreen ? 'minimize' : 'maximize'} size={13} strokeWidth={1.8}/>
-        </button>
-        <button title="More" style={{
-          width:26, height:26, display:'flex', alignItems:'center', justifyContent:'center',
-          background:'none', border:'none', borderRadius:4, cursor:'pointer',
-          color:'var(--text-muted)', transition:'color 0.12s, background 0.12s',
         }}
-        onMouseEnter={e=>{e.currentTarget.style.color='var(--text-primary)';e.currentTarget.style.background='var(--bg-hover)';}}
-        onMouseLeave={e=>{e.currentTarget.style.color='var(--text-muted)';e.currentTarget.style.background='none';}}>
-          <Icon name="more-horizontal" size={14} strokeWidth={2}/>
+        onMouseEnter={e=>{if(!isFullscreen){e.currentTarget.style.color='var(--text-primary)';e.currentTarget.style.background='var(--bg-hover)';}}}
+        onMouseLeave={e=>{if(!isFullscreen){e.currentTarget.style.color='var(--text-muted)';e.currentTarget.style.background='none';}}}>
+          <Icon name={isFullscreen ? 'minimize' : 'maximize'} size={13} strokeWidth={1.8}/>
         </button>
       </div>
     </div>
