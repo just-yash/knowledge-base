@@ -557,9 +557,13 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
 
   const onMouseUp = useCallback((e) => {
     if (dragNodeRef.current) {
-      dragNodeRef.current.vx = 0; dragNodeRef.current.vy = 0;
+      const node = dragNodeRef.current;
+      const wasDragged = panRef.current.moved;
+      node.vx = 0; node.vy = 0;
       dragNodeRef.current = null;
+      panRef.current.moved = false;
       setCursor('grab');
+      if (!wasDragged && window.VAULT_NOTES?.[node.id]) onNavigate(node.id);
       return;
     }
     const p = panRef.current;
@@ -776,17 +780,21 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
 
   const onMouseUp = useCallback((e) => {
     if (dragNodeRef.current) {
-      dragNodeRef.current.vx = 0; dragNodeRef.current.vy = 0;
+      const node = dragNodeRef.current;
+      const wasDragged = panRef.current.moved;
+      node.vx = 0; node.vy = 0;
       dragNodeRef.current = null;
+      panRef.current.moved = false;
       setCursor('grab');
+      // Pure click (no drag movement) → navigate to the note
+      if (!wasDragged && window.VAULT_NOTES?.[node.id]) onNavigate(node.id);
       return;
     }
     const p = panRef.current;
     if (!p.moved) {
       const { x, y } = toGraph(e.clientX, e.clientY);
       const node = graphRef.current?.getNodeAt(x, y, 16);
-      // Single-click navigates but keeps the graph open (like Obsidian)
-      if (node && window.VAULT_NOTES?.[node.id]) { onNavigate(node.id); }
+      if (node && window.VAULT_NOTES?.[node.id]) onNavigate(node.id);
     }
     p.dragging = false; p.moved = false;
     setCursor('grab');
