@@ -32,27 +32,34 @@ const OutlineSection = ({ note, onHeadingClick }) => {
         <div style={{ padding: '2px 0 8px' }}>
           {note.outline.map((item, i) => {
             const isActive = item.id === activeId;
-            const indent = item.level === 2 ? 22 : item.level === 3 ? 34 : 44;
+            // Indent per level: h2=14, h3=24, h4=34, h5=44, h6=54
+            const INDENT = { 2: 14, 3: 24, 4: 34, 5: 44, 6: 54 };
+            const indent = INDENT[item.level] ?? 14;
+            // Visual weight decreases with depth
+            const color = isActive ? 'var(--text-primary)'
+              : item.level === 2 ? 'var(--text-secondary)'
+              : item.level === 3 ? 'var(--text-secondary)'
+              : 'var(--text-muted)';
+            const fontSize = item.level === 2 ? 13.5 : item.level === 3 ? 12.5 : 12;
+            const fontWeight = item.level <= 3 ? 500 : 400;
             return (
               <button
                 key={i}
+                title={item.text}
                 onClick={() => onHeadingClick(item.id)}
                 style={{
                   display: 'block', width: '100%', border: 'none',
                   padding: `3px 14px 3px ${isActive ? indent - 2 : indent}px`,
-                  textAlign: 'left', cursor: 'pointer', fontSize: 14,
+                  textAlign: 'left', cursor: 'pointer', fontSize,
                   borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
                   background: isActive ? 'var(--bg-active)' : 'none',
-                  color: isActive
-                    ? 'var(--text-primary)'
-                    : item.level === 2 ? 'var(--text-secondary)' : 'var(--text-muted)',
-                  fontWeight: item.level === 2 ? 500 : 400,
+                  color, fontWeight,
                   lineHeight: 1.45, borderRadius: 0,
                   transition: 'color 0.12s, background 0.12s, border-color 0.12s',
                   overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
                 }}
                 onMouseEnter={e => { if (!isActive) { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.background = 'var(--bg-hover)'; }}}
-                onMouseLeave={e => { if (!isActive) { e.currentTarget.style.color = item.level === 2 ? 'var(--text-secondary)' : 'var(--text-muted)'; e.currentTarget.style.background = 'none'; }}}
+                onMouseLeave={e => { if (!isActive) { e.currentTarget.style.color = color; e.currentTarget.style.background = 'none'; }}}
               >
                 {item.text}
               </button>
@@ -312,7 +319,7 @@ const RightPanel = ({ open, currentNote, onNoteNavigate, onClose }) => {
 
   return (
     <div style={{
-      width: open ? 260 : 0,
+      width: open ? 280 : 0,
       flexShrink: 0,
       overflow: 'hidden',
       transition: 'width 0.22s cubic-bezier(0.4,0,0.2,1)',
@@ -320,7 +327,7 @@ const RightPanel = ({ open, currentNote, onNoteNavigate, onClose }) => {
       borderLeft: '1px solid var(--border)',
       display: 'flex', flexDirection: 'column',
     }}>
-      <div style={{ width: 260, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
+      <div style={{ width: 280, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
         <RightPanelHeader note={note} onClose={onClose} />
         <div style={{ flex: 1, overflowY: 'auto' }} className="scrollable">
           <OutlineSection note={note} onHeadingClick={handleHeadingClick} />

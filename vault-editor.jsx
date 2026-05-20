@@ -152,10 +152,36 @@ function resolveObsidianEmbeds(md) {
 }
 
 // ─── Post-process: [[WikiLinks]] → clickable spans ───────────────────────────
+// Handles all Obsidian wikilink formats:
+//   [[Note]]
+//   [[Note|Alias]]
+//   [[Note#Heading]]
+//   [[Note#Heading|Alias]]
 function processWikiLinks(html) {
-  return html.replace(/\[\[([^\]]+)\]\]/g, (_, name) => {
-    const id = (window.findNoteByName ? findNoteByName(name) : null) || '';
-    return `<a class="wiki-link" data-note-id="${id}" data-note-name="${name}" href="#">${name}</a>`;
+  return html.replace(/\[\[([^\]]+)\]\]/g, (_, inner) => {
+    // Split alias (everything after the first |)
+    const pipeIdx = inner.indexOf('|');
+    const refPart = pipeIdx >= 0 ? inner.slice(0, pipeIdx).trim() : inner.trim();
+    const alias   = pipeIdx >= 0 ? inner.slice(pipeIdx + 1).trim() : '';
+
+    // Split heading (everything after the first # in the ref)
+    const hashIdx  = refPart.indexOf('#');
+    const noteName = hashIdx >= 0 ? refPart.slice(0, hashIdx).trim() : refPart;
+    const heading  = hashIdx >= 0 ? refPart.slice(hashIdx + 1).trim() : '';
+
+    // Display text: explicit alias → noteName (never show raw #heading)
+    const display = alias || noteName;
+
+    // Resolve note ID from the name part only
+    const noteId = (window.findNoteByName ? findNoteByName(noteName) : null) || '';
+
+    // Slugify heading the same way marked.js does (for scroll-to after navigation)
+    const headingId = heading
+      ? heading.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-{2,}/g, '-')
+      : '';
+
+    const esc = (s) => s.replace(/"/g, '&quot;');
+    return `<a class="wiki-link" data-note-id="${esc(noteId)}" data-note-name="${esc(noteName)}" data-heading-id="${esc(headingId)}" href="#">${display}</a>`;
   });
 }
 
@@ -273,7 +299,9 @@ const TabBar = ({ tabs, currentNote, onTabClick, onTabClose, onNewTab,
 // ─── Note toolbar (breadcrumb + actions) ──────────────────────────────────────
 const NoteToolbar = ({ note, focusMode, onFocusToggle, onNavBack, onNavForward, canBack, canForward }) => {
   const [isFullscreen, setIsFullscreen] = React.useState(false);
+  const [menuOpen,     setMenuOpen]     = React.useState(false);
   const [copied,       setCopied]       = React.useState(false);
+  const menuRef = React.useRef(null);
 
   React.useEffect(() => {
     const handler = () => setIsFullscreen(!!document.fullscreenElement);
@@ -281,47 +309,155 @@ const NoteToolbar = ({ note, focusMode, onFocusToggle, onNavBack, onNavForward, 
     return () => document.removeEventListener('fullscreenchange', handler);
   }, []);
 
+  // Close dropdown when clicking outside
+  React.useEffect(() => {
+    if (!menuOpen) return;
+    const handler = (e) => { if (!menuRef.current?.contains(e.target)) setMenuOpen(false); };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, [menuOpen]);
+
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
     else document.exitFullscreen?.();
   };
 
-  const handleShare = () => {
+  // ── Share: copy link ───────────────────────────────────────────────────────
+  const handleCopyLink = () => {
     const url = `${window.location.origin}${window.location.pathname}#${note.id}`;
-    navigator.clipboard.writeText(url).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }).catch(() => {
-      // Fallback: select a temp input
+    const doCopy = () => { setCopied(true); setTimeout(() => { setCopied(false); setMenuOpen(false); }, 2000); };
+    navigator.clipboard.writeText(url).then(doCopy).catch(() => {
       const inp = document.createElement('input');
-      inp.value = url;
-      document.body.appendChild(inp);
-      inp.select();
-      document.execCommand('copy');
-      document.body.removeChild(inp);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      inp.value = url; document.body.appendChild(inp); inp.select();
+      document.execCommand('copy'); document.body.removeChild(inp);
+      doCopy();
     });
   };
 
+  // ── Share: export as PDF (opens a clean print window) ─────────────────────
+  const handleExportPDF = () => {
+    setMenuOpen(false);
+    if (!note) return;
+    const contentEl = document.querySelector('[data-print-content]');
+    const html = contentEl ? contentEl.innerHTML : '';
+
+    const win = window.open('', '_blank');
+    if (!win) { alert('Please allow pop-ups for this site to export PDF.'); return; }
+
+    win.document.write(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>${note.title}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      max-width: 780px; margin: 0 auto; padding: 52px 48px 72px;
+      color: #1a1c1e; background: #fff; line-height: 1.75; font-size: 15px;
+    }
+    .print-title { font-size: 30px; font-weight: 700; color: #111; margin-bottom: 8px; line-height: 1.2; }
+    .print-meta  { font-size: 12px; color: #888; margin-bottom: 36px; padding-bottom: 18px; border-bottom: 1px solid #eaeaea; }
+    h1 { font-size: 24px; margin: 36px 0 14px; color: #111; }
+    h2 { font-size: 20px; margin: 28px 0 12px; color: #111; }
+    h3 { font-size: 17px; margin: 22px 0 10px; color: #222; }
+    h4 { font-size: 15px; margin: 18px 0 8px; color: #333; }
+    p  { margin: 0 0 14px; }
+    a  { color: #3366cc; text-decoration: none; }
+    a::after { content: " (" attr(href) ")"; font-size: 0.78em; color: #888; }
+    a[href^="#"]::after { content: ""; }
+    ul, ol { padding-left: 22px; margin: 0 0 14px; }
+    li { margin-bottom: 4px; }
+    blockquote { border-left: 3px solid #d0d0d0; padding: 4px 0 4px 16px; color: #555; margin: 16px 0; }
+    table { border-collapse: collapse; width: 100%; margin: 18px 0; font-size: 14px; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+    th { background: #f5f5f5; font-weight: 600; }
+    tr:nth-child(even) td { background: #fafafa; }
+    img { max-width: 100%; height: auto; border-radius: 4px; margin: 8px 0; }
+    hr { border: none; border-top: 1px solid #eaeaea; margin: 28px 0; }
+    code { font-family: 'SF Mono', 'Fira Code', Consolas, monospace; font-size: 0.88em;
+           background: #f0f0f0; padding: 2px 5px; border-radius: 3px; color: #c0392b; }
+    pre  { background: #f6f6f6; border: 1px solid #e8e8e8; border-radius: 6px;
+           padding: 16px 18px; overflow-x: auto; margin: 16px 0; }
+    pre code { background: none; padding: 0; color: #333; font-size: 13px; }
+    .vault-code-header { display: none; }
+    .vault-code-block  { margin: 16px 0; }
+    .vault-callout { border-left: 3px solid var(--callout-color, #888);
+      background: #fafafa; border-radius: 0 6px 6px 0;
+      padding: 12px 16px; margin: 18px 0; }
+    .vault-callout-title { font-weight: 700; margin-bottom: 5px; font-size: 14px; }
+    .vault-callout-body  { font-size: 14px; color: #444; }
+    .vault-task-list { list-style: none; padding-left: 0; }
+    .vault-task-item { display: flex; align-items: flex-start; gap: 7px; margin-bottom: 5px; }
+    .vault-cb::before { content: '☐'; font-size: 15px; line-height: 1.4; }
+    .vault-cb.checked::before { content: '☑'; color: #3c9; }
+    .wikilink { color: #3366cc; }
+    @media print {
+      body { padding: 20px 30px; font-size: 13px; }
+      .print-title { font-size: 24px; }
+      pre { font-size: 11px; }
+      a::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="print-title">${note.title}</div>
+  <div class="print-meta">Modified ${note.modified || '—'} &nbsp;·&nbsp; ${(note.wordCount||0).toLocaleString()} words</div>
+  ${html}
+  <script>window.onload = () => setTimeout(() => { window.print(); }, 450);<\/script>
+</body>
+</html>`);
+    win.document.close();
+  };
+
   if (!note) return null;
+
+  const iconBtnStyle = {
+    width:26, height:26, display:'flex', alignItems:'center', justifyContent:'center',
+    background:'none', border:'none', borderRadius:4, cursor:'pointer',
+    color:'var(--text-muted)', transition:'color 0.12s, background 0.12s', flexShrink:0,
+  };
   function navBtn(disabled) {
     return {
-      width:26, height:26, display:'flex', alignItems:'center', justifyContent:'center',
-      background:'none', border:'none', borderRadius:4,
+      ...iconBtnStyle,
       cursor: disabled ? 'default' : 'pointer',
       color: disabled ? 'var(--text-muted)' : 'var(--text-secondary)',
-      opacity: disabled ? 0.32 : 1, transition:'color 0.12s, background 0.12s', flexShrink:0,
+      opacity: disabled ? 0.32 : 1,
     };
   }
+
+  // Dropdown menu item
+  const MenuItem = ({ icon, label, onClick, badge }) => {
+    const [hov, setHov] = React.useState(false);
+    return (
+      <button
+        onClick={onClick}
+        onMouseEnter={() => setHov(true)}
+        onMouseLeave={() => setHov(false)}
+        style={{
+          display:'flex', alignItems:'center', gap:10, width:'100%',
+          background: hov ? 'var(--bg-hover)' : 'none',
+          border:'none', padding:'7px 14px', cursor:'pointer',
+          textAlign:'left', transition:'background 0.1s',
+        }}
+      >
+        <Icon name={icon} size={13} strokeWidth={1.8} style={{ color: hov ? 'var(--accent)' : 'var(--text-muted)', flexShrink:0 }} />
+        <span style={{ fontSize:13, color:'var(--text-primary)', flex:1 }}>{label}</span>
+        {badge && <span style={{ fontSize:11, color:'#7bc9a0', fontWeight:500 }}>{badge}</span>}
+      </button>
+    );
+  };
+
   return (
     <div style={{
       display:'flex', alignItems:'center', padding:'0 12px', height:34, flexShrink:0,
       borderBottom:'1px solid var(--border)', background:'var(--bg-content)',
     }}>
-      <button onClick={onNavBack}    disabled={!canBack}    style={navBtn(!canBack)}><Icon name="arrow-left"  size={14} strokeWidth={1.8}/></button>
-      <button onClick={onNavForward} disabled={!canForward} style={navBtn(!canForward)}><Icon name="arrow-right" size={14} strokeWidth={1.8}/></button>
+      <button onClick={onNavBack}    disabled={!canBack}    style={navBtn(!canBack)}    onMouseEnter={e=>{if(canBack){e.currentTarget.style.color='var(--text-primary)';e.currentTarget.style.background='var(--bg-hover)';}}} onMouseLeave={e=>{e.currentTarget.style.color='var(--text-secondary)';e.currentTarget.style.background='none';}}><Icon name="arrow-left"  size={14} strokeWidth={1.8}/></button>
+      <button onClick={onNavForward} disabled={!canForward} style={navBtn(!canForward)} onMouseEnter={e=>{if(canForward){e.currentTarget.style.color='var(--text-primary)';e.currentTarget.style.background='var(--bg-hover)';}}} onMouseLeave={e=>{e.currentTarget.style.color='var(--text-secondary)';e.currentTarget.style.background='none';}}><Icon name="arrow-right" size={14} strokeWidth={1.8}/></button>
 
+      {/* Breadcrumb */}
       <div style={{ flex:1, display:'flex', alignItems:'center', gap:4, overflow:'hidden', margin:'0 8px' }}>
         {note.path.map((seg, i) => (
           <React.Fragment key={i}>
@@ -334,36 +470,57 @@ const NoteToolbar = ({ note, focusMode, onFocusToggle, onNavBack, onNavForward, 
         ))}
       </div>
 
+      {/* Right actions */}
       <div style={{ display:'flex', gap:2, alignItems:'center' }}>
-        {/* Share / copy link button */}
-        <button
-          title={copied ? 'Link copied!' : 'Copy link to this note'}
-          onClick={handleShare}
-          style={{
-            display:'flex', alignItems:'center', gap:4, height:26, padding:'0 8px',
-            background: copied ? 'rgba(123,201,160,0.12)' : 'none',
-            border: 'none', borderRadius:4, cursor:'pointer',
-            color: copied ? '#7bc9a0' : 'var(--text-muted)',
-            fontSize:11, fontWeight:500,
-            transition:'color 0.15s, background 0.15s',
-          }}
-          onMouseEnter={e => { if (!copied) { e.currentTarget.style.color='var(--text-primary)'; e.currentTarget.style.background='var(--bg-hover)'; }}}
-          onMouseLeave={e => { if (!copied) { e.currentTarget.style.color='var(--text-muted)';   e.currentTarget.style.background='none'; }}}
-        >
-          <Icon name={copied ? 'check' : 'link'} size={13} strokeWidth={copied ? 2.2 : 1.8}/>
-          <span style={{ fontSize:11 }}>{copied ? 'Copied!' : 'Share'}</span>
-        </button>
-
-        <button title={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'} onClick={toggleFullscreen} style={{
-          width:26, height:26, display:'flex', alignItems:'center', justifyContent:'center',
-          background: isFullscreen ? 'var(--bg-active)' : 'none', border:'none', borderRadius:4,
-          cursor:'pointer', color: isFullscreen ? 'var(--accent)' : 'var(--text-muted)',
-          transition:'color 0.12s, background 0.12s',
-        }}
-        onMouseEnter={e=>{if(!isFullscreen){e.currentTarget.style.color='var(--text-primary)';e.currentTarget.style.background='var(--bg-hover)';}}}
-        onMouseLeave={e=>{if(!isFullscreen){e.currentTarget.style.color='var(--text-muted)';e.currentTarget.style.background='none';}}}>
+        {/* Fullscreen */}
+        <button title={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'} onClick={toggleFullscreen}
+          style={{ ...iconBtnStyle, color: isFullscreen ? 'var(--accent)' : 'var(--text-muted)', background: isFullscreen ? 'var(--bg-active)' : 'none' }}
+          onMouseEnter={e=>{if(!isFullscreen){e.currentTarget.style.color='var(--text-primary)';e.currentTarget.style.background='var(--bg-hover)';}}}
+          onMouseLeave={e=>{if(!isFullscreen){e.currentTarget.style.color='var(--text-muted)';e.currentTarget.style.background='none';}}}>
           <Icon name={isFullscreen ? 'minimize' : 'maximize'} size={13} strokeWidth={1.8}/>
         </button>
+
+        {/* More / share dropdown */}
+        <div ref={menuRef} style={{ position:'relative' }}>
+          <button
+            title="More options"
+            onClick={() => setMenuOpen(o => !o)}
+            style={{ ...iconBtnStyle, background: menuOpen ? 'var(--bg-hover)' : 'none', color: menuOpen ? 'var(--text-primary)' : 'var(--text-muted)' }}
+            onMouseEnter={e=>{e.currentTarget.style.color='var(--text-primary)';e.currentTarget.style.background='var(--bg-hover)';}}
+            onMouseLeave={e=>{if(!menuOpen){e.currentTarget.style.color='var(--text-muted)';e.currentTarget.style.background='none';}}}
+          >
+            <Icon name="more-horizontal" size={14} strokeWidth={2}/>
+          </button>
+
+          {/* Dropdown */}
+          {menuOpen && (
+            <div style={{
+              position:'absolute', top:'calc(100% + 6px)', right:0, zIndex:300,
+              background:'var(--bg-modal)', border:'1px solid var(--border-strong)',
+              borderRadius:8, padding:'4px 0', minWidth:200,
+              boxShadow:'var(--shadow-modal)',
+              animation:'slideDown 0.14s cubic-bezier(0.16,1,0.3,1) both',
+            }}>
+              {/* Section label */}
+              <div style={{ padding:'4px 14px 6px', fontSize:10.5, color:'var(--text-muted)',
+                fontWeight:600, letterSpacing:'0.06em', textTransform:'uppercase',
+                borderBottom:'1px solid var(--border)', marginBottom:2 }}>
+                Share
+              </div>
+              <MenuItem
+                icon={copied ? 'check' : 'link'}
+                label="Copy link"
+                badge={copied ? 'Copied!' : null}
+                onClick={handleCopyLink}
+              />
+              <MenuItem
+                icon="file-text"
+                label="Export as PDF"
+                onClick={handleExportPDF}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -427,7 +584,7 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
     return () => observer.disconnect();
   }, [note?.id]);
 
-  // 3. Wiki-link click delegation
+  // 3. Wiki-link click delegation (supports [[Note#Heading|Alias]])
   React.useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
@@ -435,8 +592,17 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
       const a = e.target.closest('.wiki-link');
       if (!a) return;
       e.preventDefault();
-      const id = a.dataset.noteId;
-      if (id && window.VAULT_NOTES?.[id]) onNoteNavigate(id);
+      const noteId    = a.dataset.noteId;
+      const headingId = a.dataset.headingId || '';
+      if (noteId && window.VAULT_NOTES?.[noteId]) {
+        onNoteNavigate(noteId);
+        // After navigation the content re-renders; wait then scroll to heading
+        if (headingId) {
+          setTimeout(() => {
+            window.dispatchEvent(new CustomEvent('vault-scroll-to', { detail: { headingId } }));
+          }, 320);
+        }
+      }
     };
     el.addEventListener('click', handler);
     return () => el.removeEventListener('click', handler);
@@ -448,6 +614,7 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
     <div
       ref={containerRef}
       className="note-content"
+      data-print-content="true"
       style={{ fontSize: fontSize || 15, '--reading-max': maxW + 'px' }}
       dangerouslySetInnerHTML={{ __html: rendered }}
     />

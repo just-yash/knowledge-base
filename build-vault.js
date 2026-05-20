@@ -88,11 +88,10 @@ function extractWikiLinks(content) {
 
 function extractOutline(content) {
   const out = [];
-  for (const m of content.matchAll(/^(#{2,3})\s+(.+)$/gm)) {
-    const text = m[2].replace(/\*\*?|`/g, '').trim();
+  for (const m of content.matchAll(/^(#{2,6})\s+(.+)$/gm)) {
+    const text = m[2].replace(/\*\*?|`|\[|\]/g, '').trim();
     const id   = slugify(text);
     out.push({ level: m[1].length, text, id });
-    if (out.length >= 12) break;
   }
   return out;
 }

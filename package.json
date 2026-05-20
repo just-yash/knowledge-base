@@ -1,0 +1,13 @@
+{
+  "name": "knowledge-base",
+  "version": "1.0.0",
+  "description": "Obsidian-style static knowledge vault",
+  "scripts": {
+    "build": "node build-vault.js",
+    "deploy": "node build-vault.js && git add vault-data.js && git diff --cached --quiet || git commit -m \"chore: rebuild vault\" && git push origin obsidian",
+    "watch": "node watch-vault.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
