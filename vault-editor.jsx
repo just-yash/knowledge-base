@@ -553,24 +553,6 @@ const NoteEditor = ({
       {/* Connect / socials bar */}
       {!focusMode && <ConnectBar scrollRef={scrollRef} />}
 
-      {/* Status bar */}
-      {note && (
-        <div className="status-bar">
-          <span className="status-item">
-            <Icon name="file" size={10} strokeWidth={1.5} />
-            {note.path.join(' / ')}
-          </span>
-          <span className="status-sep">·</span>
-          <span className="status-item">{note.wordCount?.toLocaleString()} words</span>
-          <span className="status-sep">·</span>
-          <span className="status-item">{readingTime} min read</span>
-          <span style={{ flex:1 }} />
-          <span className="status-item" style={{ color: 'var(--accent)', opacity: 0.7 }}>
-            {(note.tags||[]).map(t => `#${t}`).join('  ')}
-          </span>
-        </div>
-      )}
-
       {/* Focus mode indicator */}
       {focusMode && (
         <div className="focus-mode-bar">
