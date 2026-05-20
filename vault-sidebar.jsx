@@ -57,17 +57,35 @@ const IconRail = ({ activeSection, onSectionClick, theme, onThemeToggle }) => (
 
 // ─── Folder / File Item ───────────────────────────────────────────────────────
 const FOLDER_ICONS = {
-  'mocs':         'network',
-  'raw-notes':    'file-text',
-  'notes':        'book-open',
+  // ── Top-level folders ─────────────────────────────────────────────────
+  '00-home':      'home',
+  'mocs':         'map',
+  'raw-notes':    'pencil',
+  'notes':        'notebook',
   'research':     'flask',
-  'creativity':   'sparkle',
+  'creativity':   'palette',
   'archive':      'archive',
-  'annexure':     'paperclip',
+  'annexure':     'folder',
   'tags-folder':  'hash',
   'templates':    'layout-template',
   'private':      'lock',
   'projects':     'kanban',
+  // ── 02 - Raw Notes subfolders ─────────────────────────────────────────
+  'raw-notes-books-papers':    'books',
+  'raw-notes-classes':         'graduation-cap',
+  'raw-notes-conversations':   'message-circle',
+  'raw-notes-news-updates':    'newspaper',
+  'raw-notes-podcasts':        'mic',
+  'raw-notes-thought':         'lightbulb',
+  'raw-notes-videos':          'video',
+  // ── 07 - Annexure subfolders ──────────────────────────────────────────
+  'annexure-documents':        'file-text',
+  'annexure-excalidraw':       'pen-tool',
+  'annexure-html':             'file-code',
+  'annexure-images':           'image',
+  'annexure-media':            'film',
+  // ── 05 - Creativity subfolders ────────────────────────────────────────
+  'creativity-poetry':         'feather',
 };
 
 const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, currentNote }) => {
