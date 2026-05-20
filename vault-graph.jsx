@@ -138,6 +138,8 @@ function drawArrowhead(ctx, sx, sy, tx, ty, targetR, size = 5) {
 function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false, labelAlpha = 0, cfg = {}) {
   ctx.clearRect(0, 0, W, H);
 
+  const isLight = document.documentElement.dataset.theme === 'light';
+
   const hov        = hovNode;
   const ns         = cfg.nodeSize       || 1.0;
   const lt         = cfg.linkThickness  || 1.0;
@@ -159,9 +161,9 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
       ? highlighted.has(e.source.id) && highlighted.has(e.target.id)
       : isActiveEdge;
 
-    const edgeColor = lit
-      ? 'rgba(255,255,255,0.50)'
-      : dimUnlit ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.13)';
+    const edgeColor = isLight
+      ? lit ? 'rgba(0,0,0,0.38)' : dimUnlit ? 'rgba(0,0,0,0.06)' : 'rgba(0,0,0,0.18)'
+      : lit ? 'rgba(255,255,255,0.50)' : dimUnlit ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.13)';
     const lw = (lit ? 1.4 : 0.75) * lt;
 
     ctx.beginPath();
@@ -184,23 +186,23 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
     const isActive = n.id === activeId;
     const isHov    = n.id === hov?.id;
     const isLit    = hov ? highlighted.has(n.id) : activeNeighbours.has(n.id);
-    const color    = GROUP_COLORS[n.group] || 'rgba(255,255,255,0.65)';
+    const color    = GROUP_COLORS[n.group] || (isLight ? 'rgba(0,0,0,0.45)' : 'rgba(255,255,255,0.65)');
     const r        = n.r * ns + (isActive ? 1.2 : isHov ? 0.8 : 0);
 
     // Glow ring for active/hovered
     if (isActive || isHov) {
       ctx.beginPath();
       ctx.arc(n.x, n.y, r + 3.5, 0, Math.PI * 2);
-      ctx.fillStyle = isActive ? 'rgba(107,141,214,0.25)' : 'rgba(255,255,255,0.10)';
+      ctx.fillStyle = isActive ? 'rgba(107,141,214,0.25)' : (isLight ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.10)');
       ctx.fill();
     }
 
     ctx.beginPath();
     ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
     const dim = (dimUnlit || (activeNeighbours.size > 0 && !hov)) && !isLit && !isActive;
-    ctx.fillStyle = isActive ? '#ffffff'
-      : isHov     ? '#fff'
-      : dim       ? 'rgba(255,255,255,0.18)'
+    ctx.fillStyle = isActive ? (isLight ? '#1a1b1e' : '#ffffff')
+      : isHov     ? (isLight ? '#1a1b1e' : '#fff')
+      : dim       ? (isLight ? 'rgba(0,0,0,0.18)' : 'rgba(255,255,255,0.18)')
       : color;
     ctx.globalAlpha = dim ? 0.30 : 1;
     ctx.fill();
@@ -217,7 +219,9 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
       const a = labelAlpha * (isActive ? 1 : dim ? 0.3 : 0.65);
       if (a < 0.04) continue;
       ctx.globalAlpha = a;
-      ctx.fillStyle = isActive ? '#ffffff' : 'rgba(210,215,225,1)';
+      ctx.fillStyle = isActive
+        ? (isLight ? '#1a1b1e' : '#ffffff')
+        : (isLight ? 'rgba(40,45,60,1)' : 'rgba(210,215,225,1)');
       ctx.fillText(n.label || n.id, n.x + n.r * ns + 4, n.y + 3.5);
     }
     ctx.globalAlpha = 1;
@@ -231,7 +235,7 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
     const lx = Math.min(W - tw - 14, Math.max(4, hov.x - tw / 2));
     const ly = hov.y - hov.r * ns - 9;
     ctx.globalAlpha = 0.95;
-    ctx.fillStyle = 'rgba(14,15,18,0.92)';
+    ctx.fillStyle = isLight ? 'rgba(20,21,24,0.88)' : 'rgba(14,15,18,0.92)';
     ctx.beginPath();
     ctx.roundRect(lx - 6, ly - 13, tw + 12, 18, 4);
     ctx.fill();
@@ -665,46 +669,64 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
     if (!canvas || !window.GRAPH_NODES) return;
 
     const dpr = window.devicePixelRatio || 1;
-    canvas.width  = canvas.offsetWidth  * dpr;
-    canvas.height = canvas.offsetHeight * dpr;
 
-    const W = canvas.offsetWidth, H = canvas.offsetHeight;
-    graphRef.current = new ForceGraph([...GRAPH_NODES], [...GRAPH_EDGES], W, H, cfgRef.current);
-    const ctx = canvas.getContext('2d');
-
-    const loop = () => {
-      const g = graphRef.current;
-      if (!g) return;
-      if (dragNodeRef.current) {
-        dragNodeRef.current.vx = 0;
-        dragNodeRef.current.vy = 0;
-        if (g.alpha < 0.3) g.alpha = 0.3;
+    // Defer init until the modal has finished layout — on mobile the canvas
+    // offsetWidth is 0 on the first synchronous render, making the ForceGraph
+    // place all nodes at (0,0) and the pixel buffer empty.
+    const init = () => {
+      const W = canvas.offsetWidth;
+      const H = canvas.offsetHeight;
+      if (!W || !H) {
+        rafRef.current = requestAnimationFrame(init);
+        return;
       }
-      g.tick();
-      const cW = canvas.offsetWidth, cH = canvas.offsetHeight;
-      const zoom = zoomRef.current;
-      const cfg  = cfgRef.current;
 
-      // Label fade: threshold 0 → always show; else fade in above threshold zoom
-      const labelAlpha = cfg.textFadeThreshold <= 0
-        ? 1
-        : Math.min(1, Math.max(0, (zoom - cfg.textFadeThreshold) / 1.5));
+      canvas.width  = W * dpr;
+      canvas.height = H * dpr;
+      graphRef.current = new ForceGraph([...GRAPH_NODES], [...GRAPH_EDGES], W, H, cfgRef.current);
+      const ctx = canvas.getContext('2d');
 
-      ctx.save();
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.scale(dpr, dpr);
-      const { x: px, y: py } = panRef.current;
-      ctx.translate(cW / 2 + px, cH / 2 + py);
-      ctx.scale(zoom, zoom);
-      ctx.translate(-cW / 2, -cH / 2);
+      const loop = () => {
+        const g = graphRef.current;
+        if (!g) return;
 
-      drawGraph(ctx, g, cW, cH, activeRef.current, hovRef.current, !!hovRef.current, true, labelAlpha, cfg);
+        // Keep canvas pixel buffer in sync with CSS size (orientation changes, etc.)
+        const cW = canvas.offsetWidth, cH = canvas.offsetHeight;
+        if (cW && cH && (canvas.width !== Math.round(cW * dpr) || canvas.height !== Math.round(cH * dpr))) {
+          canvas.width  = cW * dpr;
+          canvas.height = cH * dpr;
+        }
 
-      ctx.restore();
-      rafRef.current = requestAnimationFrame(loop);
+        if (dragNodeRef.current) {
+          dragNodeRef.current.vx = 0;
+          dragNodeRef.current.vy = 0;
+          if (g.alpha < 0.3) g.alpha = 0.3;
+        }
+        g.tick();
+
+        const zoom = zoomRef.current;
+        const cfg  = cfgRef.current;
+        const labelAlpha = cfg.textFadeThreshold <= 0
+          ? 1
+          : Math.min(1, Math.max(0, (zoom - cfg.textFadeThreshold) / 1.5));
+
+        ctx.save();
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.scale(dpr, dpr);
+        const { x: px, y: py } = panRef.current;
+        ctx.translate(cW / 2 + px, cH / 2 + py);
+        ctx.scale(zoom, zoom);
+        ctx.translate(-cW / 2, -cH / 2);
+
+        drawGraph(ctx, g, cW, cH, activeRef.current, hovRef.current, !!hovRef.current, true, labelAlpha, cfg);
+
+        ctx.restore();
+        rafRef.current = requestAnimationFrame(loop);
+      };
+      loop();
     };
-    loop();
 
+    rafRef.current = requestAnimationFrame(init);
     return () => cancelAnimationFrame(rafRef.current);
   }, []);
 
@@ -841,7 +863,7 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
     <div
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
       style={{
-        position: 'fixed', inset: 0, zIndex: 500,
+        position: 'fixed', inset: 0, zIndex: 600,
         background: 'rgba(0,0,0,0.72)',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
       }}
@@ -909,9 +931,10 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
             }}
             onWheel={onWheel}
             style={{
+              position: 'absolute', inset: 0,
               width: '100%', height: '100%', display: 'block',
               background: 'var(--bg-graph)',
-              cursor,
+              cursor, touchAction: 'none',
             }}
           />
 

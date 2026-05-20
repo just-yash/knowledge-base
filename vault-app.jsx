@@ -349,7 +349,7 @@ const App = () => {
     onAutoReveal: handleAutoReveal, onCollapseAll: handleCollapseAll,
     onSearch: () => setCmdOpen(true),
     onHome: () => handleNoteNavigate('index'),
-    onOpenGraph: () => setGraphOpen(true),
+    onOpenGraph: () => { setGraphOpen(true); if (isMobile) setLeftOpen(false); },
   };
 
   return (
