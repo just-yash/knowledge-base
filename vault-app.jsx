@@ -38,6 +38,18 @@ function usePersisted(key, defaultValue) {
   return [value, setValue];
 }
 
+// ─── Mobile detection ─────────────────────────────────────────────────────────
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 768px)');
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+  return isMobile;
+}
+
 // ─── Command Palette (inline, Phase 5 will polish) ───────────────────────────
 const CommandPalette = ({ onClose, onNavigate, initialQuery = '' }) => {
   const [query, setQuery] = useState(initialQuery);
@@ -82,7 +94,7 @@ const CommandPalette = ({ onClose, onNavigate, initialQuery = '' }) => {
       }}
     >
       <div style={{
-        width: 520, background: 'var(--bg-modal)',
+        width: 'min(90vw, 520px)', background: 'var(--bg-modal)',
         borderRadius: 10, border: '1px solid var(--border-strong)',
         boxShadow: 'var(--shadow-modal)', overflow: 'hidden',
       }} className="cmd-palette-inner slide-down">
@@ -177,6 +189,7 @@ const CommandPalette = ({ onClose, onNavigate, initialQuery = '' }) => {
 
 // ─── App Root ─────────────────────────────────────────────────────────────────
 const App = () => {
+  const isMobile = useIsMobile();
   const [theme,       setTheme]       = usePersisted('vault-theme', 'dark');
   const [leftOpen,    setLeftOpen]    = usePersisted('vault-left',  true);
   const [rightOpen,   setRightOpen]   = usePersisted('vault-right', true);
@@ -236,7 +249,9 @@ const App = () => {
     if (!VAULT_NOTES[id]) return;
     nav.navigate(id);
     setOpenTabs(tabs => tabs.includes(id) ? tabs : [...tabs, id]);
-  }, [nav]);
+    // On mobile, close the left overlay after selecting a note
+    if (isMobile) setLeftOpen(false);
+  }, [nav, isMobile]);
 
   const handleTabClose = useCallback((id) => {
     setOpenTabs(tabs => {
@@ -315,6 +330,28 @@ const App = () => {
     if (tweaks.fontSize     && tweaks.fontSize     !== fontSize)     setFontSize(tweaks.fontSize);
   }, [tweaks.theme, tweaks.readingWidth, tweaks.fontSize]);
 
+  // On mobile: force both panels closed on first load (never restore persisted open state)
+  const mobileInitDone = React.useRef(false);
+  useEffect(() => {
+    if (isMobile && !mobileInitDone.current) {
+      mobileInitDone.current = true;
+      setLeftOpen(false);
+      setRightOpen(false);
+    }
+  }, [isMobile]);
+
+  // ── Shared sidebar props ──────────────────────────────────────────────────
+  const leftSidebarProps = {
+    open: true,  // always-open inside the overlay wrapper
+    theme, onThemeToggle: () => setTheme(t => t === 'dark' ? 'light' : 'dark'),
+    currentNote: nav.current, onNoteSelect: handleNoteNavigate,
+    expandedFolders: expandedSet, onFolderToggle: handleFolderToggle,
+    onAutoReveal: handleAutoReveal, onCollapseAll: handleCollapseAll,
+    onSearch: () => setCmdOpen(true),
+    onHome: () => handleNoteNavigate('index'),
+    onOpenGraph: () => setGraphOpen(true),
+  };
+
   return (
     <>
       <div
@@ -322,21 +359,32 @@ const App = () => {
         data-theme={theme}
         style={{ display: 'flex', height: '100vh', overflow: 'hidden', background: 'var(--bg-app)' }}
       >
-        {/* Left sidebar */}
-        <LeftSidebar
-          open={showLeft}
-          theme={theme}
-          onThemeToggle={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
-          currentNote={nav.current}
-          onNoteSelect={handleNoteNavigate}
-          expandedFolders={expandedSet}
-          onFolderToggle={handleFolderToggle}
-          onAutoReveal={handleAutoReveal}
-          onCollapseAll={handleCollapseAll}
-          onSearch={() => setCmdOpen(true)}
-          onHome={() => handleNoteNavigate('index')}
-          onOpenGraph={() => setGraphOpen(true)}
-        />
+        {/* Mobile backdrop — tapping it closes both panels */}
+        {isMobile && (showLeft || showRight) && (
+          <div
+            onClick={() => { setLeftOpen(false); setRightOpen(false); }}
+            style={{
+              position: 'fixed', inset: 0, zIndex: 400,
+              background: 'rgba(0,0,0,0.52)',
+              backdropFilter: 'blur(2px)',
+              WebkitBackdropFilter: 'blur(2px)',
+            }}
+          />
+        )}
+
+        {/* Left sidebar — overlay on mobile, flex child on desktop */}
+        {isMobile ? (
+          <div style={{
+            position: 'fixed', top: 0, left: 0, bottom: 0, zIndex: 500,
+            transform: showLeft ? 'translateX(0)' : 'translateX(-100%)',
+            transition: 'transform 0.26s cubic-bezier(0.4,0,0.2,1)',
+            boxShadow: showLeft ? '6px 0 32px rgba(0,0,0,0.45)' : 'none',
+          }}>
+            <LeftSidebar {...leftSidebarProps} />
+          </div>
+        ) : (
+          <LeftSidebar {...leftSidebarProps} open={showLeft} />
+        )}
 
         {/* Center editor */}
         <NoteEditor
@@ -360,13 +408,29 @@ const App = () => {
           fontSize={tweaks.fontSize}
         />
 
-        {/* Right panel */}
-        <RightPanel
-          open={showRight}
-          currentNote={nav.current}
-          onNoteNavigate={handleNoteNavigate}
-          onClose={() => setRightOpen(false)}
-        />
+        {/* Right panel — overlay on mobile, flex child on desktop */}
+        {isMobile ? (
+          <div style={{
+            position: 'fixed', top: 0, right: 0, bottom: 0, zIndex: 500,
+            transform: showRight ? 'translateX(0)' : 'translateX(100%)',
+            transition: 'transform 0.26s cubic-bezier(0.4,0,0.2,1)',
+            boxShadow: showRight ? '-6px 0 32px rgba(0,0,0,0.45)' : 'none',
+          }}>
+            <RightPanel
+              open={true}
+              currentNote={nav.current}
+              onNoteNavigate={handleNoteNavigate}
+              onClose={() => setRightOpen(false)}
+            />
+          </div>
+        ) : (
+          <RightPanel
+            open={showRight}
+            currentNote={nav.current}
+            onNoteNavigate={handleNoteNavigate}
+            onClose={() => setRightOpen(false)}
+          />
+        )}
 
         {/* Command palette */}
         {cmdOpen && (
