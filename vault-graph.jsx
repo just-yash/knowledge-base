@@ -243,9 +243,10 @@ function drawGraph(ctx, g, W, H, activeId, hovNode, dimUnlit, showLabels = false
 
 // ─── Settings Panel ───────────────────────────────────────────────────────────
 const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
+  const isMob = window.innerWidth <= 768;
   const [displayOpen, setDisplayOpen] = useState(true);
   const [forcesOpen,  setForcesOpen]  = useState(true);
-  const [panelOpen,   setPanelOpen]   = useState(true);
+  const [panelOpen,   setPanelOpen]   = useState(!isMob); // starts closed on mobile
 
   // Section header button (collapsible)
   const SectionBtn = ({ label, isOpen, onToggle }) => (
@@ -305,10 +306,10 @@ const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
         onClick={() => setPanelOpen(true)}
         title="Graph settings"
         style={{
-          position: 'absolute', bottom: 12, left: 12,
+          position: 'absolute', bottom: 12, right: 12,
           background: 'rgba(14,15,18,0.85)', backdropFilter: 'blur(6px)',
           border: '1px solid rgba(255,255,255,0.13)', borderRadius: 6,
-          width: 30, height: 30,
+          width: 34, height: 34,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           cursor: 'pointer', color: 'var(--text-muted)',
           transition: 'color 0.15s, border-color 0.15s',
@@ -316,21 +317,29 @@ const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
         onMouseEnter={e => { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)'; }}
         onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-muted)';   e.currentTarget.style.borderColor = 'rgba(255,255,255,0.13)'; }}
       >
-        <Icon name="sliders" size={14} strokeWidth={1.6} />
+        <Icon name="sliders" size={15} strokeWidth={1.6} />
       </button>
     );
   }
 
-  // Full panel
+  // Full panel — bottom-sheet on mobile, floating card on desktop
+  const panelStyle = isMob ? {
+    position: 'absolute', bottom: 0, left: 0, right: 0, zIndex: 10,
+    background: 'rgba(12,13,16,0.97)', backdropFilter: 'blur(12px)',
+    border: '1px solid rgba(255,255,255,0.13)',
+    borderRadius: '14px 14px 0 0',
+    maxHeight: '52vh', overflowY: 'auto',
+    boxShadow: '0 -6px 32px rgba(0,0,0,0.6)',
+  } : {
+    position: 'absolute', bottom: 12, left: 12, zIndex: 10,
+    background: 'rgba(12,13,16,0.93)', backdropFilter: 'blur(10px)',
+    border: '1px solid rgba(255,255,255,0.11)', borderRadius: 8,
+    width: 212, overflow: 'hidden',
+    boxShadow: '0 6px 28px rgba(0,0,0,0.55)',
+  };
+
   return (
-    <div style={{
-      position: 'absolute', bottom: 12, left: 12,
-      background: 'rgba(12,13,16,0.93)', backdropFilter: 'blur(10px)',
-      border: '1px solid rgba(255,255,255,0.11)', borderRadius: 8,
-      width: 212, overflow: 'hidden',
-      boxShadow: '0 6px 28px rgba(0,0,0,0.55)',
-      zIndex: 10,
-    }}>
+    <div style={panelStyle}>
       {/* Panel header */}
       <div style={{
         display: 'flex', alignItems: 'center',
@@ -607,6 +616,7 @@ const MiniGraph = ({ currentNote, onNavigate, onOpenFull }) => {
 
 // ─── Full Graph Modal ─────────────────────────────────────────────────────────
 const FullGraph = ({ currentNote, onNavigate, onClose }) => {
+  const isMob        = window.innerWidth <= 768;
   const canvasRef    = useRef(null);
   const graphRef     = useRef(null);
   const rafRef       = useRef(null);
@@ -615,6 +625,7 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
   const activeRef    = useRef(currentNote);
   const panRef       = useRef({ x: 0, y: 0, dragging: false, lx: 0, ly: 0, moved: false });
   const zoomRef      = useRef(1);
+  const touchRef     = useRef({ lastDist: null }); // for pinch-to-zoom
   // cfg ref for use inside RAF loop (avoids stale closure)
   const cfgRef       = useRef({ ...DEFAULT_CFG });
 
@@ -773,6 +784,59 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
     return () => window.removeEventListener('keydown', handler);
   }, [onClose]);
 
+  // Touch events (non-passive so we can preventDefault and stop page scroll)
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const onTouchStart = (e) => {
+      e.preventDefault();
+      if (e.touches.length === 1) {
+        const t = e.touches[0];
+        onMouseDown({ clientX: t.clientX, clientY: t.clientY });
+      } else if (e.touches.length === 2) {
+        panRef.current.dragging = false;
+        dragNodeRef.current = null;
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchRef.current.lastDist = Math.sqrt(dx * dx + dy * dy);
+      }
+    };
+
+    const onTouchMove = (e) => {
+      e.preventDefault();
+      if (e.touches.length === 1) {
+        const t = e.touches[0];
+        onMouseMove({ clientX: t.clientX, clientY: t.clientY });
+      } else if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (touchRef.current.lastDist) {
+          const scale = dist / touchRef.current.lastDist;
+          zoomRef.current = Math.max(0.2, Math.min(8, zoomRef.current * scale));
+        }
+        touchRef.current.lastDist = dist;
+      }
+    };
+
+    const onTouchEnd = (e) => {
+      e.preventDefault();
+      touchRef.current.lastDist = null;
+      const t = e.changedTouches[0];
+      if (t) onMouseUp({ clientX: t.clientX, clientY: t.clientY });
+    };
+
+    canvas.addEventListener('touchstart', onTouchStart, { passive: false });
+    canvas.addEventListener('touchmove',  onTouchMove,  { passive: false });
+    canvas.addEventListener('touchend',   onTouchEnd,   { passive: false });
+    return () => {
+      canvas.removeEventListener('touchstart', onTouchStart);
+      canvas.removeEventListener('touchmove',  onTouchMove);
+      canvas.removeEventListener('touchend',   onTouchEnd);
+    };
+  }, [onMouseDown, onMouseMove, onMouseUp]);
+
   return (
     <div
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
@@ -783,7 +847,9 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
       }}
     >
       <div style={{
-        width: '82vw', height: '80vh', maxWidth: 1120, maxHeight: 760,
+        width: isMob ? '96vw' : '82vw',
+        height: isMob ? '92vh' : '80vh',
+        maxWidth: 1120, maxHeight: isMob ? '92vh' : 760,
         background: 'var(--bg-app)', borderRadius: 12,
         border: '1px solid var(--border-strong)',
         boxShadow: 'var(--shadow-modal)',
@@ -791,29 +857,35 @@ const FullGraph = ({ currentNote, onNavigate, onClose }) => {
       }}>
         {/* Header */}
         <div style={{
-          display: 'flex', alignItems: 'center', gap: 10,
-          padding: '10px 16px', borderBottom: '1px solid var(--border)', flexShrink: 0,
+          display: 'flex', alignItems: 'center', gap: 8,
+          padding: isMob ? '8px 12px' : '10px 16px',
+          borderBottom: '1px solid var(--border)', flexShrink: 0,
+          minWidth: 0,
         }}>
-          <Icon name="git-branch" size={14} strokeWidth={1.6} style={{ color: 'var(--accent)' }} />
-          <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-primary)', flex: 1 }}>
-            Knowledge Graph — {GRAPH_NODES.length} nodes · {GRAPH_EDGES.length} edges
+          <Icon name="git-branch" size={14} strokeWidth={1.6} style={{ color: 'var(--accent)', flexShrink: 0 }} />
+          <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-primary)', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            {isMob
+              ? `Graph · ${GRAPH_NODES.length}N ${GRAPH_EDGES.length}E`
+              : `Knowledge Graph — ${GRAPH_NODES.length} nodes · ${GRAPH_EDGES.length} edges`}
           </span>
-          {/* Legend */}
-          <div style={{ display: 'flex', gap: 14, fontSize: 11, color: 'var(--text-muted)' }}>
+          {/* Legend dots — always visible; labels hidden on mobile */}
+          <div style={{ display: 'flex', gap: isMob ? 7 : 14, fontSize: 11, color: 'var(--text-muted)', flexShrink: 0 }}>
             {Object.entries(GROUP_COLORS).map(([g, c]) => (
-              <span key={g} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+              <span key={g} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
                 <span style={{ width: 8, height: 8, borderRadius: '50%', background: c, display: 'inline-block', flexShrink: 0 }} />
-                {g}
+                {!isMob && g}
               </span>
             ))}
           </div>
-          <span style={{ fontSize: 11, color: 'var(--text-muted)', marginLeft: 12 }}>
-            Scroll to zoom · Drag to pan · Click node to open
-          </span>
+          {!isMob && (
+            <span style={{ fontSize: 11, color: 'var(--text-muted)', marginLeft: 8, whiteSpace: 'nowrap' }}>
+              Scroll to zoom · Drag to pan · Click node to open
+            </span>
+          )}
           <button onClick={onClose} style={{
             background: 'none', border: 'none', cursor: 'pointer',
             color: 'var(--text-muted)', display: 'flex', padding: 4, borderRadius: 4,
-            marginLeft: 6, transition: 'color 0.12s',
+            marginLeft: 4, flexShrink: 0, transition: 'color 0.12s',
           }}
           onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
           onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
