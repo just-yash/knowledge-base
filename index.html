@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Obsidian Vault</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+<!-- Syntax highlighting (atom-one-dark) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<!-- KaTeX (LaTeX math rendering) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+<!-- Marked (markdown parser) -->
+<script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+
+<!-- React 18 + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<style>
+/* ── Reset ──────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+button { font-family: inherit; }
+
+/* ── Dark Theme ─────────────────────────────────────────────────── */
+:root, [data-theme="dark"] {
+  --bg-app:        #1e1f22;
+  --bg-rail:       #18191c;
+  --bg-sidebar:    #1c1d20;
+  --bg-content:    #212225;
+  --bg-panel:      #1c1d20;
+  --bg-tabs:       #18191c;
+  --bg-modal:      #1d1e22;
+  --bg-graph:      #141517;
+  --bg-hover:      rgba(255,255,255,0.044);
+  --bg-active:     rgba(107,141,214,0.14);
+  --bg-overlay:    rgba(0,0,0,0.58);
+  --border:        rgba(255,255,255,0.064);
+  --border-strong: rgba(255,255,255,0.11);
+  --text-primary:  #d4d4d5;
+  --text-secondary:#8b8d91;
+  --text-muted:    #545659;
+  --text-heading:  #e8e8ea;
+  --text-link:     #7c93d4;
+  --accent:        #6b8dd6;
+  --accent-soft:   rgba(107,141,214,0.15);
+  --tag-bg:        rgba(107,141,214,0.11);
+  --tag-text:      #7c9fd4;
+  --tag-border:    rgba(107,141,214,0.22);
+  --shadow:        0 2px 10px rgba(0,0,0,0.38);
+  --shadow-modal:  0 24px 64px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
+  --code-bg:       #16171c;
+  --code-header:   #1b1c23;
+}
+
+/* ── Light Theme ────────────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg-app:        #f2ece0;
+  --bg-rail:       #e7e1d5;
+  --bg-sidebar:    #ebe5d9;
+  --bg-content:    #faf5ed;
+  --bg-panel:      #ebe5d9;
+  --bg-tabs:       #e7e1d5;
+  --bg-modal:      #eee8dc;
+  --bg-graph:      #dedad0;
+  --bg-hover:      rgba(0,0,0,0.042);
+  --bg-active:     rgba(74,107,204,0.1);
+  --bg-overlay:    rgba(0,0,0,0.27);
+  --border:        rgba(0,0,0,0.079);
+  --border-strong: rgba(0,0,0,0.13);
+  --text-primary:  #2c2a27;
+  --text-secondary:#6b6860;
+  --text-muted:    #9b9890;
+  --text-heading:  #1a1918;
+  --text-link:     #4a6bcc;
+  --accent:        #4a6bcc;
+  --accent-soft:   rgba(74,107,204,0.12);
+  --tag-bg:        rgba(74,107,204,0.09);
+  --tag-text:      #4a6bcc;
+  --tag-border:    rgba(74,107,204,0.2);
+  --shadow:        0 2px 10px rgba(0,0,0,0.1);
+  --shadow-modal:  0 24px 64px rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.07);
+  --code-bg:       #1a1b21;
+  --code-header:   #1f2028;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────────── */
+.scrollable { scrollbar-width: thin; scrollbar-color: transparent transparent; }
+.scrollable:hover { scrollbar-color: var(--border-strong) transparent; }
+.scrollable::-webkit-scrollbar { width: 5px; }
+.scrollable::-webkit-scrollbar-track { background: transparent; }
+.scrollable::-webkit-scrollbar-thumb { background: transparent; border-radius: 3px; }
+.scrollable:hover::-webkit-scrollbar-thumb { background: var(--border-strong); }
+
+/* ─── Markdown Typography ────────────────────────────────────────── */
+.note-content {
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.78;
+  color: var(--text-primary);
+  text-wrap: pretty;
+}
+
+/* H1 — large, accent blue, most prominent */
+.note-content h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.75em; font-weight: 600;
+  color: oklch(78% 0.12 230);          /* bright blue */
+  margin: 0 0 0.65em; line-height: 1.25; letter-spacing: -0.022em;
+}
+/* H2 — coral/amber, section marker */
+.note-content h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.18em; font-weight: 600;
+  color: oklch(74% 0.1 50);            /* warm amber */
+  margin: 2em 0 0.55em; padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--border); letter-spacing: -0.01em;
+}
+/* H3 — soft green, sub-section */
+.note-content h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1em; font-weight: 600;
+  color: oklch(72% 0.1 155);           /* muted green */
+  margin: 1.5em 0 0.4em;
+}
+/* H4–H6 — lavender, tertiary */
+.note-content h4, .note-content h5, .note-content h6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.85em; font-weight: 600;
+  color: oklch(68% 0.08 280);          /* soft purple */
+  margin: 1.2em 0 0.35em; text-transform: uppercase; letter-spacing: 0.06em;
+}
+
+/* Light theme heading overrides — slightly deeper versions */
+[data-theme="light"] .note-content h1 { color: oklch(42% 0.14 230); }
+[data-theme="light"] .note-content h2 { color: oklch(48% 0.11 50);  }
+[data-theme="light"] .note-content h3 { color: oklch(44% 0.11 155); }
+[data-theme="light"] .note-content h4,
+[data-theme="light"] .note-content h5,
+[data-theme="light"] .note-content h6 { color: oklch(44% 0.09 280); }
+
+.note-content p  { margin: 0 0 0.9em; }
+.note-content ul, .note-content ol { margin: 0 0 0.9em 1.5em; }
+.note-content li { margin-bottom: 0.28em; }
+.note-content li > ul, .note-content li > ol { margin-top: 0.28em; margin-bottom: 0.28em; }
+
+/* Bold — warm white / near-heading color */
+.note-content strong {
+  font-weight: 700;
+  color: var(--text-heading);
+}
+/* Italic — slightly tinted, nudged toward accent */
+.note-content em {
+  font-style: italic;
+  color: oklch(72% 0.07 220);   /* light periwinkle */
+}
+[data-theme="light"] .note-content em { color: oklch(42% 0.09 220); }
+
+/* Bold+italic */
+.note-content strong em,
+.note-content em strong {
+  color: oklch(75% 0.1 55);    /* warm gold */
+  font-style: italic; font-weight: 700;
+}
+[data-theme="light"] .note-content strong em,
+[data-theme="light"] .note-content em strong { color: oklch(45% 0.1 55); }
+
+.note-content a     { color: var(--text-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+.note-content a:hover { border-bottom-color: var(--text-link); }
+
+.note-content blockquote {
+  border-left: 3px solid var(--accent);
+  margin: 1.1em 0; padding: 0.5em 0 0.5em 1.1em;
+  color: var(--text-secondary);
+  font-style: italic;
+  background: var(--bg-active);
+  border-radius: 0 5px 5px 0;
+}
+.note-content blockquote p:last-child { margin-bottom: 0; }
+.note-content hr { border: none; border-top: 1px solid var(--border); margin: 2em 0; }
+
+/* Inline code */
+.note-content code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+  background: var(--bg-active);
+  color: var(--text-link);
+  padding: 1px 5px; border-radius: 4px;
+  border: 1px solid var(--tag-border);
+}
+
+/* Code blocks */
+.vault-code-block {
+  margin: 0.9em 0 1.3em;
+  border-radius: 8px; overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: var(--code-bg);
+  font-size: 0.875em;
+}
+.vault-code-block pre,
+.vault-code-block code { color: #abb2bf; } /* always atom-one-dark foreground, regardless of page theme */
+.vault-code-block code { background: none; border: none; padding: 0; border-radius: 0; font-size: 1em; }
+.vault-code-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 6px 14px; background: var(--code-header);
+  border-bottom: 1px solid rgba(255,255,255,0.055);
+}
+.vault-code-lang {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10.5px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase;
+  color: rgba(255,255,255,0.38);
+}
+.vault-copy-btn {
+  font-family: 'IBM Plex Sans', sans-serif; font-size: 10.5px;
+  color: rgba(255,255,255,0.28); background: none; border: none; cursor: pointer;
+  padding: 2px 7px; border-radius: 4px; transition: color 0.15s, background 0.15s;
+}
+.vault-copy-btn:hover { color: rgba(255,255,255,0.65); background: rgba(255,255,255,0.07); }
+.vault-code-block pre {
+  margin: 0; padding: 14px 16px; overflow-x: auto;
+  font-family: 'JetBrains Mono', monospace; line-height: 1.62;
+  background: var(--code-bg) !important;
+}
+.vault-code-block .hljs { background: var(--code-bg) !important; padding: 0; }
+
+/* Tables */
+.note-content table {
+  width: 100%; border-collapse: collapse;
+  margin: 0.9em 0 1.2em;
+  font-family: 'IBM Plex Sans', sans-serif; font-size: 0.9em;
+  border: 1px solid var(--border); border-radius: 6px; overflow: hidden;
+}
+.note-content th {
+  text-align: left; padding: 8px 12px;
+  font-weight: 600; font-size: 0.82em; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--text-muted); background: var(--bg-hover);
+  border-bottom: 1px solid var(--border-strong);
+}
+.note-content td { padding: 7px 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+.note-content tr:last-child td { border-bottom: none; }
+.note-content tr:hover td { background: var(--bg-hover); }
+
+/* Callouts */
+.vault-callout {
+  margin: 1em 0 1.2em; padding: 0.65em 1em 0.75em;
+  border-left: 3px solid var(--callout-color, var(--accent));
+  border-radius: 0 6px 6px 0;
+  background: color-mix(in srgb, var(--callout-color, var(--accent)) 9%, transparent);
+}
+.vault-callout-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.8em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--callout-color, var(--accent)); margin-bottom: 0.45em;
+}
+.vault-callout-body { color: var(--text-secondary); font-style: normal; }
+.vault-callout-body p:last-child { margin-bottom: 0; }
+
+/* Wiki links */
+.note-content .wiki-link {
+  color: var(--text-link); text-decoration: none;
+  background: var(--accent-soft);
+  border-radius: 3px; padding: 0 3px;
+  border-bottom: 1px solid var(--tag-border);
+  cursor: pointer; transition: background 0.15s;
+}
+.note-content .wiki-link:hover { background: var(--bg-active); border-bottom-color: var(--text-link); }
+
+/* ── Task lists ─────────────────────────────────────────────────── */
+.note-content .vault-task-list { list-style: none; margin-left: 0; padding-left: 0; }
+.note-content .vault-task-item {
+  display: flex; align-items: baseline; gap: 8px;
+  padding: 2px 0; color: var(--text-secondary);
+}
+.note-content .vault-task-item.done { color: var(--text-muted); }
+.note-content .vault-task-item.done .vault-task-label { text-decoration: line-through; opacity: 0.55; }
+.vault-cb {
+  flex-shrink: 0; width: 14px; height: 14px; border-radius: 3px;
+  border: 1.5px solid var(--text-muted); background: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  position: relative; top: 1px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.vault-cb.checked {
+  background: var(--accent); border-color: var(--accent);
+}
+.vault-cb.checked::after {
+  content: ''; display: block;
+  width: 8px; height: 5px;
+  border-left: 1.5px solid #fff; border-bottom: 1.5px solid #fff;
+  transform: rotate(-45deg) translate(0px, -1px);
+}
+
+/* ── KaTeX math ──────────────────────────────────────────────────── */
+.note-content .katex-display {
+  margin: 1.1em 0; overflow-x: auto; overflow-y: hidden;
+  padding: 0.5em 0;
+}
+.note-content .katex-display > .katex { text-align: center; }
+.note-content .katex { font-size: 1.05em; color: var(--text-primary); }
+[data-theme="light"] .note-content .katex { color: var(--text-heading); }
+
+/* ─── Animations ──────────────────────────────────────────────────── */
+@keyframes noteEnter {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+@keyframes panelIn {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0);    }
+}
+
+.note-enter   { animation: noteEnter 0.22s cubic-bezier(0.16,1,0.3,1) both; }
+.fade-in      { animation: fadeIn    0.18s ease both; }
+.slide-down   { animation: slideDown 0.18s cubic-bezier(0.16,1,0.3,1) both; }
+.panel-in     { animation: panelIn   0.2s  cubic-bezier(0.16,1,0.3,1) both; }
+
+/* ─── Focus mode ─────────────────────────────────────────────────── */
+.focus-mode .note-content {
+  max-width: 660px !important;
+  margin: 0 auto;
+}
+.focus-mode-bar {
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+  background: var(--bg-modal); border: 1px solid var(--border-strong);
+  border-radius: 20px; padding: 6px 18px;
+  font-size: 11.5px; color: var(--text-muted);
+  box-shadow: var(--shadow-modal);
+  display: flex; align-items: center; gap: 10px;
+  z-index: 100; animation: fadeIn 0.2s ease;
+}
+.focus-mode-bar kbd {
+  background: var(--bg-hover); border: 1px solid var(--border);
+  border-radius: 3px; padding: 1px 5px; font-size: 10px;
+}
+
+/* ─── Status bar ─────────────────────────────────────────────────── */
+.status-bar {
+  display: flex; align-items: center; gap: 16px;
+  padding: 0 16px; height: 24px; flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  background: var(--bg-tabs);
+  font-size: 11px; color: var(--text-muted);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.status-bar .status-item { display: flex; align-items: center; gap: 4px; }
+.status-bar .status-sep  { color: var(--border-strong); }
+
+/* ─── Interactive list hovers ────────────────────────────────────── */
+.vault-tree-item { transition: background 0.1s, color 0.1s, border-color 0.12s; }
+.vault-panel-card:hover { background: var(--bg-hover) !important; border-left-color: var(--accent) !important; }
+
+/* ─── Command palette animation ──────────────────────────────────── */
+.cmd-palette-inner { animation: slideDown 0.16s cubic-bezier(0.16,1,0.3,1) both; }
+
+/* ─── Scrollbar always subtly visible when focused ───────────────── */
+.scrollable:focus-within { scrollbar-color: var(--border-strong) transparent; }
+
+/* ─── Button press feedback ─────────────────────────────────────── */
+button:active { transform: scale(0.96); }
+.vault-copy-btn:active, .vault-cb:active { transform: none; }
+
+/* ─── Reading time chip ──────────────────────────────────────────── */
+.reading-chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 1px 7px; border-radius: 10px;
+  background: var(--accent-soft); color: var(--text-link);
+  font-size: 10.5px; font-weight: 500;
+  border: 1px solid var(--tag-border);
+}
+
+/* ─── Global theme transition ────────────────────────────────────── */
+html { transition: background-color 0.2s ease, color 0.2s ease; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- 1. Data (plain JS) -->
+<script src="vault-data.js"></script>
+
+<!-- 2. Components (JSX — load order matters: dependencies first) -->
+<script type="text/babel" src="vault-icons.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="vault-graph.jsx"></script>
+<script type="text/babel" src="vault-sidebar.jsx"></script>
+<script type="text/babel" src="vault-editor.jsx"></script>
+<script type="text/babel" src="vault-rightpanel.jsx"></script>
+<script type="text/babel" src="vault-app.jsx"></script>
+
+<template id="__bundler_thumbnail">
+  <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+    <rect width="120" height="80" fill="#1e1f22"/>
+    <rect x="0" y="0" width="12" height="80" fill="#18191c"/>
+    <rect x="12" y="0" width="26" height="80" fill="#1c1d20"/>
+    <rect x="38" y="0" width="60" height="80" fill="#212225"/>
+    <rect x="98" y="0" width="22" height="80" fill="#1c1d20"/>
+    <rect x="0" y="0" width="120" height="9" fill="#18191c"/>
+    <circle cx="6" cy="22" r="2.5" fill="#6b8dd6" opacity="0.8"/>
+    <circle cx="6" cy="34" r="2.5" fill="#545659" opacity="0.5"/>
+    <circle cx="6" cy="46" r="2.5" fill="#545659" opacity="0.5"/>
+    <rect x="15" y="18" width="19" height="2" rx="1" fill="#545659" opacity="0.5"/>
+    <rect x="17" y="24" width="15" height="1.5" rx="0.75" fill="#6b8dd6" opacity="0.7"/>
+    <rect x="17" y="29" width="17" height="1.5" rx="0.75" fill="#545659" opacity="0.4"/>
+    <rect x="17" y="34" width="13" height="1.5" rx="0.75" fill="#545659" opacity="0.4"/>
+    <rect x="42" y="14" width="30" height="4" rx="1" fill="#e8e8ea" opacity="0.75"/>
+    <rect x="42" y="22" width="46" height="1.5" rx="0.75" fill="#8b8d91" opacity="0.45"/>
+    <rect x="42" y="27" width="40" height="1.5" rx="0.75" fill="#8b8d91" opacity="0.35"/>
+    <rect x="42" y="34" width="52" height="10" rx="2" fill="#16171c"/>
+    <rect x="42" y="48" width="52" height="16" rx="2" fill="#16171c"/>
+  </svg>
+</template>
+</body>
+</html>
