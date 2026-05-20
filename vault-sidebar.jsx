@@ -102,13 +102,24 @@ const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, cu
       </button>
 
       {isExpanded && folder.children.map(child => (
-        <FileRow
-          key={child.id}
-          item={child}
-          depth={depth + 1}
-          isActive={currentNote === child.id}
-          onSelect={() => child.type === 'note' ? onNoteSelect(child.id) : null}
-        />
+        child.type === 'folder'
+          ? <FolderRow
+              key={child.id}
+              folder={child}
+              depth={depth + 1}
+              expanded={expanded}
+              active={active}
+              onToggle={onToggle}
+              onNoteSelect={onNoteSelect}
+              currentNote={currentNote}
+            />
+          : <FileRow
+              key={child.id}
+              item={child}
+              depth={depth + 1}
+              isActive={currentNote === child.id}
+              onSelect={() => child.type === 'note' ? onNoteSelect(child.id) : null}
+            />
       ))}
     </div>
   );

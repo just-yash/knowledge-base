@@ -184,13 +184,13 @@ const App = () => {
   const [cmdOpen,     setCmdOpen]     = useState(false);
   const [graphOpen,   setGraphOpen]   = useState(false);
   const [cmdQuery,    setCmdQuery]    = useState('');
-  const [openTabs,    setOpenTabs]    = usePersisted('vault-tabs',  ['vault-index', 'python-libraries']);
+  const [openTabs,    setOpenTabs]    = usePersisted('vault-tabs',  ['index']);
   const [readingWidth,setReadingWidth]= usePersisted('vault-rw',    'normal');
   const [fontSize,    setFontSize]    = usePersisted('vault-fs',    15);
   const [expandedFolders, setExpandedFolders] = usePersisted('vault-expanded', ['notes']);
 
   const nav = useNavHistory(
-    (() => { try { return JSON.parse(localStorage.getItem('vault-current')) || 'vault-index'; } catch { return 'vault-index'; } })()
+    (() => { try { return JSON.parse(localStorage.getItem('vault-current')) || 'index'; } catch { return 'index'; } })()
   );
 
   // Persist current note
@@ -289,7 +289,7 @@ const App = () => {
           onExpandAll={handleExpandAll}
           onCollapseAll={handleCollapseAll}
           onSearch={() => setCmdOpen(true)}
-          onHome={() => handleNoteNavigate('vault-index')}
+          onHome={() => handleNoteNavigate('index')}
           onOpenGraph={() => setGraphOpen(true)}
         />
 
