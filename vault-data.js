@@ -188,7 +188,7 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
     tags: [],
     created: "2026-05-20",
     modified: "2026-05-20",
-    wordCount: 487,
+    wordCount: 525,
     backlinks: [],
     links: [],
     outline: [{"level":2,"text":"What it is","id":"what-it-is"},{"level":2,"text":"Features","id":"features"},{"level":2,"text":"Tech stack","id":"tech-stack"},{"level":2,"text":"Repository layout","id":"repository-layout"},{"level":2,"text":"Running locally","id":"running-locally"},{"level":2,"text":"Updating the vault","id":"updating-the-vault"},{"level":2,"text":"Note on private content","id":"note-on-private-content"}],
@@ -275,9 +275,17 @@ node watch-vault.js
 
 ## Updating the vault
 
-1. Edit \`.md\` files inside \`notes/\` using Obsidian or any editor
-2. Run \`node build-vault.js\` to regenerate \`vault-data.js\`
-3. Commit and push to the \`obsidian\` branch — GitHub Pages serves it automatically
+\`\`\`bash
+node build-vault.js
+git add vault-data.js
+git commit -m "chore: rebuild vault"
+git pull origin obsidian --rebase
+git push origin obsidian
+\`\`\`
+
+GitHub Pages deploys automatically in ~1 minute after the push.
+
+If you want auto-rebuild while writing in Obsidian, run \`node watch-vault.js\` — it watches the \`notes/\` folder and reruns the build on every save. You'd still need to do the git push manually when you're ready to publish.
 
 ---
 
