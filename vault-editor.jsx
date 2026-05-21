@@ -81,6 +81,16 @@
     return `<${tag}${startAttr}${cls}>${body}</${tag}>`;
   };
 
+  // ── External links → open in new tab ─────────────────────────────────────
+  renderer.link = function(href, title, text) {
+    const isExternal = href && (href.startsWith('http://') || href.startsWith('https://'));
+    const titleAttr  = title ? ` title="${title}"` : '';
+    if (isExternal) {
+      return `<a href="${href}"${titleAttr} target="_blank" rel="noopener noreferrer">${text}</a>`;
+    }
+    return `<a href="${href}"${titleAttr}>${text}</a>`;
+  };
+
   marked.setOptions({ renderer, gfm: true, breaks: false, html: true });
 })();
 
@@ -587,24 +597,43 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
     return () => observer.disconnect();
   }, [note?.id]);
 
-  // 3. Wiki-link click delegation (supports [[Note#Heading|Alias]])
+  // 3. Link click delegation
+  //    a) Wiki-links  → in-app navigation
+  //    b) External links → force new tab (catches raw HTML links that bypass the renderer)
   React.useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
     const handler = (e) => {
-      const a = e.target.closest('.wiki-link');
+      const a = e.target.closest('a');
       if (!a) return;
-      e.preventDefault();
-      const noteId    = a.dataset.noteId;
-      const headingId = a.dataset.headingId || '';
-      if (noteId && window.VAULT_NOTES?.[noteId]) {
-        onNoteNavigate(noteId);
-        // After navigation the content re-renders; wait then scroll to heading
-        if (headingId) {
-          setTimeout(() => {
-            window.dispatchEvent(new CustomEvent('vault-scroll-to', { detail: { headingId } }));
-          }, 320);
+
+      // ── Wiki-link ────────────────────────────────────────────────────────
+      if (a.classList.contains('wiki-link')) {
+        e.preventDefault();
+        const noteId    = a.dataset.noteId;
+        const headingId = a.dataset.headingId || '';
+        if (noteId && window.VAULT_NOTES?.[noteId]) {
+          onNoteNavigate(noteId);
+          // After navigation the content re-renders; wait then scroll to heading
+          if (headingId) {
+            setTimeout(() => {
+              window.dispatchEvent(new CustomEvent('vault-scroll-to', { detail: { headingId } }));
+            }, 320);
+          }
         }
+        return;
+      }
+
+      // ── External link ────────────────────────────────────────────────────
+      const href = a.getAttribute('href');
+      if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+        // Already has target="_blank" from the renderer, but intercept here
+        // to guarantee new-tab behaviour for any raw HTML links in note content.
+        if (!a.target || a.target !== '_blank') {
+          e.preventDefault();
+          window.open(href, '_blank', 'noopener,noreferrer');
+        }
+        // If target is already _blank, the browser handles it — don't prevent.
       }
     };
     el.addEventListener('click', handler);
