@@ -675,7 +675,7 @@ const ConnectBar = ({ scrollRef }) => {
       flexShrink: 0, height: 36,
     }}>
       {/* Label */}
-      <span style={{ fontSize: 11, color: 'var(--text-muted)', fontFamily: "'IBM Plex Sans', sans-serif", flexShrink: 0 }}>
+      <span style={{ fontSize: 11, color: 'var(--text-muted)', fontFamily: "'IBM Plex Sans', sans-serif", flexShrink: 0, marginLeft: 'auto' }}>
         Find me on
       </span>
 
