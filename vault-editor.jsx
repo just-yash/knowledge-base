@@ -83,12 +83,15 @@
 
   // ── External links → open in new tab ─────────────────────────────────────
   renderer.link = function(href, title, text) {
-    const isExternal = href && (href.startsWith('http://') || href.startsWith('https://'));
-    const titleAttr  = title ? ` title="${title}"` : '';
+    const bare = href || '';
+    const isExternal = bare.startsWith('http://') || bare.startsWith('https://') || bare.startsWith('www.');
+    // Normalize bare www. URLs (e.g. "www.example.com") so they resolve correctly
+    const resolvedHref = bare.startsWith('www.') ? 'https://' + bare : bare;
+    const titleAttr    = title ? ` title="${title}"` : '';
     if (isExternal) {
-      return `<a href="${href}"${titleAttr} target="_blank" rel="noopener noreferrer">${text}</a>`;
+      return `<a href="${resolvedHref}"${titleAttr} target="_blank" rel="noopener noreferrer">${text}</a>`;
     }
-    return `<a href="${href}"${titleAttr}>${text}</a>`;
+    return `<a href="${resolvedHref}"${titleAttr}>${text}</a>`;
   };
 
   marked.setOptions({ renderer, gfm: true, breaks: false, html: true });
@@ -625,15 +628,18 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
       }
 
       // ── External link ────────────────────────────────────────────────────
-      const href = a.getAttribute('href');
-      if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
-        // Already has target="_blank" from the renderer, but intercept here
-        // to guarantee new-tab behaviour for any raw HTML links in note content.
-        if (!a.target || a.target !== '_blank') {
+      const href = a.getAttribute('href') || '';
+      const isExternal = href.startsWith('http://') || href.startsWith('https://') || href.startsWith('www.');
+      if (isExternal) {
+        // Normalize bare www. links that the renderer may not have seen (e.g. raw HTML in notes)
+        const resolvedHref = href.startsWith('www.') ? 'https://' + href : href;
+        if (a.target === '_blank') {
+          // Renderer already set target; let browser open it — but fix href if bare www.
+          if (href.startsWith('www.')) { e.preventDefault(); window.open(resolvedHref, '_blank', 'noopener,noreferrer'); }
+        } else {
           e.preventDefault();
-          window.open(href, '_blank', 'noopener,noreferrer');
+          window.open(resolvedHref, '_blank', 'noopener,noreferrer');
         }
-        // If target is already _blank, the browser handles it — don't prevent.
       }
     };
     el.addEventListener('click', handler);
