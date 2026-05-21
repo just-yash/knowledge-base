@@ -709,13 +709,13 @@ const ConnectBar = ({ scrollRef }) => {
       borderTop: '1px solid var(--border)',
       flexShrink: 0, height: 36,
     }}>
-      {/* Label */}
-      <span style={{ fontSize: 11, color: 'var(--text-muted)', fontFamily: "'IBM Plex Sans', sans-serif", flexShrink: 0, marginLeft: 'auto' }}>
+      {/* Label — left-anchored */}
+      <span style={{ fontSize: 11, color: 'var(--text-muted)', fontFamily: "'IBM Plex Sans', sans-serif", flexShrink: 0 }}>
         Find me on
       </span>
 
-      {/* Social icon buttons */}
-      <div style={{ display: 'flex', gap: 4, alignItems: 'center', flexShrink: 0 }}>
+      {/* Social icon buttons — pushed to the right */}
+      <div style={{ display: 'flex', gap: 4, alignItems: 'center', flexShrink: 0, marginLeft: 'auto' }}>
         {SOCIAL_LINKS.map(({ id, icon, href, title }) => (
           <a key={id} href={href} title={title} target="_blank" rel="noopener noreferrer" style={{
             width: 26, height: 26, borderRadius: '50%',
