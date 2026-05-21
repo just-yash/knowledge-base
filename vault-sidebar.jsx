@@ -119,26 +119,41 @@ const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, cu
         </span>
       </button>
 
-      {isExpanded && folder.children.map(child => (
-        child.type === 'folder'
-          ? <FolderRow
-              key={child.id}
-              folder={child}
-              depth={depth + 1}
-              expanded={expanded}
-              active={active}
-              onToggle={onToggle}
-              onNoteSelect={onNoteSelect}
-              currentNote={currentNote}
-            />
-          : <FileRow
-              key={child.id}
-              item={child}
-              depth={depth + 1}
-              isActive={currentNote === child.id}
-              onSelect={() => (child.type === 'note' || child.type === 'asset' || child.type === 'image') ? onNoteSelect(child.id) : null}
-            />
-      ))}
+      {isExpanded && (
+        <div style={{ position: 'relative' }}>
+          {/* Indent guide line — sits under the chevron of the parent folder */}
+          <div style={{
+            position: 'absolute',
+            left: indent + 5,
+            top: 2, bottom: 4,
+            width: 1,
+            background: 'var(--border)',
+            borderRadius: 1,
+            pointerEvents: 'none',
+            opacity: 0.7,
+          }} />
+          {folder.children.map(child => (
+            child.type === 'folder'
+              ? <FolderRow
+                  key={child.id}
+                  folder={child}
+                  depth={depth + 1}
+                  expanded={expanded}
+                  active={active}
+                  onToggle={onToggle}
+                  onNoteSelect={onNoteSelect}
+                  currentNote={currentNote}
+                />
+              : <FileRow
+                  key={child.id}
+                  item={child}
+                  depth={depth + 1}
+                  isActive={currentNote === child.id}
+                  onSelect={() => (child.type === 'note' || child.type === 'asset' || child.type === 'image') ? onNoteSelect(child.id) : null}
+                />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
