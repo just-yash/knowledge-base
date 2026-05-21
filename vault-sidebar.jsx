@@ -88,8 +88,13 @@ const FOLDER_ICONS = {
   'creativity-poetry':         'feather',
 };
 
-const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, currentNote }) => {
-  const indent = depth * 14 + 8;
+// Nesting is achieved purely through container indentation:
+//   • FolderRow button — fixed small left padding (no depth math)
+//   • Expanded children — wrapped in a div with marginLeft + borderLeft + paddingLeft
+//   • FileRow button — same fixed padding; width:100% fills the narrowed container
+// Each level of nesting compounds automatically without passing depth.
+
+const FolderRow = ({ folder, expanded, onToggle, onNoteSelect, currentNote }) => {
   const isExpanded = expanded.has(folder.id);
 
   return (
@@ -99,7 +104,7 @@ const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, cu
         style={{
           display: 'flex', alignItems: 'center', gap: 5,
           width: '100%', background: 'none', border: 'none',
-          padding: `3px 8px 3px ${indent}px`,
+          padding: '3px 8px 3px 6px',
           cursor: 'pointer', borderRadius: 4,
           color: 'var(--text-secondary)', fontSize: 14,
           transition: 'background 0.1s, color 0.1s',
@@ -120,26 +125,20 @@ const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, cu
       </button>
 
       {isExpanded && (
-        <div style={{ position: 'relative' }}>
-          {/* Indent guide line — sits under the chevron of the parent folder */}
-          <div style={{
-            position: 'absolute',
-            left: indent + 5,
-            top: 2, bottom: 4,
-            width: 1,
-            background: 'var(--border)',
-            borderRadius: 1,
-            pointerEvents: 'none',
-            opacity: 0.7,
-          }} />
+        // Guide line + indent: border-left runs the full height of children,
+        // marginLeft places it under the folder's chevron, paddingLeft adds
+        // breathing room between the line and the children's content.
+        <div style={{
+          marginLeft: 13,
+          paddingLeft: 8,
+          borderLeft: '1px solid var(--border)',
+        }}>
           {folder.children.map(child => (
             child.type === 'folder'
               ? <FolderRow
                   key={child.id}
                   folder={child}
-                  depth={depth + 1}
                   expanded={expanded}
-                  active={active}
                   onToggle={onToggle}
                   onNoteSelect={onNoteSelect}
                   currentNote={currentNote}
@@ -147,7 +146,6 @@ const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, cu
               : <FileRow
                   key={child.id}
                   item={child}
-                  depth={depth + 1}
                   isActive={currentNote === child.id}
                   onSelect={() => (child.type === 'note' || child.type === 'asset' || child.type === 'image') ? onNoteSelect(child.id) : null}
                 />
@@ -160,13 +158,10 @@ const FolderRow = ({ folder, depth, expanded, active, onToggle, onNoteSelect, cu
 
 const FILE_ICON = { tag: 'hash', asset: 'file-text', image: 'image', excalidraw: 'pen-tool', stub: 'file' };
 
-const FileRow = ({ item, depth, isActive, onSelect }) => {
-  const indent   = depth * 14 + 8;
-  const isTag    = item.type === 'tag';
-  const isStub   = item.type === 'stub' || item.type === 'excalidraw';
-  const isAsset  = item.type === 'asset' || item.type === 'image';
+const FileRow = ({ item, isActive, onSelect }) => {
+  const isStub    = item.type === 'stub' || item.type === 'excalidraw';
   const clickable = !isStub;
-  const icon     = FILE_ICON[item.type] || 'file';
+  const icon      = FILE_ICON[item.type] || 'file';
 
   return (
     <button
@@ -175,14 +170,14 @@ const FileRow = ({ item, depth, isActive, onSelect }) => {
       style={{
         display: 'flex', alignItems: 'center', gap: 5,
         width: '100%', border: 'none',
-        padding: `3px 8px 3px ${indent}px`,
+        // Active item: swap 2px of paddingLeft for an accent borderLeft so text doesn't shift
+        borderLeft: isActive ? '2px solid var(--accent)' : 'none',
+        padding: isActive ? '3px 8px 3px 4px' : '3px 8px 3px 6px',
         cursor: clickable ? 'pointer' : 'default',
         borderRadius: 4, textAlign: 'left', userSelect: 'none',
         fontSize: 13, transition: 'background 0.1s, color 0.1s',
-        borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
         background: isActive ? 'var(--bg-active)' : 'none',
         color: isActive ? 'var(--text-primary)' : isStub ? 'var(--text-muted)' : 'var(--text-secondary)',
-        paddingLeft: isActive ? `${indent - 2}px` : `${indent}px`,
       }}
       onMouseEnter={e => { if (!isActive && clickable) { e.currentTarget.style.background = 'var(--bg-hover)'; e.currentTarget.style.color = 'var(--text-primary)'; }}}
       onMouseLeave={e => { if (!isActive) { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = isStub ? 'var(--text-muted)' : 'var(--text-secondary)'; }}}
@@ -332,7 +327,6 @@ const FileTree = ({ folders, expandedFolders, onFolderToggle, currentNote, onNot
       <FolderRow
         key={folder.id}
         folder={folder}
-        depth={0}
         expanded={expandedFolders}
         currentNote={currentNote}
         onToggle={onFolderToggle}
