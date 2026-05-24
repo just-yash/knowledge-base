@@ -216,7 +216,14 @@ const App = () => {
   // Persist current note + keep URL hash in sync (makes every note linkable)
   useEffect(() => {
     try { localStorage.setItem('vault-current', JSON.stringify(nav.current)); } catch {}
-    if (nav.current) window.location.hash = nav.current;
+    if (nav.current) {
+      // Use replaceState instead of window.location.hash = ... because assigning
+      // to location.hash makes the browser scroll to the element whose id matches
+      // the hash value (e.g. the h1 heading gets id="complete-binary-tree" which
+      // matches the note id, so the browser would jump to it after every navigation,
+      // overriding the useLayoutEffect scroll-to-top reset).
+      history.replaceState(null, '', '#' + nav.current);
+    }
   }, [nav.current]);
 
   // Apply theme to <html>
