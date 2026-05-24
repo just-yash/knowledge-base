@@ -771,8 +771,11 @@ const NoteEditor = ({
   const note      = currentNote ? VAULT_NOTES[currentNote] : null;
   const scrollRef = React.useRef(null);
 
-  // Reset scroll to top whenever the active note changes
-  React.useEffect(() => {
+  // Reset scroll to top whenever the active note changes.
+  // useLayoutEffect (not useEffect) so this runs synchronously after React
+  // commits the new DOM but BEFORE the browser paints — the first frame the
+  // user ever sees is already scrolled to 0, eliminating the flash.
+  React.useLayoutEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = 0;
   }, [currentNote]);
 
