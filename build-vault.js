@@ -261,37 +261,53 @@ for (const note of Object.values(notes)) {
 // ── Build VAULT_FOLDERS ───────────────────────────────────────────────────────
 
 function buildFolderTree(topFolderName) {
-  const meta     = FOLDER_META[topFolderName] || { id: slugify(topFolderName), icon: 'folder', expanded: false };
-  const children = {};   // subfolder-path → { id, name, children: [] }
-  const direct   = [];   // notes directly in this top folder
+  const meta       = FOLDER_META[topFolderName] || { id: slugify(topFolderName), icon: 'folder', expanded: false };
+  const notesHere  = Object.values(notes).filter(n => n._topFolder === topFolderName);
 
-  for (const note of Object.values(notes)) {
-    if (note._topFolder !== topFolderName) continue;
-    if (note._subFolders.length === 0) {
-      direct.push({ id: note.id, name: note.title, type: note._stub || 'note' });
-    } else {
-      // nest under subfolder(s)
-      const key = note._subFolders.join('/');
-      if (!children[key]) {
-        const subId   = meta.id + '-' + slugify(note._subFolders[0]);
-        const subName = note._subFolders[0];
-        children[key] = { id: subId, name: subName, type: 'folder', children: [] };
+  // Recursively build children for a given subfolder-path prefix.
+  // idPrefix  — the id string built so far (e.g. "raw-notes-classes")
+  // pathPrefix — the _subFolders segments matched so far (e.g. ["Classes"])
+  function buildChildren(idPrefix, pathPrefix) {
+    const directNotes  = [];
+    const subFolderSet = new Set();
+
+    for (const note of notesHere) {
+      const sf = note._subFolders;
+
+      // Skip notes that don't live under pathPrefix
+      if (sf.length < pathPrefix.length) continue;
+      if (!pathPrefix.every((p, i) => sf[i] === p)) continue;
+
+      if (sf.length === pathPrefix.length) {
+        // This note lives directly at the current level
+        directNotes.push({ id: note.id, name: note.title, type: note._stub || 'note' });
+      } else {
+        // This note lives one level deeper — record the next folder segment
+        subFolderSet.add(sf[pathPrefix.length]);
       }
-      children[key].children.push({ id: note.id, name: note.title, type: note._stub || 'note' });
     }
+
+    // Build an entry for each immediate sub-folder, then recurse
+    const folderEntries = [...subFolderSet].map(folderName => {
+      const childIdPrefix   = idPrefix + '-' + slugify(folderName);
+      const childPathPrefix = [...pathPrefix, folderName];
+      return {
+        id:       childIdPrefix,
+        name:     folderName,
+        type:     'folder',
+        children: buildChildren(childIdPrefix, childPathPrefix),
+      };
+    });
+
+    return [...folderEntries, ...directNotes];
   }
 
-  const allChildren = [
-    ...Object.values(children),
-    ...direct,
-  ];
-
   return {
-    id: meta.id,
-    name: topFolderName,
-    icon: meta.icon || 'folder',
+    id:       meta.id,
+    name:     topFolderName,
+    icon:     meta.icon || 'folder',
     expanded: meta.expanded ?? false,
-    children: allChildren,
+    children: buildChildren(meta.id, []),
   };
 }
 
