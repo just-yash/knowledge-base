@@ -771,6 +771,11 @@ const NoteEditor = ({
   const note      = currentNote ? VAULT_NOTES[currentNote] : null;
   const scrollRef = React.useRef(null);
 
+  // Reset scroll to top whenever the active note changes
+  React.useEffect(() => {
+    if (scrollRef.current) scrollRef.current.scrollTop = 0;
+  }, [currentNote]);
+
   // Scroll to heading dispatched by right panel outline clicks
   React.useEffect(() => {
     const handler = (e) => {
@@ -804,7 +809,7 @@ const NoteEditor = ({
       />
 
       <div ref={scrollRef} className="scrollable"
-        style={{ flex:1, overflowY:'auto', overflowX:'hidden', display:'flex', justifyContent:'center' }}>
+        style={{ flex:1, overflowY:'auto', overflowX:'hidden', display:'flex', justifyContent:'center', background:'var(--bg-content)' }}>
         {note ? (
           <NoteAnimWrapper noteId={note.id} readingWidth={readingWidth}>
             {/* Note meta bar */}
