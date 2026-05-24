@@ -812,7 +812,7 @@ const NoteEditor = ({
       />
 
       <div ref={scrollRef} className="scrollable"
-        style={{ flex:1, overflowY:'auto', overflowX:'hidden', display:'flex', justifyContent:'center', background:'var(--bg-content)' }}>
+        style={{ flex:1, overflowY:'auto', overflowX:'hidden', display:'flex', justifyContent:'center', background:'var(--bg-content)', overflowAnchor:'none' }}>
         {note ? (
           <NoteAnimWrapper noteId={note.id} readingWidth={readingWidth}>
             {/* Note meta bar */}

@@ -106,7 +106,10 @@ button { font-family: inherit; }
 }
 
 /* ── Scrollbar ──────────────────────────────────────────────────── */
-.scrollable { scrollbar-width: thin; scrollbar-color: transparent transparent; }
+/* overflow-anchor:none prevents the browser from adjusting scrollTop when
+   KaTeX, images, or other content renders inside the scroll container
+   after the initial paint — which caused the "page lifts" flash on navigation. */
+.scrollable { scrollbar-width: thin; scrollbar-color: transparent transparent; overflow-anchor: none; }
 .scrollable:hover { scrollbar-color: var(--border-strong) transparent; }
 .scrollable::-webkit-scrollbar { width: 5px; }
 .scrollable::-webkit-scrollbar-track { background: transparent; }
