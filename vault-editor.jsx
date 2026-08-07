@@ -341,11 +341,13 @@ function processWikiLinks(html) {
     const noteName = hashIdx >= 0 ? refPart.slice(0, hashIdx).trim() : refPart;
     const anchor   = hashIdx >= 0 ? refPart.slice(hashIdx + 1).trim() : '';
 
-    // Display text: alias → noteName (never expose raw #heading or ^blockId)
-    const display = alias || noteName;
+    // Display text: alias → noteName → anchor → refPart
+    const display = alias || noteName || anchor || refPart;
 
-    // Resolve note ID from the name part only
-    const noteId = (window.findNoteByName ? findNoteByName(noteName) : null) || '';
+    // Resolve note ID from name part; if empty (e.g. [[#Heading]]), target '_self'
+    const noteId = noteName
+      ? ((window.findNoteByName ? findNoteByName(noteName) : null) || '')
+      : '_self';
 
     // Block references start with ^ — we navigate to the note but can't scroll to the block
     // Heading references are slugified to match the id marked.js stamps on <h> elements
@@ -780,11 +782,18 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
       // ── Wiki-link ────────────────────────────────────────────────────────
       if (a.classList.contains('wiki-link')) {
         e.preventDefault();
-        const noteId    = a.dataset.noteId;
-        const headingId = a.dataset.headingId || '';
-        if (noteId && window.VAULT_NOTES?.[noteId]) {
-          onNoteNavigate(noteId);
-          // After navigation the content re-renders; wait then scroll to heading
+        const targetNoteId = a.dataset.noteId;
+        const headingId    = a.dataset.headingId || '';
+
+        if (targetNoteId === '_self' || targetNoteId === note?.id || !targetNoteId) {
+          if (headingId) {
+            window.dispatchEvent(new CustomEvent('vault-scroll-to', { detail: { headingId } }));
+          }
+          return;
+        }
+
+        if (window.VAULT_NOTES?.[targetNoteId]) {
+          onNoteNavigate(targetNoteId);
           if (headingId) {
             setTimeout(() => {
               window.dispatchEvent(new CustomEvent('vault-scroll-to', { detail: { headingId } }));
