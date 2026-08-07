@@ -312,9 +312,14 @@ const RightPanel = ({ open, currentNote, onNoteNavigate, onClose }) => {
     window.dispatchEvent(new CustomEvent('vault-scroll-to', { detail: { headingId: id } }));
   };
 
-  // Open command palette pre-filled with tag query
+  // Open tag note if available, else open command palette pre-filled with tag query
   const handleTagClick = (tag) => {
-    window.dispatchEvent(new CustomEvent('vault-search-tag', { detail: { tag } }));
+    const tagId = window.findNoteByName ? window.findNoteByName(tag) : null;
+    if (tagId && window.VAULT_NOTES?.[tagId]) {
+      onNoteNavigate(tagId);
+    } else {
+      window.dispatchEvent(new CustomEvent('vault-search-tag', { detail: { tag } }));
+    }
   };
 
   return (

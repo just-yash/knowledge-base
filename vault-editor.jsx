@@ -62,8 +62,8 @@ function renderDataviewBlock(code) {
       }
 
       const positiveStr = fromStr.replace(/-\s*\([^)]+\)/g, '');
-      const posTerms = (positiveStr.match(/\[\[([^\]]+)\]\]/g) || [])
-        .map(t => t.replace(/[\[\]]/g, '').trim())
+      const posTerms = (positiveStr.match(/\[\[([^\]]+)\]\]|#([\w-]+)/g) || [])
+        .map(t => t.replace(/^[\[#]+|[\]#]+$/g, '').trim())
         .filter(Boolean);
 
       if (posTerms.length > 0) {
@@ -700,8 +700,16 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
   const rendered = React.useMemo(() => {
     ensureMarkedConfigured();
     if (!note || !window.marked) return '';
+
+    let rawContent = note.content || '';
+    const isTagNote = (note.folder === '08 - Tags') || (note.path && note.path.join('/').includes('08 - Tags'));
+    if (isTagNote && !rawContent.includes('```dataview')) {
+      const tagTitle = note.title.replace(/\.md$/i, '');
+      rawContent = `${rawContent}\n\n---\n### Tagged Notes\n\n\`\`\`dataview\nLIST\nFROM [[${tagTitle}]]\nSORT file.mtime DESC\n\`\`\`\n`;
+    }
+
     // 1. Convert ![[image]] → <img> HTML
-    const withImgs = resolveObsidianEmbeds(note.content);
+    const withImgs = resolveObsidianEmbeds(rawContent);
     // 2. Shield $…$ and $$…$$ from marked so _ and * aren't mangled
     const { out: shielded, store } = shieldMath(withImgs);
     // 3. Parse markdown
@@ -711,7 +719,7 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
     // 5. Linkify [[WikiLinks]]
     html = processWikiLinks(html);
     return html;
-  }, [note?.id]);
+  }, [note?.id, note?.content]);
 
   // 1. KaTeX math rendering after DOM update
   React.useEffect(() => {
@@ -986,7 +994,14 @@ const NoteEditor = ({
                   <TagBadge
                     key={t}
                     label={t}
-                    onClick={() => window.dispatchEvent(new CustomEvent('vault-search-tag', { detail: { tag: t } }))}
+                    onClick={() => {
+                      const tagId = window.findNoteByName ? window.findNoteByName(t) : null;
+                      if (tagId && window.VAULT_NOTES?.[tagId]) {
+                        onNoteNavigate(tagId);
+                      } else {
+                        window.dispatchEvent(new CustomEvent('vault-search-tag', { detail: { tag: t } }));
+                      }
+                    }}
                   />
                 ))}
               </div>
