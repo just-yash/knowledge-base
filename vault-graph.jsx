@@ -258,12 +258,12 @@ const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
         display: 'flex', alignItems: 'center', gap: 6, width: '100%',
         background: 'none', border: 'none', cursor: 'pointer',
         padding: '6px 12px 4px', textAlign: 'left',
-        color: 'rgba(180,182,187,0.7)', fontSize: 10.5,
+        color: 'var(--text-muted)', fontSize: 10.5,
         fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.07em',
         transition: 'color 0.12s',
       }}
-      onMouseEnter={e => e.currentTarget.style.color = 'rgba(220,222,226,0.9)'}
-      onMouseLeave={e => e.currentTarget.style.color = 'rgba(180,182,187,0.7)'}
+      onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
+      onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
     >
       <svg width="8" height="8" viewBox="0 0 8 8" style={{
         transform: isOpen ? 'rotate(90deg)' : 'none',
@@ -308,16 +308,17 @@ const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
         onClick={() => setPanelOpen(true)}
         title="Graph settings"
         style={{
-          position: 'absolute', bottom: 12, right: 12,
-          background: 'rgba(14,15,18,0.85)', backdropFilter: 'blur(6px)',
-          border: '1px solid rgba(255,255,255,0.13)', borderRadius: 6,
+          position: 'absolute', bottom: 12, left: 12, zIndex: 10,
+          background: 'var(--bg-panel)', backdropFilter: 'blur(6px)',
+          border: '1px solid var(--border)', borderRadius: 6,
           width: 34, height: 34,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           cursor: 'pointer', color: 'var(--text-muted)',
+          boxShadow: 'var(--shadow-modal)',
           transition: 'color 0.15s, border-color 0.15s',
         }}
-        onMouseEnter={e => { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)'; }}
-        onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-muted)';   e.currentTarget.style.borderColor = 'rgba(255,255,255,0.13)'; }}
+        onMouseEnter={e => { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.borderColor = 'var(--border-strong)'; }}
+        onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-muted)';   e.currentTarget.style.borderColor = 'var(--border)'; }}
       >
         <Icon name="sliders" size={15} strokeWidth={1.6} />
       </button>
@@ -327,26 +328,28 @@ const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
   // Full panel — bottom-sheet on mobile, floating card on desktop
   const panelStyle = isMob ? {
     position: 'absolute', bottom: 0, left: 0, right: 0, zIndex: 10,
-    background: 'rgba(12,13,16,0.97)', backdropFilter: 'blur(12px)',
-    border: '1px solid rgba(255,255,255,0.13)',
+    background: 'var(--bg-panel)', backdropFilter: 'blur(12px)',
+    border: '1px solid var(--border)',
     borderRadius: '14px 14px 0 0',
-    maxHeight: '52vh', overflowY: 'auto',
-    boxShadow: '0 -6px 32px rgba(0,0,0,0.6)',
+    maxHeight: '60vh', overflowY: 'auto',
+    boxShadow: 'var(--shadow-modal)',
   } : {
-    position: 'absolute', bottom: 12, left: 12, zIndex: 10,
-    background: 'rgba(12,13,16,0.93)', backdropFilter: 'blur(10px)',
-    border: '1px solid rgba(255,255,255,0.11)', borderRadius: 8,
-    width: 212, overflow: 'hidden',
-    boxShadow: '0 6px 28px rgba(0,0,0,0.55)',
+    position: 'absolute', top: 12, bottom: 12, left: 12, zIndex: 10,
+    background: 'var(--bg-panel)', backdropFilter: 'blur(10px)',
+    border: '1px solid var(--border)', borderRadius: 8,
+    width: 220, maxHeight: 'calc(100% - 24px)', overflowY: 'auto',
+    boxShadow: 'var(--shadow-modal)',
+    display: 'flex', flexDirection: 'column',
   };
 
   return (
-    <div style={panelStyle}>
+    <div style={panelStyle} className="scrollable">
       {/* Panel header */}
       <div style={{
         display: 'flex', alignItems: 'center',
         padding: '8px 12px 7px',
-        borderBottom: '1px solid rgba(255,255,255,0.07)',
+        borderBottom: '1px solid var(--border)',
+        position: 'sticky', top: 0, background: 'var(--bg-panel)', zIndex: 2,
       }}>
         <Icon name="sliders" size={12} strokeWidth={1.8} style={{ color: 'var(--text-muted)', marginRight: 6 }} />
         <span style={{ fontSize: 12, fontWeight: 600, color: 'var(--text-primary)', flex: 1 }}>
@@ -367,7 +370,7 @@ const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
       </div>
 
       {/* ── Display section ── */}
-      <div style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+      <div style={{ borderBottom: '1px solid var(--border)' }}>
         <SectionBtn label="Display" isOpen={displayOpen} onToggle={() => setDisplayOpen(o => !o)} />
         {displayOpen && (
           <div style={{ padding: '4px 12px 10px' }}>
@@ -387,7 +390,7 @@ const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
                 {/* Track */}
                 <span style={{
                   position: 'absolute', inset: 0, borderRadius: 10,
-                  background: cfg.arrows ? 'var(--accent)' : 'rgba(255,255,255,0.15)',
+                  background: cfg.arrows ? 'var(--accent)' : 'var(--border-strong)',
                   transition: 'background 0.2s',
                 }} />
                 {/* Thumb */}
@@ -397,7 +400,7 @@ const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
                   width: 11, height: 11, borderRadius: '50%',
                   background: '#fff',
                   transition: 'left 0.18s',
-                  boxShadow: '0 1px 3px rgba(0,0,0,0.4)',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
                 }} />
               </label>
             </div>
@@ -414,15 +417,15 @@ const GraphSettingsPanel = ({ cfg, onChange, onAnimate }) => {
               onClick={onAnimate}
               style={{
                 marginTop: 4, width: '100%', padding: '5px 0',
-                background: 'rgba(107,141,214,0.13)',
-                border: '1px solid rgba(107,141,214,0.32)',
+                background: 'var(--accent-soft)',
+                border: '1px solid var(--tag-border)',
                 borderRadius: 5, fontSize: 11,
-                color: '#7fa0e0', fontWeight: 500,
+                color: 'var(--text-link)', fontWeight: 500,
                 cursor: 'pointer', transition: 'background 0.15s',
                 display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5,
               }}
-              onMouseEnter={e => e.currentTarget.style.background = 'rgba(107,141,214,0.24)'}
-              onMouseLeave={e => e.currentTarget.style.background = 'rgba(107,141,214,0.13)'}
+              onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-active)'}
+              onMouseLeave={e => e.currentTarget.style.background = 'var(--accent-soft)'}
             >
               <Icon name="zap" size={11} strokeWidth={2} />
               Animate
