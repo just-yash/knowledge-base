@@ -215,7 +215,8 @@ function ensureMarkedConfigured() {
   // ── Task list items ───────────────────────────────────────────────────────
   renderer.listitem = function(text, task, checked) {
     if (task) {
-      const clean = text.replace(/^<p>\s*/,'').replace(/\s*<\/p>$/,'');
+      const textWithoutInput = text.replace(/<input\s+[^>]*type=["']checkbox["'][^>]*>/gi, '');
+      const clean = textWithoutInput.replace(/^<p>\s*/,'').replace(/\s*<\/p>$/,'').trim();
       return `<li class="vault-task-item${checked ? ' done' : ''}">
         <span class="vault-cb${checked ? ' checked' : ''}" role="checkbox" aria-checked="${checked}"></span>
         <span class="vault-task-label">${clean}</span>

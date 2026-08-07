@@ -7418,12 +7418,12 @@ int main(){
     folder: "03 - Notes",
     path: ["03 - Notes","Adder"],
     tags: [],
-    created: "2026-05-11",
-    modified: "2026-05-11",
-    wordCount: 1139,
+    created: "2026-08-07",
+    modified: "2026-08-07",
+    wordCount: 1133,
     backlinks: [],
     links: ["combinational-circuits"],
-    outline: [{"level":1,"text":"Adder","id":"adder"},{"level":4,"text":"Fundamental Logic Behind Addition","id":"fundamental-logic-behind-addition"},{"level":1,"text":"Half Adder","id":"half-adder"},{"level":1,"text":"Full Adder","id":"full-adder"},{"level":4,"text":"K-Maps","id":"k-maps"},{"level":1,"text":"4-bit Parallel Binary Adder / Ripple Adder","id":"4-bit-parallel-binary-adder-ripple-adder"},{"level":1,"text":"Look Ahead Carry Generator","id":"look-ahead-carry-generator"},{"level":1,"text":"Questions","id":"questions"},{"level":6,"text":"Q1) A half adder is implemented with XOR and AND gates. A full Combinational Circuit is implemented with two half Combinational Circuits and one OR gate. The propagation delay of an XOR gate is twice that of an AND/OR gate. The propagation delay of an AND/OR gate is 1.2 microseconds. A 4-bit ripple-carry binary Combinational Circuit is implemented by using four full Combinational Circuits. The total propagation time of this 4-bit binary Combinational Circuit in microseconds is___. (GATE 2015) (2 Marks)","id":"q1-a-half-adder-is-implemented-with-xor-and-and-gates-a-full-combinational-circuit-is-implemented-with-two-half-combinational-circuits-and-one-or-gate-the-propagation-delay-of-an-xor-gate-is-twice-that-of-an-andor-gate-the-propagation-delay-of-an-andor-gate-is-12-microseconds-a-4-bit-ripple-carry-binary-combinational-circuit-is-implemented-by-using-four-full-combinational-circuits-the-total-propagation-time-of-this-4-bit-binary-combinational-circuit-in-microseconds-is-gate-2015-2-marks"},{"level":1,"text":"References","id":"references"}],
+    outline: [{"level":1,"text":"Adder","id":"adder"},{"level":4,"text":"Fundamental Logic Behind Addition","id":"fundamental-logic-behind-addition"},{"level":1,"text":"Half Adder","id":"half-adder"},{"level":1,"text":"Full Adder","id":"full-adder"},{"level":4,"text":"K-Maps","id":"k-maps"},{"level":1,"text":"4-bit Parallel Binary Adder / Ripple Adder","id":"4-bit-parallel-binary-adder-ripple-adder"},{"level":1,"text":"Questions","id":"questions"},{"level":6,"text":"Q1) A half adder is implemented with XOR and AND gates. A full Combinational Circuit is implemented with two half Combinational Circuits and one OR gate. The propagation delay of an XOR gate is twice that of an AND/OR gate. The propagation delay of an AND/OR gate is 1.2 microseconds. A 4-bit ripple-carry binary Combinational Circuit is implemented by using four full Combinational Circuits. The total propagation time of this 4-bit binary Combinational Circuit in microseconds is___. (GATE 2015) (2 Marks)","id":"q1-a-half-adder-is-implemented-with-xor-and-and-gates-a-full-combinational-circuit-is-implemented-with-two-half-combinational-circuits-and-one-or-gate-the-propagation-delay-of-an-xor-gate-is-twice-that-of-an-andor-gate-the-propagation-delay-of-an-andor-gate-is-12-microseconds-a-4-bit-ripple-carry-binary-combinational-circuit-is-implemented-by-using-four-full-combinational-circuits-the-total-propagation-time-of-this-4-bit-binary-combinational-circuit-in-microseconds-is-gate-2015-2-marks"},{"level":1,"text":"References","id":"references"}],
     content: `# Adder
 
 - An Adder is a Digital Combinational Circuit that performs addition of numbers. 
@@ -7655,15 +7655,6 @@ $C_{out} = ab + ac_{in} + bc_{in}$
 - Limitations : 
 	- Carry propagation delay → Very Slow → the next full adder will work only after the previous full adder has completed its work 
 	- Can only perform addition 
-
----
-# Look Ahead Carry Generator 
-
-
-
-
-
-
 
 ---
 # Questions 
@@ -26461,7 +26452,7 @@ This was done by *Warren Buffet*. His biography is also called *The Snowball*.
     tags: [],
     created: "2026-08-07",
     modified: "2026-08-07",
-    wordCount: 996,
+    wordCount: 994,
     backlinks: ["markdown"],
     links: [],
     outline: [{"level":1,"text":"Notes","id":"notes"},{"level":1,"text":"header 1","id":"header-1"},{"level":2,"text":"header 2","id":"header-2"},{"level":3,"text":"header 3","id":"header-3"},{"level":4,"text":"header 4","id":"header-4"},{"level":5,"text":"header 5","id":"header-5"},{"level":6,"text":"header 6","id":"header-6"},{"level":1,"text":"header 1","id":"header-1"},{"level":2,"text":"header 2","id":"header-2"},{"level":3,"text":"header 3","id":"header-3"},{"level":4,"text":"header 4","id":"header-4"},{"level":5,"text":"header 5","id":"header-5"},{"level":6,"text":"header 6","id":"header-6"},{"level":1,"text":"Lists","id":"lists"},{"level":2,"text":"Bulleted Lists","id":"bulleted-lists"},{"level":2,"text":"Numbered Lists","id":"numbered-lists"},{"level":2,"text":"Check Box","id":"check-box"},{"level":1,"text":"Table","id":"table"},{"level":1,"text":"Bold Text","id":"bold-text"},{"level":1,"text":"Italics Text","id":"italics-text"},{"level":1,"text":"Both Bold and Italics","id":"both-bold-and-italics"},{"level":1,"text":"~~Strikethrough~~","id":"strikethrough"},{"level":1,"text":"Monospace / Inline Codes","id":"monospace-inline-codes"},{"level":1,"text":"<mark>High</mark>==light==","id":"markhighmarklight"},{"level":1,"text":"Superscript & Subscript","id":"superscript-subscript"},{"level":1,"text":"Emojis","id":"emojis"},{"level":1,"text":"Code Blocks","id":"code-blocks"},{"level":1,"text":"Embedded Links","id":"embedded-links"},{"level":1,"text":"Links","id":"links"},{"level":1,"text":"Images","id":"images"},{"level":1,"text":"Quotes","id":"quotes"},{"level":1,"text":"Divider","id":"divider"},{"level":1,"text":"Automatic Date and Time Inserter","id":"automatic-date-and-time-inserter"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":1,"text":"Tags","id":"tags"},{"level":1,"text":"References","id":"references"},{"level":1,"text":"Questions","id":"questions"}],
@@ -26534,7 +26525,8 @@ or
 	- [X] checkbox 2
 \`\`\`
 - [ ] checkbox 1
-	- [x] checkbox 2 ✅ 2026-07-25
+	- [x] checkbox 2 
+
 ---
 # Table
 \`\`\` markdown
