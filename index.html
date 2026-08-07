@@ -287,6 +287,58 @@ button { font-family: inherit; }
 .vault-callout-body { color: var(--text-secondary); font-style: normal; }
 .vault-callout-body p:last-child { margin-bottom: 0; }
 
+/* Dataview blocks */
+.vault-dataview-block {
+  margin: 1.2em 0;
+  padding: 0.8em 1em;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.vault-dataview-header {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.vault-dataview-list {
+  margin: 0;
+  padding-left: 1.4em;
+  line-height: 1.8;
+}
+.vault-dataview-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.4em;
+  font-size: 0.9em;
+}
+.vault-dataview-table th {
+  background: var(--bg-tertiary, var(--bg-hover));
+  padding: 6px 10px;
+  text-align: left;
+  border-bottom: 2px solid var(--border-strong);
+  font-weight: 600;
+}
+.vault-dataview-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border);
+}
+.vault-dataview-empty {
+  padding: 0.8em 1em;
+  margin: 1em 0;
+  background: var(--bg-secondary);
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
 /* Wiki links */
 .note-content .wiki-link {
   color: var(--text-link); text-decoration: none;

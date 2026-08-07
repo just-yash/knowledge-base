@@ -1,5 +1,166 @@
 // vault-editor.jsx v2 — Phase 2: KaTeX math, task lists, callouts, scroll-spy
 
+// ─── Dataview query processor ───────────────────────────────────────────────
+function renderDataviewBlock(code) {
+  try {
+    const rawLines = code.trim().split('\n').map(l => l.trim()).filter(Boolean);
+    if (!rawLines.length) return '';
+
+    const firstLine = rawLines[0].toUpperCase();
+    const isTable = firstLine.startsWith('TABLE');
+    
+    let fromStr = '';
+    let whereStr = '';
+    let sortStr = '';
+
+    for (let i = 0; i < rawLines.length; i++) {
+      const line = rawLines[i];
+      const upper = line.toUpperCase();
+      if (upper.startsWith('FROM ')) {
+        fromStr = line.slice(5).trim();
+      } else if (upper.startsWith('WHERE ')) {
+        whereStr = line.slice(6).trim();
+      } else if (upper.startsWith('SORT ')) {
+        sortStr = line.slice(5).trim();
+      }
+    }
+
+    const allNotes = Object.values(window.VAULT_NOTES || {});
+
+    const findId = (term) => {
+      const cleaned = term.replace(/^[\[#]+|[\]#]+$/g, '').trim().toLowerCase();
+      if (window.findNoteByName) {
+        const found = window.findNoteByName(cleaned);
+        if (found) return found;
+      }
+      for (const n of allNotes) {
+        if (n.title.toLowerCase() === cleaned || n.id.toLowerCase() === cleaned) return n.id;
+      }
+      return cleaned;
+    };
+
+    let filteredNotes = allNotes;
+    if (whereStr) {
+      const folderMatch = whereStr.match(/contains\(\s*file\.folder\s*,\s*["']([^"']+)["']\s*\)/i);
+      if (folderMatch) {
+        const folderTarget = folderMatch[1].toLowerCase();
+        filteredNotes = filteredNotes.filter(n => {
+          const f = (n.folder || '').toLowerCase();
+          const p = (n.path || []).join('/').toLowerCase();
+          return f.includes(folderTarget) || p.includes(folderTarget);
+        });
+      }
+    }
+
+    if (fromStr) {
+      const negMatch = fromStr.match(/-\s*\(([^)]+)\)/i);
+      let negatedTerms = [];
+      if (negMatch) {
+        negatedTerms = (negMatch[1].match(/\[\[([^\]]+)\]\]|\b\w+\b/g) || [])
+          .map(t => t.replace(/[\[\]]/g, '').trim().toLowerCase())
+          .filter(t => t && t !== 'or' && t !== 'and');
+      }
+
+      const positiveStr = fromStr.replace(/-\s*\([^)]+\)/g, '');
+      const posTerms = (positiveStr.match(/\[\[([^\]]+)\]\]/g) || [])
+        .map(t => t.replace(/[\[\]]/g, '').trim())
+        .filter(Boolean);
+
+      if (posTerms.length > 0) {
+        const targetIds = posTerms.map(findId);
+        const lowerTerms = posTerms.map(t => t.toLowerCase());
+
+        filteredNotes = filteredNotes.filter(n => {
+          if (negatedTerms.length > 0) {
+            const matchesNeg = negatedTerms.some(neg => {
+              const negId = findId(neg);
+              return (n.links && n.links.includes(negId)) ||
+                     (n.backlinks && n.backlinks.includes(negId)) ||
+                     (n.tags && n.tags.some(t => t.toLowerCase() === neg)) ||
+                     (n.title.toLowerCase().includes(neg));
+            });
+            if (matchesNeg) return false;
+          }
+
+          return posTerms.some((term, idx) => {
+            const tid = targetIds[idx];
+            const lowerT = lowerTerms[idx];
+
+            if (n.links && n.links.includes(tid)) return true;
+            if (n.backlinks && n.backlinks.includes(tid)) return true;
+            if (n.tags && n.tags.some(t => t.toLowerCase() === lowerT || t.toLowerCase() === lowerT.replace(/\s+/g, '-'))) return true;
+            if (n.title.toLowerCase().includes(lowerT) || n.id.toLowerCase().includes(lowerT.replace(/\s+/g, '-'))) return true;
+            if (n.content && (n.content.toLowerCase().includes(`[[${lowerT.toLowerCase()}]]`) || n.content.toLowerCase().includes(`#${lowerT.toLowerCase()}`))) return true;
+
+            return false;
+          });
+        });
+      }
+    }
+
+    if (sortStr) {
+      const isDesc = sortStr.toUpperCase().includes('DESC');
+      filteredNotes.sort((a, b) => {
+        const dateA = a.date || '';
+        const dateB = b.date || '';
+        if (dateA !== dateB) {
+          return isDesc ? dateB.localeCompare(dateA) : dateA.localeCompare(dateB);
+        }
+        return a.title.localeCompare(b.title);
+      });
+    } else {
+      filteredNotes.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    if (!filteredNotes.length) {
+      return `<div class="vault-dataview-empty">No notes found matching Dataview query.</div>`;
+    }
+
+    if (isTable) {
+      const rowsHtml = filteredNotes.map(n => {
+        const status = (n.tags && n.tags.find(t => t.startsWith('status-'))) || '—';
+        const folder = n.folder || '03 - Notes';
+        return `<tr>
+          <td>[[${n.title}]]</td>
+          <td>${status}</td>
+          <td>${folder}</td>
+        </tr>`;
+      }).join('');
+
+      return `<div class="vault-dataview-block">
+        <div class="vault-dataview-header">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+          Dataview Table (${filteredNotes.length})
+        </div>
+        <table class="vault-dataview-table">
+          <thead>
+            <tr>
+              <th>File</th>
+              <th>Status</th>
+              <th>Folder</th>
+            </tr>
+          </thead>
+          <tbody>${rowsHtml}</tbody>
+        </table>
+      </div>`;
+    }
+
+    const listItems = filteredNotes.map(n => `<li>[[${n.title}]]</li>`).join('\n');
+    return `<div class="vault-dataview-block">
+      <div class="vault-dataview-header">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        Dataview List (${filteredNotes.length})
+      </div>
+      <ul class="vault-dataview-list">
+        ${listItems}
+      </ul>
+    </div>`;
+  } catch (err) {
+    console.error('Dataview render error:', err);
+    return `<pre><code>${code}</code></pre>`;
+  }
+}
+
 // ─── Configure marked at module level (runs once) ────────────────────────────
 (function initMarked() {
   if (!window.marked) return;
@@ -8,6 +169,9 @@
   // ── Code blocks ──────────────────────────────────────────────────────────
   renderer.code = function(code, lang) {
     const language = (lang || 'text').trim().toLowerCase();
+    if (language === 'dataview') {
+      return renderDataviewBlock(code);
+    }
     let highlighted = code;
     try {
       if (window.hljs) {
