@@ -1,17 +1,18 @@
 @echo off
-title Knowledge Base Auto Sync & Push
+title Knowledge Base Auto Sync and Push
 setlocal enabledelayedexpansion
 
-:: Navigate to vault workspace directory
+:: 1. Automatically navigate to workspace root directory
 cd /d "%~dp0"
 
+echo.
 echo ========================================================
-echo   Obsidian Knowledge Base - Auto Sync & Push
+echo   Obsidian Knowledge Base - Auto Sync and Push
 echo ========================================================
-echo Directory: %CD%
+echo Folder: %CD%
 echo.
 
-:: 1. Build vault-data.js
+:: 2. Rebuild vault data file
 echo [1/4] Rebuilding vault-data.js...
 node build-vault.js
 if %errorlevel% neq 0 (
@@ -21,10 +22,10 @@ if %errorlevel% neq 0 (
     pause
     exit /b 1
 )
-echo Done.
+echo Vault data successfully built.
 echo.
 
-:: 2. Prompt for Commit Message
+:: 3. Prompt for commit message
 set "user_msg="
 set /p "user_msg=Enter commit message (Press Enter for default): "
 
@@ -34,33 +35,28 @@ if "!user_msg!"=="" (
     set "commit_msg=!user_msg!"
 )
 
-:: 3. Stage & Commit
+:: 4. Stage and commit local note/code changes
 echo.
-echo [2/4] Staging changes...
+echo [2/4] Staging files...
 git add .
 
-git status --porcelain > temp_git_status.txt
-set "has_changes="
-for /f "usebackq tokens=*" %%A in ("temp_git_status.txt") do set "has_changes=1"
-del temp_git_status.txt
-
-if defined has_changes (
-    echo.
+git diff --cached --quiet
+if %errorlevel% neq 0 (
     echo [3/4] Committing: "!commit_msg!"
     git commit -m "!commit_msg!"
+    echo Local changes committed cleanly.
 ) else (
-    echo.
-    echo No new changes detected to commit.
+    echo [3/4] No new local changes to commit.
 )
 
-:: 4. Pull Rebase & Push to GitHub
+:: 5. Pull rebase & push to GitHub
 echo.
-echo [4/4] Syncing with GitHub (branch: obsidian)...
+echo [4/4] Syncing and pushing to GitHub (branch: obsidian)...
 git pull origin obsidian --rebase
 if %errorlevel% neq 0 (
     echo.
-    echo WARNING: git pull --rebase encountered conflicts or failed.
-    echo Please resolve any conflicts or check your network connection.
+    echo WARNING: git pull --rebase encountered conflicts.
+    echo Please resolve any conflicts or check your network.
     echo.
     pause
     exit /b 1
@@ -69,7 +65,7 @@ if %errorlevel% neq 0 (
 git push origin obsidian
 if %errorlevel% neq 0 (
     echo.
-    echo ERROR: git push failed. Check your connection or repository permissions.
+    echo ERROR: git push failed. Check network or permissions.
     echo.
     pause
     exit /b 1
@@ -77,8 +73,8 @@ if %errorlevel% neq 0 (
 
 echo.
 echo ========================================================
-echo   SUCCESS! All changes pushed to GitHub.
-echo   Site will update automatically on GitHub Pages.
+echo   SUCCESS! All changes synced and pushed to GitHub.
+echo   GitHub Pages site will update automatically in ~1 min.
 echo ========================================================
 echo.
 pause
