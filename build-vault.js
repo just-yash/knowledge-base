@@ -40,13 +40,18 @@ function makeId(relPath) {
 
 function parseHeader(rawContent) {
   const lines = rawContent.split('\n');
-  const headerLines = [];
-  let bodyStart = 0;
+  if (lines[0].trim() !== '---') {
+    return { header: {}, body: rawContent.trim() };
+  }
 
-  for (let i = 0; i < lines.length; i++) {
-    if (lines[i].trim() === '---') { bodyStart = i + 1; break; }
+  const headerLines = [];
+  let bodyStart = 1;
+  for (let i = 1; i < lines.length; i++) {
+    if (lines[i].trim() === '---') {
+      bodyStart = i + 1;
+      break;
+    }
     headerLines.push(lines[i]);
-    bodyStart = i + 1;
   }
 
   const header = {};
