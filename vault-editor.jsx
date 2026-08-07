@@ -691,7 +691,7 @@ const SOCIAL_LINKS = [
     icon: <SocialIcon paths={<><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></>} />,
   },
   {
-    id: 'instagram', href: 'https://instagram.com/just._yash/', title: 'Instagram',
+    id: 'instagram', href: 'https://instagram.com/yashagrawall/', title: 'Instagram',
     icon: <SocialIcon paths={<><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.25"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></>} />,
   },
 ];
