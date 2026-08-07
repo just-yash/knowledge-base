@@ -1,185 +1,152 @@
-# 🧠 Yash's Zettelkasten & Interactive Knowledge Graph
+# Yash's Knowledge Base & Interactive Vault
 
-A high-performance, personal knowledge management (PKM) platform and digital garden published as a static web application. Built to render an entire Obsidian vault with zero runtime bundle overhead, featuring an interactive 2D Canvas force-directed knowledge graph, an embedded client-side **Obsidian Dataview** query processor, KaTeX mathematical typesetting, and WikiLink network resolution.
+A personal digital notebook and knowledge graph published as a static web site. It takes a raw Obsidian vault folder full of Markdown files and turns it into an interactive web viewer with a visual connection graph, dynamic Dataview query support, mathematical formulas, and instant search.
 
-🌐 **Live Vault:** [just-yash.github.io/knowledge-base](https://just-yash.github.io/knowledge-base/)
-
----
-
-## 🌟 Overview & Architecture Philosophy
-
-This project serves as the public web interface for an active **Zettelkasten** and **Maps of Content (MOC)** note system written in native Obsidian Markdown. 
-
-Unlike traditional static site generators (Next.js, Astro, Gatsby) that require heavy build steps and JavaScript bundlers, this platform operates on a **zero-runtime-dependency pipeline**:
-- **Single Build Step**: A lightweight Node.js script (`build-vault.js`) parses the Markdown vault directory into a unified, structured JSON data file (`vault-data.js`).
-- **No Bundler**: React 18 and Babel Standalone run client-side in the browser (`<script type="text/babel">`), transforming JSX on the fly.
-- **Zero Heavy Runtime NPM Modules**: Lucide icons are inlined as lightweight SVGs, KaTeX is loaded via CDN, and graph rendering runs on a custom HTML5 Canvas 2D physics engine.
+**Live site:** [just-yash.github.io/knowledge-base](https://just-yash.github.io/knowledge-base/)
 
 ---
 
-## ✨ Core Features & Technical Deep Dive
+## ◆ Overview
 
-### 🕸️ 1. Custom Force-Directed Knowledge Graph Engine (`vault-graph.jsx`)
-- **Verlet Physics Simulation**: Hand-rolled 2D physics engine simulating electrostatic node repulsion, spring link distance/tension, center attraction, and velocity damping.
-- **Dynamic Theme Synchronization**: Graph node colors, edge connectors, canvas background (`var(--bg-graph)`), and modal overlays dynamically adjust to active Light & Dark themes.
-- **Glassmorphic Settings Panel**:
-  - **Display Controls**: Directional link arrows toggle, text label fade threshold, node scaling (0.5x – 3x), link line thickness (0.5x – 3x).
-  - **Forces Tuning**: Center force strength, repel force constant, link tension, link distance.
-  - **Animation Trigger**: One-click graph physics re-simulation button.
-  - **Non-Cropping UX**: Pinned sticky header with max-height bounds (`maxHeight: 'calc(100% - 24px)'`) and smooth scrolling to prevent top/bottom cropping on all viewports.
-- **Dual Rendering Modes**:
-  - *Mini Graph*: Pinned in the left sidebar showing neighborhood connections of the currently open note.
-  - *Full Modal*: Full-screen interactive canvas view with node hover tooltips, drag-to-pan, pinch-to-zoom, and click-to-navigate.
+This repository hosts my personal notes, structured around the **Zettelkasten** methodology and **Maps of Content (MOCs)**.
+
+Instead of using a heavy framework like Next.js, Astro, or Hugo that requires complex build setups and node modules at runtime, I wanted something simple, transparent, and lightweight:
+- A single Node script (`build-vault.js`) walks through the `notes/` folder and compiles all Markdown files, tags, wikilinks, and graph connections into a single structured file (`vault-data.js`).
+- The frontend runs directly in the browser using React 18 and Babel Standalone. There are no bundle files or Webpack configs.
+- The visual knowledge graph is drawn on an HTML5 Canvas using a lightweight physics simulation.
 
 ---
 
-### 📊 2. Built-in Obsidian Dataview Query Processor (`vault-editor.jsx`)
-Client-side query evaluator supporting native Obsidian Dataview codeblocks (```dataview):
-- **Query Types**: `LIST` and `TABLE [field AS "Header"]`.
-- **Filtering Logic**: 
-  - `FROM [[Topic]]` / `FROM #tag` matching notes via backlinks, forward links, tags, and content tags.
-  - `WHERE contains(file.folder, "Folder")` path and folder scoping.
-  - `-([[ExcludeTopic]] or #tag)` negation filtering.
-- **Sorting**: `SORT file.mtime DESC / ASC` or title sorting.
-- **Automatic Tag Index Generation**: Opening any note in `08 - Tags/` (e.g. `AI.md`, `ML.md`, `College.md`, `food.md`) automatically generates a dynamic Dataview list indexing all notes matching that tag across the vault.
-- **Native Obsidian UI Output**: Dataview results render as clean bulleted lists and tables of interactive, clickable WikiLink anchors (`[[Note Title]]`).
+## ⚙ How it works under the hood
+
+### 1. Interactive Knowledge Graph (`vault-graph.jsx`)
+- **Physics Simulation**: Uses a 2D physics loop that calculates electrostatic node repulsion, link spring tension, center gravity, and velocity dampening so nodes naturally spread out without overlapping.
+- **Theme Native**: The node colors, connection lines, background grid, and modal dialogs match the site's active light or dark theme automatically.
+- **Settings Control**:
+  - Adjust text fade threshold, node size, and link thickness.
+  - Tweak physics variables like center pull, repulsion strength, and link distance.
+  - Toggle directional link arrows or re-trigger the physics animation.
+  - The control box stays pinned on the left side with internal scrolling, so it never gets cut off on smaller screens.
+- **Two Views**:
+  - A mini graph pinned in the left sidebar showing neighborhood connections for the open note.
+  - A full-screen canvas modal with zoom, pan, hover highlights, and node navigation.
 
 ---
 
-### 📝 3. Markdown Engine & Reading Interface (`vault-editor.jsx`)
-- **Multi-Tab Workspace**: Multi-tab document viewing with tab switching, closing, active indicator, and URL hash routing (`#note-slug`).
-- **Header Metadata Suite**:
-  - Breadcrumb navigation path.
-  - Last modified date stamp.
-  - Estimated reading time calculator (`WPM = 200`).
-  - Total word count counter.
-  - Interactive, clickable Tag chips (`#tag`).
-- **WikiLink Resolution**: Parses `[[Note Title]]`, `[[Note Title|Alias]]`, `[[Note#Heading]]`, and block references (`[[Note#^blockId]]`). Resolves filename slug collisions across subfolders.
-- **Callouts & Alerts**: GitHub/Obsidian style callout blocks (`[!NOTE]`, `[!TIP]`, `[!WARNING]`, `[!INFO]`, `[!IMPORTANT]`, `[!CAUTION]`, `[!ABSTRACT]`, `[!QUOTE]`) with custom left borders and background hues.
-- **KaTeX Mathematical Typesetting**: Supports inline math (`$...$`, `\(...\)`) and display math (`$$...$$`, `\[...\]`).
-- **Task Lists**: Interactive GFM checkbox items (`[ ]` / `[x]`).
-- **Asset Embeds**: Automated resolution of image attachments (`![[image.png]]`), PDF document viewframes, and Excalidraw drawing placeholders.
+### 2. Client-side Dataview Engine (`vault-editor.jsx`)
+Obsidian's Dataview plugin is essential for MOCs and index pages. Since static web pages don't have Obsidian's plugin runtime, I wrote a custom parser inside the frontend renderer:
+- Parses `LIST` and `TABLE` queries inside ```dataview code blocks.
+- Filters by folder path (`WHERE contains(file.folder, "03 - Notes")`), tags, or linked topics (`FROM [[Topic]]` / `FROM #tag`).
+- Supports exclusions (`-([[Topic]])`) and sorting (`SORT file.mtime DESC`).
+- **Tag Pages**: When you open any Tag note from `08 - Tags/` (like `AI.md`, `ML.md`, `food.md`, `C.md`, `College.md`), the site automatically generates an index listing every note in the vault that shares that tag.
+- Output renders as clean bullet lists and tables with clickable wikilinks.
 
 ---
 
-### 🔍 4. Command Palette & Navigation (`vault-sidebar.jsx`, `vault-app.jsx`)
-- **File Explorer Sidebar**: Recursive folder tree navigation with custom icons for top-level folders (*Home, MOCs, Raw Notes, Processed Notes, Research, Tags, Templates*).
-- **Smart Auto-Reveal**: Automatically expands nested folder branches and scrolls the sidebar into view to match the active open note.
-- **Quick Search Command Palette**: Triggered via `Cmd+K` / `Ctrl+K` or search icon. Pre-filters notes by title, folder path, or tags (`#tag`).
-- **Keyboard Navigation**: Native hotkeys (`Escape`, `ArrowUp`, `ArrowDown`, `Enter`).
+### 3. Markdown Parser & Reader (`vault-editor.jsx`)
+- **Multi-Tab Interface**: Open multiple notes simultaneously, switch between tabs, close tabs, and share direct note links via URL hashes (`#note-title`).
+- **Note Header Info**: Shows the folder path breadcrumb, modified date, estimated reading time, word count, and clickable tag chips.
+- **Wikilinks**: Resolves `[[Note Title]]`, `[[Note Title|Custom Alias]]`, and `[[Note#Heading]]` anchors across subfolders.
+- **Math Equations**: Formats inline math (`$...$`) and block equations (`$$...$$`) using KaTeX.
+- **Callouts**: Styled callout boxes (`[!NOTE]`, `[!TIP]`, `[!WARNING]`, `[!IMPORTANT]`, `[!INFO]`, `[!CAUTION]`) with custom borders.
+- **Embedded Media**: Resolves image paths (`![[photo.png]]`), PDF embeds, and Excalidraw drawing placeholders.
 
 ---
 
-### 📑 5. Document Context & Inspector Panel (`vault-rightpanel.jsx`)
-- **Document Outline**: Live table of contents generated from document headings (`h1`–`h6`) with smooth scroll-spy navigation.
-- **Two-Way Link Graph Inspector**:
-  - *Backlinks*: Notes linking to the current document.
-  - *Outgoing Links*: Links originating from the current document.
-- **Smart Tag Explorer**: Interactive tag chips with one-click navigation to Tag index notes or search filter.
-- **Related Notes Discovery**: Recommendation algorithm suggesting contextually relevant notes based on shared tag co-occurrence.
+### 4. Search & File Tree (`vault-sidebar.jsx`, `vault-app.jsx`)
+- **Folder Tree**: A collapsible folder tree mirroring the Obsidian vault layout.
+- **Auto-Reveal**: Opening any note automatically expands its parent folders in the sidebar and scrolls to highlight the active file.
+- **Quick Search**: Press `Cmd+K` or `Ctrl+K` to open the search modal. Type `#tag` to filter notes by tag, or type keywords to search note titles and paths.
 
 ---
 
-### 🎨 6. Design System & Theme Engine (`index.html`)
-- **Tailored Palettes**: Dark (default slate/charcoal) and Light (creme/paper) color themes defined using HSL CSS custom properties.
-- **State Persistence**: Theme preference saved in `localStorage`.
-- **Responsive Layout**: Mobile-optimized drawers, slide-in overlay menus, and touch gestures for graph canvas pan & zoom.
+### 5. Document Context Panel (`vault-rightpanel.jsx`)
+- **Outline**: Live table of contents generated from document headings with scroll tracking.
+- **Backlinks & Outgoing Links**: Lists all incoming links and outgoing wikilinks.
+- **Related Notes**: Recommends related notes based on shared tag overlap.
 
 ---
 
-## 📁 Vault Directory Structure
+## 📁 Vault Structure
 
 ```
 knowledge-base/
-├── notes/                  # Source of truth (Obsidian Vault Markdown files)
-│   ├── 00 - Home/          # Index & homepage entry points
-│   ├── 01 - MOCs/          # Maps of Content (Curated topic entry hubs)
-│   ├── 02 - Raw Notes/     # Literature, books, podcasts, videos, class notes
-│   ├── 03 - Notes/         # Processed evergreen Zettelkasten notes
-│   ├── 04 - Research/      # Academic papers & deep-dive research topics
-│   ├── 05 - Creativity/    # Creative ideas, writing, & projects
-│   ├── 06 - Archive/       # Completed or archived material
-│   ├── 07 - Annexure/      # Images, attachments, Excalidraw, HTML exports
+├── notes/                  # Markdown files (Obsidian Vault)
+│   ├── 00 - Home/          # Vault entry point
+│   ├── 01 - MOCs/          # Maps of Content (Hub pages for main topics)
+│   ├── 02 - Raw Notes/     # Raw notes from books, courses, videos & podcasts
+│   ├── 03 - Notes/         # Refined evergreen notes
+│   ├── 04 - Research/      # Papers and technical research
+│   ├── 05 - Creativity/    # Creative ideas and project notes
+│   ├── 06 - Archive/       # Archived notes and old materials
+│   ├── 07 - Annexure/      # Images, attachments, Excalidraw files
 │   ├── 08 - Tags/          # Tag index notes
-│   └── 09 - Templates/     # Note templates
+│   └── 09 - Templates/     # Templates used in Obsidian
 │
-├── build-vault.js          # Node.js build engine: scans notes/ → generates vault-data.js
-├── watch-vault.js          # File-watcher script for live rebuilding during writing
-├── deploy.bat              # One-click Windows deployment script
-├── vault-data.js           # Generated data graph: VAULT_NOTES, VAULT_FOLDERS, GRAPH_NODES, GRAPH_EDGES
+├── build-vault.js          # Scans notes/ and compiles vault-data.js
+├── watch-vault.js          # Live file-watcher for rebuilding while editing
+├── deploy.bat              # Batch script for pushing updates to GitHub
+├── vault-data.js           # Compiled note data & graph JSON
 │
-├── index.html              # Core HTML shell & theme CSS design system
-├── vault-app.jsx           # Master React layout, state management, router, hotkeys
-├── vault-sidebar.jsx       # Explorer file tree, auto-reveal, mini graph
-├── vault-editor.jsx        # Tab manager, Dataview processor, Markdown parser
-├── vault-rightpanel.jsx    # Outline, backlinks, outgoing links, related notes
-├── vault-graph.jsx         # 2D Canvas force-directed graph & floating settings panel
-├── vault-icons.jsx         # Lucide SVG icon library & TagBadge component
-└── tweaks-panel.jsx        # Customization & display settings controls
+├── index.html              # Shell HTML and theme styling
+├── vault-app.jsx           # Main React layout and application state
+├── vault-sidebar.jsx       # Left sidebar, folder tree, and mini graph
+├── vault-editor.jsx        # Markdown renderer, tabs, and Dataview parser
+├── vault-rightpanel.jsx    # Right inspector panel (backlinks, outline, related)
+├── vault-graph.jsx         # Force-directed canvas graph and settings panel
+└── vault-icons.jsx         # Icon library and tag badges
 ```
 
 ---
 
-## 🛠️ Local Development & Workflow
+## 🛠 Local Setup & Workflow
 
 ### Prerequisites
-- **Node.js**: v16 or higher installed on your system.
+Make sure you have **Node.js** (v16+) installed.
 
-### 1. Build the Vault Data
-To build `vault-data.js` from the `notes/` directory:
+### 1. Build Vault Data
+To scan the `notes/` directory and update `vault-data.js`:
 ```bash
 node build-vault.js
 ```
 
-### 2. Live Watching While Writing
-If you are writing notes inside Obsidian and want `vault-data.js` to automatically rebuild on every file save:
+### 2. Live Rebuilding While Writing in Obsidian
+Keep this running in a terminal while editing notes in Obsidian. It watches for file changes and updates `vault-data.js` automatically:
 ```bash
 node watch-vault.js
 ```
 
-### 3. Local Web Server
-Serve the project directory using any static web server:
+### 3. Local Preview
+Serve the repository using any simple static web server:
 ```bash
-# Using npx serve:
 npx serve .
-
-# Or using Python:
-python -m http.server 4321
 ```
-Then open `http://localhost:3000` (or `http://localhost:4321`) in your browser.
+Then open `http://localhost:3000` in your browser.
 
 ---
 
-## 🚀 Deployment to GitHub Pages
+## 🚀 Publishing to GitHub Pages
 
-The repository uses the `obsidian` branch for GitHub Pages hosting.
-
-### One-Click Deploy (Windows)
-Run the included Windows batch script:
+### Quick Push (Windows)
+Run the batch script from the repository folder:
 ```cmd
 deploy.bat
 ```
 
-### Manual Deploy (Command Line)
+### Manual Push
 ```bash
-# 1. Rebuild vault data
 node build-vault.js
-
-# 2. Stage and commit
 git add vault-data.js index.html vault-editor.jsx vault-graph.jsx README.md
-git commit -m "chore: rebuild vault and update documentation"
-
-# 3. Pull remote & push
-git pull --rebase origin obsidian
+git commit -m "update notes and app"
+git pull origin obsidian --rebase
 git push origin obsidian
 ```
-GitHub Pages will automatically build and publish the live site within 1–2 minutes.
 
 ---
 
-## 🔒 Privacy & Excluded Folders
+## 🔒 Ignored & Private Folders
 
-Folders listed in the `SKIP_DIRS` array inside `build-vault.js` are completely excluded from the parsing pipeline. Content inside these folders is never written to `vault-data.js` and remains private on your local filesystem:
+Any folders specified in `SKIP_DIRS` inside `build-vault.js` are ignored during the build step and will not be published:
 ```javascript
 const SKIP_DIRS = new Set([
   'Private',
@@ -195,8 +162,5 @@ const SKIP_DIRS = new Set([
 
 ## 📄 License & Credits
 
-- **Author**: Yash Agrawall ([@just-yash](https://github.com/just-yash))
-- **Icons**: [Lucide Icons](https://lucide.dev/) (Inlined SVG)
-- **Math Engine**: [KaTeX](https://katex.org/)
-- **Syntax Highlighting**: [Highlight.js](https://highlightjs.org/)
-- **Markdown Engine**: [Marked.js](https://marked.js.org/)
+Created by **Yash Agrawall** ([@just-yash](https://github.com/just-yash)).  
+Built with React, Babel Standalone, Marked.js, KaTeX, and Highlight.js.
