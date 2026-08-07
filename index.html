@@ -205,6 +205,18 @@ button { font-family: inherit; }
 [data-theme="light"] .note-content strong em,
 [data-theme="light"] .note-content em strong { color: oklch(45% 0.1 55); }
 
+.note-content mark {
+  background: #ffe066;
+  color: #111111;
+  padding: 0.12em 0.35em;
+  border-radius: 3px;
+  font-weight: 500;
+}
+[data-theme="light"] .note-content mark {
+  background: #ffd43b;
+  color: #000000;
+}
+
 .note-content a     { color: var(--text-link); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
 .note-content a:hover { border-bottom-color: var(--text-link); }
 
@@ -517,16 +529,16 @@ html { transition: background-color 0.2s ease, color 0.2s ease; }
 <div id="root"></div>
 
 <!-- 1. Data (plain JS) -->
-<script src="vault-data.js?v=21"></script>
+<script src="vault-data.js?v=22"></script>
 
 <!-- 2. Components (JSX — load order matters: dependencies first) -->
-<script type="text/babel" src="vault-icons.jsx?v=21"></script>
-<script type="text/babel" src="tweaks-panel.jsx?v=21"></script>
-<script type="text/babel" src="vault-graph.jsx?v=21"></script>
-<script type="text/babel" src="vault-sidebar.jsx?v=21"></script>
-<script type="text/babel" src="vault-editor.jsx?v=21"></script>
-<script type="text/babel" src="vault-rightpanel.jsx?v=21"></script>
-<script type="text/babel" src="vault-app.jsx?v=21"></script>
+<script type="text/babel" src="vault-icons.jsx?v=22"></script>
+<script type="text/babel" src="tweaks-panel.jsx?v=22"></script>
+<script type="text/babel" src="vault-graph.jsx?v=22"></script>
+<script type="text/babel" src="vault-sidebar.jsx?v=22"></script>
+<script type="text/babel" src="vault-editor.jsx?v=22"></script>
+<script type="text/babel" src="vault-rightpanel.jsx?v=22"></script>
+<script type="text/babel" src="vault-app.jsx?v=22"></script>
 
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">

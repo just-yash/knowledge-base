@@ -767,10 +767,11 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
     const withImgs = resolveObsidianEmbeds(rawContent);
     // 2. Shield $…$ and $$…$$ from marked so _ and * aren't mangled
     const { out: shielded, store } = shieldMath(withImgs);
-    // 3. Normalize asymmetric bold+italic tags (**_text**_ → ***text***)
+    // 3. Normalize asymmetric bold+italic tags (**_text**_ → ***text***) and Obsidian ==highlight== syntax
     const normalizedMd = shielded
       .replace(/\*\*_([^\n]+?)\*\*_/g, '***$1***')
-      .replace(/__\*([^\n]+?)__\*/g, '___$1___');
+      .replace(/__\*([^\n]+?)__\*/g, '___$1___')
+      .replace(/==([^\n=]+?)==/g, '<mark>$1</mark>');
     // 4. Parse markdown
     let html = marked.parse(normalizedMd);
     // 5. Restore math blocks (KaTeX auto-render will handle them in useEffect)
