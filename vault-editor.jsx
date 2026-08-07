@@ -299,7 +299,13 @@ function unshieldMath(html, store) {
 // Also strips Obsidian alias syntax: ![[img.png|200]] → just the filename.
 function resolveObsidianEmbeds(md) {
   const codeBlocks = [];
-  let shielded = md.replace(/(`{1,3})[\s\S]*?\1/g, (match) => {
+  // 1. Shield fenced code blocks ```...``` first
+  let shielded = md.replace(/```[\s\S]*?```/g, (match) => {
+    codeBlocks.push(match);
+    return `__CODE_BLOCK_${codeBlocks.length - 1}__`;
+  });
+  // 2. Shield single-line inline code `...`
+  shielded = shielded.replace(/`[^\n`]+`/g, (match) => {
     codeBlocks.push(match);
     return `__CODE_BLOCK_${codeBlocks.length - 1}__`;
   });
