@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - MOCs/MOC - AI and Machine Learning.md",
+                "file": "00 - Home/README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -88,7 +88,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "MOC - AI and Machine Learning"
+              "title": "README"
             }
           }
         ],
@@ -256,7 +256,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - MOCs/MOC - AI and Machine Learning.md",
+                "file": "00 - Home/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -353,8 +353,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -387,6 +386,9 @@
   },
   "active": "2eafb8f6181eba51",
   "lastOpenFiles": [
+    "08 - Tags/AI.md",
+    "04 - Research/Multi-camera spatiotemporal deep learning framework for real-time abnormal behavior detection in dense urban environments.md",
+    "01 - MOCs/MOC - AI and Machine Learning.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/Template Based Dashboard for a Client.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/Skills for MARSH.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/MARSH in general.md",
@@ -417,9 +419,6 @@
     "Private/Templates/Daily Template.md",
     "Private/Career/Job Applications/Remote Work Websites.md",
     "09 - Templates/DSA Qs.md",
-    "09 - Templates/DSA Pattern.md",
-    "01 - MOCs/MOC - Data Structures and Algorithms.md",
-    "01 - MOCs/MOC - Writing and Creativity.md",
     "Private/Insights",
     "09 - Templates/Untitled",
     "Personal/Journal/A - Daily",
