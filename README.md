@@ -52,7 +52,7 @@ The platform provides a browser experience matching desktop Obsidian: interactiv
 
 ### 2.1 Problem Statement & Objectives
 
-- **Problem**: Traditional digital garden tools fail to render native Obsidian features—such as Dataview codeblock queries (` ```dataview `), dynamic tag pages, WikiLinks with alias/heading anchors (`[[Note#Heading|Alias]]`), and customizable visual knowledge graphs—without heavy server-side processing or broken layouts.
+- **Problem**: Traditional digital garden tools fail to render native Obsidian features—such as Dataview codeblock queries (`dataview`), dynamic tag pages, WikiLinks with alias/heading anchors (`[[Note#Heading|Alias]]`), and customizable visual knowledge graphs—without heavy server-side processing or broken layouts.
 - **Primary Objective**: Provide a zero-maintenance, client-side web viewer that mirrors Obsidian's core interactive capabilities directly from plain Markdown files.
 - **Secondary Objective**: Deliver instant page loads, smooth 60fps graph animations, responsive mobile drawer navigation, and light/dark theme adaptation without requiring Webpack, Vite, or server-side rendering infrastructure.
 
