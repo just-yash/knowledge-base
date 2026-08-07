@@ -794,8 +794,25 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
         return;
       }
 
-      // ── External link ────────────────────────────────────────────────────
+      // ── Internal Heading Anchor Link (#heading-id) ──────────────────────
       const href = a.getAttribute('href') || '';
+      if (href.startsWith('#') && href.length > 1) {
+        e.preventDefault();
+        const rawTarget = href.slice(1);
+        const headingId = decodeURIComponent(rawTarget).toLowerCase();
+        
+        const targetEl = el.querySelector(`[id="${rawTarget}"]`) || 
+                         el.querySelector(`[id="${headingId}"]`) ||
+                         el.querySelector(`[id*="${headingId.slice(0, 15)}"]`);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.dispatchEvent(new CustomEvent('vault-scroll-to', { detail: { headingId: rawTarget } }));
+        }
+        return;
+      }
+
+      // ── External link ────────────────────────────────────────────────────
       const isExternal = href.startsWith('http://') || href.startsWith('https://') || href.startsWith('www.');
       if (isExternal) {
         // Normalize bare www. links that the renderer may not have seen (e.g. raw HTML in notes)
