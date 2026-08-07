@@ -389,6 +389,28 @@ const ReadingProgress = ({ scrollRef }) => {
 // ─── Tab Bar ──────────────────────────────────────────────────────────────────
 const TabBar = ({ tabs, currentNote, onTabClick, onTabClose, onNewTab,
                   leftOpen, onToggleLeft, rightOpen, onToggleRight }) => {
+  const tabsStripRef = React.useRef(null);
+
+  // Auto-scroll active tab into view
+  React.useEffect(() => {
+    const strip = tabsStripRef.current;
+    if (!strip) return;
+    const activeEl = strip.querySelector(`[data-tab-id="${currentNote}"]`);
+    if (activeEl) {
+      activeEl.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+    }
+  }, [currentNote, tabs]);
+
+  // Convert vertical mouse wheel scrolling into horizontal tab strip scroll
+  const handleWheel = (e) => {
+    const strip = tabsStripRef.current;
+    if (!strip) return;
+    if (e.deltaY !== 0) {
+      e.preventDefault();
+      strip.scrollLeft += e.deltaY;
+    }
+  };
+
   function iconBtn(active) {
     return {
       width: 26, height: 26, display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -398,12 +420,14 @@ const TabBar = ({ tabs, currentNote, onTabClick, onTabClose, onNewTab,
       transition: 'color 0.12s, background 0.12s',
     };
   }
+
   return (
     <div style={{
       display: 'flex', alignItems: 'center', height: 36, flexShrink: 0,
       background: 'var(--bg-tabs)', borderBottom: '1px solid var(--border)',
+      overflow: 'hidden',
     }}>
-      <div style={{ display:'flex', gap:2, padding:'0 5px', borderRight:'1px solid var(--border)', height:'100%', alignItems:'center' }}>
+      <div style={{ display:'flex', gap:2, padding:'0 5px', borderRight:'1px solid var(--border)', height:'100%', alignItems:'center', flexShrink:0 }}>
         <button title="Toggle sidebar (⌘\)" onClick={onToggleLeft} style={iconBtn(leftOpen)}
           onMouseEnter={e=>{if(!leftOpen){e.currentTarget.style.color='var(--text-secondary)';e.currentTarget.style.background='var(--bg-hover)';}}}
           onMouseLeave={e=>{if(!leftOpen){e.currentTarget.style.color='var(--text-muted)';e.currentTarget.style.background='none';}}}>
@@ -412,22 +436,35 @@ const TabBar = ({ tabs, currentNote, onTabClick, onTabClose, onNewTab,
       </div>
 
       {/* Tabs */}
-      <div style={{ display:'flex', flex:1, overflow:'hidden', alignItems:'stretch', height:'100%' }}>
+      <div
+        ref={tabsStripRef}
+        onWheel={handleWheel}
+        className="no-scrollbar"
+        style={{
+          display: 'flex', flex: 1, overflowX: 'auto', overflowY: 'hidden',
+          alignItems: 'stretch', height: '100%', minWidth: 0,
+        }}
+      >
         {tabs.map(tabId => {
           const note = VAULT_NOTES[tabId];
           const isActive = tabId === currentNote;
           const title = note ? note.title : tabId;
           return (
-            <div key={tabId} onClick={() => onTabClick(tabId)} style={{
-              display:'flex', alignItems:'center', gap:5, padding:'0 10px',
-              maxWidth:200, minWidth:80, cursor:'pointer', flexShrink:0,
-              background: isActive ? 'var(--bg-content)' : 'transparent',
-              borderRight:'1px solid var(--border)',
-              borderBottom: isActive ? '2px solid var(--accent)' : '2px solid transparent',
-              transition:'background 0.1s',
-            }}
-            onMouseEnter={e=>{if(!isActive) e.currentTarget.style.background='var(--bg-hover)';}}
-            onMouseLeave={e=>{if(!isActive) e.currentTarget.style.background='transparent';}}>
+            <div
+              key={tabId}
+              data-tab-id={tabId}
+              onClick={() => onTabClick(tabId)}
+              style={{
+                display:'flex', alignItems:'center', gap:5, padding:'0 10px',
+                maxWidth:200, minWidth:90, cursor:'pointer', flexShrink:0,
+                background: isActive ? 'var(--bg-content)' : 'transparent',
+                borderRight:'1px solid var(--border)',
+                borderBottom: isActive ? '2px solid var(--accent)' : '2px solid transparent',
+                transition:'background 0.1s',
+              }}
+              onMouseEnter={e=>{if(!isActive) e.currentTarget.style.background='var(--bg-hover)';}}
+              onMouseLeave={e=>{if(!isActive) e.currentTarget.style.background='transparent';}}
+            >
               <Icon name="file" size={12} strokeWidth={1.5}
                 style={{ color: isActive ? 'var(--accent)' : 'var(--text-muted)', flexShrink:0 }}/>
               <span style={{
@@ -461,7 +498,7 @@ const TabBar = ({ tabs, currentNote, onTabClick, onTabClose, onNewTab,
         </button>
       </div>
 
-      <div style={{ display:'flex', gap:2, padding:'0 5px', borderLeft:'1px solid var(--border)', height:'100%', alignItems:'center' }}>
+      <div style={{ display:'flex', gap:2, padding:'0 5px', borderLeft:'1px solid var(--border)', height:'100%', alignItems:'center', flexShrink:0 }}>
         <button title="Toggle right panel" onClick={onToggleRight} style={iconBtn(rightOpen)}
           onMouseEnter={e=>{if(!rightOpen){e.currentTarget.style.color='var(--text-secondary)';e.currentTarget.style.background='var(--bg-hover)';}}}
           onMouseLeave={e=>{if(!rightOpen){e.currentTarget.style.color='var(--text-muted)';e.currentTarget.style.background='none';}}}>
