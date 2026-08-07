@@ -246,7 +246,7 @@ function ensureMarkedConfigured() {
   };
 
   marked.setOptions({ renderer, gfm: true, breaks: false, html: true });
-})();
+}
 
 // ─── Wiki-link title→id resolver (runs once at load time) ────────────────────
 (function buildNoteLookup() {
