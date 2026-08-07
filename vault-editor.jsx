@@ -308,14 +308,16 @@ function resolveObsidianEmbeds(md) {
     /!\[\[([^\]|#\n]+?\.(png|jpg|jpeg|gif|svg|webp))(?:\|[^\]]*)?\]\]/gi,
     (_, filename) => {
       const bare = filename.trim();
-      const assetPath = window.VAULT_ASSETS?.[bare]
+      let assetPath = window.VAULT_ASSETS?.[bare]
         ?? window.VAULT_ASSETS?.[bare.split('/').pop()];
+
       if (!assetPath) {
-        return `\`![[${bare}]]\``;
+        assetPath = `notes/07 - Annexure/Images/${bare}`;
       }
+
       const src = assetPath.split('/').map(encodeURIComponent).join('/');
       const alt = bare.replace(/"/g, '&quot;');
-      return `\n\n<img src="${src}" alt="${alt}" />\n\n`;
+      return `\n\n<img src="${src}" alt="${alt}" loading="lazy" />\n\n`;
     }
   );
 
