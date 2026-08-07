@@ -298,21 +298,28 @@ function unshieldMath(html, store) {
 // Using <img> directly (not markdown ![]) so spaces in paths never break parsing.
 // Also strips Obsidian alias syntax: ![[img.png|200]] → just the filename.
 function resolveObsidianEmbeds(md) {
-  return md.replace(
+  const codeBlocks = [];
+  let shielded = md.replace(/(`{1,3})[\s\S]*?\1/g, (match) => {
+    codeBlocks.push(match);
+    return `__CODE_BLOCK_${codeBlocks.length - 1}__`;
+  });
+
+  shielded = shielded.replace(
     /!\[\[([^\]|#\n]+?\.(png|jpg|jpeg|gif|svg|webp))(?:\|[^\]]*)?\]\]/gi,
     (_, filename) => {
       const bare = filename.trim();
-      // Try exact filename, then just the last path segment
       const assetPath = window.VAULT_ASSETS?.[bare]
         ?? window.VAULT_ASSETS?.[bare.split('/').pop()];
-      const src = assetPath
-        ? assetPath.split('/').map(encodeURIComponent).join('/')
-        : 'notes/07%20-%20Annexure/Excalidraw/' + encodeURIComponent(bare);
+      if (!assetPath) {
+        return `\`![[${bare}]]\``;
+      }
+      const src = assetPath.split('/').map(encodeURIComponent).join('/');
       const alt = bare.replace(/"/g, '&quot;');
-      // Blank lines force marked to treat this as a block, not inline
       return `\n\n<img src="${src}" alt="${alt}" />\n\n`;
     }
   );
+
+  return shielded.replace(/__CODE_BLOCK_(\d+)__/g, (_, idx) => codeBlocks[Number(idx)]);
 }
 
 // ─── Post-process: [[WikiLinks]] → clickable spans ───────────────────────────
