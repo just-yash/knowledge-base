@@ -1,0 +1,59 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "09 - Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "Private/Journal/A - Daily",
+      "template": "Private/Templates/Daily Template.md"
+    },
+    {
+      "folder": "Private/Journal/B - Weekly",
+      "template": "Private/Templates/Weekly Template.md"
+    },
+    {
+      "folder": "Private/Journal/C - Monthly",
+      "template": "Private/Templates/Monthly Template.md"
+    },
+    {
+      "folder": "Private/Journal/D - Quarterly",
+      "template": "Private/Templates/Quarterly Template.md"
+    },
+    {
+      "folder": "Private/Journal/E - Yearly",
+      "template": "Private/Templates/Yearly Template.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": true,
+  "enabled_templates_hotkeys": [
+    ""
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "intellisense_render": 1,
+  "ignore_folders_on_creation": [
+    {
+      "folder": ""
+    }
+  ]
+}

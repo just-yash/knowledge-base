@@ -1,1 +1,28 @@
-{}
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "02 - Raw Notes",
+  "showInlineTitle": true,
+  "readableLineLength": true,
+  "focusNewTab": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "propertiesInDocument": "visible",
+  "showIndentGuide": false,
+  "rightToLeft": false,
+  "strictLineBreaks": true,
+  "showLineNumber": false,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "tabSize": 4,
+  "attachmentFolderPath": "07 - Annexure",
+  "showUnsupportedFiles": true,
+  "trashOption": "local",
+  "uriCallbacks": false,
+  "promptDelete": false
+}

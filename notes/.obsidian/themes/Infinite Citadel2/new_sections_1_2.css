@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   1. DESIGN TOKEN SYSTEM — The Infinite Citadel v2
+
+   Architecture
+   ─────────────
+     §1a  Shared Tokens         typography, spacing, radii (theme-agnostic)
+     §1b  Raw Palette           colour atoms with 70/20/10 tier labels
+     §1c  Material System       5 physical surfaces × (bg, border, shadow, highlight)
+     §1d  Composite Effects     assembled glows, focus rings
+     §1e  Legacy Bridges        backward-compat aliases consumed by sections 3–20
+
+   70 / 20 / 10  Colour Discipline
+   ─────────────────────────────────
+     T1 NEUTRAL   (70%)  Void & obsidian surfaces, body text, muted text.
+                          The quiet dark mass everything rests upon.
+     T2 SUPPORT   (20%)  Steel borders, glass panels, parchment warmth,
+                          dim accents, secondary text.
+     T3 ACCENT    (10%)  Arc-cyan, bright gold, purple, emerald, crimson.
+                          Small but searing — glows, active states, heading pops.
+
+   Material Reference
+   ───────────────────
+     POLISHED OBSIDIAN   Volcanic glass — near-black, mirror-depth, faint blue sheen.
+                          Deepest backgrounds, primary surfaces, void-level panels.
+     FROSTED GLASS       Ice-crystal — translucent, refractive edges, backdrop-blur.
+                          Floating overlays, sidebars, popup surfaces.
+     VALYRIAN STEEL      Rippled rare metal — cool grey-blue, sharp, structural.
+                          Borders, dividers, inactive chrome, table headers.
+     DRAGON PARCHMENT    Heat-treated ancient skin — warm, golden, subtly textured.
+                          Blockquotes, callout warmth, ceremonial reading surfaces.
+     ARC-REACTOR METAL   Stark-tech alloy — dark core infused with cyan energy glow.
+                          CTAs, active states, focus rings, primary interactive elements.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── §1a Shared Tokens (both themes) ─────────────────────────────────── */
+.theme-dark, .theme-light {
+	/* Typography */
+	--ic-font-display:     "Cinzel", "Iowan Old Style", Georgia, serif;
+	--ic-font-display-alt: "Cinzel Decorative", "Cinzel", serif;
+	--ic-font-elegant:     "Cormorant Garamond", Georgia, serif;
+	--ic-font-body:        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--ic-font-mono:        "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+	/* Spacing & Radii */
+	--ic-radius-s:  6px;
+	--ic-radius-m:  10px;
+	--ic-radius-l:  16px;
+	--ic-radius-xl: 22px;
+}
+
+/* ── §1b–e  DARK THEME TOKENS ────────────────────────────────────────── */
+.theme-dark {
+
+	/* ┌─────────────────────────────────────────────────────────────────┐
+	   │  §1b  RAW PALETTE                                              │
+	   └─────────────────────────────────────────────────────────────────┘ */
+
+	/* T1 NEUTRAL (70%) — the dark mass -------------------------------- */
+	--ic-void:            #05060b;       /* absolute deepest background   */
+	--ic-void-2:          #090c16;       /* secondary void                */
+	--ic-nebula:          #10152a;       /* dark nebula field             */
+	--ic-nebula-2:        #171f3d;       /* lighter nebula                */
+
+	--ic-text-bright:     #f2f0ea;       /* max-readable white            */
+	--ic-text-normal:     #cdd3e0;       /* body text                     */
+	--ic-text-muted:      #8b93ab;       /* secondary text                */
+	--ic-text-faint:      #565f78;       /* tertiary / disabled           */
+
+	/* T2 SUPPORTING (20%) — structural middle layer ------------------- */
+	--ic-panel:           #0d1120;       /* panel surface                 */
+	--ic-panel-2:         #131a30;       /* elevated panel                */
+	--ic-valyrian:        #c7d4e3;       /* steel-bright text             */
+	--ic-valyrian-dim:    #7c8aa3;       /* steel-muted                   */
+	--ic-arc-cyan-dim:    #2b8f96;       /* dimmed tech echo              */
+	--ic-purple-dim:      #5d4499;       /* dimmed magic echo             */
+	--ic-gold:            #d9a857;       /* supporting gold               */
+
+	/* T3 ACCENT (10%) — searing highlights ---------------------------- */
+	--ic-arc-cyan:        #55e6ec;       /* primary tech accent           */
+	--ic-gold-bright:     #f0c878;       /* bright ceremonial gold        */
+	--ic-purple:          #9b6bf2;       /* magic purple                  */
+	--ic-starlight:       #f4f1ea;       /* emphasis text / star-white    */
+	--ic-emerald:         #4fc98a;       /* success / wildfire            */
+	--ic-crimson:         #e1544b;       /* danger / dragonfire           */
+	--ic-amber:           #f0a860;       /* warning / torch-light         */
+
+	/* ┌─────────────────────────────────────────────────────────────────┐
+	   │  §1c  MATERIAL SYSTEM (dark)                                    │
+	   │  Each material exposes: bg, border, shadow, highlight.          │
+	   │  Some add a variant bg (bg-surface, bg-dense) where the         │
+	   │  material naturally has two weights.                             │
+	   └─────────────────────────────────────────────────────────────────┘ */
+
+	/* Material: Polished Obsidian ─ volcanic glass, mirror-depth ────── */
+	--mat-obsidian-bg:         #05060b;
+	--mat-obsidian-bg-surface: linear-gradient(160deg, #0a0e1c 0%, #060810 100%);
+	--mat-obsidian-border:     1px solid rgba(120, 140, 180, 0.07);
+	--mat-obsidian-shadow:     0 8px 32px rgba(0, 0, 0, 0.60),
+	                           0 2px 8px  rgba(0, 0, 0, 0.40);
+	--mat-obsidian-highlight:  inset 0 1px 0 rgba(120, 150, 200, 0.06);
+
+	/* Material: Frosted Glass ─ ice-crystal, translucent, refractive ── */
+	--mat-glass-bg:            rgba(15, 20, 40, 0.62);
+	--mat-glass-bg-dense:      rgba(10, 14, 28, 0.86);
+	--mat-glass-border:        1px solid rgba(180, 200, 230, 0.10);
+	--mat-glass-shadow:        0 4px 20px rgba(0, 0, 0, 0.30),
+	                           inset 0 0 0 0.5px rgba(180, 200, 230, 0.08);
+	--mat-glass-highlight:     inset 0 1px 0 rgba(200, 220, 255, 0.07);
+
+	/* Material: Valyrian Steel ─ rippled rare metal, sharp & structural */
+	--mat-steel-bg:            linear-gradient(160deg, #1a2035 0%, #121828 100%);
+	--mat-steel-border:        1px solid rgba(199, 212, 227, 0.14);
+	--mat-steel-shadow:        0 1px 3px rgba(0, 0, 0, 0.50),
+	                           inset 0 1px 0 rgba(199, 212, 227, 0.05);
+	--mat-steel-highlight:     inset 0 1px 0 rgba(199, 212, 227, 0.10),
+	                           inset 0 -1px 0 rgba(0, 0, 0, 0.30);
+
+	/* Material: Dragon Parchment ─ heat-treated skin, warm & golden ─── */
+	--mat-parchment-bg:        linear-gradient(135deg,
+	                             rgba(217, 168, 87, 0.07) 0%,
+	                             rgba(15, 12, 8, 0.90) 100%);
+	--mat-parchment-border:    1px solid rgba(217, 168, 87, 0.20);
+	--mat-parchment-shadow:    0 4px 16px rgba(100, 70, 20, 0.15);
+	--mat-parchment-highlight: inset 0 1px 0 rgba(217, 168, 87, 0.10);
+
+	/* Material: Arc-Reactor Metal ─ Stark-tech, energy-infused alloy ── */
+	--mat-reactor-bg:          linear-gradient(135deg,
+	                             rgba(85, 230, 236, 0.07) 0%,
+	                             rgba(10, 15, 30, 0.95) 100%);
+	--mat-reactor-border:      1px solid rgba(85, 230, 236, 0.24);
+	--mat-reactor-shadow:      0 0 20px rgba(85, 230, 236, 0.12),
+	                           0 4px 16px rgba(0, 0, 0, 0.40);
+	--mat-reactor-highlight:   inset 0 1px 0 rgba(85, 230, 236, 0.12),
+	                           0 0 8px rgba(85, 230, 236, 0.06);
+
+	/* ┌─────────────────────────────────────────────────────────────────┐
+	   │  §1d  COMPOSITE EFFECTS                                        │
+	   └─────────────────────────────────────────────────────────────────┘ */
+	--ic-glow-cyan:    0 0 14px rgba(85, 230, 236, 0.35);
+	--ic-glow-gold:    0 0 16px rgba(217, 168, 87, 0.35);
+	--ic-glow-purple:  0 0 16px rgba(155, 107, 242, 0.40);
+
+	/* ┌─────────────────────────────────────────────────────────────────┐
+	   │  §1e  LEGACY BRIDGES                                           │
+	   │  Map old --ic-* compound names to the new material tokens so    │
+	   │  sections 3–20 keep working without any edits.                  │
+	   └─────────────────────────────────────────────────────────────────┘ */
+	--ic-glass:          var(--mat-glass-bg);
+	--ic-glass-strong:   var(--mat-glass-bg-dense);
+	--ic-obsidian-stone: var(--mat-obsidian-bg-surface);
+	--ic-shadow-deep:    var(--mat-obsidian-shadow);
+	--ic-shadow-soft:    0 2px 10px rgba(0, 0, 0, 0.35);
+	--ic-border-steel:   var(--mat-steel-border);
+	--ic-border-gold:    var(--mat-parchment-border);
+	--ic-border-cyan:    var(--mat-reactor-border);
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   2. OBSIDIAN CORE VARIABLE MAPPING (dark)
+   Maps material & palette tokens → Obsidian's native variable contract.
+   Tier tags (T1/T2/T3) show which budget each assignment draws from.
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-dark {
+	/* Backgrounds — obsidian & glass surfaces (T1) */
+	--background-primary:               var(--ic-void);
+	--background-primary-alt:           var(--ic-void-2);
+	--background-secondary:             var(--ic-panel);
+	--background-secondary-alt:         var(--ic-panel-2);
+	--background-modifier-border:       rgba(199, 212, 227, 0.10);   /* T2 steel edge    */
+	--background-modifier-border-hover: rgba(85, 230, 236, 0.30);    /* T3 reactor edge  */
+	--background-modifier-border-focus: var(--ic-arc-cyan);           /* T3               */
+	--background-modifier-hover:        rgba(155, 107, 242, 0.08);   /* T3 purple wash   */
+	--background-modifier-active-hover: rgba(155, 107, 242, 0.14);   /* T3               */
+	--background-modifier-form-field:   rgba(9, 12, 22, 0.70);       /* T1 obsidian fill */
+	--background-modifier-box-shadow:   rgba(0, 0, 0, 0.55);         /* T1               */
+	--background-modifier-cover:        rgba(5, 6, 11, 0.75);        /* T1 modal scrim   */
+	--background-modifier-error:        var(--ic-crimson);            /* T3               */
+	--background-modifier-success:      var(--ic-emerald);            /* T3               */
+
+	/* Text (T1 body / T3 accent pops) */
+	--text-normal:         var(--ic-text-normal);                     /* T1               */
+	--text-muted:          var(--ic-text-muted);                      /* T1               */
+	--text-faint:          var(--ic-text-faint);                      /* T1               */
+	--text-accent:         var(--ic-arc-cyan);                        /* T3               */
+	--text-accent-hover:   var(--ic-gold-bright);                     /* T3               */
+	--text-on-accent:      var(--ic-void);
+	--text-error:          var(--ic-crimson);                          /* T3               */
+	--text-selection:      rgba(155, 107, 242, 0.35);                /* T3 purple field  */
+	--text-highlight-bg:   rgba(217, 168, 87, 0.28);                 /* T2 gold mark     */
+
+	/* Interactive surfaces — reactor & glass materials */
+	--interactive-normal:       var(--ic-panel-2);                    /* T2               */
+	--interactive-hover:        rgba(85, 230, 236, 0.10);             /* T3               */
+	--interactive-accent:       var(--ic-purple);                     /* T3               */
+	--interactive-accent-hsl:   262, 82%, 68%;
+	--interactive-accent-hover: var(--ic-magic, #b083ff);             /* T3               */
+
+	/* Heading hierarchy — gold→cyan→steel cascade */
+	--h1-color: var(--ic-gold-bright);                                /* T3               */
+	--h2-color: var(--ic-gold);                                       /* T2               */
+	--h3-color: var(--ic-arc-cyan);                                   /* T3               */
+	--h4-color: var(--ic-valyrian);                                   /* T2               */
+	--h5-color: var(--ic-valyrian);                                   /* T2               */
+	--h6-color: var(--ic-text-muted);                                 /* T1               */
+
+	/* Typographic emphasis */
+	--bold-color:   var(--ic-starlight);                              /* T3               */
+	--italic-color: var(--ic-purple);                                 /* T3               */
+
+	/* Links */
+	--link-color:            var(--ic-arc-cyan);                      /* T3               */
+	--link-color-hover:      var(--ic-gold-bright);                   /* T3               */
+	--link-unresolved-color: var(--ic-crimson);                       /* T3               */
+	--link-external-color:   var(--ic-gold);                          /* T2               */
+
+	/* Code */
+	--code-normal:     var(--ic-arc-cyan);                            /* T3               */
+	--code-background: rgba(9, 13, 24, 0.85);                        /* T1               */
+	--code-comment:    var(--ic-text-faint);                           /* T1               */
+
+	/* Titlebar — obsidian surface */
+	--titlebar-background:         var(--ic-void-2);                  /* T1               */
+	--titlebar-background-focused: var(--ic-void-2);                  /* T1               */
+	--titlebar-text-color:         var(--ic-valyrian);                /* T2               */
+
+	/* Chrome */
+	--divider-color:   rgba(199, 212, 227, 0.10);                    /* T2 steel line    */
+	--font-interface:  var(--ic-font-body);
+	--font-text:       var(--ic-font-body);
+	--font-monospace:  var(--ic-font-mono);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   1 (continued). LIGHT THEME TOKENS
+   The citadel in daylight — warm stone walls, sun through stained glass,
+   bright steel, aged parchment under natural light. Same materials, same
+   identity, shifted for WCAG-readable contrast on luminous surfaces.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── §1f–j  LIGHT THEME TOKENS ───────────────────────────────────────── */
+.theme-light {
+
+	/* ┌─────────────────────────────────────────────────────────────────┐
+	   │  §1f  RAW PALETTE (light)                                      │
+	   └─────────────────────────────────────────────────────────────────┘ */
+
+	/* T1 NEUTRAL (70%) — sunlit stone --------------------------------- */
+	--ic-void:            #f0ede6;       /* warm off-white base           */
+	--ic-void-2:          #e8e4db;       /* secondary stone               */
+	--ic-nebula:          #ddd8cd;       /* medium stone                  */
+	--ic-nebula-2:        #d3cdc0;       /* deeper warm stone             */
+
+	--ic-text-bright:     #1a1612;       /* rich near-black               */
+	--ic-text-normal:     #2c2820;       /* body text                     */
+	--ic-text-muted:      #6b6358;       /* secondary text                */
+	--ic-text-faint:      #9c9488;       /* tertiary / disabled           */
+
+	/* T2 SUPPORTING (20%) — structural warmth ------------------------- */
+	--ic-panel:           #f6f3ec;       /* light panel surface           */
+	--ic-panel-2:         #ebe7de;       /* elevated panel                */
+	--ic-valyrian:        #4a4354;       /* steel-dark text               */
+	--ic-valyrian-dim:    #7a7382;       /* steel-muted                   */
+	--ic-arc-cyan-dim:    #60b5ba;       /* dimmed tech echo              */
+	--ic-purple-dim:      #8b6bd0;       /* dimmed magic echo             */
+	--ic-gold:            #9e7422;       /* supporting gold (darkened)    */
+
+	/* T3 ACCENT (10%) — vivid on light -------------------------------- */
+	--ic-arc-cyan:        #0e7c84;       /* darkened for contrast         */
+	--ic-gold-bright:     #a67b1a;       /* rich dark gold                */
+	--ic-purple:          #6d3cc4;       /* deepened purple               */
+	--ic-starlight:       #1a1612;       /* emphasis text (dark on light) */
+	--ic-emerald:         #1f845a;       /* success                       */
+	--ic-crimson:         #c43a32;       /* danger                        */
+	--ic-amber:           #c47f2a;       /* warning                       */
+
+	/* ┌─────────────────────────────────────────────────────────────────┐
+	   │  §1g  MATERIAL SYSTEM (light)                                   │
+	   │  Same 5 materials — their daylit counterparts.                  │
+	   └─────────────────────────────────────────────────────────────────┘ */
+
+	/* Material: Polished Obsidian → "Sunlit Marble" ───────────────── */
+	--mat-obsidian-bg:         #f0ede6;
+	--mat-obsidian-bg-surface: linear-gradient(160deg, #f4f1ea 0%, #ebe7de 100%);
+	--mat-obsidian-border:     1px solid rgba(45, 35, 25, 0.09);
+	--mat-obsidian-shadow:     0 8px 32px rgba(45, 35, 25, 0.06),
+	                           0 2px 8px  rgba(45, 35, 25, 0.04);
+	--mat-obsidian-highlight:  inset 0 1px 0 rgba(255, 255, 255, 0.70);
+
+	/* Material: Frosted Glass → "Crystal in Daylight" ─────────────── */
+	--mat-glass-bg:            rgba(255, 252, 245, 0.72);
+	--mat-glass-bg-dense:      rgba(246, 243, 236, 0.90);
+	--mat-glass-border:        1px solid rgba(45, 35, 25, 0.07);
+	--mat-glass-shadow:        0 4px 20px rgba(45, 35, 25, 0.05),
+	                           inset 0 0 0 0.5px rgba(255, 255, 255, 0.50);
+	--mat-glass-highlight:     inset 0 1px 0 rgba(255, 255, 255, 0.90);
+
+	/* Material: Valyrian Steel → "Bright Steel" ──────────────────── */
+	--mat-steel-bg:            linear-gradient(160deg, #e6e2da 0%, #dbd6cc 100%);
+	--mat-steel-border:        1px solid rgba(45, 35, 25, 0.12);
+	--mat-steel-shadow:        0 1px 3px rgba(45, 35, 25, 0.08),
+	                           inset 0 1px 0 rgba(255, 255, 255, 0.60);
+	--mat-steel-highlight:     inset 0 1px 0 rgba(255, 255, 255, 0.80),
+	                           inset 0 -1px 0 rgba(45, 35, 25, 0.04);
+
+	/* Material: Dragon Parchment → "Sunlit Vellum" ───────────────── */
+	--mat-parchment-bg:        linear-gradient(135deg,
+	                             rgba(158, 116, 34, 0.08) 0%,
+	                             rgba(246, 240, 228, 0.95) 100%);
+	--mat-parchment-border:    1px solid rgba(158, 116, 34, 0.20);
+	--mat-parchment-shadow:    0 4px 16px rgba(158, 116, 34, 0.06);
+	--mat-parchment-highlight: inset 0 1px 0 rgba(217, 168, 87, 0.14);
+
+	/* Material: Arc-Reactor Metal → "Charged Alloy in Light" ─────── */
+	--mat-reactor-bg:          linear-gradient(135deg,
+	                             rgba(14, 124, 132, 0.06) 0%,
+	                             rgba(240, 237, 230, 0.95) 100%);
+	--mat-reactor-border:      1px solid rgba(14, 124, 132, 0.24);
+	--mat-reactor-shadow:      0 0 20px rgba(14, 124, 132, 0.08),
+	                           0 4px 16px rgba(45, 35, 25, 0.06);
+	--mat-reactor-highlight:   inset 0 1px 0 rgba(14, 124, 132, 0.10);
+
+	/* ┌─────────────────────────────────────────────────────────────────┐
+	   │  §1h  COMPOSITE EFFECTS (light)                                │
+	   └─────────────────────────────────────────────────────────────────┘ */
+	--ic-glow-cyan:    0 0 14px rgba(14, 124, 132, 0.25);
+	--ic-glow-gold:    0 0 16px rgba(158, 116, 34, 0.25);
+	--ic-glow-purple:  0 0 16px rgba(109, 60, 196, 0.30);
+
+	/* ┌─────────────────────────────────────────────────────────────────┐
+	   │  §1i  LEGACY BRIDGES (light)                                   │
+	   └─────────────────────────────────────────────────────────────────┘ */
+	--ic-glass:          var(--mat-glass-bg);
+	--ic-glass-strong:   var(--mat-glass-bg-dense);
+	--ic-obsidian-stone: var(--mat-obsidian-bg-surface);
+	--ic-shadow-deep:    var(--mat-obsidian-shadow);
+	--ic-shadow-soft:    0 2px 10px rgba(45, 35, 25, 0.10);
+	--ic-border-steel:   var(--mat-steel-border);
+	--ic-border-gold:    var(--mat-parchment-border);
+	--ic-border-cyan:    var(--mat-reactor-border);
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   2b. OBSIDIAN CORE VARIABLE MAPPING (light)
+   Same contract as §2, warm stone palette, WCAG-compliant contrast.
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-light {
+	/* Backgrounds — sunlit marble & warm glass (T1) */
+	--background-primary:               var(--ic-void);
+	--background-primary-alt:           var(--ic-void-2);
+	--background-secondary:             var(--ic-panel);
+	--background-secondary-alt:         var(--ic-panel-2);
+	--background-modifier-border:       rgba(45, 35, 25, 0.10);      /* T2 stone edge    */
+	--background-modifier-border-hover: rgba(14, 124, 132, 0.25);    /* T3 reactor edge  */
+	--background-modifier-border-focus: var(--ic-arc-cyan);           /* T3               */
+	--background-modifier-hover:        rgba(109, 60, 196, 0.07);    /* T3 purple wash   */
+	--background-modifier-active-hover: rgba(109, 60, 196, 0.12);    /* T3               */
+	--background-modifier-form-field:   rgba(235, 231, 222, 0.80);   /* T1 stone fill    */
+	--background-modifier-box-shadow:   rgba(45, 35, 25, 0.10);      /* T1               */
+	--background-modifier-cover:        rgba(240, 237, 230, 0.75);   /* T1 modal scrim   */
+	--background-modifier-error:        var(--ic-crimson);            /* T3               */
+	--background-modifier-success:      var(--ic-emerald);            /* T3               */
+
+	/* Text (T1 body / T3 accent pops) */
+	--text-normal:         var(--ic-text-normal);                     /* T1               */
+	--text-muted:          var(--ic-text-muted);                      /* T1               */
+	--text-faint:          var(--ic-text-faint);                      /* T1               */
+	--text-accent:         var(--ic-arc-cyan);                        /* T3               */
+	--text-accent-hover:   var(--ic-gold-bright);                     /* T3               */
+	--text-on-accent:      #f4f1ea;          /* light text on dark accent bg */
+	--text-error:          var(--ic-crimson);                          /* T3               */
+	--text-selection:      rgba(109, 60, 196, 0.20);                 /* T3 purple field  */
+	--text-highlight-bg:   rgba(158, 116, 34, 0.18);                 /* T2 gold mark     */
+
+	/* Interactive surfaces */
+	--interactive-normal:       var(--ic-panel-2);                    /* T2               */
+	--interactive-hover:        rgba(14, 124, 132, 0.08);             /* T3               */
+	--interactive-accent:       var(--ic-purple);                     /* T3               */
+	--interactive-accent-hsl:   262, 54%, 50%;
+	--interactive-accent-hover: #8255d6;                              /* T3               */
+
+	/* Heading hierarchy */
+	--h1-color: var(--ic-gold-bright);                                /* T3               */
+	--h2-color: var(--ic-gold);                                       /* T2               */
+	--h3-color: var(--ic-arc-cyan);                                   /* T3               */
+	--h4-color: var(--ic-valyrian);                                   /* T2               */
+	--h5-color: var(--ic-valyrian);                                   /* T2               */
+	--h6-color: var(--ic-text-muted);                                 /* T1               */
+
+	/* Typographic emphasis */
+	--bold-color:   var(--ic-starlight);                              /* T3               */
+	--italic-color: var(--ic-purple);                                 /* T3               */
+
+	/* Links */
+	--link-color:            var(--ic-arc-cyan);                      /* T3               */
+	--link-color-hover:      var(--ic-gold-bright);                   /* T3               */
+	--link-unresolved-color: var(--ic-crimson);                       /* T3               */
+	--link-external-color:   var(--ic-gold);                          /* T2               */
+
+	/* Code */
+	--code-normal:     var(--ic-arc-cyan);                            /* T3               */
+	--code-background: rgba(235, 231, 222, 0.70);                    /* T1               */
+	--code-comment:    var(--ic-text-faint);                           /* T1               */
+
+	/* Titlebar — stone surface */
+	--titlebar-background:         var(--ic-void-2);                  /* T1               */
+	--titlebar-background-focused: var(--ic-void-2);                  /* T1               */
+	--titlebar-text-color:         var(--ic-valyrian);                /* T2               */
+
+	/* Chrome */
+	--divider-color:   rgba(45, 35, 25, 0.10);                       /* T2 stone line    */
+	--font-interface:  var(--ic-font-body);
+	--font-text:       var(--ic-font-body);
+	--font-monospace:  var(--ic-font-mono);
+}

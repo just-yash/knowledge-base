@@ -1,0 +1,59 @@
+{
+  "palette": {
+    "seed": 7,
+    "selected": "adaptive-soft",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": true
+  },
+  "knownTags": {
+    "active": 47,
+    "ai-briefing": 42,
+    "bbsrfoodie": 48,
+    "bhubaneswarcoffee": 49,
+    "classes": 50,
+    "complete": 34,
+    "creativity": 38,
+    "cvsecurity": 67,
+    "daily": 51,
+    "draft": 39,
+    "dsaproblem": 52,
+    "excalidraw": 53,
+    "incomplete": 24,
+    "interviewprep": 55,
+    "kiitlife": 56,
+    "machinelearning": 68,
+    "moc": 23,
+    "monetization": 43,
+    "monthly": 58,
+    "note": 21,
+    "odishacoffee": 59,
+    "paper": 40,
+    "philosophypoet": 69,
+    "podcast": 35,
+    "profile": 60,
+    "project": 61,
+    "quarterly": 62,
+    "rawnote": 36,
+    "research": 28,
+    "researchinpublic": 70,
+    "revisit": 63,
+    "solved": 64,
+    "startup": 41,
+    "surveillance": 44,
+    "tag": 37,
+    "unsolved": 65,
+    "video": 46,
+    "weekly": 45,
+    "writingcommunity": 71,
+    "yearly": 66
+  },
+  "tagColors": {
+    "array": 0,
+    "daily": 1
+  },
+  "_version": 4
+}

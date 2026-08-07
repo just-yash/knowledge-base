@@ -1,0 +1,142 @@
+/* ───────────────────────────────────────────────────────────────────────
+   09-MATERIAL-ENGINE.CSS — Unreal Engine Style PBR Material System
+   ───────────────────────────────────────────────────────────────────────
+   Instead of themes, Infinite Citadel is built out of Physical Materials.
+   Every material explicitly defines 6 properties:
+   1. Texture       (Base Albedo + SVG Noise Grain)
+   2. Reflectivity  (Specular Highlights)
+   3. Glow          (Emissive properties / Drop Shadows)
+   4. Edges         (Physical boundaries or borders)
+   5. Animation     (Kinetic or ambient behavior)
+   6. Depth         (Ambient Occlusion / Volumetric Shadows)
+   ─────────────────────────────────────────────────────────────────────── */
+
+:root {
+	/* ── 0. PROCEDURAL NOISE TEXTURES ── */
+	--pbr-noise-coarse: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+	--pbr-noise-brushed: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05 4.0' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+	--pbr-noise-fine: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+.theme-dark {
+	/* ── 1. DRAGONSTONE (Monolithic Basalt) ── */
+	--pbr-dragonstone-texture: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.85) 100%), var(--pbr-noise-coarse), #0f121a;
+	--pbr-dragonstone-reflectivity: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 rgba(0,0,0,0.8);
+	--pbr-dragonstone-glow: none;
+	--pbr-dragonstone-edges: 1px solid #000;
+	--pbr-dragonstone-animation: none;
+	--pbr-dragonstone-depth: inset 0 0 60px rgba(0, 0, 0, 0.95), 0 20px 50px rgba(0,0,0,0.9);
+
+	/* ── 2. VALYRIAN STEEL (Forged Alloy) ── */
+	--pbr-steel-texture: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.8) 100%), var(--pbr-noise-brushed), #1a1e29;
+	--pbr-steel-reflectivity: inset 0 2px 2px rgba(199, 212, 227, 0.3), inset 0 -2px 4px rgba(0,0,0,0.9);
+	--pbr-steel-glow: none;
+	--pbr-steel-edges: 1px solid #000;
+	--pbr-steel-animation: none;
+	--pbr-steel-depth: 0 10px 24px rgba(0, 0, 0, 0.9);
+
+	/* ── 3. VOID OBSIDIAN (Volcanic Glass) ── */
+	--pbr-obsidian-texture: linear-gradient(160deg, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.6) 100%), var(--pbr-noise-fine), #060810;
+	--pbr-obsidian-reflectivity: inset 1px 1px 0 rgba(255,255,255,0.08); /* Crisp mirror edge */
+	--pbr-obsidian-glow: drop-shadow(0 0 4px rgba(0,0,0,0.5));
+	--pbr-obsidian-edges: 1px solid rgba(199, 212, 227, 0.05);
+	--pbr-obsidian-animation: none;
+	--pbr-obsidian-depth: inset -2px -2px 10px rgba(0,0,0,0.8);
+
+	/* ── 4. NEBULA CRYSTAL (Refractive Glass) ── */
+	--pbr-crystal-texture: rgba(15, 20, 40, 0.45);
+	--pbr-crystal-reflectivity: inset 0 1px 0 rgba(155, 107, 242, 0.3); /* Purple spectral catch */
+	--pbr-crystal-glow: drop-shadow(0 0 12px rgba(155, 107, 242, 0.2));
+	--pbr-crystal-edges: 1px solid rgba(155, 107, 242, 0.15);
+	--pbr-crystal-animation: ic-crystal-breathe 4s ease-in-out infinite alternate;
+	--pbr-crystal-depth: 0 10px 40px rgba(0, 0, 0, 0.7);
+
+	/* ── 5. VOID MANUSCRIPT (Magical Parchment) ── */
+	/* Roughness: Soft Vellum | Reflectivity: None | Glow: Magical Ink */
+	--pbr-manuscript-texture: linear-gradient(180deg, rgba(16, 12, 28, 0.8) 0%, rgba(8, 6, 16, 0.95) 100%), var(--pbr-noise-fine), #080610;
+	--pbr-manuscript-reflectivity: inset 0 0 0 transparent;
+	--pbr-manuscript-glow: none;
+	--pbr-manuscript-edges: 1px solid rgba(155, 107, 242, 0.1);
+	--pbr-manuscript-animation: none;
+	--pbr-manuscript-depth: inset 0 0 40px rgba(0,0,0,0.8), 0 20px 60px rgba(0,0,0,0.6);
+
+	/* ── 5. ARC-REACTOR (Synthetic Energy) ── */
+	--pbr-reactor-texture: linear-gradient(135deg, rgba(85,230,236,0.15) 0%, rgba(10,15,30,0.8) 100%), var(--pbr-noise-fine), #070a12;
+	--pbr-reactor-reflectivity: inset 0 0 15px rgba(85,230,236,0.1);
+	--pbr-reactor-glow: drop-shadow(0 0 10px rgba(85,230,236,0.3)); /* Intense cyan emission */
+	--pbr-reactor-edges: 1px solid rgba(85,230,236,0.25);
+	--pbr-reactor-animation: ic-reactor-pulse 2s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate;
+	--pbr-reactor-depth: inset 0 0 5px rgba(85,230,236,0.05);
+
+	/* ── 6. HAMMERED IRON (Heavy Subterranean Metal) ── */
+	--pbr-iron-texture: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.9) 100%), var(--pbr-noise-coarse), #0a0b0e;
+	--pbr-iron-reflectivity: inset 1px 1px 0 rgba(255,255,255,0.1), inset -1px -1px 0 rgba(0,0,0,0.9);
+	--pbr-iron-glow: none;
+	--pbr-iron-edges: 1px solid #000;
+	--pbr-iron-animation: none;
+	--pbr-iron-depth: inset 0 0 30px rgba(0,0,0,0.95), 0 12px 30px rgba(0,0,0,0.95);
+}
+
+/* Base Keyframes for Materials */
+@keyframes ic-crystal-breathe {
+	0% { backdrop-filter: blur(16px) saturate(140%); background-color: rgba(15, 20, 40, 0.45); }
+	100% { backdrop-filter: blur(20px) saturate(160%); background-color: rgba(15, 20, 40, 0.60); }
+}
+
+/* ── MATERIAL ASSIGNER CLASSES ── */
+.mat-dragonstone {
+	background: var(--pbr-dragonstone-texture) !important;
+	box-shadow: var(--pbr-dragonstone-reflectivity), var(--pbr-dragonstone-depth) !important;
+	border: var(--pbr-dragonstone-edges) !important;
+	filter: var(--pbr-dragonstone-glow) !important;
+	animation: var(--pbr-dragonstone-animation) !important;
+}
+
+.mat-steel {
+	background: var(--pbr-steel-texture) !important;
+	box-shadow: var(--pbr-steel-reflectivity), var(--pbr-steel-depth) !important;
+	border: var(--pbr-steel-edges) !important;
+	filter: var(--pbr-steel-glow) !important;
+	animation: var(--pbr-steel-animation) !important;
+}
+
+.mat-obsidian {
+	background: var(--pbr-obsidian-texture) !important;
+	box-shadow: var(--pbr-obsidian-reflectivity), var(--pbr-obsidian-depth) !important;
+	border: var(--pbr-obsidian-edges) !important;
+	filter: var(--pbr-obsidian-glow) !important;
+	animation: var(--pbr-obsidian-animation) !important;
+}
+
+.mat-crystal {
+	background: var(--pbr-crystal-texture) !important;
+	box-shadow: var(--pbr-crystal-reflectivity), var(--pbr-crystal-depth) !important;
+	border: var(--pbr-crystal-edges) !important;
+	filter: var(--pbr-crystal-glow) !important;
+	animation: var(--pbr-crystal-animation) !important;
+	backdrop-filter: blur(16px) saturate(140%);
+}
+
+.mat-manuscript {
+	background: var(--pbr-manuscript-texture) !important;
+	box-shadow: var(--pbr-manuscript-reflectivity), var(--pbr-manuscript-depth) !important;
+	border: var(--pbr-manuscript-edges) !important;
+	filter: var(--pbr-manuscript-glow) !important;
+	animation: var(--pbr-manuscript-animation) !important;
+}
+
+.mat-reactor {
+	background: var(--pbr-reactor-texture) !important;
+	box-shadow: var(--pbr-reactor-reflectivity), var(--pbr-reactor-depth) !important;
+	border: var(--pbr-reactor-edges) !important;
+	filter: var(--pbr-reactor-glow) !important;
+	animation: var(--pbr-reactor-animation) !important;
+}
+
+.mat-iron {
+	background: var(--pbr-iron-texture) !important;
+	box-shadow: var(--pbr-iron-reflectivity), var(--pbr-iron-depth) !important;
+	border: var(--pbr-iron-edges) !important;
+	filter: var(--pbr-iron-glow) !important;
+	animation: var(--pbr-iron-animation) !important;
+}

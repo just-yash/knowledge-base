@@ -1,0 +1,156 @@
+/* ───────────────────────────────────────────────────────────────────────
+   17. GRAPH VIEW — a knowledge galaxy
+   Nodes: glowing celestial bodies (stars / nodes)
+   Edges: faint energy links
+   Background: nebula deep-field matching Section 3's living atmosphere
+
+   OBSIDIAN API LIMITATION NOTE:
+   ─────────────────────────────
+   Obsidian renders the interactive Graph View using an HTML5 <canvas>
+   element via 2D/WebGL rendering. Because individual graph nodes and
+   edges are drawn procedurally on a flat canvas raster rather than
+   rendered as HTML DOM elements, pure CSS selectors cannot target
+   individual nodes based on their degree or connection density.
+
+   What CSS CAN do (implemented below):
+     1. Set global node colors & opacities via Obsidian's graph CSS variables:
+        --graph-node, --graph-node-unresolved, --graph-node-focused,
+        --graph-node-tag, --graph-node-attachment, --graph-line, etc.
+     2. Apply a glowing aura filter to the canvas element so all star-nodes
+        emit a celestial drop-shadow bloom.
+     3. Style the graph controls drawer using Frosted Glass material.
+     4. Render a living nebula deep-space background behind the canvas.
+   ─────────────────────────────────────────────────────────────────────── */
+
+.theme-dark {
+	/* Graph global variables consumed by Obsidian's WebGL/Canvas renderer */
+	--graph-node: var(--ic-arc-cyan);
+	--graph-node-unresolved: var(--ic-valyrian-dim);
+	--graph-node-focused: var(--ic-gold-bright);
+	--graph-node-tag: var(--ic-purple);
+	--graph-node-attachment: var(--ic-emerald);
+	--graph-line: rgba(85, 230, 236, 0.22);
+	--graph-line-highlight: rgba(217, 168, 87, 0.75);
+}
+
+.theme-dark .graph-view.view-content {
+	/* Nebula-tinted deep space background matching Section 3's atmosphere */
+	background:
+		radial-gradient(1px 1px at 12% 22%, rgba(244, 241, 234, 0.75), transparent),
+		radial-gradient(1px 1px at 70% 18%, rgba(244, 241, 234, 0.65), transparent),
+		radial-gradient(1.5px 1.5px at 85% 60%, rgba(85, 230, 236, 0.70), transparent),
+		radial-gradient(1px 1px at 30% 80%, rgba(244, 241, 234, 0.50), transparent),
+		radial-gradient(1.5px 1.5px at 55% 50%, rgba(217, 168, 87, 0.70), transparent),
+		radial-gradient(ellipse 65% 50% at 45% 45%, rgba(155, 107, 242, 0.12), transparent 70%),
+		radial-gradient(ellipse 50% 40% at 75% 75%, rgba(85, 230, 236, 0.08), transparent 60%),
+		var(--ic-void);
+}
+
+/* Canvas bloom filter — gives every celestial node on the canvas an ambient energy glow */
+.theme-dark .graph-view.view-content canvas {
+	filter: drop-shadow(0 0 7px rgba(85, 230, 236, 0.35))
+	        drop-shadow(0 0 16px rgba(155, 107, 242, 0.18));
+}
+
+/* Graph control panel — Frosted Glass terminal card */
+.theme-dark .graph-controls {
+	background: var(--mat-glass-bg-dense);
+	backdrop-filter: blur(20px) saturate(160%);
+	border: var(--mat-glass-border);
+	border-radius: var(--ic-radius-m);
+	box-shadow: var(--mat-glass-shadow),
+	            0 0 25px -10px rgba(85, 230, 236, 0.20);
+}
+.theme-dark .graph-controls .setting-item-heading {
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold);
+	letter-spacing: 0.8px;
+}
+.theme-dark .graph-control-section-header {
+	font-family: var(--ic-font-display);
+	color: var(--ic-valyrian);
+	font-size: 0.85em;
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   18. CANVAS — infinite floating space archive
+   Environment: deep-space void with radial nebulae and a clean dot-grid
+   Cards: "Floating Tablets" with soft directional shadow + material borders
+   Edges: energy filaments with glowing arrowheads
+
+   BUG FIX NOTE:
+   ─────────────
+   Previously the dot-grid radial gradient used `background-size: 100% 100%`
+   which stretched dot gradients across the entire canvas instead of tiling them.
+   Fixed below by separating the 20px x 20px dot-grid background-size from the
+   100% x 100% space nebulae layers.
+   ─────────────────────────────────────────────────────────────────────── */
+
+.theme-dark .canvas-wrapper {
+	background-color: var(--ic-void);
+	/* Layer 1: Dot grid (20px x 20px tiling)
+	   Layer 2-3: Deep-space nebulae (100% x 100% fixed depth) */
+	background-image:
+		radial-gradient(circle 1px at 1px 1px, rgba(199, 212, 227, 0.14) 1px, transparent 0),
+		radial-gradient(ellipse 60% 45% at 20% 30%, rgba(155, 107, 242, 0.08), transparent 60%),
+		radial-gradient(ellipse 50% 40% at 80% 70%, rgba(85, 230, 236, 0.07), transparent 60%);
+	background-size: 20px 20px, 100% 100%, 100% 100%;
+	background-repeat: repeat, no-repeat, no-repeat;
+}
+
+/* Canvas cards — "Floating Tablets" with multi-layered directional elevation */
+.theme-dark .canvas-node-content {
+	background: var(--mat-glass-bg-dense);
+	backdrop-filter: blur(16px) saturate(150%);
+	border: var(--mat-glass-border);
+	border-radius: var(--ic-radius-m);
+	/* Floating tablet directional shadow: deep bottom drop + cyan top ambient ambient highlight */
+	box-shadow:
+		0 14px 32px -8px rgba(5, 6, 11, 0.80),
+		0 4px 12px -2px rgba(85, 230, 236, 0.08),
+		var(--mat-glass-highlight);
+	transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+	            box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+	            border-color 0.25s ease;
+}
+
+/* Hovering over a card gently lifts it off the canvas plane */
+.theme-dark .canvas-node:hover .canvas-node-content {
+	transform: translateY(-2px);
+	box-shadow:
+		0 18px 40px -10px rgba(5, 6, 11, 0.88),
+		0 6px 16px -2px rgba(85, 230, 236, 0.15),
+		var(--mat-glass-highlight);
+}
+
+/* Focused / selected card — energised border + cyan halo */
+.theme-dark .canvas-node.is-focused .canvas-node-content,
+.theme-dark .canvas-node.is-selected .canvas-node-content {
+	border-color: var(--ic-arc-cyan);
+	box-shadow:
+		0 16px 36px -8px rgba(5, 6, 11, 0.85),
+		var(--ic-glow-cyan),
+		var(--mat-glass-highlight);
+}
+
+/* Canvas connection lines — cyan energy links */
+.theme-dark .canvas-edge path.canvas-display-line {
+	stroke: var(--ic-arc-cyan);
+	stroke-opacity: 0.55;
+	filter: drop-shadow(0 0 3px rgba(85, 230, 236, 0.40));
+}
+
+.theme-dark .canvas-edge.is-focused path.canvas-display-line,
+.theme-dark .canvas-edge:hover path.canvas-display-line {
+	stroke: var(--ic-gold-bright);
+	stroke-opacity: 0.90;
+	filter: drop-shadow(0 0 6px rgba(217, 168, 87, 0.60));
+}
+
+/* Arrowheads */
+.theme-dark .canvas-arrowhead {
+	fill: var(--ic-arc-cyan);
+}
+.theme-dark .canvas-edge.is-focused .canvas-arrowhead {
+	fill: var(--ic-gold-bright);
+}

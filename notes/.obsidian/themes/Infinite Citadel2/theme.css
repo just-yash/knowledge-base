@@ -1,0 +1,2302 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* ───────────────────────────────────────────────────────────────────────
+   01-TOKENS.CSS — Infinite Citadel Master Token Registry (Luxury AAA Edition)
+   ─────────────────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap');
+
+.theme-dark, .theme-light {
+	/* Typography Scale */
+	--ic-font-display:     "Cinzel", "Iowan Old Style", Georgia, serif;
+	--ic-font-display-alt: "Cinzel", "Cinzel Decorative", serif;
+	--ic-font-elegant:     "Cinzel", "Cormorant Garamond", Georgia, serif;
+	--ic-font-body:        "Literata", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--ic-font-mono:        "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+	/* Spacing & Radii Scale */
+	--ic-radius-s:  6px;
+	--ic-radius-m:  10px;
+	--ic-radius-l:  16px;
+	--ic-radius-xl: 22px;
+
+	/* Motion Timing & Curves */
+	--ic-ease-kinetic: cubic-bezier(0.16, 1, 0.3, 1);
+	--ic-ease-smooth:  cubic-bezier(0.25, 1, 0.5, 1);
+	--ic-ease-pop:     cubic-bezier(0.34, 1.56, 0.64, 1);
+	--ic-dur-instant:  150ms;
+	--ic-dur-fast:     250ms;
+	--ic-dur-normal:   350ms;
+}
+
+/* ── DARK THEME MASTER PALETTE ──────────────────────────────────────── */
+.theme-dark {
+	/* 70% Neutral Mass — Deep Space & Obsidian Void */
+	--ic-void:            #040509;
+	--ic-void-2:          #080a12;
+	--ic-nebula:          #0e1326;
+	--ic-nebula-2:        #151b36;
+	
+	/* Warm Ivory (Manuscripts & Text) */
+	--ic-text-bright:     #fdfbf7;
+	--ic-text-normal:     #e8e2d2; /* Warm ivory */
+	--ic-text-muted:      #a8a396;
+	--ic-text-faint:      #78746a;
+
+	/* 20% Supporting — Valyrian Steel, Dragonstone & Arc Energy */
+	--ic-panel:           #0c101d;
+	--ic-panel-2:         #12182c;
+	--ic-valyrian:        #c7d4e3;
+	--ic-valyrian-dim:    #7c8aa3;
+	--ic-arc-cyan-dim:    #2b8f96;
+	--ic-purple-dim:      #5d4499;
+	
+	/* Knowledge & Magic */
+	--ic-gold:            #d9a857;
+	--ic-gold-bright:     #f0c878;
+	--ic-gold-burnished:  #b8860b;
+	--ic-purple:          #9b6bf2;
+	
+	/* Stars & Elements */
+	--ic-starlight:       #ffffff; /* White Stars */
+	--ic-arc-cyan:        #55e6ec; /* Technology */
+	--ic-emerald:         #4fc98a;
+	--ic-crimson:         #e1544b;
+	--ic-amber:           #f0a860;
+	--ic-ember:           #e6643b;
+
+	/* Material Gradients & Physical Surfaces */
+	--mat-obsidian-bg:         #040509;
+	--mat-obsidian-bg-surface: linear-gradient(165deg, #0a0d1a 0%, #050711 100%);
+	--mat-obsidian-border:     1px solid rgba(199, 212, 227, 0.07);
+	--mat-obsidian-shadow:     0 12px 40px rgba(0, 0, 0, 0.75), 0 2px 10px rgba(0, 0, 0, 0.50);
+	--mat-obsidian-highlight:  inset 0 1px 0 rgba(199, 212, 227, 0.08);
+
+	--mat-dragonstone-bg:        linear-gradient(145deg, #0e1118 0%, #07090e 100%);
+	--mat-dragonstone-border:    1px solid rgba(124, 138, 163, 0.14);
+	--mat-dragonstone-shadow:    0 14px 44px rgba(0, 0, 0, 0.80);
+	--mat-dragonstone-highlight: inset 0 1px 0 rgba(150, 165, 190, 0.08);
+
+	--mat-steel-bg:            linear-gradient(160deg, #181f33 0%, #101626 100%);
+	--mat-steel-border:        1px solid rgba(199, 212, 227, 0.12);
+	--mat-steel-shadow:        0 2px 6px rgba(0, 0, 0, 0.55);
+	--mat-steel-highlight:     inset 0 1px 0 rgba(199, 212, 227, 0.14), inset 0 -1px 0 rgba(0, 0, 0, 0.40);
+
+	--mat-marble-bg:           linear-gradient(135deg, #1e2436 0%, #131826 100%);
+	--mat-marble-border:       1px solid rgba(240, 200, 120, 0.15);
+	--mat-marble-shadow:       0 8px 30px rgba(0, 0, 0, 0.50);
+	--mat-marble-highlight:    inset 0 1px 0 rgba(240, 230, 210, 0.14);
+
+	--mat-brass-bg:            linear-gradient(135deg, rgba(217, 168, 87, 0.14) 0%, rgba(20, 16, 10, 0.94) 100%);
+	--mat-brass-border:        1px solid rgba(217, 168, 87, 0.28);
+	--mat-brass-shadow:        0 6px 24px rgba(100, 70, 20, 0.25);
+	--mat-brass-highlight:     inset 0 1px 0 rgba(240, 200, 120, 0.22);
+
+	--mat-iron-bg:             linear-gradient(150deg, #131620 0%, #0c0e15 100%);
+	--mat-iron-border:         1px solid rgba(100, 115, 140, 0.20);
+	--mat-iron-shadow:         0 16px 48px rgba(0, 0, 0, 0.85);
+	--mat-iron-highlight:      inset 0 1px 0 rgba(140, 155, 180, 0.12);
+
+	--mat-glass-bg:            rgba(12, 17, 34, 0.65);
+	--mat-glass-bg-dense:      rgba(9, 13, 26, 0.88);
+	--mat-glass-border:        1px solid rgba(199, 212, 227, 0.08);
+	--mat-glass-shadow:        0 6px 28px rgba(0, 0, 0, 0.40);
+	--mat-glass-highlight:     inset 0 1px 0 rgba(200, 220, 255, 0.08);
+
+	--mat-parchment-bg:        linear-gradient(135deg, rgba(217, 168, 87, 0.08) 0%, rgba(14, 11, 7, 0.92) 100%);
+	--mat-parchment-border:    1px solid rgba(217, 168, 87, 0.22);
+	--mat-parchment-shadow:    0 6px 20px rgba(100, 70, 20, 0.18);
+	--mat-parchment-highlight: inset 0 1px 0 rgba(217, 168, 87, 0.12);
+
+	--mat-reactor-bg:          linear-gradient(135deg, rgba(85, 230, 236, 0.08) 0%, rgba(9, 14, 28, 0.96) 100%);
+	--mat-reactor-border:      1px solid rgba(85, 230, 236, 0.22);
+	--mat-reactor-shadow:      0 0 24px rgba(85, 230, 236, 0.12), 0 6px 20px rgba(0, 0, 0, 0.45);
+	--mat-reactor-highlight:   inset 0 1px 0 rgba(85, 230, 236, 0.14);
+
+	/* Glow & Ambient Lighting Auras */
+	--ic-glow-cyan:    0 0 16px rgba(85, 230, 236, 0.38);
+	--ic-glow-gold:    0 0 18px rgba(217, 168, 87, 0.38);
+	--ic-glow-purple:  0 0 18px rgba(155, 107, 242, 0.42);
+
+	--ic-glass:          var(--mat-glass-bg);
+	--ic-glass-strong:   var(--mat-glass-bg-dense);
+	--ic-obsidian-stone: var(--mat-obsidian-bg-surface);
+	--ic-shadow-deep:    var(--mat-obsidian-shadow);
+	--ic-shadow-soft:    0 2px 10px rgba(0, 0, 0, 0.35);
+	--ic-border-steel:   var(--mat-steel-border);
+	--ic-border-gold:    var(--mat-parchment-border);
+	--ic-border-cyan:    var(--mat-reactor-border);
+}
+
+.theme-light {
+	--ic-void:            #f0ede6;
+	--ic-void-2:          #e8e4db;
+	--ic-nebula:          #ddd8cd;
+	--ic-nebula-2:        #d3cdc0;
+	--ic-text-bright:     #1a1612;
+	--ic-text-normal:     #2c2820;
+	--ic-text-muted:      #6b6358;
+	--ic-text-faint:      #9c9488;
+
+	--ic-panel:           #f6f3ec;
+	--ic-panel-2:         #ebe7de;
+	--ic-valyrian:        #4a4354;
+	--ic-valyrian-dim:    #7a7382;
+	--ic-arc-cyan-dim:    #60b5ba;
+	--ic-purple-dim:      #8b6bd0;
+	--ic-gold:            #9e7422;
+
+	--ic-arc-cyan:        #0e7c84;
+	--ic-gold-bright:     #a67b1a;
+	--ic-purple:          #6d3cc4;
+	--ic-starlight:       #1a1612;
+	--ic-emerald:         #1f845a;
+	--ic-crimson:         #c43a32;
+	--ic-amber:           #c47f2a;
+
+	--mat-obsidian-bg:         #f0ede6;
+	--mat-obsidian-bg-surface: linear-gradient(160deg, #f4f1ea 0%, #ebe7de 100%);
+	--mat-obsidian-border:     1px solid rgba(45, 35, 25, 0.09);
+	--mat-obsidian-shadow:     0 8px 32px rgba(45, 35, 25, 0.06), 0 2px 8px rgba(45, 35, 25, 0.04);
+	--mat-obsidian-highlight:  inset 0 1px 0 rgba(255, 255, 255, 0.70);
+
+	--mat-dragonstone-bg:        linear-gradient(145deg, #e8e4dc 0%, #ded9ce 100%);
+	--mat-dragonstone-border:    1px solid rgba(45, 35, 25, 0.12);
+	--mat-dragonstone-shadow:    0 10px 36px rgba(45, 35, 25, 0.08);
+	--mat-dragonstone-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.80);
+
+	--mat-steel-bg:            linear-gradient(160deg, #e6e2da 0%, #dbd6cc 100%);
+	--mat-steel-border:        1px solid rgba(45, 35, 25, 0.12);
+	--mat-steel-shadow:        0 1px 3px rgba(45, 35, 25, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.60);
+	--mat-steel-highlight:     inset 0 1px 0 rgba(255, 255, 255, 0.80);
+
+	--mat-marble-bg:           linear-gradient(135deg, #f8f5ee 0%, #eae4d8 100%);
+	--mat-marble-border:       1px solid rgba(158, 116, 34, 0.18);
+	--mat-marble-shadow:       0 6px 24px rgba(45, 35, 25, 0.06);
+	--mat-marble-highlight:    inset 0 1px 0 rgba(255, 255, 255, 0.90);
+
+	--mat-brass-bg:            linear-gradient(135deg, rgba(158, 116, 34, 0.10) 0%, rgba(246, 240, 228, 0.95) 100%);
+	--mat-brass-border:        1px solid rgba(158, 116, 34, 0.28);
+	--mat-brass-shadow:        0 4px 20px rgba(158, 116, 34, 0.08);
+	--mat-brass-highlight:     inset 0 1px 0 rgba(255, 255, 255, 0.70);
+
+	--mat-iron-bg:             linear-gradient(150deg, #e2ded5 0%, #d5cfc3 100%);
+	--mat-iron-border:         1px solid rgba(45, 35, 25, 0.15);
+	--mat-iron-shadow:         0 12px 40px rgba(45, 35, 25, 0.08);
+	--mat-iron-highlight:      inset 0 1px 0 rgba(255, 255, 255, 0.80);
+
+	--mat-glass-bg:            rgba(255, 252, 245, 0.72);
+	--mat-glass-bg-dense:      rgba(246, 243, 236, 0.90);
+	--mat-glass-border:        1px solid rgba(45, 35, 25, 0.07);
+	--mat-glass-shadow:        0 4px 20px rgba(45, 35, 25, 0.05);
+	--mat-glass-highlight:     inset 0 1px 0 rgba(255, 255, 255, 0.90);
+
+	--mat-parchment-bg:        linear-gradient(135deg, rgba(158, 116, 34, 0.08) 0%, rgba(246, 240, 228, 0.95) 100%);
+	--mat-parchment-border:    1px solid rgba(158, 116, 34, 0.20);
+	--mat-parchment-shadow:    0 4px 16px rgba(158, 116, 34, 0.06);
+	--mat-parchment-highlight: inset 0 1px 0 rgba(217, 168, 87, 0.14);
+
+	--mat-reactor-bg:          linear-gradient(135deg, rgba(14, 124, 132, 0.06) 0%, rgba(240, 237, 230, 0.95) 100%);
+	--mat-reactor-border:      1px solid rgba(14, 124, 132, 0.24);
+	--mat-reactor-shadow:      0 0 20px rgba(14, 124, 132, 0.08), 0 4px 16px rgba(45, 35, 25, 0.06);
+	--mat-reactor-highlight:   inset 0 1px 0 rgba(14, 124, 132, 0.10);
+
+	--ic-glow-cyan:    0 0 14px rgba(14, 124, 132, 0.25);
+	--ic-glow-gold:    0 0 16px rgba(158, 116, 34, 0.25);
+	--ic-glow-purple:  0 0 16px rgba(109, 60, 196, 0.30);
+
+	--ic-glass:          var(--mat-glass-bg);
+	--ic-glass-strong:   var(--mat-glass-bg-dense);
+	--ic-obsidian-stone: var(--mat-obsidian-bg-surface);
+	--ic-shadow-deep:    var(--mat-obsidian-shadow);
+	--ic-shadow-soft:    0 2px 10px rgba(45, 35, 25, 0.10);
+	--ic-border-steel:   var(--mat-steel-border);
+	--ic-border-gold:    var(--mat-parchment-border);
+	--ic-border-cyan:    var(--mat-reactor-border);
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   02-BASE-TYPOGRAPHY.CSS — Sanctuary of Manuscripts & Illuminated Text
+   ─────────────────────────────────────────────────────────────────────── */
+
+.theme-dark {
+	--background-primary:               var(--ic-void);
+	--background-primary-alt:           var(--ic-void-2);
+	--background-secondary:             var(--ic-panel);
+	--background-secondary-alt:         var(--ic-panel-2);
+	--background-modifier-border:       rgba(199, 212, 227, 0.08);
+	--background-modifier-border-hover: rgba(85, 230, 236, 0.25);
+	--background-modifier-border-focus: var(--ic-arc-cyan);
+	--background-modifier-hover:        rgba(155, 107, 242, 0.08);
+	--background-modifier-active-hover: rgba(155, 107, 242, 0.14);
+	--background-modifier-form-field:   rgba(9, 12, 22, 0.75);
+	--background-modifier-box-shadow:   rgba(0, 0, 0, 0.55);
+	--background-modifier-cover:        rgba(5, 6, 11, 0.75);
+	--background-modifier-error:        var(--ic-crimson);
+	--background-modifier-success:      var(--ic-emerald);
+
+	--text-normal:         var(--ic-text-normal);
+	--text-muted:          var(--ic-text-muted);
+	--text-faint:          var(--ic-text-faint);
+	--text-accent:         var(--ic-gold);
+	--text-accent-hover:   var(--ic-gold-bright);
+	--text-on-accent:      var(--ic-void);
+	--text-error:          var(--ic-crimson);
+	--text-selection:      rgba(155, 107, 242, 0.35); /* Magic */
+	--text-highlight-bg:   rgba(217, 168, 87, 0.28); /* Knowledge */
+
+	--interactive-normal:       var(--ic-panel-2);
+	--interactive-hover:        rgba(85, 230, 236, 0.10); /* Tech */
+	--interactive-accent:       var(--ic-gold);
+	--interactive-accent-hsl:   40, 65%, 60%;
+	--interactive-accent-hover: var(--ic-gold-bright);
+
+	--h1-color: var(--ic-gold-bright);
+	--h2-color: var(--ic-gold);
+	--h3-color: var(--ic-gold); /* Was cyan */
+	--h4-color: var(--ic-valyrian);
+	--h5-color: var(--ic-valyrian);
+	--h6-color: var(--ic-text-muted);
+
+	--bold-color:   var(--ic-starlight);
+	--italic-color: var(--ic-purple);
+
+	--link-color:            var(--ic-gold);
+	--link-color-hover:      var(--ic-gold-bright);
+	--link-unresolved-color: var(--ic-crimson);
+	--link-external-color:   var(--ic-gold-bright);
+
+	--code-normal:     var(--ic-arc-cyan);
+	--code-background: rgba(9, 13, 24, 0.85);
+	--code-comment:    var(--ic-text-faint);
+
+	--titlebar-background:         var(--ic-void-2);
+	--titlebar-background-focused: var(--ic-void-2);
+	--titlebar-text-color:         var(--ic-valyrian);
+
+	--divider-color:   rgba(199, 212, 227, 0.08);
+	--font-interface:  var(--ic-font-body);
+	--font-text:       var(--ic-font-body);
+	--font-monospace:  var(--ic-font-mono);
+}
+
+/* Semi-translucent Editor Leaves allowing space atmosphere to shine through */
+.theme-dark :is(.workspace-leaf, .workspace-leaf-content) {
+	background-color: rgba(6, 9, 18, 0.76) !important;
+	backdrop-filter: blur(14px) saturate(150%);
+}
+
+/* Dragon Vellum Manuscript Ruled Text View */
+.theme-dark :is(.markdown-preview-view, .markdown-source-view, .cm-editor) {
+	font-family: var(--ic-font-body);
+	color: var(--ic-text-normal);
+	letter-spacing: 0.15px;
+	line-height: 1.75;
+}
+
+/* ── ILLUMINATED ORNAMENTAL HEADINGS (HARRY POTTER × GOT) ─────────────── */
+.theme-dark :is(h1, h2, h3, h4, h5, h6) {
+	font-family: var(--ic-font-display);
+	font-weight: 600;
+	letter-spacing: 0.6px;
+	position: relative;
+	margin-top: 1.4em;
+	margin-bottom: 0.6em;
+}
+
+.theme-dark h1 {
+	font-size: 2.4em;
+	font-weight: 700;
+	background: linear-gradient(100deg, var(--ic-gold-bright) 0%, var(--ic-gold) 50%, var(--ic-arc-cyan) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-bottom: 0.15em;
+	filter: drop-shadow(0 0 16px rgba(217, 168, 87, 0.22));
+	text-align: center;
+}
+
+.theme-dark :is(.markdown-rendered, .cm-sizer) h1::after {
+	content: "✦";
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 0.45em;
+	color: var(--ic-gold-bright);
+	line-height: 1;
+	margin-top: 0.8em;
+	-webkit-text-fill-color: var(--ic-gold-bright); /* Override the text gradient for the star */
+	background: linear-gradient(90deg, transparent 0%, rgba(217, 168, 87, 0.4) 50%, transparent 100%);
+	background-size: 100% 1px;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-shadow: 0 0 12px rgba(217, 168, 87, 0.8);
+	opacity: 0.8;
+}
+
+.theme-dark h2 {
+	color: var(--ic-gold);
+	font-size: 1.6em;
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid rgba(217, 168, 87, 0.16);
+}
+
+.theme-dark h3 {
+	color: var(--ic-arc-cyan);
+	font-size: 1.3em;
+	letter-spacing: 0.4px;
+}
+
+.theme-dark h4 {
+	color: var(--ic-valyrian);
+	font-size: 1.12em;
+	font-family: var(--ic-font-body);
+	font-weight: 700;
+}
+
+.theme-dark :is(h5, h6) {
+	color: var(--ic-text-muted);
+	font-family: var(--ic-font-body);
+	text-transform: uppercase;
+	font-size: 0.85em;
+	letter-spacing: 1.4px;
+}
+
+/* Illuminated Italics & Bold */
+.theme-dark em {
+	font-family: var(--ic-font-elegant);
+	font-style: italic;
+	color: var(--ic-purple);
+	font-size: 1.08em;
+	text-shadow: 0 0 6px rgba(155, 107, 242, 0.20);
+}
+
+.theme-dark strong {
+	color: var(--ic-starlight);
+	font-weight: 700;
+}
+
+/* ── LIQUID CYAN & GOLD INK HYPERLINKS ──────────────────────────────── */
+.theme-dark :is(a.internal-link, a.external-link, .cm-link, .cm-hmd-internal-link) {
+	color: var(--ic-arc-cyan);
+	text-decoration: none;
+	background-image: linear-gradient(var(--ic-arc-cyan), var(--ic-arc-cyan));
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 1px;
+	transition: background-size 0.35s ease, color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.theme-dark :is(a.internal-link:hover, a.external-link:hover) {
+	color: var(--ic-gold-bright);
+	background-image: linear-gradient(var(--ic-gold-bright), var(--ic-gold-bright));
+	background-size: 100% 1px;
+	text-shadow: 0 0 12px rgba(240, 200, 120, 0.50);
+}
+
+.theme-dark a.internal-link.is-unresolved {
+	color: var(--ic-crimson);
+	opacity: 0.75;
+}
+
+/* ── ILLUMINATED MANUSCRIPT BLOCKQUOTES ──────────────────────────────── */
+.theme-dark blockquote {
+	font-family: var(--ic-font-elegant);
+	font-style: italic;
+	font-size: 1.1em;
+	color: var(--ic-valyrian);
+	border-left: 3px double var(--ic-gold);
+	background: linear-gradient(90deg, rgba(217, 168, 87, 0.08) 0%, transparent 80%);
+	padding: 0.8em 1.2em;
+	border-radius: 0 var(--ic-radius-m) var(--ic-radius-m) 0;
+	margin: 1.4em 0;
+	box-shadow: inset 3px 0 14px -8px rgba(217, 168, 87, 0.25);
+}
+
+/* ── ENCHANTED DIVIDERS ──────────────────────────────────────────────── */
+.theme-dark hr {
+	border: none;
+	height: 1px;
+	margin: 3.5em 0;
+	background: linear-gradient(90deg, transparent, var(--ic-gold) 40%, transparent);
+	opacity: 0.8;
+	position: relative;
+	overflow: visible;
+}
+.theme-dark hr::after {
+	content: "⟡"; /* Magical diamond rune */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.2em;
+	color: var(--ic-purple); /* Magic */
+	background: var(--ic-void); /* Cut out the line behind the rune */
+	padding: 0 10px;
+	text-shadow: 0 0 10px rgba(155, 107, 242, 0.8); /* Purple glow */
+}
+
+/* ── RUNE ACTIVATION CHECKBOXES ─────────────────────────────────────── */
+.theme-dark .checkbox-container {
+	--checkbox-radius: 4px;
+	background: rgba(13, 17, 32, 0.70);
+	border: 1.5px solid var(--ic-valyrian-dim);
+	transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.theme-dark .checkbox-container:hover {
+	border-color: var(--ic-arc-cyan);
+	box-shadow: 0 0 8px rgba(85, 230, 236, 0.30);
+}
+
+.theme-dark .checkbox-container.is-checked {
+	background: linear-gradient(135deg, var(--ic-emerald), #2f9e6c);
+	border-color: var(--ic-emerald);
+	box-shadow: 0 0 14px rgba(79, 201, 138, 0.60);
+}
+
+/* ── RUNIC BULLET POINTS ────────────────────────────────────────────── */
+/* Reading Mode */
+.theme-dark .markdown-rendered ul {
+	list-style: none;
+	padding-left: 1.5em;
+}
+.theme-dark .markdown-rendered ul > li {
+	position: relative;
+}
+.theme-dark .markdown-rendered ul > li::before {
+	content: "✧"; /* Star rune */
+	position: absolute;
+	left: -1.2em;
+	top: 0.1em;
+	color: rgba(217, 168, 87, 0.6); /* Gold */
+	font-size: 0.9em;
+	text-shadow: 0 0 5px rgba(217, 168, 87, 0.4);
+}
+.theme-dark .markdown-rendered ul > li > ul > li::before {
+	content: "⟡"; /* Diamond rune for nested */
+	color: rgba(155, 107, 242, 0.6); /* Purple */
+	font-size: 0.8em;
+	left: -1.3em;
+}
+
+/* Live Preview Mode */
+.theme-dark .cm-formatting-list-ul {
+	color: rgba(217, 168, 87, 0.6) !important;
+	text-shadow: 0 0 5px rgba(217, 168, 87, 0.4);
+}
+
+.theme-dark ol > li::marker {
+	color: var(--ic-purple);
+	font-family: var(--ic-font-display);
+	font-weight: 600;
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   03-BACKGROUND.CSS — Deep Cosmic Atmosphere & Procedural Universe
+   ─────────────────────────────────────────────────────────────────────── */
+
+.theme-dark {
+	--ic-sky-phase:              0;
+	--ic-nebula-opacity:         1;
+	--ic-nebula-scale:           1.06;
+	--ic-stars-opacity:          0.85;
+	--ic-stars-speed:            6s;
+	--ic-aurora-opacity:         1;
+	--ic-aurora-flow-speed:      50s;
+	--ic-constellations-opacity: 0.40;
+	--ic-constellations-drift:   280s;
+}
+
+.theme-dark .app-container {
+	position: relative;
+	background: transparent !important;
+}
+
+/* Layer A — Swirling Volumetric Nebulae & Cosmic Dust Fog */
+.theme-dark .app-container::before {
+	content: "";
+	position: fixed;
+	inset: -12%;
+	z-index: 0;
+	pointer-events: none;
+	background-image:
+		radial-gradient(ellipse 65% 50% at 18% 22%, rgba(155, 107, 242, 0.22), transparent 65%),
+		radial-gradient(ellipse 60% 45% at 82% 18%, rgba(85, 230, 236, 0.16), transparent 60%),
+		radial-gradient(ellipse 75% 60% at 50% 88%, rgba(217, 168, 87, 0.12), transparent 70%),
+		radial-gradient(ellipse 45% 35% at 72% 65%, rgba(79, 201, 138, 0.08), transparent 60%),
+		radial-gradient(circle at 35% 45%, rgba(230, 100, 59, 0.06), transparent 50%);
+	background-repeat: no-repeat;
+	filter: hue-rotate(calc(var(--ic-sky-phase, 0) * 15deg));
+	opacity: var(--ic-nebula-opacity);
+	animation: ic-nebula-drift 140s ease-in-out infinite alternate;
+	will-change: transform;
+}
+
+@keyframes ic-nebula-drift {
+	0%   { transform: translate3d(0, 0, 0) scale(1); }
+	50%  { transform: translate3d(-2%, 1.5%, 0) scale(var(--ic-nebula-scale)); }
+	100% { transform: translate3d(2%, -1.5%, 0) scale(1.03); }
+}
+
+/* Layer B — Starfield Particle Matrix & Deep Space Sparks */
+.theme-dark .app-container::after {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	background-image:
+		radial-gradient(1.2px 1.2px at 15% 25%, rgba(245, 242, 235, 0.95), transparent),
+		radial-gradient(1px 1px at 62% 10%, rgba(245, 242, 235, 0.75), transparent),
+		radial-gradient(1.8px 1.8px at 82% 52%, rgba(85, 230, 236, 0.85), transparent),
+		radial-gradient(1px 1px at 38% 68%, rgba(245, 242, 235, 0.65), transparent),
+		radial-gradient(1.5px 1.5px at 88% 78%, rgba(217, 168, 87, 0.80), transparent),
+		radial-gradient(1.8px 1.8px at 8% 82%, rgba(245, 242, 235, 0.85), transparent),
+		radial-gradient(1px 1px at 52% 42%, rgba(245, 242, 235, 0.55), transparent),
+		radial-gradient(1px 1px at 28% 8%, rgba(245, 242, 235, 0.75), transparent),
+		radial-gradient(1.2px 1.2px at 94% 22%, rgba(245, 242, 235, 0.60), transparent),
+		radial-gradient(1.8px 1.8px at 6% 52%, rgba(155, 107, 242, 0.75), transparent);
+	background-repeat: repeat;
+	background-size: 100% 100%;
+	opacity: var(--ic-stars-opacity);
+	animation: ic-star-twinkle var(--ic-stars-speed) ease-in-out infinite;
+}
+
+@keyframes ic-star-twinkle {
+	0%, 100% { opacity: calc(var(--ic-stars-opacity) * 0.65); }
+	50%      { opacity: var(--ic-stars-opacity); }
+}
+
+/* Layer C — Aurora Wave Wash */
+.theme-dark .workspace {
+	position: relative;
+	background: transparent;
+}
+
+.theme-dark .workspace::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	background: linear-gradient(115deg, transparent 0%, rgba(85, 230, 236, 0.04) 30%, rgba(155, 107, 242, 0.05) 55%, transparent 80%);
+	background-size: 220% 220%;
+	opacity: var(--ic-aurora-opacity);
+	animation: ic-aurora-flow var(--ic-aurora-flow-speed) ease-in-out infinite;
+}
+
+@keyframes ic-aurora-flow {
+	0%   { background-position: 0% 20%; }
+	50%  { background-position: 100% 80%; }
+	100% { background-position: 0% 20%; }
+}
+
+/* Layer D — Constellation Geometry Vectors */
+.theme-dark .workspace::after {
+	content: "";
+	position: absolute;
+	inset: -5%;
+	z-index: 0;
+	pointer-events: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cg stroke='rgba(199,212,227,0.16)' stroke-width='0.5' fill='none' stroke-linecap='round'%3E%3Cpath d='M28 22L82 56L128 30L178 64'/%3E%3Cpath d='M42 98L108 120L160 90'/%3E%3Cpath d='M20 158L72 178L140 146L188 180'/%3E%3Cpath d='M212 28L248 72L272 48'/%3E%3Cpath d='M198 132L242 158L268 136'/%3E%3Cpath d='M95 200L155 215L200 198'/%3E%3C/g%3E%3Cg fill='rgba(199,212,227,0.25)'%3E%3Ccircle cx='28' cy='22' r='1.3'/%3E%3Ccircle cx='82' cy='56' r='1'/%3E%3Ccircle cx='128' cy='30' r='1.5'/%3E%3Ccircle cx='178' cy='64' r='1'/%3E%3Ccircle cx='42' cy='98' r='1.2'/%3E%3Ccircle cx='108' cy='120' r='1'/%3E%3Ccircle cx='160' cy='90' r='1.4'/%3E%3Ccircle cx='20' cy='158' r='1'/%3E%3Ccircle cx='72' cy='178' r='1.3'/%3E%3Ccircle cx='140' cy='146' r='1'/%3E%3Ccircle cx='188' cy='180' r='1.5'/%3E%3Ccircle cx='212' cy='28' r='1'/%3E%3Ccircle cx='248' cy='72' r='1.4'/%3E%3Ccircle cx='272' cy='48' r='1'/%3E%3Ccircle cx='198' cy='132' r='1'/%3E%3Ccircle cx='242' cy='158' r='1.3'/%3E%3Ccircle cx='268' cy='136' r='1'/%3E%3Ccircle cx='95' cy='200' r='1.2'/%3E%3Ccircle cx='155' cy='215' r='1'/%3E%3Ccircle cx='200' cy='198' r='1.4'/%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: repeat;
+	background-size: 280px 280px;
+	opacity: var(--ic-constellations-opacity);
+	animation: ic-constellation-drift var(--ic-constellations-drift) linear infinite;
+	will-change: transform;
+}
+
+@keyframes ic-constellation-drift {
+	0%   { transform: translate3d(0, 0, 0); }
+	50%  { transform: translate3d(-8px, 6px, 0); }
+	100% { transform: translate3d(0, 0, 0); }
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   04-NAVIGATION-TABS.CSS — Citadel Stone Archive & Valyrian Steel Tab Rail
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* Sidebars will be styled by 15-monumental-architecture.css */
+
+.theme-dark :is(.workspace-split.mod-left-split .workspace-tabs, .workspace-split.mod-right-split .workspace-tabs) {
+	background: transparent;
+	border: none;
+}
+
+/* Side Dock Ribbon (Stark Utility Belt) - handled in 15-monumental-architecture.css */
+
+.theme-dark .side-dock-ribbon .clickable-icon {
+	color: var(--ic-text-muted);
+	border-radius: var(--ic-radius-s);
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.theme-dark .side-dock-ribbon .clickable-icon::before {
+	content: "";
+	position: absolute;
+	inset: -30%;
+	background: radial-gradient(circle at 50% 50%, rgba(85, 230, 236, 0.28), transparent 70%);
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.theme-dark .side-dock-ribbon .clickable-icon:hover {
+	color: var(--ic-arc-cyan);
+	transform: translateY(-1px);
+	filter: drop-shadow(0 0 6px rgba(85, 230, 236, 0.45));
+}
+
+.theme-dark .side-dock-ribbon .clickable-icon:hover::before { transform: scale(1); opacity: 1; }
+
+/* File Explorer Items (Ancient Bookshelf Entries) */
+.theme-dark :is(.nav-folder-title, .nav-file-title) {
+	border-radius: var(--ic-radius-s);
+	position: relative;
+	z-index: 0;
+	padding: 0.3em 0.6em;
+	transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease;
+}
+
+.theme-dark .nav-folder-title {
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold);
+	font-weight: 600;
+	letter-spacing: 0.4px;
+}
+
+.theme-dark .nav-file-title {
+	font-family: var(--ic-font-body);
+	color: var(--ic-text-normal);
+}
+
+.theme-dark :is(.nav-folder-title, .nav-file-title)::before {
+	content: "";
+	position: absolute;
+	inset: -25%;
+	background: radial-gradient(circle at 50% 50%, rgba(217, 168, 87, 0.16), transparent 70%);
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.theme-dark :is(.nav-file-title:hover, .nav-folder-title:hover)::before { transform: scale(1); opacity: 1; }
+.theme-dark :is(.nav-file-title:hover, .nav-folder-title:hover) { transform: translateX(3px); color: var(--ic-starlight); }
+
+/* Active Note in Explorer — Illuminated Scroll Selection */
+.theme-dark .nav-file-title.is-active {
+	background: linear-gradient(90deg, rgba(155, 107, 242, 0.22), rgba(217, 168, 87, 0.08));
+	box-shadow: inset 3px 0 0 var(--ic-gold-bright), var(--mat-obsidian-highlight);
+	color: var(--ic-starlight);
+	font-weight: 600;
+}
+
+.theme-dark .nav-file-tag {
+	background: rgba(217, 168, 87, 0.16);
+	color: var(--ic-gold);
+	border-radius: 999px;
+	font-family: var(--ic-font-mono);
+	font-size: 0.75em;
+}
+
+.theme-dark :is(.nav-header + .workspace-sidedock-vault-profile, .workspace-drawer-vault-switcher) {
+	font-family: var(--ic-font-display);
+	letter-spacing: 1.2px;
+	color: var(--ic-gold-bright);
+	text-transform: uppercase;
+}
+
+/* ── WORKSPACE TABS (VALYRIAN STEEL TAB RAIL × DRAGON VELUM BOOKMARKS) ── */
+.theme-dark .workspace-tab-header-container {
+	background: var(--mat-steel-bg);
+	border: none;
+	box-shadow: none;
+}
+
+.theme-dark .workspace-tab-header {
+	border-radius: var(--ic-radius-s) var(--ic-radius-s) 0 0;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	transition: transform 0.2s ease, background 0.25s ease;
+	border: none;
+	padding: 0.4em 0.9em;
+}
+
+.theme-dark .workspace-tab-header::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(ellipse 90% 140% at 50% 110%, rgba(199, 212, 227, 0.14), transparent 65%);
+	transform: scaleY(0.4) translateY(40%);
+	opacity: 0;
+	transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.theme-dark .workspace-tab-header:hover::before { transform: scaleY(1) translateY(0); opacity: 1; }
+.theme-dark .workspace-tab-header:hover:not(.is-active) { transform: translateY(-1px); }
+
+.theme-dark .workspace-tab-header.is-active {
+	background: rgba(12, 17, 34, 0.90);
+	box-shadow: none;
+	color: var(--ic-starlight);
+}
+
+.theme-dark .workspace-tab-header-inner-title {
+	font-family: var(--ic-font-body);
+	font-weight: 600;
+	position: relative;
+	z-index: 1;
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   05-CONTROLS-INPUTS.CSS — Status Bar, Oracle Terminal & Right Widgets
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* ── STATUS BAR (STARK ARC-REACTOR PULSE STRIP) ─────────────────────── */
+.theme-dark .status-bar {
+	background: var(--pbr-iron-bg);
+	border-top: none;
+	box-shadow: none;
+	color: var(--ic-text-faint);
+	font-family: var(--ic-font-mono);
+	font-size: 0.72em;
+	position: relative;
+	overflow: hidden;
+}
+
+.theme-dark .status-bar::before {
+	content: "";
+	position: absolute;
+	top: -1px; left: 0; right: 0; height: 1px;
+	background: linear-gradient(90deg, transparent, var(--ic-arc-cyan), transparent);
+	opacity: 0.7;
+	animation: ic-reactor-pulse 8s linear infinite;
+	will-change: transform;
+}
+
+@keyframes ic-reactor-pulse {
+	0%   { transform: translateX(-100%); }
+	100% { transform: translateX(100%); }
+}
+
+.theme-dark .status-bar-item {
+	position: relative;
+	z-index: 0;
+	border-radius: var(--ic-radius-s);
+	transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.theme-dark .status-bar-item::before {
+	content: "";
+	position: absolute;
+	inset: -40% -20%;
+	background: radial-gradient(ellipse 130% 90% at 50% 50%, rgba(85, 230, 236, 0.22), transparent 65%);
+	transform: scaleX(0);
+	opacity: 0;
+	transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.theme-dark .status-bar-item:hover { color: var(--ic-arc-cyan); transform: translateY(-1px); }
+.theme-dark .status-bar-item:hover::before { transform: scaleX(1); opacity: 1; }
+
+/* ── COMMAND PALETTE & PROMPT (STARK HOLOGRAPHIC HUD) ───── */
+.theme-dark .prompt {
+	background: var(--pbr-reactor-texture) !important;
+	backdrop-filter: blur(28px) saturate(160%);
+	border: 1px solid rgba(85, 230, 236, 0.3) !important;
+	border-radius: 6px !important;
+	box-shadow: 0 10px 40px rgba(85, 230, 236, 0.1), inset 0 0 20px rgba(85, 230, 236, 0.05) !important;
+	position: relative;
+	overflow: hidden;
+	animation: ic-prompt-appear 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theme-dark .prompt::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.08) 47%, rgba(255, 255, 255, 0.16) 50%, rgba(255, 255, 255, 0.08) 53%, transparent 60%);
+	transform: translateX(-150%);
+	pointer-events: none;
+	z-index: 2;
+	animation: ic-shimmer-sweep 0.7s 0.15s ease-out forwards;
+}
+
+@keyframes ic-prompt-appear {
+	from { opacity: 0; transform: translateY(-8px) scale(0.97); }
+	to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes ic-shimmer-sweep {
+	from { transform: translateX(-150%); }
+	to   { transform: translateX(150%); }
+}
+
+.theme-dark .prompt-input-container {
+	border-bottom: none;
+	position: relative;
+	overflow: hidden;
+}
+
+.theme-dark .prompt-input-container::after {
+	content: "";
+	position: absolute;
+	bottom: 0; left: 0; right: 0; height: 1px;
+	background: linear-gradient(90deg, transparent, var(--ic-arc-cyan), transparent);
+	transform: translateX(-100%);
+	opacity: 0;
+	pointer-events: none;
+}
+
+.theme-dark .prompt-input-container:focus-within::after { animation: ic-energy-trace 1.2s ease-out forwards; }
+
+@keyframes ic-energy-trace {
+	0%   { transform: translateX(-100%); opacity: 0; }
+	15%  { opacity: 1; }
+	100% { transform: translateX(100%); opacity: 0; }
+}
+
+.theme-dark .prompt-input {
+	font-family: var(--ic-font-mono);
+	color: var(--ic-arc-cyan);
+	caret-color: var(--ic-arc-cyan);
+	position: relative;
+	z-index: 1;
+}
+
+.theme-dark .suggestion-item {
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	border-radius: var(--ic-radius-s);
+	transition: box-shadow 0.25s ease;
+}
+
+.theme-dark .suggestion-item::before {
+	content: "";
+	position: absolute;
+	inset: -30%;
+	background: radial-gradient(circle at 50% 50%, rgba(155, 107, 242, 0.16), transparent 65%);
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.theme-dark :is(.suggestion-item.is-selected, .suggestion-item:hover)::before { transform: scale(1); opacity: 1; }
+.theme-dark :is(.suggestion-item.is-selected, .suggestion-item:hover) { box-shadow: inset 3px 0 0 var(--ic-arc-cyan); }
+
+.theme-dark .prompt-instructions { color: var(--ic-text-faint); font-family: var(--ic-font-mono); font-size: 0.75em; }
+
+.theme-dark :is(.search-input-container input, input[type="text"], input[type="search"]) {
+	background: var(--background-modifier-form-field);
+	border: none;
+	border-radius: var(--ic-radius-m);
+	transition: box-shadow 0.3s ease;
+}
+
+.theme-dark :is(.search-input-container input:focus, input:focus) {
+	border-color: var(--ic-arc-cyan);
+	box-shadow: 0 0 0 3px rgba(85, 230, 236, 0.14);
+}
+
+/* ── BUTTONS & CTA CONTROLS (STARK ENERGY ROUTERS) ───────────────────────── */
+:is(.theme-dark, .theme-light) :is(button:not(.clickable-icon), .mod-cta) {
+	font-family: var(--ic-font-mono);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.theme-dark button:not(.clickable-icon):not(.mod-cta) {
+	border: 1px solid rgba(85, 230, 236, 0.2) !important;
+	background: rgba(85, 230, 236, 0.05) !important;
+	color: var(--ic-arc-cyan-dim) !important;
+	box-shadow: none !important;
+	transition: all 0.2s ease !important;
+}
+
+.theme-dark button:not(.clickable-icon):not(.mod-cta):hover { 
+	border-color: var(--ic-arc-cyan) !important; 
+	background: rgba(85, 230, 236, 0.1) !important;
+	color: var(--ic-arc-cyan) !important;
+	box-shadow: 0 0 10px rgba(85, 230, 236, 0.3) !important;
+}
+
+.theme-dark .mod-cta {
+	background: rgba(85, 230, 236, 0.15) !important;
+	color: var(--ic-arc-cyan) !important;
+	border: 1px solid var(--ic-arc-cyan) !important;
+	box-shadow: 0 0 15px rgba(85, 230, 236, 0.2), inset 0 0 10px rgba(85, 230, 236, 0.1) !important;
+	transition: all 0.2s ease !important;
+}
+.theme-dark .mod-cta:hover { 
+	background: rgba(85, 230, 236, 0.3) !important;
+	box-shadow: 0 0 20px rgba(85, 230, 236, 0.4), inset 0 0 15px rgba(85, 230, 236, 0.2) !important;
+	color: #fff !important;
+}
+:is(.theme-dark, .theme-light) button:active { transform: translateY(0) scale(0.95); }
+
+/* ── RIGHT SIDEBAR WIDGETS (CALENDAR MOON CLOCK × POMODORO REACTOR) ──── */
+/* 1. Calendar Widget — Astronomical Moon Clock */
+.theme-dark :is(.calendar, #calendar-container) {
+	background: radial-gradient(circle at 50% 50%, rgba(16, 12, 28, 0.9) 0%, #060810 100%) !important;
+	border: 1px solid rgba(217, 168, 87, 0.2) !important;
+	
+	/* Astrolabe Octagon Shape */
+	border-radius: 0 !important;
+	clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
+	
+	padding: 16px !important;
+	box-shadow: inset 0 0 40px rgba(0,0,0,0.8) !important;
+	position: relative;
+}
+
+.theme-dark :is(.calendar, #calendar-container)::before {
+	content: "";
+	position: absolute;
+	inset: 4px;
+	clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 18px 100%, 0 calc(100% - 18px), 0 18px);
+	border: 1px dashed rgba(217, 168, 87, 0.25);
+	pointer-events: none;
+}
+
+.theme-dark :is(.calendar-title, #calendar-container .title) {
+	font-family: var(--ic-font-display) !important;
+	color: var(--ic-gold-bright) !important;
+	text-shadow: 0 0 8px rgba(217, 168, 87, 0.4);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.theme-dark :is(td.calendar-day.active, .calendar .today, td.today) {
+	background: radial-gradient(circle, rgba(217, 168, 87, 0.3), rgba(155, 107, 242, 0.2)) !important;
+	box-shadow: 0 0 16px rgba(217, 168, 87, 0.5), inset 0 0 0 1px var(--ic-gold-bright) !important;
+	border-radius: 50% !important;
+	color: var(--ic-starlight) !important;
+	font-weight: 700 !important;
+}
+
+/* 2. Pomodoro Timer — Arc Reactor Core Countdown */
+@keyframes ic-reactor-pulse {
+	0% { box-shadow: 0 0 20px rgba(85, 230, 236, 0.2), inset 0 0 30px rgba(85, 230, 236, 0.1); }
+	50% { box-shadow: 0 0 50px rgba(85, 230, 236, 0.4), inset 0 0 60px rgba(85, 230, 236, 0.3); }
+	100% { box-shadow: 0 0 20px rgba(85, 230, 236, 0.2), inset 0 0 30px rgba(85, 230, 236, 0.1); }
+}
+
+.theme-dark :is(.pomodoro, #pomodoro-timer, .timer-container) {
+	background: var(--pbr-reactor-texture) !important;
+	border: 2px solid rgba(85, 230, 236, 0.4) !important;
+	border-radius: 50% !important; /* Circular Reactor */
+	box-shadow: 0 0 30px rgba(85, 230, 236, 0.2), inset 0 0 40px rgba(85, 230, 236, 0.1);
+	animation: ic-reactor-pulse 4s ease-in-out infinite;
+	aspect-ratio: 1/1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 24px;
+	margin: 16px auto;
+	max-width: 200px;
+	position: relative;
+}
+
+.theme-dark :is(.pomodoro, #pomodoro-timer, .timer-container)::after {
+	content: "";
+	position: absolute;
+	inset: 8px;
+	border-radius: 50%;
+	border: 2px dashed rgba(85, 230, 236, 0.3);
+	animation: ic-spin-reactor 10s linear infinite;
+	pointer-events: none;
+}
+
+@keyframes ic-spin-reactor {
+	100% { transform: rotate(360deg); }
+}
+
+.theme-dark :is(.pomodoro, #pomodoro-timer, .timer-container) :is(.timer-text, .time-display) {
+	font-family: var(--ic-font-mono) !important;
+	color: var(--ic-arc-cyan) !important;
+	font-size: 2em !important;
+	text-shadow: 0 0 16px rgba(85, 230, 236, 0.8) !important;
+	z-index: 2;
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   06-CALLOUTS-CODE-CONTENT.CSS — Callout Artifacts, Code, Tables, Tags
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* ── CALLOUT ARTIFACTS (10 Lore Identities) ────────────────────────── */
+.theme-dark .callout {
+	border-radius: var(--ic-radius-m);
+	border: 1px solid rgba(199, 212, 227, 0.10);
+	background: var(--ic-glass);
+	backdrop-filter: blur(14px) saturate(150%);
+	box-shadow: var(--ic-shadow-soft);
+	overflow: hidden;
+	position: relative;
+	margin: 1.2em 0;
+	transition: transform var(--ic-dur-fast) var(--ic-ease-kinetic), box-shadow var(--ic-dur-fast) ease;
+}
+
+.theme-dark .callout-title {
+	font-family: var(--ic-font-display);
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	padding: 0.6em 0.9em;
+}
+
+.theme-dark .callout .callout-icon { transition: filter 0.3s ease; }
+
+/* 1. Note / Abstract / Summary — Magic Scroll Vellum */
+.theme-dark :is(.callout[data-callout="note"], .callout[data-callout="abstract"], .callout[data-callout="summary"], .callout[data-callout="tldr"]) {
+	--callout-color: 217, 168, 87;
+	background: repeating-linear-gradient(180deg, transparent 0px, transparent 26px, rgba(217, 168, 87, 0.03) 26px, rgba(217, 168, 87, 0.03) 28px), linear-gradient(135deg, rgba(217, 168, 87, 0.09), rgba(13, 17, 32, 0.85));
+	border-left: 3px double var(--ic-gold);
+	box-shadow: var(--ic-shadow-soft), inset 3px 0 14px -8px rgba(217, 168, 87, 0.20);
+}
+.theme-dark :is(.callout[data-callout="note"], .callout[data-callout="abstract"], .callout[data-callout="summary"], .callout[data-callout="tldr"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(217, 168, 87, 0.55)); }
+
+/* 2. Tip / Hint / Important — Stark Blueprint Grid */
+.theme-dark :is(.callout[data-callout="tip"], .callout[data-callout="hint"], .callout[data-callout="important"]) {
+	--callout-color: 85, 230, 236;
+	background: repeating-linear-gradient(90deg, transparent 0px, transparent 30px, rgba(85, 230, 236, 0.018) 30px, rgba(85, 230, 236, 0.018) 32px), repeating-linear-gradient(0deg, transparent 0px, transparent 30px, rgba(85, 230, 236, 0.018) 30px, rgba(85, 230, 236, 0.018) 32px), linear-gradient(135deg, rgba(85, 230, 236, 0.08), rgba(13, 17, 32, 0.85));
+	border-left: 2px dashed var(--ic-arc-cyan);
+	box-shadow: var(--ic-shadow-soft), inset 2px 0 12px -6px rgba(85, 230, 236, 0.18);
+}
+.theme-dark :is(.callout[data-callout="tip"], .callout[data-callout="hint"], .callout[data-callout="important"]) .callout-title { font-family: var(--ic-font-mono); text-transform: uppercase; font-size: 0.88em; letter-spacing: 1.2px; }
+.theme-dark :is(.callout[data-callout="tip"], .callout[data-callout="hint"], .callout[data-callout="important"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(85, 230, 236, 0.60)); }
+
+/* 3. Info / Todo — Cosmic Aurora Cluster */
+.theme-dark :is(.callout[data-callout="info"], .callout[data-callout="todo"]) {
+	--callout-color: 155, 107, 242;
+	background: radial-gradient(ellipse at 10% 20%, rgba(155, 107, 242, 0.15), transparent 60%), linear-gradient(135deg, rgba(155, 107, 242, 0.09), rgba(13, 17, 32, 0.85));
+	border-left: 2px solid var(--ic-purple);
+	box-shadow: var(--ic-shadow-soft), inset 2px 0 16px -8px rgba(155, 107, 242, 0.20);
+}
+.theme-dark :is(.callout[data-callout="info"], .callout[data-callout="todo"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(155, 107, 242, 0.60)); }
+
+/* 4. Warning / Caution / Attention — Royal Decree Banner */
+.theme-dark :is(.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"]) {
+	--callout-color: 240, 168, 96;
+	background: linear-gradient(135deg, rgba(240, 168, 96, 0.10), rgba(13, 17, 32, 0.85));
+	border-left: 3px solid var(--ic-amber);
+	border-top: 1px solid rgba(240, 168, 96, 0.30);
+	box-shadow: var(--ic-shadow-soft), inset 3px 0 14px -8px rgba(240, 168, 96, 0.15);
+}
+.theme-dark :is(.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"]) .callout-title { text-transform: uppercase; letter-spacing: 1px; }
+.theme-dark :is(.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(240, 168, 96, 0.55)); }
+
+/* 5. Danger / Error / Bug — Dragon Fire Vault */
+.theme-dark :is(.callout[data-callout="danger"], .callout[data-callout="error"], .callout[data-callout="bug"]) {
+	--callout-color: 225, 84, 75;
+	background: linear-gradient(135deg, rgba(225, 84, 75, 0.10), rgba(13, 17, 32, 0.85));
+	border-left: 4px solid var(--ic-crimson);
+	box-shadow: var(--ic-shadow-soft), inset 4px 0 18px -8px rgba(225, 84, 75, 0.25);
+}
+.theme-dark :is(.callout[data-callout="danger"], .callout[data-callout="error"], .callout[data-callout="bug"]) .callout-icon { filter: drop-shadow(0 0 7px rgba(225, 84, 75, 0.65)); }
+
+/* 6. Success / Check / Done — Wildfire Emerald */
+.theme-dark :is(.callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"]) {
+	--callout-color: 79, 201, 138;
+	background: linear-gradient(135deg, rgba(79, 201, 138, 0.09), rgba(13, 17, 32, 0.85));
+	border-left: 3px solid var(--ic-emerald);
+	box-shadow: var(--ic-shadow-soft), inset 3px 0 14px -8px rgba(79, 201, 138, 0.20);
+}
+.theme-dark :is(.callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(79, 201, 138, 0.55)); }
+
+/* 7. Question / Help / FAQ — Oracle Glass */
+.theme-dark :is(.callout[data-callout="question"], .callout[data-callout="help"], .callout[data-callout="faq"]) {
+	--callout-color: 199, 212, 227;
+	background: linear-gradient(135deg, rgba(199, 212, 227, 0.08), rgba(13, 17, 32, 0.85));
+	border-left: 2px dotted var(--ic-valyrian);
+}
+.theme-dark :is(.callout[data-callout="question"], .callout[data-callout="help"], .callout[data-callout="faq"]) .callout-icon { filter: drop-shadow(0 0 5px rgba(199, 212, 227, 0.45)); }
+
+/* 8. Quote / Cite — Lost Manuscript */
+.theme-dark :is(.callout[data-callout="quote"], .callout[data-callout="cite"]) {
+	--callout-color: 124, 138, 163;
+	background: repeating-linear-gradient(180deg, rgba(217, 168, 87, 0.03) 0px, rgba(217, 168, 87, 0.03) 2px, transparent 2px, transparent 26px), var(--mat-parchment-bg);
+	border-left: 2px solid var(--ic-valyrian-dim);
+	font-family: var(--ic-font-elegant);
+	font-style: italic;
+}
+.theme-dark :is(.callout[data-callout="quote"], .callout[data-callout="cite"]):hover { transform: scale(1.005); }
+
+/* ── HOLOGRAPHIC CODE BLOCKS (STARK HUD × SPELLBOOK TERMINAL) ──────── */
+.theme-dark :is(pre.language-, .markdown-rendered pre, .HyperMD-codeblock-bg) {
+	background: repeating-linear-gradient(0deg, transparent 0px, transparent 3px, rgba(85, 230, 236, 0.012) 3px, rgba(85, 230, 236, 0.012) 4px), linear-gradient(180deg, rgba(9, 13, 24, 0.94), rgba(5, 7, 14, 0.98)) !important;
+	border: 1px solid rgba(199, 212, 227, 0.12) !important;
+	border-radius: var(--ic-radius-m) !important;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.60) !important;
+	position: relative !important;
+	overflow: hidden !important;
+	margin: 1.4em 0 !important;
+	padding: 0.9em 1.3em !important;
+}
+
+/* Reset CodeMirror 6 Embedded Lines: ERASE ALL BOX OUTLINES */
+.theme-dark :is(.cm-embed-block, .HyperMD-codeblock, .cm-line.HyperMD-codeblock, .cm-line.HyperMD-codeblock-begin, .cm-line.HyperMD-codeblock-bg) {
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	padding-left: 0.4em !important;
+	margin: 0 !important;
+}
+
+.theme-dark :is(.cm-activeCodeLine, .cm-activeLine) {
+	background: rgba(155, 107, 242, 0.06) !important;
+}
+
+/* Stark HUD Top Status Shimmer Line */
+.theme-dark :is(pre.language-, .markdown-rendered pre)::before {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; right: 0; height: 1px;
+	background: linear-gradient(90deg, transparent, rgba(85, 230, 236, 0.6), transparent);
+	background-size: 200% 100%;
+	animation: ic-status-shimmer 10s linear infinite;
+	pointer-events: none;
+	z-index: 2;
+}
+
+/* Stark HUD 4 Corner Brackets */
+.theme-dark :is(pre.language-, .markdown-rendered pre)::after {
+	content: "";
+	position: absolute;
+	inset: 6px;
+	pointer-events: none;
+	z-index: 1;
+	background:
+		linear-gradient(90deg, rgba(85, 230, 236, 0.45), transparent) no-repeat top left / 18px 1px,
+		linear-gradient(180deg, rgba(85, 230, 236, 0.45), transparent) no-repeat top left / 1px 18px,
+		linear-gradient(270deg, rgba(85, 230, 236, 0.45), transparent) no-repeat bottom right / 18px 1px,
+		linear-gradient(0deg, rgba(85, 230, 236, 0.45), transparent) no-repeat bottom right / 1px 18px,
+		linear-gradient(270deg, rgba(85, 230, 236, 0.22), transparent) no-repeat top right / 12px 1px,
+		linear-gradient(180deg, rgba(85, 230, 236, 0.22), transparent) no-repeat top right / 1px 12px,
+		linear-gradient(90deg, rgba(85, 230, 236, 0.22), transparent) no-repeat bottom left / 12px 1px,
+		linear-gradient(0deg, rgba(85, 230, 236, 0.22), transparent) no-repeat bottom left / 1px 12px;
+}
+
+/* Inline Code — Arc Crystal Badge */
+.theme-dark :is(code:not(.is-loaded), .cm-inline-code) {
+	font-family: var(--ic-font-mono);
+	background: rgba(85, 230, 236, 0.08) !important;
+	color: var(--ic-arc-cyan) !important;
+	border: 1px solid rgba(85, 230, 236, 0.18) !important;
+	border-radius: 4px !important;
+	padding: 0.12em 0.45em !important;
+	text-shadow: 0 0 6px rgba(85, 230, 236, 0.22) !important;
+}
+
+.theme-dark .markdown-rendered pre code { font-family: var(--ic-font-mono); color: var(--ic-valyrian); text-shadow: none; }
+
+/* Syntax Token Glowing Auras */
+.theme-dark .token.keyword  { color: var(--ic-purple) !important;      text-shadow: 0 0 8px rgba(155, 107, 242, 0.35); }
+.theme-dark .token.string   { color: var(--ic-emerald) !important;     text-shadow: 0 0 8px rgba(79, 201, 138, 0.30); }
+.theme-dark .token.function { color: var(--ic-gold-bright) !important; text-shadow: 0 0 8px rgba(240, 200, 120, 0.30); }
+.theme-dark .token.number   { color: var(--ic-amber) !important;       text-shadow: 0 0 8px rgba(240, 168, 96, 0.30); }
+.theme-dark .token.comment  { color: var(--ic-text-faint) !important; font-style: italic; text-shadow: none; }
+.theme-dark :is(.token.operator, .token.punctuation) { color: var(--ic-valyrian-dim) !important; }
+
+/* Copy Code Button */
+.theme-dark .copy-code-button {
+	font-family: var(--ic-font-mono);
+	background: rgba(85, 230, 236, 0.12);
+	color: var(--ic-arc-cyan);
+	border: 1px solid rgba(85, 230, 236, 0.25);
+	border-radius: var(--ic-radius-s);
+	transition: box-shadow 0.25s ease, transform 0.15s ease;
+}
+.theme-dark .copy-code-button:hover { box-shadow: var(--ic-glow-cyan); transform: translateY(-1px); }
+
+/* ── LEDGER TABLES (VALYRIAN STEEL × FROSTED GLASS) ─────────────────── */
+.theme-dark table {
+	border: 1px solid rgba(199, 212, 227, 0.10);
+	border-radius: var(--ic-radius-m);
+	overflow: hidden;
+	background: var(--ic-glass);
+	width: 100%;
+	margin: 1.4em 0;
+}
+
+.theme-dark thead tr {
+	background: var(--mat-steel-bg);
+	box-shadow: var(--mat-steel-highlight);
+}
+
+.theme-dark th {
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold-bright);
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	padding: 0.75em 1em;
+	border-bottom: 1px solid rgba(217, 168, 87, 0.25);
+}
+
+.theme-dark td {
+	padding: 0.65em 1em;
+	border-color: rgba(199, 212, 227, 0.07);
+}
+
+.theme-dark tbody tr { transition: background 0.2s ease; }
+.theme-dark tbody tr:nth-child(even) { background: rgba(199, 212, 227, 0.02); }
+.theme-dark tbody tr:hover { background: rgba(85, 230, 236, 0.05); }
+
+/* ── WAX SEALS & GEMSTONE TAGS ──────────────────────────────────────── */
+.theme-dark :is(.tag, a.tag) {
+	font-family: var(--ic-font-mono);
+	font-size: 0.78em;
+	background: linear-gradient(135deg, rgba(217, 168, 87, 0.22), rgba(155, 107, 242, 0.15));
+	border: 1px solid rgba(217, 168, 87, 0.35);
+	color: var(--ic-gold-bright);
+	border-radius: 999px;
+	padding: 0.14em 0.75em;
+	transition: box-shadow 0.25s ease, transform 0.2s ease, color 0.25s ease;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.30);
+}
+
+.theme-dark .tag:hover {
+	box-shadow: var(--ic-glow-gold);
+	transform: translateY(-1px);
+	color: var(--ic-starlight);
+}
+
+/* Removed duplicate metadata styles, now centralized in 11-editor-environment.css */
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   07-GRAPH-CANVAS-VIEWS.CSS — Knowledge Galaxy & Cosmic Planning Chamber
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* ── KNOWLEDGE GALAXY GRAPH VIEW ────────────────────────────────────── */
+.theme-dark {
+	--graph-node:            var(--ic-arc-cyan);
+	--graph-node-unresolved: var(--ic-valyrian-dim);
+	--graph-node-focused:    var(--ic-gold-bright);
+	--graph-node-tag:        var(--ic-purple);
+	--graph-node-attachment: var(--ic-emerald);
+	--graph-line:            rgba(85, 230, 236, 0.25);
+	--graph-line-highlight:  rgba(240, 200, 120, 0.85);
+}
+
+.theme-dark .graph-view.view-content {
+	background:
+		radial-gradient(1.2px 1.2px at 12% 22%, rgba(245, 242, 235, 0.85), transparent),
+		radial-gradient(1px 1px at 70% 18%, rgba(245, 242, 235, 0.75), transparent),
+		radial-gradient(1.8px 1.8px at 85% 60%, rgba(85, 230, 236, 0.80), transparent),
+		radial-gradient(1px 1px at 30% 80%, rgba(245, 242, 235, 0.60), transparent),
+		radial-gradient(1.8px 1.8px at 55% 50%, rgba(217, 168, 87, 0.80), transparent),
+		radial-gradient(ellipse 65% 50% at 45% 45%, rgba(155, 107, 242, 0.16), transparent 70%),
+		radial-gradient(ellipse 50% 40% at 75% 75%, rgba(85, 230, 236, 0.12), transparent 60%),
+		var(--ic-void);
+}
+
+.theme-dark .graph-view.view-content canvas {
+	filter: drop-shadow(0 0 8px rgba(85, 230, 236, 0.40))
+	        drop-shadow(0 0 18px rgba(155, 107, 242, 0.25));
+}
+
+.theme-dark .graph-controls {
+	background: var(--mat-glass-bg-dense);
+	backdrop-filter: blur(24px) saturate(160%);
+	border: var(--mat-glass-border);
+	border-radius: var(--ic-radius-m);
+	box-shadow: var(--mat-glass-shadow), 0 0 30px -10px rgba(85, 230, 236, 0.25);
+}
+
+.theme-dark .graph-controls .setting-item-heading { font-family: var(--ic-font-display); color: var(--ic-gold-bright); letter-spacing: 0.8px; }
+.theme-dark .graph-control-section-header { font-family: var(--ic-font-display); color: var(--ic-valyrian); font-size: 0.85em; }
+.theme-dark .graph-controls .setting-item-name { color: var(--ic-valyrian); font-size: 0.88em; }
+
+/* ── COSMIC PLANNING CHAMBER CANVAS ─────────────────────────────────── */
+.theme-dark .canvas-wrapper {
+	background-color: var(--ic-void);
+	background-image:
+		radial-gradient(circle 1px at 1px 1px, rgba(199, 212, 227, 0.16) 1px, transparent 0),
+		radial-gradient(ellipse 60% 45% at 20% 30%, rgba(155, 107, 242, 0.10), transparent 60%),
+		radial-gradient(ellipse 50% 40% at 80% 70%, rgba(85, 230, 236, 0.09), transparent 60%);
+	background-size: 24px 24px, 100% 100%, 100% 100%;
+	background-repeat: repeat, no-repeat, no-repeat;
+}
+
+.theme-dark .canvas-node-content {
+	background: var(--mat-glass-bg-dense);
+	backdrop-filter: blur(18px) saturate(150%);
+	border: var(--mat-glass-border);
+	border-radius: var(--ic-radius-m);
+	box-shadow: 0 16px 36px -8px rgba(5, 6, 11, 0.85), 0 4px 12px -2px rgba(85, 230, 236, 0.10), var(--mat-glass-highlight);
+	transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.theme-dark .canvas-node:hover .canvas-node-content {
+	transform: translateY(-2px);
+	box-shadow: 0 20px 44px -10px rgba(5, 6, 11, 0.90), 0 6px 18px -2px rgba(85, 230, 236, 0.18), var(--mat-glass-highlight);
+}
+
+.theme-dark :is(.canvas-node.is-focused, .canvas-node.is-selected) .canvas-node-content {
+	border-color: var(--ic-gold-bright);
+	box-shadow: 0 18px 40px -8px rgba(5, 6, 11, 0.90), var(--ic-glow-gold), var(--mat-glass-highlight);
+}
+
+.theme-dark .canvas-group {
+	background: rgba(10, 14, 28, 0.45);
+	border: 1px dashed rgba(217, 168, 87, 0.25);
+	border-radius: var(--ic-radius-l);
+}
+
+.theme-dark .canvas-group-label { font-family: var(--ic-font-display); color: var(--ic-gold-bright); letter-spacing: 0.8px; }
+
+.theme-dark .canvas-edge path.canvas-display-line { stroke: var(--ic-arc-cyan); stroke-opacity: 0.60; filter: drop-shadow(0 0 4px rgba(85, 230, 236, 0.45)); }
+.theme-dark :is(.canvas-edge.is-focused, .canvas-edge:hover) path.canvas-display-line { stroke: var(--ic-gold-bright); stroke-opacity: 0.95; filter: drop-shadow(0 0 8px rgba(217, 168, 87, 0.70)); }
+.theme-dark .canvas-arrowhead { fill: var(--ic-arc-cyan); }
+.theme-dark .canvas-edge.is-focused .canvas-arrowhead { fill: var(--ic-gold-bright); }
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   08-CHROME-ACCESSIBILITY.CSS — Scrollbars, Modals, Menus, Accessibility
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* ── STARK HIGH-FREQUENCY SCROLLBARS ────────────────────────────────── */
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar { width: 8px; height: 8px; }
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, var(--ic-purple-dim), var(--ic-arc-cyan-dim));
+	border-radius: 999px;
+}
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar-thumb:hover { background: var(--ic-arc-cyan); }
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar-track { background: transparent; }
+
+/* ── CONTEXT MENUS & POPUPS ─────────────────────────────────────────── */
+.theme-dark .menu {
+	background: var(--ic-glass-strong);
+	backdrop-filter: blur(24px) saturate(160%);
+	border: var(--ic-border-steel);
+	border-radius: var(--ic-radius-m);
+	box-shadow: var(--ic-shadow-deep);
+}
+
+.theme-dark .menu-item:hover { background: linear-gradient(90deg, rgba(85, 230, 236, 0.14), transparent); }
+.theme-dark .menu-item-icon { color: var(--ic-arc-cyan); }
+
+/* ── MODALS & DIALOGS (STARK HOLOGRAPHIC PROJECTIONS) ────────────────── */
+.theme-dark .modal {
+	background: var(--pbr-reactor-texture) !important;
+	backdrop-filter: blur(28px) saturate(160%);
+	border: 1px solid rgba(85, 230, 236, 0.4) !important;
+	border-radius: 6px !important;
+	box-shadow: 0 10px 60px rgba(85, 230, 236, 0.15), inset 0 0 20px rgba(85, 230, 236, 0.05) !important;
+}
+
+.theme-dark .modal-title {
+	font-family: var(--ic-font-mono) !important;
+	color: var(--ic-arc-cyan) !important;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.theme-dark .modal-bg {
+	background: rgba(4, 5, 9, 0.75);
+	backdrop-filter: blur(4px);
+}
+
+:is(.theme-dark, .theme-light) :focus-visible {
+	outline: 2px solid var(--ic-arc-cyan) !important;
+	outline-offset: 2px !important;
+	box-shadow: 0 0 12px rgba(85, 230, 236, 0.45) !important;
+}
+
+/* Performance Adaptive Overrides */
+body[data-citadel-perf="low"] .theme-dark {
+	--ic-nebula-opacity:         0.4;
+	--ic-stars-opacity:          0.3;
+	--ic-aurora-opacity:         0;
+	--ic-constellations-opacity: 0;
+}
+
+body[data-citadel-perf="low"] :is(.theme-dark, .theme-light) * {
+	backdrop-filter: none !important;
+	filter: none !important;
+	box-shadow: none !important;
+}
+
+body[data-citadel-perf="med"] .theme-dark {
+	--ic-nebula-opacity:         0.7;
+	--ic-constellations-opacity: 0.18;
+}
+
+body[data-citadel-perf="med"] :is(.theme-dark, .theme-light) * {
+	backdrop-filter: blur(8px) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.theme-dark *, .theme-dark *::before, .theme-dark *::after,
+	.theme-light *, .theme-light *::before, .theme-light *::after {
+		animation-duration: 0.001s !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001s !important;
+		animation: none !important;
+		transition: none !important;
+	}
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   09-MATERIAL-ENGINE.CSS — Unreal Engine Style PBR Material System
+   ───────────────────────────────────────────────────────────────────────
+   Instead of themes, Infinite Citadel is built out of Physical Materials.
+   Every material explicitly defines 6 properties:
+   1. Texture       (Base Albedo + SVG Noise Grain)
+   2. Reflectivity  (Specular Highlights)
+   3. Glow          (Emissive properties / Drop Shadows)
+   4. Edges         (Physical boundaries or borders)
+   5. Animation     (Kinetic or ambient behavior)
+   6. Depth         (Ambient Occlusion / Volumetric Shadows)
+   ─────────────────────────────────────────────────────────────────────── */
+
+:root {
+	/* ── 0. PROCEDURAL NOISE TEXTURES ── */
+	--pbr-noise-coarse: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+	--pbr-noise-brushed: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05 4.0' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+	--pbr-noise-fine: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+.theme-dark {
+	/* ── 1. DRAGONSTONE (Monolithic Basalt) ── */
+	--pbr-dragonstone-texture: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.85) 100%), var(--pbr-noise-coarse), #0f121a;
+	--pbr-dragonstone-reflectivity: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 rgba(0,0,0,0.8);
+	--pbr-dragonstone-glow: none;
+	--pbr-dragonstone-edges: 1px solid #000;
+	--pbr-dragonstone-animation: none;
+	--pbr-dragonstone-depth: inset 0 0 60px rgba(0, 0, 0, 0.95), 0 20px 50px rgba(0,0,0,0.9);
+
+	/* ── 2. VALYRIAN STEEL (Forged Alloy) ── */
+	--pbr-steel-texture: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.8) 100%), var(--pbr-noise-brushed), #1a1e29;
+	--pbr-steel-reflectivity: inset 0 2px 2px rgba(199, 212, 227, 0.3), inset 0 -2px 4px rgba(0,0,0,0.9);
+	--pbr-steel-glow: none;
+	--pbr-steel-edges: 1px solid #000;
+	--pbr-steel-animation: none;
+	--pbr-steel-depth: 0 10px 24px rgba(0, 0, 0, 0.9);
+
+	/* ── 3. VOID OBSIDIAN (Volcanic Glass) ── */
+	--pbr-obsidian-texture: linear-gradient(160deg, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.6) 100%), var(--pbr-noise-fine), #060810;
+	--pbr-obsidian-reflectivity: inset 1px 1px 0 rgba(255,255,255,0.08); /* Crisp mirror edge */
+	--pbr-obsidian-glow: drop-shadow(0 0 4px rgba(0,0,0,0.5));
+	--pbr-obsidian-edges: 1px solid rgba(199, 212, 227, 0.05);
+	--pbr-obsidian-animation: none;
+	--pbr-obsidian-depth: inset -2px -2px 10px rgba(0,0,0,0.8);
+
+	/* ── 4. NEBULA CRYSTAL (Refractive Glass) ── */
+	--pbr-crystal-texture: rgba(15, 20, 40, 0.45);
+	--pbr-crystal-reflectivity: inset 0 1px 0 rgba(155, 107, 242, 0.3); /* Purple spectral catch */
+	--pbr-crystal-glow: drop-shadow(0 0 12px rgba(155, 107, 242, 0.2));
+	--pbr-crystal-edges: 1px solid rgba(155, 107, 242, 0.15);
+	--pbr-crystal-animation: ic-crystal-breathe 4s ease-in-out infinite alternate;
+	--pbr-crystal-depth: 0 10px 40px rgba(0, 0, 0, 0.7);
+
+	/* ── 5. VOID MANUSCRIPT (Magical Parchment) ── */
+	/* Roughness: Soft Vellum | Reflectivity: None | Glow: Magical Ink */
+	--pbr-manuscript-texture: linear-gradient(180deg, rgba(16, 12, 28, 0.8) 0%, rgba(8, 6, 16, 0.95) 100%), var(--pbr-noise-fine), #080610;
+	--pbr-manuscript-reflectivity: inset 0 0 0 transparent;
+	--pbr-manuscript-glow: none;
+	--pbr-manuscript-edges: 1px solid rgba(155, 107, 242, 0.1);
+	--pbr-manuscript-animation: none;
+	--pbr-manuscript-depth: inset 0 0 40px rgba(0,0,0,0.8), 0 20px 60px rgba(0,0,0,0.6);
+
+	/* ── 5. ARC-REACTOR (Synthetic Energy) ── */
+	--pbr-reactor-texture: linear-gradient(135deg, rgba(85,230,236,0.15) 0%, rgba(10,15,30,0.8) 100%), var(--pbr-noise-fine), #070a12;
+	--pbr-reactor-reflectivity: inset 0 0 15px rgba(85,230,236,0.1);
+	--pbr-reactor-glow: drop-shadow(0 0 10px rgba(85,230,236,0.3)); /* Intense cyan emission */
+	--pbr-reactor-edges: 1px solid rgba(85,230,236,0.25);
+	--pbr-reactor-animation: ic-reactor-pulse 2s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate;
+	--pbr-reactor-depth: inset 0 0 5px rgba(85,230,236,0.05);
+
+	/* ── 6. HAMMERED IRON (Heavy Subterranean Metal) ── */
+	--pbr-iron-texture: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.9) 100%), var(--pbr-noise-coarse), #0a0b0e;
+	--pbr-iron-reflectivity: inset 1px 1px 0 rgba(255,255,255,0.1), inset -1px -1px 0 rgba(0,0,0,0.9);
+	--pbr-iron-glow: none;
+	--pbr-iron-edges: 1px solid #000;
+	--pbr-iron-animation: none;
+	--pbr-iron-depth: inset 0 0 30px rgba(0,0,0,0.95), 0 12px 30px rgba(0,0,0,0.95);
+}
+
+/* Base Keyframes for Materials */
+@keyframes ic-crystal-breathe {
+	0% { backdrop-filter: blur(16px) saturate(140%); background-color: rgba(15, 20, 40, 0.45); }
+	100% { backdrop-filter: blur(20px) saturate(160%); background-color: rgba(15, 20, 40, 0.60); }
+}
+
+/* ── MATERIAL ASSIGNER CLASSES ── */
+.mat-dragonstone {
+	background: var(--pbr-dragonstone-texture) !important;
+	box-shadow: var(--pbr-dragonstone-reflectivity), var(--pbr-dragonstone-depth) !important;
+	border: var(--pbr-dragonstone-edges) !important;
+	filter: var(--pbr-dragonstone-glow) !important;
+	animation: var(--pbr-dragonstone-animation) !important;
+}
+
+.mat-steel {
+	background: var(--pbr-steel-texture) !important;
+	box-shadow: var(--pbr-steel-reflectivity), var(--pbr-steel-depth) !important;
+	border: var(--pbr-steel-edges) !important;
+	filter: var(--pbr-steel-glow) !important;
+	animation: var(--pbr-steel-animation) !important;
+}
+
+.mat-obsidian {
+	background: var(--pbr-obsidian-texture) !important;
+	box-shadow: var(--pbr-obsidian-reflectivity), var(--pbr-obsidian-depth) !important;
+	border: var(--pbr-obsidian-edges) !important;
+	filter: var(--pbr-obsidian-glow) !important;
+	animation: var(--pbr-obsidian-animation) !important;
+}
+
+.mat-crystal {
+	background: var(--pbr-crystal-texture) !important;
+	box-shadow: var(--pbr-crystal-reflectivity), var(--pbr-crystal-depth) !important;
+	border: var(--pbr-crystal-edges) !important;
+	filter: var(--pbr-crystal-glow) !important;
+	animation: var(--pbr-crystal-animation) !important;
+	backdrop-filter: blur(16px) saturate(140%);
+}
+
+.mat-manuscript {
+	background: var(--pbr-manuscript-texture) !important;
+	box-shadow: var(--pbr-manuscript-reflectivity), var(--pbr-manuscript-depth) !important;
+	border: var(--pbr-manuscript-edges) !important;
+	filter: var(--pbr-manuscript-glow) !important;
+	animation: var(--pbr-manuscript-animation) !important;
+}
+
+.mat-reactor {
+	background: var(--pbr-reactor-texture) !important;
+	box-shadow: var(--pbr-reactor-reflectivity), var(--pbr-reactor-depth) !important;
+	border: var(--pbr-reactor-edges) !important;
+	filter: var(--pbr-reactor-glow) !important;
+	animation: var(--pbr-reactor-animation) !important;
+}
+
+.mat-iron {
+	background: var(--pbr-iron-texture) !important;
+	box-shadow: var(--pbr-iron-reflectivity), var(--pbr-iron-depth) !important;
+	border: var(--pbr-iron-edges) !important;
+	filter: var(--pbr-iron-glow) !important;
+	animation: var(--pbr-iron-animation) !important;
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   10-MOTION-SYSTEM.CSS — Motion Architecture, Tokens & Accessibility
+   ───────────────────────────────────────────────────────────────────────
+   Centralized Motion Token Registry exposing Bezier easing curves,
+   timing budgets, transition helpers, and reduced-motion enforcement.
+   ─────────────────────────────────────────────────────────────────────── */
+
+.theme-dark, .theme-light {
+	/* Easing Function Tokens */
+	--ic-ease-kinetic: cubic-bezier(0.16, 1, 0.3, 1);  /* Rapid exit with elastic settle */
+	--ic-ease-smooth:  cubic-bezier(0.25, 1, 0.5, 1);  /* Standard interface movement */
+	--ic-ease-energy:  cubic-bezier(0.7, 0, 0.84, 0);  /* Accelerating energy pulse */
+	--ic-ease-pop:     cubic-bezier(0.34, 1.56, 0.64, 1);/* Overshooting micro-pop */
+
+	/* Duration Tokens */
+	--ic-dur-instant: 150ms;  /* Press state, active click feedback */
+	--ic-dur-fast:    250ms;  /* Hover light-spreads, focus ring glows */
+	--ic-dur-normal:  350ms;  /* Modals, command palette, prompt transitions */
+	--ic-dur-slow:    550ms;  /* Drawer expansions, sidebar slides */
+	--ic-dur-ambient: 8s;     /* Status bar shimmer, fast ambient pulses */
+
+	/* Composite Transition Tokens */
+	--ic-trans-hover: transform var(--ic-dur-fast) var(--ic-ease-kinetic),
+	                  opacity var(--ic-dur-fast) ease,
+	                  box-shadow var(--ic-dur-fast) ease,
+	                  border-color var(--ic-dur-fast) ease;
+	--ic-trans-press: transform var(--ic-dur-instant) var(--ic-ease-kinetic);
+	--ic-trans-panel: opacity var(--ic-dur-normal) var(--ic-ease-kinetic),
+	                  transform var(--ic-dur-normal) var(--ic-ease-kinetic);
+}
+
+/* Reusable Transition Utility Classes */
+.ic-transition-hover { transition: var(--ic-trans-hover); }
+.ic-transition-press { transition: var(--ic-trans-press); }
+.ic-transition-panel { transition: var(--ic-trans-panel); }
+
+/* Reduced Motion Safety Enforcement */
+@media (prefers-reduced-motion: reduce) {
+	.theme-dark *, .theme-dark *::before, .theme-dark *::after,
+	.theme-light *, .theme-light *::before, .theme-light *::after {
+		animation-duration: 0.001s !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001s !important;
+		animation: none !important;
+		transition: none !important;
+	}
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   11-EDITOR-ENVIRONMENT.CSS — The Harry Potter Domain (Knowledge Artifacts)
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* 1. The Enchanted Manuscript Background (The Heart of the Theme) */
+/* Replaces the flat black text editor with a true illuminated manuscript */
+/* Shimmer Animation */
+@keyframes ic-manuscript-shimmer {
+	0% { background-position: 0% 50%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+	50% { background-position: 100% 50%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+	100% { background-position: 0% 50%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+}
+
+.theme-dark :is(.cm-sizer, .markdown-preview-sizer) {
+	/* Faint texture + Warm center lighting + subtle edge vignette */
+	background: 
+		radial-gradient(ellipse at 50% 40%, rgba(217, 168, 87, 0.06) 0%, transparent 70%), /* Warm center illumination */
+		linear-gradient(to right, rgba(0,0,0,0.5) 0%, transparent 8%, transparent 92%, rgba(0,0,0,0.5) 100%), /* Edge Vignette */
+		linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 5%, transparent 95%, rgba(0,0,0,0.5) 100%), /* Top/Bottom Vignette */
+		var(--pbr-noise-fine), /* Faint texture */
+		rgba(10, 12, 18, 0.8) !important; /* Deep void base */
+	
+	background-size: 200% 200%, 100% 100%, 100% 100%, 200px 200px, 100% 100%;
+	animation: ic-manuscript-shimmer 20s ease-in-out infinite;
+
+	box-shadow: 
+		inset 0 0 60px rgba(0,0,0,0.9), /* Deep manuscript margin occlusion */
+		0 20px 80px rgba(0,0,0,0.7) !important; /* Floating drop shadow */
+	
+	border: 1px solid rgba(217, 168, 87, 0.12) !important;
+	border-radius: 8px !important;
+	
+	padding: 80px 100px !important; /* Generous manuscript margins */
+	margin: 40px auto !important; /* Center column */
+	max-width: 900px !important;
+	position: relative;
+	z-index: 1;
+}
+
+/* Spell Circle Watermark */
+@keyframes spell-circle-rotate {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.theme-dark .markdown-source-view.mod-cm6::before,
+.theme-dark .markdown-reading-view::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 800px;
+	margin-left: -400px;
+	margin-top: -400px;
+	background-image: url("data:image/svg+xml,%3Csvg width='800' height='800' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='400' cy='400' r='380' stroke='%239b6bf2' stroke-width='2' fill='none' stroke-dasharray='10 5 20 5'/%3E%3Ccircle cx='400' cy='400' r='360' stroke='%23d9a857' stroke-width='1' fill='none'/%3E%3Cpolygon points='400,20 780,400 400,780 20,400' stroke='%239b6bf2' stroke-width='1' fill='none'/%3E%3Cpolygon points='400,40 760,400 400,760 40,400' stroke='%23d9a857' stroke-width='1' fill='none'/%3E%3Ccircle cx='400' cy='400' r='100' stroke='%239b6bf2' stroke-width='2' fill='none'/%3E%3Ccircle cx='400' cy='400' r='90' stroke='%23d9a857' stroke-width='1' fill='none' stroke-dasharray='5 5'/%3E%3C/svg%3E");
+	background-size: cover;
+	opacity: 0.04; /* Extremely faint watermark */
+	pointer-events: none;
+	animation: spell-circle-rotate 300s linear infinite;
+	z-index: 0;
+}
+
+/* 2. The Archive Catalog (Metadata Block) */
+.theme-dark .metadata-container {
+	background: rgba(255, 255, 255, 0.015) !important;
+	border: none !important;
+	border-top: 4px double rgba(217, 168, 87, 0.3) !important; /* Heavy Archive Divider ════ */
+	border-bottom: 4px double rgba(217, 168, 87, 0.3) !important; /* Heavy Archive Divider ════ */
+	box-shadow: 
+		inset 0 0 30px rgba(0, 0, 0, 0.5),
+		0 8px 24px rgba(217, 168, 87, 0.03) !important;
+	border-radius: 0 !important;
+	padding: 32px !important;
+	margin-bottom: 48px !important;
+	margin-top: -20px !important;
+}
+
+/* Transform the default "Properties" title into "ARCHIVE RECORD" */
+.theme-dark .metadata-properties-title {
+	visibility: hidden;
+	position: relative;
+	width: 100%;
+}
+.theme-dark .metadata-properties-title::after {
+	content: "ARCHIVE RECORD";
+	visibility: visible;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold-bright);
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-shadow: 0 0 8px rgba(217, 168, 87, 0.2);
+}
+
+/* Format the Metadata Keys (Type, Date, etc.) as physical catalog labels */
+.theme-dark .metadata-property-key .metadata-property-key-input {
+	font-family: var(--ic-font-display) !important;
+	color: rgba(217, 168, 87, 0.75) !important;
+	font-weight: 600 !important;
+	letter-spacing: 1.5px !important;
+	text-transform: uppercase !important;
+	font-size: 0.9em !important;
+}
+
+.theme-dark .metadata-property-value .metadata-property-value-input {
+	font-family: var(--ic-font-body) !important;
+	color: var(--ic-valyrian) !important;
+}
+
+/* Silence any cyan interactions inside the metadata */
+.theme-dark .metadata-container input,
+.theme-dark .metadata-container .metadata-property-key-input,
+.theme-dark .metadata-container .metadata-property-value-input {
+	border: none !important;
+	box-shadow: none !important;
+	background: transparent !important;
+}
+.theme-dark .metadata-container input:focus,
+.theme-dark .metadata-container .metadata-property-key-input:focus,
+.theme-dark .metadata-container .metadata-property-value-input:focus {
+	box-shadow: 0 1px 0 rgba(217, 168, 87, 0.4) !important; /* Warm gold underline, no cyan */
+	border: none !important;
+}
+
+
+/* 3. Magical Silver Ink (Text & Active Lines) */
+.theme-dark .markdown-source-view.mod-cm6 .cm-scroller,
+.theme-dark .markdown-reading-view {
+	color: #d1d5db; 
+}
+
+/* Magical Ink Text Selection */
+::selection {
+	background: rgba(155, 107, 242, 0.25) !important;
+	text-shadow: 0 0 10px rgba(155, 107, 242, 0.8) !important;
+	color: var(--ic-starlight) !important;
+}
+
+/* The Magical Caret */
+.theme-dark .cm-cursorLayer .cm-cursor {
+	border-left-color: var(--ic-purple) !important;
+	border-left-width: 2px !important;
+	box-shadow: 0 0 12px var(--ic-purple), 0 0 4px var(--ic-gold);
+	border-radius: 1px;
+}
+
+/* Active line glows slightly like enchanted ink being written */
+.theme-dark .cm-active {
+	background-color: transparent !important;
+}
+
+.theme-dark .cm-active.cm-line {
+	background: linear-gradient(90deg, rgba(155, 107, 242, 0.04), transparent 40%) !important;
+	border-left: 2px solid rgba(155, 107, 242, 0.4) !important;
+	text-shadow: 0 0 8px rgba(155, 107, 242, 0.3);
+}
+
+.theme-dark .cm-line {
+	border-bottom: none !important;
+}
+
+/* 4. Pensieve Memories (Blockquotes & Callouts) */
+.theme-dark blockquote {
+	border-left: 2px solid rgba(155, 107, 242, 0.4) !important;
+	background: var(--pbr-crystal-texture) !important;
+	box-shadow: var(--pbr-crystal-reflectivity), var(--pbr-crystal-depth) !important;
+	border-radius: 0 4px 4px 0 !important;
+	color: #e2e8f0 !important;
+	font-style: italic !important;
+	backdrop-filter: blur(8px);
+	padding: 16px 24px;
+	margin: 1.5em 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.theme-dark blockquote::before {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; width: 100%; height: 100%;
+	background: radial-gradient(circle at 0% 0%, rgba(155, 107, 242, 0.15), transparent 70%);
+	pointer-events: none;
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   12-EXPLORER-ARCHIVE.CSS — The Infinite Citadel Sidebar
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* 1. Structural File Tree */
+.theme-dark .nav-folder {
+	margin-bottom: 8px;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* 2. Folder Headers */
+.theme-dark .nav-folder-title {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	/* Removed the bottom border line */
+	margin: 6px 4px 2px 4px;
+	padding: 6px 8px;
+	border-radius: 0;
+	color: var(--ic-text-muted) !important;
+	font-family: var(--ic-font-display);
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	font-size: 0.85em;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	transition: color 0.25s ease;
+}
+
+.theme-dark .nav-folder-title:hover {
+	color: var(--ic-starlight) !important;
+}
+
+/* Removed constellation star from folder headers */
+.theme-dark .nav-folder-title::before {
+	display: none;
+}
+
+/* 3. The Files */
+.theme-dark .nav-file {
+	margin: 1px 8px 1px 18px; /* Adjusted margin since we removed the vertical line */
+}
+
+.theme-dark .nav-file-title {
+	background: transparent;
+	border: none;
+	/* Removed the left border line */
+	padding: 4px 10px;
+	border-radius: var(--ic-radius-s); /* Soft rounded selection instead of border */
+	transition: all 0.25s var(--ic-ease-kinetic);
+	color: var(--ic-text-normal);
+}
+
+.theme-dark .nav-file-title:hover {
+	background: rgba(85, 230, 236, 0.05); /* Just a very subtle hover background, no border */
+	color: var(--ic-starlight);
+	transform: translateX(2px);
+}
+
+/* Active file */
+.theme-dark .nav-file-title.is-active {
+	background: rgba(85, 230, 236, 0.1);
+	/* Removed the left border and heavy inset shadow */
+	box-shadow: none;
+	color: var(--ic-arc-cyan);
+	font-weight: 600;
+	/* Removed heavy text-shadow */
+}
+
+/* 4. Vault Title Header */
+.theme-dark .nav-header {
+	/* Removed bottom border and background radial gradient */
+	border: none;
+	background: transparent;
+	padding: 16px;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.theme-dark .workspace-sidedock-vault-profile {
+	color: var(--ic-text-bright) !important;
+	font-size: 1.1em;
+	/* Removed heavy text shadow */
+}
+
+/* 5. Knowledge Connections (Backlinks, Outgoing Links, Search) */
+.theme-dark :is(.backlink-pane, .outgoing-link-pane, .search-result-container) {
+	background: var(--pbr-obsidian-texture) !important;
+	border: 1px solid rgba(155, 107, 242, 0.2);
+	border-radius: 6px;
+	padding: 12px;
+	box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+.theme-dark :is(.search-result-file-title, .tree-item-self) {
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold-bright) !important;
+	text-shadow: 0 0 8px rgba(217, 168, 87, 0.3);
+	font-size: 1.1em;
+	padding: 6px 0;
+}
+
+.theme-dark .search-result-file-match {
+	font-family: var(--ic-font-mono);
+	color: var(--ic-arc-cyan) !important;
+	background: rgba(85, 230, 236, 0.05);
+	border-left: 2px solid var(--ic-arc-cyan);
+	padding: 6px 10px;
+	margin-top: 4px;
+	border-radius: 0 4px 4px 0;
+	box-shadow: inset 20px 0 20px -20px rgba(85, 230, 236, 0.1);
+}
+
+.theme-dark .search-result-file-match:hover {
+	background: rgba(85, 230, 236, 0.15);
+	box-shadow: inset 40px 0 20px -20px rgba(85, 230, 236, 0.2);
+	color: var(--ic-starlight) !important;
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   13-STARK-TECH-HUD.CSS — The Stark Tech Domain (Interactions)
+   ───────────────────────────────────────────────────────────────────────
+   Cyan Arc-Reactor energy is strictly reserved for interactive states:
+   Focus, Active, Selection, Input Terminals, and Command Palette.
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* 1. Holographic Links (Cyber-optic projection) */
+.theme-dark :is(a.internal-link, a.external-link, .cm-link, .cm-hmd-internal-link) {
+	color: var(--ic-arc-cyan-dim);
+	text-decoration: none;
+	border-bottom: 1px solid rgba(85, 230, 236, 0.2);
+	transition: all 0.2s ease;
+}
+
+.theme-dark :is(a.internal-link:hover, a.external-link:hover) {
+	color: var(--ic-arc-cyan);
+	border-bottom: 1px solid var(--ic-arc-cyan);
+	text-shadow: 0 0 8px rgba(85, 230, 236, 0.4);
+}
+
+/* 4. Interactive Terminals (Inputs & Command Palette) */
+/* The input field itself is an Obsidian terminal, but FOCUS triggers the Stark Tech */
+.theme-dark :is(input[type="text"], input[type="search"]) {
+	background: var(--pbr-obsidian-texture) !important;
+	box-shadow: var(--pbr-obsidian-depth) !important;
+	border: var(--pbr-obsidian-edges) !important;
+	color: var(--ic-arc-cyan-dim) !important;
+}
+
+.theme-dark :is(input[type="text"]:focus, input[type="search"]:focus) {
+	border: 1px solid var(--ic-arc-cyan) !important;
+	box-shadow: inset 0 0 10px rgba(85, 230, 236, 0.1), 0 0 8px rgba(85, 230, 236, 0.2) !important;
+	color: var(--ic-arc-cyan) !important;
+}
+
+/* 3. Jarvis Terminals (Code Blocks) */
+@keyframes scanline {
+	0% { transform: translateY(-100%); }
+	100% { transform: translateY(1000%); }
+}
+
+.theme-dark .markdown-rendered pre {
+	/* Stark Terminal Background: Title bar (32px) + Dark console body */
+	background: linear-gradient(180deg, rgba(85, 230, 236, 0.12) 0%, rgba(85, 230, 236, 0.12) 36px, rgba(4, 6, 12, 0.95) 36px, rgba(4, 6, 12, 0.95) 100%) !important;
+	
+	/* Distinct Cyan Border */
+	border: 1px solid rgba(85, 230, 236, 0.3) !important;
+	border-radius: 0 !important;
+	
+	/* Sci-Fi HUD Chamfered Cut (Top Left, Bottom Right) */
+	clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+	
+	/* Subtle Reactor Glow */
+	box-shadow: 
+		inset 0 1px 0 rgba(85, 230, 236, 0.4), /* Top highlight */
+		0 4px 20px rgba(85, 230, 236, 0.08) !important;
+	
+	padding: 50px 16px 16px 16px !important; /* Space for the title bar */
+	margin: 2em 0 !important;
+	color: var(--ic-arc-cyan-dim) !important;
+	font-family: var(--ic-font-mono) !important;
+	position: relative;
+	overflow: hidden !important;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Holographic Scanline Overlay */
+.theme-dark .markdown-rendered pre::after {
+	content: "";
+	position: absolute;
+	top: 36px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background: linear-gradient(to bottom, transparent, rgba(85, 230, 236, 0.2), transparent);
+	opacity: 0.5;
+	pointer-events: none;
+	animation: scanline 4s linear infinite;
+}
+
+.theme-dark .markdown-rendered pre:hover {
+	border-color: var(--ic-arc-cyan) !important;
+	box-shadow: 
+		inset 0 1px 0 rgba(85, 230, 236, 0.8), 
+		0 4px 30px rgba(85, 230, 236, 0.2) !important;
+}
+
+/* Language Badge as Title */
+.theme-dark .markdown-rendered pre[class*="language-"]::before {
+	content: attr(class);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 6px 16px;
+	font-family: var(--ic-font-mono) !important;
+	font-size: 0.85em;
+	color: var(--ic-arc-cyan);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-bottom: 1px solid rgba(85, 230, 236, 0.2);
+	border-right: 1px solid rgba(85, 230, 236, 0.2);
+	border-radius: 6px 0 6px 0;
+	background: rgba(85, 230, 236, 0.05);
+	/* Extract 'language-xxx' to just 'XXX' requires JS usually, but this adds the Stark badge */
+}
+
+/* Stark Terminal Copy Button */
+.theme-dark .copy-code-button {
+	position: absolute !important;
+	top: 6px !important;
+	right: 6px !important;
+	font-family: var(--ic-font-mono) !important;
+	background: rgba(85, 230, 236, 0.1) !important;
+	color: var(--ic-arc-cyan) !important;
+	border: 1px solid rgba(85, 230, 236, 0.3) !important;
+	border-radius: 4px !important;
+	padding: 4px 12px !important;
+	font-size: 0.85em !important;
+	transition: all 0.2s ease !important;
+	opacity: 0.6;
+}
+
+.theme-dark .copy-code-button:hover {
+	opacity: 1;
+	background: rgba(85, 230, 236, 0.2) !important;
+	box-shadow: 0 0 10px rgba(85, 230, 236, 0.4) !important;
+	border-color: var(--ic-arc-cyan) !important;
+}
+
+.theme-dark .cm-inline-code {
+	background: rgba(85, 230, 236, 0.08) !important;
+	border: 1px solid rgba(85, 230, 236, 0.2) !important;
+	color: var(--ic-arc-cyan) !important;
+	font-family: var(--ic-font-mono) !important;
+	padding: 0.1em 0.3em;
+	border-radius: 4px;
+	box-shadow: 0 0 6px rgba(85, 230, 236, 0.05);
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   14-MAGICAL-ENCHANTMENTS.CSS — Quiet Magic (The 5% Rule)
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* 1. Spellcasting Italics (Quiet Aura) */
+.theme-dark em {
+	text-shadow: 0 0 8px rgba(155, 107, 242, 0.4);
+	color: var(--ic-purple-dim);
+}
+
+/* 2. Glowing Runic Bullets */
+.theme-dark :is(.cm-line > .list-bullet::after, ul > li::marker) {
+	color: var(--ic-purple) !important;
+	text-shadow: 0 0 6px rgba(155, 107, 242, 0.5);
+}
+
+/* 3. Magical Aura on Active Files (Removed heavy mist, using tiny accent) */
+.theme-dark .nav-file-title.is-active::after {
+	display: none; /* Removed the heavy aura */
+}
+
+/* 5% Cyan Energy: Active File Line */
+.theme-dark .nav-file-title.is-active {
+	background: transparent !important;
+	color: var(--ic-starlight) !important;
+	border-left: 2px solid var(--ic-arc-cyan) !important;
+	box-shadow: none !important;
+}
+
+/* 4. Floo Powder Focus (Input Rings) - Toned down */
+.theme-dark :is(.search-input-container input:focus, input:focus) {
+	box-shadow: 0 0 0 1px var(--ic-purple) !important;
+	border-color: transparent !important;
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────
+   15-MONUMENTAL-ARCHITECTURE.CSS — The Game of Thrones Domain
+   ───────────────────────────────────────────────────────────────────────
+   Strictly restricted to physical layout elements: Sidebars, Tab Rails, 
+   Modals, and structure. Materials: Dragonstone, Valyrian Steel, Iron.
+   No cyan energy. No stars.
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* 1. Monolithic Foundations (The Citadel Walls) */
+.theme-dark :is(.workspace-split.mod-left-split, .workspace-split.mod-right-split) {
+	background: var(--pbr-dragonstone-texture) !important;
+	box-shadow: var(--pbr-dragonstone-depth), inset 12px 0 20px rgba(0,0,0,0.95), inset -12px 0 20px rgba(0,0,0,0.95) !important; /* Deep carved occlusion + Structural Pillars */
+	border-left: 2px solid rgba(255,255,255,0.03) !important;
+	border-right: 2px solid rgba(255,255,255,0.03) !important;
+	position: relative;
+}
+
+/* Ambient Fog Overlay */
+@keyframes ic-ambient-fog {
+	0% { background-position: 0% 0%, 0% 0%; opacity: 0.4; }
+	50% { background-position: 100% 100%, 0% 100px; opacity: 0.8; }
+	100% { background-position: 0% 0%, 0% 0%; opacity: 0.4; }
+}
+
+.theme-dark :is(.workspace-split.mod-left-split, .workspace-split.mod-right-split)::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(ellipse at 50% 50%, rgba(124, 138, 163, 0.04), transparent 70%), var(--pbr-noise-fine);
+	background-size: 200% 200%, 150px 150px;
+	animation: ic-ambient-fog 40s ease-in-out infinite;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.theme-dark .workspace-split .workspace-leaf-content {
+	position: relative;
+	z-index: 1;
+}
+
+/* The Utility Dock (Heavy Subterranean Metal) */
+.theme-dark .side-dock-ribbon {
+	background: var(--pbr-iron-texture) !important;
+	box-shadow: var(--pbr-iron-depth) !important;
+	border: var(--pbr-iron-edges) !important;
+}
+
+/* 2. Forged Steel Tab Rails (Valyrian Steel) */
+.theme-dark .workspace-tab-header-container {
+	background: var(--pbr-iron-texture) !important;
+	box-shadow: inset 0 -4px 10px rgba(0,0,0,0.8), var(--pbr-iron-depth) !important;
+	padding: 4px 8px 0 8px;
+	border-bottom: 2px solid #000 !important;
+}
+
+.theme-dark .workspace-tab-header {
+	background: transparent !important;
+	border-radius: 4px 4px 0 0 !important;
+	margin-top: 6px;
+	transition: all 0.3s ease;
+	box-shadow: none !important;
+}
+
+@keyframes ic-steel-light-sweep {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+/* Active Tab acts as a polished steel plate catching light */
+.theme-dark .workspace-tab-header.is-active {
+	background: var(--pbr-steel-texture) !important;
+	background-size: 200% 100% !important;
+	animation: ic-steel-light-sweep 10s linear infinite;
+	box-shadow: var(--pbr-steel-reflectivity), var(--pbr-steel-depth) !important;
+	border: var(--pbr-steel-edges) !important;
+	border-bottom: none !important;
+	color: var(--ic-valyrian) !important; 
+}
+
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-shadow: 0 -1px 2px rgba(0,0,0,1); /* Deeply engraved lettering */
+}
+
+/* 3. Physical Archive Hierarchy (Folders & Files) */
+/* A) Major Folders (Top-Level) — Carved Obsidian Plaques */
+.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
+	background: rgba(16, 20, 32, 0.6) !important;
+	border: 1px solid rgba(217, 168, 87, 0.15) !important;
+	border-radius: 4px;
+	margin: 6px 4px 2px 4px;
+	padding: 6px 10px;
+	
+	color: rgba(217, 168, 87, 0.85) !important; /* Muted gold */
+	text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.8);
+	font-family: var(--ic-font-display) !important;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title:hover {
+	color: var(--ic-gold) !important;
+	box-shadow: var(--pbr-steel-depth), inset 2px 2px 0 rgba(217, 168, 87, 0.2) !important;
+}
+
+/* B) Minor Folders (Sub-Level) — Book Spines */
+.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children .nav-folder-title {
+	background: var(--pbr-steel-texture) !important;
+	border-left: 3px solid rgba(124, 138, 163, 0.4) !important; /* The Spine edge */
+	box-shadow: inset 1px 0 2px rgba(255,255,255,0.05), 0 2px 4px rgba(0,0,0,0.4) !important;
+	border-radius: 0 4px 4px 0;
+	margin: 4px 4px 4px 12px;
+	padding: 4px 8px;
+	
+	color: var(--ic-valyrian) !important;
+	font-family: var(--ic-font-body) !important;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+/* C) Leaf Notes (Files) — Parchment Tabs */
+.theme-dark .nav-file-title {
+	background: var(--pbr-manuscript-texture) !important;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3) !important;
+	border-left: 2px solid rgba(155, 107, 242, 0.2) !important;
+	border-radius: 0 4px 4px 0;
+	margin: 2px 4px 2px 16px;
+	padding: 4px 8px;
+	
+	color: var(--ic-text-normal) !important;
+	font-family: var(--ic-font-body) !important;
+}
+/* Active Leaf Note gets cyan interaction (handled in 13-stark-tech-hud) */
+
+
+/* The Vault Title */
+.theme-dark .workspace-sidedock-vault-profile {
+	color: var(--ic-gold-bright) !important;
+	text-shadow: 0 -2px 4px rgba(0, 0, 0, 1); /* Deep engraving */
+	font-family: var(--ic-font-display) !important;
+	font-weight: 900;
+	letter-spacing: 3px;
+	background: var(--pbr-obsidian-texture) !important;
+	box-shadow: var(--pbr-obsidian-depth), var(--pbr-obsidian-reflectivity) !important;
+	border-bottom: 2px solid #000 !important;
+	padding: 24px 16px !important;
+}
+
+

@@ -1,0 +1,7 @@
+{
+  "enableStars": true,
+  "enableNebula": true,
+  "enableAurora": false,
+  "starDensity": 50,
+  "enableAutoPerf": true
+}

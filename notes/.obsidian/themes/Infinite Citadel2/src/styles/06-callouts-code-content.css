@@ -1,0 +1,242 @@
+/* ───────────────────────────────────────────────────────────────────────
+   06-CALLOUTS-CODE-CONTENT.CSS — Callout Artifacts, Code, Tables, Tags
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* ── CALLOUT ARTIFACTS (10 Lore Identities) ────────────────────────── */
+.theme-dark .callout {
+	border-radius: var(--ic-radius-m);
+	border: 1px solid rgba(199, 212, 227, 0.10);
+	background: var(--ic-glass);
+	backdrop-filter: blur(14px) saturate(150%);
+	box-shadow: var(--ic-shadow-soft);
+	overflow: hidden;
+	position: relative;
+	margin: 1.2em 0;
+	transition: transform var(--ic-dur-fast) var(--ic-ease-kinetic), box-shadow var(--ic-dur-fast) ease;
+}
+
+.theme-dark .callout-title {
+	font-family: var(--ic-font-display);
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	padding: 0.6em 0.9em;
+}
+
+.theme-dark .callout .callout-icon { transition: filter 0.3s ease; }
+
+/* 1. Note / Abstract / Summary — Magic Scroll Vellum */
+.theme-dark :is(.callout[data-callout="note"], .callout[data-callout="abstract"], .callout[data-callout="summary"], .callout[data-callout="tldr"]) {
+	--callout-color: 217, 168, 87;
+	background: repeating-linear-gradient(180deg, transparent 0px, transparent 26px, rgba(217, 168, 87, 0.03) 26px, rgba(217, 168, 87, 0.03) 28px), linear-gradient(135deg, rgba(217, 168, 87, 0.09), rgba(13, 17, 32, 0.85));
+	border-left: 3px double var(--ic-gold);
+	box-shadow: var(--ic-shadow-soft), inset 3px 0 14px -8px rgba(217, 168, 87, 0.20);
+}
+.theme-dark :is(.callout[data-callout="note"], .callout[data-callout="abstract"], .callout[data-callout="summary"], .callout[data-callout="tldr"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(217, 168, 87, 0.55)); }
+
+/* 2. Tip / Hint / Important — Stark Blueprint Grid */
+.theme-dark :is(.callout[data-callout="tip"], .callout[data-callout="hint"], .callout[data-callout="important"]) {
+	--callout-color: 85, 230, 236;
+	background: repeating-linear-gradient(90deg, transparent 0px, transparent 30px, rgba(85, 230, 236, 0.018) 30px, rgba(85, 230, 236, 0.018) 32px), repeating-linear-gradient(0deg, transparent 0px, transparent 30px, rgba(85, 230, 236, 0.018) 30px, rgba(85, 230, 236, 0.018) 32px), linear-gradient(135deg, rgba(85, 230, 236, 0.08), rgba(13, 17, 32, 0.85));
+	border-left: 2px dashed var(--ic-arc-cyan);
+	box-shadow: var(--ic-shadow-soft), inset 2px 0 12px -6px rgba(85, 230, 236, 0.18);
+}
+.theme-dark :is(.callout[data-callout="tip"], .callout[data-callout="hint"], .callout[data-callout="important"]) .callout-title { font-family: var(--ic-font-mono); text-transform: uppercase; font-size: 0.88em; letter-spacing: 1.2px; }
+.theme-dark :is(.callout[data-callout="tip"], .callout[data-callout="hint"], .callout[data-callout="important"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(85, 230, 236, 0.60)); }
+
+/* 3. Info / Todo — Cosmic Aurora Cluster */
+.theme-dark :is(.callout[data-callout="info"], .callout[data-callout="todo"]) {
+	--callout-color: 155, 107, 242;
+	background: radial-gradient(ellipse at 10% 20%, rgba(155, 107, 242, 0.15), transparent 60%), linear-gradient(135deg, rgba(155, 107, 242, 0.09), rgba(13, 17, 32, 0.85));
+	border-left: 2px solid var(--ic-purple);
+	box-shadow: var(--ic-shadow-soft), inset 2px 0 16px -8px rgba(155, 107, 242, 0.20);
+}
+.theme-dark :is(.callout[data-callout="info"], .callout[data-callout="todo"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(155, 107, 242, 0.60)); }
+
+/* 4. Warning / Caution / Attention — Royal Decree Banner */
+.theme-dark :is(.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"]) {
+	--callout-color: 240, 168, 96;
+	background: linear-gradient(135deg, rgba(240, 168, 96, 0.10), rgba(13, 17, 32, 0.85));
+	border-left: 3px solid var(--ic-amber);
+	border-top: 1px solid rgba(240, 168, 96, 0.30);
+	box-shadow: var(--ic-shadow-soft), inset 3px 0 14px -8px rgba(240, 168, 96, 0.15);
+}
+.theme-dark :is(.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"]) .callout-title { text-transform: uppercase; letter-spacing: 1px; }
+.theme-dark :is(.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(240, 168, 96, 0.55)); }
+
+/* 5. Danger / Error / Bug — Dragon Fire Vault */
+.theme-dark :is(.callout[data-callout="danger"], .callout[data-callout="error"], .callout[data-callout="bug"]) {
+	--callout-color: 225, 84, 75;
+	background: linear-gradient(135deg, rgba(225, 84, 75, 0.10), rgba(13, 17, 32, 0.85));
+	border-left: 4px solid var(--ic-crimson);
+	box-shadow: var(--ic-shadow-soft), inset 4px 0 18px -8px rgba(225, 84, 75, 0.25);
+}
+.theme-dark :is(.callout[data-callout="danger"], .callout[data-callout="error"], .callout[data-callout="bug"]) .callout-icon { filter: drop-shadow(0 0 7px rgba(225, 84, 75, 0.65)); }
+
+/* 6. Success / Check / Done — Wildfire Emerald */
+.theme-dark :is(.callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"]) {
+	--callout-color: 79, 201, 138;
+	background: linear-gradient(135deg, rgba(79, 201, 138, 0.09), rgba(13, 17, 32, 0.85));
+	border-left: 3px solid var(--ic-emerald);
+	box-shadow: var(--ic-shadow-soft), inset 3px 0 14px -8px rgba(79, 201, 138, 0.20);
+}
+.theme-dark :is(.callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"]) .callout-icon { filter: drop-shadow(0 0 6px rgba(79, 201, 138, 0.55)); }
+
+/* 7. Question / Help / FAQ — Oracle Glass */
+.theme-dark :is(.callout[data-callout="question"], .callout[data-callout="help"], .callout[data-callout="faq"]) {
+	--callout-color: 199, 212, 227;
+	background: linear-gradient(135deg, rgba(199, 212, 227, 0.08), rgba(13, 17, 32, 0.85));
+	border-left: 2px dotted var(--ic-valyrian);
+}
+.theme-dark :is(.callout[data-callout="question"], .callout[data-callout="help"], .callout[data-callout="faq"]) .callout-icon { filter: drop-shadow(0 0 5px rgba(199, 212, 227, 0.45)); }
+
+/* 8. Quote / Cite — Lost Manuscript */
+.theme-dark :is(.callout[data-callout="quote"], .callout[data-callout="cite"]) {
+	--callout-color: 124, 138, 163;
+	background: repeating-linear-gradient(180deg, rgba(217, 168, 87, 0.03) 0px, rgba(217, 168, 87, 0.03) 2px, transparent 2px, transparent 26px), var(--mat-parchment-bg);
+	border-left: 2px solid var(--ic-valyrian-dim);
+	font-family: var(--ic-font-elegant);
+	font-style: italic;
+}
+.theme-dark :is(.callout[data-callout="quote"], .callout[data-callout="cite"]):hover { transform: scale(1.005); }
+
+/* ── HOLOGRAPHIC CODE BLOCKS (STARK HUD × SPELLBOOK TERMINAL) ──────── */
+.theme-dark :is(pre.language-, .markdown-rendered pre, .HyperMD-codeblock-bg) {
+	background: repeating-linear-gradient(0deg, transparent 0px, transparent 3px, rgba(85, 230, 236, 0.012) 3px, rgba(85, 230, 236, 0.012) 4px), linear-gradient(180deg, rgba(9, 13, 24, 0.94), rgba(5, 7, 14, 0.98)) !important;
+	border: 1px solid rgba(199, 212, 227, 0.12) !important;
+	border-radius: var(--ic-radius-m) !important;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.60) !important;
+	position: relative !important;
+	overflow: hidden !important;
+	margin: 1.4em 0 !important;
+	padding: 0.9em 1.3em !important;
+}
+
+/* Reset CodeMirror 6 Embedded Lines: ERASE ALL BOX OUTLINES */
+.theme-dark :is(.cm-embed-block, .HyperMD-codeblock, .cm-line.HyperMD-codeblock, .cm-line.HyperMD-codeblock-begin, .cm-line.HyperMD-codeblock-bg) {
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	padding-left: 0.4em !important;
+	margin: 0 !important;
+}
+
+.theme-dark :is(.cm-activeCodeLine, .cm-activeLine) {
+	background: rgba(155, 107, 242, 0.06) !important;
+}
+
+/* Stark HUD Top Status Shimmer Line */
+.theme-dark :is(pre.language-, .markdown-rendered pre)::before {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; right: 0; height: 1px;
+	background: linear-gradient(90deg, transparent, rgba(85, 230, 236, 0.6), transparent);
+	background-size: 200% 100%;
+	animation: ic-status-shimmer 10s linear infinite;
+	pointer-events: none;
+	z-index: 2;
+}
+
+/* Stark HUD 4 Corner Brackets */
+.theme-dark :is(pre.language-, .markdown-rendered pre)::after {
+	content: "";
+	position: absolute;
+	inset: 6px;
+	pointer-events: none;
+	z-index: 1;
+	background:
+		linear-gradient(90deg, rgba(85, 230, 236, 0.45), transparent) no-repeat top left / 18px 1px,
+		linear-gradient(180deg, rgba(85, 230, 236, 0.45), transparent) no-repeat top left / 1px 18px,
+		linear-gradient(270deg, rgba(85, 230, 236, 0.45), transparent) no-repeat bottom right / 18px 1px,
+		linear-gradient(0deg, rgba(85, 230, 236, 0.45), transparent) no-repeat bottom right / 1px 18px,
+		linear-gradient(270deg, rgba(85, 230, 236, 0.22), transparent) no-repeat top right / 12px 1px,
+		linear-gradient(180deg, rgba(85, 230, 236, 0.22), transparent) no-repeat top right / 1px 12px,
+		linear-gradient(90deg, rgba(85, 230, 236, 0.22), transparent) no-repeat bottom left / 12px 1px,
+		linear-gradient(0deg, rgba(85, 230, 236, 0.22), transparent) no-repeat bottom left / 1px 12px;
+}
+
+/* Inline Code — Arc Crystal Badge */
+.theme-dark :is(code:not(.is-loaded), .cm-inline-code) {
+	font-family: var(--ic-font-mono);
+	background: rgba(85, 230, 236, 0.08) !important;
+	color: var(--ic-arc-cyan) !important;
+	border: 1px solid rgba(85, 230, 236, 0.18) !important;
+	border-radius: 4px !important;
+	padding: 0.12em 0.45em !important;
+	text-shadow: 0 0 6px rgba(85, 230, 236, 0.22) !important;
+}
+
+.theme-dark .markdown-rendered pre code { font-family: var(--ic-font-mono); color: var(--ic-valyrian); text-shadow: none; }
+
+/* Syntax Token Glowing Auras */
+.theme-dark .token.keyword  { color: var(--ic-purple) !important;      text-shadow: 0 0 8px rgba(155, 107, 242, 0.35); }
+.theme-dark .token.string   { color: var(--ic-emerald) !important;     text-shadow: 0 0 8px rgba(79, 201, 138, 0.30); }
+.theme-dark .token.function { color: var(--ic-gold-bright) !important; text-shadow: 0 0 8px rgba(240, 200, 120, 0.30); }
+.theme-dark .token.number   { color: var(--ic-amber) !important;       text-shadow: 0 0 8px rgba(240, 168, 96, 0.30); }
+.theme-dark .token.comment  { color: var(--ic-text-faint) !important; font-style: italic; text-shadow: none; }
+.theme-dark :is(.token.operator, .token.punctuation) { color: var(--ic-valyrian-dim) !important; }
+
+/* Copy Code Button */
+.theme-dark .copy-code-button {
+	font-family: var(--ic-font-mono);
+	background: rgba(85, 230, 236, 0.12);
+	color: var(--ic-arc-cyan);
+	border: 1px solid rgba(85, 230, 236, 0.25);
+	border-radius: var(--ic-radius-s);
+	transition: box-shadow 0.25s ease, transform 0.15s ease;
+}
+.theme-dark .copy-code-button:hover { box-shadow: var(--ic-glow-cyan); transform: translateY(-1px); }
+
+/* ── LEDGER TABLES (VALYRIAN STEEL × FROSTED GLASS) ─────────────────── */
+.theme-dark table {
+	border: 1px solid rgba(199, 212, 227, 0.10);
+	border-radius: var(--ic-radius-m);
+	overflow: hidden;
+	background: var(--ic-glass);
+	width: 100%;
+	margin: 1.4em 0;
+}
+
+.theme-dark thead tr {
+	background: var(--mat-steel-bg);
+	box-shadow: var(--mat-steel-highlight);
+}
+
+.theme-dark th {
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold-bright);
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	padding: 0.75em 1em;
+	border-bottom: 1px solid rgba(217, 168, 87, 0.25);
+}
+
+.theme-dark td {
+	padding: 0.65em 1em;
+	border-color: rgba(199, 212, 227, 0.07);
+}
+
+.theme-dark tbody tr { transition: background 0.2s ease; }
+.theme-dark tbody tr:nth-child(even) { background: rgba(199, 212, 227, 0.02); }
+.theme-dark tbody tr:hover { background: rgba(85, 230, 236, 0.05); }
+
+/* ── WAX SEALS & GEMSTONE TAGS ──────────────────────────────────────── */
+.theme-dark :is(.tag, a.tag) {
+	font-family: var(--ic-font-mono);
+	font-size: 0.78em;
+	background: linear-gradient(135deg, rgba(217, 168, 87, 0.22), rgba(155, 107, 242, 0.15));
+	border: 1px solid rgba(217, 168, 87, 0.35);
+	color: var(--ic-gold-bright);
+	border-radius: 999px;
+	padding: 0.14em 0.75em;
+	transition: box-shadow 0.25s ease, transform 0.2s ease, color 0.25s ease;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.30);
+}
+
+.theme-dark .tag:hover {
+	box-shadow: var(--ic-glow-gold);
+	transform: translateY(-1px);
+	color: var(--ic-starlight);
+}
+
+/* Removed duplicate metadata styles, now centralized in 11-editor-environment.css */

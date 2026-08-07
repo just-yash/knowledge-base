@@ -1,0 +1,606 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Fira+Code:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Fonts */
+    --font-default: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-heading: 'Cinzel', Georgia, serif;
+    --font-monospace: 'Fira Code', monospace;
+
+    /* Base Dimensions & Motion Curves */
+    --citadel-radius-sm: 6px;
+    --citadel-radius-md: 10px;
+    --citadel-radius-lg: 16px;
+    --citadel-transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --citadel-transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    --citadel-transition-glow: 0.5s ease-in-out;
+
+    /* Infinity Stones Palette */
+    --power-stone:       #a855f7; /* Violet / Power */
+    --space-stone:       #00f0ff; /* Tesseract Cyan / Space */
+    --reality-stone:     #f43f5e; /* Aether Crimson / Reality */
+    --soul-stone:        #fb923c; /* Vormir Amber / Soul */
+    --time-stone:        #10b981; /* Agamotto Emerald / Time */
+    --mind-stone:        #facc15; /* Scepter Gold / Mind */
+
+    /* Universal Accents */
+    --arc-reactor-cyan:  #00f0ff;
+    --arc-reactor-glow:  rgba(0, 240, 255, 0.4);
+    --iron-gold:         #ffd700;
+    --valyrian-steel:    #64748b;
+    --valyrian-bright:   #cbd5e1;
+    --dragonfire-gold:   #f59e0b;
+    --lumos-glow:        rgba(255, 235, 170, 0.85);
+}
+
+/* =========================================================================================
+   02. ANIMATION KEYFRAMES (LIVING WORLD ENGINE)
+   ========================================================================================= */
+
+@keyframes cosmic-nebula-drift {
+    0% { transform: translate3d(0%, 0%, 0) rotate(0deg) scale(1); }
+    50% { transform: translate3d(-2%, 3%, 0) rotate(180deg) scale(1.05); }
+    100% { transform: translate3d(0%, 0%, 0) rotate(360deg) scale(1); }
+}
+
+@keyframes starfield-twinkle {
+    0%, 100% { opacity: 0.35; transform: scale(1); }
+    50% { opacity: 0.75; transform: scale(1.02); }
+}
+
+@keyframes arc-reactor-pulse {
+    0%, 100% { 
+        box-shadow: 0 0 10px rgba(0, 240, 255, 0.25), inset 0 0 6px rgba(0, 240, 255, 0.15);
+    }
+    50% { 
+        box-shadow: 0 0 22px rgba(0, 240, 255, 0.55), inset 0 0 14px rgba(0, 240, 255, 0.35);
+    }
+}
+
+@keyframes stark-hud-scan {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+@keyframes lumos-shimmer {
+    0% { filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.4)); }
+    50% { filter: drop-shadow(0 0 12px rgba(255, 235, 170, 0.9)); }
+    100% { filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.4)); }
+}
+
+/* =========================================================================================
+   03. THEME: DARK MODE (THE LIVING COSMIC CITADEL)
+   ========================================================================================= */
+
+.theme-dark {
+    --citadel-void:             #05070d;
+    --citadel-panel-bg:         rgba(13, 17, 31, 0.72);
+    --citadel-panel-solid:      #0b0e1a;
+    --citadel-border:           rgba(100, 116, 139, 0.3);
+    --citadel-border-glow:      rgba(0, 240, 255, 0.35);
+
+    --background-primary:       transparent;
+    --background-primary-alt:   rgba(9, 12, 22, 0.6);
+    --background-secondary:     rgba(13, 17, 31, 0.65);
+    --background-secondary-alt: rgba(19, 25, 46, 0.85);
+
+    --text-normal:              #e2e8f0;
+    --text-muted:               #94a3b8;
+    --text-faint:               #64748b;
+    --text-accent:              var(--arc-reactor-cyan);
+    --text-accent-hover:        var(--iron-gold);
+
+    --h1-color: var(--power-stone);
+    --h2-color: var(--space-stone);
+    --h3-color: var(--reality-stone);
+    --h4-color: var(--soul-stone);
+    --h5-color: var(--time-stone);
+    --h6-color: var(--mind-stone);
+
+    --code-normal:              #38bdf8;
+    --code-background:          #080a14;
+    --tag-color:                var(--arc-reactor-cyan);
+    --tag-background:           rgba(0, 240, 255, 0.12);
+}
+
+/* Base Body Styling */
+body {
+    font-family: var(--font-default);
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--citadel-void);
+}
+
+/* -----------------------------------------------------------------------------------------
+   LIVING BACKGROUND ENGINE (GPU Accelerated)
+   ----------------------------------------------------------------------------------------- */
+.theme-dark .workspace {
+    position: relative;
+    background-color: var(--citadel-void) !important;
+    overflow: hidden;
+}
+
+/* Layer 1: Rotating Cosmic Nebula Clouds */
+.theme-dark .workspace::before {
+    content: "";
+    position: absolute;
+    inset: -60%;
+    width: 220%;
+    height: 220%;
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 75% 75%, rgba(0, 240, 255, 0.10) 0%, transparent 45%),
+        radial-gradient(circle at 50% 30%, rgba(244, 63, 94, 0.06) 0%, transparent 55%),
+        radial-gradient(circle at 80% 20%, rgba(251, 146, 60, 0.08) 0%, transparent 40%);
+    animation: cosmic-nebula-drift 100s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Layer 2: Twinkling Starfield Lattice */
+.theme-dark .workspace::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(1.5px 1.5px at 15px 25px, rgba(255, 255, 255, 0.7), transparent),
+        radial-gradient(2px 2px at 45px 85px, rgba(0, 240, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 100px 45px, rgba(168, 85, 247, 0.7), transparent),
+        radial-gradient(1.5px 1.5px at 140px 90px, rgba(250, 204, 21, 0.5), transparent),
+        radial-gradient(2px 2px at 180px 130px, rgba(255, 255, 255, 0.5), transparent);
+    background-repeat: repeat;
+    background-size: 220px 220px;
+    animation: starfield-twinkle 10s ease-in-out infinite alternate;
+    pointer-events: none;
+    opacity: 0.55;
+    z-index: 0;
+}
+
+/* Elevate workspace content above the living background */
+.workspace-ribbon,
+.workspace-split,
+.workspace-tabs,
+.status-bar {
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================================================================================
+   04. GLASSMORPHISM & CONTAINER DEPTH
+   ========================================================================================= */
+
+.theme-dark .workspace-leaf,
+.theme-dark .workspace-panel,
+.theme-dark .nav-files-container {
+    background: var(--citadel-panel-bg) !important;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid var(--citadel-border);
+    border-radius: var(--citadel-radius-md);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transition: border-color var(--citadel-transition-smooth);
+}
+
+.theme-dark .workspace-leaf:hover {
+    border-color: rgba(0, 240, 255, 0.3);
+}
+
+/* Floating View Headers */
+.view-header {
+    background: rgba(9, 12, 22, 0.8) !important;
+    border-bottom: 1px solid var(--citadel-border);
+    backdrop-filter: blur(12px);
+}
+
+/* =========================================================================================
+   05. INFINITY STONE TYPOGRAPHY ARCHITECTURE
+   ========================================================================================= */
+
+.markdown-rendered h1, .markdown-rendered h2, 
+.markdown-rendered h3, .markdown-rendered h4, 
+.markdown-rendered h5, .markdown-rendered h6,
+.cm-header {
+    font-family: var(--font-heading);
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    transition: transform 0.2s ease, text-shadow 0.3s ease;
+}
+
+/* H1: Power Stone (Orb Violet) */
+.markdown-rendered h1, .cm-header-1 {
+    color: var(--power-stone) !important;
+    text-shadow: 0 0 16px rgba(168, 85, 247, 0.55);
+    border-bottom: 2px solid rgba(168, 85, 247, 0.35);
+    padding-bottom: 0.35em;
+}
+
+/* H2: Space Stone (Tesseract Cyan) */
+.markdown-rendered h2, .cm-header-2 {
+    color: var(--space-stone) !important;
+    text-shadow: 0 0 14px rgba(0, 240, 255, 0.5);
+    border-bottom: 1px dashed rgba(0, 240, 255, 0.3);
+    padding-bottom: 0.25em;
+}
+
+/* H3: Reality Stone (Aether Crimson) */
+.markdown-rendered h3, .cm-header-3 {
+    color: var(--reality-stone) !important;
+    text-shadow: 0 0 12px rgba(244, 63, 94, 0.45);
+}
+
+/* H4: Soul Stone (Vormir Amber) */
+.markdown-rendered h4, .cm-header-4 {
+    color: var(--soul-stone) !important;
+    text-shadow: 0 0 10px rgba(251, 146, 60, 0.45);
+}
+
+/* H5: Time Stone (Agamotto Emerald) */
+.markdown-rendered h5, .cm-header-5 {
+    color: var(--time-stone) !important;
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.45);
+}
+
+/* H6: Mind Stone (Scepter Gold) */
+.markdown-rendered h6, .cm-header-6 {
+    color: var(--mind-stone) !important;
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.45);
+}
+
+/* Inline Title: Multi-Stone Spectrum Sweep */
+.inline-title {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 2.25em !important;
+    letter-spacing: 0.06em;
+    background: linear-gradient(135deg, var(--power-stone), var(--space-stone) 40%, var(--iron-gold) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 18px rgba(0, 240, 255, 0.35));
+    padding-bottom: 0.2em;
+}
+
+/* =========================================================================================
+   06. LUMOS SPELLCASTING HOVER & INTERACTION MECHANICS
+   ========================================================================================= */
+
+.markdown-rendered a.internal-link, 
+.markdown-rendered a.external-link,
+.cm-link, .cm-hmd-internal-link {
+    color: var(--arc-reactor-cyan) !important;
+    font-weight: 600;
+    position: relative;
+    transition: all var(--citadel-transition-fast);
+    text-decoration: none !important;
+}
+
+/* Wand Star Icon Prefix */
+.markdown-rendered a.internal-link::before {
+    content: "✦ ";
+    font-size: 0.85em;
+    color: var(--power-stone);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease;
+}
+
+.markdown-rendered a.internal-link:hover::before {
+    transform: rotate(180deg) scale(1.4);
+    color: var(--iron-gold);
+}
+
+/* Lumos Glow Hover Effect */
+.markdown-rendered a.internal-link:hover, 
+.markdown-rendered a.external-link:hover,
+.cm-link:hover, .cm-hmd-internal-link:hover {
+    color: var(--iron-gold) !important;
+    text-shadow: 0 0 8px var(--lumos-glow), 0 0 20px rgba(255, 215, 0, 0.7);
+    transform: translateY(-1px);
+}
+
+/* Infinity Shards & Magical Rune Tags */
+.tag, .cm-hashtag {
+    font-family: var(--font-monospace);
+    font-size: 0.82em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 240, 255, 0.35) !important;
+    background: linear-gradient(135deg, rgba(0, 240, 255, 0.12), rgba(168, 85, 247, 0.12)) !important;
+    color: var(--arc-reactor-cyan) !important;
+    padding: 3px 10px !important;
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.15);
+    transition: all var(--citadel-transition-smooth) !important;
+}
+
+.tag:hover, .cm-hashtag:hover {
+    border-color: var(--iron-gold) !important;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(244, 63, 94, 0.25)) !important;
+    color: var(--iron-gold) !important;
+    box-shadow: 0 0 16px rgba(255, 215, 0, 0.5), 0 0 6px var(--power-stone);
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* =========================================================================================
+   07. STARK HOLOGRAPHIC HUD CODE BLOCKS
+   ========================================================================================= */
+
+.markdown-rendered pre, pre[class*="language-"] {
+    border-radius: var(--citadel-radius-md) !important;
+    border: 1px solid rgba(0, 240, 255, 0.3) !important;
+    background: var(--code-background) !important;
+    box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.05), 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* HUD Top Bar with Animated Scanline */
+.markdown-rendered pre::before {
+    content: "⚡ STARK HUD :: HOLOGRAPHIC CODE TERMINAL";
+    display: block;
+    font-family: var(--font-monospace);
+    font-size: 0.68em;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: var(--arc-reactor-cyan);
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0.08), rgba(168, 85, 247, 0.15), rgba(0, 240, 255, 0.08));
+    background-size: 200% 100%;
+    animation: stark-hud-scan 6s linear infinite;
+    border-bottom: 1px dashed rgba(0, 240, 255, 0.25);
+    padding: 6px 12px;
+    margin: -1em -1em 10px -1em;
+}
+
+.markdown-rendered code, .cm-inline-code {
+    font-family: var(--font-monospace) !important;
+    color: var(--arc-reactor-cyan) !important;
+    background: rgba(0, 240, 255, 0.1) !important;
+    border-radius: var(--citadel-radius-sm) !important;
+    padding: 2px 7px !important;
+    border: 1px solid rgba(0, 240, 255, 0.25) !important;
+}
+
+/* =========================================================================================
+   08. MYSTICAL CALLOUTS (SIGILS, TRANSMISSIONS & SPELLBOOKS)
+   ========================================================================================= */
+
+.callout {
+    border-radius: var(--citadel-radius-md);
+    border-left-width: 4px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.callout:hover {
+    transform: translateX(4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Note / Info: Tesseract Wisdom & Ravenclaw */
+.callout[data-callout="note"], .callout[data-callout="info"] {
+    background: rgba(13, 20, 36, 0.85);
+    border-left-color: var(--space-stone);
+}
+.callout[data-callout="note"] .callout-title-name::before { content: "🦅 "; }
+
+/* Warning: Targaryen Dragonfire & Soul Stone */
+.callout[data-callout="warning"], .callout[data-callout="caution"] {
+    background: rgba(36, 22, 14, 0.85);
+    border-left-color: var(--dragonfire-gold);
+}
+.callout[data-callout="warning"] .callout-title-name::before { content: "🐉 "; }
+
+/* Danger: House Lannister Crimson & Reality Stone */
+.callout[data-callout="danger"], .callout[data-callout="error"] {
+    background: rgba(40, 16, 20, 0.85);
+    border-left-color: var(--reality-stone);
+}
+.callout[data-callout="danger"] .callout-title-name::before { content: "🦁 "; }
+
+/* Success: Slytherin Emerald & Agamotto Time Stone */
+.callout[data-callout="success"], .callout[data-callout="tip"] {
+    background: rgba(12, 32, 24, 0.85);
+    border-left-color: var(--time-stone);
+}
+.callout[data-callout="success"] .callout-title-name::before { content: "🐍 "; }
+
+/* Quote: Hogwarts Library Parchment */
+.callout[data-callout="quote"] {
+    background: rgba(31, 26, 20, 0.9);
+    border-left-color: var(--iron-gold);
+    font-style: italic;
+}
+.callout[data-callout="quote"] .callout-title-name::before { content: "📜 "; }
+
+/* =========================================================================================
+   09. INTERACTIVE COMPONENTS: CHECKBOXES, TABLES & DIVIDERS
+   ========================================================================================= */
+
+/* Arc Reactor Core Checkboxes */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.15em;
+    height: 1.15em;
+    border: 2px solid var(--arc-reactor-cyan) !important;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+input[type="checkbox"]:hover {
+    border-color: var(--iron-gold) !important;
+    animation: arc-reactor-pulse 1.5s infinite;
+    transform: scale(1.15);
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--arc-reactor-cyan) !important;
+    border-color: var(--arc-reactor-cyan) !important;
+    box-shadow: 0 0 12px var(--arc-reactor-cyan);
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #05070d;
+    font-size: 0.85em;
+    font-weight: 900;
+}
+
+/* Valyrian Steel Blade Horizontal Rule */
+.markdown-rendered hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, 
+                transparent 0%, 
+                var(--arc-reactor-cyan) 20%, 
+                var(--iron-gold) 50%, 
+                var(--power-stone) 80%, 
+                transparent 100%);
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.7);
+    margin: 2.2em 0;
+    position: relative;
+}
+
+.markdown-rendered hr::after {
+    content: "⚔️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--citadel-panel-solid);
+    padding: 0 12px;
+    font-size: 0.9em;
+}
+
+/* Valyrian Steel Data Grid Tables */
+.markdown-rendered table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: var(--citadel-radius-md);
+    overflow: hidden;
+    border: 1px solid var(--valyrian-steel) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.markdown-rendered th {
+    background-color: rgba(19, 25, 46, 0.9) !important;
+    color: var(--iron-gold) !important;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--arc-reactor-cyan) !important;
+    padding: 12px 16px;
+}
+
+.markdown-rendered td {
+    border: 1px solid rgba(100, 116, 139, 0.25) !important;
+    padding: 10px 14px;
+}
+
+.markdown-rendered tr:nth-child(even) {
+    background-color: rgba(13, 17, 31, 0.5);
+}
+
+.markdown-rendered tr:hover {
+    background-color: rgba(168, 85, 247, 0.15);
+}
+
+/* =========================================================================================
+   10. UI CHROME: NAVIGATION, MODALS & STATUS BAR
+   ========================================================================================= */
+
+/* Nav File Explorer */
+.nav-file-title, .nav-folder-title {
+    border-radius: var(--citadel-radius-sm);
+    transition: all 0.2s ease;
+}
+
+.nav-file-title:hover, .nav-folder-title:hover {
+    background: rgba(0, 240, 255, 0.15) !important;
+    color: var(--arc-reactor-cyan) !important;
+    transform: translateX(3px);
+}
+
+.nav-file-title.is-active {
+    background: linear-gradient(90deg, rgba(168, 85, 247, 0.35), rgba(0, 240, 255, 0.15)) !important;
+    color: var(--iron-gold) !important;
+    font-weight: 700;
+    border-left: 3px solid var(--power-stone);
+}
+
+/* Command Palette Stark Glass Overlay */
+.modal, .prompt {
+    border-radius: var(--citadel-radius-lg) !important;
+    border: 1px solid rgba(0, 240, 255, 0.4) !important;
+    background: rgba(11, 14, 26, 0.92) !important;
+    backdrop-filter: blur(20px) !important;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.85), 0 0 24px rgba(0, 240, 255, 0.25) !important;
+}
+
+.prompt-input {
+    border: 1px solid var(--space-stone) !important;
+    border-radius: var(--citadel-radius-md) !important;
+    background: rgba(5, 7, 13, 0.85) !important;
+    color: var(--arc-reactor-cyan) !important;
+}
+
+/* Custom Vibranium Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--valyrian-steel), var(--space-stone));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--space-stone), var(--power-stone));
+    box-shadow: 0 0 10px var(--arc-reactor-cyan);
+}
+
+/* =========================================================================================
+   11. THEME: LIGHT MODE (MARAUDER'S CITADEL PARCHMENT)
+   ========================================================================================= */
+
+.theme-light {
+    --citadel-parchment:        #f5eedc;
+    --citadel-parchment-alt:    #eae0c8;
+    --citadel-ink:              #1c1917;
+    --citadel-border-light:     #c2b28f;
+
+    --background-primary:       var(--citadel-parchment);
+    --background-primary-alt:   var(--citadel-parchment-alt);
+    --background-secondary:     #ebd9b4;
+    --background-secondary-alt: #dfc89d;
+
+    --text-normal:              var(--citadel-ink);
+    --text-muted:               #57534e;
+    --text-faint:               #78716c;
+
+    --h1-color: #6b21a8;
+    --h2-color: #0369a1;
+    --h3-color: #be123c;
+    --h4-color: #c2410c;
+    --h5-color: #047857;
+    --h6-color: #b45309;
+
+    --code-normal:              #9a3412;
+    --code-background:          #e5d7b8;
+    --tag-color:                #7c2d12;
+    --tag-background:           rgba(217, 119, 6, 0.15);
+}
+
+.theme-light .workspace {
+    background-color: var(--citadel-parchment) !important;
+}

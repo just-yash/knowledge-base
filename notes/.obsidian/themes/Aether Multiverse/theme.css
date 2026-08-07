@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital@0;1&display=swap');
+
+:root
+{
+    /* base neutral palette — used for chrome (sidebar, tabs, etc.) */
+    --dark0_x:  15,17,26;    /* #0f111a */
+    --dark0:    rgb(var(--dark0_x));
+    --dark1_x:  22,25,38;    /* #161926 */
+    --dark1:    rgb(var(--dark1_x));
+    --dark2_x:  30,34,51;    /* #1e2233 */
+    --dark2:    rgb(var(--dark2_x));
+    --dark3_x:  42,47,68;    /* #2a2f44 */
+    --dark3:    rgb(var(--dark3_x));
+
+    --light0_x: 214,217,230; /* #d6d9e6 */
+    --light0:   rgb(var(--light0_x));
+    --light1_x: 226,229,238; /* #e2e5ee */
+    --light1:   rgb(var(--light1_x));
+    --light2_x: 240,242,247; /* #f0f2f7 */
+    --light2:   rgb(var(--light2_x));
+    --light3_x: 255,255,255;
+    --light3:   rgb(var(--light3_x));
+
+    --accent0_x: 138,163,255; /* periwinkle */
+    --accent0:   rgb(var(--accent0_x));
+    --accent1_x: 255,209,102; /* warm gold */
+    --accent1:   rgb(var(--accent1_x));
+
+    /* fandom palettes, referenced below */
+    --space-bg0: #05070f;   --space-bg1: #0b0f22;   --space-text: #dbe4ff;
+    --space-h:   #a6c8ff;   --space-link: #ffd166;  --space-quote: #6c7bff;
+
+    --avg-bg0: #150505;     --avg-bg1: #1b0808;     --avg-text: #f1e3c6;
+    --avg-h:   #ffb400;     --avg-link: #ff4d4d;    --avg-quote: #b1121c;
+
+    --hp-bg0: #120a05;      --hp-bg1: #1c1006;      --hp-text: #ead9b0;
+    --hp-h:   #d4af37;      --hp-link: #8c1c26;     --hp-quote: #740001;
+
+    --got-bg0: #090c0f;      --got-bg1: #131a20;      --got-text: #cbd5df;
+    --got-h:   #eef3f8;       --got-link: #c0392b;     --got-quote: #4a6a80;
+    --got-frost: #8fb8d9;
+}
+
+body
+{
+    --accent-h: 227; /* periwinkle */
+    --accent-s: 100%;
+    --accent-l: 77%;
+
+    --link-decoration:                none;
+    --link-decoration-hover:          underline;
+    --tag-decoration:                 none;
+    --tag-padding-x:                  .5em;
+    --tag-padding-y:                  .2em;
+    --tag-radius:                     .5em;
+    --bold-weight:                    600;
+    --checkbox-radius:                4px;
+    --embed-border-left:              4px solid var(--interactive-accent);
+}
+
+/* ============ BASE THEME (chrome + default note look) ============ */
+.theme-dark
+{
+    --background-primary:            var(--dark0);
+    --background-primary-alt:        var(--dark0);
+    --background-secondary:          var(--dark1);
+    --background-secondary-alt:      var(--dark2);
+    --background-modifier-border:    var(--dark2);
+
+    --text-normal:                   var(--light2);
+    --text-faint:                    var(--light0);
+    --text-muted:                    var(--light1);
+
+    --text-accent:                   var(--accent0);
+    --text-accent-hover:             var(--accent1);
+    --link-url:                      var(--accent0);
+
+    --h1-color:                      var(--accent0);
+    --h2-color:                      var(--accent1);
+    --h3-color:                      var(--light2);
+    --h4-color:                      var(--accent0);
+    --h5-color:                      var(--accent1);
+    --h6-color:                      var(--light1);
+
+    --text-highlight-bg:             rgba(138,163,255,0.35);
+    --text-highlight-fg:              var(--dark0);
+
+    --tag-color:                     var(--accent0);
+    --tag-background:                var(--dark2);
+    --tag-background-hover:          var(--dark3);
+
+    --code-normal:                   var(--accent1);
+    --code-background:               var(--dark1);
+
+    --table-header-background:       var(--dark2);
+    --table-row-even-background:     var(--dark1);
+    --table-row-odd-background:      var(--dark2);
+    --table-row-background-hover:    var(--dark3);
+
+    --nav-item-color-hover:          var(--accent0);
+    --nav-item-color-active:         var(--accent1);
+}
+
+.theme-light
+{
+    --background-primary:            var(--light3);
+    --background-primary-alt:        var(--light3);
+    --background-secondary:          var(--light2);
+    --background-secondary-alt:      var(--light1);
+    --background-modifier-border:    var(--light1);
+
+    --text-normal:                   var(--dark2);
+    --text-faint:                    var(--dark0);
+    --text-muted:                    var(--dark1);
+
+    --text-accent:                   var(--accent0);
+    --text-accent-hover:             var(--accent1);
+    --link-url:                      var(--accent0);
+
+    --h1-color:                      var(--accent0);
+    --h2-color:                      #b8860b;
+    --h3-color:                      var(--dark2);
+    --h4-color:                      var(--accent0);
+    --h5-color:                      #b8860b;
+    --h6-color:                      var(--dark1);
+
+    --text-highlight-bg:             rgba(255,209,102,0.5);
+    --text-highlight-fg:              var(--dark0);
+
+    --tag-color:                     var(--dark3);
+    --tag-background:                var(--light1);
+    --tag-background-hover:          var(--light0);
+
+    --code-normal:                   #b8860b;
+    --code-background:               var(--light2);
+
+    --table-header-background:       var(--light1);
+    --table-row-even-background:     var(--light2);
+    --table-row-odd-background:      var(--light1);
+    --table-row-background-hover:    var(--light0);
+
+    --nav-item-color-hover:          var(--accent0);
+    --nav-item-color-active:         #b8860b;
+}
+
+table { border: 1px solid var(--background-secondary) !important; border-collapse: collapse; }
+th { font-weight: 600 !important; border: 1px solid var(--background-secondary) !important; }
+td { border-left: 1px solid var(--background-secondary) !important; border-right: 1px solid var(--background-secondary) !important; border-bottom: 1px solid var(--background-secondary) !important; }
+.markdown-rendered tbody tr:nth-child(even) { background-color: var(--table-row-even-background) !important; }
+.markdown-rendered tbody tr:nth-child(odd)  { background-color: var(--table-row-odd-background) !important; }
+.markdown-rendered mark { background-color: var(--text-highlight-bg); color: var(--text-highlight-fg); }
+
+/* ============ smooth transition when switching notes ============ */
+.markdown-preview-view, .cm-editor, .markdown-source-view {
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* shared: every fandom container needs a stacking context so its
+   particle layer sits behind real text, and needs to clip its
+   drifting gradients so they don't bleed past note edges */
+.theme-space .markdown-preview-view,
+.theme-space .cm-editor,
+.theme-space.markdown-source-view,
+.theme-avengers .markdown-preview-view,
+.theme-avengers .cm-editor,
+.theme-avengers.markdown-source-view,
+.theme-hp .markdown-preview-view,
+.theme-hp .cm-editor,
+.theme-hp.markdown-source-view,
+.theme-got .markdown-preview-view,
+.theme-got .cm-editor,
+.theme-got.markdown-source-view {
+  position: relative;
+  isolation: isolate;
+}
+.theme-space .markdown-preview-view::before,
+.theme-avengers .markdown-preview-view::before,
+.theme-hp .markdown-preview-view::before,
+.theme-got .markdown-preview-view::before,
+.theme-space .cm-editor::before,
+.theme-avengers .cm-editor::before,
+.theme-hp .cm-editor::before,
+.theme-got .cm-editor::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ============ SPACE — deep-field nebula, drifting stars, shooting star ============ */
+.theme-space .markdown-preview-view,
+.theme-space .cm-editor,
+.theme-space.markdown-source-view {
+  background:
+    radial-gradient(ellipse 900px 600px at 15% 15%, rgba(120,90,220,0.35), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 85% 70%, rgba(60,130,220,0.32), transparent 62%),
+    radial-gradient(ellipse 600px 700px at 60% 10%, rgba(210,90,170,0.2), transparent 65%),
+    linear-gradient(180deg, var(--space-bg0) 0%, var(--space-bg1) 100%);
+  background-size: 160% 160%, 160% 160%, 160% 160%, cover;
+  animation: space-nebula-drift 40s ease-in-out infinite alternate;
+  color: var(--space-text);
+}
+@keyframes space-nebula-drift {
+  0%   { background-position: 0% 0%,   100% 100%, 50% 0%,   0 0; }
+  100% { background-position: 15% 10%, 85% 90%,  60% 15%,  0 0; }
+}
+.theme-space .markdown-preview-view::before,
+.theme-space .cm-editor::before {
+  background-image:
+    radial-gradient(1.6px 1.6px at 8% 12%, #fff 100%, transparent),
+    radial-gradient(1.2px 1.2px at 22% 48%, #fff 100%, transparent),
+    radial-gradient(1.8px 1.8px at 38% 8%, #cbd5ff 100%, transparent),
+    radial-gradient(1.2px 1.2px at 52% 62%, #fff 100%, transparent),
+    radial-gradient(1.6px 1.6px at 68% 28%, #fff 100%, transparent),
+    radial-gradient(1.2px 1.2px at 78% 78%, #fff 100%, transparent),
+    radial-gradient(1.8px 1.8px at 90% 42%, #cbd5ff 100%, transparent),
+    radial-gradient(1.2px 1.2px at 12% 88%, #fff 100%, transparent),
+    radial-gradient(1.6px 1.6px at 95% 92%, #fff 100%, transparent);
+  background-size: 100% 100%;
+  animation: space-twinkle 5s ease-in-out infinite alternate;
+}
+@keyframes space-twinkle {
+  0%   { opacity: .55; }
+  50%  { opacity: 1; }
+  100% { opacity: .7; }
+}
+.theme-space .markdown-preview-view::after {
+  content: "";
+  position: absolute;
+  top: 12%;
+  left: -15%;
+  width: 90px;
+  height: 2px;
+  z-index: -1;
+  background: linear-gradient(90deg, transparent, #fff 70%, transparent);
+  border-radius: 2px;
+  box-shadow: 0 0 8px 2px rgba(255,255,255,0.7);
+  pointer-events: none;
+  animation: space-shooting-star 9s cubic-bezier(.3,.7,.4,1) infinite;
+  animation-delay: 2s;
+}
+@keyframes space-shooting-star {
+  0%   { transform: translate(0, 0) rotate(18deg); opacity: 0; }
+  4%   { opacity: 1; }
+  22%  { transform: translate(140%, 90px) rotate(18deg); opacity: 0; }
+  100% { opacity: 0; }
+}
+.theme-space h1, .theme-space h2, .theme-space h3 {
+  color: var(--space-h);
+  text-shadow: 0 0 10px rgba(120,170,255,0.6), 0 0 24px rgba(120,170,255,0.25);
+  border-bottom: 1px solid rgba(120,170,255,0.3);
+}
+.theme-space a { color: var(--space-link); }
+.theme-space a:hover { text-shadow: 0 0 6px rgba(255,209,102,0.7); }
+.theme-space blockquote { border-left: 3px solid var(--space-quote); background: rgba(108,123,255,0.1); color: var(--space-text); backdrop-filter: blur(1px); }
+.theme-space code, .theme-space pre { background: rgba(120,170,255,0.1); color: #b9f2ff; border: 1px solid rgba(120,170,255,0.15); }
+.theme-space ::selection { background: rgba(166,200,255,0.35); }
+
+/* ============ AVENGERS — arc-reactor pulse, rising embers ============ */
+.theme-avengers .markdown-preview-view,
+.theme-avengers .cm-editor,
+.theme-avengers.markdown-source-view {
+  background:
+    radial-gradient(ellipse 750px 500px at 50% 0%, rgba(255,180,0,0.22), transparent 60%),
+    radial-gradient(ellipse 900px 650px at 100% 100%, rgba(177,18,28,0.4), transparent 65%),
+    radial-gradient(ellipse 700px 500px at 0% 100%, rgba(255,77,77,0.22), transparent 60%),
+    linear-gradient(160deg, var(--avg-bg0) 0%, var(--avg-bg1) 60%, var(--avg-bg0) 100%);
+  animation: avg-reactor-pulse 4.5s ease-in-out infinite;
+  color: var(--avg-text);
+}
+@keyframes avg-reactor-pulse {
+  0%, 100% { filter: brightness(1) saturate(1); }
+  50%      { filter: brightness(1.15) saturate(1.2); }
+}
+.theme-avengers .markdown-preview-view::before,
+.theme-avengers .cm-editor::before {
+  background-image:
+    radial-gradient(1.6px 1.6px at 10% 100%, rgba(255,180,0,0.9), transparent),
+    radial-gradient(1.2px 1.2px at 28% 100%, rgba(255,100,50,0.85), transparent),
+    radial-gradient(1.8px 1.8px at 46% 100%, rgba(255,180,0,0.8), transparent),
+    radial-gradient(1.2px 1.2px at 64% 100%, rgba(255,100,50,0.85), transparent),
+    radial-gradient(1.6px 1.6px at 82% 100%, rgba(255,180,0,0.9), transparent),
+    radial-gradient(1.2px 1.2px at 95% 100%, rgba(255,100,50,0.8), transparent);
+  background-size: 100% 220px;
+  background-repeat: repeat-x, repeat-x, repeat-x, repeat-x, repeat-x, repeat-x;
+  animation: avg-embers-rise 7s linear infinite;
+}
+@keyframes avg-embers-rise {
+  from { background-position: 0 0; }
+  to   { background-position: 0 -220px; }
+}
+.theme-avengers h1, .theme-avengers h2, .theme-avengers h3 {
+  color: var(--avg-h);
+  font-family: 'Cinzel', 'Georgia', serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--avg-quote);
+  text-shadow: 0 0 8px rgba(255,180,0,0.5);
+}
+.theme-avengers a { color: var(--avg-link); font-weight: 600; }
+.theme-avengers strong { color: var(--avg-h); }
+.theme-avengers blockquote { border-left: 4px solid var(--avg-quote); background: rgba(177,18,28,0.1); color: var(--avg-text); }
+.theme-avengers code, .theme-avengers pre { background: rgba(255,180,0,0.1); color: #ffd27a; border: 1px solid rgba(255,180,0,0.2); }
+.theme-avengers hr { border-top: 2px solid var(--avg-quote); }
+.theme-avengers ::selection { background: rgba(255,180,0,0.3); }
+
+/* ============ HARRY POTTER — drifting enchanted mist, floating fireflies ============ */
+.theme-hp .markdown-preview-view,
+.theme-hp .cm-editor,
+.theme-hp.markdown-source-view {
+  background:
+    radial-gradient(ellipse 750px 550px at 25% 15%, rgba(212,175,55,0.14), transparent 60%),
+    radial-gradient(ellipse 650px 550px at 85% 55%, rgba(116,0,1,0.3), transparent 65%),
+    radial-gradient(ellipse 550px 450px at 10% 92%, rgba(212,175,55,0.1), transparent 60%),
+    linear-gradient(180deg, var(--hp-bg0) 0%, var(--hp-bg1) 100%);
+  background-size: 150% 150%, 150% 150%, 150% 150%, cover;
+  animation: hp-mist-drift 34s ease-in-out infinite alternate;
+  color: var(--hp-text);
+  font-family: 'EB Garamond', 'Georgia', 'Iowan Old Style', serif;
+}
+@keyframes hp-mist-drift {
+  0%   { background-position: 0% 0%, 100% 40%, 0% 100%, 0 0; }
+  100% { background-position: 10% 8%, 90% 50%, 8% 92%, 0 0; }
+}
+.theme-hp .markdown-preview-view::before,
+.theme-hp .cm-editor::before {
+  background-image:
+    radial-gradient(1.6px 1.6px at 18% 25%, rgba(255,223,120,0.9), transparent),
+    radial-gradient(1.2px 1.2px at 58% 12%, rgba(255,223,120,0.7), transparent),
+    radial-gradient(1.6px 1.6px at 78% 52%, rgba(255,223,120,0.85), transparent),
+    radial-gradient(1.2px 1.2px at 38% 72%, rgba(255,223,120,0.6), transparent),
+    radial-gradient(1.6px 1.6px at 88% 85%, rgba(255,223,120,0.9), transparent),
+    radial-gradient(1.2px 1.2px at 8% 60%, rgba(255,223,120,0.6), transparent);
+  background-size: 100% 100%;
+  animation: hp-fireflies-float 6s ease-in-out infinite alternate;
+}
+@keyframes hp-fireflies-float {
+  0%   { opacity: .4; transform: translateY(0); }
+  50%  { opacity: 1;  transform: translateY(-10px); }
+  100% { opacity: .5; transform: translateY(4px); }
+}
+.theme-hp h1, .theme-hp h2, .theme-hp h3 {
+  color: var(--hp-h);
+  font-family: 'Cinzel', 'Georgia', serif;
+  text-shadow: 0 0 8px rgba(212,175,55,0.4);
+  border-bottom: 1px solid rgba(212,175,55,0.35);
+}
+.theme-hp a { color: var(--hp-link); font-weight: 600; }
+.theme-hp strong { color: var(--hp-h); }
+.theme-hp em { color: #f2e2b0; }
+.theme-hp blockquote { border-left: 4px solid var(--hp-quote); background: rgba(116,0,1,0.14); color: var(--hp-text); font-style: italic; }
+.theme-hp code, .theme-hp pre { background: rgba(212,175,55,0.1); color: #f2e2b0; border: 1px solid rgba(212,175,55,0.25); }
+.theme-hp hr { border-top: 1px solid var(--hp-h); }
+.theme-hp ::selection { background: rgba(212,175,55,0.3); }
+
+/* ============ GAME OF THRONES — aurora over the Wall, falling snow ============ */
+.theme-got .markdown-preview-view,
+.theme-got .cm-editor,
+.theme-got.markdown-source-view {
+  background:
+    radial-gradient(ellipse 850px 450px at 50% 0%, rgba(143,184,217,0.18), transparent 60%),
+    radial-gradient(ellipse 650px 550px at 92% 85%, rgba(192,57,43,0.16), transparent 65%),
+    radial-gradient(ellipse 750px 450px at 8% 95%, rgba(74,106,128,0.24), transparent 60%),
+    linear-gradient(180deg, var(--got-bg0) 0%, var(--got-bg1) 100%);
+  background-size: 150% 150%, 150% 150%, 150% 150%, cover;
+  animation: got-aurora-shift 26s ease-in-out infinite alternate;
+  color: var(--got-text);
+  font-family: 'Cinzel', 'Georgia', serif;
+}
+@keyframes got-aurora-shift {
+  0%   { background-position: 40% -10%, 100% 100%, 0% 100%, 0 0; filter: hue-rotate(0deg) brightness(1); }
+  100% { background-position: 55% 0%,  85% 90%,  10% 92%, 0 0; filter: hue-rotate(10deg) brightness(1.08); }
+}
+.theme-got .markdown-preview-view::before,
+.theme-got .cm-editor::before {
+  background-image:
+    radial-gradient(1.6px 1.6px at 8% -5%, #fff 100%, transparent),
+    radial-gradient(1.2px 1.2px at 26% -5%, var(--got-frost) 100%, transparent),
+    radial-gradient(1.8px 1.8px at 44% -5%, #fff 100%, transparent),
+    radial-gradient(1.2px 1.2px at 62% -5%, var(--got-frost) 100%, transparent),
+    radial-gradient(1.6px 1.6px at 80% -5%, #fff 100%, transparent),
+    radial-gradient(1.2px 1.2px at 95% -5%, var(--got-frost) 100%, transparent);
+  background-size: 100% 260px;
+  background-repeat: repeat;
+  animation: got-snowfall 11s linear infinite;
+}
+@keyframes got-snowfall {
+  from { background-position: 0 0; }
+  to   { background-position: 30px 260px; }
+}
+.theme-got h1, .theme-got h2, .theme-got h3 {
+  color: var(--got-h);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(143,184,217,0.45);
+  border-bottom: 1px solid var(--got-quote);
+}
+.theme-got h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 4px;
+  background: linear-gradient(90deg, var(--got-quote), transparent);
+}
+.theme-got a { color: var(--got-link); font-weight: 600; }
+.theme-got strong { color: var(--got-frost); }
+.theme-got blockquote { border-left: 4px solid var(--got-quote); background: rgba(74,106,128,0.12); color: var(--got-text); font-style: italic; }
+.theme-got code, .theme-got pre { background: rgba(74,106,128,0.14); color: #dbe9f2; border: 1px solid rgba(143,184,217,0.25); }
+.theme-got hr { border-top: 1px solid var(--got-quote); }
+.theme-got ::selection { background: rgba(192,57,43,0.3); }

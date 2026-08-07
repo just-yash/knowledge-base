@@ -1,0 +1,523 @@
+/* ───────────────────────────────────────────────────────────────────────
+   10. CALLOUTS — every callout is a distinct artefact
+   Each type gets its own lore-accurate identity expressed through three
+   channels: border STYLE (double/dashed/dotted/solid + thickness),
+   background TEXTURE (ruled lines, grid, embers, stars), and icon GLOW.
+
+   ● note/abstract   = Magic Scroll      gold · double border · ruled lines
+   ● tip/hint        = Arc Schematic     cyan · dashed border · blueprint grid
+   ● info/todo       = Cosmic Wire       purple · solid thin · star-dot field
+   ● warning/caution = Royal Decree      amber · solid + top banner · decree
+   ● danger/error    = Dragon Archive    crimson · thick solid · ember glow
+   ● success/check   = Wildfire Seal     emerald · solid · clean energy
+   ● question/help   = Oracle Mirror     valyrian · dotted · reflective sheen
+   ● failure/fail    = Fallen Ward       muted crimson · solid · subdued
+   ● example         = Runestone         steel · solid · neutral
+   ● quote/cite      = Lost Manuscript   valyrian · thin solid · parchment
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* Base callout surface — glass substrate all types share */
+.theme-dark .callout {
+	border-radius: var(--ic-radius-m);
+	border: var(--mat-glass-border);
+	background: var(--ic-glass);
+	backdrop-filter: blur(10px);
+	box-shadow: var(--ic-shadow-soft);
+	overflow: hidden;
+	position: relative;
+}
+.theme-dark .callout-title {
+	font-family: var(--ic-font-display);
+	font-weight: 600;
+	letter-spacing: 0.4px;
+}
+.theme-dark .callout .callout-icon {
+	transition: filter 0.3s ease;
+}
+
+/* ── note / abstract / summary — "Magic Scroll" ─────────────────────
+   Gold parchment with faint horizontal ruled lines.
+   Double left-border evokes a scroll's folded edge.                     */
+.theme-dark .callout[data-callout="note"],
+.theme-dark .callout[data-callout="abstract"],
+.theme-dark .callout[data-callout="summary"],
+.theme-dark .callout[data-callout="tldr"] {
+	--callout-color: 217, 168, 87;
+	background:
+		repeating-linear-gradient(180deg,
+			transparent 0px, transparent 26px,
+			rgba(217, 168, 87, 0.04) 26px, rgba(217, 168, 87, 0.04) 28px),
+		linear-gradient(135deg, rgba(217, 168, 87, 0.10), rgba(19, 24, 45, 0.50));
+	border-left: 3px double var(--ic-gold);
+	box-shadow: var(--ic-shadow-soft),
+	            inset 3px 0 14px -8px rgba(217, 168, 87, 0.20);
+}
+.theme-dark .callout[data-callout="note"] .callout-icon,
+.theme-dark .callout[data-callout="abstract"] .callout-icon,
+.theme-dark .callout[data-callout="summary"] .callout-icon,
+.theme-dark .callout[data-callout="tldr"] .callout-icon {
+	filter: drop-shadow(0 0 5px rgba(217, 168, 87, 0.45));
+}
+
+/* ── tip / hint / important — "Arc Schematic" ────────────────────────
+   Cyan blueprint with a faint technical grid overlay.
+   Dashed left-border reads as a schematic cut-line.                     */
+.theme-dark .callout[data-callout="tip"],
+.theme-dark .callout[data-callout="hint"],
+.theme-dark .callout[data-callout="important"] {
+	--callout-color: 85, 230, 236;
+	background:
+		repeating-linear-gradient(90deg,
+			transparent 0px, transparent 30px,
+			rgba(85, 230, 236, 0.018) 30px, rgba(85, 230, 236, 0.018) 32px),
+		repeating-linear-gradient(0deg,
+			transparent 0px, transparent 30px,
+			rgba(85, 230, 236, 0.018) 30px, rgba(85, 230, 236, 0.018) 32px),
+		linear-gradient(135deg, rgba(85, 230, 236, 0.08), rgba(19, 24, 45, 0.50));
+	border-left: 2px dashed var(--ic-arc-cyan);
+	box-shadow: var(--ic-shadow-soft),
+	            inset 2px 0 12px -6px rgba(85, 230, 236, 0.18);
+}
+.theme-dark .callout[data-callout="tip"] .callout-title,
+.theme-dark .callout[data-callout="hint"] .callout-title,
+.theme-dark .callout[data-callout="important"] .callout-title {
+	font-family: var(--ic-font-mono);
+	text-transform: uppercase;
+	font-size: 0.88em;
+	letter-spacing: 1.2px;
+}
+.theme-dark .callout[data-callout="tip"] .callout-icon,
+.theme-dark .callout[data-callout="hint"] .callout-icon,
+.theme-dark .callout[data-callout="important"] .callout-icon {
+	filter: drop-shadow(0 0 5px rgba(85, 230, 236, 0.50));
+}
+
+/* ── info / todo — "Cosmic Wire" ─────────────────────────────────────
+   Purple space-field with tiny constellation star-dots.
+   Thin solid border with inner purple glow.                             */
+.theme-dark .callout[data-callout="info"],
+.theme-dark .callout[data-callout="todo"] {
+	--callout-color: 155, 107, 242;
+	background:
+		radial-gradient(1px 1px at 12% 20%, rgba(155, 107, 242, 0.30), transparent),
+		radial-gradient(1px 1px at 68% 55%, rgba(155, 107, 242, 0.22), transparent),
+		radial-gradient(1px 1px at 40% 82%, rgba(85, 230, 236, 0.20), transparent),
+		radial-gradient(1px 1px at 88% 15%, rgba(244, 241, 234, 0.18), transparent),
+		linear-gradient(135deg, rgba(155, 107, 242, 0.09), rgba(19, 24, 45, 0.50));
+	border-left: 2px solid var(--ic-purple);
+	box-shadow: var(--ic-shadow-soft),
+	            inset 2px 0 16px -8px rgba(155, 107, 242, 0.18);
+}
+.theme-dark .callout[data-callout="info"] .callout-icon,
+.theme-dark .callout[data-callout="todo"] .callout-icon {
+	filter: drop-shadow(0 0 5px rgba(155, 107, 242, 0.50));
+}
+
+/* ── warning / caution / attention — "Ancient Royal Decree" ──────────
+   Amber gradient with a heavy top banner — the decree's seal edge.
+   Solid left + solid top double-edge gives a framed-proclamation look.  */
+.theme-dark .callout[data-callout="warning"],
+.theme-dark .callout[data-callout="caution"],
+.theme-dark .callout[data-callout="attention"] {
+	--callout-color: 240, 168, 96;
+	background: linear-gradient(135deg,
+		rgba(240, 168, 96, 0.10), rgba(19, 24, 45, 0.50));
+	border-left: 3px solid var(--ic-amber);
+	border-top: 2px solid rgba(240, 168, 96, 0.35);
+	box-shadow: var(--ic-shadow-soft),
+	            inset 0 3px 14px -8px rgba(240, 168, 96, 0.18),
+	            inset 3px 0 14px -8px rgba(240, 168, 96, 0.12);
+}
+.theme-dark .callout[data-callout="warning"] .callout-title,
+.theme-dark .callout[data-callout="caution"] .callout-title,
+.theme-dark .callout[data-callout="attention"] .callout-title {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.theme-dark .callout[data-callout="warning"] .callout-icon,
+.theme-dark .callout[data-callout="caution"] .callout-icon,
+.theme-dark .callout[data-callout="attention"] .callout-icon {
+	filter: drop-shadow(0 0 6px rgba(240, 168, 96, 0.50));
+}
+
+/* ── danger / error / bug — "Dragon Archive" ─────────────────────────
+   Crimson with a smouldering ember glow in the lower-right corner.
+   Thick 4px border — imposing, unmissable. Faint inner fire shadow.     */
+.theme-dark .callout[data-callout="danger"],
+.theme-dark .callout[data-callout="error"],
+.theme-dark .callout[data-callout="bug"] {
+	--callout-color: 225, 84, 75;
+	background:
+		radial-gradient(ellipse 55% 70% at 92% 88%,
+			rgba(225, 84, 75, 0.09), transparent 65%),
+		linear-gradient(135deg, rgba(225, 84, 75, 0.10), rgba(19, 24, 45, 0.50));
+	border-left: 4px solid var(--ic-crimson);
+	box-shadow: var(--ic-shadow-soft),
+	            inset 4px 0 18px -8px rgba(225, 84, 75, 0.22);
+}
+.theme-dark .callout[data-callout="danger"] .callout-icon,
+.theme-dark .callout[data-callout="error"] .callout-icon,
+.theme-dark .callout[data-callout="bug"] .callout-icon {
+	filter: drop-shadow(0 0 7px rgba(225, 84, 75, 0.60));
+}
+
+/* ── success / check / done — "Wildfire Seal" ────────────────────────
+   Emerald energy with clean inner glow — an approval ward.             */
+.theme-dark .callout[data-callout="success"],
+.theme-dark .callout[data-callout="check"],
+.theme-dark .callout[data-callout="done"] {
+	--callout-color: 79, 201, 138;
+	background: linear-gradient(135deg,
+		rgba(79, 201, 138, 0.09), rgba(19, 24, 45, 0.50));
+	border-left: 3px solid var(--ic-emerald);
+	box-shadow: var(--ic-shadow-soft),
+	            inset 3px 0 14px -8px rgba(79, 201, 138, 0.18);
+}
+.theme-dark .callout[data-callout="success"] .callout-icon,
+.theme-dark .callout[data-callout="check"] .callout-icon,
+.theme-dark .callout[data-callout="done"] .callout-icon {
+	filter: drop-shadow(0 0 5px rgba(79, 201, 138, 0.50));
+}
+
+/* ── question / help / faq — "Oracle Mirror" ─────────────────────────
+   Frosted glass with a diagonal reflective sheen — oracular, mysterious.
+   Dotted border suggests esoteric, unknowable edges.                    */
+.theme-dark .callout[data-callout="question"],
+.theme-dark .callout[data-callout="help"],
+.theme-dark .callout[data-callout="faq"] {
+	--callout-color: 199, 212, 227;
+	background:
+		linear-gradient(155deg,
+			rgba(199, 212, 227, 0.06) 0%, transparent 35%,
+			rgba(85, 230, 236, 0.03) 65%, rgba(199, 212, 227, 0.05) 100%),
+		var(--ic-glass);
+	border-left: 2px dotted var(--ic-valyrian);
+	backdrop-filter: blur(14px);
+}
+.theme-dark .callout[data-callout="question"] .callout-icon,
+.theme-dark .callout[data-callout="help"] .callout-icon,
+.theme-dark .callout[data-callout="faq"] .callout-icon {
+	filter: drop-shadow(0 0 5px rgba(199, 212, 227, 0.40));
+}
+
+/* ── failure / fail / missing — "Fallen Ward" ────────────────────────
+   Muted crimson — a dimmed protective ward that has broken.             */
+.theme-dark .callout[data-callout="failure"],
+.theme-dark .callout[data-callout="fail"],
+.theme-dark .callout[data-callout="missing"] {
+	--callout-color: 180, 70, 65;
+	background: linear-gradient(135deg,
+		rgba(180, 70, 65, 0.07), rgba(19, 24, 45, 0.55));
+	border-left: 3px solid rgba(180, 70, 65, 0.65);
+}
+
+/* ── example — "Runestone" ───────────────────────────────────────────
+   Neutral steel — informational, functional, no drama.                  */
+.theme-dark .callout[data-callout="example"] {
+	--callout-color: 124, 138, 163;
+	background: linear-gradient(135deg,
+		rgba(124, 138, 163, 0.08), rgba(19, 24, 45, 0.50));
+	border-left: 2px solid var(--ic-valyrian-dim);
+}
+
+/* ── quote / cite — "Lost Manuscript" ────────────────────────────────
+   Aged parchment with faint manuscript ruled lines.
+   Elegant italic font, subtle gold warmth — a page from a lost tome.    */
+.theme-dark .callout[data-callout="quote"],
+.theme-dark .callout[data-callout="cite"] {
+	--callout-color: 124, 138, 163;
+	background:
+		repeating-linear-gradient(180deg,
+			rgba(217, 168, 87, 0.04) 0px, rgba(217, 168, 87, 0.04) 2px,
+			transparent 2px, transparent 26px),
+		var(--mat-parchment-bg);
+	border-left: 2px solid var(--ic-valyrian-dim);
+	font-family: var(--ic-font-elegant);
+	font-style: italic;
+}
+.theme-dark .callout[data-callout="quote"] .callout-title,
+.theme-dark .callout[data-callout="cite"] .callout-title {
+	font-family: var(--ic-font-elegant);
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: 0.6px;
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   11. CODE BLOCKS — holographic terminal × enchanted spellbook
+   Material: ARC-REACTOR METAL shell + frosted glass depth
+   Texture:  faint horizontal scanlines (repeating-linear-gradient)
+   Frame:    corner-bracket HUD marks at all four corners (::after)
+   Shimmer:  energy trace across top edge (::before, reuses legacy anim)
+   Syntax:   each token family gets a coloured text-shadow glow
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* All code surfaces: scanline texture + reactor depth */
+.theme-dark .cm-s-obsidian .HyperMD-codeblock,
+.theme-dark pre.language-,
+.theme-dark .markdown-rendered pre {
+	background:
+		/* Scanlines: 1 px tinted line every 4 px — barely visible */
+		repeating-linear-gradient(0deg,
+			transparent 0px, transparent 3px,
+			rgba(85, 230, 236, 0.014) 3px, rgba(85, 230, 236, 0.014) 4px),
+		/* Base depth */
+		linear-gradient(180deg, rgba(9, 13, 24, 0.92), rgba(5, 7, 14, 0.96));
+	border: var(--mat-reactor-border);
+	border-radius: var(--ic-radius-m);
+	box-shadow:
+		inset 0 0 30px -14px rgba(85, 230, 236, 0.25),
+		var(--mat-glass-shadow);
+	position: relative;
+}
+
+/* Reading-mode blocks: shimmer line + corner-bracket frame */
+.theme-dark .markdown-rendered pre {
+	overflow: hidden;
+}
+
+/* Shimmer trace along the top edge */
+.theme-dark .markdown-rendered pre::before {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; right: 0; height: 1px;
+	background: linear-gradient(90deg, transparent, rgba(85, 230, 236, 0.6), transparent);
+	background-size: 200% 100%;
+	animation: ic-status-shimmer 10s linear infinite;
+}
+
+/* Corner-bracket HUD frame — four fading bracket marks.
+   Primary corners (TL, BR) brighter; secondary (TR, BL) dimmer.
+   Pure background-image, no pseudo-element conflict.                    */
+.theme-dark .markdown-rendered pre::after {
+	content: "";
+	position: absolute;
+	inset: 7px;
+	pointer-events: none;
+	z-index: 1;
+	background:
+		/* ┌ Top-left: horizontal */
+		linear-gradient(90deg, rgba(85, 230, 236, 0.22), transparent)
+			no-repeat top left / 24px 1px,
+		/* ┌ Top-left: vertical */
+		linear-gradient(180deg, rgba(85, 230, 236, 0.22), transparent)
+			no-repeat top left / 1px 24px,
+		/* ┘ Bottom-right: horizontal */
+		linear-gradient(270deg, rgba(85, 230, 236, 0.22), transparent)
+			no-repeat bottom right / 24px 1px,
+		/* ┘ Bottom-right: vertical */
+		linear-gradient(0deg, rgba(85, 230, 236, 0.22), transparent)
+			no-repeat bottom right / 1px 24px,
+		/* ┐ Top-right: horizontal (dimmer) */
+		linear-gradient(270deg, rgba(85, 230, 236, 0.10), transparent)
+			no-repeat top right / 18px 1px,
+		/* ┐ Top-right: vertical */
+		linear-gradient(180deg, rgba(85, 230, 236, 0.10), transparent)
+			no-repeat top right / 1px 18px,
+		/* └ Bottom-left: horizontal */
+		linear-gradient(90deg, rgba(85, 230, 236, 0.10), transparent)
+			no-repeat bottom left / 18px 1px,
+		/* └ Bottom-left: vertical */
+		linear-gradient(0deg, rgba(85, 230, 236, 0.10), transparent)
+			no-repeat bottom left / 1px 18px;
+}
+
+/* Inline code — reactor-tinted chip with subtle glow */
+.theme-dark code:not(.is-loaded),
+.theme-dark .cm-inline-code {
+	font-family: var(--ic-font-mono);
+	background: rgba(85, 230, 236, 0.08);
+	color: var(--ic-arc-cyan);
+	border: 1px solid rgba(85, 230, 236, 0.15);
+	border-radius: 4px;
+	padding: 0.1em 0.4em;
+	text-shadow: 0 0 6px rgba(85, 230, 236, 0.18);
+}
+.theme-dark .markdown-rendered pre code {
+	font-family: var(--ic-font-mono);
+	color: var(--ic-valyrian);
+	text-shadow: none;
+}
+
+/* Syntax token glow — each token family gets its own coloured aura */
+.theme-dark .token.keyword  { color: var(--ic-purple);      text-shadow: 0 0 8px rgba(155, 107, 242, 0.30); }
+.theme-dark .token.string   { color: var(--ic-emerald);     text-shadow: 0 0 8px rgba(79, 201, 138, 0.25); }
+.theme-dark .token.function { color: var(--ic-gold-bright); text-shadow: 0 0 8px rgba(240, 200, 120, 0.25); }
+.theme-dark .token.number   { color: var(--ic-amber);       text-shadow: 0 0 8px rgba(240, 168, 96, 0.25); }
+.theme-dark .token.comment  { color: var(--ic-text-faint); font-style: italic; text-shadow: none; }
+.theme-dark .token.operator,
+.theme-dark .token.punctuation { color: var(--ic-valyrian-dim); }
+
+/* Copy-code button — reactor chip */
+.theme-dark .copy-code-button {
+	font-family: var(--ic-font-mono);
+	background: rgba(85, 230, 236, 0.12);
+	color: var(--ic-arc-cyan);
+	border: 1px solid rgba(85, 230, 236, 0.25);
+	border-radius: var(--ic-radius-s);
+	transition: box-shadow 0.25s ease, transform 0.15s ease;
+}
+.theme-dark .copy-code-button:hover {
+	box-shadow: var(--ic-glow-cyan);
+	transform: translateY(-1px);
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   12. TABLES — valyrian steel ledger
+   Material: VALYRIAN STEEL (header) / FROSTED GLASS (body)
+   Kept clean for legibility — steel header with bevel, subtle row
+   hover, and clear column separation.  Don't over-decorate.
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-dark table {
+	border: var(--mat-steel-border);
+	border-radius: var(--ic-radius-m);
+	overflow: hidden;
+	background: var(--ic-glass);
+}
+.theme-dark thead tr {
+	background: var(--mat-steel-bg);
+	box-shadow: var(--mat-steel-highlight);
+}
+.theme-dark th {
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold);
+	font-weight: 600;
+	letter-spacing: 0.3px;
+	border-bottom: 1px solid rgba(217, 168, 87, 0.25);
+}
+.theme-dark td {
+	border-color: rgba(199, 212, 227, 0.07);
+}
+.theme-dark tbody tr {
+	transition: background 0.2s ease;
+}
+.theme-dark tbody tr:nth-child(even) {
+	background: rgba(199, 212, 227, 0.02);
+}
+.theme-dark tbody tr:hover {
+	background: rgba(85, 230, 236, 0.05);
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   13. TAGS — small gemstones
+   Pill-shaped, purple-cyan gradient.  Hover lifts + adds glow.
+   Kept compact — tags appear inline and must not disrupt reading flow.
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-dark .tag,
+.theme-dark a.tag {
+	font-family: var(--ic-font-mono);
+	font-size: 0.78em;
+	background: linear-gradient(135deg, rgba(155, 107, 242, 0.18), rgba(85, 230, 236, 0.10));
+	border: 1px solid rgba(155, 107, 242, 0.28);
+	color: var(--ic-purple);
+	border-radius: 999px;
+	padding: 0.12em 0.7em;
+	transition: box-shadow 0.25s ease, transform 0.2s ease, color 0.25s ease;
+}
+.theme-dark .tag:hover {
+	box-shadow: var(--ic-glow-purple);
+	transform: translateY(-1px);
+	color: var(--ic-starlight);
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   14. LISTS — legible hierarchy with subtle depth cues
+   Gold bullets (unordered), arc-cyan numerals (ordered).
+   Nested lists get a faint left indent-guide so hierarchy is visible
+   even in long outlines.  Legibility > decoration.
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-dark .cm-line > .list-bullet::after,
+.theme-dark ul > li::marker {
+	color: var(--ic-gold);
+}
+.theme-dark ol > li::marker {
+	color: var(--ic-arc-cyan);
+	font-family: var(--ic-font-mono);
+	font-weight: 500;
+}
+.theme-dark ul li, .theme-dark ol li {
+	line-height: 1.7;
+}
+/* Nested-list indent guides — faint steel left-border at each level */
+.theme-dark .markdown-rendered ul ul,
+.theme-dark .markdown-rendered ol ol,
+.theme-dark .markdown-rendered ul ol,
+.theme-dark .markdown-rendered ol ul {
+	border-left: 1px solid rgba(199, 212, 227, 0.06);
+	margin-left: 0.15em;
+	padding-left: 1.2em;
+}
+/* Deeper nesting: slightly brighter guide so depth stays legible */
+.theme-dark .markdown-rendered ul ul ul,
+.theme-dark .markdown-rendered ol ol ol {
+	border-left-color: rgba(199, 212, 227, 0.09);
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   15. PROPERTIES PANEL — crystal frontmatter
+   Material: FROSTED GLASS
+   Property keys styled as small-cap sigils for visual weight.
+   Hover highlight on individual properties for scannability.
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-dark .metadata-container {
+	background: var(--mat-glass-bg);
+	border: var(--mat-glass-border);
+	border-radius: var(--ic-radius-m);
+	backdrop-filter: blur(10px);
+	box-shadow: var(--mat-glass-highlight);
+}
+.theme-dark .metadata-property {
+	border-radius: var(--ic-radius-s);
+	transition: background 0.2s ease;
+}
+.theme-dark .metadata-property:hover {
+	background: rgba(85, 230, 236, 0.04);
+}
+.theme-dark .metadata-property-key-input,
+.theme-dark .metadata-property-key {
+	font-family: var(--ic-font-body);
+	color: var(--ic-valyrian);
+	font-weight: 600;
+	font-variant: small-caps;
+	letter-spacing: 0.5px;
+}
+.theme-dark .metadata-property-icon { color: var(--ic-arc-cyan); }
+.theme-dark .metadata-properties-heading .metadata-properties-title {
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold);
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	font-size: 0.78em;
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   16. BACKLINKS PANE — knowledge-graph filaments
+   Functional panel with subtle interactive depth.  Matched-text gets
+   a gold glow highlight.  File titles slide on hover for liveness.
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-dark .backlink-pane .tree-item-self,
+.theme-dark .backlink-pane .search-result-file-title {
+	font-family: var(--ic-font-body);
+	color: var(--ic-valyrian);
+	border-radius: var(--ic-radius-s);
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+.theme-dark .backlink-pane .search-result-file-title:hover {
+	color: var(--ic-arc-cyan);
+	transform: translateX(3px);
+}
+.theme-dark .search-result-file-matches .search-result-file-match {
+	border-left: 2px solid rgba(85, 230, 236, 0.25);
+	border-radius: 0 var(--ic-radius-s) var(--ic-radius-s) 0;
+	transition: border-color 0.2s ease, background 0.2s ease;
+}
+.theme-dark .search-result-file-matches .search-result-file-match:hover {
+	border-left-color: var(--ic-arc-cyan);
+	background: rgba(85, 230, 236, 0.03);
+}
+.theme-dark span.search-result-file-matched-text {
+	background: rgba(217, 168, 87, 0.25);
+	color: var(--ic-starlight);
+	border-radius: 3px;
+	box-shadow: 0 0 8px rgba(217, 168, 87, 0.18);
+}

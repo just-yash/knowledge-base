@@ -1,0 +1,276 @@
+/* ───────────────────────────────────────────────────────────────────────
+   02-BASE-TYPOGRAPHY.CSS — Sanctuary of Manuscripts & Illuminated Text
+   ─────────────────────────────────────────────────────────────────────── */
+
+.theme-dark {
+	--background-primary:               var(--ic-void);
+	--background-primary-alt:           var(--ic-void-2);
+	--background-secondary:             var(--ic-panel);
+	--background-secondary-alt:         var(--ic-panel-2);
+	--background-modifier-border:       rgba(199, 212, 227, 0.08);
+	--background-modifier-border-hover: rgba(85, 230, 236, 0.25);
+	--background-modifier-border-focus: var(--ic-arc-cyan);
+	--background-modifier-hover:        rgba(155, 107, 242, 0.08);
+	--background-modifier-active-hover: rgba(155, 107, 242, 0.14);
+	--background-modifier-form-field:   rgba(9, 12, 22, 0.75);
+	--background-modifier-box-shadow:   rgba(0, 0, 0, 0.55);
+	--background-modifier-cover:        rgba(5, 6, 11, 0.75);
+	--background-modifier-error:        var(--ic-crimson);
+	--background-modifier-success:      var(--ic-emerald);
+
+	--text-normal:         var(--ic-text-normal);
+	--text-muted:          var(--ic-text-muted);
+	--text-faint:          var(--ic-text-faint);
+	--text-accent:         var(--ic-gold);
+	--text-accent-hover:   var(--ic-gold-bright);
+	--text-on-accent:      var(--ic-void);
+	--text-error:          var(--ic-crimson);
+	--text-selection:      rgba(155, 107, 242, 0.35); /* Magic */
+	--text-highlight-bg:   rgba(217, 168, 87, 0.28); /* Knowledge */
+
+	--interactive-normal:       var(--ic-panel-2);
+	--interactive-hover:        rgba(85, 230, 236, 0.10); /* Tech */
+	--interactive-accent:       var(--ic-gold);
+	--interactive-accent-hsl:   40, 65%, 60%;
+	--interactive-accent-hover: var(--ic-gold-bright);
+
+	--h1-color: var(--ic-gold-bright);
+	--h2-color: var(--ic-gold);
+	--h3-color: var(--ic-gold); /* Was cyan */
+	--h4-color: var(--ic-valyrian);
+	--h5-color: var(--ic-valyrian);
+	--h6-color: var(--ic-text-muted);
+
+	--bold-color:   var(--ic-starlight);
+	--italic-color: var(--ic-purple);
+
+	--link-color:            var(--ic-gold);
+	--link-color-hover:      var(--ic-gold-bright);
+	--link-unresolved-color: var(--ic-crimson);
+	--link-external-color:   var(--ic-gold-bright);
+
+	--code-normal:     var(--ic-arc-cyan);
+	--code-background: rgba(9, 13, 24, 0.85);
+	--code-comment:    var(--ic-text-faint);
+
+	--titlebar-background:         var(--ic-void-2);
+	--titlebar-background-focused: var(--ic-void-2);
+	--titlebar-text-color:         var(--ic-valyrian);
+
+	--divider-color:   rgba(199, 212, 227, 0.08);
+	--font-interface:  var(--ic-font-body);
+	--font-text:       var(--ic-font-body);
+	--font-monospace:  var(--ic-font-mono);
+}
+
+/* Semi-translucent Editor Leaves allowing space atmosphere to shine through */
+.theme-dark :is(.workspace-leaf, .workspace-leaf-content) {
+	background-color: rgba(6, 9, 18, 0.76) !important;
+	backdrop-filter: blur(14px) saturate(150%);
+}
+
+/* Dragon Vellum Manuscript Ruled Text View */
+.theme-dark :is(.markdown-preview-view, .markdown-source-view, .cm-editor) {
+	font-family: var(--ic-font-body);
+	color: var(--ic-text-normal);
+	letter-spacing: 0.15px;
+	line-height: 1.75;
+}
+
+/* ── ILLUMINATED ORNAMENTAL HEADINGS (HARRY POTTER × GOT) ─────────────── */
+.theme-dark :is(h1, h2, h3, h4, h5, h6) {
+	font-family: var(--ic-font-display);
+	font-weight: 600;
+	letter-spacing: 0.6px;
+	position: relative;
+	margin-top: 1.4em;
+	margin-bottom: 0.6em;
+}
+
+.theme-dark h1 {
+	font-size: 2.4em;
+	font-weight: 700;
+	background: linear-gradient(100deg, var(--ic-gold-bright) 0%, var(--ic-gold) 50%, var(--ic-arc-cyan) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-bottom: 0.15em;
+	filter: drop-shadow(0 0 16px rgba(217, 168, 87, 0.22));
+	text-align: center;
+}
+
+.theme-dark :is(.markdown-rendered, .cm-sizer) h1::after {
+	content: "✦";
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 0.45em;
+	color: var(--ic-gold-bright);
+	line-height: 1;
+	margin-top: 0.8em;
+	-webkit-text-fill-color: var(--ic-gold-bright); /* Override the text gradient for the star */
+	background: linear-gradient(90deg, transparent 0%, rgba(217, 168, 87, 0.4) 50%, transparent 100%);
+	background-size: 100% 1px;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-shadow: 0 0 12px rgba(217, 168, 87, 0.8);
+	opacity: 0.8;
+}
+
+.theme-dark h2 {
+	color: var(--ic-gold);
+	font-size: 1.6em;
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid rgba(217, 168, 87, 0.16);
+}
+
+.theme-dark h3 {
+	color: var(--ic-arc-cyan);
+	font-size: 1.3em;
+	letter-spacing: 0.4px;
+}
+
+.theme-dark h4 {
+	color: var(--ic-valyrian);
+	font-size: 1.12em;
+	font-family: var(--ic-font-body);
+	font-weight: 700;
+}
+
+.theme-dark :is(h5, h6) {
+	color: var(--ic-text-muted);
+	font-family: var(--ic-font-body);
+	text-transform: uppercase;
+	font-size: 0.85em;
+	letter-spacing: 1.4px;
+}
+
+/* Illuminated Italics & Bold */
+.theme-dark em {
+	font-family: var(--ic-font-elegant);
+	font-style: italic;
+	color: var(--ic-purple);
+	font-size: 1.08em;
+	text-shadow: 0 0 6px rgba(155, 107, 242, 0.20);
+}
+
+.theme-dark strong {
+	color: var(--ic-starlight);
+	font-weight: 700;
+}
+
+/* ── LIQUID CYAN & GOLD INK HYPERLINKS ──────────────────────────────── */
+.theme-dark :is(a.internal-link, a.external-link, .cm-link, .cm-hmd-internal-link) {
+	color: var(--ic-arc-cyan);
+	text-decoration: none;
+	background-image: linear-gradient(var(--ic-arc-cyan), var(--ic-arc-cyan));
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 1px;
+	transition: background-size 0.35s ease, color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.theme-dark :is(a.internal-link:hover, a.external-link:hover) {
+	color: var(--ic-gold-bright);
+	background-image: linear-gradient(var(--ic-gold-bright), var(--ic-gold-bright));
+	background-size: 100% 1px;
+	text-shadow: 0 0 12px rgba(240, 200, 120, 0.50);
+}
+
+.theme-dark a.internal-link.is-unresolved {
+	color: var(--ic-crimson);
+	opacity: 0.75;
+}
+
+/* ── ILLUMINATED MANUSCRIPT BLOCKQUOTES ──────────────────────────────── */
+.theme-dark blockquote {
+	font-family: var(--ic-font-elegant);
+	font-style: italic;
+	font-size: 1.1em;
+	color: var(--ic-valyrian);
+	border-left: 3px double var(--ic-gold);
+	background: linear-gradient(90deg, rgba(217, 168, 87, 0.08) 0%, transparent 80%);
+	padding: 0.8em 1.2em;
+	border-radius: 0 var(--ic-radius-m) var(--ic-radius-m) 0;
+	margin: 1.4em 0;
+	box-shadow: inset 3px 0 14px -8px rgba(217, 168, 87, 0.25);
+}
+
+/* ── ENCHANTED DIVIDERS ──────────────────────────────────────────────── */
+.theme-dark hr {
+	border: none;
+	height: 1px;
+	margin: 3.5em 0;
+	background: linear-gradient(90deg, transparent, var(--ic-gold) 40%, transparent);
+	opacity: 0.8;
+	position: relative;
+	overflow: visible;
+}
+.theme-dark hr::after {
+	content: "⟡"; /* Magical diamond rune */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.2em;
+	color: var(--ic-purple); /* Magic */
+	background: var(--ic-void); /* Cut out the line behind the rune */
+	padding: 0 10px;
+	text-shadow: 0 0 10px rgba(155, 107, 242, 0.8); /* Purple glow */
+}
+
+/* ── RUNE ACTIVATION CHECKBOXES ─────────────────────────────────────── */
+.theme-dark .checkbox-container {
+	--checkbox-radius: 4px;
+	background: rgba(13, 17, 32, 0.70);
+	border: 1.5px solid var(--ic-valyrian-dim);
+	transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.theme-dark .checkbox-container:hover {
+	border-color: var(--ic-arc-cyan);
+	box-shadow: 0 0 8px rgba(85, 230, 236, 0.30);
+}
+
+.theme-dark .checkbox-container.is-checked {
+	background: linear-gradient(135deg, var(--ic-emerald), #2f9e6c);
+	border-color: var(--ic-emerald);
+	box-shadow: 0 0 14px rgba(79, 201, 138, 0.60);
+}
+
+/* ── RUNIC BULLET POINTS ────────────────────────────────────────────── */
+/* Reading Mode */
+.theme-dark .markdown-rendered ul {
+	list-style: none;
+	padding-left: 1.5em;
+}
+.theme-dark .markdown-rendered ul > li {
+	position: relative;
+}
+.theme-dark .markdown-rendered ul > li::before {
+	content: "✧"; /* Star rune */
+	position: absolute;
+	left: -1.2em;
+	top: 0.1em;
+	color: rgba(217, 168, 87, 0.6); /* Gold */
+	font-size: 0.9em;
+	text-shadow: 0 0 5px rgba(217, 168, 87, 0.4);
+}
+.theme-dark .markdown-rendered ul > li > ul > li::before {
+	content: "⟡"; /* Diamond rune for nested */
+	color: rgba(155, 107, 242, 0.6); /* Purple */
+	font-size: 0.8em;
+	left: -1.3em;
+}
+
+/* Live Preview Mode */
+.theme-dark .cm-formatting-list-ul {
+	color: rgba(217, 168, 87, 0.6) !important;
+	text-shadow: 0 0 5px rgba(217, 168, 87, 0.4);
+}
+
+.theme-dark ol > li::marker {
+	color: var(--ic-purple);
+	font-family: var(--ic-font-display);
+	font-weight: 600;
+}

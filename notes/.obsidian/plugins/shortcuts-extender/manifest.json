@@ -1,0 +1,9 @@
+{
+  "id": "shortcuts-extender",
+  "name": "Shortcuts extender",
+  "version": "3.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Adds editor commands for markdown formatting and inserting special symbols without switching keyboard layout.",
+  "author": "kitchenrunner",
+  "isDesktopOnly": false
+}

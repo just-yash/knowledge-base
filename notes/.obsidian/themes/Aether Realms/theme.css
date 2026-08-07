@@ -1,0 +1,690 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   AETHER REALMS  v2.0
+   "Knowledge forged in starlight, written in dragonfire, sealed with magic."
+
+   Four realms woven into one visual language:
+   • Space          – deep void, layered nebulae, living starfield
+   • Avengers       – arc-reactor cyan, Infinity Stone headings, holographic edges
+   • Harry Potter   – parchment glow, house golds, Lumos hover spells
+   • Game of Thrones– Valyrian steel, frost, dragonfire, epic hierarchy
+
+   Dark mode is the designed experience. Light mode is a soft Citadel library.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* ─────────────────────────────────────────────────────────────────────────
+   1. COLOR TOKENS
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark {
+  /* Void & panels */
+  --ar-void:            #05070f;
+  --ar-deep:            #0a0e1a;
+  --ar-panel:           #0f1524;
+  --ar-panel-alt:       #151d30;
+  --ar-steel:           #1b2438;
+  --ar-border:          #26314a;
+
+  /* Accents */
+  --ar-arc:             #00e5ff;          /* arc reactor / space cyan */
+  --ar-arc-dim:         #00b8d4;
+  --ar-ice:             #b8f0ff;
+  --ar-gold:            #d4af37;          /* Lannister / Gryffindor / Iron Man */
+  --ar-gold-soft:       #e8c86a;
+  --ar-purple:          #a78bfa;          /* Power Stone / magic */
+  --ar-crimson:         #f87171;          /* Reality / Targaryen / Avengers red */
+  --ar-emerald:         #34d399;          /* Time Stone / Slytherin */
+  --ar-amber:           #fb923c;          /* Soul Stone */
+  --ar-silver:          #94a3b8;          /* Valyrian steel */
+
+  /* Text */
+  --ar-text:            #e8eef7;
+  --ar-text-muted:      #94a3b8;
+  --ar-text-faint:      #5c6b85;
+
+  /* Fonts */
+  --ar-font-heading:    'Cinzel', Georgia, serif;
+  --ar-font-body:       'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ar-font-code:       'JetBrains Mono', 'SF Mono', Consolas, monospace;
+
+  /* ── Map to Obsidian variables ─────────────────────────────────────── */
+  --background-primary:             var(--ar-void);
+  --background-primary-alt:         var(--ar-deep);
+  --background-secondary:           var(--ar-panel);
+  --background-secondary-alt:       var(--ar-panel-alt);
+  --background-modifier-border:     var(--ar-border);
+  --background-modifier-border-hover: var(--ar-arc-dim);
+  --background-modifier-border-focus: var(--ar-arc);
+  --background-modifier-hover:      rgba(0, 229, 255, 0.07);
+  --background-modifier-active-hover: rgba(0, 229, 255, 0.12);
+  --background-modifier-form-field: var(--ar-panel);
+  --background-modifier-error:      rgba(248, 113, 113, 0.15);
+  --background-modifier-success:    rgba(52, 211, 153, 0.15);
+  --background-modifier-message:    var(--ar-steel);
+  --background-modifier-cover:      rgba(5, 7, 15, 0.88);
+
+  --text-normal:                    var(--ar-text);
+  --text-muted:                     var(--ar-text-muted);
+  --text-faint:                     var(--ar-text-faint);
+  --text-on-accent:                 #05070f;
+  --text-error:                     var(--ar-crimson);
+  --text-success:                   var(--ar-emerald);
+  --text-accent:                    var(--ar-arc);
+  --text-accent-hover:              var(--ar-ice);
+  --text-selection:                 rgba(167, 139, 250, 0.28);
+  --text-highlight-bg:              rgba(212, 175, 55, 0.28);
+
+  --interactive-normal:             var(--ar-steel);
+  --interactive-hover:              var(--ar-panel-alt);
+  --interactive-accent:             var(--ar-arc);
+  --interactive-accent-hsl:         187, 100%, 50%;
+  --interactive-accent-hover:       var(--ar-ice);
+
+  --font-interface:                 var(--ar-font-body);
+  --font-text:                      var(--ar-font-body);
+  --font-monospace:                 var(--ar-font-code);
+
+  --h1-color:                       var(--ar-gold);
+  --h2-color:                       var(--ar-arc);
+  --h3-color:                       var(--ar-purple);
+  --h4-color:                       var(--ar-ice);
+  --h5-color:                       var(--ar-emerald);
+  --h6-color:                       var(--ar-amber);
+
+  --bold-color:                     var(--ar-gold);
+  --italic-color:                   var(--ar-purple);
+  --link-color:                     var(--ar-arc);
+  --link-color-hover:               var(--ar-ice);
+  --link-unresolved-color:          var(--ar-text-faint);
+  --link-external-color:            var(--ar-arc);
+
+  --tag-color:                      var(--ar-purple);
+  --tag-background:                 rgba(167, 139, 250, 0.12);
+  --tag-background-hover:           rgba(167, 139, 250, 0.22);
+  --tag-border-color:               rgba(167, 139, 250, 0.35);
+
+  --code-background:                #080c18;
+  --code-normal:                    var(--ar-text);
+  --code-property:                  var(--ar-arc);
+  --code-value:                     var(--ar-gold);
+  --code-string:                    var(--ar-gold-soft);
+  --code-function:                  var(--ar-purple);
+  --code-important:                 var(--ar-crimson);
+  --code-comment:                   var(--ar-text-faint);
+  --code-tag:                       var(--ar-arc);
+  --code-keyword:                   var(--ar-arc);
+
+  --blockquote-border-color:        var(--ar-gold);
+  --blockquote-background-color:    rgba(212, 175, 55, 0.06);
+
+  --checkbox-color:                 var(--ar-purple);
+  --checkbox-color-hover:           var(--ar-ice);
+  --checkbox-border-color:          var(--ar-text-faint);
+  --checkbox-border-color-hover:    var(--ar-purple);
+
+  --scrollbar-thumb-bg:             rgba(0, 229, 255, 0.22);
+  --scrollbar-active-thumb-bg:      rgba(0, 229, 255, 0.45);
+  --scrollbar-bg:                   transparent;
+
+  --table-header-background:        var(--ar-panel-alt);
+  --table-header-border-color:      var(--ar-gold);
+  --table-border-color:             var(--ar-border);
+  --table-row-alt-background:       rgba(21, 29, 48, 0.45);
+  --table-row-background-hover:     rgba(0, 229, 255, 0.06);
+
+  --divider-color:                  var(--ar-border);
+  --hr-color:                       var(--ar-border);
+
+  --titlebar-background:            var(--ar-void);
+  --titlebar-background-focused:    var(--ar-void);
+  --titlebar-text-color:            var(--ar-silver);
+
+  --ribbon-background:              var(--ar-void);
+  --ribbon-background-collapsed:    var(--ar-void);
+
+  --nav-item-color:                 var(--ar-silver);
+  --nav-item-color-hover:           var(--ar-text);
+  --nav-item-color-active:          var(--ar-text);
+  --nav-item-background-hover:      rgba(0, 229, 255, 0.08);
+  --nav-item-background-active:     rgba(0, 229, 255, 0.14);
+  --nav-collapse-icon-color:        var(--ar-text-faint);
+
+  --tab-text-color:                 var(--ar-silver);
+  --tab-text-color-focused:         var(--ar-text);
+  --tab-text-color-focused-active:  var(--ar-arc);
+  --tab-background-active:          var(--ar-panel-alt);
+  --tab-outline-color:              var(--ar-arc);
+
+  --modal-background:               var(--ar-steel);
+  --modal-border-color:             var(--ar-border);
+
+  --graph-line:                     rgba(0, 229, 255, 0.22);
+  --graph-node:                     var(--ar-silver);
+  --graph-node-tag:                 var(--ar-purple);
+  --graph-node-attachment:          var(--ar-emerald);
+  --graph-node-unresolved:          var(--ar-text-faint);
+  --graph-node-focused:             var(--ar-gold);
+  --graph-text:                     var(--ar-text-muted);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   2. LIVING COSMIC BACKGROUND  (the jaw-drop layer)
+   Multiple radial gradients = nebula + dense starfield.
+   No solid color. Ever.
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .workspace {
+  background:
+    /* far nebula glow – purple magic */
+    radial-gradient(ellipse 120% 80% at 15% -10%, rgba(167, 139, 250, 0.13), transparent 55%),
+    /* near nebula – arc cyan */
+    radial-gradient(ellipse 90% 70% at 85% 110%, rgba(0, 229, 255, 0.09), transparent 50%),
+    /* soft gold dust (dragonfire remnant) */
+    radial-gradient(ellipse 60% 40% at 50% 50%, rgba(212, 175, 55, 0.04), transparent 70%),
+    /* base void */
+    var(--ar-void);
+}
+
+/* Starfield layer – pure CSS, no images */
+.theme-dark .workspace::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+  background-image:
+    /* dense small stars */
+    radial-gradient(1px 1px at 8% 12%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 22% 38%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 41% 7%,   #cceeff 100%, transparent 100%),
+    radial-gradient(1px 1px at 63% 29%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 79% 61%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 91% 18%,  #ddeeff 100%, transparent 100%),
+    radial-gradient(1px 1px at 15% 72%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 34% 91%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 55% 48%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 72% 83%,  #cceeff 100%, transparent 100%),
+    radial-gradient(1px 1px at 88% 44%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 47% 22%, #ffffff 100%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 19% 55%, #aaddff 100%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 68% 11%, #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 5% 45%,   #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 96% 78%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 28% 18%,  #ddeeff 100%, transparent 100%),
+    radial-gradient(1px 1px at 51% 67%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 77% 33%,  #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 12% 88%,  #ffffff 100%, transparent 100%);
+  background-repeat: repeat;
+  background-size: 420px 320px;
+}
+
+/* Ensure content sits above the starfield */
+.theme-dark .mod-root .workspace-leaf-content,
+.theme-dark .workspace-tab-header-container,
+.theme-dark .workspace-split,
+.theme-dark .status-bar {
+  position: relative;
+  z-index: 1;
+}
+
+/* Soft vignette on the main editor so text feels cradled by the cosmos */
+.theme-dark .markdown-preview-view,
+.theme-dark .markdown-source-view.mod-cm6 .cm-scroller {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(167, 139, 250, 0.05), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 50% 100%, rgba(0, 229, 255, 0.04), transparent 55%),
+    transparent;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   3. TYPOGRAPHY – Infinity Stone hierarchy + Cinzel power
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .markdown-preview-view h1,
+.theme-dark .markdown-source-view h1,
+.theme-dark .inline-title,
+.theme-dark .HyperMD-header-1 {
+  font-family: var(--ar-font-heading);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--ar-gold) !important;
+  text-shadow: 0 0 22px rgba(212, 175, 55, 0.35);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: 0.3em;
+}
+
+.theme-dark .markdown-preview-view h2,
+.theme-dark .HyperMD-header-2 {
+  font-family: var(--ar-font-heading);
+  color: var(--ar-arc) !important;
+  text-shadow: 0 0 18px rgba(0, 229, 255, 0.3);
+}
+
+.theme-dark .markdown-preview-view h3,
+.theme-dark .HyperMD-header-3 {
+  font-family: var(--ar-font-heading);
+  color: var(--ar-purple) !important;
+  text-shadow: 0 0 16px rgba(167, 139, 250, 0.3);
+}
+
+.theme-dark .markdown-preview-view h4,
+.theme-dark .HyperMD-header-4 {
+  font-family: var(--ar-font-heading);
+  color: var(--ar-ice) !important;
+}
+
+.theme-dark .markdown-preview-view h5,
+.theme-dark .HyperMD-header-5 {
+  font-family: var(--ar-font-body);
+  color: var(--ar-emerald) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.95em;
+}
+
+.theme-dark .markdown-preview-view h6,
+.theme-dark .HyperMD-header-6 {
+  font-family: var(--ar-font-body);
+  color: var(--ar-amber) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.9em;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   4. LINKS – Lumos spell on hover
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark a.internal-link,
+.theme-dark a.external-link {
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.theme-dark a.internal-link:hover,
+.theme-dark a.external-link:hover {
+  color: var(--ar-ice);
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.7), 0 0 20px rgba(184, 240, 255, 0.4);
+}
+
+.theme-dark a.internal-link.is-unresolved {
+  border-bottom: 1px dashed var(--ar-text-faint);
+  opacity: 0.75;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   5. HORIZONTAL RULES – Valyrian steel beam
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark hr {
+  border: none;
+  height: 1px;
+  margin: 2.2em 0;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--ar-arc) 18%,
+    var(--ar-gold) 50%,
+    var(--ar-purple) 82%,
+    transparent 100%);
+  opacity: 0.65;
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.25);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   6. BLOCKQUOTES – ancient parchment strips
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark blockquote {
+  border-left: 3px solid var(--ar-gold);
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.07), transparent 80%);
+  border-radius: 0 8px 8px 0;
+  padding: 0.7em 1.1em;
+  font-style: italic;
+  color: var(--ar-silver);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   7. TAGS – holographic chips
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .tag,
+.theme-dark a.tag {
+  border-radius: 999px;
+  padding: 0.15em 0.75em;
+  font-family: var(--ar-font-code);
+  font-size: 0.78em;
+  border: 1px solid var(--tag-border-color);
+  background: var(--tag-background);
+  color: var(--tag-color);
+  transition: box-shadow 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.theme-dark .tag:hover,
+.theme-dark a.tag:hover {
+  background: var(--tag-background-hover);
+  box-shadow: 0 0 12px rgba(167, 139, 250, 0.45);
+  transform: translateY(-1px);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   8. CODE – Jarvis HUD panels
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark pre,
+.theme-dark code {
+  font-family: var(--ar-font-code);
+}
+
+.theme-dark pre {
+  background: var(--code-background) !important;
+  border: 1px solid rgba(0, 229, 255, 0.18);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 0 30px rgba(0, 229, 255, 0.03),
+    0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.theme-dark code:not([class*="language-"]) {
+  background: rgba(0, 229, 255, 0.08);
+  color: var(--ar-arc);
+  border-radius: 4px;
+  padding: 0.12em 0.4em;
+  border: 1px solid rgba(0, 229, 255, 0.15);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   9. CHECKBOXES – magical runes
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .task-list-item-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  border: 1.5px solid var(--ar-text-faint);
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.theme-dark .task-list-item-checkbox:hover {
+  border-color: var(--ar-purple);
+  box-shadow: 0 0 8px rgba(167, 139, 250, 0.5);
+}
+
+.theme-dark .task-list-item-checkbox:checked {
+  border-color: var(--ar-purple);
+  background: rgba(167, 139, 250, 0.15);
+}
+
+.theme-dark .task-list-item-checkbox:checked::after {
+  content: "✦";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  color: var(--ar-purple);
+  text-shadow: 0 0 6px rgba(167, 139, 250, 0.9);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   10. CALLOUTS – the four realms speak
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .callout {
+  border-radius: 10px;
+  border: 1px solid rgba(var(--callout-color), 0.35);
+  background: rgba(var(--callout-color), 0.07);
+  box-shadow: 0 0 20px rgba(var(--callout-color), 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.theme-dark .callout-title {
+  font-family: var(--ar-font-heading);
+  font-weight: 600;
+}
+
+/* Info / Note – Space & Arc Reactor */
+.theme-dark .callout[data-callout="note"],
+.theme-dark .callout[data-callout="info"] {
+  --callout-color: 0, 229, 255;
+}
+
+/* Warning – Dragonfire / Soul Stone */
+.theme-dark .callout[data-callout="warning"],
+.theme-dark .callout[data-callout="caution"] {
+  --callout-color: 251, 146, 60;
+}
+
+/* Danger – Reality Stone / Targaryen / Avengers red */
+.theme-dark .callout[data-callout="danger"],
+.theme-dark .callout[data-callout="error"] {
+  --callout-color: 248, 113, 113;
+}
+
+/* Success – Time Stone / Slytherin */
+.theme-dark .callout[data-callout="success"],
+.theme-dark .callout[data-callout="tip"],
+.theme-dark .callout[data-callout="check"] {
+  --callout-color: 52, 211, 153;
+}
+
+/* Magic / Spell – Power Stone pulse */
+.theme-dark .callout[data-callout="magic"],
+.theme-dark .callout[data-callout="spell"] {
+  --callout-color: 167, 139, 250;
+  animation: ar-magic-pulse 3.8s ease-in-out infinite;
+}
+
+/* Quote / Lore – parchment gold */
+.theme-dark .callout[data-callout="quote"],
+.theme-dark .callout[data-callout="lore"],
+.theme-dark .callout[data-callout="abstract"] {
+  --callout-color: 212, 175, 55;
+  font-style: italic;
+  font-family: var(--ar-font-heading);
+}
+
+/* Mission / Jarvis – Stark briefing */
+.theme-dark .callout[data-callout="mission"],
+.theme-dark .callout[data-callout="jarvis"] {
+  --callout-color: 0, 229, 255;
+  font-family: var(--ar-font-code);
+}
+
+/* Dragon – gold fire */
+.theme-dark .callout[data-callout="dragon"] {
+  --callout-color: 212, 175, 55;
+  border-width: 1.5px;
+}
+
+@keyframes ar-magic-pulse {
+  0%, 100% { box-shadow: 0 0 14px rgba(167, 139, 250, 0.12); }
+  50%      { box-shadow: 0 0 24px rgba(167, 139, 250, 0.32); }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   11. TABLES – Valyrian iron grid
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark table {
+  border-collapse: collapse;
+  border: 1px solid var(--table-border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.theme-dark table th {
+  background: var(--table-header-background);
+  color: var(--ar-gold);
+  font-family: var(--ar-font-heading);
+  font-weight: 600;
+  border-bottom: 2px solid var(--table-header-border-color);
+}
+
+.theme-dark table tr:nth-child(even) {
+  background: var(--table-row-alt-background);
+}
+
+.theme-dark table tr:hover {
+  background: var(--table-row-background-hover) !important;
+}
+
+.theme-dark table td,
+.theme-dark table th {
+  border: 1px solid var(--table-border-color);
+  padding: 0.5em 0.9em;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   12. FILE EXPLORER & NAVIGATION
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .nav-folder-title,
+.theme-dark .nav-file-title {
+  border-radius: 6px;
+  transition: background 0.12s ease, box-shadow 0.12s ease;
+}
+
+.theme-dark .nav-folder-title:hover,
+.theme-dark .nav-file-title:hover {
+  background: var(--nav-item-background-hover);
+}
+
+.theme-dark .nav-file-title.is-active {
+  background: var(--nav-item-background-active);
+  box-shadow: inset 3px 0 0 var(--ar-arc);
+  color: var(--ar-arc);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   13. SCROLLBARS – arc energy
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.theme-dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.theme-dark ::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 8px;
+}
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   14. CURSOR & SELECTION
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .cm-cursor,
+.theme-dark .cm-cursor-primary {
+  border-left: 2px solid var(--ar-arc) !important;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.7);
+}
+
+.theme-dark .cm-selectionBackground,
+.theme-dark ::selection {
+  background: rgba(167, 139, 250, 0.28) !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   15. MODALS & COMMAND PALETTE – glass hologram
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .modal,
+.theme-dark .prompt {
+  background: rgba(15, 21, 36, 0.92);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.08), 0 12px 40px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+.theme-dark .suggestion-item.is-selected {
+  background: rgba(0, 229, 255, 0.12);
+  color: var(--ar-arc);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   16. GRAPH & CANVAS – constellation map
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .canvas-wrapper {
+  background: var(--ar-void);
+  background-image: radial-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.theme-dark .canvas-node-container {
+  background: rgba(21, 29, 48, 0.88);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--ar-border);
+  border-radius: 10px;
+}
+
+.theme-dark .canvas-node-container.is-focused {
+  border-color: var(--ar-arc);
+  box-shadow: 0 0 18px rgba(0, 229, 255, 0.35);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   17. STATUS BAR & RIBBON
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-dark .status-bar {
+  background: var(--ar-void);
+  border-top: 1px solid var(--ar-border);
+  color: var(--ar-text-faint);
+  font-family: var(--ar-font-code);
+  font-size: 0.75em;
+}
+
+.theme-dark .side-dock-ribbon-action:hover {
+  color: var(--ar-arc);
+  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.6));
+}
+
+.theme-dark .workspace-tab-header.is-active {
+  box-shadow: inset 0 -2px 0 var(--ar-arc);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   18. LIGHT MODE – “Citadel by Day” (parchment library)
+   ───────────────────────────────────────────────────────────────────────── */
+.theme-light {
+  --ar-void:        #f5f0e6;
+  --ar-panel:       #ffffff;
+  --ar-panel-alt:   #ebe4d6;
+  --ar-arc:         #0e7490;
+  --ar-gold:        #9a7b1a;
+  --ar-purple:      #6d28d9;
+  --ar-crimson:     #b91c1c;
+  --ar-emerald:     #047857;
+  --ar-text:        #1c1917;
+  --ar-text-muted:  #57534e;
+
+  --background-primary:     var(--ar-void);
+  --background-secondary:   var(--ar-panel-alt);
+  --text-normal:            var(--ar-text);
+  --text-muted:             var(--ar-text-muted);
+  --text-accent:            var(--ar-arc);
+  --h1-color:               var(--ar-gold);
+  --h2-color:               var(--ar-arc);
+  --h3-color:               var(--ar-purple);
+  --link-color:             var(--ar-arc);
+  --tag-color:              var(--ar-purple);
+  --interactive-accent:     var(--ar-arc);
+  --font-interface:         var(--ar-font-body, 'Inter', sans-serif);
+  --font-text:              var(--ar-font-body, 'Inter', sans-serif);
+}
+
+.theme-light .workspace {
+  background:
+    radial-gradient(ellipse 100% 60% at 50% 0%, rgba(212, 175, 55, 0.08), transparent 60%),
+    var(--ar-void);
+}
+
+.theme-light .markdown-preview-view h1,
+.theme-light .inline-title {
+  font-family: var(--ar-font-heading, 'Cinzel', Georgia, serif);
+  color: var(--ar-gold);
+  border-bottom: 1px solid rgba(154, 123, 26, 0.3);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   END OF AETHER REALMS v2
+   ───────────────────────────────────────────────────────────────────────── */

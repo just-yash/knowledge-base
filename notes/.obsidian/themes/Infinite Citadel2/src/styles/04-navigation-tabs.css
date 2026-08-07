@@ -1,0 +1,145 @@
+/* ───────────────────────────────────────────────────────────────────────
+   04-NAVIGATION-TABS.CSS — Citadel Stone Archive & Valyrian Steel Tab Rail
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* Sidebars will be styled by 15-monumental-architecture.css */
+
+.theme-dark :is(.workspace-split.mod-left-split .workspace-tabs, .workspace-split.mod-right-split .workspace-tabs) {
+	background: transparent;
+	border: none;
+}
+
+/* Side Dock Ribbon (Stark Utility Belt) - handled in 15-monumental-architecture.css */
+
+.theme-dark .side-dock-ribbon .clickable-icon {
+	color: var(--ic-text-muted);
+	border-radius: var(--ic-radius-s);
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.theme-dark .side-dock-ribbon .clickable-icon::before {
+	content: "";
+	position: absolute;
+	inset: -30%;
+	background: radial-gradient(circle at 50% 50%, rgba(85, 230, 236, 0.28), transparent 70%);
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.theme-dark .side-dock-ribbon .clickable-icon:hover {
+	color: var(--ic-arc-cyan);
+	transform: translateY(-1px);
+	filter: drop-shadow(0 0 6px rgba(85, 230, 236, 0.45));
+}
+
+.theme-dark .side-dock-ribbon .clickable-icon:hover::before { transform: scale(1); opacity: 1; }
+
+/* File Explorer Items (Ancient Bookshelf Entries) */
+.theme-dark :is(.nav-folder-title, .nav-file-title) {
+	border-radius: var(--ic-radius-s);
+	position: relative;
+	z-index: 0;
+	padding: 0.3em 0.6em;
+	transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease;
+}
+
+.theme-dark .nav-folder-title {
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold);
+	font-weight: 600;
+	letter-spacing: 0.4px;
+}
+
+.theme-dark .nav-file-title {
+	font-family: var(--ic-font-body);
+	color: var(--ic-text-normal);
+}
+
+.theme-dark :is(.nav-folder-title, .nav-file-title)::before {
+	content: "";
+	position: absolute;
+	inset: -25%;
+	background: radial-gradient(circle at 50% 50%, rgba(217, 168, 87, 0.16), transparent 70%);
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.theme-dark :is(.nav-file-title:hover, .nav-folder-title:hover)::before { transform: scale(1); opacity: 1; }
+.theme-dark :is(.nav-file-title:hover, .nav-folder-title:hover) { transform: translateX(3px); color: var(--ic-starlight); }
+
+/* Active Note in Explorer — Illuminated Scroll Selection */
+.theme-dark .nav-file-title.is-active {
+	background: linear-gradient(90deg, rgba(155, 107, 242, 0.22), rgba(217, 168, 87, 0.08));
+	box-shadow: inset 3px 0 0 var(--ic-gold-bright), var(--mat-obsidian-highlight);
+	color: var(--ic-starlight);
+	font-weight: 600;
+}
+
+.theme-dark .nav-file-tag {
+	background: rgba(217, 168, 87, 0.16);
+	color: var(--ic-gold);
+	border-radius: 999px;
+	font-family: var(--ic-font-mono);
+	font-size: 0.75em;
+}
+
+.theme-dark :is(.nav-header + .workspace-sidedock-vault-profile, .workspace-drawer-vault-switcher) {
+	font-family: var(--ic-font-display);
+	letter-spacing: 1.2px;
+	color: var(--ic-gold-bright);
+	text-transform: uppercase;
+}
+
+/* ── WORKSPACE TABS (VALYRIAN STEEL TAB RAIL × DRAGON VELUM BOOKMARKS) ── */
+.theme-dark .workspace-tab-header-container {
+	background: var(--mat-steel-bg);
+	border: none;
+	box-shadow: none;
+}
+
+.theme-dark .workspace-tab-header {
+	border-radius: var(--ic-radius-s) var(--ic-radius-s) 0 0;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	transition: transform 0.2s ease, background 0.25s ease;
+	border: none;
+	padding: 0.4em 0.9em;
+}
+
+.theme-dark .workspace-tab-header::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(ellipse 90% 140% at 50% 110%, rgba(199, 212, 227, 0.14), transparent 65%);
+	transform: scaleY(0.4) translateY(40%);
+	opacity: 0;
+	transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.theme-dark .workspace-tab-header:hover::before { transform: scaleY(1) translateY(0); opacity: 1; }
+.theme-dark .workspace-tab-header:hover:not(.is-active) { transform: translateY(-1px); }
+
+.theme-dark .workspace-tab-header.is-active {
+	background: rgba(12, 17, 34, 0.90);
+	box-shadow: none;
+	color: var(--ic-starlight);
+}
+
+.theme-dark .workspace-tab-header-inner-title {
+	font-family: var(--ic-font-body);
+	font-weight: 600;
+	position: relative;
+	z-index: 1;
+}

@@ -1,1 +1,11 @@
-{}
+{
+  "theme": "obsidian",
+  "cssTheme": "Obsidian Nord",
+  "nativeMenus": false,
+  "accentColor": "",
+  "showRibbon": true,
+  "showViewHeader": true,
+  "baseFontSizeAction": true,
+  "baseFontSize": 15,
+  "enabledCssSnippets": []
+}

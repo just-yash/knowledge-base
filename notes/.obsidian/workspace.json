@@ -1,18 +1,171 @@
 {
   "main": {
-    "id": "699994eabe9c5cf2",
+    "id": "dc584077cc1a37f1",
     "type": "split",
     "children": [
       {
-        "id": "a774d4f2f325945f",
+        "id": "a794cbd262e4ea6f",
         "type": "tabs",
         "children": [
           {
-            "id": "c5d3ba615a5f75e3",
+            "id": "99792f4c53a841b7",
             "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "pinned": true,
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "4eb8d8dae2afa40a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Private/Thoughts/Famous MARVEL Quotes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Famous MARVEL Quotes"
+            }
+          },
+          {
+            "id": "860e8a2b56ae4700",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - Notes/Agentic_AI.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Agentic_AI"
+            }
+          },
+          {
+            "id": "2eafb8f6181eba51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - MOCs/MOC - AI and Machine Learning.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "MOC - AI and Machine Learning"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "762334e3ad02356e",
+    "type": "split",
+    "children": [
+      {
+        "id": "c46fea2c104fcf56",
+        "type": "tabs",
+        "dimension": 60.48780487804877,
+        "children": [
+          {
+            "id": "c9cabfdcce481db0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "03cca02d23846143",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "0d6288c2cf29da48",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bbfc1cfaba40b6b3",
+        "type": "tabs",
+        "dimension": 39.51219512195122,
+        "children": [
+          {
+            "id": "eabcd510cd789d67",
+            "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "graph",
               "state": {},
+              "pinned": true,
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
@@ -20,76 +173,47 @@
         ]
       }
     ],
-    "direction": "vertical"
-  },
-  "left": {
-    "id": "f48adf464280e77b",
-    "type": "split",
-    "children": [
-      {
-        "id": "89d13cef33e48924",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "91f7319356ef0b29",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
-          },
-          {
-            "id": "12223402a17a98c0",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "readme",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
-            }
-          },
-          {
-            "id": "75b35a4128c0ccd7",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
-          }
-        ]
-      }
-    ],
     "direction": "horizontal",
-    "width": 300
+    "width": 317.5
   },
   "right": {
-    "id": "15cb034a94fd7eb6",
+    "id": "257cc1a780b3dede",
     "type": "split",
     "children": [
       {
-        "id": "43af9799e22f2d72",
+        "id": "2236a387f8688a5e",
         "type": "tabs",
+        "dimension": 37.38425925925926,
         "children": [
           {
-            "id": "b3389f0fe370b16d",
+            "id": "785e813f0b484c09",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "e6394757e9b66af4",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "1 - Raw Notes/Classes/Generative AI.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          },
+          {
+            "id": "25ba8e67bc9f4b08",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1 - Raw Notes/OB Answers 2023-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,25 +223,64 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for OB Answers 2023-24"
             }
           },
           {
-            "id": "bfb4bd9328a73822",
+            "id": "d4ba0a88afb9e7c0",
+            "type": "leaf",
+            "state": {
+              "type": "mathpad-view",
+              "state": {},
+              "icon": "sigma",
+              "title": "Mathpad"
+            }
+          },
+          {
+            "id": "9fd99170388af384",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Home/README.md",
+                "file": "Private/Career/Job Applications/Remote Work Websites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from Remote Work Websites"
             }
           },
           {
-            "id": "23aa2f8b56390841",
+            "id": "0af58c5ba97d3ae9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01 - MOCs/MOC - AI and Machine Learning.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "d862448d682e7187",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "77e9f8aa120b0ba6",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,98 +295,145 @@
             }
           },
           {
-            "id": "d6eb1bdb9888cf12",
+            "id": "e64a96944058c0ab",
             "type": "leaf",
             "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
+              "type": "mathpad-view",
+              "state": {},
+              "icon": "sigma",
+              "title": "Mathpad"
             }
           },
           {
-            "id": "eb9f2ba6469c2c00",
+            "id": "99841f053d20d601",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "00 - Home/README.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of README"
+              "type": "side-panel-control-view",
+              "state": {},
+              "icon": "viewIcon",
+              "title": "Markdown-Autocomplete"
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "00d6997ae1ca38b9",
+        "type": "tabs",
+        "dimension": 31.36574074074074,
+        "children": [
+          {
+            "id": "088541f482316c94",
+            "type": "leaf",
+            "state": {
+              "type": "journal-calendar",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "Calendar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "2124b42c6ee91b2c",
+        "type": "tabs",
+        "dimension": 31.25,
+        "children": [
+          {
+            "id": "93434aa9e67b9b33",
+            "type": "leaf",
+            "state": {
+              "type": "timer-view",
+              "state": {},
+              "icon": "timer",
+              "title": "Timer"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 318.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
+      "obsidian-kanban:Create new board": false,
+      "switcher:Open quick switcher": true,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "audio-recorder:Start/stop recording": false,
+      "daily-notes:Open today's daily note": false,
+      "workspaces:Manage workspace layouts": false,
+      "graph:Open graph view": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "pomodoro-timer:Toggle timer panel": false,
+      "mathpad:Open Mathpad": false,
+      "templater-obsidian:Templater": false,
+      "activity-heatmap:Open activity heatmap": false,
+      "obsidian-daily-named-folder:Open today's daily note folder": false,
+      "quartz-syncer:Quartz Syncer publication center": false,
+      "obsidian-matrix:Obsidian Matrix": false,
+      "webpage-html-export:Export as HTML": false,
+      "new-3d-graph:Open 3d graph": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "journals:a---daily:daily-note": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "c5d3ba615a5f75e3",
+  "active": "2eafb8f6181eba51",
   "lastOpenFiles": [
-    "04 - Research/Multi-Camera-Surveillance/Research Roadmap_ Multi-Camera Face Recognition & Threat Detection (2026).pdf",
-    "04 - Research/Multi-Camera-Surveillance/Paper-Draft.md",
-    "04 - Research/Multi-Camera-Surveillance/Implementation-Log.md",
-    "04 - Research/Multi-Camera-Surveillance/Literature-Review.md",
-    "04 - Research/Multi-Camera-Surveillance/Advanced Facial Recognition in Crowds_ Multi-Camera Threat Detection Blueprint.pdf",
-    "04 - Research/Multi-Camera-Surveillance/Benchmarks.md",
-    "04 - Research/Multi-Camera-Surveillance/Architecture.md",
-    "04 - Research/Multi-camera spatiotemporal deep learning framework for real-time abnormal behavior detection in dense urban environments.md",
-    "04 - Research/Multi-Camera-Surveillance",
-    "04 - Research",
-    "03 - Notes/while.c.md",
-    "03 - Notes/well formed formula.md",
-    "03 - Notes/Transactions and Concurrency Control.md",
-    "03 - Notes/void pointer.c.md",
-    "03 - Notes/Underworld System and Organized Crime.md",
-    "03 - Notes/Type Conversion.c.md",
-    "03 - Notes/Trigonometric Formulas.md",
-    "03 - Notes/Tree_DSA.md",
-    "03 - Notes/Tools With Claude Code.md",
-    "03 - Notes/Tree_DM.md",
-    "03 - Notes/Tokens.c.md",
-    "03 - Notes/Syllabus.c.md",
-    "03 - Notes/Supply.md",
-    "03 - Notes/switch-case.c.md",
-    "03 - Notes/Supply Function.md",
-    "03 - Notes/Stages of Hacking.md",
-    "03 - Notes/Strings.c.md",
-    "03 - Notes/Stack.md",
-    "03 - Notes/Sorting.md",
-    "03 - Notes",
-    "02 - Raw Notes/Classes/Workshops",
-    "02 - Raw Notes/Classes/College",
-    "02 - Raw Notes/Thought",
-    "02 - Raw Notes/Podcasts",
-    "02 - Raw Notes/Videos",
-    "02 - Raw Notes/News & Updates",
+    "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/Template Based Dashboard for a Client.md",
+    "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/Skills for MARSH.md",
+    "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/MARSH in general.md",
+    "03 - Notes/Agentic_AI.md",
+    "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/SPARK Efficiency Report.md",
+    "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/SLOT Planner Tool.md",
+    "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/SLOT Planner README.md",
+    "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/Email Workflow Creation.md",
+    "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/Task Orchestrator.md",
+    "Private/Annexure/Documents/Offer Letter - MARSH.pdf",
+    "Private/Annexure/Documents/Dummy_Client_ASRS_2026-06-15.pdf",
+    "Private/Tags/MARSH.md",
+    "Private/Tags/job.md",
+    "Private/Tags",
+    "Private/Profile/Yash Agrawall/Yash Agrawall.md",
+    "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)",
+    "Private/Profile/Yash Agrawall/Operating System for Device (Planned).md",
+    "Private/Profile/Yash Agrawall/Soft Skills.md",
+    "Private/Profile/Yash Agrawall/2 year roadmap.md",
+    "Private/Profile/Yash Agrawall/5th Semester.md",
+    "Private/Profile/Yash Agrawall/IGIT_5th_Semester_Timetable.html",
+    "07 - Annexure/Images/Pasted image 20260806123443.png",
+    "Private/Insights/Tracker.md",
+    "Private/Profile/Yash Agrawall",
+    "Private/00_COMMAND_CENTER.md",
+    "Private/YOLO_production_setup_guide.md",
+    "Private/MASTER_STRATEGIC_REPORT.md",
+    "Private/Templates/Daily Template.md",
+    "Private/Career/Job Applications/Remote Work Websites.md",
+    "09 - Templates/DSA Qs.md",
+    "09 - Templates/DSA Pattern.md",
+    "01 - MOCs/MOC - Data Structures and Algorithms.md",
+    "01 - MOCs/MOC - Writing and Creativity.md",
+    "Private/Insights",
+    "09 - Templates/Untitled",
+    "Personal/Journal/A - Daily",
+    "Personal/Journal",
+    "Untitled.canvas",
+    "Projects/Annexure/Images/e9aa3dd9-5b28-4e1a-9405-4024fa55c1a7.png",
+    "07 - Annexure/Pasted image 20260524093935.png",
+    "Private/Annexure/Images/Pasted image 20251229235910.png",
     "07 - Annexure/Images/WhatsApp Image 2025-12-23 at 2.48.16 PM.jpeg",
-    "07 - Annexure/Images/upscalemedia-transformed.webp",
     "07 - Annexure/Images/Screenshot 2025-10-20 180039.png",
+    "07 - Annexure/Images/upscalemedia-transformed.webp",
     "07 - Annexure/Images/Pasted image 20260508185202.png",
     "07 - Annexure/Images/Pasted image 20260508182815.png",
     "07 - Annexure/Images/Pasted image 20260508182015.png",
-    "07 - Annexure/Images/Pasted image 20260508181410.png",
-    "07 - Annexure/Images/Pasted image 20260417064208.png",
-    "07 - Annexure/Images/Pasted image 20260417000758.png",
-    "07 - Annexure/Images/Pasted image 20260413051958.png"
+    "Maths.canvas"
   ]
 }

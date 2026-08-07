@@ -1,0 +1,34 @@
+/* ───────────────────────────────────────────────────────────────────────
+   14-MAGICAL-ENCHANTMENTS.CSS — Quiet Magic (The 5% Rule)
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* 1. Spellcasting Italics (Quiet Aura) */
+.theme-dark em {
+	text-shadow: 0 0 8px rgba(155, 107, 242, 0.4);
+	color: var(--ic-purple-dim);
+}
+
+/* 2. Glowing Runic Bullets */
+.theme-dark :is(.cm-line > .list-bullet::after, ul > li::marker) {
+	color: var(--ic-purple) !important;
+	text-shadow: 0 0 6px rgba(155, 107, 242, 0.5);
+}
+
+/* 3. Magical Aura on Active Files (Removed heavy mist, using tiny accent) */
+.theme-dark .nav-file-title.is-active::after {
+	display: none; /* Removed the heavy aura */
+}
+
+/* 5% Cyan Energy: Active File Line */
+.theme-dark .nav-file-title.is-active {
+	background: transparent !important;
+	color: var(--ic-starlight) !important;
+	border-left: 2px solid var(--ic-arc-cyan) !important;
+	box-shadow: none !important;
+}
+
+/* 4. Floo Powder Focus (Input Rings) - Toned down */
+.theme-dark :is(.search-input-container input:focus, input:focus) {
+	box-shadow: 0 0 0 1px var(--ic-purple) !important;
+	border-color: transparent !important;
+}

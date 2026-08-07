@@ -1,0 +1,188 @@
+/* ───────────────────────────────────────────────────────────────────────
+   11-EDITOR-ENVIRONMENT.CSS — The Harry Potter Domain (Knowledge Artifacts)
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* 1. The Enchanted Manuscript Background (The Heart of the Theme) */
+/* Replaces the flat black text editor with a true illuminated manuscript */
+/* Shimmer Animation */
+@keyframes ic-manuscript-shimmer {
+	0% { background-position: 0% 50%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+	50% { background-position: 100% 50%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+	100% { background-position: 0% 50%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+}
+
+.theme-dark :is(.cm-sizer, .markdown-preview-sizer) {
+	/* Faint texture + Warm center lighting + subtle edge vignette */
+	background: 
+		radial-gradient(ellipse at 50% 40%, rgba(217, 168, 87, 0.06) 0%, transparent 70%), /* Warm center illumination */
+		linear-gradient(to right, rgba(0,0,0,0.5) 0%, transparent 8%, transparent 92%, rgba(0,0,0,0.5) 100%), /* Edge Vignette */
+		linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 5%, transparent 95%, rgba(0,0,0,0.5) 100%), /* Top/Bottom Vignette */
+		var(--pbr-noise-fine), /* Faint texture */
+		rgba(10, 12, 18, 0.8) !important; /* Deep void base */
+	
+	background-size: 200% 200%, 100% 100%, 100% 100%, 200px 200px, 100% 100%;
+	animation: ic-manuscript-shimmer 20s ease-in-out infinite;
+
+	box-shadow: 
+		inset 0 0 60px rgba(0,0,0,0.9), /* Deep manuscript margin occlusion */
+		0 20px 80px rgba(0,0,0,0.7) !important; /* Floating drop shadow */
+	
+	border: 1px solid rgba(217, 168, 87, 0.12) !important;
+	border-radius: 8px !important;
+	
+	padding: 80px 100px !important; /* Generous manuscript margins */
+	margin: 40px auto !important; /* Center column */
+	max-width: 900px !important;
+	position: relative;
+	z-index: 1;
+}
+
+/* Spell Circle Watermark */
+@keyframes spell-circle-rotate {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.theme-dark .markdown-source-view.mod-cm6::before,
+.theme-dark .markdown-reading-view::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 800px;
+	margin-left: -400px;
+	margin-top: -400px;
+	background-image: url("data:image/svg+xml,%3Csvg width='800' height='800' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='400' cy='400' r='380' stroke='%239b6bf2' stroke-width='2' fill='none' stroke-dasharray='10 5 20 5'/%3E%3Ccircle cx='400' cy='400' r='360' stroke='%23d9a857' stroke-width='1' fill='none'/%3E%3Cpolygon points='400,20 780,400 400,780 20,400' stroke='%239b6bf2' stroke-width='1' fill='none'/%3E%3Cpolygon points='400,40 760,400 400,760 40,400' stroke='%23d9a857' stroke-width='1' fill='none'/%3E%3Ccircle cx='400' cy='400' r='100' stroke='%239b6bf2' stroke-width='2' fill='none'/%3E%3Ccircle cx='400' cy='400' r='90' stroke='%23d9a857' stroke-width='1' fill='none' stroke-dasharray='5 5'/%3E%3C/svg%3E");
+	background-size: cover;
+	opacity: 0.04; /* Extremely faint watermark */
+	pointer-events: none;
+	animation: spell-circle-rotate 300s linear infinite;
+	z-index: 0;
+}
+
+/* 2. The Archive Catalog (Metadata Block) */
+.theme-dark .metadata-container {
+	background: rgba(255, 255, 255, 0.015) !important;
+	border: none !important;
+	border-top: 4px double rgba(217, 168, 87, 0.3) !important; /* Heavy Archive Divider ════ */
+	border-bottom: 4px double rgba(217, 168, 87, 0.3) !important; /* Heavy Archive Divider ════ */
+	box-shadow: 
+		inset 0 0 30px rgba(0, 0, 0, 0.5),
+		0 8px 24px rgba(217, 168, 87, 0.03) !important;
+	border-radius: 0 !important;
+	padding: 32px !important;
+	margin-bottom: 48px !important;
+	margin-top: -20px !important;
+}
+
+/* Transform the default "Properties" title into "ARCHIVE RECORD" */
+.theme-dark .metadata-properties-title {
+	visibility: hidden;
+	position: relative;
+	width: 100%;
+}
+.theme-dark .metadata-properties-title::after {
+	content: "ARCHIVE RECORD";
+	visibility: visible;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold-bright);
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-shadow: 0 0 8px rgba(217, 168, 87, 0.2);
+}
+
+/* Format the Metadata Keys (Type, Date, etc.) as physical catalog labels */
+.theme-dark .metadata-property-key .metadata-property-key-input {
+	font-family: var(--ic-font-display) !important;
+	color: rgba(217, 168, 87, 0.75) !important;
+	font-weight: 600 !important;
+	letter-spacing: 1.5px !important;
+	text-transform: uppercase !important;
+	font-size: 0.9em !important;
+}
+
+.theme-dark .metadata-property-value .metadata-property-value-input {
+	font-family: var(--ic-font-body) !important;
+	color: var(--ic-valyrian) !important;
+}
+
+/* Silence any cyan interactions inside the metadata */
+.theme-dark .metadata-container input,
+.theme-dark .metadata-container .metadata-property-key-input,
+.theme-dark .metadata-container .metadata-property-value-input {
+	border: none !important;
+	box-shadow: none !important;
+	background: transparent !important;
+}
+.theme-dark .metadata-container input:focus,
+.theme-dark .metadata-container .metadata-property-key-input:focus,
+.theme-dark .metadata-container .metadata-property-value-input:focus {
+	box-shadow: 0 1px 0 rgba(217, 168, 87, 0.4) !important; /* Warm gold underline, no cyan */
+	border: none !important;
+}
+
+
+/* 3. Magical Silver Ink (Text & Active Lines) */
+.theme-dark .markdown-source-view.mod-cm6 .cm-scroller,
+.theme-dark .markdown-reading-view {
+	color: #d1d5db; 
+}
+
+/* Magical Ink Text Selection */
+::selection {
+	background: rgba(155, 107, 242, 0.25) !important;
+	text-shadow: 0 0 10px rgba(155, 107, 242, 0.8) !important;
+	color: var(--ic-starlight) !important;
+}
+
+/* The Magical Caret */
+.theme-dark .cm-cursorLayer .cm-cursor {
+	border-left-color: var(--ic-purple) !important;
+	border-left-width: 2px !important;
+	box-shadow: 0 0 12px var(--ic-purple), 0 0 4px var(--ic-gold);
+	border-radius: 1px;
+}
+
+/* Active line glows slightly like enchanted ink being written */
+.theme-dark .cm-active {
+	background-color: transparent !important;
+}
+
+.theme-dark .cm-active.cm-line {
+	background: linear-gradient(90deg, rgba(155, 107, 242, 0.04), transparent 40%) !important;
+	border-left: 2px solid rgba(155, 107, 242, 0.4) !important;
+	text-shadow: 0 0 8px rgba(155, 107, 242, 0.3);
+}
+
+.theme-dark .cm-line {
+	border-bottom: none !important;
+}
+
+/* 4. Pensieve Memories (Blockquotes & Callouts) */
+.theme-dark blockquote {
+	border-left: 2px solid rgba(155, 107, 242, 0.4) !important;
+	background: var(--pbr-crystal-texture) !important;
+	box-shadow: var(--pbr-crystal-reflectivity), var(--pbr-crystal-depth) !important;
+	border-radius: 0 4px 4px 0 !important;
+	color: #e2e8f0 !important;
+	font-style: italic !important;
+	backdrop-filter: blur(8px);
+	padding: 16px 24px;
+	margin: 1.5em 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.theme-dark blockquote::before {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; width: 100%; height: 100%;
+	background: radial-gradient(circle at 0% 0%, rgba(155, 107, 242, 0.15), transparent 70%);
+	pointer-events: none;
+}

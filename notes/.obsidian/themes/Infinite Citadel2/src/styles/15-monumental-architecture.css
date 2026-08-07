@@ -1,0 +1,148 @@
+/* ───────────────────────────────────────────────────────────────────────
+   15-MONUMENTAL-ARCHITECTURE.CSS — The Game of Thrones Domain
+   ───────────────────────────────────────────────────────────────────────
+   Strictly restricted to physical layout elements: Sidebars, Tab Rails, 
+   Modals, and structure. Materials: Dragonstone, Valyrian Steel, Iron.
+   No cyan energy. No stars.
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* 1. Monolithic Foundations (The Citadel Walls) */
+.theme-dark :is(.workspace-split.mod-left-split, .workspace-split.mod-right-split) {
+	background: var(--pbr-dragonstone-texture) !important;
+	box-shadow: var(--pbr-dragonstone-depth), inset 12px 0 20px rgba(0,0,0,0.95), inset -12px 0 20px rgba(0,0,0,0.95) !important; /* Deep carved occlusion + Structural Pillars */
+	border-left: 2px solid rgba(255,255,255,0.03) !important;
+	border-right: 2px solid rgba(255,255,255,0.03) !important;
+	position: relative;
+}
+
+/* Ambient Fog Overlay */
+@keyframes ic-ambient-fog {
+	0% { background-position: 0% 0%, 0% 0%; opacity: 0.4; }
+	50% { background-position: 100% 100%, 0% 100px; opacity: 0.8; }
+	100% { background-position: 0% 0%, 0% 0%; opacity: 0.4; }
+}
+
+.theme-dark :is(.workspace-split.mod-left-split, .workspace-split.mod-right-split)::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(ellipse at 50% 50%, rgba(124, 138, 163, 0.04), transparent 70%), var(--pbr-noise-fine);
+	background-size: 200% 200%, 150px 150px;
+	animation: ic-ambient-fog 40s ease-in-out infinite;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.theme-dark .workspace-split .workspace-leaf-content {
+	position: relative;
+	z-index: 1;
+}
+
+/* The Utility Dock (Heavy Subterranean Metal) */
+.theme-dark .side-dock-ribbon {
+	background: var(--pbr-iron-texture) !important;
+	box-shadow: var(--pbr-iron-depth) !important;
+	border: var(--pbr-iron-edges) !important;
+}
+
+/* 2. Forged Steel Tab Rails (Valyrian Steel) */
+.theme-dark .workspace-tab-header-container {
+	background: var(--pbr-iron-texture) !important;
+	box-shadow: inset 0 -4px 10px rgba(0,0,0,0.8), var(--pbr-iron-depth) !important;
+	padding: 4px 8px 0 8px;
+	border-bottom: 2px solid #000 !important;
+}
+
+.theme-dark .workspace-tab-header {
+	background: transparent !important;
+	border-radius: 4px 4px 0 0 !important;
+	margin-top: 6px;
+	transition: all 0.3s ease;
+	box-shadow: none !important;
+}
+
+@keyframes ic-steel-light-sweep {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+/* Active Tab acts as a polished steel plate catching light */
+.theme-dark .workspace-tab-header.is-active {
+	background: var(--pbr-steel-texture) !important;
+	background-size: 200% 100% !important;
+	animation: ic-steel-light-sweep 10s linear infinite;
+	box-shadow: var(--pbr-steel-reflectivity), var(--pbr-steel-depth) !important;
+	border: var(--pbr-steel-edges) !important;
+	border-bottom: none !important;
+	color: var(--ic-valyrian) !important; 
+}
+
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-shadow: 0 -1px 2px rgba(0,0,0,1); /* Deeply engraved lettering */
+}
+
+/* 3. Physical Archive Hierarchy (Folders & Files) */
+/* A) Major Folders (Top-Level) — Carved Obsidian Plaques */
+.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
+	background: rgba(16, 20, 32, 0.6) !important;
+	border: 1px solid rgba(217, 168, 87, 0.15) !important;
+	border-radius: 4px;
+	margin: 6px 4px 2px 4px;
+	padding: 6px 10px;
+	
+	color: rgba(217, 168, 87, 0.85) !important; /* Muted gold */
+	text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.8);
+	font-family: var(--ic-font-display) !important;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title:hover {
+	color: var(--ic-gold) !important;
+	box-shadow: var(--pbr-steel-depth), inset 2px 2px 0 rgba(217, 168, 87, 0.2) !important;
+}
+
+/* B) Minor Folders (Sub-Level) — Book Spines */
+.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children .nav-folder-title {
+	background: var(--pbr-steel-texture) !important;
+	border-left: 3px solid rgba(124, 138, 163, 0.4) !important; /* The Spine edge */
+	box-shadow: inset 1px 0 2px rgba(255,255,255,0.05), 0 2px 4px rgba(0,0,0,0.4) !important;
+	border-radius: 0 4px 4px 0;
+	margin: 4px 4px 4px 12px;
+	padding: 4px 8px;
+	
+	color: var(--ic-valyrian) !important;
+	font-family: var(--ic-font-body) !important;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+/* C) Leaf Notes (Files) — Parchment Tabs */
+.theme-dark .nav-file-title {
+	background: var(--pbr-manuscript-texture) !important;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3) !important;
+	border-left: 2px solid rgba(155, 107, 242, 0.2) !important;
+	border-radius: 0 4px 4px 0;
+	margin: 2px 4px 2px 16px;
+	padding: 4px 8px;
+	
+	color: var(--ic-text-normal) !important;
+	font-family: var(--ic-font-body) !important;
+}
+/* Active Leaf Note gets cyan interaction (handled in 13-stark-tech-hud) */
+
+
+/* The Vault Title */
+.theme-dark .workspace-sidedock-vault-profile {
+	color: var(--ic-gold-bright) !important;
+	text-shadow: 0 -2px 4px rgba(0, 0, 0, 1); /* Deep engraving */
+	font-family: var(--ic-font-display) !important;
+	font-weight: 900;
+	letter-spacing: 3px;
+	background: var(--pbr-obsidian-texture) !important;
+	box-shadow: var(--pbr-obsidian-depth), var(--pbr-obsidian-reflectivity) !important;
+	border-bottom: 2px solid #000 !important;
+	padding: 24px 16px !important;
+}

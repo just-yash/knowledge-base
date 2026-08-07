@@ -1,0 +1,213 @@
+/* ───────────────────────────────────────────────────────────────────────
+   01-TOKENS.CSS — Infinite Citadel Master Token Registry (Luxury AAA Edition)
+   ─────────────────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap');
+
+.theme-dark, .theme-light {
+	/* Typography Scale */
+	--ic-font-display:     "Cinzel", "Iowan Old Style", Georgia, serif;
+	--ic-font-display-alt: "Cinzel", "Cinzel Decorative", serif;
+	--ic-font-elegant:     "Cinzel", "Cormorant Garamond", Georgia, serif;
+	--ic-font-body:        "Literata", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--ic-font-mono:        "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+	/* Spacing & Radii Scale */
+	--ic-radius-s:  6px;
+	--ic-radius-m:  10px;
+	--ic-radius-l:  16px;
+	--ic-radius-xl: 22px;
+
+	/* Motion Timing & Curves */
+	--ic-ease-kinetic: cubic-bezier(0.16, 1, 0.3, 1);
+	--ic-ease-smooth:  cubic-bezier(0.25, 1, 0.5, 1);
+	--ic-ease-pop:     cubic-bezier(0.34, 1.56, 0.64, 1);
+	--ic-dur-instant:  150ms;
+	--ic-dur-fast:     250ms;
+	--ic-dur-normal:   350ms;
+}
+
+/* ── DARK THEME MASTER PALETTE ──────────────────────────────────────── */
+.theme-dark {
+	/* 70% Neutral Mass — Deep Space & Obsidian Void */
+	--ic-void:            #040509;
+	--ic-void-2:          #080a12;
+	--ic-nebula:          #0e1326;
+	--ic-nebula-2:        #151b36;
+	
+	/* Warm Ivory (Manuscripts & Text) */
+	--ic-text-bright:     #fdfbf7;
+	--ic-text-normal:     #e8e2d2; /* Warm ivory */
+	--ic-text-muted:      #a8a396;
+	--ic-text-faint:      #78746a;
+
+	/* 20% Supporting — Valyrian Steel, Dragonstone & Arc Energy */
+	--ic-panel:           #0c101d;
+	--ic-panel-2:         #12182c;
+	--ic-valyrian:        #c7d4e3;
+	--ic-valyrian-dim:    #7c8aa3;
+	--ic-arc-cyan-dim:    #2b8f96;
+	--ic-purple-dim:      #5d4499;
+	
+	/* Knowledge & Magic */
+	--ic-gold:            #d9a857;
+	--ic-gold-bright:     #f0c878;
+	--ic-gold-burnished:  #b8860b;
+	--ic-purple:          #9b6bf2;
+	
+	/* Stars & Elements */
+	--ic-starlight:       #ffffff; /* White Stars */
+	--ic-arc-cyan:        #55e6ec; /* Technology */
+	--ic-emerald:         #4fc98a;
+	--ic-crimson:         #e1544b;
+	--ic-amber:           #f0a860;
+	--ic-ember:           #e6643b;
+
+	/* Material Gradients & Physical Surfaces */
+	--mat-obsidian-bg:         #040509;
+	--mat-obsidian-bg-surface: linear-gradient(165deg, #0a0d1a 0%, #050711 100%);
+	--mat-obsidian-border:     1px solid rgba(199, 212, 227, 0.07);
+	--mat-obsidian-shadow:     0 12px 40px rgba(0, 0, 0, 0.75), 0 2px 10px rgba(0, 0, 0, 0.50);
+	--mat-obsidian-highlight:  inset 0 1px 0 rgba(199, 212, 227, 0.08);
+
+	--mat-dragonstone-bg:        linear-gradient(145deg, #0e1118 0%, #07090e 100%);
+	--mat-dragonstone-border:    1px solid rgba(124, 138, 163, 0.14);
+	--mat-dragonstone-shadow:    0 14px 44px rgba(0, 0, 0, 0.80);
+	--mat-dragonstone-highlight: inset 0 1px 0 rgba(150, 165, 190, 0.08);
+
+	--mat-steel-bg:            linear-gradient(160deg, #181f33 0%, #101626 100%);
+	--mat-steel-border:        1px solid rgba(199, 212, 227, 0.12);
+	--mat-steel-shadow:        0 2px 6px rgba(0, 0, 0, 0.55);
+	--mat-steel-highlight:     inset 0 1px 0 rgba(199, 212, 227, 0.14), inset 0 -1px 0 rgba(0, 0, 0, 0.40);
+
+	--mat-marble-bg:           linear-gradient(135deg, #1e2436 0%, #131826 100%);
+	--mat-marble-border:       1px solid rgba(240, 200, 120, 0.15);
+	--mat-marble-shadow:       0 8px 30px rgba(0, 0, 0, 0.50);
+	--mat-marble-highlight:    inset 0 1px 0 rgba(240, 230, 210, 0.14);
+
+	--mat-brass-bg:            linear-gradient(135deg, rgba(217, 168, 87, 0.14) 0%, rgba(20, 16, 10, 0.94) 100%);
+	--mat-brass-border:        1px solid rgba(217, 168, 87, 0.28);
+	--mat-brass-shadow:        0 6px 24px rgba(100, 70, 20, 0.25);
+	--mat-brass-highlight:     inset 0 1px 0 rgba(240, 200, 120, 0.22);
+
+	--mat-iron-bg:             linear-gradient(150deg, #131620 0%, #0c0e15 100%);
+	--mat-iron-border:         1px solid rgba(100, 115, 140, 0.20);
+	--mat-iron-shadow:         0 16px 48px rgba(0, 0, 0, 0.85);
+	--mat-iron-highlight:      inset 0 1px 0 rgba(140, 155, 180, 0.12);
+
+	--mat-glass-bg:            rgba(12, 17, 34, 0.65);
+	--mat-glass-bg-dense:      rgba(9, 13, 26, 0.88);
+	--mat-glass-border:        1px solid rgba(199, 212, 227, 0.08);
+	--mat-glass-shadow:        0 6px 28px rgba(0, 0, 0, 0.40);
+	--mat-glass-highlight:     inset 0 1px 0 rgba(200, 220, 255, 0.08);
+
+	--mat-parchment-bg:        linear-gradient(135deg, rgba(217, 168, 87, 0.08) 0%, rgba(14, 11, 7, 0.92) 100%);
+	--mat-parchment-border:    1px solid rgba(217, 168, 87, 0.22);
+	--mat-parchment-shadow:    0 6px 20px rgba(100, 70, 20, 0.18);
+	--mat-parchment-highlight: inset 0 1px 0 rgba(217, 168, 87, 0.12);
+
+	--mat-reactor-bg:          linear-gradient(135deg, rgba(85, 230, 236, 0.08) 0%, rgba(9, 14, 28, 0.96) 100%);
+	--mat-reactor-border:      1px solid rgba(85, 230, 236, 0.22);
+	--mat-reactor-shadow:      0 0 24px rgba(85, 230, 236, 0.12), 0 6px 20px rgba(0, 0, 0, 0.45);
+	--mat-reactor-highlight:   inset 0 1px 0 rgba(85, 230, 236, 0.14);
+
+	/* Glow & Ambient Lighting Auras */
+	--ic-glow-cyan:    0 0 16px rgba(85, 230, 236, 0.38);
+	--ic-glow-gold:    0 0 18px rgba(217, 168, 87, 0.38);
+	--ic-glow-purple:  0 0 18px rgba(155, 107, 242, 0.42);
+
+	--ic-glass:          var(--mat-glass-bg);
+	--ic-glass-strong:   var(--mat-glass-bg-dense);
+	--ic-obsidian-stone: var(--mat-obsidian-bg-surface);
+	--ic-shadow-deep:    var(--mat-obsidian-shadow);
+	--ic-shadow-soft:    0 2px 10px rgba(0, 0, 0, 0.35);
+	--ic-border-steel:   var(--mat-steel-border);
+	--ic-border-gold:    var(--mat-parchment-border);
+	--ic-border-cyan:    var(--mat-reactor-border);
+}
+
+.theme-light {
+	--ic-void:            #f0ede6;
+	--ic-void-2:          #e8e4db;
+	--ic-nebula:          #ddd8cd;
+	--ic-nebula-2:        #d3cdc0;
+	--ic-text-bright:     #1a1612;
+	--ic-text-normal:     #2c2820;
+	--ic-text-muted:      #6b6358;
+	--ic-text-faint:      #9c9488;
+
+	--ic-panel:           #f6f3ec;
+	--ic-panel-2:         #ebe7de;
+	--ic-valyrian:        #4a4354;
+	--ic-valyrian-dim:    #7a7382;
+	--ic-arc-cyan-dim:    #60b5ba;
+	--ic-purple-dim:      #8b6bd0;
+	--ic-gold:            #9e7422;
+
+	--ic-arc-cyan:        #0e7c84;
+	--ic-gold-bright:     #a67b1a;
+	--ic-purple:          #6d3cc4;
+	--ic-starlight:       #1a1612;
+	--ic-emerald:         #1f845a;
+	--ic-crimson:         #c43a32;
+	--ic-amber:           #c47f2a;
+
+	--mat-obsidian-bg:         #f0ede6;
+	--mat-obsidian-bg-surface: linear-gradient(160deg, #f4f1ea 0%, #ebe7de 100%);
+	--mat-obsidian-border:     1px solid rgba(45, 35, 25, 0.09);
+	--mat-obsidian-shadow:     0 8px 32px rgba(45, 35, 25, 0.06), 0 2px 8px rgba(45, 35, 25, 0.04);
+	--mat-obsidian-highlight:  inset 0 1px 0 rgba(255, 255, 255, 0.70);
+
+	--mat-dragonstone-bg:        linear-gradient(145deg, #e8e4dc 0%, #ded9ce 100%);
+	--mat-dragonstone-border:    1px solid rgba(45, 35, 25, 0.12);
+	--mat-dragonstone-shadow:    0 10px 36px rgba(45, 35, 25, 0.08);
+	--mat-dragonstone-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.80);
+
+	--mat-steel-bg:            linear-gradient(160deg, #e6e2da 0%, #dbd6cc 100%);
+	--mat-steel-border:        1px solid rgba(45, 35, 25, 0.12);
+	--mat-steel-shadow:        0 1px 3px rgba(45, 35, 25, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.60);
+	--mat-steel-highlight:     inset 0 1px 0 rgba(255, 255, 255, 0.80);
+
+	--mat-marble-bg:           linear-gradient(135deg, #f8f5ee 0%, #eae4d8 100%);
+	--mat-marble-border:       1px solid rgba(158, 116, 34, 0.18);
+	--mat-marble-shadow:       0 6px 24px rgba(45, 35, 25, 0.06);
+	--mat-marble-highlight:    inset 0 1px 0 rgba(255, 255, 255, 0.90);
+
+	--mat-brass-bg:            linear-gradient(135deg, rgba(158, 116, 34, 0.10) 0%, rgba(246, 240, 228, 0.95) 100%);
+	--mat-brass-border:        1px solid rgba(158, 116, 34, 0.28);
+	--mat-brass-shadow:        0 4px 20px rgba(158, 116, 34, 0.08);
+	--mat-brass-highlight:     inset 0 1px 0 rgba(255, 255, 255, 0.70);
+
+	--mat-iron-bg:             linear-gradient(150deg, #e2ded5 0%, #d5cfc3 100%);
+	--mat-iron-border:         1px solid rgba(45, 35, 25, 0.15);
+	--mat-iron-shadow:         0 12px 40px rgba(45, 35, 25, 0.08);
+	--mat-iron-highlight:      inset 0 1px 0 rgba(255, 255, 255, 0.80);
+
+	--mat-glass-bg:            rgba(255, 252, 245, 0.72);
+	--mat-glass-bg-dense:      rgba(246, 243, 236, 0.90);
+	--mat-glass-border:        1px solid rgba(45, 35, 25, 0.07);
+	--mat-glass-shadow:        0 4px 20px rgba(45, 35, 25, 0.05);
+	--mat-glass-highlight:     inset 0 1px 0 rgba(255, 255, 255, 0.90);
+
+	--mat-parchment-bg:        linear-gradient(135deg, rgba(158, 116, 34, 0.08) 0%, rgba(246, 240, 228, 0.95) 100%);
+	--mat-parchment-border:    1px solid rgba(158, 116, 34, 0.20);
+	--mat-parchment-shadow:    0 4px 16px rgba(158, 116, 34, 0.06);
+	--mat-parchment-highlight: inset 0 1px 0 rgba(217, 168, 87, 0.14);
+
+	--mat-reactor-bg:          linear-gradient(135deg, rgba(14, 124, 132, 0.06) 0%, rgba(240, 237, 230, 0.95) 100%);
+	--mat-reactor-border:      1px solid rgba(14, 124, 132, 0.24);
+	--mat-reactor-shadow:      0 0 20px rgba(14, 124, 132, 0.08), 0 4px 16px rgba(45, 35, 25, 0.06);
+	--mat-reactor-highlight:   inset 0 1px 0 rgba(14, 124, 132, 0.10);
+
+	--ic-glow-cyan:    0 0 14px rgba(14, 124, 132, 0.25);
+	--ic-glow-gold:    0 0 16px rgba(158, 116, 34, 0.25);
+	--ic-glow-purple:  0 0 16px rgba(109, 60, 196, 0.30);
+
+	--ic-glass:          var(--mat-glass-bg);
+	--ic-glass-strong:   var(--mat-glass-bg-dense);
+	--ic-obsidian-stone: var(--mat-obsidian-bg-surface);
+	--ic-shadow-deep:    var(--mat-obsidian-shadow);
+	--ic-shadow-soft:    0 2px 10px rgba(45, 35, 25, 0.10);
+	--ic-border-steel:   var(--mat-steel-border);
+	--ic-border-gold:    var(--mat-parchment-border);
+	--ic-border-cyan:    var(--mat-reactor-border);
+}

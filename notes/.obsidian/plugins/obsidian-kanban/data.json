@@ -1,0 +1,8 @@
+{
+  "show-checkboxes": false,
+  "date-format": "YYYY-MM-DD",
+  "time-format": "HHmm",
+  "date-display-format": "YYYY-MM-DD",
+  "archive-date-format": "YYYY-MM-DD HHmm",
+  "metadata-keys": []
+}

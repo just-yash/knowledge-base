@@ -1,0 +1,47 @@
+/* ───────────────────────────────────────────────────────────────────────
+   10-MOTION-SYSTEM.CSS — Motion Architecture, Tokens & Accessibility
+   ───────────────────────────────────────────────────────────────────────
+   Centralized Motion Token Registry exposing Bezier easing curves,
+   timing budgets, transition helpers, and reduced-motion enforcement.
+   ─────────────────────────────────────────────────────────────────────── */
+
+.theme-dark, .theme-light {
+	/* Easing Function Tokens */
+	--ic-ease-kinetic: cubic-bezier(0.16, 1, 0.3, 1);  /* Rapid exit with elastic settle */
+	--ic-ease-smooth:  cubic-bezier(0.25, 1, 0.5, 1);  /* Standard interface movement */
+	--ic-ease-energy:  cubic-bezier(0.7, 0, 0.84, 0);  /* Accelerating energy pulse */
+	--ic-ease-pop:     cubic-bezier(0.34, 1.56, 0.64, 1);/* Overshooting micro-pop */
+
+	/* Duration Tokens */
+	--ic-dur-instant: 150ms;  /* Press state, active click feedback */
+	--ic-dur-fast:    250ms;  /* Hover light-spreads, focus ring glows */
+	--ic-dur-normal:  350ms;  /* Modals, command palette, prompt transitions */
+	--ic-dur-slow:    550ms;  /* Drawer expansions, sidebar slides */
+	--ic-dur-ambient: 8s;     /* Status bar shimmer, fast ambient pulses */
+
+	/* Composite Transition Tokens */
+	--ic-trans-hover: transform var(--ic-dur-fast) var(--ic-ease-kinetic),
+	                  opacity var(--ic-dur-fast) ease,
+	                  box-shadow var(--ic-dur-fast) ease,
+	                  border-color var(--ic-dur-fast) ease;
+	--ic-trans-press: transform var(--ic-dur-instant) var(--ic-ease-kinetic);
+	--ic-trans-panel: opacity var(--ic-dur-normal) var(--ic-ease-kinetic),
+	                  transform var(--ic-dur-normal) var(--ic-ease-kinetic);
+}
+
+/* Reusable Transition Utility Classes */
+.ic-transition-hover { transition: var(--ic-trans-hover); }
+.ic-transition-press { transition: var(--ic-trans-press); }
+.ic-transition-panel { transition: var(--ic-trans-panel); }
+
+/* Reduced Motion Safety Enforcement */
+@media (prefers-reduced-motion: reduce) {
+	.theme-dark *, .theme-dark *::before, .theme-dark *::after,
+	.theme-light *, .theme-light *::before, .theme-light *::after {
+		animation-duration: 0.001s !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001s !important;
+		animation: none !important;
+		transition: none !important;
+	}
+}

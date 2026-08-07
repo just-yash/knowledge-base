@@ -1,0 +1,17 @@
+{
+  "frames": [
+    {
+      "url": "<iframe src=\"exam-report.html\" width=\"100%\" height=\"600px\"></iframe>",
+      "displayName": "New Frame",
+      "icon": "",
+      "hideOnMobile": true,
+      "addRibbonIcon": false,
+      "openInCenter": false,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    }
+  ],
+  "padding": 5
+}

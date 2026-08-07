@@ -1,0 +1,123 @@
+/* ───────────────────────────────────────────────────────────────────────
+   12-EXPLORER-ARCHIVE.CSS — The Infinite Citadel Sidebar
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* 1. Structural File Tree */
+.theme-dark .nav-folder {
+	margin-bottom: 8px;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* 2. Folder Headers */
+.theme-dark .nav-folder-title {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	/* Removed the bottom border line */
+	margin: 6px 4px 2px 4px;
+	padding: 6px 8px;
+	border-radius: 0;
+	color: var(--ic-text-muted) !important;
+	font-family: var(--ic-font-display);
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	font-size: 0.85em;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	transition: color 0.25s ease;
+}
+
+.theme-dark .nav-folder-title:hover {
+	color: var(--ic-starlight) !important;
+}
+
+/* Removed constellation star from folder headers */
+.theme-dark .nav-folder-title::before {
+	display: none;
+}
+
+/* 3. The Files */
+.theme-dark .nav-file {
+	margin: 1px 8px 1px 18px; /* Adjusted margin since we removed the vertical line */
+}
+
+.theme-dark .nav-file-title {
+	background: transparent;
+	border: none;
+	/* Removed the left border line */
+	padding: 4px 10px;
+	border-radius: var(--ic-radius-s); /* Soft rounded selection instead of border */
+	transition: all 0.25s var(--ic-ease-kinetic);
+	color: var(--ic-text-normal);
+}
+
+.theme-dark .nav-file-title:hover {
+	background: rgba(85, 230, 236, 0.05); /* Just a very subtle hover background, no border */
+	color: var(--ic-starlight);
+	transform: translateX(2px);
+}
+
+/* Active file */
+.theme-dark .nav-file-title.is-active {
+	background: rgba(85, 230, 236, 0.1);
+	/* Removed the left border and heavy inset shadow */
+	box-shadow: none;
+	color: var(--ic-arc-cyan);
+	font-weight: 600;
+	/* Removed heavy text-shadow */
+}
+
+/* 4. Vault Title Header */
+.theme-dark .nav-header {
+	/* Removed bottom border and background radial gradient */
+	border: none;
+	background: transparent;
+	padding: 16px;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.theme-dark .workspace-sidedock-vault-profile {
+	color: var(--ic-text-bright) !important;
+	font-size: 1.1em;
+	/* Removed heavy text shadow */
+}
+
+/* 5. Knowledge Connections (Backlinks, Outgoing Links, Search) */
+.theme-dark :is(.backlink-pane, .outgoing-link-pane, .search-result-container) {
+	background: var(--pbr-obsidian-texture) !important;
+	border: 1px solid rgba(155, 107, 242, 0.2);
+	border-radius: 6px;
+	padding: 12px;
+	box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+.theme-dark :is(.search-result-file-title, .tree-item-self) {
+	font-family: var(--ic-font-display);
+	color: var(--ic-gold-bright) !important;
+	text-shadow: 0 0 8px rgba(217, 168, 87, 0.3);
+	font-size: 1.1em;
+	padding: 6px 0;
+}
+
+.theme-dark .search-result-file-match {
+	font-family: var(--ic-font-mono);
+	color: var(--ic-arc-cyan) !important;
+	background: rgba(85, 230, 236, 0.05);
+	border-left: 2px solid var(--ic-arc-cyan);
+	padding: 6px 10px;
+	margin-top: 4px;
+	border-radius: 0 4px 4px 0;
+	box-shadow: inset 20px 0 20px -20px rgba(85, 230, 236, 0.1);
+}
+
+.theme-dark .search-result-file-match:hover {
+	background: rgba(85, 230, 236, 0.15);
+	box-shadow: inset 40px 0 20px -20px rgba(85, 230, 236, 0.2);
+	color: var(--ic-starlight) !important;
+}

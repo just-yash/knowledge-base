@@ -1,0 +1,500 @@
+/* ───────────────────────────────────────────────────────────────────────
+   5. SIDEBAR, RIBBON & FILE EXPLORER — the citadel's stone archive
+   Material: POLISHED OBSIDIAN
+   Surface:  --mat-obsidian-bg-surface / --mat-obsidian-border
+   Hover:    golden LIGHT-SPREAD — a radial glow expanding from the
+             item's centre (transform + opacity transition on ::before)
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* Sidebar panel surfaces — solid obsidian with subtle depth gradient */
+.theme-dark .workspace-split.mod-left-split .workspace-tabs,
+.theme-dark .workspace-split.mod-right-split .workspace-tabs {
+	background: var(--mat-obsidian-bg-surface);
+	border-right: var(--mat-obsidian-border);
+	box-shadow: var(--mat-obsidian-highlight);
+}
+.theme-dark .workspace-split.mod-right-split .workspace-tabs {
+	border-right: none;
+	border-left: var(--mat-obsidian-border);
+}
+
+/* Ribbon — deep obsidian strip with light-spread icons */
+.theme-dark .side-dock-ribbon {
+	background: var(--mat-obsidian-bg);
+	border-right: var(--mat-obsidian-border);
+}
+.theme-dark .side-dock-ribbon .clickable-icon {
+	color: var(--ic-text-muted);
+	border-radius: var(--ic-radius-s);
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	transition: color 0.25s ease, transform 0.2s ease;
+}
+/* Ribbon icon light-spread — cyan glow from centre */
+.theme-dark .side-dock-ribbon .clickable-icon::before {
+	content: "";
+	position: absolute;
+	inset: -30%;
+	background: radial-gradient(circle at 50% 50%,
+		rgba(85, 230, 236, 0.28), transparent 70%);
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+	            opacity 0.25s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+.theme-dark .side-dock-ribbon .clickable-icon:hover {
+	color: var(--ic-arc-cyan);
+	transform: translateY(-1px);
+}
+.theme-dark .side-dock-ribbon .clickable-icon:hover::before {
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* Nav items — obsidian tiles with golden light-spread on hover ──────
+   ::before is the radial glow pseudo; z-index:-1 keeps it under text.
+   Parent gets z-index:0 to create a stacking context.                   */
+.theme-dark .nav-folder-title,
+.theme-dark .nav-file-title {
+	border-radius: var(--ic-radius-s);
+	position: relative;
+	z-index: 0;
+	transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.theme-dark .nav-folder-title::before,
+.theme-dark .nav-file-title::before {
+	content: "";
+	position: absolute;
+	inset: -25%;
+	background: radial-gradient(circle at 50% 50%,
+		rgba(217, 168, 87, 0.16), transparent 70%);
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+	            opacity 0.3s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+.theme-dark .nav-file-title:hover::before,
+.theme-dark .nav-folder-title:hover::before {
+	transform: scale(1);
+	opacity: 1;
+}
+.theme-dark .nav-file-title:hover,
+.theme-dark .nav-folder-title:hover {
+	transform: translateX(3px);
+}
+
+/* Active file — purple inset glow with obsidian highlight */
+.theme-dark .nav-file-title.is-active {
+	background: linear-gradient(90deg, rgba(155,107,242,0.22), rgba(155,107,242,0.04));
+	box-shadow: inset 2px 0 0 var(--ic-purple), var(--mat-obsidian-highlight);
+	color: var(--ic-starlight);
+}
+.theme-dark .nav-folder-title {
+	color: var(--ic-valyrian);
+	font-weight: 500;
+}
+.theme-dark .nav-file-tag {
+	background: rgba(217, 168, 87, 0.14);
+	color: var(--ic-gold);
+	border-radius: 999px;
+}
+
+/* Vault name — gold sigil engraved in obsidian */
+.theme-dark .nav-header + .workspace-sidedock-vault-profile,
+.theme-dark .workspace-drawer-vault-switcher {
+	font-family: var(--ic-font-display);
+	letter-spacing: 1px;
+	color: var(--ic-gold);
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   6. WORKSPACE TABS — valyrian steel rail
+   Material: VALYRIAN STEEL
+   Surface:  --mat-steel-bg / --mat-steel-border / --mat-steel-highlight
+   Hover:    cool-white LIGHT-SPREAD rising from the bottom edge
+             (elliptical radial, imitates light reflecting off metal)
+   Active:   arc-cyan underline with energy bloom + steel bevel
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-dark .workspace-tab-header-container {
+	background: var(--mat-steel-bg);
+	border-bottom: var(--mat-steel-border);
+	box-shadow: var(--mat-steel-highlight);
+}
+.theme-dark .workspace-tab-header {
+	border-radius: var(--ic-radius-s) var(--ic-radius-s) 0 0;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	transition: transform 0.2s ease;
+}
+/* Light-spread on hover — steel catching white light from below */
+.theme-dark .workspace-tab-header::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(ellipse 90% 140% at 50% 110%,
+		rgba(199, 212, 227, 0.14), transparent 65%);
+	transform: scaleY(0.4) translateY(40%);
+	opacity: 0;
+	transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+	            opacity 0.3s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+.theme-dark .workspace-tab-header:hover::before {
+	transform: scaleY(1) translateY(0);
+	opacity: 1;
+}
+.theme-dark .workspace-tab-header:hover:not(.is-active) {
+	transform: translateY(-1px);
+}
+/* Active tab — energised steel plate */
+.theme-dark .workspace-tab-header.is-active {
+	background: var(--ic-panel);
+	box-shadow:
+		var(--mat-steel-highlight),
+		inset 0 -2px 0 var(--ic-arc-cyan),
+		0 -4px 14px -6px rgba(85, 230, 236, 0.35);
+}
+.theme-dark .workspace-tab-header-inner-title {
+	font-family: var(--ic-font-body);
+	font-weight: 500;
+	position: relative;
+	z-index: 1;
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   7. STATUS BAR — arc-reactor energy strip along the citadel floor
+   Material: ARC-REACTOR METAL
+   Surface:  --mat-reactor-bg / --mat-reactor-border
+   Features: animated shimmer pulse across top edge (transform-only),
+             wide-ellipse cyan light-spread on individual items
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-dark .status-bar {
+	background: var(--mat-reactor-bg);
+	border-top: var(--mat-reactor-border);
+	box-shadow: var(--mat-reactor-highlight);
+	color: var(--ic-text-faint);
+	font-family: var(--ic-font-mono);
+	font-size: 0.72em;
+	position: relative;
+	overflow: hidden;
+}
+/* Shimmer pulse — a thin energy band that sweeps the top edge.
+   Uses transform:translateX (compositor-only, ~0 paint cost).           */
+.theme-dark .status-bar::before {
+	content: "";
+	position: absolute;
+	top: -1px; left: 0; right: 0; height: 1px;
+	background: linear-gradient(90deg, transparent, var(--ic-arc-cyan), transparent);
+	opacity: 0.6;
+	animation: ic-reactor-pulse 8s linear infinite;
+	will-change: transform;
+}
+/* New: transform-based pulse for §7 */
+@keyframes ic-reactor-pulse {
+	0%   { transform: translateX(-100%); }
+	100% { transform: translateX(100%); }
+}
+/* Legacy: background-position shimmer reused by §11 code-block top-line.
+   Kept here so sections 10–20 continue working untouched.               */
+@keyframes ic-status-shimmer {
+	0%   { background-position: -100% 0; }
+	100% { background-position: 200% 0; }
+}
+
+/* Status item hover: wide-ellipse cyan energy wave */
+.theme-dark .status-bar-item {
+	position: relative;
+	z-index: 0;
+	border-radius: var(--ic-radius-s);
+	transition: color 0.2s ease, transform 0.15s ease;
+}
+.theme-dark .status-bar-item::before {
+	content: "";
+	position: absolute;
+	inset: -40% -20%;
+	background: radial-gradient(ellipse 130% 90% at 50% 50%,
+		rgba(85, 230, 236, 0.22), transparent 65%);
+	transform: scaleX(0);
+	opacity: 0;
+	transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+	            opacity 0.25s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+.theme-dark .status-bar-item:hover {
+	color: var(--ic-arc-cyan);
+	transform: translateY(-1px);
+}
+.theme-dark .status-bar-item:hover::before {
+	transform: scaleX(1);
+	opacity: 1;
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   8. SEARCH & COMMAND PALETTE — the citadel's oracle terminal
+   Material: FROSTED GLASS
+   Surface:  --mat-glass-bg-dense / --mat-glass-border / --mat-glass-shadow
+   Open:     scale-up appear + diagonal SHIMMER SWEEP across the glass
+   Focus:    ENERGY TRACE — a thin light pulse along the input underline
+   Hover:    purple LIGHT-SPREAD on suggestion items (glass refraction)
+   ─────────────────────────────────────────────────────────────────────── */
+.theme-dark .prompt {
+	background: var(--mat-glass-bg-dense);
+	backdrop-filter: blur(24px) saturate(160%);
+	border: var(--mat-glass-border);
+	border-radius: var(--ic-radius-l);
+	box-shadow: var(--mat-glass-shadow),
+	            0 0 40px -10px rgba(85, 230, 236, 0.25);
+	position: relative;
+	overflow: hidden;
+	animation: ic-prompt-appear 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+/* Shimmer sweep — a diagonal light band crossing the glass on open.
+   Uses transform:translateX only (compositor-threaded).                  */
+.theme-dark .prompt::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	background: linear-gradient(105deg,
+		transparent 40%,
+		rgba(255, 255, 255, 0.06) 47%,
+		rgba(255, 255, 255, 0.13) 50%,
+		rgba(255, 255, 255, 0.06) 53%,
+		transparent 60%);
+	transform: translateX(-150%);
+	pointer-events: none;
+	z-index: 2;
+	animation: ic-shimmer-sweep 0.7s 0.15s ease-out forwards;
+}
+@keyframes ic-prompt-appear {
+	from { opacity: 0; transform: translateY(-6px) scale(0.98); }
+	to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes ic-shimmer-sweep {
+	from { transform: translateX(-150%); }
+	to   { transform: translateX(150%); }
+}
+
+/* Input underline with energy trace on focus ─────────────────────────
+   A thin gradient pulse travels the underline left-to-right when the
+   user focuses the search input.  transform + opacity only.              */
+.theme-dark .prompt-input-container {
+	border-bottom: var(--mat-glass-border);
+	position: relative;
+	overflow: hidden;
+}
+.theme-dark .prompt-input-container::after {
+	content: "";
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	height: 1px;
+	background: linear-gradient(90deg,
+		transparent, var(--ic-arc-cyan), transparent);
+	transform: translateX(-100%);
+	opacity: 0;
+	pointer-events: none;
+}
+.theme-dark .prompt-input-container:focus-within::after {
+	animation: ic-energy-trace 1.2s ease-out forwards;
+}
+@keyframes ic-energy-trace {
+	0%   { transform: translateX(-100%); opacity: 0; }
+	15%  { opacity: 1; }
+	100% { transform: translateX(100%); opacity: 0; }
+}
+
+.theme-dark .prompt-input {
+	font-family: var(--ic-font-body);
+	color: var(--ic-starlight);
+	caret-color: var(--ic-gold-bright);
+	position: relative;
+	z-index: 1;
+}
+
+/* Suggestion items — purple glass-refraction light-spread on hover */
+.theme-dark .suggestion-item {
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	border-radius: var(--ic-radius-s);
+	transition: box-shadow 0.25s ease;
+}
+.theme-dark .suggestion-item::before {
+	content: "";
+	position: absolute;
+	inset: -30%;
+	background: radial-gradient(circle at 50% 50%,
+		rgba(155, 107, 242, 0.16), transparent 65%);
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+	            opacity 0.25s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+.theme-dark .suggestion-item.is-selected::before,
+.theme-dark .suggestion-item:hover::before {
+	transform: scale(1);
+	opacity: 1;
+}
+.theme-dark .suggestion-item.is-selected,
+.theme-dark .suggestion-item:hover {
+	box-shadow: inset 2px 0 0 var(--ic-arc-cyan);
+}
+
+.theme-dark .prompt-instructions {
+	color: var(--ic-text-faint);
+	font-family: var(--ic-font-mono);
+	font-size: 0.75em;
+}
+
+/* Search & text inputs — glass material with reactor focus ring */
+.theme-dark .search-input-container input,
+.theme-dark input[type="text"],
+.theme-dark input[type="search"] {
+	background: var(--background-modifier-form-field);
+	border: var(--mat-glass-border);
+	border-radius: var(--ic-radius-m);
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.theme-dark .search-input-container input:focus,
+.theme-dark input:focus {
+	border-color: var(--ic-arc-cyan);
+	box-shadow: 0 0 0 3px rgba(85, 230, 236, 0.12);
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   9. BUTTONS & INPUTS — arc-forged controls
+   Material: ARC-REACTOR METAL (CTA) / VALYRIAN STEEL (standard)
+   Hover:    cyan LIGHT-SPREAD rising from below (energy flowing upward)
+   Focus:    ENERGY TRACE along top border
+   Active:   compressed scale(0.98) — transform-only
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* Shared shape for all non-icon buttons */
+.theme-dark button:not(.clickable-icon),
+.theme-dark .mod-cta {
+	font-family: var(--ic-font-body);
+	font-weight: 600;
+	border-radius: var(--ic-radius-m);
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+/* Standard buttons — valyrian steel base */
+.theme-dark button:not(.clickable-icon):not(.mod-cta) {
+	border: var(--mat-steel-border);
+	background: var(--ic-panel-2);
+	color: var(--ic-text-normal);
+	box-shadow: var(--mat-steel-highlight);
+	transition: border-color 0.3s ease, transform 0.15s ease;
+}
+/* Standard button: light-spread on hover — cyan rising from below */
+.theme-dark button:not(.clickable-icon):not(.mod-cta)::before {
+	content: "";
+	position: absolute;
+	inset: -30%;
+	background: radial-gradient(ellipse 100% 130% at 50% 90%,
+		rgba(85, 230, 236, 0.20), transparent 65%);
+	transform: scaleY(0) translateY(30%);
+	opacity: 0;
+	transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+	            opacity 0.25s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+.theme-dark button:not(.clickable-icon):not(.mod-cta):hover::before {
+	transform: scaleY(1) translateY(0);
+	opacity: 1;
+}
+.theme-dark button:not(.clickable-icon):not(.mod-cta):hover {
+	border-color: var(--ic-arc-cyan);
+	transform: translateY(-1px);
+}
+/* Standard button: energy trace on focus-visible */
+.theme-dark button:not(.clickable-icon):not(.mod-cta)::after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; right: 0;
+	height: 1px;
+	background: linear-gradient(90deg,
+		transparent, var(--ic-arc-cyan), transparent);
+	transform: translateX(-100%);
+	opacity: 0;
+	pointer-events: none;
+}
+.theme-dark button:not(.clickable-icon):not(.mod-cta):focus-visible::after {
+	animation: ic-energy-trace 1s ease-out forwards;
+}
+
+/* CTA buttons — full arc-reactor metal with stronger bloom */
+.theme-dark .mod-cta {
+	background: linear-gradient(135deg,
+		rgba(155, 107, 242, 0.90),
+		rgba(85, 230, 236, 0.55));
+	color: var(--ic-void);
+	border: var(--mat-reactor-border);
+	box-shadow: var(--mat-reactor-shadow);
+	transition: transform 0.15s ease;
+}
+.theme-dark .mod-cta::before {
+	content: "";
+	position: absolute;
+	inset: -40%;
+	background: radial-gradient(circle at 50% 50%,
+		rgba(85, 230, 236, 0.40), transparent 60%);
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+	            opacity 0.3s ease;
+	pointer-events: none;
+	z-index: -1;
+}
+.theme-dark .mod-cta:hover::before {
+	transform: scale(1.3);
+	opacity: 1;
+}
+.theme-dark .mod-cta:hover {
+	transform: translateY(-1px);
+}
+
+/* Active press — all buttons */
+.theme-dark button:active { transform: translateY(0) scale(0.98); }
+
+/* Checkboxes — reactor energy on checked */
+.theme-dark .checkbox-container {
+	--checkbox-radius: 4px;
+	background: transparent;
+	border: 1.5px solid var(--ic-valyrian-dim);
+	transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.theme-dark .checkbox-container:hover { border-color: var(--ic-arc-cyan); }
+.theme-dark .checkbox-container.is-checked {
+	background: linear-gradient(135deg, var(--ic-emerald), #2f9e6c);
+	border-color: var(--ic-emerald);
+	box-shadow: 0 0 10px rgba(79, 201, 138, 0.5);
+}
+
+/* Range sliders */
+.theme-dark .slider,
+.theme-dark input[type="range"] { accent-color: var(--ic-arc-cyan); }
+
+/* Toggles — reactor glow on enabled */
+.theme-dark .toggle-container {
+	background: var(--ic-panel-2);
+	border: var(--mat-steel-border);
+	transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.theme-dark .toggle-container.is-enabled {
+	background: linear-gradient(135deg, var(--ic-purple), var(--ic-arc-cyan-dim));
+	box-shadow: var(--ic-glow-purple);
+}

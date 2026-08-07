@@ -1,0 +1,624 @@
+{
+  "replacements": {
+    "->": {
+      "replaced": "->",
+      "value": "→",
+      "group": "Arrows",
+      "count": 808
+    },
+    "<-": {
+      "replaced": "<-",
+      "value": "←",
+      "group": "Arrows",
+      "count": 21
+    },
+    "<->": {
+      "replaced": "<->",
+      "value": "↔",
+      "group": "Arrows",
+      "count": 53
+    },
+    "<=>": {
+      "replaced": "<=>",
+      "value": "⇔",
+      "group": "Arrows",
+      "count": 8
+    },
+    "=>": {
+      "replaced": "=>",
+      "value": "⇒",
+      "group": "Arrows",
+      "count": 245
+    },
+    "=/=": {
+      "replaced": "=/=",
+      "value": "≠",
+      "group": "Mathematical Operators"
+    },
+    "~=": {
+      "replaced": "~=",
+      "value": "≈",
+      "group": "Mathematical Operators"
+    },
+    "----": {
+      "replaced": "----",
+      "value": "—",
+      "group": "Miscellaneous",
+      "count": 20,
+      "disabled": true
+    },
+    "(c)": {
+      "replaced": "(c)",
+      "value": "©",
+      "group": "Miscellaneous",
+      "count": 1,
+      "disabled": true
+    },
+    "(r)": {
+      "replaced": "(r)",
+      "value": "®",
+      "group": "Miscellaneous",
+      "disabled": true
+    },
+    "/!\\": {
+      "replaced": "/!\\",
+      "value": "⚠",
+      "group": "Miscellaneous"
+    },
+    "(1)": {
+      "replaced": "(1)",
+      "value": "1️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(2)": {
+      "replaced": "(2)",
+      "value": "2️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(3)": {
+      "replaced": "(3)",
+      "value": "3️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(4)": {
+      "replaced": "(4)",
+      "value": "4️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(5)": {
+      "replaced": "(5)",
+      "value": "5️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(6)": {
+      "replaced": "(6)",
+      "value": "6️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(7)": {
+      "replaced": "(7)",
+      "value": "7️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(8)": {
+      "replaced": "(8)",
+      "value": "8️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(9)": {
+      "replaced": "(9)",
+      "value": "9️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(10)": {
+      "replaced": "(10)",
+      "value": "🔟",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "(0)": {
+      "replaced": "(0)",
+      "value": "0️⃣",
+      "group": "Numbers",
+      "disabled": true
+    },
+    "w/": {
+      "replaced": "w/",
+      "value": "with",
+      "group": "Words"
+    },
+    "w/o": {
+      "replaced": "w/o",
+      "value": "without",
+      "group": "Words"
+    },
+    "->>": {
+      "replaced": "->>",
+      "value": "⇉",
+      "group": "Arrows",
+      "count": 1
+    },
+    "<<-": {
+      "replaced": "<<-",
+      "value": "⇇",
+      "group": "Arrows"
+    },
+    "=>>": {
+      "replaced": "=>>",
+      "value": "⇉",
+      "group": "Arrows"
+    },
+    "<<=": {
+      "replaced": "<<=",
+      "value": "⇇",
+      "group": "Arrows"
+    },
+    "===": {
+      "replaced": "===",
+      "value": "≡",
+      "group": "Mathematical Operators",
+      "count": 82
+    },
+    "!=": {
+      "replaced": "!=",
+      "value": "≠",
+      "group": "Mathematical Operators",
+      "count": 53
+    },
+    "=<": {
+      "replaced": "=<",
+      "value": "≤",
+      "group": "Mathematical Operators",
+      "count": 24
+    },
+    ">=": {
+      "replaced": ">=",
+      "value": "≥",
+      "group": "Mathematical Operators",
+      "count": 15
+    },
+    "<<": {
+      "replaced": "<<",
+      "value": "≪",
+      "group": "Mathematical Operators",
+      "count": 2
+    },
+    ">>": {
+      "replaced": ">>",
+      "value": "≫",
+      "group": "Mathematical Operators",
+      "count": 2
+    },
+    "||": {
+      "replaced": "||",
+      "value": "∥",
+      "group": "Mathematical Operators",
+      "count": 6
+    },
+    "&&": {
+      "replaced": "&&",
+      "value": "∧",
+      "group": "Mathematical Operators"
+    },
+    "+/-": {
+      "replaced": "+/-",
+      "value": "±",
+      "group": "Mathematical Operators",
+      "count": 1
+    },
+    "...": {
+      "replaced": "...",
+      "value": "…",
+      "group": "Miscellaneous",
+      "count": 33
+    },
+    "sqrt": {
+      "replaced": "sqrt",
+      "value": "√",
+      "group": "Mathematical Operators"
+    },
+    "pi": {
+      "replaced": "pi",
+      "value": "π",
+      "group": "Mathematical Operators"
+    },
+    "inf": {
+      "replaced": "inf",
+      "value": "∞",
+      "group": "Mathematical Operators",
+      "count": 12
+    },
+    "sum": {
+      "replaced": "sum",
+      "value": "∑",
+      "group": "Mathematical Operators",
+      "count": 106
+    },
+    "prod": {
+      "replaced": "prod",
+      "value": "∏",
+      "group": "Mathematical Operators",
+      "count": 12
+    },
+    "delta": {
+      "replaced": "delta",
+      "value": "Δ",
+      "group": "Greek Letters",
+      "count": 69
+    },
+    "alpha": {
+      "replaced": "alpha",
+      "value": "α",
+      "group": "Greek Letters"
+    },
+    "beta": {
+      "replaced": "beta",
+      "value": "β",
+      "group": "Greek Letters"
+    },
+    "gamma": {
+      "replaced": "gamma",
+      "value": "γ",
+      "group": "Greek Letters"
+    },
+    "epsilon": {
+      "replaced": "epsilon",
+      "value": "ε",
+      "group": "Greek Letters"
+    },
+    "<=": {
+      "replaced": "<=",
+      "value": "⇐",
+      "group": "Arrows"
+    },
+    "wrt": {
+      "replaced": "wrt",
+      "value": "with respect to",
+      "disabled": false,
+      "group": "Words",
+      "count": 6
+    },
+    "w.r.t": {
+      "replaced": "w.r.t",
+      "value": "with respect to",
+      "disabled": false,
+      "group": "Words"
+    },
+    "im": {
+      "replaced": "im",
+      "value": "I'm",
+      "disabled": false,
+      "group": "Words",
+      "count": 9
+    },
+    "degree": {
+      "replaced": "degree",
+      "value": "°",
+      "disabled": false,
+      "group": "Greek Letters",
+      "count": 47
+    },
+    "i": {
+      "replaced": "i",
+      "value": "I",
+      "disabled": false,
+      "group": "Words",
+      "count": 226
+    },
+    "dont": {
+      "replaced": "dont",
+      "value": "don't",
+      "disabled": false,
+      "group": "Words",
+      "count": 42
+    },
+    "doesnt": {
+      "replaced": "doesnt",
+      "value": "doesn't",
+      "disabled": false,
+      "group": "Words",
+      "count": 33
+    },
+    "didnt": {
+      "replaced": "didnt",
+      "value": "didn't",
+      "disabled": false,
+      "group": "Words",
+      "count": 9
+    },
+    "xnor": {
+      "replaced": "xnor",
+      "value": "⊙",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 54
+    },
+    "xor": {
+      "replaced": "xor",
+      "value": "⊕",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 107
+    },
+    "^": {
+      "replaced": "^",
+      "value": "<sup></sup>",
+      "disabled": false,
+      "group": "Words",
+      "count": 36
+    },
+    "~": {
+      "replaced": "~",
+      "value": "<sub></sub>",
+      "disabled": false,
+      "group": "Words",
+      "count": 49
+    },
+    "^_": {
+      "replaced": "^_",
+      "value": "$\\overline{}$",
+      "disabled": false,
+      "group": "Words",
+      "count": 5
+    },
+    "rho": {
+      "replaced": "rho",
+      "value": "ρ",
+      "disabled": false,
+      "group": "Greek Letters",
+      "count": 53
+    },
+    "*": {
+      "replaced": "*",
+      "value": "×",
+      "disabled": false,
+      "group": "Words",
+      "count": 314
+    },
+    "theta": {
+      "replaced": "theta",
+      "value": "θ",
+      "disabled": false,
+      "group": "Words",
+      "count": 3
+    },
+    "AND": {
+      "replaced": "AND",
+      "value": "∧",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 165
+    },
+    "OR": {
+      "replaced": "OR",
+      "value": "∨",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 144
+    },
+    "NOT": {
+      "replaced": "NOT",
+      "value": "¬",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 93
+    },
+    "NAND": {
+      "replaced": "NAND",
+      "value": "↑",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 20
+    },
+    "NOR": {
+      "replaced": "NOR",
+      "value": "↓",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 27
+    },
+    "forall": {
+      "replaced": "forall",
+      "value": "∀",
+      "disabled": false,
+      "group": "Greek Letters",
+      "count": 16
+    },
+    "thereexists": {
+      "replaced": "thereexists",
+      "value": "∃",
+      "disabled": false,
+      "group": "Greek Letters",
+      "count": 11
+    },
+    "phi": {
+      "replaced": "phi",
+      "value": "ϕ",
+      "disabled": false,
+      "group": "Greek Letters",
+      "count": 41
+    },
+    "union": {
+      "replaced": "union",
+      "value": "∪",
+      "disabled": false,
+      "group": "Greek Letters",
+      "count": 96
+    },
+    "intersection": {
+      "replaced": "intersection",
+      "value": "∩",
+      "disabled": false,
+      "group": "Greek Letters",
+      "count": 130
+    },
+    "H6": {
+      "replaced": "H6",
+      "value": "######",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 836
+    },
+    "H5": {
+      "replaced": "H5",
+      "value": "#####",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 15
+    },
+    "H4": {
+      "replaced": "H4",
+      "value": "####",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 89
+    },
+    "H3": {
+      "replaced": "H3",
+      "value": "###",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 169
+    },
+    "H2": {
+      "replaced": "H2",
+      "value": "##",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 149
+    },
+    "H1": {
+      "replaced": "H1",
+      "value": "#",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 84
+    },
+    "e=": {
+      "replaced": "e=",
+      "value": "∈",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 20
+    },
+    "therefore": {
+      "replaced": "therefore",
+      "value": "$∴$",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 16
+    },
+    "#1": {
+      "replaced": "#1",
+      "value": "#",
+      "disabled": false,
+      "group": "Miscellaneous"
+    },
+    "#2": {
+      "replaced": "#2",
+      "value": "##",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 1
+    },
+    "#3": {
+      "replaced": "#3",
+      "value": "###",
+      "disabled": false,
+      "group": "Miscellaneous"
+    },
+    "#4": {
+      "replaced": "#4",
+      "value": "####",
+      "disabled": false,
+      "group": "Miscellaneous"
+    },
+    "#5": {
+      "replaced": "#5",
+      "value": "#####",
+      "disabled": false,
+      "group": "Miscellaneous"
+    },
+    "#6": {
+      "replaced": "#6",
+      "value": "######",
+      "disabled": false,
+      "group": "Miscellaneous"
+    },
+    "h1": {
+      "replaced": "h1",
+      "value": "#",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 3
+    },
+    "h2": {
+      "replaced": "h2",
+      "value": "##",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 11
+    },
+    "h3": {
+      "replaced": "h3",
+      "value": "###",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 6
+    },
+    "h4": {
+      "replaced": "h4",
+      "value": "####",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 4
+    },
+    "h5": {
+      "replaced": "h5",
+      "value": "#####",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 3
+    },
+    "h6": {
+      "replaced": "h6",
+      "value": "######",
+      "disabled": false,
+      "group": "Miscellaneous",
+      "count": 199
+    },
+    "subseteq": {
+      "replaced": "subseteq",
+      "value": "⊆",
+      "disabled": false,
+      "group": "Arrows",
+      "count": 18
+    },
+    "subset": {
+      "replaced": "subset",
+      "value": "⊂",
+      "disabled": false,
+      "group": "Arrows",
+      "count": 20
+    },
+    "!e=": {
+      "replaced": "!e=",
+      "value": "∉",
+      "disabled": false,
+      "group": "Mathematical Operators",
+      "count": 1
+    }
+  },
+  "exclusions": [],
+  "flexibleWordsStart": true,
+  "flexibleWordsEnd": true
+}

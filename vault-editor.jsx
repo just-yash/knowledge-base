@@ -113,7 +113,7 @@ function renderDataviewBlock(code) {
     }
 
     if (!filteredNotes.length) {
-      return `<div class="vault-dataview-empty">No notes found matching Dataview query.</div>`;
+      return `<p style="color:var(--text-muted);font-style:italic;">No notes found matching Dataview query.</p>`;
     }
 
     if (isTable) {
@@ -127,49 +127,36 @@ function renderDataviewBlock(code) {
         </tr>`;
       }).join('');
 
-      return `<div class="vault-dataview-block">
-        <div class="vault-dataview-header">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
-          Dataview Table (${filteredNotes.length})
-        </div>
-        <table class="vault-dataview-table">
-          <thead>
-            <tr>
-              <th>File</th>
-              <th>Status</th>
-              <th>Folder</th>
-            </tr>
-          </thead>
-          <tbody>${rowsHtml}</tbody>
-        </table>
-      </div>`;
+      return `<table class="dataview-table" style="width:100%;margin:14px 0;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Status</th>
+            <th>Folder</th>
+          </tr>
+        </thead>
+        <tbody>${rowsHtml}</tbody>
+      </table>`;
     }
 
     const listItems = filteredNotes.map(n => `<li>[[${n.title}]]</li>`).join('\n');
-    return `<div class="vault-dataview-block">
-      <div class="vault-dataview-header">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        Dataview List (${filteredNotes.length})
-      </div>
-      <ul class="vault-dataview-list">
-        ${listItems}
-      </ul>
-    </div>`;
+    return `<ul class="dataview-list" style="margin:14px 0;padding-left:22px;line-height:1.8;">\n${listItems}\n</ul>`;
   } catch (err) {
     console.error('Dataview render error:', err);
     return `<pre><code>${code}</code></pre>`;
   }
 }
 
-// ─── Configure marked at module level (runs once) ────────────────────────────
-(function initMarked() {
-  if (!window.marked) return;
+// ─── Configure marked (runs safely when marked is available) ─────────────────
+function ensureMarkedConfigured() {
+  if (!window.marked || window.marked._dataviewConfigured) return;
+  window.marked._dataviewConfigured = true;
   const renderer = new marked.Renderer();
 
   // ── Code blocks ──────────────────────────────────────────────────────────
   renderer.code = function(code, lang) {
     const language = (lang || 'text').trim().toLowerCase();
-    if (language === 'dataview') {
+    if (language.startsWith('dataview')) {
       return renderDataviewBlock(code);
     }
     let highlighted = code;
@@ -711,6 +698,7 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
   const containerRef = React.useRef(null);
 
   const rendered = React.useMemo(() => {
+    ensureMarkedConfigured();
     if (!note || !window.marked) return '';
     // 1. Convert ![[image]] → <img> HTML
     const withImgs = resolveObsidianEmbeds(note.content);

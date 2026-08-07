@@ -1,0 +1,751 @@
+/* ==========================================================================
+   AETHER CITADEL
+   "Knowledge forged in steel, powered by starlight."
+
+   A single visual language fusing:
+   - Deep space (cosmos, nebula, stars)
+   - Stark technology (arc-reactor blue, holographic glass)
+   - The Citadel / Westeros (stone, gold, Valyrian silver)
+   - Hogwarts magic (parchment glow, enchanted purple)
+
+   Built for Obsidian 1.4+. Dark mode primary; a workable light
+   variant ("Citadel by Day") is included at the bottom.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* ==========================================================================
+   1. COLOR TOKENS
+   ========================================================================== */
+
+.theme-dark {
+  /* --- Core palette --- */
+  --ac-void:            #070A12;   /* deepest background, space black */
+  --ac-deep-space:      #0F172A;   /* base app background */
+  --ac-panel:           #111827;   /* primary panel / sidebar */
+  --ac-panel-alt:       #172033;   /* secondary panel, hover surfaces */
+  --ac-steel:           #1B2436;   /* elevated surfaces, cards, modals */
+  --ac-steel-border:    #26314A;   /* borders / dividers */
+
+  --ac-arc-blue:        #59C3FF;   /* primary accent — Stark tech */
+  --ac-arc-blue-dim:    #3A8FC2;
+  --ac-magic-purple:    #8B5CF6;   /* secondary accent — magic */
+  --ac-magic-purple-dim:#6B46C7;
+  --ac-dragon-gold:     #D9B95A;   /* used sparingly — headers, emphasis */
+  --ac-valyrian-silver: #B8C2D6;   /* muted structural text */
+  --ac-ice:             #BDEFFF;   /* cool highlight, H4 */
+  --ac-emerald:         #5EDC8A;   /* success */
+  --ac-crimson:         #C84B5D;   /* danger */
+
+  --ac-text-normal:     #E3E8F0;
+  --ac-text-muted:      #94A3B8;
+  --ac-text-faint:      #5C6B85;
+
+  /* --- Fonts --- */
+  --ac-font-heading: 'Cinzel', Georgia, serif;
+  --ac-font-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ac-font-code:    'JetBrains Mono', 'SF Mono', Consolas, monospace;
+
+  /* ==========================================================================
+     2. MAP ONTO OBSIDIAN'S NATIVE VARIABLES
+     ========================================================================== */
+
+  --background-primary: var(--ac-void);
+  --background-primary-alt: var(--ac-deep-space);
+  --background-secondary: var(--ac-panel);
+  --background-secondary-alt: var(--ac-panel-alt);
+  --background-modifier-border: var(--ac-steel-border);
+  --background-modifier-border-hover: var(--ac-arc-blue-dim);
+  --background-modifier-border-focus: var(--ac-arc-blue);
+  --background-modifier-hover: rgba(89, 195, 255, 0.06);
+  --background-modifier-active-hover: rgba(89, 195, 255, 0.1);
+  --background-modifier-form-field: var(--ac-panel);
+  --background-modifier-error: rgba(200, 75, 93, 0.15);
+  --background-modifier-success: rgba(94, 220, 138, 0.15);
+  --background-modifier-message: var(--ac-steel);
+  --background-modifier-cover: rgba(7, 10, 18, 0.85);
+
+  --text-normal: var(--ac-text-normal);
+  --text-muted: var(--ac-text-muted);
+  --text-faint: var(--ac-text-faint);
+  --text-on-accent: #070A12;
+  --text-error: var(--ac-crimson);
+  --text-success: var(--ac-emerald);
+  --text-accent: var(--ac-arc-blue);
+  --text-accent-hover: var(--ac-ice);
+  --text-selection: rgba(139, 92, 246, 0.28);
+  --text-highlight-bg: rgba(217, 185, 90, 0.25);
+
+  --interactive-normal: var(--ac-steel);
+  --interactive-hover: var(--ac-panel-alt);
+  --interactive-accent: var(--ac-arc-blue);
+  --interactive-accent-hsl: 202, 100%, 69%;
+  --interactive-accent-hover: var(--ac-ice);
+
+  --font-interface: var(--ac-font-body);
+  --font-text: var(--ac-font-body);
+  --font-monospace: var(--ac-font-code);
+
+  --h1-color: var(--ac-dragon-gold);
+  --h2-color: var(--ac-arc-blue);
+  --h3-color: var(--ac-magic-purple);
+  --h4-color: var(--ac-ice);
+  --h5-color: var(--ac-emerald);
+  --h6-color: var(--ac-text-muted);
+
+  --bold-color: var(--ac-dragon-gold);
+  --italic-color: var(--ac-magic-purple);
+  --link-color: var(--ac-arc-blue);
+  --link-color-hover: var(--ac-ice);
+  --link-unresolved-color: var(--ac-text-faint);
+  --link-external-color: var(--ac-arc-blue);
+
+  --tag-color: var(--ac-magic-purple);
+  --tag-background: rgba(139, 92, 246, 0.12);
+  --tag-background-hover: rgba(139, 92, 246, 0.22);
+  --tag-border-color: rgba(139, 92, 246, 0.35);
+
+  --code-background: #0B1220;
+  --code-normal: var(--ac-text-normal);
+  --code-property: var(--ac-arc-blue);
+  --code-value: var(--ac-dragon-gold);
+  --code-string: var(--ac-dragon-gold);
+  --code-function: var(--ac-magic-purple);
+  --code-important: var(--ac-crimson);
+  --code-comment: var(--ac-text-faint);
+  --code-tag: var(--ac-arc-blue);
+  --code-keyword: var(--ac-arc-blue);
+
+  --blockquote-border-color: var(--ac-dragon-gold);
+  --blockquote-background-color: rgba(217, 185, 90, 0.05);
+
+  --checkbox-color: var(--ac-magic-purple);
+  --checkbox-color-hover: var(--ac-ice);
+  --checkbox-border-color: var(--ac-text-faint);
+  --checkbox-border-color-hover: var(--ac-magic-purple);
+  --checklist-done-color: var(--ac-text-faint);
+
+  --scrollbar-thumb-bg: rgba(89, 195, 255, 0.25);
+  --scrollbar-active-thumb-bg: rgba(89, 195, 255, 0.5);
+  --scrollbar-bg: transparent;
+
+  --table-header-background: var(--ac-panel-alt);
+  --table-header-border-color: var(--ac-dragon-gold);
+  --table-border-color: var(--ac-steel-border);
+  --table-row-alt-background: rgba(23, 32, 51, 0.4);
+  --table-row-background-hover: rgba(89, 195, 255, 0.06);
+
+  --divider-color: var(--ac-steel-border);
+  --hr-color: var(--ac-steel-border);
+
+  --titlebar-background: var(--ac-void);
+  --titlebar-background-focused: var(--ac-void);
+  --titlebar-text-color: var(--ac-valyrian-silver);
+
+  --ribbon-background: var(--ac-void);
+  --ribbon-background-collapsed: var(--ac-void);
+
+  --nav-item-color: var(--ac-valyrian-silver);
+  --nav-item-color-hover: var(--ac-text-normal);
+  --nav-item-color-active: var(--ac-text-normal);
+  --nav-item-background-hover: rgba(89, 195, 255, 0.08);
+  --nav-item-background-active: rgba(89, 195, 255, 0.14);
+  --nav-collapse-icon-color: var(--ac-text-faint);
+  --nav-collapse-icon-color-collapsed: var(--ac-text-faint);
+
+  --tab-text-color: var(--ac-valyrian-silver);
+  --tab-text-color-focused: var(--ac-text-normal);
+  --tab-text-color-focused-active: var(--ac-arc-blue);
+  --tab-background-active: var(--ac-panel-alt);
+  --tab-outline-color: var(--ac-arc-blue);
+
+  --modal-background: var(--ac-steel);
+  --modal-border-color: var(--ac-steel-border);
+
+  --graph-line: rgba(89, 195, 255, 0.25);
+  --graph-node: var(--ac-valyrian-silver);
+  --graph-node-tag: var(--ac-magic-purple);
+  --graph-node-attachment: var(--ac-emerald);
+  --graph-node-unresolved: var(--ac-text-faint);
+  --graph-node-focused: var(--ac-dragon-gold);
+  --graph-text: var(--ac-text-muted);
+}
+
+/* ==========================================================================
+   3. GLOBAL SURFACES / COSMIC BACKGROUND
+   ========================================================================== */
+
+.theme-dark .workspace {
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(139, 92, 246, 0.06), transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(89, 195, 255, 0.05), transparent 55%),
+    var(--ac-void);
+}
+
+.theme-dark .workspace::before {
+  /* faint starfield, purely decorative, no motion cost */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 30% 70%, #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 60% 15%, #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 80% 55%, #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 45% 90%, #ffffff 100%, transparent 100%),
+    radial-gradient(1px 1px at 95% 30%, #ffffff 100%, transparent 100%);
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.theme-dark .mod-root .workspace-leaf-content,
+.theme-dark .workspace-tab-header-container {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-dark .workspace-tab-header-container {
+  background: var(--ac-void);
+  border-bottom: 1px solid var(--ac-steel-border);
+}
+
+.theme-dark .nav-header,
+.theme-dark .workspace-tabs {
+  background: var(--ac-panel);
+}
+
+/* ==========================================================================
+   4. TYPOGRAPHY
+   ========================================================================== */
+
+.theme-dark .markdown-preview-view h1,
+.theme-dark .markdown-source-view h1,
+.theme-dark .inline-title {
+  font-family: var(--ac-font-heading);
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  text-shadow: 0 0 18px rgba(217, 185, 90, 0.25);
+}
+
+.theme-dark .markdown-preview-view h2 { font-family: var(--ac-font-heading); text-shadow: 0 0 16px rgba(89, 195, 255, 0.22); }
+.theme-dark .markdown-preview-view h3 { font-family: var(--ac-font-heading); text-shadow: 0 0 14px rgba(139, 92, 246, 0.22); }
+.theme-dark .markdown-preview-view h4 { font-family: var(--ac-font-heading); }
+.theme-dark .markdown-preview-view h5,
+.theme-dark .markdown-preview-view h6 { font-family: var(--ac-font-body); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.theme-dark body {
+  font-family: var(--ac-font-body);
+}
+
+.theme-dark .cm-s-obsidian,
+.theme-dark .markdown-source-view.mod-cm6 {
+  font-family: var(--ac-font-body);
+}
+
+/* Section dividers rendered as "---" become a small Easter egg rule */
+.theme-dark hr {
+  border: none;
+  height: 1px;
+  margin: 2em 0;
+  background: linear-gradient(90deg,
+    transparent,
+    var(--ac-arc-blue) 20%,
+    var(--ac-dragon-gold) 50%,
+    var(--ac-magic-purple) 80%,
+    transparent);
+  opacity: 0.55;
+}
+
+/* ==========================================================================
+   5. LINKS
+   ========================================================================== */
+
+.theme-dark a.internal-link,
+.theme-dark a.external-link {
+  text-decoration: none;
+  transition: text-shadow 0.15s ease, color 0.15s ease;
+}
+
+.theme-dark a.internal-link:hover,
+.theme-dark a.external-link:hover {
+  text-shadow: 0 0 8px rgba(89, 195, 255, 0.6);
+  color: var(--ac-ice);
+}
+
+.theme-dark a.internal-link.is-unresolved {
+  border-bottom: 1px dashed var(--ac-text-faint);
+}
+
+/* ==========================================================================
+   6. CURSOR & SELECTION
+   ========================================================================== */
+
+.theme-dark .cm-cursor,
+.theme-dark .cm-cursor-primary {
+  border-left: 2px solid var(--ac-arc-blue) !important;
+  box-shadow: 0 0 6px rgba(89, 195, 255, 0.8);
+}
+
+.theme-dark .cm-selectionBackground,
+.theme-dark ::selection {
+  background: rgba(139, 92, 246, 0.28) !important;
+}
+
+/* ==========================================================================
+   7. SCROLLBARS
+   ========================================================================== */
+
+.theme-dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.theme-dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.theme-dark ::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 8px;
+}
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+  box-shadow: 0 0 6px rgba(89, 195, 255, 0.5);
+}
+
+/* ==========================================================================
+   8. CHECKBOXES — magical, not checkmarks
+   ========================================================================== */
+
+.theme-dark .task-list-item-checkbox {
+  appearance: none;
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  border: 1.5px solid var(--ac-text-faint);
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.theme-dark .task-list-item-checkbox:hover {
+  border-color: var(--ac-magic-purple);
+  box-shadow: 0 0 6px rgba(139, 92, 246, 0.5);
+}
+
+.theme-dark .task-list-item-checkbox:checked {
+  border-color: var(--ac-magic-purple);
+  background: rgba(139, 92, 246, 0.15);
+}
+
+.theme-dark .task-list-item-checkbox:checked::after {
+  content: "✦";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85em;
+  color: var(--ac-magic-purple);
+  text-shadow: 0 0 6px rgba(139, 92, 246, 0.9);
+}
+
+.theme-dark .task-list-item.is-checked > .list-bullet,
+.theme-dark li[data-task="x"] {
+  color: var(--checklist-done-color);
+}
+
+/* ==========================================================================
+   9. TAGS — holographic chips
+   ========================================================================== */
+
+.theme-dark .tag,
+.theme-dark a.tag {
+  border-radius: 999px;
+  padding: 0.15em 0.7em;
+  font-family: var(--ac-font-code);
+  font-size: 0.78em;
+  border: 1px solid var(--tag-border-color);
+  background: var(--tag-background);
+  color: var(--tag-color);
+  transition: box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.theme-dark .tag:hover,
+.theme-dark a.tag:hover {
+  background: var(--tag-background-hover);
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.45);
+}
+
+/* ==========================================================================
+   10. CODE BLOCKS
+   ========================================================================== */
+
+.theme-dark pre,
+.theme-dark code {
+  font-family: var(--ac-font-code);
+}
+
+.theme-dark pre[class*="language-"] {
+  background: var(--code-background) !important;
+  border: 1px solid var(--ac-steel-border);
+  border-radius: 8px;
+  box-shadow: inset 0 0 24px rgba(89, 195, 255, 0.04);
+}
+
+.theme-dark code:not([class*="language-"]) {
+  background: var(--code-background);
+  color: var(--ac-arc-blue);
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+}
+
+.theme-dark .token.keyword { color: var(--code-keyword); }
+.theme-dark .token.string { color: var(--code-string); }
+.theme-dark .token.function { color: var(--code-function); }
+.theme-dark .token.comment { color: var(--code-comment); font-style: italic; }
+.theme-dark .token.class-name { color: var(--ac-ice); }
+.theme-dark .token.important,
+.theme-dark .token.deleted { color: var(--code-important); }
+
+/* ==========================================================================
+   11. TABLES
+   ========================================================================== */
+
+.theme-dark table {
+  border-collapse: collapse;
+  border: 1px solid var(--table-border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.theme-dark table th {
+  background: var(--table-header-background);
+  color: var(--ac-dragon-gold);
+  font-family: var(--ac-font-heading);
+  font-weight: 600;
+  border-bottom: 2px solid var(--table-header-border-color);
+}
+
+.theme-dark table tr:nth-child(even) {
+  background: var(--table-row-alt-background);
+}
+
+.theme-dark table tr:hover {
+  background: var(--table-row-background-hover) !important;
+}
+
+.theme-dark table td, .theme-dark table th {
+  border: 1px solid var(--table-border-color);
+  padding: 0.5em 0.9em;
+}
+
+/* ==========================================================================
+   12. BLOCKQUOTES / "ANCIENT PARCHMENT" QUOTES
+   ========================================================================== */
+
+.theme-dark blockquote {
+  border-left: 3px solid var(--blockquote-border-color);
+  background: var(--blockquote-background-color);
+  border-radius: 0 6px 6px 0;
+  padding: 0.6em 1em;
+  font-style: italic;
+  color: var(--ac-valyrian-silver);
+}
+
+/* ==========================================================================
+   13. CALLOUTS — the magic system
+   Usage: > [!info]  > [!warning]  > [!danger]  > [!success]  > [!magic]
+          > [!spell]  > [!mission]  > [!dragon]  > [!lore]  > [!jarvis]
+          > [!research]  > [!discovery]  > [!theory]  > [!archive]
+   ========================================================================== */
+
+.theme-dark .callout {
+  border-radius: 8px;
+  border: 1px solid rgba(var(--callout-color), 0.35);
+  background: rgba(var(--callout-color), 0.07);
+  box-shadow: 0 0 18px rgba(var(--callout-color), 0.08);
+}
+
+.theme-dark .callout-title {
+  font-family: var(--ac-font-heading);
+  font-weight: 600;
+}
+
+/* Info — blue hologram */
+.theme-dark .callout[data-callout="info"] {
+  --callout-color: 89, 195, 255;
+  --callout-icon: lucide-info;
+}
+
+/* Warning — dragon gold */
+.theme-dark .callout[data-callout="warning"] {
+  --callout-color: 217, 185, 90;
+  --callout-icon: lucide-alert-triangle;
+}
+
+/* Danger — deep crimson */
+.theme-dark .callout[data-callout="danger"],
+.theme-dark .callout[data-callout="error"] {
+  --callout-color: 200, 75, 93;
+  --callout-icon: lucide-flame;
+}
+
+/* Success — emerald */
+.theme-dark .callout[data-callout="success"] {
+  --callout-color: 94, 220, 138;
+  --callout-icon: lucide-check-circle;
+}
+
+/* Magic / Spell — purple glow */
+.theme-dark .callout[data-callout="magic"],
+.theme-dark .callout[data-callout="spell"] {
+  --callout-color: 139, 92, 246;
+  --callout-icon: lucide-sparkles;
+  animation: ac-magic-pulse 3.5s ease-in-out infinite;
+}
+
+/* Mission — blue holographic, Stark briefing */
+.theme-dark .callout[data-callout="mission"] {
+  --callout-color: 89, 195, 255;
+  --callout-icon: lucide-target;
+}
+
+/* Dragon — gold bordered */
+.theme-dark .callout[data-callout="dragon"] {
+  --callout-color: 217, 185, 90;
+  --callout-icon: lucide-flame;
+  border-width: 1.5px;
+}
+
+/* Lore — ancient parchment */
+.theme-dark .callout[data-callout="lore"] {
+  --callout-color: 184, 194, 214;
+  --callout-icon: lucide-scroll;
+  font-family: var(--ac-font-heading);
+  background: rgba(184, 194, 214, 0.05);
+}
+
+/* Jarvis — Stark AI panel */
+.theme-dark .callout[data-callout="jarvis"] {
+  --callout-color: 89, 195, 255;
+  --callout-icon: lucide-cpu;
+  font-family: var(--ac-font-code);
+}
+
+/* Research — scientific */
+.theme-dark .callout[data-callout="research"] {
+  --callout-color: 94, 220, 138;
+  --callout-icon: lucide-flask-conical;
+}
+
+/* Discovery / Theory / Archive */
+.theme-dark .callout[data-callout="discovery"] {
+  --callout-color: 189, 239, 255;
+  --callout-icon: lucide-telescope;
+}
+.theme-dark .callout[data-callout="theory"] {
+  --callout-color: 139, 92, 246;
+  --callout-icon: lucide-brain;
+}
+.theme-dark .callout[data-callout="archive"] {
+  --callout-color: 184, 194, 214;
+  --callout-icon: lucide-archive;
+}
+
+@keyframes ac-magic-pulse {
+  0%, 100% { box-shadow: 0 0 12px rgba(139, 92, 246, 0.12); }
+  50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.28); }
+}
+
+/* Quote-style callout, e.g. > [!quote]+ "Winter is Coming" */
+.theme-dark .callout[data-callout="quote"] {
+  --callout-color: 217, 185, 90;
+  --callout-icon: lucide-quote;
+  font-style: italic;
+  font-family: var(--ac-font-heading);
+  text-align: center;
+}
+
+/* ==========================================================================
+   14. GRAPH VIEW — nodes as stars, current note as golden glow
+   ========================================================================== */
+
+.theme-dark .graph-view.color-fill { color: var(--graph-node); }
+.theme-dark .graph-view.color-fill-tag { color: var(--graph-node-tag); }
+.theme-dark .graph-view.color-fill-attachment { color: var(--graph-node-attachment); }
+.theme-dark .graph-view.color-fill-unresolved { color: var(--graph-node-unresolved); }
+.theme-dark .graph-view.color-fill-focused { color: var(--graph-node-focused); }
+.theme-dark .graph-view.color-line { color: var(--graph-line); }
+.theme-dark .graph-view.color-text { color: var(--graph-text); }
+.theme-dark .graph-view.color-circle { color: var(--ac-void); }
+
+.theme-dark .graph-controls {
+  background: var(--ac-panel);
+  border: 1px solid var(--ac-steel-border);
+  border-radius: 8px;
+}
+
+/* ==========================================================================
+   15. CANVAS — tactical holographic table
+   ========================================================================== */
+
+.theme-dark .canvas-wrapper {
+  background: var(--ac-void);
+  background-image: radial-gradient(rgba(89, 195, 255, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.theme-dark .canvas-node-container {
+  background: rgba(23, 32, 51, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--ac-steel-border);
+  border-radius: 10px;
+}
+
+.theme-dark .canvas-node-container.is-focused {
+  border-color: var(--ac-arc-blue);
+  box-shadow: 0 0 16px rgba(89, 195, 255, 0.35);
+}
+
+.theme-dark .canvas-path {
+  stroke: url(#ac-canvas-gradient), var(--ac-arc-blue);
+  opacity: 0.7;
+}
+
+/* ==========================================================================
+   16. MERMAID DIAGRAMS
+   ========================================================================== */
+
+.theme-dark .mermaid .node rect,
+.theme-dark .mermaid .node circle,
+.theme-dark .mermaid .node polygon {
+  fill: var(--ac-panel-alt);
+  stroke: var(--ac-arc-blue);
+  stroke-width: 1.5px;
+  filter: drop-shadow(0 0 6px rgba(89, 195, 255, 0.35));
+}
+
+.theme-dark .mermaid .edgePath path {
+  stroke: var(--ac-arc-blue);
+  stroke-width: 1.5px;
+}
+
+.theme-dark .mermaid .label {
+  color: var(--ac-text-normal);
+  font-family: var(--ac-font-body);
+}
+
+/* ==========================================================================
+   17. FOLDER TREE / FILE EXPLORER
+   ========================================================================== */
+
+.theme-dark .nav-folder-title,
+.theme-dark .nav-file-title {
+  border-radius: 6px;
+  transition: background 0.12s ease, padding-left 0.12s ease;
+}
+
+.theme-dark .nav-folder-title:hover,
+.theme-dark .nav-file-title:hover {
+  background: var(--nav-item-background-hover);
+  padding-left: 4px;
+}
+
+.theme-dark .nav-file-title.is-active {
+  background: var(--nav-item-background-active);
+  box-shadow: inset 2px 0 0 var(--ac-arc-blue);
+  color: var(--ac-arc-blue);
+}
+
+.theme-dark .nav-folder-title.is-being-dragged-over,
+.theme-dark .nav-file-title.is-being-dragged-over {
+  box-shadow: 0 0 0 1.5px var(--ac-magic-purple);
+}
+
+/* ==========================================================================
+   18. STATUS BAR, RIBBON, SEARCH, COMMAND PALETTE
+   ========================================================================== */
+
+.theme-dark .status-bar {
+  background: var(--ac-void);
+  border-top: 1px solid var(--ac-steel-border);
+  color: var(--ac-text-faint);
+  font-family: var(--ac-font-code);
+  font-size: 0.75em;
+}
+
+.theme-dark .side-dock-ribbon-action:hover {
+  color: var(--ac-arc-blue);
+  filter: drop-shadow(0 0 4px rgba(89, 195, 255, 0.6));
+}
+
+.theme-dark .prompt {
+  background: rgba(17, 24, 39, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--ac-steel-border);
+  box-shadow: 0 0 30px rgba(89, 195, 255, 0.08);
+}
+
+.theme-dark .suggestion-item.is-selected {
+  background: rgba(89, 195, 255, 0.12);
+  color: var(--ac-arc-blue);
+}
+
+.theme-dark .search-result-file-title {
+  font-family: var(--ac-font-heading);
+}
+
+/* Daily-note style banner — pair with a Templater/QuickAdd template
+   that inserts an H1 + a divider, this just makes it glow */
+.theme-dark .markdown-preview-view .inline-title {
+  border-bottom: 1px solid var(--ac-steel-border);
+  padding-bottom: 0.3em;
+}
+
+/* ==========================================================================
+   19. SUBTLE MOTION — hover glow only, nothing flashy
+   ========================================================================== */
+
+.theme-dark .clickable-icon,
+.theme-dark button,
+.theme-dark .nav-action-button {
+  transition: box-shadow 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.theme-dark button:hover,
+.theme-dark .clickable-icon:hover {
+  box-shadow: 0 0 8px rgba(89, 195, 255, 0.3);
+}
+
+.theme-dark .workspace-tab-header.is-active {
+  box-shadow: inset 0 -2px 0 var(--ac-arc-blue);
+}
+
+/* ==========================================================================
+   20. LIGHT VARIANT — "Citadel by Day" (minimal, functional fallback)
+   ========================================================================== */
+
+.theme-light {
+  --ac-void: #F4F1EA;
+  --ac-panel: #FFFFFF;
+  --ac-panel-alt: #EDE7D9;
+  --ac-arc-blue: #1D6FA5;
+  --ac-magic-purple: #6D3FC0;
+  --ac-dragon-gold: #9C7A22;
+  --ac-crimson: #A8354A;
+  --ac-emerald: #2E8B57;
+  --ac-text-normal: #22252B;
+  --ac-text-muted: #4B5563;
+
+  --background-primary: var(--ac-void);
+  --background-secondary: var(--ac-panel-alt);
+  --text-accent: var(--ac-arc-blue);
+  --h1-color: var(--ac-dragon-gold);
+  --h2-color: var(--ac-arc-blue);
+  --h3-color: var(--ac-magic-purple);
+  --tag-color: var(--ac-magic-purple);
+  --font-interface: var(--ac-font-body, 'Inter', sans-serif);
+  --font-text: var(--ac-font-body, 'Inter', sans-serif);
+}

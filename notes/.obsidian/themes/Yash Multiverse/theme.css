@@ -1,0 +1,261 @@
+/*
+  Yash Multiverse
+  ------------------------------------------------------------
+  A full Obsidian theme (base look via standard variables, same
+  as any theme.css) PLUS four fandom skins — Space, Avengers,
+  Music, Harry Potter — that reskin a note's content area based
+  on a cssclass in that note's frontmatter:
+
+    ---
+    cssclasses: theme-space
+    ---
+
+  Valid values: theme-space | theme-avengers | theme-music | theme-hp
+  (Assigned automatically per note — see assign-random-theme.md)
+
+  Note: cssclasses only tags the note's own content container, not
+  the sidebar/tabs/titlebar — those stay on the base theme below.
+  That's an Obsidian limitation, not this file's.
+  ------------------------------------------------------------
+*/
+
+:root
+{
+    /* base neutral palette — used for chrome (sidebar, tabs, etc.) */
+    --dark0_x:  15,17,26;    /* #0f111a */
+    --dark0:    rgb(var(--dark0_x));
+    --dark1_x:  22,25,38;    /* #161926 */
+    --dark1:    rgb(var(--dark1_x));
+    --dark2_x:  30,34,51;    /* #1e2233 */
+    --dark2:    rgb(var(--dark2_x));
+    --dark3_x:  42,47,68;    /* #2a2f44 */
+    --dark3:    rgb(var(--dark3_x));
+
+    --light0_x: 214,217,230; /* #d6d9e6 */
+    --light0:   rgb(var(--light0_x));
+    --light1_x: 226,229,238; /* #e2e5ee */
+    --light1:   rgb(var(--light1_x));
+    --light2_x: 240,242,247; /* #f0f2f7 */
+    --light2:   rgb(var(--light2_x));
+    --light3_x: 255,255,255;
+    --light3:   rgb(var(--light3_x));
+
+    --accent0_x: 138,163,255; /* periwinkle */
+    --accent0:   rgb(var(--accent0_x));
+    --accent1_x: 255,209,102; /* warm gold */
+    --accent1:   rgb(var(--accent1_x));
+
+    /* fandom palettes, referenced below */
+    --space-bg0: #05070f;   --space-bg1: #0b0f22;   --space-text: #dbe4ff;
+    --space-h:   #a6c8ff;   --space-link: #ffd166;  --space-quote: #6c7bff;
+
+    --avg-bg0: #150505;     --avg-bg1: #1b0808;     --avg-text: #f1e3c6;
+    --avg-h:   #ffb400;     --avg-link: #ff4d4d;    --avg-quote: #b1121c;
+
+    --mus-bg0: #08090d;     --mus-bg1: #101018;     --mus-text: #e6e6f0;
+    --mus-h:   #7ff0d6;     --mus-link: #ff6ec7;    --mus-quote: #7ff0d6;
+
+    --hp-bg0: #120a05;      --hp-bg1: #1c1006;      --hp-text: #ead9b0;
+    --hp-h:   #d4af37;      --hp-link: #8c1c26;     --hp-quote: #740001;
+}
+
+body
+{
+    --accent-h: 227; /* periwinkle */
+    --accent-s: 100%;
+    --accent-l: 77%;
+
+    --link-decoration:                none;
+    --link-decoration-hover:          underline;
+    --tag-decoration:                 none;
+    --tag-padding-x:                  .5em;
+    --tag-padding-y:                  .2em;
+    --tag-radius:                     .5em;
+    --bold-weight:                    600;
+    --checkbox-radius:                4px;
+    --embed-border-left:              4px solid var(--interactive-accent);
+}
+
+/* ============ BASE THEME (chrome + default note look) ============ */
+.theme-dark
+{
+    --background-primary:            var(--dark0);
+    --background-primary-alt:        var(--dark0);
+    --background-secondary:          var(--dark1);
+    --background-secondary-alt:      var(--dark2);
+    --background-modifier-border:    var(--dark2);
+
+    --text-normal:                   var(--light2);
+    --text-faint:                    var(--light0);
+    --text-muted:                    var(--light1);
+
+    --text-accent:                   var(--accent0);
+    --text-accent-hover:             var(--accent1);
+    --link-url:                      var(--accent0);
+
+    --h1-color:                      var(--accent0);
+    --h2-color:                      var(--accent1);
+    --h3-color:                      var(--light2);
+    --h4-color:                      var(--accent0);
+    --h5-color:                      var(--accent1);
+    --h6-color:                      var(--light1);
+
+    --text-highlight-bg:             rgba(138,163,255,0.35);
+    --text-highlight-fg:              var(--dark0);
+
+    --tag-color:                     var(--accent0);
+    --tag-background:                var(--dark2);
+    --tag-background-hover:          var(--dark3);
+
+    --code-normal:                   var(--accent1);
+    --code-background:               var(--dark1);
+
+    --table-header-background:       var(--dark2);
+    --table-row-even-background:     var(--dark1);
+    --table-row-odd-background:      var(--dark2);
+    --table-row-background-hover:    var(--dark3);
+
+    --nav-item-color-hover:          var(--accent0);
+    --nav-item-color-active:         var(--accent1);
+}
+
+.theme-light
+{
+    --background-primary:            var(--light3);
+    --background-primary-alt:        var(--light3);
+    --background-secondary:          var(--light2);
+    --background-secondary-alt:      var(--light1);
+    --background-modifier-border:    var(--light1);
+
+    --text-normal:                   var(--dark2);
+    --text-faint:                    var(--dark0);
+    --text-muted:                    var(--dark1);
+
+    --text-accent:                   var(--accent0);
+    --text-accent-hover:             var(--accent1);
+    --link-url:                      var(--accent0);
+
+    --h1-color:                      var(--accent0);
+    --h2-color:                      #b8860b;
+    --h3-color:                      var(--dark2);
+    --h4-color:                      var(--accent0);
+    --h5-color:                      #b8860b;
+    --h6-color:                      var(--dark1);
+
+    --text-highlight-bg:             rgba(255,209,102,0.5);
+    --text-highlight-fg:              var(--dark0);
+
+    --tag-color:                     var(--dark3);
+    --tag-background:                var(--light1);
+    --tag-background-hover:          var(--light0);
+
+    --code-normal:                   #b8860b;
+    --code-background:               var(--light2);
+
+    --table-header-background:       var(--light1);
+    --table-row-even-background:     var(--light2);
+    --table-row-odd-background:      var(--light1);
+    --table-row-background-hover:    var(--light0);
+
+    --nav-item-color-hover:          var(--accent0);
+    --nav-item-color-active:         #b8860b;
+}
+
+table { border: 1px solid var(--background-secondary) !important; border-collapse: collapse; }
+th { font-weight: 600 !important; border: 1px solid var(--background-secondary) !important; }
+td { border-left: 1px solid var(--background-secondary) !important; border-right: 1px solid var(--background-secondary) !important; border-bottom: 1px solid var(--background-secondary) !important; }
+.markdown-rendered tbody tr:nth-child(even) { background-color: var(--table-row-even-background) !important; }
+.markdown-rendered tbody tr:nth-child(odd)  { background-color: var(--table-row-odd-background) !important; }
+.markdown-rendered mark { background-color: var(--text-highlight-bg); color: var(--text-highlight-fg); }
+
+/* ============ smooth transition when switching notes ============ */
+.markdown-preview-view, .cm-editor, .markdown-source-view {
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* ============ SPACE ============ */
+.theme-space .markdown-preview-view,
+.theme-space .cm-editor,
+.theme-space.markdown-source-view {
+  background: radial-gradient(1px 1px at 20px 30px, #fff 100%, transparent),
+              radial-gradient(1px 1px at 90px 80px, #fff 100%, transparent),
+              radial-gradient(1.5px 1.5px at 150px 40px, #cbd5ff 100%, transparent),
+              radial-gradient(1px 1px at 220px 110px, #fff 100%, transparent),
+              radial-gradient(1.5px 1.5px at 300px 60px, #fff 100%, transparent),
+              linear-gradient(180deg, var(--space-bg0) 0%, var(--space-bg1) 100%);
+  background-repeat: repeat;
+  background-size: 350px 200px, 350px 200px, 350px 200px, 350px 200px, 350px 200px, cover;
+  color: var(--space-text);
+}
+.theme-space h1, .theme-space h2, .theme-space h3 {
+  color: var(--space-h);
+  text-shadow: 0 0 8px rgba(120,170,255,0.55);
+  border-bottom: 1px solid rgba(120,170,255,0.25);
+}
+.theme-space a { color: var(--space-link); }
+.theme-space blockquote { border-left: 3px solid var(--space-quote); background: rgba(108,123,255,0.08); color: var(--space-text); }
+.theme-space code, .theme-space pre { background: rgba(120,170,255,0.08); color: #b9f2ff; }
+.theme-space ::selection { background: rgba(166,200,255,0.35); }
+
+/* ============ AVENGERS ============ */
+.theme-avengers .markdown-preview-view,
+.theme-avengers .cm-editor,
+.theme-avengers.markdown-source-view {
+  background: linear-gradient(160deg, var(--avg-bg0) 0%, var(--avg-bg1) 60%, var(--avg-bg0) 100%);
+  color: var(--avg-text);
+}
+.theme-avengers h1, .theme-avengers h2, .theme-avengers h3 {
+  color: var(--avg-h);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--avg-quote);
+  text-shadow: 0 0 6px rgba(255,180,0,0.4);
+}
+.theme-avengers a { color: var(--avg-link); font-weight: 600; }
+.theme-avengers strong { color: var(--avg-h); }
+.theme-avengers blockquote { border-left: 4px solid var(--avg-quote); background: rgba(177,18,28,0.08); color: var(--avg-text); }
+.theme-avengers code, .theme-avengers pre { background: rgba(255,180,0,0.08); color: #ffd27a; border: 1px solid rgba(255,180,0,0.2); }
+.theme-avengers hr { border-top: 2px solid var(--avg-quote); }
+.theme-avengers ::selection { background: rgba(255,180,0,0.3); }
+
+/* ============ MUSIC ============ */
+.theme-music .markdown-preview-view,
+.theme-music .cm-editor,
+.theme-music.markdown-source-view {
+  background: linear-gradient(180deg, var(--mus-bg0) 0%, var(--mus-bg1) 100%);
+  color: var(--mus-text);
+}
+.theme-music h1, .theme-music h2, .theme-music h3 {
+  color: var(--mus-h);
+  text-shadow: 0 0 10px rgba(127,240,214,0.45);
+  border-bottom: 1px solid rgba(127,240,214,0.25);
+}
+.theme-music a { color: var(--mus-link); }
+.theme-music blockquote { border-left: 3px solid var(--mus-quote); background: linear-gradient(90deg, rgba(127,240,214,0.1), rgba(255,110,199,0.05)); color: #dcefff; }
+.theme-music code, .theme-music pre { background: rgba(127,240,214,0.08); color: #b9ffe9; }
+.theme-music ::selection { background: rgba(255,110,199,0.3); }
+.theme-music h1::after {
+  content: ""; display: block; height: 3px; margin-top: 4px;
+  background: repeating-linear-gradient(90deg, var(--mus-h) 0 4px, transparent 4px 8px);
+}
+
+/* ============ HARRY POTTER ============ */
+.theme-hp .markdown-preview-view,
+.theme-hp .cm-editor,
+.theme-hp.markdown-source-view {
+  background: linear-gradient(180deg, var(--hp-bg0) 0%, var(--hp-bg1) 100%);
+  color: var(--hp-text);
+  font-family: 'Georgia', 'Iowan Old Style', serif;
+}
+.theme-hp h1, .theme-hp h2, .theme-hp h3 {
+  color: var(--hp-h);
+  font-family: 'Georgia', serif;
+  text-shadow: 0 0 6px rgba(212,175,55,0.35);
+  border-bottom: 1px solid rgba(212,175,55,0.35);
+}
+.theme-hp a { color: var(--hp-link); font-weight: 600; }
+.theme-hp strong { color: var(--hp-h); }
+.theme-hp blockquote { border-left: 4px solid var(--hp-quote); background: rgba(116,0,1,0.12); color: var(--hp-text); font-style: italic; }
+.theme-hp code, .theme-hp pre { background: rgba(212,175,55,0.1); color: #f2e2b0; border: 1px solid rgba(212,175,55,0.25); }
+.theme-hp hr { border-top: 1px solid var(--hp-h); }
+.theme-hp ::selection { background: rgba(212,175,55,0.3); }

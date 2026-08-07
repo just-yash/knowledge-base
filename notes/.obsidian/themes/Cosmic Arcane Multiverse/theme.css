@@ -1,0 +1,670 @@
+/* =========================================================================================
+   COSMIC ARCANE MULTIVERSE - OBSIDIAN THEME
+   -----------------------------------------------------------------------------------------
+   A fusion of 4 iconic realms:
+   1. SPACE: Deep void backgrounds, nebula gradients, galaxy star dust, cosmic purple/cyan.
+   2. AVENGERS (MCU): Infinity Stone headers (H1-H6), Arc Reactor cyan glows, Vibranium trim.
+   3. GAME OF THRONES: Valyrian steel borders, Dragonfire accents, House Sigil callouts.
+   4. HARRY POTTER: Lumos wand spellcasting hovers, Marauder parchment notes, Spellbook code blocks.
+   
+   Created for: Yash Agrawall
+   ========================================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* ------------------------------------------------------------------
+       PALETTE: COSMIC & NEBULA (Space)
+       ------------------------------------------------------------------ */
+    --cosmic-void:           #090b14;
+    --cosmic-dark-nebula:    #101426;
+    --cosmic-panel:          #161b33;
+    --cosmic-starlight:      #e2e8f0;
+    --cosmic-dust-purple:    #8b5cf6;
+    --cosmic-star-cyan:      #06b6d4;
+
+    /* ------------------------------------------------------------------
+       PALETTE: INFINITY STONES & MCU ACCENTS (Avengers)
+       ------------------------------------------------------------------ */
+    --power-stone:           #c084fc; /* H1 - Violet / Power */
+    --space-stone:           #38bdf8; /* H2 - Tesseract Cyan / Space */
+    --reality-stone:         #f87171; /* H3 - Aether Crimson / Reality */
+    --soul-stone:            #fb923c; /* H4 - Vormir Amber / Soul */
+    --time-stone:            #34d399; /* H5 - Time Loop Emerald / Time */
+    --mind-stone:            #facc15; /* H6 - Scepter Gold / Mind */
+
+    --arc-reactor-cyan:      #00f0ff;
+    --iron-gold:             #ffd700;
+    --vibranium-slate:       #334155;
+    --vibranium-glow:        rgba(0, 240, 255, 0.4);
+
+    /* ------------------------------------------------------------------
+       PALETTE: VALYRIAN STEEL & DRAGONFIRE (Game of Thrones)
+       ------------------------------------------------------------------ */
+    --valyrian-steel:        #475569;
+    --valyrian-light:        #94a3b8;
+    --valyrian-edge:         #cbd5e1;
+    --dragonfire-red:        #dc2626;
+    --dragonfire-gold:       #f59e0b;
+    --wildfire-green:        #10b981;
+    --iron-throne-dark:      #0f172a;
+
+    /* ------------------------------------------------------------------
+       PALETTE: WIZARDING WORLD & HOUSES (Harry Potter)
+       ------------------------------------------------------------------ */
+    --lumos-glow:            rgba(255, 235, 170, 0.8);
+    --gryffindor-red:        #991b1b;
+    --gryffindor-gold:       #d97706;
+    --slytherin-green:       #065f46;
+    --slytherin-silver:      #94a3b8;
+    --ravenclaw-blue:        #1e40af;
+    --ravenclaw-bronze:      #b45309;
+    --hufflepuff-yellow:     #ca8a04;
+    --hufflepuff-black:      #1e293b;
+    --parchment-bg:          #1c1917;
+    --parchment-border:      #b45309;
+
+    /* Base Font Definitions */
+    --font-default: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Cinzel', 'Times New Roman', Georgia, serif;
+    --font-monospace: 'Fira Code', monospace;
+}
+
+/* =========================================================================================
+   GLOBAL OVERRIDES & CORE STYLING
+   ========================================================================================= */
+
+body {
+    --font-text: var(--font-default);
+    --font-title: var(--font-heading);
+
+    --accent-h: 190;
+    --accent-s: 100%;
+    --accent-l: 50%;
+
+    --link-decoration: none;
+    --link-decoration-hover: none;
+    --link-external-decoration: none;
+    --link-external-decoration-hover: none;
+
+    --tag-padding-x: 0.65em;
+    --tag-padding-y: 0.25em;
+    --tag-radius: 12px;
+
+    --tab-font-weight: 600;
+    --bold-weight: 700;
+
+    --checkbox-radius: 4px;
+    --embed-border-left: 4px solid var(--arc-reactor-cyan);
+
+    font-family: var(--font-default);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Selection Glow */
+::selection {
+    background: rgba(139, 92, 246, 0.4);
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(192, 132, 252, 0.8);
+}
+
+/* =========================================================================================
+   THEME: DARK MODE (Cosmic Void & Nebula Space)
+   ========================================================================================= */
+
+.theme-dark {
+    --background-primary:            var(--cosmic-void);
+    --background-primary-alt:        var(--cosmic-dark-nebula);
+    --background-secondary:          var(--cosmic-dark-nebula);
+    --background-secondary-alt:      var(--cosmic-panel);
+    --background-modifier-border:    rgba(71, 85, 105, 0.4);
+
+    --cursor-line-background:        rgba(0, 240, 255, 0.08);
+
+    --text-normal:                   #e2e8f0;
+    --text-muted:                    #94a3b8;
+    --text-faint:                    #64748b;
+
+    --link-url:                      var(--arc-reactor-cyan);
+
+    /* Infinity Stones for Headings */
+    --h1-color:                      var(--power-stone);
+    --h2-color:                      var(--space-stone);
+    --h3-color:                      var(--reality-stone);
+    --h4-color:                      var(--soul-stone);
+    --h5-color:                      var(--time-stone);
+    --h6-color:                      var(--mind-stone);
+
+    --text-highlight-bg:             rgba(250, 204, 21, 0.25);
+    --text-highlight-fg:             #fef08a;
+
+    --text-accent:                   var(--arc-reactor-cyan);
+    --text-accent-hover:             var(--iron-gold);
+
+    --tag-color:                     #00f0ff;
+    --tag-background:                rgba(6, 182, 212, 0.15);
+    --tag-background-hover:          rgba(139, 92, 246, 0.3);
+
+    --titlebar-text-color-focused:   var(--arc-reactor-cyan);
+    --inline-title-color:            var(--power-stone);
+
+    --bold-color:                    var(--iron-gold);
+    --italic-color:                  #a855f7;
+
+    --checkbox-color:                var(--arc-reactor-cyan);
+    --checkbox-color-hover:          var(--power-stone);
+    --checkbox-border-color:         var(--space-stone);
+    --checkbox-border-color-hover:   var(--arc-reactor-cyan);
+    --checklist-done-color:          rgba(148, 163, 184, 0.5);
+
+    --table-header-background:       var(--cosmic-panel);
+    --table-header-background-hover: rgba(56, 189, 248, 0.2);
+    --table-row-even-background:     rgba(16, 20, 38, 0.6);
+    --table-row-odd-background:      rgba(22, 27, 51, 0.8);
+    --table-row-background-hover:    rgba(139, 92, 246, 0.2);
+
+    --text-selection:                rgba(139, 92, 246, 0.4);
+    --flashing-background:           rgba(0, 240, 255, 0.3);
+
+    --code-normal:                   #38bdf8;
+    --code-background:               #0c0f1d;
+
+    --icon-color-hover:              var(--arc-reactor-cyan);
+    --icon-color-focused:            var(--power-stone);
+
+    --nav-item-color-hover:          var(--arc-reactor-cyan);
+    --nav-item-color-active:         var(--power-stone);
+    --nav-file-tag:                  var(--iron-gold);
+
+    --graph-line:                    rgba(71, 85, 105, 0.6);
+    --graph-node:                    var(--arc-reactor-cyan);
+    --graph-node-tag:                var(--power-stone);
+    --graph-node-attachment:         var(--time-stone);
+}
+
+/* Background Cosmic Nebula Dust Overlay */
+.theme-dark .workspace {
+    background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.08) 0%, transparent 65%),
+                radial-gradient(circle at 100% 100%, rgba(0, 240, 255, 0.05) 0%, transparent 50%),
+                var(--cosmic-void);
+}
+
+/* =========================================================================================
+   THEME: LIGHT MODE (Citadel Library / Ancient Marauder's Parchment)
+   ========================================================================================= */
+
+.theme-light {
+    --background-primary:            #f7f4eb;
+    --background-primary-alt:        #eee8d5;
+    --background-secondary:          #e6dfcc;
+    --background-secondary-alt:      #ded4bd;
+    --background-modifier-border:    #c4b595;
+
+    --cursor-line-background:        rgba(217, 119, 6, 0.1);
+
+    --text-normal:                   #1c1917;
+    --text-muted:                    #44403c;
+    --text-faint:                    #78716c;
+
+    --link-url:                      #b45309;
+
+    --h1-color:                      #7e22ce; /* Power Stone Deep */
+    --h2-color:                      #0284c7; /* Space Stone Deep */
+    --h3-color:                      #dc2626; /* Reality Stone Crimson */
+    --h4-color:                      #c2410c; /* Soul Stone Amber */
+    --h5-color:                      #047857; /* Time Stone Emerald */
+    --h6-color:                      #b45309; /* Mind Stone Gold */
+
+    --text-highlight-bg:             #fef08a;
+    --text-highlight-fg:             #713f12;
+
+    --text-accent:                   #b45309;
+    --text-accent-hover:             #7e22ce;
+
+    --tag-color:                     #9a3412;
+    --tag-background:                rgba(217, 119, 6, 0.15);
+    --tag-background-hover:          rgba(126, 34, 206, 0.2);
+
+    --titlebar-text-color-focused:   #7e22ce;
+    --inline-title-color:            #7e22ce;
+
+    --bold-color:                    #9a3412;
+    --italic-color:                  #6b21a8;
+
+    --checkbox-color:                #b45309;
+    --checkbox-color-hover:          #7e22ce;
+    --checkbox-border-color:         #b45309;
+    --checkbox-border-color-hover:   #7e22ce;
+    --checklist-done-color:          rgba(120, 113, 108, 0.6);
+
+    --table-header-background:       #e6dfcc;
+    --table-header-background-hover: #ded4bd;
+    --table-row-even-background:     #f1ebd9;
+    --table-row-odd-background:      #f8f5ea;
+    --table-row-background-hover:    #e2d9c0;
+
+    --text-selection:                rgba(217, 119, 6, 0.3);
+    --flashing-background:           rgba(251, 146, 60, 0.3);
+
+    --code-normal:                   #9a3412;
+    --code-background:               #eae2cf;
+
+    --icon-color-hover:              #7e22ce;
+    --icon-color-focused:            #b45309;
+
+    --nav-item-color-hover:          #7e22ce;
+    --nav-item-color-active:         #b45309;
+    --nav-file-tag:                  #b45309;
+
+    --graph-line:                    #c4b595;
+    --graph-node:                    #7e22ce;
+    --graph-node-tag:                #dc2626;
+    --graph-node-attachment:         #047857;
+}
+
+/* =========================================================================================
+   TYPOGRAPHY & INFINITY STONE HEADINGS (H1 - H6)
+   ========================================================================================= */
+
+.markdown-rendered h1, .markdown-rendered h2, 
+.markdown-rendered h3, .markdown-rendered h4, 
+.markdown-rendered h5, .markdown-rendered h6,
+.cm-header {
+    font-family: var(--font-heading);
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+/* H1: Power Stone (Orb Violet Glow) */
+.markdown-rendered h1, .cm-header-1 {
+    color: var(--h1-color) !important;
+    text-shadow: 0 0 12px rgba(192, 132, 252, 0.5);
+    border-bottom: 2px solid rgba(192, 132, 252, 0.3);
+    padding-bottom: 0.3em;
+    position: relative;
+}
+
+/* H2: Space Stone (Tesseract Cosmic Cyan) */
+.markdown-rendered h2, .cm-header-2 {
+    color: var(--h2-color) !important;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+    border-bottom: 1px dashed rgba(56, 189, 248, 0.3);
+    padding-bottom: 0.25em;
+}
+
+/* H3: Reality Stone (Aether Crimson Glow) */
+.markdown-rendered h3, .cm-header-3 {
+    color: var(--h3-color) !important;
+    text-shadow: 0 0 8px rgba(248, 113, 113, 0.4);
+}
+
+/* H4: Soul Stone (Vormir Amber Glow) */
+.markdown-rendered h4, .cm-header-4 {
+    color: var(--h4-color) !important;
+    text-shadow: 0 0 8px rgba(251, 146, 60, 0.4);
+}
+
+/* H5: Time Stone (Agamotto Emerald Glow) */
+.markdown-rendered h5, .cm-header-5 {
+    color: var(--h5-color) !important;
+    text-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
+}
+
+/* H6: Mind Stone (Scepter Gold Glow) */
+.markdown-rendered h6, .cm-header-6 {
+    color: var(--h6-color) !important;
+    text-shadow: 0 0 8px rgba(250, 204, 21, 0.4);
+}
+
+/* Inline Title Styling */
+.inline-title {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, var(--power-stone), var(--space-stone), var(--iron-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+/* =========================================================================================
+   LINKS & LUMOS SPELLCASTING HOVER INTERACTIONS
+   ========================================================================================= */
+
+.markdown-rendered a.internal-link, 
+.markdown-rendered a.external-link,
+.cm-link, .cm-hmd-internal-link {
+    color: var(--arc-reactor-cyan) !important;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none !important;
+}
+
+/* Lumos Wand Spellcasting Hover Glow */
+.markdown-rendered a.internal-link:hover, 
+.markdown-rendered a.external-link:hover,
+.cm-link:hover, .cm-hmd-internal-link:hover {
+    color: var(--iron-gold) !important;
+    text-shadow: 0 0 10px var(--lumos-glow), 0 0 20px rgba(255, 215, 0, 0.8);
+    transform: translateY(-1px);
+}
+
+/* Internal link indicator dot */
+.markdown-rendered a.internal-link::before {
+    content: "✦ ";
+    font-size: 0.8em;
+    color: var(--power-stone);
+    transition: transform 0.3s ease;
+}
+
+.markdown-rendered a.internal-link:hover::before {
+    transform: rotate(180deg) scale(1.3);
+    color: var(--iron-gold);
+}
+
+/* =========================================================================================
+   TAGS AS INFINITY SHARDS & MAGICAL RUNES
+   ========================================================================================= */
+
+.tag, .cm-hashtag {
+    font-family: var(--font-monospace);
+    font-size: 0.85em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 240, 255, 0.3) !important;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(139, 92, 246, 0.15)) !important;
+    color: var(--arc-reactor-cyan) !important;
+    padding: 2px 10px !important;
+    box-shadow: 0 0 6px rgba(0, 240, 255, 0.15);
+    transition: all 0.3s ease !important;
+}
+
+.tag:hover, .cm-hashtag:hover {
+    border-color: var(--iron-gold) !important;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(248, 113, 113, 0.25)) !important;
+    color: var(--iron-gold) !important;
+    box-shadow: 0 0 14px rgba(255, 215, 0, 0.6), 0 0 4px var(--power-stone);
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* =========================================================================================
+   CALLOUT BOXES: HOUSE SIGILS & MCU ARTIFACTS
+   ========================================================================================= */
+
+.callout {
+    border-radius: 10px;
+    border-left-width: 4px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.callout:hover {
+    transform: translateX(3px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Note / Info: Ravenclaw & Tesseract Wisdom */
+.callout[data-callout="note"], .callout[data-callout="info"] {
+    --callout-color: 0, 240, 255;
+    background: rgba(16, 20, 38, 0.7);
+    border-left-color: var(--space-stone);
+}
+.callout[data-callout="note"] .callout-title-name::before {
+    content: "🦅 ";
+}
+
+/* Warning: Targaryen Dragonfire & Soul Stone */
+.callout[data-callout="warning"], .callout[data-callout="caution"] {
+    --callout-color: 251, 146, 60;
+    background: rgba(30, 20, 15, 0.7);
+    border-left-color: var(--dragonfire-gold);
+}
+.callout[data-callout="warning"] .callout-title-name::before {
+    content: "🐉 ";
+}
+
+/* Danger / Error: House Lannister & Reality Stone Crimson */
+.callout[data-callout="danger"], .callout[data-callout="error"] {
+    --callout-color: 248, 113, 113;
+    background: rgba(35, 15, 15, 0.75);
+    border-left-color: var(--gryffindor-red);
+}
+.callout[data-callout="danger"] .callout-title-name::before {
+    content: "🦁 ";
+}
+
+/* Success / Tip: Slytherin Emerald & Time Stone */
+.callout[data-callout="success"], .callout[data-callout="tip"] {
+    --callout-color: 52, 211, 153;
+    background: rgba(12, 30, 22, 0.7);
+    border-left-color: var(--wildfire-green);
+}
+.callout[data-callout="success"] .callout-title-name::before {
+    content: "🐍 ";
+}
+
+/* Quote: Hogwarts Library Parchment */
+.callout[data-callout="quote"] {
+    --callout-color: 250, 204, 21;
+    background: rgba(28, 25, 23, 0.85);
+    border-left-color: var(--iron-gold);
+    font-style: italic;
+}
+.callout[data-callout="quote"] .callout-title-name::before {
+    content: "📜 ";
+}
+
+/* =========================================================================================
+   CODE BLOCKS & JARVIS HUD STYLING
+   ========================================================================================= */
+
+.markdown-rendered pre, pre[class*="language-"] {
+    border-radius: 8px !important;
+    border: 1px solid rgba(0, 240, 255, 0.25) !important;
+    background: #090c16 !important;
+    box-shadow: inset 0 0 15px rgba(0, 240, 255, 0.05), 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+    position: relative;
+}
+
+.markdown-rendered pre::before {
+    content: "⚡ JARVIS HUD CODE INTERFACE";
+    display: block;
+    font-family: var(--font-monospace);
+    font-size: 0.65em;
+    letter-spacing: 0.15em;
+    color: rgba(0, 240, 255, 0.5);
+    border-bottom: 1px dashed rgba(0, 240, 255, 0.2);
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.markdown-rendered code, .cm-inline-code {
+    font-family: var(--font-monospace) !important;
+    color: var(--arc-reactor-cyan) !important;
+    background: rgba(0, 240, 255, 0.1) !important;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+    border: 1px solid rgba(0, 240, 255, 0.2) !important;
+}
+
+/* =========================================================================================
+   CHECKBOXES & TASK RUNES
+   ========================================================================================= */
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.1em;
+    height: 1.1em;
+    border: 2px solid var(--arc-reactor-cyan) !important;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.25s ease;
+}
+
+input[type="checkbox"]:hover {
+    border-color: var(--iron-gold) !important;
+    box-shadow: 0 0 8px var(--arc-reactor-cyan);
+    transform: scale(1.1);
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--arc-reactor-cyan) !important;
+    border-color: var(--arc-reactor-cyan) !important;
+    box-shadow: 0 0 10px var(--arc-reactor-cyan);
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #090b14;
+    font-size: 0.85em;
+    font-weight: 900;
+}
+
+/* Finished checklist item strikethrough magic fade */
+.task-list-item.is-checked {
+    color: var(--text-faint);
+    text-decoration: line-through;
+    text-decoration-color: var(--power-stone);
+    opacity: 0.7;
+}
+
+/* =========================================================================================
+   HORIZONTAL RULES (VALYRIAN STEEL SWORD / SPELL BEAM DIVIDERS)
+   ========================================================================================= */
+
+.markdown-rendered hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, 
+                transparent 0%, 
+                var(--arc-reactor-cyan) 20%, 
+                var(--iron-gold) 50%, 
+                var(--power-stone) 80%, 
+                transparent 100%);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+    margin: 2em 0;
+    position: relative;
+}
+
+.markdown-rendered hr::after {
+    content: "⚔️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--cosmic-void);
+    padding: 0 10px;
+    font-size: 0.9em;
+}
+
+/* =========================================================================================
+   SIDEBAR, COMMAND PALETTE & UI CHROME
+   ========================================================================================= */
+
+/* File Explorer Title */
+.nav-folder-title, .nav-file-title {
+    font-family: var(--font-default);
+    font-size: 0.9em;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-file-title:hover, .nav-folder-title:hover {
+    background: rgba(0, 240, 255, 0.15) !important;
+    color: var(--arc-reactor-cyan) !important;
+    transform: translateX(2px);
+}
+
+.nav-file-title.is-active {
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.3), rgba(0, 240, 255, 0.15)) !important;
+    color: var(--iron-gold) !important;
+    font-weight: 700;
+    border-left: 3px solid var(--power-stone);
+}
+
+/* Modal / Command Palette Glassmorphism */
+.modal, .prompt {
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 240, 255, 0.3) !important;
+    background: rgba(16, 20, 38, 0.95) !important;
+    backdrop-filter: blur(16px) !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 240, 255, 0.2) !important;
+}
+
+.prompt-input {
+    border: 1px solid var(--space-stone) !important;
+    border-radius: 8px !important;
+    background: rgba(9, 11, 20, 0.8) !important;
+    color: var(--arc-reactor-cyan) !important;
+}
+
+/* =========================================================================================
+   GRAPH VIEW (GALAXY MAP & CONSTELLATIONS)
+   ========================================================================================= */
+
+.graph-view-wrapper {
+    background-color: var(--cosmic-void) !important;
+}
+
+/* =========================================================================================
+   TABLES (VALYRIAN IRON GRID)
+   ========================================================================================= */
+
+.markdown-rendered table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--valyrian-steel) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.markdown-rendered th {
+    background-color: var(--cosmic-panel) !important;
+    color: var(--iron-gold) !important;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--arc-reactor-cyan) !important;
+    padding: 10px 14px;
+}
+
+.markdown-rendered td {
+    border: 1px solid rgba(71, 85, 105, 0.3) !important;
+    padding: 8px 12px;
+}
+
+/* =========================================================================================
+   CUSTOM SCROLLBARS (VIBRANIUM METALLIC ACCENT)
+   ========================================================================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cosmic-void);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--vibranium-slate), var(--space-stone));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--space-stone), var(--power-stone));
+    box-shadow: 0 0 10px var(--arc-reactor-cyan);
+}

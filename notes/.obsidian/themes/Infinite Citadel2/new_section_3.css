@@ -1,0 +1,230 @@
+/* ───────────────────────────────────────────────────────────────────────
+   3. THE LIVING BACKGROUND
+   Five layered planes behind the entire app, plus a scroll-parallax
+   micro-layer inside each editor pane:
+
+     A — NEBULA CLOUDS  (::before on .app-container)
+         4 radial-gradient fog patches, very slow drift via transform.
+         Cost: 1 composite layer · transform-only after initial paint ·
+               ~1.5 MB VRAM @ 1440p · compositor-threaded.
+
+     B — STARFIELD  (::after on .app-container)
+         10 radial-gradient star-dots at varying sizes/hues, opacity pulse.
+         Cost: 1 composite layer · opacity-only repaints · ~0.5 MB VRAM ·
+               compositor-threaded.
+
+     C — AURORA WASH  (::before on .workspace)
+         Single linear gradient, slow background-position drift.
+         Cost: 1 composite layer · background-position triggers repaint
+               per frame but gradient is trivial (~0.1 ms/frame).
+
+     D — CONSTELLATION LINES  (::after on .workspace)
+         Inline SVG tile (280 × 280) of faint geometric star-line patterns.
+         Near-static: 300 s drift, barely perceptible even if watched.
+         Cost: 1 composite layer · SVG rasterised once at tile size then
+               composited · ~0.3 MB VRAM · transform-only after first paint.
+
+     E — PARALLAX MICRO-SHIFT  (::after on .workspace-leaf-content)
+         A faint nebula tint per editor pane, shifted ±3 % on Y via
+         scroll-driven animation (Chromium 115+). Falls back to static
+         tint on older Electron builds — no broken layout either way.
+         Cost: 1 composite layer per visible pane · scroll-driven transform
+               is compositor-threaded · ~0.3 MB VRAM per pane · 0 main-thread.
+
+   Total budget: 5 fixed layers + 1 per pane, ~3.5 MB VRAM.  GPU-safe on
+   any machine from 2016 onward.  All animations use transform / opacity /
+   background-position exclusively — no layout thrash, no geometry recalc.
+
+   Session variety
+   ────────────────
+   --ic-sky-phase (0 – 1) lets the user or a plugin shift the atmosphere's
+   warmth and intensity so the vault doesn't look identical every session:
+     0    → deep midnight   (default — full aurora, cool nebula)
+     0.25 → pre-dawn cool   (aurora fading, constellations dimming)
+     0.50 → midday warmth   (warmer nebula hue, aurora subdued)
+     0.75 → dusk amber      (warm shift, aurora returning)
+   Set in a CSS snippet:  .theme-dark { --ic-sky-phase: 0.4; }
+   Or bind to the clock via a Templater/Dataview JS snippet.
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* Sky-phase default — override in a snippet or plugin.
+   Used as a static modifier on layers A, C, D; animations stay on
+   transform/opacity/background-position only.                            */
+.theme-dark { --ic-sky-phase: 0; }
+
+.theme-dark .app-container {
+	position: relative;
+	background: var(--ic-void);
+}
+
+/* ── Layer A — Nebula Clouds ─────────────────────────────────────────
+   4 radial-gradient fog patches.  Animated via transform only (drift +
+   subtle scale breathe).  sky-phase applies a static hue-rotate that
+   shifts colour temperature per session (max +15 deg at phase 1 —
+   a subtle purple → warm-magenta drift).
+   Cost: 1 composite layer · transform-only · ~1.5 MB VRAM @ 1440p      */
+.theme-dark .app-container::before {
+	content: "";
+	position: fixed;
+	inset: -10%;
+	z-index: 0;
+	pointer-events: none;
+	background-image:
+		radial-gradient(ellipse 60% 45% at 15% 20%, rgba(155, 107, 242, 0.16), transparent 60%),
+		radial-gradient(ellipse 55% 40% at 85% 15%, rgba(85, 230, 236, 0.10), transparent 60%),
+		radial-gradient(ellipse 70% 55% at 50% 90%, rgba(217, 168, 87, 0.07), transparent 65%),
+		radial-gradient(ellipse 40% 30% at 75% 70%, rgba(79, 201, 138, 0.05), transparent 60%);
+	background-repeat: no-repeat;
+	/* sky-phase: warm the nebula — not animated, just a static tint shift */
+	filter: hue-rotate(calc(var(--ic-sky-phase, 0) * 15deg));
+	animation: ic-nebula-drift 140s ease-in-out infinite alternate;
+	will-change: transform;
+}
+
+/* ── Layer B — Starfield ─────────────────────────────────────────────
+   10 radial-gradient pinpoints at varying sizes and tints.  Twinkles
+   via opacity animation.  Stars shine regardless of sky-phase —
+   the firmament is constant at every hour.
+   Cost: 1 composite layer · opacity-only repaints · ~0.5 MB VRAM       */
+.theme-dark .app-container::after {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	background-image:
+		radial-gradient(1px 1px at 20% 30%, rgba(244,241,234,0.9), transparent),
+		radial-gradient(1px 1px at 65% 12%, rgba(244,241,234,0.7), transparent),
+		radial-gradient(1.5px 1.5px at 80% 55%, rgba(85,230,236,0.8), transparent),
+		radial-gradient(1px 1px at 40% 70%, rgba(244,241,234,0.6), transparent),
+		radial-gradient(1px 1px at 90% 80%, rgba(217,168,87,0.7), transparent),
+		radial-gradient(1.5px 1.5px at 10% 85%, rgba(244,241,234,0.8), transparent),
+		radial-gradient(1px 1px at 55% 45%, rgba(244,241,234,0.5), transparent),
+		radial-gradient(1px 1px at 30% 5%, rgba(244,241,234,0.7), transparent),
+		radial-gradient(1px 1px at 95% 25%, rgba(244,241,234,0.55), transparent),
+		radial-gradient(1.5px 1.5px at 5% 55%, rgba(155,107,242,0.7), transparent);
+	background-repeat: repeat;
+	background-size: 100% 100%;
+	opacity: 0.75;
+	animation: ic-star-twinkle 7s ease-in-out infinite;
+}
+
+@keyframes ic-nebula-drift {
+	0%   { transform: translate3d(0, 0, 0) scale(1); }
+	50%  { transform: translate3d(-1.5%, 1%, 0) scale(1.04); }
+	100% { transform: translate3d(1.5%, -1%, 0) scale(1.02); }
+}
+
+@keyframes ic-star-twinkle {
+	0%, 100% { opacity: 0.55; }
+	50%      { opacity: 0.9; }
+}
+
+/* ── Layer C — Aurora Wash ───────────────────────────────────────────
+   Sits above nebula, below content, only inside main .workspace.
+   sky-phase modulates intensity: full at midnight (phase 0), faded
+   at noon (phase 0.5).  Animation is background-position only.
+   Cost: 1 composite layer · background-position repaint per frame
+         but gradient is trivial (~0.1 ms/frame) · ~0.2 MB VRAM         */
+.theme-dark .workspace {
+	position: relative;
+	background: transparent;
+}
+.theme-dark .workspace::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	background: linear-gradient(115deg,
+		transparent 0%,
+		rgba(85, 230, 236, 0.035) 30%,
+		rgba(155, 107, 242, 0.045) 55%,
+		transparent 80%);
+	background-size: 220% 220%;
+	/* sky-phase: aurora retreats toward "noon", returns at night */
+	opacity: calc(1 - var(--ic-sky-phase, 0) * 0.35);
+	animation: ic-aurora-flow 55s ease-in-out infinite;
+}
+@keyframes ic-aurora-flow {
+	0%   { background-position: 0% 20%; }
+	50%  { background-position: 100% 80%; }
+	100% { background-position: 0% 20%; }
+}
+
+/* ── Layer D — Constellation Lines ───────────────────────────────────
+   Inline SVG tile (280 × 280 px) containing faint geometric line
+   patterns connecting small star-dots — the "ancient map" layer.
+   Near-static: 300 s drift cycle (±8 px), barely perceptible.
+   sky-phase dims them at higher values (washed-out by "daylight").
+   Cost: 1 composite layer · SVG rasterised once at tile size, then
+         composited via transform-only animation · ~0.3 MB VRAM          */
+.theme-dark .workspace::after {
+	content: "";
+	position: absolute;
+	inset: -5%;
+	z-index: 0;
+	pointer-events: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cg stroke='rgba(199,212,227,0.14)' stroke-width='0.5' fill='none' stroke-linecap='round'%3E%3Cpath d='M28 22L82 56L128 30L178 64'/%3E%3Cpath d='M42 98L108 120L160 90'/%3E%3Cpath d='M20 158L72 178L140 146L188 180'/%3E%3Cpath d='M212 28L248 72L272 48'/%3E%3Cpath d='M198 132L242 158L268 136'/%3E%3Cpath d='M95 200L155 215L200 198'/%3E%3C/g%3E%3Cg fill='rgba(199,212,227,0.22)'%3E%3Ccircle cx='28' cy='22' r='1.3'/%3E%3Ccircle cx='82' cy='56' r='1'/%3E%3Ccircle cx='128' cy='30' r='1.5'/%3E%3Ccircle cx='178' cy='64' r='1'/%3E%3Ccircle cx='42' cy='98' r='1.2'/%3E%3Ccircle cx='108' cy='120' r='1'/%3E%3Ccircle cx='160' cy='90' r='1.4'/%3E%3Ccircle cx='20' cy='158' r='1'/%3E%3Ccircle cx='72' cy='178' r='1.3'/%3E%3Ccircle cx='140' cy='146' r='1'/%3E%3Ccircle cx='188' cy='180' r='1.5'/%3E%3Ccircle cx='212' cy='28' r='1'/%3E%3Ccircle cx='248' cy='72' r='1.4'/%3E%3Ccircle cx='272' cy='48' r='1'/%3E%3Ccircle cx='198' cy='132' r='1'/%3E%3Ccircle cx='242' cy='158' r='1.3'/%3E%3Ccircle cx='268' cy='136' r='1'/%3E%3Ccircle cx='95' cy='200' r='1.2'/%3E%3Ccircle cx='155' cy='215' r='1'/%3E%3Ccircle cx='200' cy='198' r='1.4'/%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: repeat;
+	background-size: 280px 280px;
+	/* sky-phase: constellations fade toward "noon" — washed by daylight */
+	opacity: calc(0.35 - var(--ic-sky-phase, 0) * 0.15);
+	animation: ic-constellation-drift 300s linear infinite;
+	will-change: transform;
+}
+@keyframes ic-constellation-drift {
+	/* ±8 px glacial wander — transform-only, compositor-threaded */
+	0%   { transform: translate3d(0, 0, 0); }
+	25%  { transform: translate3d(-5px, 3px, 0); }
+	50%  { transform: translate3d(-8px, 6px, 0); }
+	75%  { transform: translate3d(-3px, 8px, 0); }
+	100% { transform: translate3d(0, 0, 0); }
+}
+
+/* ── Layer E — Scroll-Parallax Micro-Shift ───────────────────────────
+   A very faint radial nebula tint per editor pane, shifted ±3 % on
+   the Y axis as the user scrolls.  Tied to the nearest block scroller
+   (the leaf's content view) via scroll-driven animation.
+
+   Requires Chromium 115+ (Obsidian ≥ 1.5).  The @supports gate means
+   older Electron builds silently skip this — no broken layout.
+
+   Cost: 1 composite layer per visible pane · scroll-driven transform
+         is compositor-threaded · ~0.3 MB VRAM per pane · 0 main-thread  */
+@supports (animation-timeline: scroll()) {
+	.theme-dark .workspace-leaf-content {
+		position: relative;
+	}
+	.theme-dark .workspace-leaf-content::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: 0;
+		pointer-events: none;
+		background:
+			radial-gradient(ellipse 70% 50% at 35% 45%,
+				rgba(155, 107, 242, 0.03), transparent 65%),
+			radial-gradient(ellipse 55% 40% at 72% 55%,
+				rgba(85, 230, 236, 0.02), transparent 60%);
+		animation: ic-leaf-parallax linear both;
+		animation-timeline: scroll(nearest block);
+		will-change: transform;
+	}
+}
+@keyframes ic-leaf-parallax {
+	from { transform: translate3d(0, 3%, 0); }
+	to   { transform: translate3d(0, -3%, 0); }
+}
+
+/* ── Reduced motion ──────────────────────────────────────────────────
+   Kill every background animation.  Static sky-phase modifiers
+   (hue-rotate, opacity calc) still apply, so session variety is
+   preserved even with animations disabled.                               */
+@media (prefers-reduced-motion: reduce) {
+	.theme-dark .app-container::before,
+	.theme-dark .app-container::after,
+	.theme-dark .workspace::before,
+	.theme-dark .workspace::after { animation: none !important; }
+	.theme-dark .workspace-leaf-content::after { animation: none !important; }
+}

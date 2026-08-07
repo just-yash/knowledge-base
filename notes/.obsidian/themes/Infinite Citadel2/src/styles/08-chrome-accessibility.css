@@ -1,0 +1,85 @@
+/* ───────────────────────────────────────────────────────────────────────
+   08-CHROME-ACCESSIBILITY.CSS — Scrollbars, Modals, Menus, Accessibility
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* ── STARK HIGH-FREQUENCY SCROLLBARS ────────────────────────────────── */
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar { width: 8px; height: 8px; }
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, var(--ic-purple-dim), var(--ic-arc-cyan-dim));
+	border-radius: 999px;
+}
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar-thumb:hover { background: var(--ic-arc-cyan); }
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar-track { background: transparent; }
+
+/* ── CONTEXT MENUS & POPUPS ─────────────────────────────────────────── */
+.theme-dark .menu {
+	background: var(--ic-glass-strong);
+	backdrop-filter: blur(24px) saturate(160%);
+	border: var(--ic-border-steel);
+	border-radius: var(--ic-radius-m);
+	box-shadow: var(--ic-shadow-deep);
+}
+
+.theme-dark .menu-item:hover { background: linear-gradient(90deg, rgba(85, 230, 236, 0.14), transparent); }
+.theme-dark .menu-item-icon { color: var(--ic-arc-cyan); }
+
+/* ── MODALS & DIALOGS (STARK HOLOGRAPHIC PROJECTIONS) ────────────────── */
+.theme-dark .modal {
+	background: var(--pbr-reactor-texture) !important;
+	backdrop-filter: blur(28px) saturate(160%);
+	border: 1px solid rgba(85, 230, 236, 0.4) !important;
+	border-radius: 6px !important;
+	box-shadow: 0 10px 60px rgba(85, 230, 236, 0.15), inset 0 0 20px rgba(85, 230, 236, 0.05) !important;
+}
+
+.theme-dark .modal-title {
+	font-family: var(--ic-font-mono) !important;
+	color: var(--ic-arc-cyan) !important;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.theme-dark .modal-bg {
+	background: rgba(4, 5, 9, 0.75);
+	backdrop-filter: blur(4px);
+}
+
+:is(.theme-dark, .theme-light) :focus-visible {
+	outline: 2px solid var(--ic-arc-cyan) !important;
+	outline-offset: 2px !important;
+	box-shadow: 0 0 12px rgba(85, 230, 236, 0.45) !important;
+}
+
+/* Performance Adaptive Overrides */
+body[data-citadel-perf="low"] .theme-dark {
+	--ic-nebula-opacity:         0.4;
+	--ic-stars-opacity:          0.3;
+	--ic-aurora-opacity:         0;
+	--ic-constellations-opacity: 0;
+}
+
+body[data-citadel-perf="low"] :is(.theme-dark, .theme-light) * {
+	backdrop-filter: none !important;
+	filter: none !important;
+	box-shadow: none !important;
+}
+
+body[data-citadel-perf="med"] .theme-dark {
+	--ic-nebula-opacity:         0.7;
+	--ic-constellations-opacity: 0.18;
+}
+
+body[data-citadel-perf="med"] :is(.theme-dark, .theme-light) * {
+	backdrop-filter: blur(8px) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.theme-dark *, .theme-dark *::before, .theme-dark *::after,
+	.theme-light *, .theme-light *::before, .theme-light *::after {
+		animation-duration: 0.001s !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001s !important;
+		animation: none !important;
+		transition: none !important;
+	}
+}

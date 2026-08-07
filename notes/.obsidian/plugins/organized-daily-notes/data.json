@@ -1,0 +1,6 @@
+{
+  "folderStructure": "year/month",
+  "yearFolderFormat": "YYYY",
+  "monthFolderFormat": "M-MMMM",
+  "weekFolderFormat": "W"
+}
