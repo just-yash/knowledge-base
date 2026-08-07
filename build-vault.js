@@ -40,27 +40,59 @@ function makeId(relPath) {
 
 function parseHeader(rawContent) {
   const lines = rawContent.split('\n');
-  if (lines[0].trim() !== '---') {
-    return { header: {}, body: rawContent.trim() };
+  const header = {};
+
+  // Case A: Standard YAML Frontmatter starting with ---
+  if (lines[0].trim() === '---') {
+    const headerLines = [];
+    let bodyStart = 1;
+    for (let i = 1; i < lines.length; i++) {
+      if (lines[i].trim() === '---') {
+        bodyStart = i + 1;
+        break;
+      }
+      headerLines.push(lines[i]);
+    }
+    for (const line of headerLines) {
+      const m = line.match(/^([\w-]+)\s*:\s*(.+)/);
+      if (m) header[m[1].toLowerCase()] = m[2].trim();
+    }
+    return { header, body: lines.slice(bodyStart).join('\n').trim() };
   }
 
-  const headerLines = [];
-  let bodyStart = 1;
-  for (let i = 1; i < lines.length; i++) {
-    if (lines[i].trim() === '---') {
-      bodyStart = i + 1;
+  // Case B: Inline Top Metadata block (Type :, Date :, Tags :, Status :, ~ Signature ~)
+  let metaEndIndex = -1;
+  let hasTopMeta = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+
+    // Divider or Heading ends the metadata header block
+    if (line === '---' || line.startsWith('#')) {
+      metaEndIndex = (line === '---') ? i + 1 : i;
       break;
     }
-    headerLines.push(lines[i]);
+
+    const isKv = /^([\w-]+)\s*:\s*(.+)/.test(line);
+    const isSignature = /^~\s*\*?.*\*?\s*~$/.test(line) || line.startsWith('~');
+
+    if (isKv || isSignature) {
+      hasTopMeta = true;
+      if (isKv) {
+        const m = line.match(/^([\w-]+)\s*:\s*(.+)/);
+        if (m) header[m[1].toLowerCase()] = m[2].trim();
+      }
+    } else {
+      break;
+    }
   }
 
-  const header = {};
-  for (const line of headerLines) {
-    const m = line.match(/^(\w+)\s*:\s*(.+)/);
-    if (m) header[m[1].toLowerCase()] = m[2].trim();
+  if (hasTopMeta && metaEndIndex > 0) {
+    return { header, body: lines.slice(metaEndIndex).join('\n').trim() };
   }
 
-  return { header, body: lines.slice(bodyStart).join('\n').trim() };
+  return { header: {}, body: rawContent.trim() };
 }
 
 function extractTags(header) {
