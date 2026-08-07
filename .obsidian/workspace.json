@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "247c66c3c7a0b992",
+        "id": "1cb6e09d8f2c7f4c",
         "type": "tabs",
         "children": [
           {
-            "id": "322056256fd586a4",
+            "id": "86b79b432c23bb11",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/03 - Notes/Markdown Basic.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Markdown Basic"
             }
           }
         ]
@@ -51,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "markdo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "notes/03 - Notes/Markdown Basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "notes/03 - Notes/Markdown Basic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -155,6 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "notes/03 - Notes/Markdown Basic.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,6 +190,14 @@
   },
   "active": "de39c7ed3c0d7e17",
   "lastOpenFiles": [
+    "notes/03 - Notes/Array.md",
+    "notes/03 - Notes/AVL Tree.md",
+    "notes/03 - Notes/ArcFace.md",
+    "notes/03 - Notes/Algorithm Basics.md",
+    "notes/03 - Notes/AI Tools.md",
+    "notes/03 - Notes/Agentic_AI.md",
+    "notes/03 - Notes/Adder.md",
+    "notes/03 - Notes/1st C Program.md",
     "notes/07 - Annexure/Images/Pasted image 20260807193733.png",
     "notes/07 - Annexure/Pasted image 20260807194323.png",
     "notes/07 - Annexure/Pasted image 20260807193733.png",

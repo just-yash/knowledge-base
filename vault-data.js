@@ -26683,7 +26683,7 @@ or
 type/paste the emoji
 😊
 \`\`\`
-:FasFaceSmile:  
+:FasFaceSmile  
 :LiSmile:  
 😊  
 \`Different markdown flavors support different packs. Some don't even support\`  
@@ -26810,6 +26810,7 @@ used to link and separate notes
 
 here:
  [Blog Notes with interactive mode](https://blog.webdevsimplified.com/2023-06/markdown-crash-course/)
+
 ---
 # Questions`
   },
