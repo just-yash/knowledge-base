@@ -1,12 +1,12 @@
-# Yash's Knowledge Base & Interactive Vault
+# <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/brain.svg" width="28" height="28" valign="middle" /> Yash's Knowledge Base & Interactive Vault
 
-A personal digital notebook and knowledge graph published as a static web site. It takes a raw Obsidian vault folder full of Markdown files and turns it into an interactive web viewer with a visual connection graph, dynamic Dataview query support, mathematical formulas, and instant search.
+A personal digital notebook and knowledge graph published as a static website. It takes a raw Obsidian vault folder full of Markdown files and turns it into an interactive web viewer with a visual connection graph, dynamic Dataview query support, mathematical formulas, and instant search.
 
 **Live site:** [just-yash.github.io/knowledge-base](https://just-yash.github.io/knowledge-base/)
 
 ---
 
-## ◆ Overview
+## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/compass.svg" width="22" height="22" valign="middle" /> Overview
 
 This repository hosts my personal notes, structured around the **Zettelkasten** methodology and **Maps of Content (MOCs)**.
 
@@ -17,9 +17,9 @@ Instead of using a heavy framework like Next.js, Astro, or Hugo that requires co
 
 ---
 
-## ⚙ How it works under the hood
+## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/cpu.svg" width="22" height="22" valign="middle" /> How it works under the hood
 
-### 1. Interactive Knowledge Graph (`vault-graph.jsx`)
+### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/share-2.svg" width="18" height="18" valign="middle" /> 1. Interactive Knowledge Graph (`vault-graph.jsx`)
 - **Physics Simulation**: Uses a 2D physics loop that calculates electrostatic node repulsion, link spring tension, center gravity, and velocity dampening so nodes naturally spread out without overlapping.
 - **Theme Native**: The node colors, connection lines, background grid, and modal dialogs match the site's active light or dark theme automatically.
 - **Settings Control**:
@@ -33,7 +33,7 @@ Instead of using a heavy framework like Next.js, Astro, or Hugo that requires co
 
 ---
 
-### 2. Client-side Dataview Engine (`vault-editor.jsx`)
+### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/database.svg" width="18" height="18" valign="middle" /> 2. Client-side Dataview Engine (`vault-editor.jsx`)
 Obsidian's Dataview plugin is essential for MOCs and index pages. Since static web pages don't have Obsidian's plugin runtime, I wrote a custom parser inside the frontend renderer:
 - Parses `LIST` and `TABLE` queries inside ```dataview code blocks.
 - Filters by folder path (`WHERE contains(file.folder, "03 - Notes")`), tags, or linked topics (`FROM [[Topic]]` / `FROM #tag`).
@@ -43,7 +43,7 @@ Obsidian's Dataview plugin is essential for MOCs and index pages. Since static w
 
 ---
 
-### 3. Markdown Parser & Reader (`vault-editor.jsx`)
+### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-text.svg" width="18" height="18" valign="middle" /> 3. Markdown Parser & Reader (`vault-editor.jsx`)
 - **Multi-Tab Interface**: Open multiple notes simultaneously, switch between tabs, close tabs, and share direct note links via URL hashes (`#note-title`).
 - **Note Header Info**: Shows the folder path breadcrumb, modified date, estimated reading time, word count, and clickable tag chips.
 - **Wikilinks**: Resolves `[[Note Title]]`, `[[Note Title|Custom Alias]]`, and `[[Note#Heading]]` anchors across subfolders.
@@ -53,21 +53,21 @@ Obsidian's Dataview plugin is essential for MOCs and index pages. Since static w
 
 ---
 
-### 4. Search & File Tree (`vault-sidebar.jsx`, `vault-app.jsx`)
+### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/search.svg" width="18" height="18" valign="middle" /> 4. Search & File Tree (`vault-sidebar.jsx`, `vault-app.jsx`)
 - **Folder Tree**: A collapsible folder tree mirroring the Obsidian vault layout.
 - **Auto-Reveal**: Opening any note automatically expands its parent folders in the sidebar and scrolls to highlight the active file.
 - **Quick Search**: Press `Cmd+K` or `Ctrl+K` to open the search modal. Type `#tag` to filter notes by tag, or type keywords to search note titles and paths.
 
 ---
 
-### 5. Document Context Panel (`vault-rightpanel.jsx`)
+### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/panel-right.svg" width="18" height="18" valign="middle" /> 5. Document Context Panel (`vault-rightpanel.jsx`)
 - **Outline**: Live table of contents generated from document headings with scroll tracking.
 - **Backlinks & Outgoing Links**: Lists all incoming links and outgoing wikilinks.
 - **Related Notes**: Recommends related notes based on shared tag overlap.
 
 ---
 
-## 📁 Vault Structure
+## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/folder-tree.svg" width="22" height="22" valign="middle" /> Vault Structure
 
 ```
 knowledge-base/
@@ -99,7 +99,7 @@ knowledge-base/
 
 ---
 
-## 🛠 Local Setup & Workflow
+## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/terminal.svg" width="22" height="22" valign="middle" /> Local Setup & Workflow
 
 ### Prerequisites
 Make sure you have **Node.js** (v16+) installed.
@@ -125,7 +125,7 @@ Then open `http://localhost:3000` in your browser.
 
 ---
 
-## 🚀 Publishing to GitHub Pages
+## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/upload-cloud.svg" width="22" height="22" valign="middle" /> Publishing to GitHub Pages
 
 ### Quick Push (Windows)
 Run the batch script from the repository folder:
@@ -144,7 +144,7 @@ git push origin obsidian
 
 ---
 
-## 🔒 Ignored & Private Folders
+## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shield.svg" width="22" height="22" valign="middle" /> Ignored & Private Folders
 
 Any folders specified in `SKIP_DIRS` inside `build-vault.js` are ignored during the build step and will not be published:
 ```javascript
@@ -160,7 +160,7 @@ const SKIP_DIRS = new Set([
 
 ---
 
-## 📄 License & Credits
+## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/award.svg" width="22" height="22" valign="middle" /> License & Credits
 
 Created by **Yash Agrawall** ([@just-yash](https://github.com/just-yash)).  
 Built with React, Babel Standalone, Marked.js, KaTeX, and Highlight.js.
