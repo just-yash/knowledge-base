@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/03 - Notes/Markdown Basic.md",
+                "file": "notes/00 - Home/About Me.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Markdown Basic"
+              "title": "About Me"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/03 - Notes/Markdown Basic.md",
+                "file": "notes/00 - Home/About Me.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/03 - Notes/Markdown Basic.md",
+                "file": "notes/00 - Home/About Me.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/03 - Notes/Markdown Basic.md",
+                "file": "notes/00 - Home/About Me.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,21 +188,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "de39c7ed3c0d7e17",
+  "active": "86b79b432c23bb11",
   "lastOpenFiles": [
-    "notes/03 - Notes/Array.md",
+    "notes/00 - Home/README.md",
+    "notes/07 - Annexure/Images/Pasted image 20260807193733.png",
+    "notes/07 - Annexure/Images/Pasted image 20260807192239.png",
+    "notes/09 - Templates/Startup Template.md",
+    "notes/09 - Templates/Research Template.md",
+    "notes/09 - Templates/Raw Notes Template.md",
+    "notes/09 - Templates/MOC Template.md",
+    "notes/09 - Templates/DSA Qs.md",
+    "notes/09 - Templates/DSA Pattern.md",
+    "notes/09 - Templates/Creativity Template.md",
+    "notes/09 - Templates/Academic Notes Template.md",
+    "notes/03 - Notes/Markdown Basic.md",
+    "notes/03 - Notes/break.c.md",
+    "notes/03 - Notes/Binary Tree Traversal.md",
+    "notes/03 - Notes/Binary Tree.md",
+    "notes/03 - Notes/Binary Search Tree.md",
+    "notes/03 - Notes/Baye's Theorem.md",
+    "notes/03 - Notes/Basics.c.md",
+    "notes/03 - Notes/Basic Problems of an Economy.md",
     "notes/03 - Notes/AVL Tree.md",
+    "notes/03 - Notes/Array.md",
+    "notes/03 - Notes/Arguments.md",
     "notes/03 - Notes/ArcFace.md",
     "notes/03 - Notes/Algorithm Basics.md",
     "notes/03 - Notes/AI Tools.md",
     "notes/03 - Notes/Agentic_AI.md",
     "notes/03 - Notes/Adder.md",
-    "notes/03 - Notes/1st C Program.md",
-    "notes/07 - Annexure/Images/Pasted image 20260807193733.png",
     "notes/07 - Annexure/Pasted image 20260807194323.png",
     "notes/07 - Annexure/Pasted image 20260807193733.png",
-    "notes/02 - Raw Notes/Pasted.md",
-    "notes/07 - Annexure/Images/Pasted image 20260807192239.png",
     "notes/07 - Annexure/Pasted image 20260807192239.png",
     "temp_git_status.txt",
     "sync.bat",

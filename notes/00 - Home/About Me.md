@@ -10,92 +10,92 @@ Tags : [[yash]]
 
 ## Who I Am
 
-My name is **Yash Agrawal**. I'm a 3<sup>rd</sup> year  Computer Science and Engineering student at **IGIT Sarang**, and I think of myself less as a student and more as someone who builds things and documents everything.
+My name is **Yash Agrawall**. I'm a Computer Science & Engineering student at **IGIT Sarang**, an AI practitioner, research enthusiast, and published author. I view myself less as a traditional student and more as someone who builds scalable software systems, solves complex technical problems, and documents everything along the way.
 
-I don't learn passively. I learn by writing, connecting, and building — which is why this vault exists. The [[Zettelkasten]] isn't a side project; it's the clearest picture of how my mind actually works.
+I don't learn passively. I learn by writing, connecting, and building — which is why this public vault exists. The Zettelkasten method serves as my second brain, providing a live map of how I analyze, synthesize, and create.
 
 ---
+
+## Industry & Experience
+
+### 💼 Mercer Marsh Benefits (Marsh McLennan) — Software & AI Intern
+- **Enterprise SaaS & Automation**: Worked within the Health Vertical on the **Darwin Platform**, engineering custom AI and automation tools to streamline complex corporate workflows.
+- **Key Products Built**:
+  - **SLOT Planner Tool**: Automated scheduling and resource allocation system.
+  - **SPARK Efficiency Suite**: Process optimization tool delivering measurable throughput gains.
+  - **AI Workflows**: Automated client communications and template-based analytical dashboards.
+- **Global AI Enablement & Recognition**:
+  - Honored with the **"Star Intern"** award on National Intern Day.
+  - Designed and delivered global AI enablement workshops for Marsh employees in India and worldwide, demonstrating high-speed development methodologies and AI tool integration.
+  - Earned a **Pre-Placement Offer (PPO)** for future roles.
+
+---
+
 ## What I'm Building
 
-### 🔬 Research — Multi-Camera Surveillance
+### 🔬 Research — Multi-Camera Surveillance & AI Security
+My primary technical research focus. I am engineering an end-to-end **multi-camera threat detection, tracking, and re-identification system** using:
 
-My most serious technical work right now. I'm building a **multi-camera threat detection and person identification system** using:
+- **YOLOv8** for real-time object and face detection
+- **DeepSORT & ByteTrack** for multi-object tracking across video streams
+- **OSNet (torchreid)** for person re-identification across non-overlapping camera feeds
+- **OpenCV + Python** as the high-performance backend
 
-- **YOLOv8** for real-time face and person detection
-- **DeepSORT** for multi-object tracking across frames
-- **OSNet (torchreid)** for re-identification across camera feeds
-- **OpenCV + Python** as the backbone
+The goal is a publishable research paper and a production-grade AI security architecture. See [[MOC - Computer Vision and Surveillance]] for details.
 
-The goal isn't just a working prototype — it's a **publishable research paper** and a portfolio-grade AI security system. See [[MOC - Computer Vision and Surveillance]] for the full pipeline.
-
-### 🧠 This Knowledge Base
-
-This vault — 668+ notes, 226+ connections — is probably the work I'm most proud of. I built it independently, without being told to, because I needed a system that matched how I actually think.
-
-It covers everything I'm learning and everything I'm building, structured so one idea leads to the next. I keep it public because good ideas should travel.
-
----
-## What I Know (and Am Learning)
-
-### Core CS
-
-I'm working through the full CS curriculum — not just to pass exams, but to actually understand the foundations:
-
-- **Data Structures & Algorithms** — arrays to graphs, sorting, dynamic programming → [[MOC - Data Structures and Algorithms]]
-- **Database Systems** — relational models, SQL, normalisation, transactions, functional dependencies → [[MOC - Database Systems]]
-- **Digital Logic** — Boolean algebra, K-maps, combinational circuits → [[MOC - Digital Logic]]
-- **Operating Systems** — system software, process management, memory → [[MOC - Operating Systems]]
-- **Engineering Mathematics** — linear algebra, probability, discrete maths, graph theory → [[MOC - Engineering Mathematics]]
-
-My favourite is **Discrete Mathematics**. It made me realise that under every CS domain, it's all mathematics — and it's how I learned to see connections between subjects that look completely unrelated on the surface.
-
-### Programming Languages
-
-- **Python** — primary language. Self-studied through CS50P. Where I think first.
-- **C** — learned from the ground up. Pointers, memory, the things that make you understand what Python is hiding.
-- **Java** — learning; notes archived as I go.
-
-→ [[MOC - Languages]]
-
-### AI and Machine Learning
-
-Fundamentals, prompting, tools — with a specific focus on computer vision and face recognition for my research project → [[MOC - AI and Machine Learning]]
-
-### Cybersecurity
-
-Ethical hacking, Linux, CTF methodology. I'm working toward penetration testing as a monetisable skill, and it strengthens the threat-modelling thinking in my surveillance research → [[MOC - Cybersecurity]]
+### 🧠 Public Knowledge Base
+This vault — containing 660+ notes and hundreds of bidirectional links — is my public intellectual asset repository. Built using Obsidian and Quartz, it documents my continuous learning across Computer Science, AI, mathematics, security, and philosophy. I keep it public because ideas compound best when shared.
 
 ---
 
-## How I Think
+## Technical Arsenal & Learning
 
-I learn by **building and documenting**.
+### AI, ML & Computer Vision
+Deep learning architectures, computer vision pipelines, object detection (YOLOv8), person re-identification (OSNet), and OpenCV → [[MOC - AI and Machine Learning]]
 
-If I can't explain it in a note, I don't understand it yet. If I can't link it to something I already know, I haven't actually learned it — I've just seen it.
+### Cybersecurity & AI Security
+Ethical hacking, network security, threat modeling, Linux/Kali, and preparing for professional security certifications (eJPT) → [[MOC - Cybersecurity]]
 
-My favourite question is: *what is the underlying structure here?* Whether it's a proof, a system, a market, or a poem — there's always a structure. Finding it is the work.
+### Core CS Foundations
+- **Data Structures & Algorithms** — arrays, trees, graphs, sorting, and dynamic programming → [[MOC - Data Structures and Algorithms]]
+- **Database Systems** — SQL, normalization, relational algebra, functional dependencies, and transactions → [[MOC - Database Systems]]
+- **Operating Systems & Digital Logic** — process management, memory allocation, Boolean algebra, and logic synthesis → [[MOC - Operating Systems]] & [[MOC - Digital Logic]]
+- **Discrete Mathematics** — graph theory, combinatorics, and proof structures (my favorite mathematical foundation for CS) → [[MOC - Engineering Mathematics]]
 
-I use the [[Zettelkasten]] method to build a second brain — permanent, reusable intellectual assets instead of notes I forget the day after an exam.
+### Programming Languages & Tooling
+- **Python** — primary language for AI/ML, automation, and core development (CS50P)
+- **C / C++** — deep understanding of memory management, pointers, and hardware-level performance
+- **Developer Ecosystem**: Linux, Git, GitHub, VS Code, Quartz → [[MOC - Languages]]
 
 ---
 
-## Beyond the Technical
+## Published Work & Creative Identity
 
-I write poetry. *[[Fragments of a Fading Mind]]* is published. It's honest in a way technical notes can't be — about silence, memory, the gap between what I feel and what I show.
+Beyond software engineering, I am a published author and poet. Creative writing sharpens my ability to communicate complex technical ideas with clarity and narrative depth.
 
-Writing isn't separate from how I think about CS or business. Storytelling is how ideas travel. It's why narrative matters in Zaffee's marketing, why the best documentation reads like good prose, and why I'm building a writing brand alongside everything else → [[MOC - Writing and Creativity]]
-
-I also study **finance** — not as an end in itself, but because building Zaffee means understanding unit economics, pricing, compounding, and the language of capital → [[MOC - Finance]]
+- ***Fragments of a Fading Mind*** — Solo poetry collection published on Amazon Kindle.
+- ***Be Limitless (Vol. 4)*** — Co-authored book presented at the **New Delhi World Book Fair 2025** (National Book Trust, Ministry of Education).
+- **ISBN Anthologies** — Featured contributor in multiple ISBN-certified anthologies, including *Reflections*, *Mesmerize*, and *Wildflowers in Winter*.
+- Former core member of SOLE (college literary club) with a 12-year background in school choir and literary arts → [[MOC - Writing and Creativity]]
 
 ---
 
-## Right Now
+## Philosophy & Execution
 
-| What           | Where                                                                                                 |
-| -------------- | ----------------------------------------------------------------------------------------------------- |
-| **Internship** | Darwin platform — Mercer Marsh Benefits (Marsh McLennan). Learning enterprise SaaS at scale.          |
-| **Research**   | Multi-camera surveillance. Environment setup phase. First milestone: single-camera detection working. |
-| **Studying**   | DBMS, Operating Systems, DSA — in parallel with self-directed AI and cybersecurity tracks.            |
+- **Think in decades, execute daily**: Focus on high-leverage activities that compound knowledge, technical skills, and systems over time.
+- **Systems over motivation**: Rely on structured routines, reusable workflows, and documentation rather than fleeting motivation.
+- **Learn and build in public**: If an idea cannot be explained simply in a note or connected to existing mental models, it hasn't been fully mastered yet.
+
+---
+
+## Current Snapshot
+
+| Domain            | Status / Focus                                                                         |
+| :---------------- | :------------------------------------------------------------------------------------- |
+| **Industry**      | Mercer Marsh Benefits (Marsh McLennan) — Enterprise AI & SaaS automation; PPO secured. |
+| **Research**      | Multi-camera threat detection & re-identification system — Computer Vision pipeline.   |
+| **Academics**     | B.Tech CSE (3rd Year) — Core CS (DBMS, OS, DSA) alongside AI & Cybersecurity tracks.   |
+| **Public Assets** | Maintaining and expanding the public knowledge base.                                   |
 
 ---
 
@@ -104,6 +104,7 @@ I also study **finance** — not as an end in itself, but because building Zaffe
 - **GitHub** — [yashagrawall](https://github.com/yashagrawall)
 - **Email** — yashagrawall333@gmail.com
 - **Instagram** — [yashagrawall](https://www.instagram.com/yashagrawall)
+- **Knowledge Base** — [yashagrawall.github.io/knowledge-base](https://yashagrawall.github.io/knowledge-base)
 
 ---
 

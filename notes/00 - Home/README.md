@@ -93,7 +93,7 @@ The platform provides a browser experience matching desktop Obsidian: interactiv
 
 The application utilizes a **Static Data + In-Browser JSX Runtime** architecture:
 
-<img width="1402" height="1122" alt="image" src="https://github.com/user-attachments/assets/0a82d44d-522b-42c8-a86b-76e6d4dea852" />
+![[Pasted image 20260807192239.png]]
 
 ### 3.2 High-Level Data Flow & Compilation Pipeline
 
@@ -183,7 +183,7 @@ Since static sites lack Obsidian's Dataview plugin environment, `vault-editor.js
 
 ### 4.3 Markdown, Math, & Syntax Pipeline (`vault-editor.jsx`)
 
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/57fcb734-2f1e-44d5-8434-eae86b909186" />
+![[Pasted image 20260807193733.png]]
 
 - **Native Marked Inline Extension**: Uses `window.marked.use({ extensions: [highlightExtension] })` to tokenize `==highlight==` into `<mark>highlight</mark>` tags while preserving raw code blocks (` ``` `) untouched.
 - **Task List Checkbox Cleaner**: Strips `marked`'s prepended `<input type="checkbox">` elements in `renderer.listitem` to prevent double checkbox rendering.

@@ -9,10 +9,10 @@ const VAULT_NOTES = {
     tags: [],
     created: "2026-08-07",
     modified: "2026-08-07",
-    wordCount: 825,
+    wordCount: 876,
     backlinks: [],
-    links: ["moc-computer-vision-and-surveillance","moc-data-structures-and-algorithms","moc-database-systems","moc-digital-logic","moc-operating-systems","moc-engineering-mathematics","moc-languages","moc-ai-and-machine-learning","moc-cybersecurity","fragments-of-a-fading-mind","moc-writing-and-creativity","moc-finance","index"],
-    outline: [{"level":1,"text":"About Me","id":"about-me"},{"level":2,"text":"Who I Am","id":"who-i-am"},{"level":2,"text":"What I'm Building","id":"what-im-building"},{"level":3,"text":"🔬 Research — Multi-Camera Surveillance","id":"research-multi-camera-surveillance"},{"level":3,"text":"🧠 This Knowledge Base","id":"this-knowledge-base"},{"level":2,"text":"What I Know (and Am Learning)","id":"what-i-know-and-am-learning"},{"level":3,"text":"Core CS","id":"core-cs"},{"level":3,"text":"Programming Languages","id":"programming-languages"},{"level":3,"text":"AI and Machine Learning","id":"ai-and-machine-learning"},{"level":3,"text":"Cybersecurity","id":"cybersecurity"},{"level":2,"text":"How I Think","id":"how-i-think"},{"level":2,"text":"Beyond the Technical","id":"beyond-the-technical"},{"level":2,"text":"Right Now","id":"right-now"},{"level":2,"text":"Contact","id":"contact"}],
+    links: ["moc-computer-vision-and-surveillance","moc-ai-and-machine-learning","moc-cybersecurity","moc-data-structures-and-algorithms","moc-database-systems","moc-operating-systems","moc-digital-logic","moc-engineering-mathematics","moc-languages","moc-writing-and-creativity","index"],
+    outline: [{"level":1,"text":"About Me","id":"about-me"},{"level":2,"text":"Who I Am","id":"who-i-am"},{"level":2,"text":"Industry & Experience","id":"industry-experience"},{"level":3,"text":"💼 Mercer Marsh Benefits (Marsh McLennan) — Software & AI Intern","id":"mercer-marsh-benefits-marsh-mclennan-software-ai-intern"},{"level":2,"text":"What I'm Building","id":"what-im-building"},{"level":3,"text":"🔬 Research — Multi-Camera Surveillance & AI Security","id":"research-multi-camera-surveillance-ai-security"},{"level":3,"text":"🧠 Public Knowledge Base","id":"public-knowledge-base"},{"level":2,"text":"Technical Arsenal & Learning","id":"technical-arsenal-learning"},{"level":3,"text":"AI, ML & Computer Vision","id":"ai-ml-computer-vision"},{"level":3,"text":"Cybersecurity & AI Security","id":"cybersecurity-ai-security"},{"level":3,"text":"Core CS Foundations","id":"core-cs-foundations"},{"level":3,"text":"Programming Languages & Tooling","id":"programming-languages-tooling"},{"level":2,"text":"Published Work & Creative Identity","id":"published-work-creative-identity"},{"level":2,"text":"Philosophy & Execution","id":"philosophy-execution"},{"level":2,"text":"Current Snapshot","id":"current-snapshot"},{"level":2,"text":"Contact","id":"contact"}],
     content: `# About Me
 
 > *This is the human behind the vault. Every note here is a fragment of how I think, what I'm building, and who I'm becoming.*
@@ -21,92 +21,92 @@ const VAULT_NOTES = {
 
 ## Who I Am
 
-My name is **Yash Agrawal**. I'm a 3<sup>rd</sup> year  Computer Science and Engineering student at **IGIT Sarang**, and I think of myself less as a student and more as someone who builds things and documents everything.
+My name is **Yash Agrawall**. I'm a Computer Science & Engineering student at **IGIT Sarang**, an AI practitioner, research enthusiast, and published author. I view myself less as a traditional student and more as someone who builds scalable software systems, solves complex technical problems, and documents everything along the way.
 
-I don't learn passively. I learn by writing, connecting, and building — which is why this vault exists. The [[Zettelkasten]] isn't a side project; it's the clearest picture of how my mind actually works.
+I don't learn passively. I learn by writing, connecting, and building — which is why this public vault exists. The Zettelkasten method serves as my second brain, providing a live map of how I analyze, synthesize, and create.
 
 ---
+
+## Industry & Experience
+
+### 💼 Mercer Marsh Benefits (Marsh McLennan) — Software & AI Intern
+- **Enterprise SaaS & Automation**: Worked within the Health Vertical on the **Darwin Platform**, engineering custom AI and automation tools to streamline complex corporate workflows.
+- **Key Products Built**:
+  - **SLOT Planner Tool**: Automated scheduling and resource allocation system.
+  - **SPARK Efficiency Suite**: Process optimization tool delivering measurable throughput gains.
+  - **AI Workflows**: Automated client communications and template-based analytical dashboards.
+- **Global AI Enablement & Recognition**:
+  - Honored with the **"Star Intern"** award on National Intern Day.
+  - Designed and delivered global AI enablement workshops for Marsh employees in India and worldwide, demonstrating high-speed development methodologies and AI tool integration.
+  - Earned a **Pre-Placement Offer (PPO)** for future roles.
+
+---
+
 ## What I'm Building
 
-### 🔬 Research — Multi-Camera Surveillance
+### 🔬 Research — Multi-Camera Surveillance & AI Security
+My primary technical research focus. I am engineering an end-to-end **multi-camera threat detection, tracking, and re-identification system** using:
 
-My most serious technical work right now. I'm building a **multi-camera threat detection and person identification system** using:
+- **YOLOv8** for real-time object and face detection
+- **DeepSORT & ByteTrack** for multi-object tracking across video streams
+- **OSNet (torchreid)** for person re-identification across non-overlapping camera feeds
+- **OpenCV + Python** as the high-performance backend
 
-- **YOLOv8** for real-time face and person detection
-- **DeepSORT** for multi-object tracking across frames
-- **OSNet (torchreid)** for re-identification across camera feeds
-- **OpenCV + Python** as the backbone
+The goal is a publishable research paper and a production-grade AI security architecture. See [[MOC - Computer Vision and Surveillance]] for details.
 
-The goal isn't just a working prototype — it's a **publishable research paper** and a portfolio-grade AI security system. See [[MOC - Computer Vision and Surveillance]] for the full pipeline.
-
-### 🧠 This Knowledge Base
-
-This vault — 668+ notes, 226+ connections — is probably the work I'm most proud of. I built it independently, without being told to, because I needed a system that matched how I actually think.
-
-It covers everything I'm learning and everything I'm building, structured so one idea leads to the next. I keep it public because good ideas should travel.
-
----
-## What I Know (and Am Learning)
-
-### Core CS
-
-I'm working through the full CS curriculum — not just to pass exams, but to actually understand the foundations:
-
-- **Data Structures & Algorithms** — arrays to graphs, sorting, dynamic programming → [[MOC - Data Structures and Algorithms]]
-- **Database Systems** — relational models, SQL, normalisation, transactions, functional dependencies → [[MOC - Database Systems]]
-- **Digital Logic** — Boolean algebra, K-maps, combinational circuits → [[MOC - Digital Logic]]
-- **Operating Systems** — system software, process management, memory → [[MOC - Operating Systems]]
-- **Engineering Mathematics** — linear algebra, probability, discrete maths, graph theory → [[MOC - Engineering Mathematics]]
-
-My favourite is **Discrete Mathematics**. It made me realise that under every CS domain, it's all mathematics — and it's how I learned to see connections between subjects that look completely unrelated on the surface.
-
-### Programming Languages
-
-- **Python** — primary language. Self-studied through CS50P. Where I think first.
-- **C** — learned from the ground up. Pointers, memory, the things that make you understand what Python is hiding.
-- **Java** — learning; notes archived as I go.
-
-→ [[MOC - Languages]]
-
-### AI and Machine Learning
-
-Fundamentals, prompting, tools — with a specific focus on computer vision and face recognition for my research project → [[MOC - AI and Machine Learning]]
-
-### Cybersecurity
-
-Ethical hacking, Linux, CTF methodology. I'm working toward penetration testing as a monetisable skill, and it strengthens the threat-modelling thinking in my surveillance research → [[MOC - Cybersecurity]]
+### 🧠 Public Knowledge Base
+This vault — containing 660+ notes and hundreds of bidirectional links — is my public intellectual asset repository. Built using Obsidian and Quartz, it documents my continuous learning across Computer Science, AI, mathematics, security, and philosophy. I keep it public because ideas compound best when shared.
 
 ---
 
-## How I Think
+## Technical Arsenal & Learning
 
-I learn by **building and documenting**.
+### AI, ML & Computer Vision
+Deep learning architectures, computer vision pipelines, object detection (YOLOv8), person re-identification (OSNet), and OpenCV → [[MOC - AI and Machine Learning]]
 
-If I can't explain it in a note, I don't understand it yet. If I can't link it to something I already know, I haven't actually learned it — I've just seen it.
+### Cybersecurity & AI Security
+Ethical hacking, network security, threat modeling, Linux/Kali, and preparing for professional security certifications (eJPT) → [[MOC - Cybersecurity]]
 
-My favourite question is: *what is the underlying structure here?* Whether it's a proof, a system, a market, or a poem — there's always a structure. Finding it is the work.
+### Core CS Foundations
+- **Data Structures & Algorithms** — arrays, trees, graphs, sorting, and dynamic programming → [[MOC - Data Structures and Algorithms]]
+- **Database Systems** — SQL, normalization, relational algebra, functional dependencies, and transactions → [[MOC - Database Systems]]
+- **Operating Systems & Digital Logic** — process management, memory allocation, Boolean algebra, and logic synthesis → [[MOC - Operating Systems]] & [[MOC - Digital Logic]]
+- **Discrete Mathematics** — graph theory, combinatorics, and proof structures (my favorite mathematical foundation for CS) → [[MOC - Engineering Mathematics]]
 
-I use the [[Zettelkasten]] method to build a second brain — permanent, reusable intellectual assets instead of notes I forget the day after an exam.
+### Programming Languages & Tooling
+- **Python** — primary language for AI/ML, automation, and core development (CS50P)
+- **C / C++** — deep understanding of memory management, pointers, and hardware-level performance
+- **Developer Ecosystem**: Linux, Git, GitHub, VS Code, Quartz → [[MOC - Languages]]
 
 ---
 
-## Beyond the Technical
+## Published Work & Creative Identity
 
-I write poetry. *[[Fragments of a Fading Mind]]* is published. It's honest in a way technical notes can't be — about silence, memory, the gap between what I feel and what I show.
+Beyond software engineering, I am a published author and poet. Creative writing sharpens my ability to communicate complex technical ideas with clarity and narrative depth.
 
-Writing isn't separate from how I think about CS or business. Storytelling is how ideas travel. It's why narrative matters in Zaffee's marketing, why the best documentation reads like good prose, and why I'm building a writing brand alongside everything else → [[MOC - Writing and Creativity]]
-
-I also study **finance** — not as an end in itself, but because building Zaffee means understanding unit economics, pricing, compounding, and the language of capital → [[MOC - Finance]]
+- ***Fragments of a Fading Mind*** — Solo poetry collection published on Amazon Kindle.
+- ***Be Limitless (Vol. 4)*** — Co-authored book presented at the **New Delhi World Book Fair 2025** (National Book Trust, Ministry of Education).
+- **ISBN Anthologies** — Featured contributor in multiple ISBN-certified anthologies, including *Reflections*, *Mesmerize*, and *Wildflowers in Winter*.
+- Former core member of SOLE (college literary club) with a 12-year background in school choir and literary arts → [[MOC - Writing and Creativity]]
 
 ---
 
-## Right Now
+## Philosophy & Execution
 
-| What           | Where                                                                                                 |
-| -------------- | ----------------------------------------------------------------------------------------------------- |
-| **Internship** | Darwin platform — Mercer Marsh Benefits (Marsh McLennan). Learning enterprise SaaS at scale.          |
-| **Research**   | Multi-camera surveillance. Environment setup phase. First milestone: single-camera detection working. |
-| **Studying**   | DBMS, Operating Systems, DSA — in parallel with self-directed AI and cybersecurity tracks.            |
+- **Think in decades, execute daily**: Focus on high-leverage activities that compound knowledge, technical skills, and systems over time.
+- **Systems over motivation**: Rely on structured routines, reusable workflows, and documentation rather than fleeting motivation.
+- **Learn and build in public**: If an idea cannot be explained simply in a note or connected to existing mental models, it hasn't been fully mastered yet.
+
+---
+
+## Current Snapshot
+
+| Domain            | Status / Focus                                                                         |
+| :---------------- | :------------------------------------------------------------------------------------- |
+| **Industry**      | Mercer Marsh Benefits (Marsh McLennan) — Enterprise AI & SaaS automation; PPO secured. |
+| **Research**      | Multi-camera threat detection & re-identification system — Computer Vision pipeline.   |
+| **Academics**     | B.Tech CSE (3rd Year) — Core CS (DBMS, OS, DSA) alongside AI & Cybersecurity tracks.   |
+| **Public Assets** | Maintaining and expanding the public knowledge base.                                   |
 
 ---
 
@@ -115,6 +115,7 @@ I also study **finance** — not as an end in itself, but because building Zaffe
 - **GitHub** — [yashagrawall](https://github.com/yashagrawall)
 - **Email** — yashagrawall333@gmail.com
 - **Instagram** — [yashagrawall](https://www.instagram.com/yashagrawall)
+- **Knowledge Base** — [yashagrawall.github.io/knowledge-base](https://yashagrawall.github.io/knowledge-base)
 
 ---
 
@@ -188,7 +189,7 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
     tags: [],
     created: "2026-08-07",
     modified: "2026-08-07",
-    wordCount: 3017,
+    wordCount: 3011,
     backlinks: ["readme","readme"],
     links: [],
     outline: [{"level":1,"text":"🧠 Yash's Knowledge Base & Interactive Vault","id":"yashs-knowledge-base-interactive-vault"},{"level":2,"text":"Master Documentation: Product Requirements (PRD), Technical Architecture (TRD), Customization Guide, & Developer Manual","id":"master-documentation-product-requirements-prd-technical-architecture-trd-customization-guide-developer-manual"},{"level":2,"text":"📋 Table of Contents","id":"table-of-contents"},{"level":2,"text":"1. Executive Summary & Vision","id":"1-executive-summary-vision"},{"level":2,"text":"2. Product Requirements Document (PRD)","id":"2-product-requirements-document-prd"},{"level":3,"text":"2.1 Problem Statement & Objectives","id":"21-problem-statement-objectives"},{"level":3,"text":"2.2 Target Audience & Primary Workflows","id":"22-target-audience-primary-workflows"},{"level":3,"text":"2.3 Feature Matrix & User Stories","id":"23-feature-matrix-user-stories"},{"level":2,"text":"3. Technical Requirements Document (TRD)","id":"3-technical-requirements-document-trd"},{"level":3,"text":"3.1 System Architecture & Zero-Bundler Philosophy","id":"31-system-architecture-zero-bundler-philosophy"},{"level":3,"text":"3.2 High-Level Data Flow & Compilation Pipeline","id":"32-high-level-data-flow-compilation-pipeline"},{"level":3,"text":"3.3 Complete Data Structures & Schema Definitions (vault-data.js)","id":"33-complete-data-structures-schema-definitions-vault-datajs"},{"level":4,"text":"NoteObject Schema","id":"noteobject-schema"},{"level":4,"text":"GraphNode & GraphEdge Schema","id":"graphnode-graphedge-schema"},{"level":2,"text":"4. Subsystem Technical Deep Dives","id":"4-subsystem-technical-deep-dives"},{"level":3,"text":"4.1 2D Canvas Force-Directed Knowledge Graph (vault-graph.jsx)","id":"41-2d-canvas-force-directed-knowledge-graph-vault-graphjsx"},{"level":3,"text":"4.2 Client-Side Obsidian Dataview Query Evaluator (vault-editor.jsx)","id":"42-client-side-obsidian-dataview-query-evaluator-vault-editorjsx"},{"level":3,"text":"4.3 Markdown, Math, & Syntax Pipeline (vault-editor.jsx)","id":"43-markdown-math-syntax-pipeline-vault-editorjsx"},{"level":3,"text":"4.4 Workspace Manager, Tab Handling, & Hash Router (vault-app.jsx)","id":"44-workspace-manager-tab-handling-hash-router-vault-appjsx"},{"level":3,"text":"4.5 File Explorer & Auto-Reveal Sidebar (vault-sidebar.jsx)","id":"45-file-explorer-auto-reveal-sidebar-vault-sidebarjsx"},{"level":3,"text":"4.6 Context Inspector, Outlines, & Backlinks (vault-rightpanel.jsx)","id":"46-context-inspector-outlines-backlinks-vault-rightpaneljsx"},{"level":3,"text":"4.7 Command Palette & Full-Text Search Engine (vault-app.jsx)","id":"47-command-palette-full-text-search-engine-vault-appjsx"},{"level":3,"text":"4.8 Theme Engine & Styling Architecture (index.html)","id":"48-theme-engine-styling-architecture-indexhtml"},{"level":2,"text":"5. Case Study: How This Vault Is Structured & Built","id":"5-case-study-how-this-vault-is-structured-built"},{"level":3,"text":"5.1 Vault Directory Taxonomy","id":"51-vault-directory-taxonomy"},{"level":3,"text":"5.2 Zettelkasten & Note Interlinking Strategy","id":"52-zettelkasten-note-interlinking-strategy"},{"level":2,"text":"6. Customization & Personalization Guide (Recreating for YOUR Vault)","id":"6-customization-personalization-guide-recreating-for-your-vault"},{"level":3,"text":"6.1 Step 1: Adapting Directory Filters (SKIP_DIRS)","id":"61-step-1-adapting-directory-filters-skipdirs"},{"level":3,"text":"6.2 Step 2: Personalizing Themes & Styling Tokens","id":"62-step-2-personalizing-themes-styling-tokens"},{"level":3,"text":"6.3 Step 3: Modifying Branding, Socials, & Header Info","id":"63-step-3-modifying-branding-socials-header-info"},{"level":3,"text":"6.4 Step 4: Asset & Image Attachment Management","id":"64-step-4-asset-image-attachment-management"},{"level":2,"text":"7. Repository Structure & File Map","id":"7-repository-structure-file-map"},{"level":2,"text":"8. Operations, Local Setup, & Maintenance","id":"8-operations-local-setup-maintenance"},{"level":3,"text":"8.1 Prerequisites","id":"81-prerequisites"},{"level":3,"text":"8.2 Building & Live Watching","id":"82-building-live-watching"},{"level":3,"text":"8.3 One-Click Deployment Pipeline (auto-sync.bat)","id":"83-one-click-deployment-pipeline-auto-syncbat"},{"level":3,"text":"8.4 CI/CD GitHub Actions Pipeline","id":"84-cicd-github-actions-pipeline"},{"level":2,"text":"9. Security, Privacy, & Performance Benchmarks","id":"9-security-privacy-performance-benchmarks"},{"level":2,"text":"10. License & Credits","id":"10-license-credits"}],
@@ -287,7 +288,7 @@ The platform provides a browser experience matching desktop Obsidian: interactiv
 
 The application utilizes a **Static Data + In-Browser JSX Runtime** architecture:
 
-<img width="1402" height="1122" alt="image" src="https://github.com/user-attachments/assets/0a82d44d-522b-42c8-a86b-76e6d4dea852" />
+![[Pasted image 20260807192239.png]]
 
 ### 3.2 High-Level Data Flow & Compilation Pipeline
 
@@ -377,7 +378,7 @@ Since static sites lack Obsidian's Dataview plugin environment, \`vault-editor.j
 
 ### 4.3 Markdown, Math, & Syntax Pipeline (\`vault-editor.jsx\`)
 
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/57fcb734-2f1e-44d5-8434-eae86b909186" />
+![[Pasted image 20260807193733.png]]
 
 - **Native Marked Inline Extension**: Uses \`window.marked.use({ extensions: [highlightExtension] })\` to tokenize \`==highlight==\` into \`<mark>highlight</mark>\` tags while preserving raw code blocks (\` \`\`\` \`) untouched.
 - **Task List Checkbox Cleaner**: Strips \`marked\`'s prepended \`<input type="checkbox">\` elements in \`renderer.listitem\` to prevent double checkbox rendering.
@@ -1224,7 +1225,7 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 259,
-    backlinks: ["about-me","index","moc-finance","moc-finance","moc-finance","moc-finance"],
+    backlinks: ["index","moc-finance","moc-finance","moc-finance","moc-finance"],
     links: ["finance","financial-planning","compounding","health-insurance"],
     outline: [{"level":1,"text":"Purpose","id":"purpose"},{"level":1,"text":"Main Areas","id":"main-areas"},{"level":1,"text":"Study Flow","id":"study-flow"},{"level":1,"text":"Related Tags","id":"related-tags"},{"level":1,"text":"Related Research","id":"related-research"},{"level":1,"text":"Related Projects","id":"related-projects"},{"level":1,"text":"Open Questions","id":"open-questions"},{"level":1,"text":"References","id":"references"}],
     content: `# Purpose 
@@ -40992,7 +40993,7 @@ This poem approaches death not as terror, but as a complete erasure of weight, d
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 193,
-    backlinks: ["about-me","poetry-index"],
+    backlinks: ["poetry-index"],
     links: [],
     outline: [{"level":1,"text":"Fragments of a Fading Mind","id":"fragments-of-a-fading-mind"},{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `# Fragments of a Fading Mind
