@@ -524,7 +524,7 @@ const SKIP_DIRS = new Set([
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 277,
-    backlinks: ["about-me","index","moc-startup-thinking"],
+    backlinks: ["about-me","index","moc-startup-thinking","moc-ai-and-machine-learning","moc-ai-and-machine-learning","moc-ai-and-machine-learning","moc-ai-and-machine-learning","moc-ai-and-machine-learning"],
     links: ["ai","gen-ai","llm","programming","workshop","introduction"],
     outline: [],
     content: `Type : #MOC    
@@ -600,7 +600,7 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 282,
-    backlinks: ["about-me","index"],
+    backlinks: ["about-me","index","moc-computer-vision-and-surveillance","moc-computer-vision-and-surveillance","moc-computer-vision-and-surveillance","moc-computer-vision-and-surveillance"],
     links: ["computer-vision","security","research","ai","architecture","literature-review"],
     outline: [],
     content: `Type : #MOC    
@@ -679,7 +679,7 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 259,
-    backlinks: ["about-me","index"],
+    backlinks: ["about-me","index","moc-cybersecurity","moc-cybersecurity"],
     links: ["cybersec","linux"],
     outline: [],
     content: `Type : #MOC    
@@ -754,7 +754,7 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 471,
-    backlinks: ["about-me","index"],
+    backlinks: ["about-me","index","moc-data-structures-and-algorithms","moc-data-structures-and-algorithms","moc-data-structures-and-algorithms","moc-data-structures-and-algorithms","moc-data-structures-and-algorithms","moc-data-structures-and-algorithms"],
     links: ["data-structures-basics","algorithm-basics","array","linked-list","stack","binary-tree","binary-tree-traversal","complete-binary-tree","binary-search-tree","avl-tree","heap-tree","treedsa","recursion","sorting","bubble-sort","selection-sort","insertion-sort","merge-sort","dsa","gate","c","graph","maths","sort"],
     outline: [{"level":3,"text":"Overview","id":"overview"},{"level":3,"text":"Linear Structures","id":"linear-structures"},{"level":3,"text":"Trees","id":"trees"},{"level":3,"text":"Sorting Algorithms","id":"sorting-algorithms"}],
     content: `Type : #MOC    
@@ -857,7 +857,7 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 251,
-    backlinks: ["about-me","index"],
+    backlinks: ["about-me","index","moc-database-systems","moc-database-systems"],
     links: ["dbms","gate"],
     outline: [],
     content: `Type : #MOC    
@@ -934,7 +934,7 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 236,
-    backlinks: ["about-me","index"],
+    backlinks: ["about-me","index","moc-digital-logic","moc-digital-logic"],
     links: ["dld","gate"],
     outline: [],
     content: `Type : #MOC    
@@ -1008,7 +1008,7 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 784,
-    backlinks: ["about-me","index"],
+    backlinks: ["about-me","index","moc-engineering-mathematics","moc-engineering-mathematics","moc-engineering-mathematics","moc-engineering-mathematics","moc-engineering-mathematics","moc-engineering-mathematics","moc-engineering-mathematics","moc-engineering-mathematics","moc-engineering-mathematics"],
     links: ["number-system","simple-interest-compound-interest","permutation-combination-formulas","sequence-and-series","exponential-and-logarithm-formulas","calculus-formulas","trigonometric-formulas","geometric-formulas-and-theorem","complex-numbers","coordinate-geometry","matrix-qs","determinants","determinants-qs","rank-of-a-matrix","rank-of-a-matrix-qs","probability-introduction","probability-keywords","event-operations","conditional-probability","bayes-theorem","coin","dice","cards","box-urn-bag-type-problems","random-variable-overview","pmf","distributions","discrete-mathematics-introduction","set-theory","relations","poset","group-theory","graph-theory","graph-traversal","matching","line-covering","network-reliability","planer-non-planer-graphs","treedm","maths","finance","probability","statistics","graph","set","dld","gate","dsa"],
     outline: [{"level":3,"text":"Overview","id":"overview"},{"level":3,"text":"Arithmetic and Formulas","id":"arithmetic-and-formulas"},{"level":3,"text":"Linear Algebra","id":"linear-algebra"},{"level":3,"text":"Probability","id":"probability"},{"level":3,"text":"Random Variables","id":"random-variables"},{"level":3,"text":"Discrete Mathematics","id":"discrete-mathematics"},{"level":3,"text":"Graph Theory","id":"graph-theory"},{"level":3,"text":"Simple & Compound Interest","id":"simple-compound-interest"},{"level":3,"text":"Probability","id":"probability"},{"level":3,"text":"Statistics","id":"statistics"},{"level":3,"text":"Graph Theory","id":"graph-theory"},{"level":3,"text":"Set Theory","id":"set-theory"},{"level":3,"text":"Linear Algebra","id":"linear-algebra"}],
     content: `Type : #MOC    
@@ -1184,7 +1184,7 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 273,
-    backlinks: ["about-me","index","moc-startup-thinking"],
+    backlinks: ["about-me","index","moc-startup-thinking","moc-finance","moc-finance","moc-finance","moc-finance"],
     links: ["finance","financial-planning","compounding","health-insurance","moc-startup-thinking"],
     outline: [],
     content: `Type : #MOC    
@@ -1261,7 +1261,7 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 344,
-    backlinks: ["about-me","index"],
+    backlinks: ["about-me","index","moc-languages","moc-languages","moc-languages","moc-languages","moc-languages","moc-languages","moc-languages","moc-languages","moc-languages","moc-languages","moc-languages","moc-languages"],
     links: ["language","c","java","python","markdown","oops","gate","dsa","datatypes","conditional","loop","jump-statements"],
     outline: [{"level":3,"text":"Language Theory","id":"language-theory"},{"level":3,"text":"C Programming","id":"c-programming"},{"level":3,"text":"Java Programming","id":"java-programming"},{"level":3,"text":"Python Programming","id":"python-programming"},{"level":3,"text":"Markdown Language","id":"markdown-language"}],
     content: `Type : #MOC    
@@ -1366,7 +1366,7 @@ SORT file.mtime DESC
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 412,
-    backlinks: ["index"],
+    backlinks: ["index","moc-logic-and-philosophy","moc-logic-and-philosophy","moc-logic-and-philosophy","moc-logic-and-philosophy","moc-logic-and-philosophy"],
     links: ["logic-introduction","propositions","logical-operators","primary-logical-operators-across-different-domains","well-formed-formula","arguments","predicate-logic","logic-gates","complementation","duality","normal-form-sop-and-pos","k-map","questions-on-minimization","maths","gate","dld","set","operators","language"],
     outline: [{"level":3,"text":"Propositional Logic","id":"propositional-logic"},{"level":3,"text":"Arguments and Predicate Logic","id":"arguments-and-predicate-logic"},{"level":3,"text":"Boolean Algebra and Circuit Minimisation","id":"boolean-algebra-and-circuit-minimisation"}],
     content: `Type : #MOC    
@@ -1453,7 +1453,7 @@ Mastering logic enables rigorous argumentation, correct application of Boolean a
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 233,
-    backlinks: ["about-me","index"],
+    backlinks: ["about-me","index","moc-operating-systems"],
     links: ["operating-system"],
     outline: [],
     content: `Type : #MOC    
@@ -1526,7 +1526,7 @@ SORT file.mtime DESC
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 329,
-    backlinks: ["moc-finance"],
+    backlinks: ["moc-finance","moc-startup-thinking","moc-startup-thinking","moc-startup-thinking","moc-startup-thinking"],
     links: ["business","ideas","finance","ai","moc-finance","moc-ai-and-machine-learning"],
     outline: [{"level":3,"text":"Skills and Wealth Building","id":"skills-and-wealth-building"},{"level":3,"text":"Product and Startup Ideas","id":"product-and-startup-ideas"}],
     content: `Type : #MOC    
@@ -1604,7 +1604,7 @@ Mastering startup thinking enables generating and validating ideas fast, identif
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 516,
-    backlinks: ["about-me","index"],
+    backlinks: ["about-me","index","moc-writing-and-creativity"],
     links: ["fragments-of-a-fading-mind","poetry-index","a-desolated-guy","beyond-now","death","strength-in-solitude","the-weight-of-yesterday","cancer","human-paradox","modern-madness","system","shadows-of-adulthood","the-cursed-child","the-next-chapter","burnt-petals","his-story","my-best-friend","that-friend","poetry"],
     outline: [{"level":3,"text":"Published Work","id":"published-work"},{"level":3,"text":"Isolation and Existence","id":"isolation-and-existence"},{"level":3,"text":"Society and Systems","id":"society-and-systems"},{"level":3,"text":"Identity and Growth","id":"identity-and-growth"},{"level":3,"text":"Relationships and Loss","id":"relationships-and-loss"}],
     content: `Type : #MOC    
@@ -1703,7 +1703,7 @@ Mastering this domain enables building a personal writing brand, producing more 
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 971,
-    backlinks: [],
+    backlinks: ["how-to-read-a-paper"],
     links: ["paper"],
     outline: [{"level":2,"text":"1st Pass","id":"1st-pass"},{"level":2,"text":"2nd Pass","id":"2nd-pass"},{"level":2,"text":"3rd Pass","id":"3rd-pass"},{"level":2,"text":"What papers to read?","id":"what-papers-to-read"},{"level":2,"text":"Reading to Review","id":"reading-to-review"},{"level":2,"text":"Reading to write a Technical paper","id":"reading-to-write-a-technical-paper"},{"level":2,"text":"Entire Spectrum of Research Skills","id":"entire-spectrum-of-research-skills"}],
     content: `Type : #RawNote #paper            
@@ -1867,7 +1867,7 @@ Source : [How to read a paper : S. Keshav](https://web.stanford.edu/class/ee384m
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 82,
-    backlinks: [],
+    backlinks: ["multi-camera-spatiotemporal-deep-learning-framework-for-real-time-abnormal-behavior-detection-in-dense-urban-environments","multi-camera-spatiotemporal-deep-learning-framework-for-real-time-abnormal-behavior-detection-in-dense-urban-environments"],
     links: ["research","paper"],
     outline: [{"level":2,"text":"1st  Pass","id":"1st-pass"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote       
@@ -1924,7 +1924,7 @@ Source : [Research Paper](https://www.nature.com/articles/s41598-025-12388-7)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 961,
-    backlinks: [],
+    backlinks: ["vaibhav-sinsity-claude-workshop"],
     links: ["ai"],
     outline: [{"level":2,"text":"Difference","id":"difference"},{"level":3,"text":"Prompt Engineering","id":"prompt-engineering"},{"level":3,"text":"Context Engineering","id":"context-engineering"},{"level":2,"text":"Example","id":"example"},{"level":2,"text":"1. Identity Context","id":"1-identity-context"},{"level":2,"text":"2. World Context","id":"2-world-context"},{"level":2,"text":"3. Task Context","id":"3-task-context"},{"level":2,"text":"4. Example Context","id":"4-example-context"},{"level":2,"text":"5. Constraint Context","id":"5-constraint-context"},{"level":2,"text":"getmulti","id":"getmulti"},{"level":2,"text":"Principle","id":"principle"},{"level":2,"text":"Perplexity","id":"perplexity"},{"level":2,"text":"Model Council (Advanced Research)","id":"model-council-advanced-research"},{"level":2,"text":"Best Tool: Grok","id":"best-tool-grok"},{"level":2,"text":"Example Prompt","id":"example-prompt"},{"level":2,"text":"Key Insight","id":"key-insight"},{"level":2,"text":"Best Tool: Claude","id":"best-tool-claude"},{"level":2,"text":"Alternative: Gemini","id":"alternative-gemini"},{"level":2,"text":"Reality","id":"reality"},{"level":2,"text":"Numerous.ai","id":"numerousai"},{"level":2,"text":"Large Data Analysis","id":"large-data-analysis"},{"level":2,"text":"NotebookLM","id":"notebooklm"},{"level":2,"text":"Features","id":"features"},{"level":3,"text":"Multiple Sources","id":"multiple-sources"},{"level":3,"text":"Deep Research Integration","id":"deep-research-integration"},{"level":2,"text":"Audio Overview","id":"audio-overview"},{"level":2,"text":"Video Overview","id":"video-overview"},{"level":2,"text":"Recommended Workflow","id":"recommended-workflow"},{"level":3,"text":"Step 1 — Design","id":"step-1-design"},{"level":3,"text":"Step 2 — Code Generation","id":"step-2-code-generation"},{"level":2,"text":"Key Point","id":"key-point"},{"level":2,"text":"AI Job Search Workflow","id":"ai-job-search-workflow"},{"level":2,"text":"Additional Capabilities","id":"additional-capabilities"},{"level":2,"text":"Claude Co-Work","id":"claude-co-work"},{"level":2,"text":"AI for Business Leaders Bootcamp","id":"ai-for-business-leaders-bootcamp"},{"level":2,"text":"Key Ideas","id":"key-ideas"}],
     content: `Type : #RawNote       
@@ -2754,7 +2754,7 @@ The "smart CCTV analytics" niche is untouched by small AI agencies. One school, 
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 3360,
-    backlinks: [],
+    backlinks: ["ai-briefing-2026-05-21","ai-briefing-2026-05-21"],
     links: ["ai","research"],
     outline: [{"level":2,"text":"CRITICAL Google I/O 2026 — Gemini 3.5 Flash + Gemini Omni + Managed Agents API","id":"critical-google-io-2026-gemini-35-flash-gemini-omni-managed-agents-api"},{"level":2,"text":"CRITICAL GPT-5.5 Instant — New ChatGPT Default (May 5)","id":"critical-gpt-55-instant-new-chatgpt-default-may-5"},{"level":2,"text":"HIGH SIGNAL Frontier Benchmark Snapshot — May 2026","id":"high-signal-frontier-benchmark-snapshot-may-2026"},{"level":2,"text":"HIGH SIGNAL Open-Weight Frontier Narrows the Gap — Kimi K2.6 + DeepSeek V4 Flash","id":"high-signal-open-weight-frontier-narrows-the-gap-kimi-k26-deepseek-v4-flash"},{"level":2,"text":"HIGH SIGNAL MCP Donated to Linux Foundation — Agentic AI Foundation","id":"high-signal-mcp-donated-to-linux-foundation-agentic-ai-foundation"},{"level":2,"text":"HIGH SIGNAL NVIDIA Jetson T4000 + JetPack 7.1 — Edge AI Hardware Leap","id":"high-signal-nvidia-jetson-t4000-jetpack-71-edge-ai-hardware-leap"},{"level":2,"text":"WATCHLIST Conntour Raises $7M (YC + General Catalyst) — NL Querying for Security Video","id":"watchlist-conntour-raises-7m-yc-general-catalyst-nl-querying-for-security-video"},{"level":2,"text":"WATCHLIST Vizzia Raises €30M Series B — AI Surveillance for Local Authorities","id":"watchlist-vizzia-raises-30m-series-b-ai-surveillance-for-local-authorities"},{"level":2,"text":"HIGH SIGNAL vLLM v0.20.2 — 56% Throughput Boost + FlashAttention 4","id":"high-signal-vllm-v0202-56-throughput-boost-flashattention-4"},{"level":2,"text":"HIGH SIGNAL YOLO26 — Deployment-Oriented Architecture Shift","id":"high-signal-yolo26-deployment-oriented-architecture-shift"},{"level":2,"text":"HIGH SIGNAL KAD-SORT — BoT-SORT Improvement (+2.6% MOTA, +1.7% IDF1)","id":"high-signal-kad-sort-bot-sort-improvement-26-mota-17-idf1"},{"level":2,"text":"HIGH SIGNAL Multi-Camera Tracking — IDF1 95.36% via Anchor-Guided Clustering","id":"high-signal-multi-camera-tracking-idf1-9536-via-anchor-guided-clustering"},{"level":2,"text":"WATCHLIST ScienceDirect 2025 — Comprehensive Deep Learning ReID Multi-Camera Pipeline","id":"watchlist-sciencedirect-2025-comprehensive-deep-learning-reid-multi-camera-pipeline"},{"level":2,"text":"HIGH SIGNAL Surveillance AI Market — $2.56B → $10.5B by 2035 (28.7% CAGR)","id":"high-signal-surveillance-ai-market-256b-105b-by-2035-287-cagr"},{"level":2,"text":"HIGH SIGNAL India Exam Proctoring — AI Detecting Cheating at Scale","id":"high-signal-india-exam-proctoring-ai-detecting-cheating-at-scale"},{"level":2,"text":"CRITICAL TensorRT Edge-LLM — C++ SDK for LLM/VLM at Edge","id":"critical-tensorrt-edge-llm-c-sdk-for-llmvlm-at-edge"},{"level":2,"text":"HIGH SIGNAL vLLM v0.20.2 — Production Self-Hosting Standard","id":"high-signal-vllm-v0202-production-self-hosting-standard"},{"level":2,"text":"HIGH SIGNAL DeepSeek V4 Flash — Self-Hostable Frontier at $0.14/M (75% off through May 31)","id":"high-signal-deepseek-v4-flash-self-hostable-frontier-at-014m-75-off-through-may-31"},{"level":2,"text":"HIGH SIGNAL ONNX + TensorRT — 10 Optimization Techniques for Real-Time CV","id":"high-signal-onnx-tensorrt-10-optimization-techniques-for-real-time-cv"},{"level":2,"text":"WATCHLIST Awesome AI Agents 2026 — Curated Ecosystem Map","id":"watchlist-awesome-ai-agents-2026-curated-ecosystem-map"},{"level":2,"text":"HIGH SIGNAL AI Automation Agency Pricing — Real Numbers (2026)","id":"high-signal-ai-automation-agency-pricing-real-numbers-2026"},{"level":2,"text":"HIGH SIGNAL Upwork AI Demand — More Than Doubled in 2025","id":"high-signal-upwork-ai-demand-more-than-doubled-in-2025"},{"level":2,"text":"HIGH SIGNAL Micro SaaS Economics — $15.7B → $59.6B by 2030 (~30% CAGR)","id":"high-signal-micro-saas-economics-157b-596b-by-2030-30-cagr"},{"level":2,"text":"HIGH SIGNAL Exam Proctoring Unit Economics — India Gap","id":"high-signal-exam-proctoring-unit-economics-india-gap"},{"level":2,"text":"WATCHLIST AI Surveillance Services as Productized Consulting","id":"watchlist-ai-surveillance-services-as-productized-consulting"},{"level":2,"text":"HIGH SIGNAL n8n Self-Hosted = Free Agency Infrastructure","id":"high-signal-n8n-self-hosted-free-agency-infrastructure"},{"level":2,"text":"HIGH SIGNAL What Clients Are Buying Right Now (Upwork 2026)","id":"high-signal-what-clients-are-buying-right-now-upwork-2026"},{"level":2,"text":"HIGH SIGNAL MCP-Native Agency Services — First-Mover Window","id":"high-signal-mcp-native-agency-services-first-mover-window"},{"level":2,"text":"WATCHLIST AI Surveillance as a Service (VSaaS) for Indian SMBs","id":"watchlist-ai-surveillance-as-a-service-vsaas-for-indian-smbs"},{"level":2,"text":"WATCHLIST AI Proctoring as a Local Service Business","id":"watchlist-ai-proctoring-as-a-local-service-business"},{"level":2,"text":"HIGH SIGNAL Coffee Subscription Market Hits $934M in 2026 — D2C Window Open","id":"high-signal-coffee-subscription-market-hits-934m-in-2026-d2c-window-open"},{"level":2,"text":"HIGH SIGNAL Short-Form Video — 2-4x Engagement vs Static for Zaffee","id":"high-signal-short-form-video-2-4x-engagement-vs-static-for-zaffee"},{"level":2,"text":"HIGH SIGNAL AI Organic Social Automation — Batch-Create Content Pipeline","id":"high-signal-ai-organic-social-automation-batch-create-content-pipeline"},{"level":2,"text":"WATCHLIST AI Product Photography for Pre-Launch Zaffee Assets","id":"watchlist-ai-product-photography-for-pre-launch-zaffee-assets"},{"level":2,"text":"CRITICAL The Edge Exam Integrity Gap — First-Mover Window in India","id":"critical-the-edge-exam-integrity-gap-first-mover-window-in-india"}],
     content: `# AI Weekly Briefing — 2026-05-21
@@ -3057,7 +3057,7 @@ Sources: [Conntour $7M](https://techcrunch.com/2026/03/26/conntour-raises-7m-fro
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1514,
-    backlinks: [],
+    backlinks: ["news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21","news-2026-05-21"],
     links: ["news","ai","gen-ai","llm","computer-vision","research","cybersec","india","business","geopolitics","bbsr","coffee","security","paper"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Odisha / Bhubaneswar","id":"odisha-bhubaneswar"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -3189,7 +3189,7 @@ Heavy day for signals that matter directly to Yash's work: Google I/O's Gemini m
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1517,
-    backlinks: [],
+    backlinks: ["news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23","news-2026-05-23"],
     links: ["news","ai","gen-ai","llm","computer-vision","research","cybersec","india","geopolitics","business","coffee","security","bbsr"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Odisha / Bhubaneswar","id":"odisha-bhubaneswar"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -3311,7 +3311,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1467,
-    backlinks: [],
+    backlinks: ["news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24","news-2026-05-24"],
     links: ["news","ai","gen-ai","llm","computer-vision","research","cybersec","security","india","business","geopolitics","bbsr","coffee","entrepreneur"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Odisha / Bhubaneswar","id":"odisha-bhubaneswar"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -3432,7 +3432,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1387,
-    backlinks: [],
+    backlinks: ["news-2026-05-25","news-2026-05-25","news-2026-05-25","news-2026-05-25","news-2026-05-25","news-2026-05-25","news-2026-05-25","news-2026-05-25","news-2026-05-25","news-2026-05-25"],
     links: ["news","ai","gen-ai","computer-vision","cybersec","india","geopolitics","research","business","bbsr"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Odisha / Bhubaneswar","id":"odisha-bhubaneswar"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -3543,7 +3543,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1487,
-    backlinks: [],
+    backlinks: ["news-2026-05-26","news-2026-05-26","news-2026-05-26","news-2026-05-26","news-2026-05-26","news-2026-05-26","news-2026-05-26","news-2026-05-26","news-2026-05-26","news-2026-05-26"],
     links: ["news","ai","computer-vision","cybersec","india","business","geopolitics","bbsr","research","llm"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Odisha / Bhubaneswar","id":"odisha-bhubaneswar"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -3661,7 +3661,7 @@ A heavy AI-capital day: OpenAI's IPO filing and Anthropic's $30B round signal th
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1582,
-    backlinks: [],
+    backlinks: ["news-2026-05-27","news-2026-05-27","news-2026-05-27","news-2026-05-27","news-2026-05-27","news-2026-05-27","news-2026-05-27","news-2026-05-27","news-2026-05-27"],
     links: ["news","ai","ml","gen-ai","computer-vision","cybersec","india","geopolitics","research"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -3798,7 +3798,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1645,
-    backlinks: [],
+    backlinks: ["news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28","news-2026-05-28"],
     links: ["news","ai","ml","gen-ai","computer-vision","research","cybersec","security","india","geopolitics","business","coffee","bbsr","entrepreneur"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -3933,7 +3933,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1412,
-    backlinks: [],
+    backlinks: ["news-2026-05-29","news-2026-05-29","news-2026-05-29","news-2026-05-29","news-2026-05-29","news-2026-05-29","news-2026-05-29","news-2026-05-29","news-2026-05-29"],
     links: ["news","ai","cybersec","geopolitics","india","research","computer-vision","coffee","business"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -4057,7 +4057,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1637,
-    backlinks: [],
+    backlinks: ["news-2026-05-30","news-2026-05-30","news-2026-05-30","news-2026-05-30","news-2026-05-30","news-2026-05-30","news-2026-05-30","news-2026-05-30","news-2026-05-30","news-2026-05-30","news-2026-05-30"],
     links: ["news","ai","ml","cybersec","computer-vision","research","geopolitics","india","business","coffee","bbsr"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -4212,7 +4212,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1484,
-    backlinks: [],
+    backlinks: ["news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31","news-2026-05-31"],
     links: ["news","ai","ml","llm","gen-ai","computer-vision","research","cybersec","security","india","geopolitics","business","coffee","entrepreneur"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -4329,7 +4329,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1559,
-    backlinks: [],
+    backlinks: ["news-2026-06-02","news-2026-06-02","news-2026-06-02","news-2026-06-02","news-2026-06-02","news-2026-06-02","news-2026-06-02","news-2026-06-02","news-2026-06-02","news-2026-06-02","news-2026-06-02"],
     links: ["news","ai","cybersec","geopolitics","india","research","computer-vision","coffee","entrepreneur","business","bbsr"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -4486,7 +4486,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1555,
-    backlinks: [],
+    backlinks: ["news-2026-06-03","news-2026-06-03","news-2026-06-03","news-2026-06-03","news-2026-06-03","news-2026-06-03","news-2026-06-03","news-2026-06-03","news-2026-06-03","news-2026-06-03"],
     links: ["news","ai","cybersec","india","geopolitics","computer-vision","business","coffee","research","bbsr"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -4616,7 +4616,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1513,
-    backlinks: [],
+    backlinks: ["news-2026-06-04","news-2026-06-04","news-2026-06-04","news-2026-06-04","news-2026-06-04","news-2026-06-04","news-2026-06-04","news-2026-06-04","news-2026-06-04","news-2026-06-04"],
     links: ["news","ai","cybersec","india","geopolitics","coffee","research","computer-vision","business","bbsr"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -4739,7 +4739,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1587,
-    backlinks: [],
+    backlinks: ["news-2026-06-06","news-2026-06-06","news-2026-06-06","news-2026-06-06","news-2026-06-06","news-2026-06-06","news-2026-06-06","news-2026-06-06","news-2026-06-06"],
     links: ["news","ai","cybersec","computer-vision","india","geopolitics","coffee","research","business"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -4875,7 +4875,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1443,
-    backlinks: [],
+    backlinks: ["news-2026-06-09","news-2026-06-09","news-2026-06-09","news-2026-06-09","news-2026-06-09","news-2026-06-09","news-2026-06-09","news-2026-06-09","news-2026-06-09","news-2026-06-09","news-2026-06-09"],
     links: ["news","ai","llm","gen-ai","computer-vision","cybersec","india","geopolitics","research","coffee","business"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"🤖 AI & Machine Learning","id":"ai-machine-learning"},{"level":3,"text":"👁 Computer Vision & Research","id":"computer-vision-research"},{"level":3,"text":"🔒 Cybersecurity","id":"cybersecurity"},{"level":3,"text":"🇮🇳 India Tech & Startups","id":"india-tech-startups"},{"level":3,"text":"💼 Business & Finance","id":"business-finance"},{"level":3,"text":"🌍 Geopolitics & World Affairs","id":"geopolitics-world-affairs"},{"level":3,"text":"📍 Delhi NCR / Ghaziabad — Local","id":"delhi-ncr-ghaziabad-local"},{"level":3,"text":"🏛 Odisha / BBSR","id":"odisha-bbsr"},{"level":3,"text":"🔬 Science & Research","id":"science-research"},{"level":3,"text":"☕ Coffee / Zaffee Intelligence","id":"coffee-zaffee-intelligence"},{"level":2,"text":"Questions","id":"questions"}],
     content: `Type : #RawNote       
@@ -5000,7 +5000,7 @@ Source : Web Search
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1521,
-    backlinks: [],
+    backlinks: ["ai-jobs-automation"],
     links: ["ai"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"The Macro Picture — Job Risk","id":"the-macro-picture-job-risk"},{"level":3,"text":"Task vs. Purpose Framework","id":"task-vs-purpose-framework"},{"level":3,"text":"Why Companies Are Laying Off (Despite Record Profits)","id":"why-companies-are-laying-off-despite-record-profits"},{"level":3,"text":"Who Survives (and Thrives)","id":"who-survives-and-thrives"},{"level":3,"text":"The AGI → ASI Curve","id":"the-agi-asi-curve"},{"level":3,"text":"India's Strategic Play","id":"indias-strategic-play"},{"level":3,"text":"Energy as the Real Bottleneck","id":"energy-as-the-real-bottleneck"},{"level":3,"text":"Building the Job Hunter Agent (Live Demo Breakdown)","id":"building-the-job-hunter-agent-live-demo-breakdown"},{"level":4,"text":"Step 1 — Find Jobs via Claude + Indeed MCP","id":"step-1-find-jobs-via-claude-indeed-mcp"},{"level":4,"text":"Step 2 — Parallel Apply via Codex + Computer Use","id":"step-2-parallel-apply-via-codex-computer-use"},{"level":4,"text":"Step 3 — Tailor Resumes for ATS","id":"step-3-tailor-resumes-for-ats"},{"level":4,"text":"Step 4 — Build Hermes Autonomous Agent (The \"Employee\")","id":"step-4-build-hermes-autonomous-agent-the-employee"},{"level":4,"text":"Step 5 — Interview Prep App (Perplexity Computer)","id":"step-5-interview-prep-app-perplexity-computer"},{"level":3,"text":"Vaibhav's Mental Model on Hiring","id":"vaibhavs-mental-model-on-hiring"}],
     content: `Type : #RawNote       
@@ -5185,7 +5185,7 @@ White-collar jobs face ~80% AI automation potential; the gap between potential a
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1206,
-    backlinks: [],
+    backlinks: ["chhatrapati-shivaji-maharaj","chhatrapati-shivaji-maharaj","chhatrapati-shivaji-maharaj","chhatrapati-shivaji-maharaj"],
     links: ["history","kings","india","religion"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote #podcast      
@@ -5321,7 +5321,7 @@ Source : [YouTube Podcast : Abhi And Niyu](https://youtu.be/FR3liBlMOlc?si=ys_bj
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 841,
-    backlinks: [],
+    backlinks: ["france","france","france","france"],
     links: ["geopolitics","ai","quantum","llm"],
     outline: [{"level":2,"text":"France's Technological Position","id":"frances-technological-position"},{"level":2,"text":"Sovereign AI for France and Europe","id":"sovereign-ai-for-france-and-europe"},{"level":2,"text":"Opportunities for Young Startup Founders and Students in France","id":"opportunities-for-young-startup-founders-and-students-in-france"},{"level":2,"text":"Moonshot Technology for France 2035","id":"moonshot-technology-for-france-2035"},{"level":2,"text":"Multipolarity and International Relations","id":"multipolarity-and-international-relations"},{"level":2,"text":"American Leadership and Dollar Dominance","id":"american-leadership-and-dollar-dominance"},{"level":2,"text":"Optimism and Concerns for the Future","id":"optimism-and-concerns-for-the-future"}],
     content: `Type : #RawNote #podcast       
@@ -5421,7 +5421,7 @@ President of France on Trump, India, Modi, Tech & Future
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1210,
-    backlinks: [],
+    backlinks: ["psychology-of-love-narcissism-toxic-love-male-identity","psychology-of-love-narcissism-toxic-love-male-identity"],
     links: ["india","usa"],
     outline: [{"level":2,"text":"India v/s USA","id":"india-vs-usa"},{"level":3,"text":"Cultural Differences","id":"cultural-differences"},{"level":3,"text":"Dating and Marriage","id":"dating-and-marriage"},{"level":3,"text":"The Neg","id":"the-neg"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":2,"text":"Manipulation Tactic everyone should know","id":"manipulation-tactic-everyone-should-know"},{"level":3,"text":"Social Proof","id":"social-proof"},{"level":4,"text":"How to build Social Proof","id":"how-to-build-social-proof"},{"level":3,"text":"Rene Gerad Philosophy","id":"rene-gerad-philosophy"},{"level":3,"text":"Why are more women attracted to toxic men? Their fertility peaks when they see really red flags in men.","id":"why-are-more-women-attracted-to-toxic-men-their-fertility-peaks-when-they-see-really-red-flags-in-men"},{"level":3,"text":"How to differentiate fake confidence v/s real confidence?","id":"how-to-differentiate-fake-confidence-vs-real-confidence"},{"level":3,"text":"Why do women keep falling for toxic relationships","id":"why-do-women-keep-falling-for-toxic-relationships"}],
     content: `Type : #RawNote #podcast       
@@ -5576,7 +5576,7 @@ Source :  [Raj Shamani : Mark Mason](https://youtu.be/ig1VtIEFkcI?si=DTGJv1hsCCT
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 2332,
-    backlinks: [],
+    backlinks: ["strategic-brand-building-and-consumer-market-penetration"],
     links: ["business"],
     outline: [{"level":2,"text":"The BPC Opportunity in India","id":"the-bpc-opportunity-in-india"},{"level":3,"text":"Market Overview","id":"market-overview"},{"level":3,"text":"Sub-Categories with White Space","id":"sub-categories-with-white-space"},{"level":3,"text":"Why BPC is Attractive for Founders","id":"why-bpc-is-attractive-for-founders"},{"level":2,"text":"Category Entry Framework","id":"category-entry-framework"},{"level":3,"text":"How to Identify a Real Gap vs. Clutter","id":"how-to-identify-a-real-gap-vs-clutter"},{"level":4,"text":"Mental Model: Category Sizing","id":"mental-model-category-sizing"},{"level":6,"text":"Example","id":"example"},{"level":4,"text":"Validation Tools (Low Cost)","id":"validation-tools-low-cost"},{"level":4,"text":"Key Principle","id":"key-principle"},{"level":2,"text":"Founder Psychology & Validation","id":"founder-psychology-validation"},{"level":3,"text":"Personal Problem → Market Problem","id":"personal-problem-market-problem"},{"level":4,"text":"How to Know Your Problem is Large Enough","id":"how-to-know-your-problem-is-large-enough"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"The Iterative Build Model","id":"the-iterative-build-model"},{"level":2,"text":"Product Strategy","id":"product-strategy"},{"level":3,"text":"Hero Product vs. Portfolio Launch","id":"hero-product-vs-portfolio-launch"},{"level":4,"text":"Why Fewer Products Win Today","id":"why-fewer-products-win-today"},{"level":3,"text":"Product KPI Framework","id":"product-kpi-framework"},{"level":6,"text":"Example — Sunscreen KPIs","id":"example-sunscreen-kpis"},{"level":3,"text":"Timeline Benchmarks","id":"timeline-benchmarks"},{"level":2,"text":"Packaging Strategy","id":"packaging-strategy"},{"level":3,"text":"Why Premium Packaging is the Highest ROI Investment","id":"why-premium-packaging-is-the-highest-roi-investment"},{"level":3,"text":"Dot & Key Packaging Playbook","id":"dot-key-packaging-playbook"},{"level":3,"text":"Economics of Molds","id":"economics-of-molds"},{"level":2,"text":"Where to Cut Corners (Resource Allocation)","id":"where-to-cut-corners-resource-allocation"},{"level":3,"text":"Never Compromise On","id":"never-compromise-on"},{"level":3,"text":"Safe to Cut Early","id":"safe-to-cut-early"},{"level":2,"text":"Manufacturing & Contract Manufacturers","id":"manufacturing-contract-manufacturers"},{"level":3,"text":"How to Choose the Right CM","id":"how-to-choose-the-right-cm"},{"level":3,"text":"Red Flags in Contract Manufacturers","id":"red-flags-in-contract-manufacturers"},{"level":3,"text":"How to Verify Ingredient Authenticity","id":"how-to-verify-ingredient-authenticity"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Testing Efficacy","id":"testing-efficacy"},{"level":2,"text":"Pricing Strategy","id":"pricing-strategy"},{"level":3,"text":"India is Value-Sensitive, Not Price-Sensitive","id":"india-is-value-sensitive-not-price-sensitive"},{"level":3,"text":"Pricing Tiers","id":"pricing-tiers"},{"level":3,"text":"Practical Pricing Process","id":"practical-pricing-process"},{"level":2,"text":"Go-To-Market & Channel Strategy","id":"go-to-market-channel-strategy"},{"level":3,"text":"Finding First 100 Customers","id":"finding-first-100-customers"},{"level":3,"text":"Channel Sequencing","id":"channel-sequencing"},{"level":3,"text":"Unlocking Quick Commerce","id":"unlocking-quick-commerce"},{"level":2,"text":"Marketing Strategy","id":"marketing-strategy"},{"level":3,"text":"The Four Pillars","id":"the-four-pillars"},{"level":3,"text":"Performance Marketing Principles","id":"performance-marketing-principles"},{"level":3,"text":"Consumer Insight Mining Process","id":"consumer-insight-mining-process"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Testing New Insights Before Full Launch","id":"testing-new-insights-before-full-launch"},{"level":2,"text":"Influencer & Creator Strategy","id":"influencer-creator-strategy"},{"level":3,"text":"Creator Tier Classification (by average reel views, not followers)","id":"creator-tier-classification-by-average-reel-views-not-followers"},{"level":3,"text":"CPM Benchmarks","id":"cpm-benchmarks"},{"level":3,"text":"Creator vs. Celebrity — The Decision Framework","id":"creator-vs-celebrity-the-decision-framework"},{"level":3,"text":"Creator-Led Product Lines","id":"creator-led-product-lines"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Acquisition Readiness Framework","id":"acquisition-readiness-framework"},{"level":3,"text":"What Large Brands (Nykaa, Unilever, etc.) Look For","id":"what-large-brands-nykaa-unilever-etc-look-for"},{"level":4,"text":"1. Category Leadership","id":"1-category-leadership"},{"level":4,"text":"2. Brand Authenticity","id":"2-brand-authenticity"},{"level":4,"text":"3. Founder Quality","id":"3-founder-quality"},{"level":4,"text":"4. Defensibility","id":"4-defensibility"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Building Outside Top-Tier Cities (Kolkata Case Study)","id":"building-outside-top-tier-cities-kolkata-case-study"},{"level":3,"text":"Disadvantages of Tier-2 Ecosystem","id":"disadvantages-of-tier-2-ecosystem"},{"level":3,"text":"Advantages","id":"advantages"},{"level":2,"text":"Startup Angel Investment Mental Model","id":"startup-angel-investment-mental-model"},{"level":3,"text":"What to Evaluate at Early Stage","id":"what-to-evaluate-at-early-stage"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote #podcast       
@@ -6048,7 +6048,7 @@ Own Website → Amazon/Flipkart → Nykaa → Quick Commerce (12–18 months lat
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1381,
-    backlinks: [],
+    backlinks: ["ai-career-adaptation-framework"],
     links: ["ai"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Stage 1 — Acknowledge","id":"stage-1-acknowledge"},{"level":3,"text":"Identity Shift","id":"identity-shift"},{"level":3,"text":"Key Observation","id":"key-observation"},{"level":3,"text":"Main Principle","id":"main-principle"},{"level":2,"text":"Purpose","id":"purpose"},{"level":2,"text":"Characteristics","id":"characteristics"},{"level":2,"text":"Tool Categories","id":"tool-categories"},{"level":3,"text":"Writing & Thinking","id":"writing-thinking"},{"level":3,"text":"Research","id":"research"},{"level":3,"text":"Images","id":"images"},{"level":3,"text":"Presentations","id":"presentations"},{"level":3,"text":"Data Analysis","id":"data-analysis"},{"level":3,"text":"Audio & Voice","id":"audio-voice"},{"level":3,"text":"Voice Agents","id":"voice-agents"},{"level":3,"text":"Video","id":"video"},{"level":3,"text":"Automation","id":"automation"},{"level":3,"text":"App Building","id":"app-building"},{"level":2,"text":"Strategic Goal","id":"strategic-goal"},{"level":2,"text":"Failure Point","id":"failure-point"},{"level":2,"text":"Transition","id":"transition"},{"level":2,"text":"Core Rule","id":"core-rule"},{"level":2,"text":"Tool Stack Examples","id":"tool-stack-examples"},{"level":3,"text":"Writers","id":"writers"},{"level":3,"text":"Developers","id":"developers"},{"level":3,"text":"Content Creators","id":"content-creators"},{"level":2,"text":"1. System Prompt","id":"1-system-prompt"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Purpose","id":"purpose"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"2. RAG (Retrieval-Augmented Generation)","id":"2-rag-retrieval-augmented-generation"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Purpose","id":"purpose"},{"level":3,"text":"Workflow","id":"workflow"},{"level":2,"text":"3. MCP (Model Context Protocol)","id":"3-mcp-model-context-protocol"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Analogy","id":"analogy"},{"level":3,"text":"Enables","id":"enables"},{"level":2,"text":"4. Fine-Tuning","id":"4-fine-tuning"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Conceptual Analogy","id":"conceptual-analogy"},{"level":3,"text":"Use Cases","id":"use-cases"},{"level":2,"text":"Core Shift","id":"core-shift"},{"level":2,"text":"Key Insight","id":"key-insight"},{"level":2,"text":"Problem","id":"problem"},{"level":2,"text":"AI Workflow","id":"ai-workflow"},{"level":3,"text":"Step 1 — Image Generation","id":"step-1-image-generation"},{"level":3,"text":"Output","id":"output"},{"level":3,"text":"Step 2 — Copy Generation","id":"step-2-copy-generation"},{"level":3,"text":"Output","id":"output"},{"level":3,"text":"Step 3 — Human Judgment","id":"step-3-human-judgment"},{"level":3,"text":"Step 4 — Creative Assembly","id":"step-4-creative-assembly"},{"level":3,"text":"Output","id":"output"},{"level":3,"text":"Step 5 — Deployment Automation","id":"step-5-deployment-automation"},{"level":3,"text":"Output","id":"output"},{"level":3,"text":"Step 6 — Algorithmic Optimization","id":"step-6-algorithmic-optimization"},{"level":3,"text":"Output","id":"output"},{"level":3,"text":"Step 7 — Analytics Feedback","id":"step-7-analytics-feedback"},{"level":3,"text":"Output","id":"output"},{"level":2,"text":"Workflow Structure","id":"workflow-structure"},{"level":2,"text":"Problem","id":"problem"},{"level":2,"text":"Workflow Design","id":"workflow-design"},{"level":3,"text":"Step 1 — Dataset Collection","id":"step-1-dataset-collection"},{"level":3,"text":"Step 2 — System Prompt Engineering","id":"step-2-system-prompt-engineering"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Step 3 — Voice Layer","id":"step-3-voice-layer"},{"level":3,"text":"Reason","id":"reason"},{"level":3,"text":"Step 4 — MCP Integration","id":"step-4-mcp-integration"},{"level":3,"text":"Step 5 — Escalation Logic","id":"step-5-escalation-logic"},{"level":3,"text":"Then:","id":"then"},{"level":2,"text":"Outcome","id":"outcome"},{"level":2,"text":"Definition","id":"definition"},{"level":2,"text":"High-Value Emerging Roles","id":"high-value-emerging-roles"},{"level":2,"text":"Economic Principle","id":"economic-principle"},{"level":2,"text":"Final Transformation","id":"final-transformation"},{"level":2,"text":"Definition","id":"definition"},{"level":2,"text":"Digital Chief of Staff","id":"digital-chief-of-staff"},{"level":3,"text":"Example Workflow","id":"example-workflow"},{"level":2,"text":"Productivity Impact","id":"productivity-impact"},{"level":2,"text":"1. AI Codes, Humans Program","id":"1-ai-codes-humans-program"},{"level":2,"text":"2. Clear Thinking Is Scarce","id":"2-clear-thinking-is-scarce"},{"level":2,"text":"3. AI Is Becoming Baseline Infrastructure","id":"3-ai-is-becoming-baseline-infrastructure"}],
     content: `Type : #RawNote       
@@ -6934,7 +6934,7 @@ Daily Brief Generation
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 824,
-    backlinks: [],
+    backlinks: ["beef-and-hindus","beef-and-hindus"],
     links: ["religion","india"],
     outline: [{"level":2,"text":"Scriptural Perspectives on Meat Consumption","id":"scriptural-perspectives-on-meat-consumption"},{"level":3,"text":"Contradictory Directives in Ancient Texts","id":"contradictory-directives-in-ancient-texts"},{"level":4,"text":"Analysis of Primary Sources","id":"analysis-of-primary-sources"},{"level":2,"text":"Historical and Cultural Realities","id":"historical-and-cultural-realities"},{"level":3,"text":"Regional and Community Variations","id":"regional-and-community-variations"},{"level":4,"text":"Brahminical Dietary Traditions","id":"brahminical-dietary-traditions"},{"level":4,"text":"Temple Offerings and Rituals (Bali)","id":"temple-offerings-and-rituals-bali"},{"level":2,"text":"Epic Narratives and Dietary Habits","id":"epic-narratives-and-dietary-habits"},{"level":3,"text":"Incidents from the Ramayana and Mahabharata","id":"incidents-from-the-ramayana-and-mahabharata"},{"level":4,"text":"The Pandavas in Exile","id":"the-pandavas-in-exile"},{"level":4,"text":"Rama and Krishna","id":"rama-and-krishna"},{"level":2,"text":"Socio-Economic and Political Evolution","id":"socio-economic-and-political-evolution"},{"level":3,"text":"The Shift to Vegetarianism","id":"the-shift-to-vegetarianism"},{"level":4,"text":"Religious Competition","id":"religious-competition"},{"level":4,"text":"Economic Privilege and Caste","id":"economic-privilege-and-caste"},{"level":3,"text":"Modern Statistical Data (India)","id":"modern-statistical-data-india"},{"level":2,"text":"Scientific and Ethical Considerations","id":"scientific-and-ethical-considerations"},{"level":3,"text":"Modern Arguments for Plant-Based Diets","id":"modern-arguments-for-plant-based-diets"},{"level":4,"text":"Environmental and Health Factors","id":"environmental-and-health-factors"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote #video      
@@ -7137,7 +7137,7 @@ Source : [Dhruv Rathe](https://youtu.be/rygbPO6hM9Y?si=mDBGh37pL4P1uBCI)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 579,
-    backlinks: [],
+    backlinks: ["cafe-coffee-day","cafe-coffee-day","cafe-coffee-day"],
     links: ["coffee","entrepreneur","marxism"],
     outline: [{"level":2,"text":"The Disappearance of VG Siddhartha","id":"the-disappearance-of-vg-siddhartha"},{"level":2,"text":"Rise of the Coffee King","id":"rise-of-the-coffee-king"},{"level":2,"text":"Creation of the CCD Brand","id":"creation-of-the-ccd-brand"},{"level":2,"text":"Expansion and Financial Woes","id":"expansion-and-financial-woes"},{"level":2,"text":"The Turning Point: IL&FS Crisis","id":"the-turning-point-ilfs-crisis"},{"level":2,"text":"Post-Siddhartha: Restructuring and Recovery","id":"post-siddhartha-restructuring-and-recovery"}],
     content: `Type : #RawNote #video      
@@ -7212,7 +7212,7 @@ Source :  [Mohak Mangal](https://youtu.be/bYWOWwVQtBo?si=xFDeIrq9vPVyAaTp)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 779,
-    backlinks: [],
+    backlinks: ["israel-vs-iran","israel-vs-iran"],
     links: ["geopolitics","defense"],
     outline: [{"level":2,"text":"Surveillance and Intelligence Gathering","id":"surveillance-and-intelligence-gathering"},{"level":3,"text":"Pattern of Life Tracking","id":"pattern-of-life-tracking"},{"level":4,"text":"Technical Methodology","id":"technical-methodology"},{"level":4,"text":"Infrastructure Compromise","id":"infrastructure-compromise"},{"level":2,"text":"Intelligence Units and Methodologies","id":"intelligence-units-and-methodologies"},{"level":3,"text":"Multi-Source Intelligence (INT) Integration","id":"multi-source-intelligence-int-integration"},{"level":4,"text":"Unit 8200: Signals Intelligence (SIGINT)","id":"unit-8200-signals-intelligence-sigint"},{"level":4,"text":"Human Intelligence (HUMINT)","id":"human-intelligence-humint"},{"level":3,"text":"Social Network Analysis (SNA)","id":"social-network-analysis-sna"},{"level":4,"text":"Mathematical Processing","id":"mathematical-processing"},{"level":2,"text":"Kinetic Strike Technology","id":"kinetic-strike-technology"},{"level":3,"text":"Blue Sparrow Missile System","id":"blue-sparrow-missile-system"},{"level":4,"text":"Aerodynamic and Trajectory Characteristics","id":"aerodynamic-and-trajectory-characteristics"},{"level":4,"text":"Air Defense Neutralization","id":"air-defense-neutralization"},{"level":2,"text":"Strategic Deception and Execution","id":"strategic-deception-and-execution"},{"level":3,"text":"Operational Security (OPSEC) and Deception","id":"operational-security-opsec-and-deception"},{"level":4,"text":"False Signal Generation","id":"false-signal-generation"},{"level":4,"text":"Bunker Penetration Tactics","id":"bunker-penetration-tactics"},{"level":6,"text":"Example: Bunker Analysis","id":"example-bunker-analysis"},{"level":2,"text":"Geopolitical and Economic Impact","id":"geopolitical-and-economic-impact"},{"level":3,"text":"Energy Corridor Vulnerability","id":"energy-corridor-vulnerability"},{"level":4,"text":"The Strait of Hormuz","id":"the-strait-of-hormuz"},{"level":2,"text":"Knowledge Extraction Queries","id":"knowledge-extraction-queries"},{"level":6,"text":"Q1) What is \"Pattern of Life\" in an intelligence context?","id":"q1-what-is-pattern-of-life-in-an-intelligence-context"},{"level":6,"text":"Q2) Why are traffic cameras a priority for cyber-intelligence?","id":"q2-why-are-traffic-cameras-a-priority-for-cyber-intelligence"}],
     content: `Type : #RawNote #video       
@@ -7391,7 +7391,7 @@ A2) They provide persistent, real-time visual verification of vehicle movements,
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 874,
-    backlinks: [],
+    backlinks: ["israel","israel"],
     links: ["geopolitics","defense"],
     outline: [{"level":2,"text":"PM Modi's Visit to Israel","id":"pm-modis-visit-to-israel"},{"level":2,"text":"India's Shifting Stance","id":"indias-shifting-stance"},{"level":2,"text":"Concerns and Controversies","id":"concerns-and-controversies"}],
     content: `Type : #RawNote #video      
@@ -7479,7 +7479,7 @@ Source : [Akash Banerjee (Deshbhakt)](https://youtu.be/_FAhU-pUkHI?si=ZhOp-23Q4j
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1449,
-    backlinks: [],
+    backlinks: ["madhubala","madhubala","madhubala"],
     links: ["history","india","cinema"],
     outline: [{"level":2,"text":"Early Life and Background","id":"early-life-and-background"},{"level":2,"text":"Discovery and Early Career","id":"discovery-and-early-career"},{"level":2,"text":"Challenges and Resilience","id":"challenges-and-resilience"},{"level":2,"text":"Rise to Stardom","id":"rise-to-stardom"},{"level":2,"text":"Personal Struggles and Media Control","id":"personal-struggles-and-media-control"},{"level":2,"text":"Relationships and Heartbreak","id":"relationships-and-heartbreak"},{"level":3,"text":"Dilip Kumar","id":"dilip-kumar"},{"level":3,"text":"Kishore Kumar","id":"kishore-kumar"},{"level":2,"text":"Final Years and Legacy","id":"final-years-and-legacy"}],
     content: `Type : #RawNote #video       
@@ -7632,7 +7632,7 @@ Source : [Mohak Mangal](https://youtu.be/7ySNFEMl1yY?si=7PEq8k9UfwahM-1l)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 216,
-    backlinks: [],
+    backlinks: ["plastic-stress-whitening"],
     links: ["chemistry"],
     outline: [{"level":2,"text":"Physical Phenomenon","id":"physical-phenomenon"},{"level":3,"text":"Mechanism of Color Change","id":"mechanism-of-color-change"},{"level":3,"text":"Light Interaction","id":"light-interaction"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote #video       
@@ -7706,7 +7706,7 @@ Source : [Vitek Innovation](https://youtu.be/Ad1ue2UhRvo?si=5UT9bXf-GEN1nrnp)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 446,
-    backlinks: ["c"],
+    backlinks: ["c","1st-c-program"],
     links: ["c","operating-system","control-structuresc","errors","escape-sequencesc"],
     outline: [{"level":2,"text":"File Inclusion - Preprocessor Directive","id":"file-inclusion-preprocessor-directive"},{"level":2,"text":"int main()","id":"int-main"},{"level":2,"text":"Code Block","id":"code-block"},{"level":6,"text":"Example : WAP to input 4 digit number from keyboard and find the sum of its digits","id":"example-wap-to-input-4-digit-number-from-keyboard-and-find-the-sum-of-its-digits"},{"level":6,"text":"Example : WAP to find reverse of a 4 digit number.","id":"example-wap-to-find-reverse-of-a-4-digit-number"}],
     content: `Type : #Note    
@@ -7829,7 +7829,7 @@ int main(){
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1156,
-    backlinks: [],
+    backlinks: ["adder"],
     links: ["dld","combinational-circuits"],
     outline: [{"level":4,"text":"Fundamental Logic Behind Addition","id":"fundamental-logic-behind-addition"},{"level":4,"text":"K-Maps","id":"k-maps"},{"level":6,"text":"Q1) A half adder is implemented with XOR and AND gates. A full Combinational Circuit is implemented with two half Combinational Circuits and one OR gate. The propagation delay of an XOR gate is twice that of an AND/OR gate. The propagation delay of an AND/OR gate is 1.2 microseconds. A 4-bit ripple-carry binary Combinational Circuit is implemented by using four full Combinational Circuits. The total propagation time of this 4-bit binary Combinational Circuit in microseconds is___. (GATE 2015) (2 Marks)","id":"q1-a-half-adder-is-implemented-with-xor-and-and-gates-a-full-combinational-circuit-is-implemented-with-two-half-combinational-circuits-and-one-or-gate-the-propagation-delay-of-an-xor-gate-is-twice-that-of-an-andor-gate-the-propagation-delay-of-an-andor-gate-is-12-microseconds-a-4-bit-ripple-carry-binary-combinational-circuit-is-implemented-by-using-four-full-combinational-circuits-the-total-propagation-time-of-this-4-bit-binary-combinational-circuit-in-microseconds-is-gate-2015-2-marks"}],
     content: `Type : #Note    
@@ -8127,7 +8127,7 @@ Total delay =
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 546,
-    backlinks: [],
+    backlinks: ["agenticai"],
     links: ["ai","prompts"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -8246,7 +8246,7 @@ Goal → Planner → Sub-tasks → Tool Use → Observation → Replan → Outpu
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 397,
-    backlinks: ["generative-ai","ai"],
+    backlinks: ["generative-ai","ai","ai-tools","ai-tools"],
     links: ["workshop","gen-ai"],
     outline: [{"level":2,"text":"Text Generation Tools","id":"text-generation-tools"},{"level":3,"text":"Marketing","id":"marketing"},{"level":3,"text":"Knowledge","id":"knowledge"},{"level":3,"text":"General Writing","id":"general-writing"},{"level":3,"text":"AI Assistants","id":"ai-assistants"},{"level":3,"text":"Sales","id":"sales"},{"level":3,"text":"Support (Chat/Email)","id":"support-chatemail"},{"level":3,"text":"Other","id":"other"},{"level":2,"text":"Video Generation Tools","id":"video-generation-tools"},{"level":3,"text":"Editing / Generation","id":"editing-generation"},{"level":3,"text":"Personalized Videos","id":"personalized-videos"},{"level":2,"text":"AI Image Generation Tools","id":"ai-image-generation-tools"},{"level":3,"text":"Image Generation","id":"image-generation"},{"level":3,"text":"Media / Advertising","id":"media-advertising"},{"level":3,"text":"Design","id":"design"},{"level":2,"text":"AI Code Tools","id":"ai-code-tools"},{"level":3,"text":"Code Generation","id":"code-generation"},{"level":3,"text":"Text to SQL","id":"text-to-sql"},{"level":3,"text":"Web App Builders","id":"web-app-builders"},{"level":3,"text":"Documentation","id":"documentation"},{"level":3,"text":"Other","id":"other"},{"level":2,"text":"AI Speech / Voice Tools","id":"ai-speech-voice-tools"},{"level":3,"text":"Voice Synthesis","id":"voice-synthesis"},{"level":2,"text":"AI 3D Tools","id":"ai-3d-tools"},{"level":3,"text":"3D Models / Scenes","id":"3d-models-scenes"},{"level":2,"text":"Other AI Tools","id":"other-ai-tools"},{"level":3,"text":"Music","id":"music"},{"level":3,"text":"Gaming","id":"gaming"},{"level":3,"text":"RPA","id":"rpa"},{"level":3,"text":"AI Characters / Avatars","id":"ai-characters-avatars"},{"level":3,"text":"Biology / Chemistry","id":"biology-chemistry"},{"level":3,"text":"Vertical Apps","id":"vertical-apps"}],
     content: `Type : #Note    
@@ -8436,7 +8436,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 523,
-    backlinks: ["moc-data-structures-and-algorithms","face-detection","face-embedding","face-matching","facenet","graph-theory","multi-object-tracking","recursion","sorting","stack"],
+    backlinks: ["moc-data-structures-and-algorithms","face-detection","face-embedding","face-matching","facenet","graph-theory","multi-object-tracking","recursion","sorting","stack","algorithm-basics","algorithm-basics","algorithm-basics"],
     links: ["dsa","gate","multi-object-tracking","face-matching","facenet","sorting"],
     outline: [{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -8560,7 +8560,7 @@ int main()
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 597,
-    backlinks: ["coordinate-geometry","face-alignment","face-embedding","facenet","matrix","trigonometric-formulas"],
+    backlinks: ["coordinate-geometry","face-alignment","face-embedding","facenet","matrix","trigonometric-formulas","arcface","arcface","arcface"],
     links: ["research","security","computer-vision","face-alignment","face-matching","face-embedding","trigonometric-formulas","poetry-matrix","coordinate-geometry","facenet"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 What Problem Does This Solve?","id":"what-problem-does-this-solve"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"🔄 Input → Output","id":"input-output"},{"level":2,"text":"🧩 Intuition (Explain Like I’m 12)","id":"intuition-explain-like-im-12"},{"level":2,"text":"⚙️ How It Works (Simple → Detailed)","id":"how-it-works-simple-detailed"},{"level":3,"text":"Step 1 — Normalize","id":"step-1-normalize"},{"level":3,"text":"Step 2 — Angular Representation","id":"step-2-angular-representation"},{"level":3,"text":"Step 3 — Add Angular Margin","id":"step-3-add-angular-margin"},{"level":3,"text":"Step 4 — Training Setup","id":"step-4-training-setup"},{"level":3,"text":"Step 5 — Performance","id":"step-5-performance"},{"level":3,"text":"Key Insight","id":"key-insight"},{"level":2,"text":"⚠️ Limitations (Why This Alone Is Not Enough)","id":"limitations-why-this-alone-is-not-enough"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 Related Models / Methods","id":"related-models-methods"},{"level":2,"text":"📚 Related Papers","id":"related-papers"},{"level":2,"text":"❓ Questions","id":"questions"},{"level":6,"text":"Q1) Why is angular margin better than distance-based learning?","id":"q1-why-is-angular-margin-better-than-distance-based-learning"},{"level":6,"text":"A1)","id":"a1"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"📌 References","id":"references"}],
     content: `Type : #Note    
@@ -8718,7 +8718,7 @@ $$\\cos(\\theta + m)$$
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 2206,
-    backlinks: ["moc-logic-and-philosophy","logic-introduction"],
+    backlinks: ["moc-logic-and-philosophy","logic-introduction","arguments"],
     links: ["maths"],
     outline: [{"level":2,"text":"Validity of an Argument","id":"validity-of-an-argument"},{"level":3,"text":"Soundness","id":"soundness"},{"level":3,"text":"Method to Check Validity","id":"method-to-check-validity"},{"level":3,"text":"Rules of Inference (Valid Argument Forms)","id":"rules-of-inference-valid-argument-forms"},{"level":4,"text":"1. Modus Ponens (Rule of Detachment)","id":"1-modus-ponens-rule-of-detachment"},{"level":4,"text":"2. Modus Tollens (Rule of Contrapositive)","id":"2-modus-tollens-rule-of-contrapositive"},{"level":4,"text":"3. Hypothetical Syllogism (Transitive Rule of Inference)","id":"3-hypothetical-syllogism-transitive-rule-of-inference"},{"level":4,"text":"4. Disjunctive Syllogism (Proof by Elimination)","id":"4-disjunctive-syllogism-proof-by-elimination"},{"level":4,"text":"5. Addition (OR Introduction)","id":"5-addition-or-introduction"},{"level":4,"text":"6. Simplification (AND Elimination)","id":"6-simplification-and-elimination"},{"level":4,"text":"7. Conjunction (AND Introduction)","id":"7-conjunction-and-introduction"},{"level":4,"text":"8. Resolution","id":"8-resolution"},{"level":3,"text":"Invalid Argument Forms (Fallacies)","id":"invalid-argument-forms-fallacies"},{"level":4,"text":"1. Affirming the Consequent  / Fallacy of Converse","id":"1-affirming-the-consequent-fallacy-of-converse"},{"level":4,"text":"2. Denying the Antecedent  / Fallacy of Inverse","id":"2-denying-the-antecedent-fallacy-of-inverse"},{"level":4,"text":"3. Fallacy of Non-sequester","id":"3-fallacy-of-non-sequester"},{"level":4,"text":"4. Fallacy of begging the Q","id":"4-fallacy-of-begging-the-q"},{"level":3,"text":"Truth Table Method for Validity","id":"truth-table-method-for-validity"},{"level":6,"text":"Q1) Check if the Conclusion is a valid conclusion or not.","id":"q1-check-if-the-conclusion-is-a-valid-conclusion-or-not"},{"level":6,"text":"P1 : If it rains, children will not play.","id":"p1-if-it-rains-children-will-not-play"},{"level":6,"text":"P2 : It rains.","id":"p2-it-rains"},{"level":6,"text":"$∴$ C : Children will not play.","id":"c-children-will-not-play"},{"level":6,"text":"Q2) Check if the Conclusion is a valid conclusion or not.","id":"q2-check-if-the-conclusion-is-a-valid-conclusion-or-not"},{"level":6,"text":"P1 : If it rains, children will not play.","id":"p1-if-it-rains-children-will-not-play"},{"level":6,"text":"P2 : Children are not playing.","id":"p2-children-are-not-playing"},{"level":6,"text":"$∴$ C : It rains.","id":"c-it-rains"},{"level":6,"text":"Q3) Check if the Conclusion is a valid conclusion or not.","id":"q3-check-if-the-conclusion-is-a-valid-conclusion-or-not"},{"level":6,"text":"P1 : 2 + 2 = 4 → 3 + 2 = 100","id":"p1-2-2-4-3-2-100"},{"level":6,"text":"P2 : 2 + 2 = 4","id":"p2-2-2-4"},{"level":6,"text":"$∴$ C : 3 + 2 = 100","id":"c-3-2-100"},{"level":6,"text":"Q4) Which option is correct. there are two type of people.","id":"q4-which-option-is-correct-there-are-two-type-of-people"},{"level":6,"text":"Type 1 : Always tell truth","id":"type-1-always-tell-truth"},{"level":6,"text":"Type 2 : Always tell lie","id":"type-2-always-tell-lie"},{"level":6,"text":"The result of a fair coin toss is head if and only if I'm telling the truth.","id":"the-result-of-a-fair-coin-toss-is-head-if-and-only-if-im-telling-the-truth"},{"level":6,"text":"a) Result is head","id":"a-result-is-head"},{"level":6,"text":"b) Result is tail","id":"b-result-is-tail"},{"level":6,"text":"c) If person is Type 2 result is tail","id":"c-if-person-is-type-2-result-is-tail"},{"level":6,"text":"d) If person is Type 1 result is tail","id":"d-if-person-is-type-1-result-is-tail"},{"level":6,"text":"Q5) Check validity","id":"q5-check-validity"},{"level":6,"text":"Q6) Which of the following arguments are valid","id":"q6-which-of-the-following-arguments-are-valid"},{"level":6,"text":"a) (A ∨ B, B → C, A → D, ¬ D) → C","id":"a-a-b-b-c-a-d-d-c"},{"level":6,"text":"b) (¬ A → ¬ C) ∧ ¬ D ∧ (A → E ∧ (C ∨ D)) → E","id":"b-a-c-d-a-e-c-d-e"},{"level":6,"text":"c) (A, A → ( B ∨ C), B → ¬ A) → C","id":"c-a-a-b-c-b-a-c"},{"level":6,"text":"d) (A ∨ B, B → C, ¬ C) → ¬ A","id":"d-a-b-b-c-c-a"},{"level":6,"text":"Q7) 2 set of premises are given. Which is inconsistent?","id":"q7-2-set-of-premises-are-given-which-is-inconsistent"},{"level":6,"text":"S1 : {A → B, A → C, B → ¬ C, A}","id":"s1-a-b-a-c-b-c-a"},{"level":6,"text":"S2 : {¬A ∨ B, ¬ B, A}","id":"s2-a-b-b-a"},{"level":6,"text":"Q8) Check Validity::","id":"q8-check-validity"},{"level":6,"text":"{ ¬ (P ∧ Q), (Q ∨ R), (R → S)} → (P → S)","id":"p-q-q-r-r-s-p-s"},{"level":6,"text":"Q9) Determine weather these specifications are consistent","id":"q9-determine-weather-these-specifications-are-consistent"},{"level":6,"text":"a : The diagnostic message is stored in buffer or it is retransmitted","id":"a-the-diagnostic-message-is-stored-in-buffer-or-it-is-retransmitted"},{"level":6,"text":"b : It is not transmitted","id":"b-it-is-not-transmitted"},{"level":6,"text":"c : If the diagnostic message is stored in the buffer then it is retransmitted","id":"c-if-the-diagnostic-message-is-stored-in-the-buffer-then-it-is-retransmitted"},{"level":6,"text":"Q10) Determine weather these specifications are consistent","id":"q10-determine-weather-these-specifications-are-consistent"},{"level":6,"text":"a : The diagnostic message is stored in buffer or it is retransmitted","id":"a-the-diagnostic-message-is-stored-in-buffer-or-it-is-retransmitted"},{"level":6,"text":"b : Diagnostic message is not stored","id":"b-diagnostic-message-is-not-stored"},{"level":6,"text":"c : If the diagnostic message is stored in the buffer then it is retransmitted","id":"c-if-the-diagnostic-message-is-stored-in-the-buffer-then-it-is-retransmitted"},{"level":6,"text":"Q11) Check validity","id":"q11-check-validity"},{"level":6,"text":"P : if you work hard and have talent then you become musician","id":"p-if-you-work-hard-and-have-talent-then-you-become-musician"},{"level":6,"text":"Q : if you become musician you will be happy","id":"q-if-you-become-musician-you-will-be-happy"},{"level":6,"text":"R : You are working hard","id":"r-you-are-working-hard"},{"level":6,"text":"S : You don't have talent","id":"s-you-dont-have-talent"},{"level":6,"text":"$∴$ C : you will not be happy","id":"c-you-will-not-be-happy"},{"level":6,"text":"Q12) Check validity","id":"q12-check-validity"},{"level":6,"text":"P : If you work hard and have talent then you become musician","id":"p-if-you-work-hard-and-have-talent-then-you-become-musician"},{"level":6,"text":"Q : If you become musician, you will be happy","id":"q-if-you-become-musician-you-will-be-happy"},{"level":6,"text":"S : You are not happy","id":"s-you-are-not-happy"},{"level":6,"text":"C : You are not talented","id":"c-you-are-not-talented"}],
     content: `Type : #Note    
@@ -9174,7 +9174,7 @@ C : T'
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 3881,
-    backlinks: ["moc-data-structures-and-algorithms","binary-tree-traversal","char-functionsc","complete-binary-tree","data-structures-basics","datatypesc","pointersc","stringsc","tokensc","treedsa"],
+    backlinks: ["moc-data-structures-and-algorithms","binary-tree-traversal","char-functionsc","complete-binary-tree","data-structures-basics","datatypesc","pointersc","stringsc","tokensc","treedsa","array","array","array","array"],
     links: ["dsa","c","datatypes","errors","loop","data-structures-basics"],
     outline: [{"level":3,"text":"Declaring an array in C","id":"declaring-an-array-in-c"},{"level":3,"text":"How to initialize an array in C","id":"how-to-initialize-an-array-in-c"},{"level":4,"text":"If not initialised?","id":"if-not-initialised"},{"level":4,"text":"How to Initialize every element of array by 5 if array size is 100?","id":"how-to-initialize-every-element-of-array-by-5-if-array-size-is-100"},{"level":4,"text":"How to Input Array?","id":"how-to-input-array"},{"level":4,"text":"How to Print Array?","id":"how-to-print-array"},{"level":3,"text":"Change value of array elements","id":"change-value-of-array-elements"},{"level":3,"text":"Advantages of Arrays","id":"advantages-of-arrays"},{"level":3,"text":"Disadvantages of Arrays","id":"disadvantages-of-arrays"},{"level":3,"text":"Applications of Arrays","id":"applications-of-arrays"},{"level":3,"text":"Types of Indexing in Arrays","id":"types-of-indexing-in-arrays"},{"level":3,"text":"Size of an array","id":"size-of-an-array"},{"level":3,"text":"How to declare and initialize 2D array?","id":"how-to-declare-and-initialize-2d-array"},{"level":3,"text":"Row Major Implementation of 2D array","id":"row-major-implementation-of-2d-array"},{"level":3,"text":"Column Major Implementation of 2D array","id":"column-major-implementation-of-2d-array"},{"level":5,"text":"Sparse Matrix Representation","id":"sparse-matrix-representation"},{"level":3,"text":"Array Representation","id":"array-representation"},{"level":3,"text":"Linked List Representation","id":"linked-list-representation"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q1)</span> Let the base address of the first element of the array is 250 and each element of the array occupies 3 bytes in the memory, then address of the fifth element of a one- dimensional array a10 ?","id":"span-stylecolorrgb0-176-240q1span-let-the-base-address-of-the-first-element-of-the-array-is-250-and-each-element-of-the-array-occupies-3-bytes-in-the-memory-then-address-of-the-fifth-element-of-a-one-dimensional-array-a10"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q2)</span> An array has been declared as follows A: array -6 --- 6 of elements where every element takes 4 bytes, if the base address of the array is 3500 find the address of array0?","id":"span-stylecolorrgb0-176-240q2span-an-array-has-been-declared-as-follows-a-array-6-6-of-elements-where-every-element-takes-4-bytes-if-the-base-address-of-the-array-is-3500-find-the-address-of-array0"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q3)</span> A program P reads in 500 integers in the range 0 ... 100 experimenting the scores of 500 students. It then prints the frequency of each score above 50. What would be the best way for P to store the frequencies? <span style=\"color:rgb(255, 192, 0)\">(GATE - 2005 - 2 Marks)Asked in Cognizant 2016</span>","id":"span-stylecolorrgb0-176-240q3span-a-program-p-reads-in-500-integers-in-the-range-0-100-experimenting-the-scores-of-500-students-it-then-prints-the-frequency-of-each-score-above-50-what-would-be-the-best-way-for-p-to-store-the-frequencies-span-stylecolorrgb255-192-0gate-2005-2-marksasked-in-cognizant-2016span"},{"level":6,"text":"(A) An array of 50 numbers","id":"a-an-array-of-50-numbers"},{"level":6,"text":"(B) An array of 100 numbers","id":"b-an-array-of-100-numbers"},{"level":6,"text":"(C) An array of 500 numbers","id":"c-an-array-of-500-numbers"},{"level":6,"text":"(D) A dynamically allocated array of 550 numbers","id":"d-a-dynamically-allocated-array-of-550-numbers"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q4)</span> Let A be a two dimensional array declared as follows: A: array 1 ... 10  1 ... 15 of integer; Assuming that each integer takes one memory location, the array is stored in row-major order and the first element of the array is stored at location 100, what is the address of the element a  i  j ? <span style=\"color:rgb(255, 192, 0)\">(Gate-1998) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q4span-let-a-be-a-two-dimensional-array-declared-as-follows-a-array-1-10-1-15-of-integer-assuming-that-each-integer-takes-one-memory-location-the-array-is-stored-in-row-major-order-and-the-first-element-of-the-array-is-stored-at-location-100-what-is-the-address-of-the-element-a-i-j-span-stylecolorrgb255-192-0gate-1998-2-marksspan"},{"level":6,"text":"(A) 15i + j + 84","id":"a-15i-j-84"},{"level":6,"text":"(B) 15j + i + 84","id":"b-15j-i-84"},{"level":6,"text":"(C) 10i + j  +89","id":"c-10i-j-89"},{"level":6,"text":"(D) 10j + i + 89","id":"d-10j-i-89"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q5)</span> An array VAL1 ... 15  1 ... 10 is stored in the memory with each element requiring 4 bytes of storage. If the base address of the array VAL is 1500, determine the location of VAL 12  9 when the array VAL is stored  (i) Row wise   (ii) Column wise.","id":"span-stylecolorrgb0-176-240q5span-an-array-val1-15-1-10-is-stored-in-the-memory-with-each-element-requiring-4-bytes-of-storage-if-the-base-address-of-the-array-val-is-1500-determine-the-location-of-val-12-9-when-the-array-val-is-stored-i-row-wise-ii-column-wise"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q6</span><span style=\"color:rgb(0, 176, 240)\">)</span>  Two matrices M1 and M2 are to be stored in arrays A and B respectively. Each array can be stored either in row-major or column-major order in contiguous memory locations. The time complexity of an algorithm to compute M1 × M2 will be ? <span style=\"color:rgb(255, 192, 0)\">(Gate-2004) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q6spanspan-stylecolorrgb0-176-240span-two-matrices-m1-and-m2-are-to-be-stored-in-arrays-a-and-b-respectively-each-array-can-be-stored-either-in-row-major-or-column-major-order-in-contiguous-memory-locations-the-time-complexity-of-an-algorithm-to-compute-m1-m2-will-be-span-stylecolorrgb255-192-0gate-2004-2-marksspan"},{"level":6,"text":"(A) best if A is in row-major, and B is in column- major order","id":"a-best-if-a-is-in-row-major-and-b-is-in-column-major-order"},{"level":6,"text":"(B) best if both are in row-major order","id":"b-best-if-both-are-in-row-major-order"},{"level":6,"text":"(C) best if both are in column-major order","id":"c-best-if-both-are-in-column-major-order"},{"level":6,"text":"(D) independent of the storage scheme","id":"d-independent-of-the-storage-scheme"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q7)</span> An n x n array v is defined as follows: vi, j = i-j for all i, j, 1 <= i <= n, 1 <= j <= n. The sum of the elements of the array v is ? <span style=\"color:rgb(0, 176, 240)\"><span style=\"color:rgb(255, 192, 0)\">(Gate-2000) (1 Marks)</span></span>","id":"span-stylecolorrgb0-176-240q7span-an-n-x-n-array-v-is-defined-as-follows-vi-j-i-j-for-all-i-j-1-i-n-1-j-n-the-sum-of-the-elements-of-the-array-v-is-span-stylecolorrgb0-176-240span-stylecolorrgb255-192-0gate-2000-1-marksspanspan"},{"level":6,"text":"(A) 0","id":"a-0"},{"level":6,"text":"(B) n-1","id":"b-n-1"},{"level":6,"text":"(C) n2 -3n + 2","id":"c-n2-3n-2"},{"level":6,"text":"(D) n2 (n+1)/2","id":"d-n2-n12"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q8)</span> A Young tableau is a 2D array of integers increasing from left to right and from top to bottom. Any unfilled entries are marked with ∞, and hence there cannot be any entry to the right of, or below a ∞. The following Young tableau consists of unique entries <span style=\"color:rgb(255, 192, 0)\">(GATE - 2015) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q8span-a-young-tableau-is-a-2d-array-of-integers-increasing-from-left-to-right-and-from-top-to-bottom-any-unfilled-entries-are-marked-with-and-hence-there-cannot-be-any-entry-to-the-right-of-or-below-a-the-following-young-tableau-consists-of-unique-entries-span-stylecolorrgb255-192-0gate-2015-2-marksspan"},{"level":6,"text":"1       2       5       14","id":"1-2-5-14"},{"level":6,"text":"3       4       6       23","id":"3-4-6-23"},{"level":6,"text":"10     12      18      25","id":"10-12-18-25"},{"level":6,"text":"31      ∞      ∞       ∞","id":"31"},{"level":6,"text":"When an element is removed from a Young tableau, other elements should be moved into its place so that the resulting table is still a Young tableau (unfilled entries may be filled in with a ∞). The minimum number of entries (other than 1) to be shifted, to remove 1 from the given Young tableau is ___ .","id":"when-an-element-is-removed-from-a-young-tableau-other-elements-should-be-moved-into-its-place-so-that-the-resulting-table-is-still-a-young-tableau-unfilled-entries-may-be-filled-in-with-a-the-minimum-number-of-entries-other-than-1-to-be-shifted-to-remove-1-from-the-given-young-tableau-is"},{"level":6,"text":"(A) 2","id":"a-2"},{"level":6,"text":"(B) 5","id":"b-5"},{"level":6,"text":"(C) 6","id":"c-6"},{"level":6,"text":"(D) 18","id":"d-18"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q9)</span> Let A be a square matrix of size n x n. Consider the following program. What is the expected output? <span style=\"color:rgb(255, 192, 0)\">(GATE - 2014)(1 Marks)  Asked in Hexaware 2017    Asked in Accenture</span>","id":"span-stylecolorrgb0-176-240q9span-let-a-be-a-square-matrix-of-size-n-x-n-consider-the-following-program-what-is-the-expected-output-span-stylecolorrgb255-192-0gate-20141-marks-asked-in-hexaware-2017-asked-in-accenturespan"},{"level":6,"text":"(A) The matrix A itself","id":"a-the-matrix-a-itself"},{"level":6,"text":"(B) Transpose of matrix A","id":"b-transpose-of-matrix-a"},{"level":6,"text":"(C) Adding 100 to the upper diagonal elements and subtracting 100 from diagonal elements of A","id":"c-adding-100-to-the-upper-diagonal-elements-and-subtracting-100-from-diagonal-elements-of-a"},{"level":6,"text":"(D) None of the above","id":"d-none-of-the-above"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q10)</span> Suppose you are given an array s1 .. n and a procedure reverse (s, i, j) which reverses the order of elements in a between positions i and j (both inclusive). What does the following sequence do? <span style=\"color:rgb(255, 192, 0)\">(GATE - 2014) (1 Marks)</span>","id":"span-stylecolorrgb0-176-240q10span-suppose-you-are-given-an-array-s1-n-and-a-procedure-reverse-s-i-j-which-reverses-the-order-of-elements-in-a-between-positions-i-and-j-both-inclusive-what-does-the-following-sequence-do-span-stylecolorrgb255-192-0gate-2014-1-marksspan"},{"level":6,"text":"where 1 <= k < n:","id":"where-1-k-n"},{"level":6,"text":"reverse(s, 1, k) ;","id":"reverses-1-k"},{"level":6,"text":"reverse(s, k + 1, n);","id":"reverses-k-1-n"},{"level":6,"text":"reverse(s, 1, n);","id":"reverses-1-n"},{"level":6,"text":"(A) Rotates s left by k positions","id":"a-rotates-s-left-by-k-positions"},{"level":6,"text":"(B) Leaves s unchanged","id":"b-leaves-s-unchanged"},{"level":6,"text":"(C) Reverses all elements of s","id":"c-reverses-all-elements-of-s"},{"level":6,"text":"(D) None of the above","id":"d-none-of-the-above"},{"level":6,"text":"Q11) WAP to input array of 10 integers & print it in reverse order:","id":"q11-wap-to-input-array-of-10-integers-print-it-in-reverse-order"},{"level":6,"text":"Q12) WAP to find greatest of 100 numbers","id":"q12-wap-to-find-greatest-of-100-numbers"},{"level":6,"text":"Q13) WAP to input +ve integers & convert it into binary using arrays","id":"q13-wap-to-input-ve-integers-convert-it-into-binary-using-arrays"}],
     content: `Type : #Note    
@@ -9729,7 +9729,7 @@ unsigned int main(){
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 527,
-    backlinks: ["moc-data-structures-and-algorithms"],
+    backlinks: ["moc-data-structures-and-algorithms","avl-tree","avl-tree"],
     links: ["dsa","binary-search-tree","binary-tree"],
     outline: [{"level":2,"text":"Balance Factor","id":"balance-factor"},{"level":2,"text":"Insertion in an AVL Tree","id":"insertion-in-an-avl-tree"},{"level":6,"text":"Example : 21, 26, 30, 9, 4, 14, 28, 18, 15, 10, 2, 3, 7","id":"example-21-26-30-9-4-14-28-18-15-10-2-3-7"},{"level":2,"text":"Deletion in an AVL Tree","id":"deletion-in-an-avl-tree"},{"level":2,"text":"Advantage of AVL Tree","id":"advantage-of-avl-tree"},{"level":6,"text":"Q1) What is the maximum height of any AVL tree with 7 nodes? Assume that the height of a tree with a single node is 0. (GATE 2009)(1 Mark)","id":"q1-what-is-the-maximum-height-of-any-avl-tree-with-7-nodes-assume-that-the-height-of-a-tree-with-a-single-node-is-0-gate-20091-mark"},{"level":6,"text":"a) 2","id":"a-2"},{"level":6,"text":"b) 3","id":"b-3"},{"level":6,"text":"c) 4","id":"c-4"},{"level":6,"text":"d) 5","id":"d-5"}],
     content: `Type : #Note    
@@ -9832,7 +9832,7 @@ A1) b) 3
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 734,
-    backlinks: [],
+    backlinks: ["basic-problems-of-an-economy","basic-problems-of-an-economy"],
     links: ["finance"],
     outline: [{"level":2,"text":"Introduction to Economic Problems","id":"introduction-to-economic-problems"},{"level":2,"text":"Causes of Economic Problems","id":"causes-of-economic-problems"},{"level":2,"text":"Central Problems of an Economy","id":"central-problems-of-an-economy"},{"level":3,"text":"1. What to Produce?","id":"1-what-to-produce"},{"level":3,"text":"2. How to Produce?","id":"2-how-to-produce"},{"level":3,"text":"3. For Whom to Produce?","id":"3-for-whom-to-produce"},{"level":3,"text":"Definition and Concept","id":"definition-and-concept"},{"level":3,"text":"Schedule and Curve","id":"schedule-and-curve"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Assumptions","id":"assumptions"},{"level":3,"text":"Properties of PPC","id":"properties-of-ppc"},{"level":2,"text":"PPC and Economic Concepts","id":"ppc-and-economic-concepts"},{"level":3,"text":"1. Scarcity and PPC","id":"1-scarcity-and-ppc"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"2. Choice and PPC","id":"2-choice-and-ppc"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"3. Full and Efficient Utilization","id":"3-full-and-efficient-utilization"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"4. Economic Growth","id":"4-economic-growth"},{"level":6,"text":"Example :","id":"example"}],
     content: `Type : #Note    
@@ -9988,7 +9988,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 643,
-    backlinks: ["syllabusc","c"],
+    backlinks: ["syllabusc","c","basicsc","basicsc"],
     links: ["language","c","gate","operators"],
     outline: [],
     content: `Type : #Note    
@@ -10112,7 +10112,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 587,
-    backlinks: ["moc-engineering-mathematics","conditional-probability","face-embedding","face-matching","multi-object-tracking","probability-introduction"],
+    backlinks: ["moc-engineering-mathematics","conditional-probability","face-embedding","face-matching","multi-object-tracking","probability-introduction","bayes-theorem","bayes-theorem"],
     links: ["probability","face-matching","multi-object-tracking","probability-introduction"],
     outline: [{"level":6,"text":"Q1) Computers are supplied to an institution according to following information.","id":"q1-computers-are-supplied-to-an-institution-according-to-following-information"},{"level":6,"text":"Given that the computer is defective, find the probability that it was supplied by company Y","id":"given-that-the-computer-is-defective-find-the-probability-that-it-was-supplied-by-company-y"},{"level":6,"text":"Q2) A doctor is to visit a patient. From the past experience it is known that the probability that he will come by train, bus, scooter, or by other means of transport are respectively 3/10, 1/5, 1/10, 2/5. The probabilities that he will be late are 1/4, 1/3, 1/12, if he comes by train, bus, scooter respectively, but if he comes by other transport, then he wont be late. When he arrives he is late. what is the probability that he comes by train.","id":"q2-a-doctor-is-to-visit-a-patient-from-the-past-experience-it-is-known-that-the-probability-that-he-will-come-by-train-bus-scooter-or-by-other-means-of-transport-are-respectively-310-15-110-25-the-probabilities-that-he-will-be-late-are-14-13-112-if-he-comes-by-train-bus-scooter-respectively-but-if-he-comes-by-other-transport-then-he-wont-be-late-when-he-arrives-he-is-late-what-is-the-probability-that-he-comes-by-train"},{"level":6,"text":"Q3) Of the students in a college it is known that 60% reside in a hostel and 40% are day scholars (not residing in the hostel). Previous year results report that {30% of all students who reside in the hostel attain A grade} in their annual examination and 20% of day scholar attains A grade in their annual examination. At the end of the year, one student is chosen at random from the college and he has an A grade. What is the probability that the student is a hostler ?","id":"q3-of-the-students-in-a-college-it-is-known-that-60-reside-in-a-hostel-and-40-are-day-scholars-not-residing-in-the-hostel-previous-year-results-report-that-30-of-all-students-who-reside-in-the-hostel-attain-a-grade-in-their-annual-examination-and-20-of-day-scholar-attains-a-grade-in-their-annual-examination-at-the-end-of-the-year-one-student-is-chosen-at-random-from-the-college-and-he-has-an-a-grade-what-is-the-probability-that-the-student-is-a-hostler"},{"level":6,"text":"Q4) A laboratory blood test is 99% effective in detecting a certain disease when it is infact present. However, the test also yields a false positive result for 0.5% of the healthy person tested (i.e. if a healthy person is tested then with probability 0.005, the test will imply he has the disease). If 0.1% of the population actually has the disease, what is the probability that the person has the disease given that his test result is positive?","id":"q4-a-laboratory-blood-test-is-99-effective-in-detecting-a-certain-disease-when-it-is-infact-present-however-the-test-also-yields-a-false-positive-result-for-05-of-the-healthy-person-tested-ie-if-a-healthy-person-is-tested-then-with-probability-0005-the-test-will-imply-he-has-the-disease-if-01-of-the-population-actually-has-the-disease-what-is-the-probability-that-the-person-has-the-disease-given-that-his-test-result-is-positive"},{"level":6,"text":"Q5) In a town, 10% population is corona positive. A new diagnostic kit arrived in the market. This kit correctly identifies corona positive individuals 95% of the time and corona negative individuals 89% of the time. A person is tested by this kit and found to be positive. Then find the probability the person is actually positive.","id":"q5-in-a-town-10-population-is-corona-positive-a-new-diagnostic-kit-arrived-in-the-market-this-kit-correctly-identifies-corona-positive-individuals-95-of-the-time-and-corona-negative-individuals-89-of-the-time-a-person-is-tested-by-this-kit-and-found-to-be-positive-then-find-the-probability-the-person-is-actually-positive"},{"level":6,"text":"Q6) Parcels from sender S receiver R pass sequentially through two post-offices. Each post-office has a probability 1/5 of losing an incoming parcel, independently of all other parcels. Given that a parcel is lost, the probability that it was lost by the second post-office is","id":"q6-parcels-from-sender-s-receiver-r-pass-sequentially-through-two-post-offices-each-post-office-has-a-probability-15-of-losing-an-incoming-parcel-independently-of-all-other-parcels-given-that-a-parcel-is-lost-the-probability-that-it-was-lost-by-the-second-post-office-is"},{"level":6,"text":"Q7) A bag contains 10 red balls and 15 blue balls. Two balls are drawn randomly without replacement. Given that the first ball drawn is red, probability(rounded off to 3 decimal places) that both balls drawn are red is ? (GATE 2024) (2 Marks)","id":"q7-a-bag-contains-10-red-balls-and-15-blue-balls-two-balls-are-drawn-randomly-without-replacement-given-that-the-first-ball-drawn-is-red-probabilityrounded-off-to-3-decimal-places-that-both-balls-drawn-are-red-is-gate-2024-2-marks"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -10190,7 +10190,7 @@ A7) 9/24 = 3/8 = 0.375
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1113,
-    backlinks: ["moc-data-structures-and-algorithms","avl-tree"],
+    backlinks: ["moc-data-structures-and-algorithms","avl-tree","binary-search-tree","binary-search-tree"],
     links: ["dsa"],
     outline: [{"level":2,"text":"Advantage","id":"advantage"},{"level":2,"text":"Deletion of elements","id":"deletion-of-elements"},{"level":3,"text":"Case 1 : Deleting Leaf Nodes","id":"case-1-deleting-leaf-nodes"},{"level":3,"text":"Case 2 : Deleting Internal Nodes / Root Node","id":"case-2-deleting-internal-nodes-root-node"},{"level":2,"text":"Traversal of BST","id":"traversal-of-bst"},{"level":6,"text":"Q1) While inserting the elements 71, 65, 84, 69, 67, 83 in an empty BST in the sequence shown, the number in the lowest level is ? (GATE 2015) (1 Marks)","id":"q1-while-inserting-the-elements-71-65-84-69-67-83-in-an-empty-bst-in-the-sequence-shown-the-number-in-the-lowest-level-is-gate-2015-1-marks"},{"level":6,"text":"a) 65","id":"a-65"},{"level":6,"text":"b) 67","id":"b-67"},{"level":6,"text":"c) 69","id":"c-69"},{"level":6,"text":"d) 83","id":"d-83"},{"level":6,"text":"Q2) The following numbers are inserted into an empty binary search tree in the given order: 10, 1, 3, 5, 15, 12, 16. What is the height of the binary search tree (the height is the maximum distance of a leaf node from the root)? (GATE 2004) (1 Marks)","id":"q2-the-following-numbers-are-inserted-into-an-empty-binary-search-tree-in-the-given-order-10-1-3-5-15-12-16-what-is-the-height-of-the-binary-search-tree-the-height-is-the-maximum-distance-of-a-leaf-node-from-the-root-gate-2004-1-marks"},{"level":6,"text":"a) 2","id":"a-2"},{"level":6,"text":"b) 3","id":"b-3"},{"level":6,"text":"c) 4","id":"c-4"},{"level":6,"text":"d) 6","id":"d-6"},{"level":6,"text":"Q3) A binary search tree is generated by inserting in order the following integers:  50,15,62,5,20,58,91,3,8,37,60,24. The number of nodes in the left subtree and right subtree of the root respectively is ? (GATE 1996) (1 Marks)","id":"q3-a-binary-search-tree-is-generated-by-inserting-in-order-the-following-integers-501562520589138376024-the-number-of-nodes-in-the-left-subtree-and-right-subtree-of-the-root-respectively-is-gate-1996-1-marks"},{"level":6,"text":"a) (4,7)","id":"a-47"},{"level":6,"text":"b) (7,4)","id":"b-74"},{"level":6,"text":"c) (8,3)","id":"c-83"},{"level":6,"text":"d) (3,8)","id":"d-38"},{"level":6,"text":"Q4) A binary search tree contains the value 1,2,3,4,5,6,7,8. The tree is traversed in pre-order and the values are printed out. Which of the following sequences is a valid output? (GATE 1997) (1 Marks)","id":"q4-a-binary-search-tree-contains-the-value-12345678-the-tree-is-traversed-in-pre-order-and-the-values-are-printed-out-which-of-the-following-sequences-is-a-valid-output-gate-1997-1-marks"},{"level":6,"text":"a) 53124786","id":"a-53124786"},{"level":6,"text":"b) 53126487","id":"b-53126487"},{"level":6,"text":"c) 53241678","id":"c-53241678"},{"level":6,"text":"d) 53124768","id":"d-53124768"},{"level":6,"text":"Q5) The pre-order transversal of a binary search tree is given by 12, 8, 6, 2, 7, 9, 10, 16, 15, 19, 17, 20. Then the post-order traversal of this tree is: (GATE 2017) (2 Marks)","id":"q5-the-pre-order-transversal-of-a-binary-search-tree-is-given-by-12-8-6-2-7-9-10-16-15-19-17-20-then-the-post-order-traversal-of-this-tree-is-gate-2017-2-marks"},{"level":6,"text":"a) 2, 6, 7, 8, 9, 10, 12, 15, 16, 17, 19, 20","id":"a-2-6-7-8-9-10-12-15-16-17-19-20"},{"level":6,"text":"b) 2, 7, 6, 10, 9, 8, 15, 17, 20, 19, 16, 12","id":"b-2-7-6-10-9-8-15-17-20-19-16-12"},{"level":6,"text":"c) 7, 2, 6, 8, 9, 10, 20, 17, 19, 15, 16, 12","id":"c-7-2-6-8-9-10-20-17-19-15-16-12"},{"level":6,"text":"d) 7, 6, 2, 10, 9, 8, 15, 16, 17, 20, 19, 12","id":"d-7-6-2-10-9-8-15-16-17-20-19-12"},{"level":6,"text":"Q6) Which of the following is/are correct inorder traversal sequence(s) of binary search tree(s)?  (GATE 2015) (1 Marks)","id":"q6-which-of-the-following-isare-correct-inorder-traversal-sequences-of-binary-search-trees-gate-2015-1-marks"},{"level":6,"text":"I. 3, 5, 7, 8, 15, 19, 25","id":"i-3-5-7-8-15-19-25"},{"level":6,"text":"II. 5, 8, 9, 12, 10, 15, 25","id":"ii-5-8-9-12-10-15-25"},{"level":6,"text":"III. 2, 7, 10, 8, 14, 16, 20","id":"iii-2-7-10-8-14-16-20"},{"level":6,"text":"IV. 4, 6, 7, 9 18, 20, 25","id":"iv-4-6-7-9-18-20-25"},{"level":6,"text":"a) I and IV only","id":"a-i-and-iv-only"},{"level":6,"text":"b) II and III only","id":"b-ii-and-iii-only"},{"level":6,"text":"c) II and IV only","id":"c-ii-and-iv-only"},{"level":6,"text":"d) II only","id":"d-ii-only"},{"level":6,"text":"Q7) The number of ways in which the numbers 1,2,3,4,5,6,7 can be inserted in an empty binary search tree, such that the resulting tree has height 6, is ? Note: The height of a tree with a single node is 0. (GATE 2015) (2 Marks)","id":"q7-the-number-of-ways-in-which-the-numbers-1234567-can-be-inserted-in-an-empty-binary-search-tree-such-that-the-resulting-tree-has-height-6-is-note-the-height-of-a-tree-with-a-single-node-is-0-gate-2015-2-marks"},{"level":6,"text":"Q8) When searching for the key value 60 in a binary search tree, nodes containing the key values 10, 20, 40, 50, 70, 80, 90 are traversed, not necessarily in the order given. How many different orders are possible in which these key values can occur on the search path from the root to the node containing the value 60? (GATE 2007) (1 Marks)","id":"q8-when-searching-for-the-key-value-60-in-a-binary-search-tree-nodes-containing-the-key-values-10-20-40-50-70-80-90-are-traversed-not-necessarily-in-the-order-given-how-many-different-orders-are-possible-in-which-these-key-values-can-occur-on-the-search-path-from-the-root-to-the-node-containing-the-value-60-gate-2007-1-marks"},{"level":6,"text":"a) 35","id":"a-35"},{"level":6,"text":"b) 64","id":"b-64"},{"level":6,"text":"c) 128","id":"c-128"},{"level":6,"text":"d) 5040","id":"d-5040"},{"level":6,"text":"Q9) What are the worst-case complexities of insertion and deletion of a key in a binary search tree? (GATE 2015) (1 Marks)","id":"q9-what-are-the-worst-case-complexities-of-insertion-and-deletion-of-a-key-in-a-binary-search-tree-gate-2015-1-marks"},{"level":6,"text":"a) O(logn) for both insertion and deletion","id":"a-ologn-for-both-insertion-and-deletion"},{"level":6,"text":"b) O(n) for both insertion and deletion","id":"b-on-for-both-insertion-and-deletion"},{"level":6,"text":"c) O(n) for insertion and O(logn) for deletion","id":"c-on-for-insertion-and-ologn-for-deletion"},{"level":6,"text":"d) O(logn) for insertion and O(n) for deletion","id":"d-ologn-for-insertion-and-on-for-deletion"},{"level":6,"text":"Q10) Which one of the following is the tightest upper bound that represents the time complexity of inserting an object into a binary search tree of n nodes? (GATE 2013) (1 Marks)","id":"q10-which-one-of-the-following-is-the-tightest-upper-bound-that-represents-the-time-complexity-of-inserting-an-object-into-a-binary-search-tree-of-n-nodes-gate-2013-1-marks"},{"level":6,"text":"a) O(1)","id":"a-o1"},{"level":6,"text":"b) O(Logn)","id":"b-ologn"},{"level":6,"text":"c) O(n)","id":"c-on"},{"level":6,"text":"d) O(n Logn)","id":"d-on-logn"}],
     content: `Type : #Note    
@@ -10366,7 +10366,7 @@ A10) c) O(n)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 819,
-    backlinks: ["moc-data-structures-and-algorithms","binary-tree","recursion"],
+    backlinks: ["moc-data-structures-and-algorithms","binary-tree","recursion","binary-tree-traversal","binary-tree-traversal"],
     links: ["dsa","linked-list","array"],
     outline: [{"level":2,"text":"Tree Traversal Techniques (Depth-First)","id":"tree-traversal-techniques-depth-first"},{"level":3,"text":"1. Pre-Order Traversal","id":"1-pre-order-traversal"},{"level":3,"text":"2. In-Order Traversal","id":"2-in-order-traversal"},{"level":3,"text":"3. Post-Order Traversal","id":"3-post-order-traversal"},{"level":6,"text":"Example: Traversal Output","id":"example-traversal-output"},{"level":3,"text":"Unique Tree Criteria","id":"unique-tree-criteria"},{"level":3,"text":"Constructing Tree from Postorder and Inorder","id":"constructing-tree-from-postorder-and-inorder"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Constructing Tree from Preorder and Inorder","id":"constructing-tree-from-preorder-and-inorder"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"Level Order Traversal","id":"level-order-traversal"},{"level":2,"text":"Special Types of Binary Trees","id":"special-types-of-binary-trees"},{"level":3,"text":"Complete Binary Tree (CBT)","id":"complete-binary-tree-cbt"},{"level":3,"text":"Binary Search Tree (BST)","id":"binary-search-tree-bst"},{"level":6,"text":"Q1) Which of the following binary tree has its order inorder and preorder traversal as BCAD and ABCD, respectively? (GATE 2004) (1 Marks)","id":"q1-which-of-the-following-binary-tree-has-its-order-inorder-and-preorder-traversal-as-bcad-and-abcd-respectively-gate-2004-1-marks"},{"level":6,"text":"Q2) Which of the following post order traversal of the above tree (GATE 1991) (1 Marks)","id":"q2-which-of-the-following-post-order-traversal-of-the-above-tree-gate-1991-1-marks"},{"level":6,"text":"a) fegcbdba","id":"a-fegcbdba"},{"level":6,"text":"b) gcbdafe","id":"b-gcbdafe"},{"level":6,"text":"c) gcdbfea","id":"c-gcdbfea"},{"level":6,"text":"d) fedgcba","id":"d-fedgcba"},{"level":6,"text":"Q3) The height of a tree is defined as the number of edges on the longest path in the tree. The function shown in the pseudocode below is invoked as height(root) to compute the height of a binary tree rooted at the tree pointer root.","id":"q3-the-height-of-a-tree-is-defined-as-the-number-of-edges-on-the-longest-path-in-the-tree-the-function-shown-in-the-pseudocode-below-is-invoked-as-heightroot-to-compute-the-height-of-a-binary-tree-rooted-at-the-tree-pointer-root"},{"level":6,"text":"The appropriate expressions for the two boxes B1 and B2 are","id":"the-appropriate-expressions-for-the-two-boxes-b1-and-b2-are"},{"level":6,"text":"(A) B1:(1+height(n->right)), B2: (1+max(h1,h2))","id":"a-b11heightn-right-b2-1maxh1h2"},{"level":6,"text":"(B) B1:(height(n->right)), B2 : (1+ max(h1,h2))","id":"b-b1heightn-right-b2-1-maxh1h2"},{"level":6,"text":"(C) B1 : height(n->right), B2 : max(h1,h2)","id":"c-b1-heightn-right-b2-maxh1h2"},{"level":6,"text":"(D) B1: (1+height(n->right)), B2 : max(h1,h2)","id":"d-b1-1heightn-right-b2-maxh1h2"},{"level":6,"text":"Q4) Consider the following C program segment","id":"q4-consider-the-following-c-program-segment"},{"level":6,"text":"The value returned by the function DoSomething when a pointer to the root of a non-empty tree is passed as argument is","id":"the-value-returned-by-the-function-dosomething-when-a-pointer-to-the-root-of-a-non-empty-tree-is-passed-as-argument-is"},{"level":6,"text":"(A) The number of leaf nodes in the tree","id":"a-the-number-of-leaf-nodes-in-the-tree"},{"level":6,"text":"(B) The number of nodes in the tree","id":"b-the-number-of-nodes-in-the-tree"},{"level":6,"text":"(C) The number of internal nodes in the tree","id":"c-the-number-of-internal-nodes-in-the-tree"},{"level":6,"text":"(D) The height of the tree","id":"d-the-height-of-the-tree"}],
     content: `Type : #Note    
@@ -10563,7 +10563,7 @@ A4) (D) The height of the tree
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 688,
-    backlinks: ["moc-data-structures-and-algorithms","avl-tree","complete-binary-tree"],
+    backlinks: ["moc-data-structures-and-algorithms","avl-tree","complete-binary-tree","binary-tree","binary-tree","binary-tree"],
     links: ["graph","dsa","treedsa","c","binary-tree-traversal"],
     outline: [{"level":2,"text":"Definition","id":"definition"},{"level":2,"text":"Representation of tree in memory :","id":"representation-of-tree-in-memory"},{"level":2,"text":"C program to implement Binary Tree via Linked Representation","id":"c-program-to-implement-binary-tree-via-linked-representation"},{"level":2,"text":"Mathematical Properties of Binary Trees","id":"mathematical-properties-of-binary-trees"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Q1) Let T be a binary search tree with 15 nodes. The minimum and maximum possible heights of T are  ___ (GATE 2017) (1 Marks)","id":"q1-let-t-be-a-binary-search-tree-with-15-nodes-the-minimum-and-maximum-possible-heights-of-t-are-gate-2017-1-marks"},{"level":6,"text":"(A) 4 and 15 respectively","id":"a-4-and-15-respectively"},{"level":6,"text":"(B) 3 and 14 respectively","id":"b-3-and-14-respectively"},{"level":6,"text":"(C) 4 and 14 respectively","id":"c-4-and-14-respectively"},{"level":6,"text":"(D) 3 and 15 respectively","id":"d-3-and-15-respectively"},{"level":6,"text":"Q2) The height of a tree is the length of the longest root-to-leaf path in it. The maximum and minimum number of nodes in a binary tree of height 5 are (GATE - 2015) (1 Marks)","id":"q2-the-height-of-a-tree-is-the-length-of-the-longest-root-to-leaf-path-in-it-the-maximum-and-minimum-number-of-nodes-in-a-binary-tree-of-height-5-are-gate-2015-1-marks"},{"level":6,"text":"(A) 63 and 6, respectively","id":"a-63-and-6-respectively"},{"level":6,"text":"(B) 64 and 5, respectively","id":"b-64-and-5-respectively"},{"level":6,"text":"(C) 32 and 6, respectively","id":"c-32-and-6-respectively"},{"level":6,"text":"(D) 31 and 5, respectively","id":"d-31-and-5-respectively"},{"level":6,"text":"Q3) The height of a binary tree is the maximum number of edges in any root to leaf path. The maximum number of nodes in a binary tree of height h is: (GATE-2007) (1 Marks)","id":"q3-the-height-of-a-binary-tree-is-the-maximum-number-of-edges-in-any-root-to-leaf-path-the-maximum-number-of-nodes-in-a-binary-tree-of-height-h-is-gate-2007-1-marks"},{"level":6,"text":"a) $2^h-1$","id":"a-2h-1"},{"level":6,"text":"b) $2^{h-1}- 1$","id":"b-2h-1-1"},{"level":6,"text":"c) $2^{h+1}-1$","id":"c-2h1-1"},{"level":6,"text":"d) $2^{h+1}$","id":"d-2h1"},{"level":6,"text":"Q4) In a binary tree, for every node the difference between the number of nodes in the left and right subtrees is at most 2. If the height of the tree is h>0, then the minimum number of nodes in the tree is (GATE-2005) (2 Marks)","id":"q4-in-a-binary-tree-for-every-node-the-difference-between-the-number-of-nodes-in-the-left-and-right-subtrees-is-at-most-2-if-the-height-of-the-tree-is-h0-then-the-minimum-number-of-nodes-in-the-tree-is-gate-2005-2-marks"},{"level":6,"text":"a) $2^{h-1}$","id":"a-2h-1"},{"level":6,"text":"b) $2^{h-1}+1$","id":"b-2h-11"},{"level":6,"text":"c) $2^h- 1$","id":"c-2h-1"},{"level":6,"text":"d) $2^h$","id":"d-2h"},{"level":6,"text":"Q5) In a binary tree with $n$ nodes, every node has an odd number of descendants. Every node is considered to be its own descendant. What is the number of nodes in the tree that have exactly one child? (GATE - 2010) (1 Marks)","id":"q5-in-a-binary-tree-with-n-nodes-every-node-has-an-odd-number-of-descendants-every-node-is-considered-to-be-its-own-descendant-what-is-the-number-of-nodes-in-the-tree-that-have-exactly-one-child-gate-2010-1-marks"},{"level":6,"text":"(A) $0$","id":"a-0"},{"level":6,"text":"(B) $1$","id":"b-1"},{"level":6,"text":"(C) $\\frac{n-1}{2}$","id":"c-fracn-12"},{"level":6,"text":"(D) $n-1$","id":"d-n-1"}],
     content: `Type : #Note    
@@ -10712,7 +10712,7 @@ A5) (A) $0$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 682,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","box-urn-bag-type-problems","box-urn-bag-type-problems"],
     links: ["probability","probability-introduction"],
     outline: [{"level":2,"text":"Concept : \"drawn one by one without replacement\" , \"drawn simultaneously\"","id":"concept-drawn-one-by-one-without-replacement-drawn-simultaneously"},{"level":6,"text":"Example : Calculate the Probability such that 3 balls are drawn from a box (3 Black, 3 White, 4 Red), are of 3 different colors","id":"example-calculate-the-probability-such-that-3-balls-are-drawn-from-a-box-3-black-3-white-4-red-are-of-3-different-colors"},{"level":6,"text":"1. Drawn one by one without replacement","id":"1-drawn-one-by-one-without-replacement"},{"level":6,"text":"2. Drawn simultaneously","id":"2-drawn-simultaneously"},{"level":2,"text":"Concept : \"drawn and put back\" , \"drawn one by one with replacement\"","id":"concept-drawn-and-put-back-drawn-one-by-one-with-replacement"},{"level":6,"text":"Example : A bag contains 10 blue marbles, 20 black marbles and 30 red marbles. A marble is drawn from the bag, its color recorded and it is but back in bag. This process is repeated. The probability that no two of the marbles drawn have the same color is ?","id":"example-a-bag-contains-10-blue-marbles-20-black-marbles-and-30-red-marbles-a-marble-is-drawn-from-the-bag-its-color-recorded-and-it-is-but-back-in-bag-this-process-is-repeated-the-probability-that-no-two-of-the-marbles-drawn-have-the-same-color-is"},{"level":6,"text":"a) 1/36","id":"a-136"},{"level":6,"text":"b) 1/6","id":"b-16"},{"level":6,"text":"c) 1/4","id":"c-14"},{"level":6,"text":"d) 1/3","id":"d-13"},{"level":6,"text":"Q1) A box contains 10 screws, 3 of which are defective. Two screws are drawn at random with replacement. The probability that non of the two screws will be defective.","id":"q1-a-box-contains-10-screws-3-of-which-are-defective-two-screws-are-drawn-at-random-with-replacement-the-probability-that-non-of-the-two-screws-will-be-defective"},{"level":6,"text":"a) 100%","id":"a-100"},{"level":6,"text":"b) 50%","id":"b-50"},{"level":6,"text":"c) 49%","id":"c-49"},{"level":6,"text":"d) NOTA","id":"d-nota"},{"level":6,"text":"Q2) A box contains 5 black and 5 red balls. Two balls are randomly picked one after another from the box, without replacement. The probability for both balls being red is","id":"q2-a-box-contains-5-black-and-5-red-balls-two-balls-are-randomly-picked-one-after-another-from-the-box-without-replacement-the-probability-for-both-balls-being-red-is"},{"level":6,"text":"a) 1/90","id":"a-190"},{"level":6,"text":"b) 1/2","id":"b-12"},{"level":6,"text":"c) 19/90","id":"c-1990"},{"level":6,"text":"d) 2/9","id":"d-29"},{"level":6,"text":"Q3) A box contains 2 washers, 3 nuts and 4 bolts items are drawn from the box at random one at a time without replacement. The probability of drawing 2 washers first followed by 3 nuts and subsequently the 4 bolts is","id":"q3-a-box-contains-2-washers-3-nuts-and-4-bolts-items-are-drawn-from-the-box-at-random-one-at-a-time-without-replacement-the-probability-of-drawing-2-washers-first-followed-by-3-nuts-and-subsequently-the-4-bolts-is"},{"level":6,"text":"a) 2/315","id":"a-2315"},{"level":6,"text":"b) 1/630","id":"b-1630"},{"level":6,"text":"c) 1/1260","id":"c-11260"},{"level":6,"text":"d) 1/2520","id":"d-12520"},{"level":6,"text":"Q4) There are 25 calculators in a box. Two of them are. defective. Suppose 5 calculators are randomly picked for inspection (i.e. each has the same chance of being selected), what is the probability that only one of the defective calculators will be include in the inspection?","id":"q4-there-are-25-calculators-in-a-box-two-of-them-are-defective-suppose-5-calculators-are-randomly-picked-for-inspection-ie-each-has-the-same-chance-of-being-selected-what-is-the-probability-that-only-one-of-the-defective-calculators-will-be-include-in-the-inspection"},{"level":6,"text":"a) 1/2","id":"a-12"},{"level":6,"text":"b) 1/3","id":"b-13"},{"level":6,"text":"c) 1/4","id":"c-14"},{"level":6,"text":"d) 1/5","id":"d-15"},{"level":6,"text":"Q5) Two white and two black balls, kept in two bins, are arranged in four ways as shown below. In each arrangement, a bin has to be chosen randomly and only one ball needs to be picked randomly from the chosen bin. Which one of the following arrangements has the highest probability for getting a white ball picked?","id":"q5-two-white-and-two-black-balls-kept-in-two-bins-are-arranged-in-four-ways-as-shown-below-in-each-arrangement-a-bin-has-to-be-chosen-randomly-and-only-one-ball-needs-to-be-picked-randomly-from-the-chosen-bin-which-one-of-the-following-arrangements-has-the-highest-probability-for-getting-a-white-ball-picked"},{"level":6,"text":"Q6) An urn contains 5 red and 7 green balls. A ball is drawn at random and its colour is noted. The ball is placed back into the urn along with another ball of the same colour. The probability of getting a red ball in the next draw is","id":"q6-an-urn-contains-5-red-and-7-green-balls-a-ball-is-drawn-at-random-and-its-colour-is-noted-the-ball-is-placed-back-into-the-urn-along-with-another-ball-of-the-same-colour-the-probability-of-getting-a-red-ball-in-the-next-draw-is"},{"level":6,"text":"a) 65/156","id":"a-65156"},{"level":6,"text":"b) 67/156","id":"b-67156"},{"level":6,"text":"c) 79/156","id":"c-79156"},{"level":6,"text":"d) 89/156","id":"d-89156"}],
     content: `Type : #Note    
@@ -10839,7 +10839,7 @@ $\\frac{5}{12}\\times \\frac{6}{13} + \\frac{7}{12} \\times \\frac{5}{13}=\\frac
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 502,
-    backlinks: ["continuec","control-structuresc"],
+    backlinks: ["continuec","control-structuresc","breakc","breakc","breakc"],
     links: ["c","jump-statements","loop","switch-casec","forc","whilec","do-whilec"],
     outline: [{"level":6,"text":"Examples :","id":"examples"},{"level":6,"text":"break in for.c|for loop","id":"break-in-forcfor-loop"},{"level":6,"text":"break in while.c|while loop","id":"break-in-whilecwhile-loop"},{"level":6,"text":"break in do-while.c|do-while loop","id":"break-in-do-whilecdo-while-loop"},{"level":6,"text":"break in switch-case.c|switch-case","id":"break-in-switch-casecswitch-case"},{"level":6,"text":"WAP to check given number is prime or not","id":"wap-to-check-given-number-is-prime-or-not"},{"level":6,"text":"WAP to print all the prime numbers between 1 to 500.","id":"wap-to-print-all-the-prime-numbers-between-1-to-500"}],
     content: `Type : #Note    
@@ -11041,7 +11041,7 @@ int main(){
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 337,
-    backlinks: ["moc-data-structures-and-algorithms","insertion-sort","sorting"],
+    backlinks: ["moc-data-structures-and-algorithms","insertion-sort","sorting","bubble-sort","bubble-sort"],
     links: ["dsa","sort","sorting"],
     outline: [{"level":5,"text":"Using nested for loop:","id":"using-nested-for-loop"},{"level":5,"text":"Using while loop:","id":"using-while-loop"},{"level":2,"text":"Conclusion","id":"conclusion"}],
     content: `Type : #Note    
@@ -11145,7 +11145,7 @@ print(k)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 509,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","calculus-formulas","calculus-formulas"],
     links: ["maths"],
     outline: [{"level":2,"text":"Basic derivatives","id":"basic-derivatives"},{"level":2,"text":"Product rule","id":"product-rule"},{"level":2,"text":"Quotient rule","id":"quotient-rule"},{"level":2,"text":"Chain rule","id":"chain-rule"}],
     content: `Type : #Note    
@@ -11347,7 +11347,7 @@ Order of priority:
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 294,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","cards","cards"],
     links: ["probability"],
     outline: [{"level":6,"text":"Example : A card is drawn at random from an ordinary pack of playing cards.Find the probability of its being","id":"example-a-card-is-drawn-at-random-from-an-ordinary-pack-of-playing-cardsfind-the-probability-of-its-being"},{"level":6,"text":"a. An ace","id":"a-an-ace"},{"level":6,"text":"b) a six or a heart","id":"b-a-six-or-a-heart"},{"level":6,"text":"c) Neither 9 nor a spade","id":"c-neither-9-nor-a-spade"},{"level":6,"text":"Q1) Two cards are drawn at random in succession with replacement from a deck of 52 well shuffled cards, probability of getting both 'Aces' is ?","id":"q1-two-cards-are-drawn-at-random-in-succession-with-replacement-from-a-deck-of-52-well-shuffled-cards-probability-of-getting-both-aces-is"},{"level":6,"text":"a) 1/169","id":"a-1169"},{"level":6,"text":"b) 2/169","id":"b-2169"},{"level":6,"text":"c) 1/13","id":"c-113"},{"level":6,"text":"d) 2/13","id":"d-213"},{"level":6,"text":"Q2) From a pack of regular playing cards, two cards are drawn at random. What is the provability that both cards will be kings, if first card is not replaced?","id":"q2-from-a-pack-of-regular-playing-cards-two-cards-are-drawn-at-random-what-is-the-provability-that-both-cards-will-be-kings-if-first-card-is-not-replaced"},{"level":6,"text":"a) 1/26","id":"a-126"},{"level":6,"text":"b) 1/52","id":"b-152"},{"level":6,"text":"c) 1/169","id":"c-1169"},{"level":6,"text":"d) 1/221","id":"d-1221"},{"level":6,"text":"Q3) Four cards are randomly selected from a pack of 52 cards. If the first two cards are kings, what is the probability that third card is a king ?","id":"q3-four-cards-are-randomly-selected-from-a-pack-of-52-cards-if-the-first-two-cards-are-kings-what-is-the-probability-that-third-card-is-a-king"},{"level":6,"text":"a) 4/52","id":"a-452"},{"level":6,"text":"b) 2/50","id":"b-250"},{"level":6,"text":"c) (1/52) × (1/52)","id":"c-152-152"},{"level":6,"text":"d) (1/52) × (1/51) × (1/50)","id":"d-152-151-150"}],
     content: `Type : #Note    
@@ -11422,7 +11422,7 @@ A3) b) 2/50
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 539,
-    backlinks: [],
+    backlinks: ["char-functionsc","char-functionsc"],
     links: ["c","datatypes","stringsc","array","primary-datatypesc"],
     outline: [{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"Examples :","id":"examples"}],
     content: `Type : #Note    
@@ -11587,7 +11587,7 @@ if (isalpha(c) && isupper(c))
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 100,
-    backlinks: [],
+    backlinks: ["cnn","cnn","cnn"],
     links: ["research","computer-vision","ml"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -11668,7 +11668,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 426,
-    backlinks: [],
+    backlinks: ["coding-assistant","coding-assistant"],
     links: ["ai","programming","llm"],
     outline: [{"level":2,"text":"How Coding Assistants Work?","id":"how-coding-assistants-work"},{"level":2,"text":"How Tool Use Works?","id":"how-tool-use-works"},{"level":4,"text":"Benefits of Strong Tool Use","id":"benefits-of-strong-tool-use"}],
     content: `Type : #Note    
@@ -11749,7 +11749,7 @@ The Complete Flow :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1040,
-    backlinks: ["moc-engineering-mathematics","probability-introduction"],
+    backlinks: ["moc-engineering-mathematics","probability-introduction","coin","coin"],
     links: ["probability","permutation-combination-formulas"],
     outline: [{"level":2,"text":"n Coins Tossed","id":"n-coins-tossed"},{"level":2,"text":"A Coin Tossed n Times","id":"a-coin-tossed-n-times"},{"level":3,"text":"Example: A coin is tossed 10 times","id":"example-a-coin-is-tossed-10-times"},{"level":3,"text":"1. P(first 3 tosses are Head)","id":"1-pfirst-3-tosses-are-head"},{"level":3,"text":"2. P(only first 3 tosses are Head)","id":"2-ponly-first-3-tosses-are-head"},{"level":3,"text":"3. P(exactly 3 Heads)","id":"3-pexactly-3-heads"},{"level":3,"text":"4. P(equal Heads and Tails)","id":"4-pequal-heads-and-tails"},{"level":3,"text":"5. P(4th Head appears on 9th throw)","id":"5-p4th-head-appears-on-9th-throw"},{"level":3,"text":"6. P(all outcomes are same)","id":"6-pall-outcomes-are-same"},{"level":3,"text":"7. P(at least 1 Head and 1 Tail)","id":"7-pat-least-1-head-and-1-tail"},{"level":3,"text":"8. Given first 4 outcomes are HHHH","id":"8-given-first-4-outcomes-are-hhhh"},{"level":3,"text":"9. Given first 4 are Heads","id":"9-given-first-4-are-heads"},{"level":6,"text":"Q1) A fair coin is tossed N times. The probability that Head does not turn up in any of the tosses is","id":"q1-a-fair-coin-is-tossed-n-times-the-probability-that-head-does-not-turn-up-in-any-of-the-tosses-is"},{"level":6,"text":"a) $\\frac{1}{2}^{N-1}$","id":"a-frac12n-1"},{"level":6,"text":"b)  $-\\frac{1}{2}^{N-1}$","id":"b-frac12n-1"},{"level":6,"text":"c)  $\\frac{1}{2}^{N}$","id":"c-frac12n"},{"level":6,"text":"d)  $1 - \\frac{1}{2}^{N-1}$","id":"d-1-frac12n-1"},{"level":6,"text":"Q2) A fair coin is tossed independently 4 times. The probability of the event \"the no. of time H shows up is more than the no. of times T shows up\" is ?","id":"q2-a-fair-coin-is-tossed-independently-4-times-the-probability-of-the-event-the-no-of-time-h-shows-up-is-more-than-the-no-of-times-t-shows-up-is"},{"level":6,"text":"a) 1/16","id":"a-116"},{"level":6,"text":"b) 1/8","id":"b-18"},{"level":6,"text":"c) 1/4","id":"c-14"},{"level":6,"text":"d) 5/16","id":"d-516"},{"level":6,"text":"Q3) Four fair coins are tossed simultaneously. The probability that at least one head and atleast one tail turns up is","id":"q3-four-fair-coins-are-tossed-simultaneously-the-probability-that-at-least-one-head-and-atleast-one-tail-turns-up-is"},{"level":6,"text":"a) 1/16","id":"a-116"},{"level":6,"text":"b) 1/8","id":"b-18"},{"level":6,"text":"c) 7/8","id":"c-78"},{"level":6,"text":"d) 15/16","id":"d-1516"},{"level":6,"text":"Q3) A coin is tossed thrice. Let X be the event that head occurs in each of the first two tosses. Let Y be the event that a tail occurs on the third toss. Let Z be the event that two tails occurs in three tosses. Based on the above information which one of the following statements is TRUE ?","id":"q3-a-coin-is-tossed-thrice-let-x-be-the-event-that-head-occurs-in-each-of-the-first-two-tosses-let-y-be-the-event-that-a-tail-occurs-on-the-third-toss-let-z-be-the-event-that-two-tails-occurs-in-three-tosses-based-on-the-above-information-which-one-of-the-following-statements-is-true"},{"level":6,"text":"a) X and Y are not independent","id":"a-x-and-y-are-not-independent"},{"level":6,"text":"b) Y and Z are dependent","id":"b-y-and-z-are-dependent"},{"level":6,"text":"c) Y and Z are independent","id":"c-y-and-z-are-independent"},{"level":6,"text":"d) X and Z are independent","id":"d-x-and-z-are-independent"},{"level":6,"text":"Q4) Consider a random experiment where two fair coins are tossed Let A be the event that denotes HEAD on both the throws, B be the event that denotes HEAD on the first throw, and C be the event that denotes HEAD on the second throw. Which of the following statements is/are TRUE?","id":"q4-consider-a-random-experiment-where-two-fair-coins-are-tossed-let-a-be-the-event-that-denotes-head-on-both-the-throws-b-be-the-event-that-denotes-head-on-the-first-throw-and-c-be-the-event-that-denotes-head-on-the-second-throw-which-of-the-following-statements-isare-true"},{"level":6,"text":"a) A and B are independent.","id":"a-a-and-b-are-independent"},{"level":6,"text":"b) A and C are independent.","id":"b-a-and-c-are-independent"},{"level":6,"text":"c) B and C are independent.","id":"c-b-and-c-are-independent"},{"level":6,"text":"d) Prob(B | C) = Prob(B)","id":"d-probb-c-probb"},{"level":6,"text":"Q5) A fair coin is tossed n times. The probability that the difference between the number of heads and tails in (n - 3) is","id":"q5-a-fair-coin-is-tossed-n-times-the-probability-that-the-difference-between-the-number-of-heads-and-tails-in-n-3-is"},{"level":6,"text":"a) $2^{-n}$","id":"a-2-n"},{"level":6,"text":"b) $0$","id":"b-0"},{"level":6,"text":"c) $^nC_{n-3}2^{-n}$","id":"c-ncn-32-n"},{"level":6,"text":"d) $2^{-n+3}$","id":"d-2-n3"},{"level":6,"text":"Q6) In a game two players X and Y are tossing a coin alternately. Whoever gets a 'head' first wins the game and the game is terminated. Find the chance that player X will win the game if he starts?","id":"q6-in-a-game-two-players-x-and-y-are-tossing-a-coin-alternately-whoever-gets-a-head-first-wins-the-game-and-the-game-is-terminated-find-the-chance-that-player-x-will-win-the-game-if-he-starts"},{"level":6,"text":"a) 1/3","id":"a-13"},{"level":6,"text":"b) 1/4","id":"b-14"},{"level":6,"text":"c) 2/3","id":"c-23"},{"level":6,"text":"d) 3/4","id":"d-34"},{"level":6,"text":"Q7) Consider the following experiment:","id":"q7-consider-the-following-experiment"},{"level":6,"text":"Step-1: Flip a fair coin twice.","id":"step-1-flip-a-fair-coin-twice"},{"level":6,"text":"Step-2: If the outcomes are (Tails, Heads) the output is Y and stop.","id":"step-2-if-the-outcomes-are-tails-heads-the-output-is-y-and-stop"},{"level":6,"text":"Step-3: If the outcomes are either (head, heads) or (Heads, Tails), then output is N and stop.","id":"step-3-if-the-outcomes-are-either-head-heads-or-heads-tails-then-output-is-n-and-stop"},{"level":6,"text":"Step-4: If the outcomes are (Tails, Tails), then go to step - 1.","id":"step-4-if-the-outcomes-are-tails-tails-then-go-to-step-1"},{"level":6,"text":"Probability that above experiment results in Y.","id":"probability-that-above-experiment-results-in-y"},{"level":6,"text":"Q8) Two coins R and S are tossed. The 4 joint events $H_{R}H_{S}$, $T_{R}T_{S}$, $H_{R}T_{S}$, $T_{R}H_{S}$ have probabilities 0.28, 0.18, 0.30, 0.24 respectively, where H represents head and T represents tail. Which one of the following is TRUE?","id":"q8-two-coins-r-and-s-are-tossed-the-4-joint-events-hrhs-trts-hrts-trhs-have-probabilities-028-018-030-024-respectively-where-h-represents-head-and-t-represents-tail-which-one-of-the-following-is-true"},{"level":6,"text":"a) The coin tosses are independent","id":"a-the-coin-tosses-are-independent"},{"level":6,"text":"b) R is fair, S is not","id":"b-r-is-fair-s-is-not"},{"level":6,"text":"c) S is fair, R is not","id":"c-s-is-fair-r-is-not"},{"level":6,"text":"d) The coin tosses are dependent","id":"d-the-coin-tosses-are-dependent"}],
     content: `Type : #Note    
@@ -12006,7 +12006,7 @@ P($T_{R} \\cap H_{s}$) = 0.24
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 197,
-    backlinks: ["adder"],
+    backlinks: ["adder","combinational-circuits"],
     links: ["dld","logic-gates"],
     outline: [{"level":3,"text":"Designing Procedure","id":"designing-procedure"}],
     content: `Type : #Note    
@@ -12062,7 +12062,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 358,
-    backlinks: ["moc-logic-and-philosophy"],
+    backlinks: ["moc-logic-and-philosophy","complementation","complementation","complementation"],
     links: ["dld","maths"],
     outline: [{"level":6,"text":"Q1) Consider the following Boolean expression F = (X + Y + Z)(X' + Y)(Y' + Z). Which of the following Boolean expression is/are equivalent to F' (complement of F)?","id":"q1-consider-the-following-boolean-expression-f-x-y-zx-yy-z-which-of-the-following-boolean-expression-isare-equivalent-to-f-complement-of-f"},{"level":6,"text":"a) (X' + Y' + Z')(X + Y')(Y + Z')","id":"a-x-y-zx-yy-z"},{"level":6,"text":"b) XY' + Z'","id":"b-xy-z"},{"level":6,"text":"c) (X + Z')(Y' + Z')","id":"c-x-zy-z"},{"level":6,"text":"d) XY' + YZ' + X'Y'Z'","id":"d-xy-yz-xyz"}],
     content: `Type : #Note    
@@ -12119,7 +12119,7 @@ d) XY' + YZ' + X'Y'Z' = (100)(101)(010)(110)(000) = ∑ m(0, 2, 4, 5, 6)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 314,
-    backlinks: ["moc-data-structures-and-algorithms","heap-tree"],
+    backlinks: ["moc-data-structures-and-algorithms","heap-tree","complete-binary-tree","complete-binary-tree"],
     links: ["dsa","binary-tree","array"],
     outline: [{"level":6,"text":"Q1) Let LASTPOST, LASTIN and LASTPRE denote the last vertex visited in a post order, inorder and preorder traversal, respectively of a complete binary tree. Which of the following is always true? (GATE 2000) (1 Mark)","id":"q1-let-lastpost-lastin-and-lastpre-denote-the-last-vertex-visited-in-a-post-order-inorder-and-preorder-traversal-respectively-of-a-complete-binary-tree-which-of-the-following-is-always-true-gate-2000-1-mark"},{"level":6,"text":"a) LASTIN = LASTPOST","id":"a-lastin-lastpost"},{"level":6,"text":"b) LASTIN = LASTPRE","id":"b-lastin-lastpre"},{"level":6,"text":"c) LASTPRE = LASTPOST","id":"c-lastpre-lastpost"},{"level":6,"text":"d) NOTA","id":"d-nota"},{"level":6,"text":"Q2) A scheme for storing binary trees in an array $X$ is as follows. Indexing of $X$ starts at 1 instead of 0. the root is stored at $X1$. For a node stored at $Xi$, the left child, if any, is stored in $X2i$ and the right child, if any, in $X2i+1$. To be able to store any binary tree on n vertices the minimum size of $X$ should be. (GATE - 2006) (2 Marks)(Hexaware 2020)","id":"q2-a-scheme-for-storing-binary-trees-in-an-array-x-is-as-follows-indexing-of-x-starts-at-1-instead-of-0-the-root-is-stored-at-x1-for-a-node-stored-at-xi-the-left-child-if-any-is-stored-in-x2i-and-the-right-child-if-any-in-x2i1-to-be-able-to-store-any-binary-tree-on-n-vertices-the-minimum-size-of-x-should-be-gate-2006-2-markshexaware-2020"},{"level":6,"text":"(A) $\\log _2 {n}$","id":"a-log-2-n"},{"level":6,"text":"(B) $n$","id":"b-n"},{"level":6,"text":"(C) $2n + 1$","id":"c-2n-1"},{"level":6,"text":"(D) $2^n - 1$","id":"d-2n-1"}],
     content: `Type : #Note    
@@ -12179,7 +12179,7 @@ A2) (D) $2^n - 1$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 411,
-    backlinks: ["moc-engineering-mathematics","number-system"],
+    backlinks: ["moc-engineering-mathematics","number-system","complex-numbers","complex-numbers"],
     links: ["maths"],
     outline: [],
     content: `Type : #Note    
@@ -12359,7 +12359,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1152,
-    backlinks: [],
+    backlinks: ["complex-pointersc"],
     links: ["c"],
     outline: [{"level":2,"text":"Precedence Rules for Reading Pointers","id":"precedence-rules-for-reading-pointers"},{"level":3,"text":"Operator Precedence Hierarchy","id":"operator-precedence-hierarchy"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Decoding Methodology","id":"decoding-methodology"},{"level":2,"text":"Concept Analysis: Arrays vs. Pointers","id":"concept-analysis-arrays-vs-pointers"},{"level":3,"text":"Array of Pointers vs. Pointer to an Array","id":"array-of-pointers-vs-pointer-to-an-array"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Detailed Pointer Scenarios","id":"detailed-pointer-scenarios"},{"level":3,"text":"Function Pointers","id":"function-pointers"},{"level":4,"text":"Pointer to a Function","id":"pointer-to-a-function"},{"level":4,"text":"Function Returning a Pointer","id":"function-returning-a-pointer"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Advanced and Complex Declarations","id":"advanced-and-complex-declarations"},{"level":4,"text":"Multi-level Pointers","id":"multi-level-pointers"},{"level":4,"text":"Complex Combinations","id":"complex-combinations"},{"level":6,"text":"Q1) Interpret int ((p)())10","id":"q1-interpret-int-p10"},{"level":6,"text":"Q2) Interpret int ((p5)())()","id":"q2-interpret-int-p5"},{"level":2,"text":"Invalid Declarations","id":"invalid-declarations"}],
     content: `Type : #Note    
@@ -12657,7 +12657,7 @@ Certain combinations are syntactically valid but logically impossible in C, lead
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1224,
-    backlinks: ["moc-engineering-mathematics","event-operations","probability-keywords"],
+    backlinks: ["moc-engineering-mathematics","event-operations","probability-keywords","conditional-probability","conditional-probability"],
     links: ["probability","bayes-theorem"],
     outline: [{"level":3,"text":"Formulas","id":"formulas"},{"level":6,"text":"Example : A and B are events such that P(A ∪ B) = 3/4 ; P(A ∩ B) = 1/4 ; P(A') = 2/3. Find the value of P(A' ∩ B)","id":"example-a-and-b-are-events-such-that-pa-b-34-pa-b-14-pa-23-find-the-value-of-pa-b"},{"level":6,"text":"Q1) It is given that the events A and B are such that P(A) = 1/4, P(A|B) = 1/2 and P(B|A) = 2/3, then P(B) is ?","id":"q1-it-is-given-that-the-events-a-and-b-are-such-that-pa-14-pab-12-and-pba-23-then-pb-is"},{"level":6,"text":"a) 1/6","id":"a-16"},{"level":6,"text":"b) 1/3","id":"b-13"},{"level":6,"text":"c) 2/3","id":"c-23"},{"level":6,"text":"d) 1/2","id":"d-12"},{"level":6,"text":"Q2) Let X and Y be two events such that P(X) = 1/3, P(X/Y) =1/2 and P(Y/X) = 2/5, Then :","id":"q2-let-x-and-y-be-two-events-such-that-px-13-pxy-12-and-pyx-25-then"},{"level":6,"text":"a) P(Y) = 4/15","id":"a-py-415"},{"level":6,"text":"b) P(X'/Y) = 1/2","id":"b-pxy-12"},{"level":6,"text":"c) P(X ∩ Y) = 1/5","id":"c-px-y-15"},{"level":6,"text":"d) P(X ∪ Y) = 2/5","id":"d-px-y-25"},{"level":6,"text":"Q3) A coin is tossed twice and the four possible outcomes are assumed to be equally likely. If A is the event 'both head and tail have appeared', and B be the event, 'at most one tail is observed', find P(A), P(B), P(A/B) and P(B/A)","id":"q3-a-coin-is-tossed-twice-and-the-four-possible-outcomes-are-assumed-to-be-equally-likely-if-a-is-the-event-both-head-and-tail-have-appeared-and-b-be-the-event-at-most-one-tail-is-observed-find-pa-pb-pab-and-pba"},{"level":6,"text":"Q4) Let 0<P(A)<1,0<P(B)<1 and P(AUB)=P(A)+P(B) - P(A) P(B) then","id":"q4-let-0pa10pb1-and-paubpapb-pa-pb-then"},{"level":6,"text":"a) P(B/A) = P(B) -P(A)","id":"a-pba-pb-pa"},{"level":6,"text":"b) P(A'-B')=P(A') -P(B')","id":"b-pa-bpa-pb"},{"level":6,"text":"c) P(AUB)'= P(A') P(B')","id":"c-paub-pa-pb"},{"level":6,"text":"d) P(A/B) = P(A)","id":"d-pab-pa"},{"level":6,"text":"Q5) Let E' denote the complement of an event E. Let E, F, G be pairwise independent events with P(G) > 0 and P(E ∩ F ∩ G) = 0 then P(E' ∩ F' / G) will be","id":"q5-let-e-denote-the-complement-of-an-event-e-let-e-f-g-be-pairwise-independent-events-with-pg-0-and-pe-f-g-0-then-pe-f-g-will-be"},{"level":6,"text":"a) P(E') + P(F')","id":"a-pe-pf"},{"level":6,"text":"b) P(E') - P(F')","id":"b-pe-pf"},{"level":6,"text":"c) P(E') - P(F)","id":"c-pe-pf"},{"level":6,"text":"d) P(E) - P(F')","id":"d-pe-pf"},{"level":6,"text":"Q6) 40% of the population of a town are voters. 50% are educated and 20% are educated voters. A person is chosen at random","id":"q6-40-of-the-population-of-a-town-are-voters-50-are-educated-and-20-are-educated-voters-a-person-is-chosen-at-random"},{"level":6,"text":"a) If he is educated what is probability that he is a voters.","id":"a-if-he-is-educated-what-is-probability-that-he-is-a-voters"},{"level":6,"text":"b) If he is a voter what is the probability that he is not educated","id":"b-if-he-is-a-voter-what-is-the-probability-that-he-is-not-educated"},{"level":6,"text":"c) What is the probability that he is neither voter nor educated.","id":"c-what-is-the-probability-that-he-is-neither-voter-nor-educated"},{"level":6,"text":"Q7) A two-faced fair coin has its faces designated as head (H) and tail (T). This coin is tossed three times in succession to record the following outcomes: H. H. H. If the coin is tossed one more time, the probability (up to one decimal place) of obtaining H again given the previous realizations of H, H and H would be ?","id":"q7-a-two-faced-fair-coin-has-its-faces-designated-as-head-h-and-tail-t-this-coin-is-tossed-three-times-in-succession-to-record-the-following-outcomes-h-h-h-if-the-coin-is-tossed-one-more-time-the-probability-up-to-one-decimal-place-of-obtaining-h-again-given-the-previous-realizations-of-h-h-and-h-would-be"},{"level":6,"text":"Q8) You are given three coins: one has heads on both faces, the seconds has tails on both faces, and the third has a head on one face and a tail on the other. You choose a coin at random and toss it, and it comes up heads. The probability that the other face is tails is","id":"q8-you-are-given-three-coins-one-has-heads-on-both-faces-the-seconds-has-tails-on-both-faces-and-the-third-has-a-head-on-one-face-and-a-tail-on-the-other-you-choose-a-coin-at-random-and-toss-it-and-it-comes-up-heads-the-probability-that-the-other-face-is-tails-is"},{"level":6,"text":"a) 1/4","id":"a-14"},{"level":6,"text":"b) 1/3","id":"b-13"},{"level":6,"text":"c) 1/2","id":"c-12"},{"level":6,"text":"d) 2/3","id":"d-23"},{"level":6,"text":"Q9) A box contains 4 white balls and 3 red balls. In succession, two balls are randomly selected and removed from the box. Given that the first removed ball is white, the probability that the second removed ball is red is","id":"q9-a-box-contains-4-white-balls-and-3-red-balls-in-succession-two-balls-are-randomly-selected-and-removed-from-the-box-given-that-the-first-removed-ball-is-white-the-probability-that-the-second-removed-ball-is-red-is"},{"level":6,"text":"a) 1/3","id":"a-13"},{"level":6,"text":"b) 3/7","id":"b-37"},{"level":6,"text":"c) 1/2","id":"c-12"},{"level":6,"text":"d) 4/7","id":"d-47"},{"level":6,"text":"Q10) A dice is rolled twice and the sum of the numbers appearing on them is observed to be 7. What is the conditional probability that the number 2 has appeared at least once.","id":"q10-a-dice-is-rolled-twice-and-the-sum-of-the-numbers-appearing-on-them-is-observed-to-be-7-what-is-the-conditional-probability-that-the-number-2-has-appeared-at-least-once"},{"level":6,"text":"Q11) In a town there are equal number of men and women. In which 50% of men and 20% of women are employed. Then find the probability that person is an unemployed person if person is selected randomly.","id":"q11-in-a-town-there-are-equal-number-of-men-and-women-in-which-50-of-men-and-20-of-women-are-employed-then-find-the-probability-that-person-is-an-unemployed-person-if-person-is-selected-randomly"},{"level":6,"text":"Q12) A person has undertaken a construction job and the probability that there is strike is 0.3. The probability that construction job will be completed on time when there is strike is 0.35 and probability that construction job will be completed on time when there is no strike = 0.45. Find the probability that construction job is completed on time.","id":"q12-a-person-has-undertaken-a-construction-job-and-the-probability-that-there-is-strike-is-03-the-probability-that-construction-job-will-be-completed-on-time-when-there-is-strike-is-035-and-probability-that-construction-job-will-be-completed-on-time-when-there-is-no-strike-045-find-the-probability-that-construction-job-is-completed-on-time"},{"level":6,"text":"Q13) There are two bags. The first bag contains 5 white and 3 black balls and the second bag contains 3 white and 5 black balls. Two balls are drawn at random from the first bag and are put into the second bag without noticing their colours. Then two balls are drawn from the second bag. Find the probability that the balls are white and black.","id":"q13-there-are-two-bags-the-first-bag-contains-5-white-and-3-black-balls-and-the-second-bag-contains-3-white-and-5-black-balls-two-balls-are-drawn-at-random-from-the-first-bag-and-are-put-into-the-second-bag-without-noticing-their-colours-then-two-balls-are-drawn-from-the-second-bag-find-the-probability-that-the-balls-are-white-and-black"},{"level":6,"text":"Q14) An insurance company insured 200 scooter drivers, 4000 car drivers and 6000 truck drivers. The probability of an accident involving a scooter driver, car driver and a truck drivers is 0.01, 0.03 and 0.15 respectively. One of the insured persons meets with an accident. What is the probability that he is a scooter driver?","id":"q14-an-insurance-company-insured-200-scooter-drivers-4000-car-drivers-and-6000-truck-drivers-the-probability-of-an-accident-involving-a-scooter-driver-car-driver-and-a-truck-drivers-is-001-003-and-015-respectively-one-of-the-insured-persons-meets-with-an-accident-what-is-the-probability-that-he-is-a-scooter-driver"}],
     content: `Type : #Note    
@@ -12841,7 +12841,7 @@ $\\frac{{0.01\\times 200}}{0.01 \\times 200+0.03 \\times 4000 + 0.15 \\times 600
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 148,
-    backlinks: [],
+    backlinks: ["context-engineering","context-engineering"],
     links: ["ai"],
     outline: [{"level":6,"text":"Example","id":"example"},{"level":3,"text":"5 Layers of Context","id":"5-layers-of-context"},{"level":4,"text":"1. Identity Context","id":"1-identity-context"},{"level":4,"text":"2. World Context","id":"2-world-context"},{"level":4,"text":"3. Task Context","id":"3-task-context"},{"level":4,"text":"4. Example Context","id":"4-example-context"},{"level":4,"text":"5. Constraint Context","id":"5-constraint-context"}],
     content: `Type : #Note    
@@ -12903,7 +12903,7 @@ What are the boundaries, rules, non-negotiables?
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 541,
-    backlinks: ["control-structuresc"],
+    backlinks: ["control-structuresc","continuec","continuec","continuec"],
     links: ["c","jump-statements","loop","switch-casec","whilec","do-whilec","forc","nestedloopc","breakc"],
     outline: [{"level":6,"text":"Examples :","id":"examples"},{"level":6,"text":"continue in while.c|while loop","id":"continue-in-whilecwhile-loop"},{"level":6,"text":"continue in do-while.c|do-while loop","id":"continue-in-do-whilecdo-while-loop"},{"level":6,"text":"continue in for.c|for","id":"continue-in-forcfor"},{"level":6,"text":"continue in nested_loop.c|nested loop","id":"continue-in-nestedloopcnested-loop"},{"level":6,"text":"Q1) Find the output","id":"q1-find-the-output"},{"level":6,"text":"Q2) Find the Output","id":"q2-find-the-output"}],
     content: `Type : #Note    
@@ -13079,7 +13079,7 @@ A2) \`1 2 3 4 \`
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 116,
-    backlinks: ["1st-c-program","do-whilec","forc","nestedloopc","pattern-questionsc","whilec","c"],
+    backlinks: ["1st-c-program","do-whilec","forc","nestedloopc","pattern-questionsc","whilec","c","control-structuresc","control-structuresc","control-structuresc"],
     links: ["c","loop","conditional","jump-statements","simple-ifc","if-elsec","nested-ifc","else-if-ladderc","switch-casec","forc","whilec","do-whilec","breakc","continuec"],
     outline: [],
     content: `Type : #Note    
@@ -13124,7 +13124,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 480,
-    backlinks: ["moc-engineering-mathematics","arcface","face-alignment","matrix"],
+    backlinks: ["moc-engineering-mathematics","arcface","face-alignment","matrix","coordinate-geometry","coordinate-geometry"],
     links: ["maths","face-alignment","arcface","poetry-matrix"],
     outline: [{"level":2,"text":"Distance Formula","id":"distance-formula"},{"level":2,"text":"Section Formula","id":"section-formula"},{"level":2,"text":"Slope","id":"slope"},{"level":2,"text":"Equation of Line","id":"equation-of-line"},{"level":2,"text":"Slope from general form","id":"slope-from-general-form"},{"level":2,"text":"Conditions","id":"conditions"},{"level":2,"text":"Standard Equation","id":"standard-equation"},{"level":2,"text":"General Form","id":"general-form"},{"level":2,"text":"Center and Radius","id":"center-and-radius"},{"level":2,"text":"Equation of diameter","id":"equation-of-diameter"},{"level":2,"text":"Tangent to circle","id":"tangent-to-circle"},{"level":2,"text":"Standard Equation","id":"standard-equation"},{"level":2,"text":"Key elements","id":"key-elements"},{"level":2,"text":"Length of tangent from point to circle","id":"length-of-tangent-from-point-to-circle"},{"level":2,"text":"Condition of tangency","id":"condition-of-tangency"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -13330,7 +13330,7 @@ Status : #complete
     created: "2026-05-12",
     modified: "2026-05-12",
     wordCount: 355,
-    backlinks: [],
+    backlinks: ["data-models","data-models"],
     links: ["dbms"],
     outline: [{"level":2,"text":"Components of Data Model","id":"components-of-data-model"},{"level":2,"text":"Types of Data Models","id":"types-of-data-models"},{"level":3,"text":"1. Hierarchical Model","id":"1-hierarchical-model"},{"level":3,"text":"2. Network Model","id":"2-network-model"},{"level":3,"text":"3. Relational Model","id":"3-relational-model"},{"level":2,"text":"Classification of Data Models","id":"classification-of-data-models"},{"level":3,"text":"1. Object-Based Models","id":"1-object-based-models"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"2. Record-Based Models","id":"2-record-based-models"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"3. Physical Data Models","id":"3-physical-data-models"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"Model Selection","id":"model-selection"}],
     content: `Type : #Note    
@@ -13465,7 +13465,7 @@ Each data model has 3 main components:
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 688,
-    backlinks: ["moc-data-structures-and-algorithms","array","linked-list","stack"],
+    backlinks: ["moc-data-structures-and-algorithms","array","linked-list","stack","data-structures-basics","data-structures-basics","data-structures-basics","data-structures-basics"],
     links: ["dsa","gate","array","stack","linked-list","treedsa","graph"],
     outline: [{"level":3,"text":"Introduction to Data Structures","id":"introduction-to-data-structures"},{"level":3,"text":"Data Structure","id":"data-structure"},{"level":3,"text":"Effect of Data Structure","id":"effect-of-data-structure"},{"level":6,"text":"Data structures can be divided in two parts.","id":"data-structures-can-be-divided-in-two-parts"},{"level":3,"text":"Primitive Data Structures","id":"primitive-data-structures"},{"level":3,"text":"Non Primitive Data Structures","id":"non-primitive-data-structures"},{"level":4,"text":"Homogeneous Data Structures","id":"homogeneous-data-structures"},{"level":4,"text":"Heterogenous Data Structures","id":"heterogenous-data-structures"}],
     content: `Type : #Note    
@@ -13592,7 +13592,7 @@ The different types of data structures that we are going to study, they are the 
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 469,
-    backlinks: ["tokensc","type-conversionc","c"],
+    backlinks: ["tokensc","type-conversionc","c","datatypesc"],
     links: ["c","datatypes","primary-datatypesc","array"],
     outline: [{"level":2,"text":"1. Primary DataTypes.c|Primary/Basic/Predefined Data Types","id":"1-primary-datatypescprimarybasicpredefined-data-types"},{"level":3,"text":"Type Modifiers","id":"type-modifiers"},{"level":2,"text":"2. Derived Data Types","id":"2-derived-data-types"},{"level":3,"text":"Types :","id":"types"},{"level":2,"text":"3. User-Defined Data Types","id":"3-user-defined-data-types"},{"level":3,"text":"Types :","id":"types"},{"level":6,"text":"Q1) Which of the following is a derived data type?","id":"q1-which-of-the-following-is-a-derived-data-type"},{"level":6,"text":"a) int","id":"a-int"},{"level":6,"text":"b) float","id":"b-float"},{"level":6,"text":"c) array","id":"c-array"},{"level":6,"text":"d) enum","id":"d-enum"},{"level":6,"text":"Q2) Which is a user-defined data type?","id":"q2-which-is-a-user-defined-data-type"},{"level":6,"text":"a) pointer","id":"a-pointer"},{"level":6,"text":"b) structure","id":"b-structure"},{"level":6,"text":"c) double","id":"c-double"},{"level":6,"text":"d) char","id":"d-char"},{"level":6,"text":"Q3) Which declaration is invalid?","id":"q3-which-declaration-is-invalid"},{"level":6,"text":"a) unsigned int x;","id":"a-unsigned-int-x"},{"level":6,"text":"b) short int y;","id":"b-short-int-y"},{"level":6,"text":"c) unsigned float f;","id":"c-unsigned-float-f"},{"level":6,"text":"d) signed char c;","id":"d-signed-char-c"},{"level":6,"text":"Q4) _Bool can store:","id":"q4-bool-can-store"},{"level":6,"text":"a) any integer","id":"a-any-integer"},{"level":6,"text":"b) only 0 or 1","id":"b-only-0-or-1"},{"level":6,"text":"c) any character","id":"c-any-character"},{"level":6,"text":"d) address only","id":"d-address-only"}],
     content: `Type : #Note    
@@ -13736,7 +13736,7 @@ A4) b) only 0 or 1
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 248,
-    backlinks: [],
+    backlinks: ["db-3-level-architecture","db-3-level-architecture"],
     links: ["dbms"],
     outline: [{"level":2,"text":"Data Independence","id":"data-independence"},{"level":3,"text":"Logical","id":"logical"},{"level":3,"text":"Physical","id":"physical"},{"level":2,"text":"Disadvantages of 3-level Architecture","id":"disadvantages-of-3-level-architecture"},{"level":3,"text":"Increased Complexity","id":"increased-complexity"},{"level":3,"text":"Performance Overhead","id":"performance-overhead"},{"level":3,"text":"Higher Cost","id":"higher-cost"},{"level":3,"text":"Difficult Implementation","id":"difficult-implementation"},{"level":3,"text":"Learning Curve","id":"learning-curve"}],
     content: `Type : #Note    
@@ -13823,7 +13823,7 @@ Two Types :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 277,
-    backlinks: [],
+    backlinks: ["db-languages","db-languages"],
     links: ["dbms"],
     outline: [{"level":2,"text":"DDL","id":"ddl"},{"level":2,"text":"SDL","id":"sdl"},{"level":2,"text":"VDL","id":"vdl"},{"level":2,"text":"DML","id":"dml"},{"level":3,"text":"High Level Non-Procedural Language","id":"high-level-non-procedural-language"},{"level":3,"text":"Low Level Procedural Language","id":"low-level-procedural-language"}],
     content: `Type : #Note    
@@ -13910,7 +13910,7 @@ Two Types :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 532,
-    backlinks: [],
+    backlinks: ["db-system-concepts","db-system-concepts"],
     links: ["dbms","db-users-administrators"],
     outline: [{"level":2,"text":"Data Model","id":"data-model"},{"level":2,"text":"Data Abstraction","id":"data-abstraction"},{"level":2,"text":"Schemas","id":"schemas"},{"level":2,"text":"DB State / Snapshot / Instance","id":"db-state-snapshot-instance"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"DB Users & Administrators|Users","id":"db-users-administratorsusers"},{"level":2,"text":"Query Processing","id":"query-processing"},{"level":2,"text":"Execution","id":"execution"},{"level":2,"text":"Control","id":"control"},{"level":2,"text":"Storage","id":"storage"},{"level":2,"text":"Flow","id":"flow"},{"level":2,"text":"Types of Utilities","id":"types-of-utilities"},{"level":3,"text":"1. Loading","id":"1-loading"},{"level":3,"text":"2. Backup","id":"2-backup"},{"level":4,"text":"Types:","id":"types"},{"level":3,"text":"3. File Reorganization","id":"3-file-reorganization"},{"level":3,"text":"4. Performance Monitoring","id":"4-performance-monitoring"}],
     content: `Type : #Note    
@@ -14080,7 +14080,7 @@ Utilities are tools provided by DBMS to perform maintenance, optimization, and d
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 234,
-    backlinks: ["db-system-concepts","dbms-basics"],
+    backlinks: ["db-system-concepts","dbms-basics","db-users-administrators","db-users-administrators"],
     links: ["dbms"],
     outline: [{"level":2,"text":"DBA (Database Administrator) (The 1st User)","id":"dba-database-administrator-the-1st-user"},{"level":2,"text":"DB Designer (The 2nd User)","id":"db-designer-the-2nd-user"},{"level":2,"text":"End User","id":"end-user"},{"level":3,"text":"Casual End-User","id":"casual-end-user"},{"level":3,"text":"Naive and Parametric User","id":"naive-and-parametric-user"},{"level":3,"text":"Sophisticated End User","id":"sophisticated-end-user"},{"level":3,"text":"Standalone User","id":"standalone-user"},{"level":3,"text":"System Analysts and Application Programmer","id":"system-analysts-and-application-programmer"},{"level":3,"text":"Workers behind the scene","id":"workers-behind-the-scene"}],
     content: `Type : #Note    
@@ -14158,7 +14158,7 @@ The End User can be of Different Types :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 238,
-    backlinks: [],
+    backlinks: ["dbms-architecture","dbms-architecture"],
     links: ["dbms"],
     outline: [{"level":2,"text":"1. Centralized Architecture  (Single Layer)","id":"1-centralized-architecture-single-layer"},{"level":3,"text":"Features:","id":"features"},{"level":2,"text":"2. Client-Server Architecture  (Double Layer)","id":"2-client-server-architecture-double-layer"},{"level":3,"text":"Components:","id":"components"},{"level":2,"text":"3. Three-Tier Architecture  (Triple Layer)","id":"3-three-tier-architecture-triple-layer"},{"level":3,"text":"Layers:","id":"layers"},{"level":2,"text":"Flow","id":"flow"}],
     content: `Type : #Note    
@@ -14240,7 +14240,7 @@ Client → Application Server → DB Server → Response back
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 754,
-    backlinks: ["transactions-and-concurrency-control"],
+    backlinks: ["transactions-and-concurrency-control","dbms-basics","dbms-basics","dbms-basics"],
     links: ["dbms","gate","db-users-administrators","transactions-and-concurrency-control"],
     outline: [{"level":3,"text":"Data","id":"data"},{"level":3,"text":"Information","id":"information"},{"level":3,"text":"Two ways to store data","id":"two-ways-to-store-data"},{"level":3,"text":"Problem with File System","id":"problem-with-file-system"},{"level":3,"text":"Data Base","id":"data-base"},{"level":3,"text":"Relational Data Base","id":"relational-data-base"},{"level":3,"text":"Data Base Management System","id":"data-base-management-system"},{"level":4,"text":"Defining","id":"defining"},{"level":4,"text":"Constructing","id":"constructing"},{"level":4,"text":"Manipulating","id":"manipulating"},{"level":4,"text":"Sharing","id":"sharing"},{"level":3,"text":"Types of DBMS","id":"types-of-dbms"},{"level":3,"text":"Characteristics of Database","id":"characteristics-of-database"},{"level":3,"text":"Advantages of DBMS Approach","id":"advantages-of-dbms-approach"}],
     content: `Type : #Note    
@@ -14381,7 +14381,7 @@ According to Structure
     created: "2026-05-12",
     modified: "2026-05-12",
     wordCount: 254,
-    backlinks: [],
+    backlinks: ["dbms-interface","dbms-interface"],
     links: ["dbms"],
     outline: [{"level":2,"text":"Menu Based Interface","id":"menu-based-interface"},{"level":2,"text":"Form Based Interface","id":"form-based-interface"},{"level":2,"text":"Graphical User Interface (GUI)","id":"graphical-user-interface-gui"},{"level":2,"text":"Natural Language Interface","id":"natural-language-interface"},{"level":2,"text":"Speech Input & Output","id":"speech-input-output"},{"level":2,"text":"Parametric User Interface","id":"parametric-user-interface"},{"level":2,"text":"Interface for DBA","id":"interface-for-dba"}],
     content: `Type : #Note    
@@ -14459,7 +14459,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 656,
-    backlinks: [],
+    backlinks: ["demand-function","demand-function"],
     links: ["finance"],
     outline: [{"level":2,"text":"1. Individual Demand Function","id":"1-individual-demand-function"},{"level":2,"text":"2. Market Demand Function","id":"2-market-demand-function"},{"level":2,"text":"3. Demand Schedule","id":"3-demand-schedule"},{"level":3,"text":"3.1 Individual Demand Schedule","id":"31-individual-demand-schedule"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"3.2 Market Demand Schedule","id":"32-market-demand-schedule"},{"level":6,"text":"Example : Assuming that there are 2 households in a market","id":"example-assuming-that-there-are-2-households-in-a-market"},{"level":2,"text":"4. Demand Curve","id":"4-demand-curve"},{"level":3,"text":"4.1 Individual Demand Curve","id":"41-individual-demand-curve"},{"level":3,"text":"4.2 Market Demand Curve","id":"42-market-demand-curve"}],
     content: `Type : #Note    
@@ -14627,7 +14627,7 @@ The **Demand Curve** is the graphical representation of the demand schedule, sho
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1062,
-    backlinks: [],
+    backlinks: ["demand","demand"],
     links: ["finance"],
     outline: [{"level":2,"text":"Definition of Demand","id":"definition-of-demand"},{"level":2,"text":"Demand vs. Desire","id":"demand-vs-desire"},{"level":2,"text":"Types of Demand","id":"types-of-demand"},{"level":3,"text":"1. Individual Demand","id":"1-individual-demand"},{"level":3,"text":"2. Market Demand","id":"2-market-demand"},{"level":2,"text":"1. Price of the Given Commodity","id":"1-price-of-the-given-commodity"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"2. Price of Related Goods","id":"2-price-of-related-goods"},{"level":3,"text":"Substitute Goods","id":"substitute-goods"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Complementary Goods","id":"complementary-goods"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"3. Income of the Consumer","id":"3-income-of-the-consumer"},{"level":3,"text":"Normal Goods","id":"normal-goods"},{"level":3,"text":"Inferred / inferior Goods","id":"inferred-inferior-goods"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"4. Tastes and Preferences","id":"4-tastes-and-preferences"},{"level":2,"text":"5. Expectations of Future Prices","id":"5-expectations-of-future-prices"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"6.  Size and Composition of Population","id":"6-size-and-composition-of-population"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"7. Season and Weather :","id":"7-season-and-weather"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"8. Distribution of Income","id":"8-distribution-of-income"}],
     content: `Type : #Note    
@@ -14825,7 +14825,7 @@ If consumers expect the price of cars to rise in the future, the current demand 
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 2158,
-    backlinks: ["moc-engineering-mathematics","determinants"],
+    backlinks: ["moc-engineering-mathematics","determinants","determinants-qs","determinants-qs","determinants-qs"],
     links: ["maths","questions","determinants"],
     outline: [{"level":6,"text":"Q1)","id":"q1"},{"level":6,"text":"(i) The above determinant represents which curve?","id":"i-the-above-determinant-represents-which-curve"},{"level":6,"text":"(ii) Straight line passes through?","id":"ii-straight-line-passes-through"},{"level":6,"text":"Q2) Find the Δ of this 4 X 4 matrix","id":"q2-find-the-of-this-4-x-4-matrix"},{"level":6,"text":"Q3) Find the Δ of the given 3 X 3 Matrix.","id":"q3-find-the-of-the-given-3-x-3-matrix"},{"level":6,"text":"Q4) Calculate the Δ of the given Matrices","id":"q4-calculate-the-of-the-given-matrices"},{"level":6,"text":"Q5) Solve this 3X3 Matrix.","id":"q5-solve-this-3x3-matrix"},{"level":6,"text":"Q6)  Solve the following matrix","id":"q6-solve-the-following-matrix"},{"level":6,"text":"Q7) Solve this determinant","id":"q7-solve-this-determinant"},{"level":6,"text":"Q8) Find the Solution of this determinant:","id":"q8-find-the-solution-of-this-determinant"},{"level":6,"text":"Q9) Solve this determinant","id":"q9-solve-this-determinant"},{"level":6,"text":"Q10) Calculate the Inverse of these Matrices","id":"q10-calculate-the-inverse-of-these-matrices"},{"level":6,"text":"Q11) If $A$ is a 4X4 matrix with $|A|=5$. Also $B=5A$. Then find the value of $|adj(adj(B))|$.","id":"q11-if-a-is-a-4x4-matrix-with-a5-also-b5a-then-find-the-value-of-adjadjb"},{"level":6,"text":"Q12) If $A$ is a 6X6 matrix. Also $B=2A$ and $|B|=3$. Then find the value of $|adj(adj(adj(A)))|$.","id":"q12-if-a-is-a-6x6-matrix-also-b2a-and-b3-then-find-the-value-of-adjadjadja"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -15323,7 +15323,7 @@ $⇒ |adj(adj(adj(A)))|= (\\frac{3}{2^6})^{125} =(\\frac{3}{64})^{125}$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1429,
-    backlinks: ["moc-engineering-mathematics","determinants-qs"],
+    backlinks: ["moc-engineering-mathematics","determinants-qs","determinants","determinants"],
     links: ["maths","determinants-qs"],
     outline: [{"level":2,"text":"Methods of Calculating Determinant (works for square matrix of any order)","id":"methods-of-calculating-determinant-works-for-square-matrix-of-any-order"},{"level":3,"text":"Trick 1 : Diagonal Matrix Determinant","id":"trick-1-diagonal-matrix-determinant"},{"level":3,"text":"Trick 2 : Upper Triangular and Lower Triangular Matrix Determinant","id":"trick-2-upper-triangular-and-lower-triangular-matrix-determinant"},{"level":3,"text":"Trick 3 : Shortcut of Calculation of any 3 x 3 matrix determinant(Rule of Sarrus):","id":"trick-3-shortcut-of-calculation-of-any-3-x-3-matrix-determinantrule-of-sarrus"},{"level":4,"text":"Step 1: Extend the matrix","id":"step-1-extend-the-matrix"},{"level":4,"text":"Step 2: Add the downward diagonal products","id":"step-2-add-the-downward-diagonal-products"},{"level":4,"text":"Step 3: Add the upward diagonal products","id":"step-3-add-the-upward-diagonal-products"},{"level":4,"text":"Step 4: Subtract","id":"step-4-subtract"},{"level":2,"text":"Rotation of Element:","id":"rotation-of-element"},{"level":3,"text":"Properties of Adjoint of a Matrix","id":"properties-of-adjoint-of-a-matrix"},{"level":3,"text":"Shortcut to calculate adj of a 2X2 matrix","id":"shortcut-to-calculate-adj-of-a-2x2-matrix"},{"level":3,"text":"Shortcut to Calculate adj of a 3X3 matrix","id":"shortcut-to-calculate-adj-of-a-3x3-matrix"},{"level":2,"text":"Gauss-Jordan Elimination","id":"gauss-jordan-elimination"},{"level":2,"text":"Properties of Inverse Matrix","id":"properties-of-inverse-matrix"},{"level":3,"text":"Method 1 : Cofactor (Laplace) Expansion","id":"method-1-cofactor-laplace-expansion"},{"level":3,"text":"Method 2 : Row/Column Operations","id":"method-2-rowcolumn-operations"}],
     content: `Type : #Note    
@@ -15584,7 +15584,7 @@ $M_{ij}$ → minor formed by deleting row $i$ and column $j$.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 989,
-    backlinks: ["moc-engineering-mathematics","probability-introduction"],
+    backlinks: ["moc-engineering-mathematics","probability-introduction","dice","dice"],
     links: ["probability"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"2 Dice Rolled Sum Condition","id":"2-dice-rolled-sum-condition"},{"level":6,"text":"Example : 2 dice rolled","id":"example-2-dice-rolled"},{"level":6,"text":"Example : 4 dice rolled","id":"example-4-dice-rolled"},{"level":6,"text":"Q1) Four fair six-sided dice are rolled. The probability that the sum of the results being 22 is x/1296. The value of x is ?  (GATE-2014) (CS-Set 1)","id":"q1-four-fair-six-sided-dice-are-rolled-the-probability-that-the-sum-of-the-results-being-22-is-x1296-the-value-of-x-is-gate-2014-cs-set-1"},{"level":6,"text":"Q2) Three person A, B, C throw a dice in succession till one gets 3 and wins the game. Find the probability of C winning. If C gets the chance followed by B followed by A.","id":"q2-three-person-a-b-c-throw-a-dice-in-succession-till-one-gets-3-and-wins-the-game-find-the-probability-of-c-winning-if-c-gets-the-chance-followed-by-b-followed-by-a"},{"level":6,"text":"Q3) A fair dice is rolled twice. The probability that an odd number will follow an even number","id":"q3-a-fair-dice-is-rolled-twice-the-probability-that-an-odd-number-will-follow-an-even-number"},{"level":6,"text":"a) 1/2","id":"a-12"},{"level":6,"text":"b) 1/6","id":"b-16"},{"level":6,"text":"c) 1/3","id":"c-13"},{"level":6,"text":"d) 1/4","id":"d-14"},{"level":6,"text":"Q4) Two fair dice are rolled and the sum r of the numbers turned up is considered","id":"q4-two-fair-dice-are-rolled-and-the-sum-r-of-the-numbers-turned-up-is-considered"},{"level":6,"text":"a) $P_{r}(r > 6) = \\frac{1}{6}$","id":"a-prr-6-frac16"},{"level":6,"text":"b) $P_{r}\\left( \\frac{r}{3} \\text{ is an integer} \\right) = \\frac{5}{6}$","id":"b-prleft-fracr3-text-is-an-integer-right-frac56"},{"level":6,"text":"c) $P_{r}\\left( r = 8 | \\frac{r}{4} \\text{{ is an integer}} \\right) = \\frac{5}{9}$","id":"c-prleft-r-8-fracr4-text-is-an-integer-right-frac59"},{"level":6,"text":"d) $P_{r}\\left( r = 6 | \\frac{r}{5} \\text{{ is an integer}} \\right) = \\frac{1}{18}$","id":"d-prleft-r-6-fracr5-text-is-an-integer-right-frac118"},{"level":6,"text":"Q5) A loaded dice has following probability distribution of occurrences","id":"q5-a-loaded-dice-has-following-probability-distribution-of-occurrences"},{"level":6,"text":"If three identical dice as the above are thrown, the probability of occurrence of value 1, 5 and 6 on the three dice is","id":"if-three-identical-dice-as-the-above-are-thrown-the-probability-of-occurrence-of-value-1-5-and-6-on-the-three-dice-is"},{"level":6,"text":"a) same as the probability of occurrence of 3, 4, 5","id":"a-same-as-the-probability-of-occurrence-of-3-4-5"},{"level":6,"text":"b) same as the probability of occurrence of 1, 2, 5","id":"b-same-as-the-probability-of-occurrence-of-1-2-5"},{"level":6,"text":"c) 1/128","id":"c-1128"},{"level":6,"text":"d) 5/8","id":"d-58"},{"level":6,"text":"Q6) A fair dice is tossed two times. The probability that the second toss results in a value that is higher than the first toss is","id":"q6-a-fair-dice-is-tossed-two-times-the-probability-that-the-second-toss-results-in-a-value-that-is-higher-than-the-first-toss-is"},{"level":6,"text":"a) 2/36","id":"a-236"},{"level":6,"text":"b) 2/6","id":"b-26"},{"level":6,"text":"c) 5/12","id":"c-512"},{"level":6,"text":"d) 1/2","id":"d-12"},{"level":6,"text":"Q7) When six unbiased dice are rolled simultaneously, the probability of getting all distinct numbers (i.e. 1,2, 3,4, 5 and 6) is  (GATE 2024) (1 M)","id":"q7-when-six-unbiased-dice-are-rolled-simultaneously-the-probability-of-getting-all-distinct-numbers-ie-12-34-5-and-6-is-gate-2024-1-m"},{"level":6,"text":"a) 5/324","id":"a-5324"},{"level":6,"text":"b) 11/324","id":"b-11324"},{"level":6,"text":"c) 1/324","id":"c-1324"},{"level":6,"text":"d) 7/324","id":"d-7324"}],
     content: `Type : #Note    
@@ -15777,7 +15777,7 @@ $\\frac{1}{6^6} \\times 6! = \\frac{10}{648} = \\frac{5}{324}$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1223,
-    backlinks: ["logic-gates"],
+    backlinks: ["logic-gates","digital-logic-basics","digital-logic-basics","digital-logic-basics"],
     links: ["gate","dld","logical-operators","primary-logical-operators-across-different-domains","k-map","logic-gates"],
     outline: [{"level":5,"text":"Electrical Engineering:","id":"electrical-engineering"},{"level":5,"text":"Electronic Engineering:","id":"electronic-engineering"},{"level":4,"text":"Advantages of Digital Systems","id":"advantages-of-digital-systems"},{"level":4,"text":"Disadvantages of Digital System","id":"disadvantages-of-digital-system"},{"level":6,"text":"Q) Design a digital system for a car manufacturing company, where we want to design a warning signal for a car, there are three inputs, lights of the car(L), day or night(D), ignition (on/off) .?","id":"q-design-a-digital-system-for-a-car-manufacturing-company-where-we-want-to-design-a-warning-signal-for-a-car-there-are-three-inputs-lights-of-the-carl-day-or-nightd-ignition-onoff"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -16012,7 +16012,7 @@ W = ac' + ab + a'b'c
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 190,
-    backlinks: ["moc-engineering-mathematics","set-theory"],
+    backlinks: ["moc-engineering-mathematics","set-theory","discrete-mathematics-introduction","discrete-mathematics-introduction","discrete-mathematics-introduction"],
     links: ["maths","gate"],
     outline: [],
     content: `Type : #Note    
@@ -16049,7 +16049,7 @@ Best way to do this Subject :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 351,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","distributions"],
     links: [],
     outline: [{"level":2,"text":"Discrete Distributions","id":"discrete-distributions"},{"level":2,"text":"Bernoulli Distribution","id":"bernoulli-distribution"},{"level":3,"text":"PMF","id":"pmf"},{"level":3,"text":"Mean & Variance","id":"mean-variance"},{"level":3,"text":"Identification","id":"identification"},{"level":2,"text":"Binomial Distribution","id":"binomial-distribution"},{"level":3,"text":"PMF","id":"pmf"},{"level":3,"text":"Mean & Variance","id":"mean-variance"},{"level":3,"text":"Identification","id":"identification"},{"level":2,"text":"Poisson Distribution","id":"poisson-distribution"},{"level":3,"text":"PMF","id":"pmf"},{"level":3,"text":"Mean & Variance","id":"mean-variance"},{"level":3,"text":"Identification","id":"identification"},{"level":2,"text":"Geometric Distribution","id":"geometric-distribution"},{"level":3,"text":"PMF","id":"pmf"},{"level":3,"text":"Mean & Variance","id":"mean-variance"},{"level":3,"text":"Identification","id":"identification"},{"level":2,"text":"Continuous Distributions","id":"continuous-distributions"},{"level":2,"text":"Uniform Distribution","id":"uniform-distribution"},{"level":3,"text":"PDF","id":"pdf"},{"level":3,"text":"Mean & Variance","id":"mean-variance"},{"level":3,"text":"Identification","id":"identification"},{"level":2,"text":"Exponential Distribution","id":"exponential-distribution"},{"level":3,"text":"PDF","id":"pdf"},{"level":3,"text":"Mean & Variance","id":"mean-variance"},{"level":3,"text":"Key Property","id":"key-property"},{"level":2,"text":"Normal Distribution","id":"normal-distribution"},{"level":3,"text":"PDF","id":"pdf"},{"level":3,"text":"Mean & Variance","id":"mean-variance"},{"level":2,"text":"Standard Normal Transformation","id":"standard-normal-transformation"},{"level":3,"text":"Formula","id":"formula"},{"level":2,"text":"Key Approximations","id":"key-approximations"},{"level":3,"text":"Binomial → Poisson","id":"binomial-poisson"},{"level":2,"text":"Quick Identification Clues","id":"quick-identification-clues"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -16281,7 +16281,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 636,
-    backlinks: ["breakc","continuec","control-structuresc","forc","loop"],
+    backlinks: ["breakc","continuec","control-structuresc","forc","loop","do-whilec","do-whilec","do-whilec"],
     links: ["c","loop","whilec","conditional","jump-statements","control-structuresc"],
     outline: [{"level":6,"text":"Examples :","id":"examples"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Examples :","id":"examples"}],
     content: `Type : #Note    
@@ -16507,7 +16507,7 @@ while (i < 10);
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 736,
-    backlinks: ["moc-logic-and-philosophy"],
+    backlinks: ["moc-logic-and-philosophy","duality","duality","duality"],
     links: ["maths","dld"],
     outline: [{"level":4,"text":"How to check weather a function is self-dual or not?","id":"how-to-check-weather-a-function-is-self-dual-or-not"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":4,"text":"How to check weather a function is orthogonal or not?","id":"how-to-check-weather-a-function-is-orthogonal-or-not"},{"level":6,"text":"Q1) Which of the following functions are self-dual and orthogonal?","id":"q1-which-of-the-following-functions-are-self-dual-and-orthogonal"},{"level":6,"text":"a) f(a, b, c) = ∑m(0, 3)","id":"a-fa-b-c-m0-3"},{"level":6,"text":"b) f(a, b, c) = ∑ m(0, 1, 6, 7)","id":"b-fa-b-c-m0-1-6-7"},{"level":6,"text":"c) f(a, b, c) = ∑ m(0, 1, 2, 4)","id":"c-fa-b-c-m0-1-2-4"},{"level":6,"text":"d) f(a, b, c) = ∏ M(3, 5, 6, 7)","id":"d-fa-b-c-m3-5-6-7"},{"level":6,"text":"Q2) The dual of a Boolean function F(X1, X2, ... , Xn, + , ×, '), written as F <sup>D</sup> , is the same expression as that of F with + and × swapped. F is said to be self dual if F = F <sup>D</sup> . The number of self dual functions with n boolean variables is? (GATE 2014) (1 Marks)","id":"q2-the-dual-of-a-boolean-function-fx1-x2-xn-written-as-f-supdsup-is-the-same-expression-as-that-of-f-with-and-swapped-f-is-said-to-be-self-dual-if-f-f-supdsup-the-number-of-self-dual-functions-with-n-boolean-variables-is-gate-2014-1-marks"},{"level":6,"text":"a) $2^n$","id":"a-2n"},{"level":6,"text":"b) $2^{n - 1}$","id":"b-2n-1"},{"level":6,"text":"c) $2^{(2014)^{(n)}}$","id":"c-22014n"},{"level":6,"text":"d) $2^{2^{(n-1)}}$","id":"d-22n-1"}],
     content: `Type : #Note    
@@ -16624,7 +16624,7 @@ A2) d
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 655,
-    backlinks: [],
+    backlinks: ["dynamic-memory-allocationc"],
     links: ["c","stack","pointersc","void-pointerc"],
     outline: [{"level":2,"text":"Core Concepts of DMA","id":"core-concepts-of-dma"},{"level":2,"text":"Standard Library Functions for DMA","id":"standard-library-functions-for-dma"},{"level":2,"text":"Memory Allocation: malloc() vs. calloc()","id":"memory-allocation-malloc-vs-calloc"},{"level":3,"text":"malloc() (Memory Allocation)","id":"malloc-memory-allocation"},{"level":3,"text":"calloc() (Contiguous Allocation)","id":"calloc-contiguous-allocation"},{"level":6,"text":"Example: Allocating an Array for $n$ Integers","id":"example-allocating-an-array-for-n-integers"},{"level":2,"text":"Modifying Memory: realloc()","id":"modifying-memory-realloc"},{"level":2,"text":"Memory Management: free()","id":"memory-management-free"},{"level":6,"text":"Q1) Why is type casting necessary for malloc and calloc?","id":"q1-why-is-type-casting-necessary-for-malloc-and-calloc"},{"level":6,"text":"Q2) What happens if you re-assign a pointer without freeing the DMA memory it pointed to?","id":"q2-what-happens-if-you-re-assign-a-pointer-without-freeing-the-dma-memory-it-pointed-to"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -16792,7 +16792,7 @@ A2) The memory block becomes "orphaned" in the heap. The program can no longer a
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 674,
-    backlinks: [],
+    backlinks: ["economics","economics"],
     links: ["finance"],
     outline: [{"level":4,"text":"Objectives :","id":"objectives"},{"level":2,"text":"Microeconomics","id":"microeconomics"},{"level":3,"text":"Alternative Names","id":"alternative-names"},{"level":3,"text":"Core Assumption","id":"core-assumption"},{"level":2,"text":"Macroeconomics","id":"macroeconomics"},{"level":3,"text":"Alternative Names","id":"alternative-names"},{"level":3,"text":"Core Assumption","id":"core-assumption"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Microeconomics v/s Macroeconomics","id":"microeconomics-vs-macroeconomics"},{"level":3,"text":"Fundamental Differences","id":"fundamental-differences"}],
     content: `Type : #Note    
@@ -16957,7 +16957,7 @@ The scope defines the area of study and the specific activities covered within e
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1587,
-    backlinks: [],
+    backlinks: ["elasticity-of-demand","elasticity-of-demand"],
     links: ["finance","law-of-demand"],
     outline: [{"level":2,"text":"Definition","id":"definition"},{"level":2,"text":"Formula","id":"formula"},{"level":3,"text":"Percentage Method / Flux Method / Proportionate Method / Mathematical Method","id":"percentage-method-flux-method-proportionate-method-mathematical-method"},{"level":3,"text":"Derivative Mathematical Form","id":"derivative-mathematical-form"},{"level":4,"text":"Summary Table of Variables","id":"summary-table-of-variables"},{"level":3,"text":"1. Perfectly Elastic Demand","id":"1-perfectly-elastic-demand"},{"level":6,"text":"Demand Curve :","id":"demand-curve"},{"level":6,"text":"Example Demand Schedule :","id":"example-demand-schedule"},{"level":3,"text":"2. Perfectly Inelastic Demand","id":"2-perfectly-inelastic-demand"},{"level":6,"text":"Demand Curve :","id":"demand-curve"},{"level":6,"text":"Example Demand Schedule","id":"example-demand-schedule"},{"level":3,"text":"3. Unitary Elastic Demand","id":"3-unitary-elastic-demand"},{"level":6,"text":"Demand Curve :","id":"demand-curve"},{"level":6,"text":"Example Demand Schedule :","id":"example-demand-schedule"},{"level":3,"text":"4. Elastic Demand / Highly Elastic Demand","id":"4-elastic-demand-highly-elastic-demand"},{"level":6,"text":"Demand Curve :","id":"demand-curve"},{"level":6,"text":"Example Demand Schedule :","id":"example-demand-schedule"},{"level":3,"text":"5. Inelastic Demand","id":"5-inelastic-demand"},{"level":6,"text":"Demand Curve :","id":"demand-curve"},{"level":6,"text":"Example Demand Schedule :","id":"example-demand-schedule"},{"level":3,"text":"Nature of Commodity","id":"nature-of-commodity"},{"level":3,"text":"Availability of Substitutes","id":"availability-of-substitutes"},{"level":3,"text":"Income Level of Consumers","id":"income-level-of-consumers"},{"level":3,"text":"Price Level of the Commodity","id":"price-level-of-the-commodity"},{"level":3,"text":"Urgency of the Commodity","id":"urgency-of-the-commodity"},{"level":3,"text":"Number of uses","id":"number-of-uses"},{"level":3,"text":"Proportion of Income Spent","id":"proportion-of-income-spent"},{"level":3,"text":"Habit-forming Goods","id":"habit-forming-goods"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -17347,7 +17347,7 @@ Goods like tobacco and alcohol generally have **inelastic demand**.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 593,
-    backlinks: [],
+    backlinks: ["elasticity-of-supply","elasticity-of-supply"],
     links: ["finance"],
     outline: [{"level":2,"text":"Concept of Price Elasticity of Supply ($E_s$)","id":"concept-of-price-elasticity-of-supply-es"},{"level":3,"text":"Definition and Nature","id":"definition-and-nature"},{"level":2,"text":"Methods of Measurement","id":"methods-of-measurement"},{"level":3,"text":"Percentage Method (Proportionate Method)","id":"percentage-method-proportionate-method"},{"level":3,"text":"Geometric Method","id":"geometric-method"},{"level":2,"text":"Degrees of Elasticity of Supply","id":"degrees-of-elasticity-of-supply"},{"level":2,"text":"Revenue and Supply Relationship","id":"revenue-and-supply-relationship"},{"level":3,"text":"Total Revenue ($TR$)","id":"total-revenue-tr"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Examples and Solved Problems","id":"examples-and-solved-problems"},{"level":6,"text":"Example: Basic Calculation","id":"example-basic-calculation"},{"level":6,"text":"Example: Revenue-Based Problem","id":"example-revenue-based-problem"}],
     content: `Type : #Note    
@@ -17692,7 +17692,7 @@ int main(){
     created: "2026-05-12",
     modified: "2026-05-12",
     wordCount: 1012,
-    backlinks: [],
+    backlinks: ["er-model","er-model"],
     links: ["dbms"],
     outline: [{"level":2,"text":"Basic Concepts","id":"basic-concepts"},{"level":3,"text":"1. Entity","id":"1-entity"},{"level":4,"text":"Weak Entity","id":"weak-entity"},{"level":6,"text":"Example:","id":"example"},{"level":4,"text":"Strong Entity","id":"strong-entity"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"2. Entity Set","id":"2-entity-set"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"3. Attribute","id":"3-attribute"},{"level":4,"text":"Types:","id":"types"},{"level":5,"text":"Simple","id":"simple"},{"level":6,"text":"Example :","id":"example"},{"level":5,"text":"Composite","id":"composite"},{"level":6,"text":"Example :","id":"example"},{"level":5,"text":"Stored","id":"stored"},{"level":6,"text":"Example :","id":"example"},{"level":5,"text":"Derived","id":"derived"},{"level":6,"text":"Example :","id":"example"},{"level":5,"text":"Multivalued","id":"multivalued"},{"level":6,"text":"Example :","id":"example"},{"level":5,"text":"Complex","id":"complex"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"4. Relationship","id":"4-relationship"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"5. Relationship Type","id":"5-relationship-type"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"6. Relationship Instance","id":"6-relationship-instance"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"7. Degree of Relationship","id":"7-degree-of-relationship"},{"level":4,"text":"Types:","id":"types"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"8. Role Names","id":"8-role-names"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"9. Recursive Relationship","id":"9-recursive-relationship"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"10. Cardinality Ratio","id":"10-cardinality-ratio"},{"level":3,"text":"11. Participation Constraint","id":"11-participation-constraint"},{"level":2,"text":"ER Diagram Components","id":"er-diagram-components"},{"level":2,"text":"Extended / Enhanced ER (EER) Concepts","id":"extended-enhanced-er-eer-concepts"},{"level":3,"text":"1. Superclass and Subclass (inheritance)","id":"1-superclass-and-subclass-inheritance"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"2. Specialization","id":"2-specialization"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"3. Generalization","id":"3-generalization"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"4. Aggregation","id":"4-aggregation"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"5. Disjoint v/s Overlapping Constraints","id":"5-disjoint-vs-overlapping-constraints"},{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"6. Total vs Partial Participation","id":"6-total-vs-partial-participation"},{"level":3,"text":"7. Specialization Constraints (4 Types)","id":"7-specialization-constraints-4-types"},{"level":3,"text":"8. Specialization Lattice","id":"8-specialization-lattice"},{"level":6,"text":"Example:","id":"example"},{"level":6,"text":"Q1) A person has account in bank, bank operates on different counter, person gets loan from counter. Draw ER Model diagram","id":"q1-a-person-has-account-in-bank-bank-operates-on-different-counter-person-gets-loan-from-counter-draw-er-model-diagram"},{"level":6,"text":"Q2) A person is either an employee, alumni or a student. Employee can either be staff or faculty. Student can be either PG or UG. Show entity diagram.","id":"q2-a-person-is-either-an-employee-alumni-or-a-student-employee-can-either-be-staff-or-faculty-student-can-be-either-pg-or-ug-show-entity-diagram"},{"level":6,"text":"Q3) Stars in movies. Movies owned by studios. Attributes in movies : title, year, length, film type. Attributes in stars : name, address, ID. Attributes in studios : name, address","id":"q3-stars-in-movies-movies-owned-by-studios-attributes-in-movies-title-year-length-film-type-attributes-in-stars-name-address-id-attributes-in-studios-name-address"},{"level":6,"text":"Q4) In a birth, one mother, no. pf nurses and doctors. Draw the ER model. Then Redraw : birth as entity","id":"q4-in-a-birth-one-mother-no-pf-nurses-and-doctors-draw-the-er-model-then-redraw-birth-as-entity"}],
     content: `Type : #Note    
@@ -17997,7 +17997,7 @@ A4)   ![[Pasted image 20260410230302.png]]
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 262,
-    backlinks: ["1st-c-program","array","language-translators","pointersc","programming","switch-casec","void-pointerc"],
+    backlinks: ["1st-c-program","array","language-translators","pointersc","programming","switch-casec","void-pointerc","errors","errors"],
     links: ["language"],
     outline: [{"level":2,"text":"1. Compile-Time Errors","id":"1-compile-time-errors"},{"level":2,"text":"1.1 Syntax Errors","id":"11-syntax-errors"},{"level":2,"text":"1.2 Semantic Errors","id":"12-semantic-errors"},{"level":2,"text":"2. Runtime Errors","id":"2-runtime-errors"},{"level":3,"text":"Runtime Error Handling → Exception Handling","id":"runtime-error-handling-exception-handling"},{"level":2,"text":"3. Logical Errors","id":"3-logical-errors"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"4. Linker Errors","id":"4-linker-errors"}],
     content: `Type : #Note    
@@ -18267,7 +18267,7 @@ These three look similar but have **different meanings and uses** in C.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 467,
-    backlinks: ["kali-linux-overview","setting-up-virtual-machine-or-lab"],
+    backlinks: ["kali-linux-overview","setting-up-virtual-machine-or-lab","ethical-hacking","ethical-hacking","ethical-hacking"],
     links: ["cybersec","linux","setting-up-virtual-machine-or-lab","kali-linux-overview","linux-foundation","stages-of-hacking","networking-basics"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Types of Hackers:","id":"types-of-hackers"},{"level":3,"text":"Black Hats / Cracker","id":"black-hats-cracker"},{"level":3,"text":"Grey Hats","id":"grey-hats"},{"level":3,"text":"White Hats / Ethical Hacker","id":"white-hats-ethical-hacker"},{"level":2,"text":"Work of an Ethical Hacker / White Hat Hacker","id":"work-of-an-ethical-hacker-white-hat-hacker"}],
     content: `Type : #Note    
@@ -18372,7 +18372,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1513,
-    backlinks: ["moc-engineering-mathematics","probability-keywords"],
+    backlinks: ["moc-engineering-mathematics","probability-keywords","event-operations","event-operations"],
     links: ["probability","conditional-probability","probability-keywords"],
     outline: [{"level":2,"text":"Set Theory#Union ($A cup B$)|Union of Events","id":"set-theoryunion-a-cup-bunion-of-events"},{"level":3,"text":"Keyword for Union","id":"keyword-for-union"},{"level":3,"text":"Union Formula","id":"union-formula"},{"level":3,"text":"Venn Diagram (Union)","id":"venn-diagram-union"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"Set Theory#Intersection ($A cap B$)|Intersection of Events","id":"set-theoryintersection-a-cap-bintersection-of-events"},{"level":3,"text":"Keyword for Intersection","id":"keyword-for-intersection"},{"level":3,"text":"Intersection Formula","id":"intersection-formula"},{"level":3,"text":"Venn Diagram (Intersection)","id":"venn-diagram-intersection"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"#Union Formula|Union - #Intersection Formula|Intersection","id":"union-formulaunion-intersection-formulaintersection"},{"level":3,"text":"Keyword for Union - Intersection","id":"keyword-for-union-intersection"},{"level":3,"text":"Venn Diagram (Union - Intersection)","id":"venn-diagram-union-intersection"},{"level":3,"text":"Formula (Union - Intersection)","id":"formula-union-intersection"},{"level":2,"text":"Set Theory#Complement ($A'$ or $A c$ or $ overline{A}$)|Complement","id":"set-theorycomplement-a-or-a-c-or-overlineacomplement"},{"level":3,"text":"Keyword (Complement)","id":"keyword-complement"},{"level":3,"text":"Venn Diagram (Complement)","id":"venn-diagram-complement"},{"level":3,"text":"Formula (Complement)","id":"formula-complement"},{"level":2,"text":"Addition Theorem of Probability","id":"addition-theorem-of-probability"},{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Conditions :","id":"conditions"},{"level":3,"text":"Properties :","id":"properties"},{"level":2,"text":"Multiplication Theorem","id":"multiplication-theorem"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Q1) Let S be a sample space of two mutually exclusive events A and B be such that A U B = S. If P(.) denotes the probability of the event, the maximum value of P(A)P(B) is?  (GATE 2014) (2 M)","id":"q1-let-s-be-a-sample-space-of-two-mutually-exclusive-events-a-and-b-be-such-that-a-u-b-s-if-p-denotes-the-probability-of-the-event-the-maximum-value-of-papb-is-gate-2014-2-m"},{"level":6,"text":"Q2) For 3 events A, B, C","id":"q2-for-3-events-a-b-c"},{"level":6,"text":"P (Exactly one of A or B occurs) = 1/4","id":"p-exactly-one-of-a-or-b-occurs-14"},{"level":6,"text":"P (Exactly one of B or C occurs) = 1/4","id":"p-exactly-one-of-b-or-c-occurs-14"},{"level":6,"text":"P (Exactly one of A or C occurs) = 1/4","id":"p-exactly-one-of-a-or-c-occurs-14"},{"level":6,"text":"P (all the events occur simultaneously) = 1/16","id":"p-all-the-events-occur-simultaneously-116"},{"level":6,"text":"P (at least one of the events occurs) = ?","id":"p-at-least-one-of-the-events-occurs"}],
     content: `Type : #Note    
@@ -18658,7 +18658,7 @@ P(A ∪ B ∪ C) = P(A) + P(B) +P(C) - P(A ∩ B) - P(B ∩ C) - P(A ∩ C) +P(A
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 415,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","exponential-and-logarithm-formulas","exponential-and-logarithm-formulas"],
     links: ["maths"],
     outline: [],
     content: `Type : #Note    
@@ -18845,7 +18845,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 499,
-    backlinks: ["arcface","coordinate-geometry","face-detection","face-embedding","facenet","facial-angles","matrix"],
+    backlinks: ["arcface","coordinate-geometry","face-detection","face-embedding","facenet","facial-angles","matrix","face-alignment","face-alignment"],
     links: ["research","computer-vision","face-detection","face-embedding","facenet","arcface","poetry-matrix","coordinate-geometry"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 What Problem Does This Solve?","id":"what-problem-does-this-solve"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"🔄 Input → Output","id":"input-output"},{"level":2,"text":"🧩 Intuition (Explain Like I’m 12)","id":"intuition-explain-like-im-12"},{"level":2,"text":"⚙️ How It Works (Simple → Detailed)","id":"how-it-works-simple-detailed"},{"level":2,"text":"⚠️ Limitations (Why This Alone Is Not Enough)","id":"limitations-why-this-alone-is-not-enough"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 Related Models / Methods","id":"related-models-methods"},{"level":2,"text":"📚 Related Papers","id":"related-papers"},{"level":2,"text":"❓ Questions","id":"questions"},{"level":6,"text":"Q1)  Why does misalignment hurt recognition accuracy?","id":"q1-why-does-misalignment-hurt-recognition-accuracy"},{"level":6,"text":"A1)","id":"a1"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"📌 References","id":"references"}],
     content: `Type : #Note    
@@ -18981,7 +18981,7 @@ Status : #incomplete
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 642,
-    backlinks: ["face-alignment","facial-angles","multi-object-tracking","probability-introduction"],
+    backlinks: ["face-alignment","facial-angles","multi-object-tracking","probability-introduction","face-detection","face-detection"],
     links: ["research","computer-vision","face-alignment","multi-object-tracking","probability-introduction","algorithm-basics"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 What Problem Does This Solve?","id":"what-problem-does-this-solve"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"🔄 Input → Output","id":"input-output"},{"level":2,"text":"🧩 Intuition (Explain Like I’m 12)","id":"intuition-explain-like-im-12"},{"level":2,"text":"⚙️ How It Works (Simple → Detailed)","id":"how-it-works-simple-detailed"},{"level":3,"text":"Sliding Window (Old Approach) (Pre 2014)","id":"sliding-window-old-approach-pre-2014"},{"level":3,"text":"Modern Deep Learning Approach","id":"modern-deep-learning-approach"},{"level":4,"text":"Anchor-Based Detectors","id":"anchor-based-detectors"},{"level":4,"text":"Anchor-Free Detectors","id":"anchor-free-detectors"},{"level":3,"text":"CNN-Based Detectors","id":"cnn-based-detectors"},{"level":4,"text":"MTCNN","id":"mtcnn"},{"level":4,"text":"RetinaFace","id":"retinaface"},{"level":4,"text":"SCRFD","id":"scrfd"},{"level":4,"text":"YOLO Face Detectors","id":"yolo-face-detectors"},{"level":2,"text":"Key metrics","id":"key-metrics"},{"level":2,"text":"WIDER FACE Benchmark","id":"wider-face-benchmark"},{"level":2,"text":"⚠️ Limitations (Why This Alone Is Not Enough)","id":"limitations-why-this-alone-is-not-enough"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📚 Related Papers","id":"related-papers"},{"level":2,"text":"❓ Questions","id":"questions"},{"level":6,"text":"Q1)  Why is detecting small faces difficult?","id":"q1-why-is-detecting-small-faces-difficult"},{"level":6,"text":"A1)","id":"a1"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"📌 References","id":"references"}],
     content: `Type : #Note    
@@ -19146,7 +19146,7 @@ Features are too small to extract reliable patterns
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1103,
-    backlinks: ["arcface","face-alignment","face-matching","facenet","facial-angles","trigonometric-formulas"],
+    backlinks: ["arcface","face-alignment","face-matching","facenet","facial-angles","trigonometric-formulas","face-embedding","face-embedding"],
     links: ["research","computer-vision","face-alignment","face-matching","arcface","multi-object-tracking","probability-introduction","trigonometric-formulas","algorithm-basics","bayes-theorem","facenet"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 What Problem Does This Solve?","id":"what-problem-does-this-solve"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"🔄 Input → Output","id":"input-output"},{"level":2,"text":"🧩 Intuition (Explain Like I’m 12)","id":"intuition-explain-like-im-12"},{"level":2,"text":"⚙️ How It Works (Simple → Detailed)","id":"how-it-works-simple-detailed"},{"level":3,"text":"Key Idea","id":"key-idea"},{"level":3,"text":"Training Pipeline","id":"training-pipeline"},{"level":3,"text":"Embedding Space","id":"embedding-space"},{"level":3,"text":"Backbone Network","id":"backbone-network"},{"level":3,"text":"Loss Functions and Model Evolution (Very Important)","id":"loss-functions-and-model-evolution-very-important"},{"level":4,"text":"Early Models","id":"early-models"},{"level":4,"text":"Metric Learning","id":"metric-learning"},{"level":4,"text":"Margin-Based Softmax (Modern standard)","id":"margin-based-softmax-modern-standard"},{"level":4,"text":"Transformer-Based Models","id":"transformer-based-models"},{"level":2,"text":"⚠️ Limitations (Why This Alone Is Not Enough)","id":"limitations-why-this-alone-is-not-enough"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 Related Models / Methods","id":"related-models-methods"},{"level":2,"text":"📚 Related Papers","id":"related-papers"},{"level":2,"text":"❓ Questions","id":"questions"},{"level":6,"text":"Q1) Why are embeddings better than raw images?","id":"q1-why-are-embeddings-better-than-raw-images"},{"level":6,"text":"A1)","id":"a1"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"📌 References","id":"references"}],
     content: `Type : #Note    
@@ -19413,7 +19413,7 @@ Because embeddings compress identity information into a comparable numeric form.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 624,
-    backlinks: ["algorithm-basics","arcface","bayes-theorem","face-embedding","facenet","multi-object-tracking","probability-introduction","sorting"],
+    backlinks: ["algorithm-basics","arcface","bayes-theorem","face-embedding","facenet","multi-object-tracking","probability-introduction","sorting","face-matching","face-matching"],
     links: ["research","computer-vision","face-embedding","multi-object-tracking","bayes-theorem","algorithm-basics","sorting","probability-introduction"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 What Problem Does This Solve?","id":"what-problem-does-this-solve"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"🔄 Input → Output","id":"input-output"},{"level":2,"text":"🧩 Intuition (Explain Like I’m 12)","id":"intuition-explain-like-im-12"},{"level":2,"text":"⚙️ How It Works (Simple → Detailed)","id":"how-it-works-simple-detailed"},{"level":3,"text":"Identification","id":"identification"},{"level":3,"text":"Matching Types","id":"matching-types"},{"level":4,"text":"1 : 1 Verification","id":"1-1-verification"},{"level":4,"text":"1 : N Identification","id":"1-n-identification"},{"level":4,"text":"Open-Set Identification","id":"open-set-identification"},{"level":3,"text":"Key Concepts","id":"key-concepts"},{"level":3,"text":"Scalability Problem","id":"scalability-problem"},{"level":3,"text":"Approximate Nearest Neighbor (ANN)","id":"approximate-nearest-neighbor-ann"},{"level":2,"text":"⚠️ Limitations (Why This Alone Is Not Enough)","id":"limitations-why-this-alone-is-not-enough"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 Related Models / Methods","id":"related-models-methods"},{"level":2,"text":"📚 Related Papers","id":"related-papers"},{"level":2,"text":"❓ Questions","id":"questions"},{"level":6,"text":"Q1) Why not compare all embeddings directly?","id":"q1-why-not-compare-all-embeddings-directly"},{"level":6,"text":"A1)","id":"a1"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"📌 References","id":"references"}],
     content: `Type : #Note    
@@ -19581,7 +19581,7 @@ Because it becomes too slow for large-scale systems.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 527,
-    backlinks: ["algorithm-basics","arcface","face-alignment","face-embedding","set-theory"],
+    backlinks: ["algorithm-basics","arcface","face-alignment","face-embedding","set-theory","facenet","facenet","facenet"],
     links: ["research","security","computer-vision","face-alignment","face-matching","arcface","face-embedding","algorithm-basics","probability-introduction","set-theory"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 What Problem Does This Solve?","id":"what-problem-does-this-solve"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"🔄 Input → Output","id":"input-output"},{"level":2,"text":"🧩 Intuition (Explain Like I’m 12)","id":"intuition-explain-like-im-12"},{"level":2,"text":"⚙️ How It Works (Simple → Detailed)","id":"how-it-works-simple-detailed"},{"level":3,"text":"Step 1 — Feature Extraction","id":"step-1-feature-extraction"},{"level":3,"text":"Step 2 — Triplet Formation","id":"step-2-triplet-formation"},{"level":3,"text":"Step 3 — Distance Constraint","id":"step-3-distance-constraint"},{"level":3,"text":"Step 4 — Triplet Loss","id":"step-4-triplet-loss"},{"level":3,"text":"Step 5 — Triplet Mining (Critical)","id":"step-5-triplet-mining-critical"},{"level":3,"text":"Key Insight","id":"key-insight"},{"level":2,"text":"⚠️ Limitations (Why This Alone Is Not Enough)","id":"limitations-why-this-alone-is-not-enough"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 Related Models / Methods","id":"related-models-methods"},{"level":2,"text":"📚 Related Papers","id":"related-papers"},{"level":2,"text":"❓ Questions","id":"questions"},{"level":6,"text":"Q1) Why is triplet mining important?","id":"q1-why-is-triplet-mining-important"},{"level":6,"text":"A1)","id":"a1"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"📌 References","id":"references"}],
     content: `Type : #Note    
@@ -19761,7 +19761,7 @@ Types:
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 514,
-    backlinks: [],
+    backlinks: ["facial-angles","facial-angles","facial-angles"],
     links: ["research","security","computer-vision","face-detection","face-alignment","face-embedding"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 What Problem Does This Solve?","id":"what-problem-does-this-solve"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"🔄 Input → Output","id":"input-output"},{"level":2,"text":"🧩 Intuition (Explain Like I’m 12)","id":"intuition-explain-like-im-12"},{"level":2,"text":"⚙️ How It Works (Simple → Detailed)","id":"how-it-works-simple-detailed"},{"level":3,"text":"🔹 Yaw (Left ↔ Right)","id":"yaw-left-right"},{"level":3,"text":"🔹 Pitch (Up ↕ Down)","id":"pitch-up-down"},{"level":3,"text":"🔹 Roll (Tilt)","id":"roll-tilt"},{"level":2,"text":"📊 Typical Ranges","id":"typical-ranges"},{"level":2,"text":"⚠️ Why It Matters (Limitations Impact)","id":"why-it-matters-limitations-impact"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 Related Models / Methods","id":"related-models-methods"},{"level":2,"text":"❓ Questions","id":"questions"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"📌 References","id":"references"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -19920,7 +19920,7 @@ A1) Because yaw hides parts of the face, while roll only rotates it.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 680,
-    backlinks: ["breakc","continuec","control-structuresc","loop"],
+    backlinks: ["breakc","continuec","control-structuresc","loop","forc"],
     links: ["c","loop","whilec","control-structuresc","do-whilec"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Examples :","id":"examples"}],
     content: `Type : #Note    
@@ -20130,7 +20130,7 @@ for (i = 1; i <= 10; printf("%d", ++i));
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 106,
-    backlinks: ["finance"],
+    backlinks: ["finance","fpya","fpya","fpya"],
     links: ["finance","financial-planning","udemy","magic-of-compounding"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Course Objective:","id":"course-objective"}],
     content: `Type : #Note    
@@ -20197,7 +20197,7 @@ Status : #complete
     created: "2026-05-12",
     modified: "2026-05-12",
     wordCount: 748,
-    backlinks: [],
+    backlinks: ["functional-dependency"],
     links: ["dbms"],
     outline: [{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"Trivial FD","id":"trivial-fd"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"Non-Trivial FD","id":"non-trivial-fd"},{"level":6,"text":"Example:","id":"example"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"1. Reflexive Rule","id":"1-reflexive-rule"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"2. Augmentation Rule","id":"2-augmentation-rule"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"3. Transitive Rule","id":"3-transitive-rule"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"4. Decomposition Rule","id":"4-decomposition-rule"},{"level":2,"text":"5. Union Rule","id":"5-union-rule"},{"level":2,"text":"6. Pseudotransitive Rule","id":"6-pseudotransitive-rule"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Find Closures","id":"find-closures"},{"level":3,"text":"SSN⁺","id":"ssn"},{"level":3,"text":"Pno⁺","id":"pno"},{"level":3,"text":"{SSN, Pno}⁺","id":"ssn-pno"}],
     content: `Type : #Note    
@@ -20615,7 +20615,7 @@ F⁺ → All derivable dependencies
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 939,
-    backlinks: [],
+    backlinks: ["functions","functions","functions"],
     links: ["set","maths","relations","set-theory"],
     outline: [{"level":2,"text":"Fundamentals of Functions","id":"fundamentals-of-functions"},{"level":3,"text":"Definition and Mapping","id":"definition-and-mapping"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Rules for Valid Functions","id":"rules-for-valid-functions"},{"level":2,"text":"Types of Functions","id":"types-of-functions"},{"level":3,"text":"Injection / One-to-One Function","id":"injection-one-to-one-function"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Surjection / Onto Function","id":"surjection-onto-function"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Bijection / One-to-One Correspondence / Invertible Function","id":"bijection-one-to-one-correspondence-invertible-function"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Special Functions and Operations","id":"special-functions-and-operations"},{"level":3,"text":"Composition of Functions","id":"composition-of-functions"},{"level":3,"text":"Inverse Functions","id":"inverse-functions"},{"level":6,"text":"Q1) Let $X$ and $Y$ denote two sets containing 2 and 20 distinct objects respectively and $F$ denote the set of all possible functions defined from $X$ and $Y$. Let $f$ be randomly chosen from $F$. The probability of $f$ being one-to-one is ?","id":"q1-let-x-and-y-denote-two-sets-containing-2-and-20-distinct-objects-respectively-and-f-denote-the-set-of-all-possible-functions-defined-from-x-and-y-let-f-be-randomly-chosen-from-f-the-probability-of-f-being-one-to-one-is"},{"level":6,"text":"Q2) How many onto functions are there from an n-element (n ≥ 2) set to a 2-element set?","id":"q2-how-many-onto-functions-are-there-from-an-n-element-n-2-set-to-a-2-element-set"},{"level":6,"text":"a) $2^n$","id":"a-2n"},{"level":6,"text":"b) $2^n - 1$","id":"b-2n-1"},{"level":6,"text":"c) $2^n - 2$","id":"c-2n-2"},{"level":6,"text":"d) $2(2^n - 2)$","id":"d-22n-2"},{"level":6,"text":"Q4) Let R denote the set of real numbers. Let $f: R \\times R \\to R \\times R$ be a bijective function defined by $f(x,y)= (x + y, x- y)$. The inverse function of f is given by","id":"q4-let-r-denote-the-set-of-real-numbers-let-f-r-times-r-to-r-times-r-be-a-bijective-function-defined-by-fxy-x-y-x-y-the-inverse-function-of-f-is-given-by"},{"level":6,"text":"a) $f^{-1}(x, y)=(1/(x+y),1/(x-y))$","id":"a-f-1x-y1xy1x-y"},{"level":6,"text":"b) $f^{-1}(x, y)=(x-y, x+y)$","id":"b-f-1x-yx-y-xy"},{"level":6,"text":"c)$f^{-1}(x,y)=((x+y)/2,(x-y)/2)$","id":"cf-1xyxy2x-y2"},{"level":6,"text":"d) $f^{-1}(x,y)=2(x-y),2(x+y)$","id":"d-f-1xy2x-y2xy"},{"level":6,"text":"Q5) lf g(x) = 1-x and h(x) = x/(x-1), then g(h(x)) / h(g(x)) is:","id":"q5-lf-gx-1-x-and-hx-xx-1-then-ghx-hgx-is"},{"level":6,"text":"a) h(x) / g(x)","id":"a-hx-gx"},{"level":6,"text":"b)-1/x","id":"b-1x"},{"level":6,"text":"c) g(x) / h(x)","id":"c-gx-hx"},{"level":6,"text":"d) x/(1-x)2","id":"d-x1-x2"}],
     content: `Type : #Note    
@@ -20775,7 +20775,7 @@ h(x) / g(x) = - x / (1 - x)$^2$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 337,
-    backlinks: [],
+    backlinks: ["future-works-research","future-works-research"],
     links: ["research","security"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -20877,7 +20877,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 240,
-    backlinks: [],
+    backlinks: ["generative-ai","generative-ai","generative-ai","generative-ai"],
     links: ["workshop","gen-ai","introduction","ai-tools","large-language-model"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Things to Learn:","id":"things-to-learn"},{"level":4,"text":"Gen AI Landscape:","id":"gen-ai-landscape"},{"level":4,"text":"Architecture","id":"architecture"},{"level":4,"text":"Nuts & Bolts","id":"nuts-bolts"},{"level":4,"text":"Build Your AI Avatar","id":"build-your-ai-avatar"}],
     content: `Type : #Note    
@@ -20962,7 +20962,7 @@ If AI were a brain, generative AI would be its _imagination_.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 535,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","geometric-formulas-and-theorem","geometric-formulas-and-theorem"],
     links: ["maths"],
     outline: [{"level":2,"text":"Square","id":"square"},{"level":2,"text":"Rectangle","id":"rectangle"},{"level":2,"text":"Triangle","id":"triangle"},{"level":3,"text":"Important Results","id":"important-results"},{"level":2,"text":"Equilateral Triangle","id":"equilateral-triangle"},{"level":2,"text":"Parallelogram","id":"parallelogram"},{"level":2,"text":"Circle","id":"circle"},{"level":3,"text":"Important Results","id":"important-results"},{"level":2,"text":"Sector of Circle","id":"sector-of-circle"},{"level":2,"text":"Cube","id":"cube"},{"level":2,"text":"Cuboid","id":"cuboid"},{"level":2,"text":"Sphere","id":"sphere"},{"level":2,"text":"Hemisphere","id":"hemisphere"},{"level":2,"text":"Cylinder","id":"cylinder"},{"level":2,"text":"Cone","id":"cone"},{"level":2,"text":"Frustum of Cone","id":"frustum-of-cone"},{"level":2,"text":"Similar Figures","id":"similar-figures"},{"level":2,"text":"Scaling Effect","id":"scaling-effect"},{"level":2,"text":"Combination of Solids","id":"combination-of-solids"},{"level":2,"text":"Common Transformations","id":"common-transformations"},{"level":3,"text":"Cone from Cylinder","id":"cone-from-cylinder"},{"level":3,"text":"Sphere inside Cube","id":"sphere-inside-cube"},{"level":3,"text":"Hemisphere + Cylinder","id":"hemisphere-cylinder"},{"level":2,"text":"Distance Formula","id":"distance-formula"},{"level":2,"text":"Midpoint Formula","id":"midpoint-formula"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -21183,7 +21183,7 @@ $\\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 2064,
-    backlinks: ["moc-engineering-mathematics","multi-object-tracking"],
+    backlinks: ["moc-engineering-mathematics","multi-object-tracking","graph-theory","graph-theory","graph-theory","graph-theory"],
     links: ["maths","dsa","graph","multi-object-tracking","graph-traversal","algorithm-basics"],
     outline: [{"level":2,"text":"Graph Components","id":"graph-components"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Special Graph Types","id":"special-graph-types"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Complete Graphs and Degrees","id":"complete-graphs-and-degrees"},{"level":3,"text":"Complete Graph ($K_n$)","id":"complete-graph-kn"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Vertex Degree","id":"vertex-degree"},{"level":6,"text":"Example","id":"example"},{"level":4,"text":"Hand-shaking Theorem","id":"hand-shaking-theorem"},{"level":4,"text":"Corollary","id":"corollary"},{"level":3,"text":"Degree Bounds","id":"degree-bounds"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Degree Sequence","id":"degree-sequence"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Checking the validity of a Degree Sequence","id":"checking-the-validity-of-a-degree-sequence"},{"level":3,"text":"Simple Conditions to check","id":"simple-conditions-to-check"},{"level":2,"text":"Havel-Hakimi Theorem","id":"havel-hakimi-theorem"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Advanced Graph Classifications","id":"advanced-graph-classifications"},{"level":3,"text":"Bipartite Graphs (2 partition graphs)","id":"bipartite-graphs-2-partition-graphs"},{"level":6,"text":"Example : Bipartite Graph","id":"example-bipartite-graph"},{"level":6,"text":"Example : Complete Bipartite Graph : $K_{3, 3}$","id":"example-complete-bipartite-graph-k3-3"},{"level":3,"text":"Cycle Graphs","id":"cycle-graphs"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Regular Graphs","id":"regular-graphs"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Complement of a Graph ($\\bar{G}$)","id":"complement-of-a-graph-barg"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Q1) A simple graph G contains 21 edges, 3 vertices of degree 4 and all remaining vertices are of degree 2. Then number of vertices |v| is?","id":"q1-a-simple-graph-g-contains-21-edges-3-vertices-of-degree-4-and-all-remaining-vertices-are-of-degree-2-then-number-of-vertices-v-is"},{"level":6,"text":"Q2) A simple non-directed graph G has 24 edges and degree of each vertex is 4, then find the value of |v|?","id":"q2-a-simple-non-directed-graph-g-has-24-edges-and-degree-of-each-vertex-is-4-then-find-the-value-of-v"},{"level":6,"text":"Q3) Consider a simple graph with 35 edges such that 4 vertex of ° 5, 5 vertex of ° 4 and 4 vertex of ° 3, find the no. of vertices of ° 2.","id":"q3-consider-a-simple-graph-with-35-edges-such-that-4-vertex-of-5-5-vertex-of-4-and-4-vertex-of-3-find-the-no-of-vertices-of-2"},{"level":6,"text":"Q4) Simple non-directed graph G has 24 edges and ° of each vertex is K, then which of the following is possible no. of vertices?","id":"q4-simple-non-directed-graph-g-has-24-edges-and-of-each-vertex-is-k-then-which-of-the-following-is-possible-no-of-vertices"},{"level":6,"text":"a) 20","id":"a-20"},{"level":6,"text":"b) 15","id":"b-15"},{"level":6,"text":"c) 10","id":"c-10"},{"level":6,"text":"d) 8","id":"d-8"},{"level":6,"text":"Q5) G is undirected graph with n vertices and 25 edges such that each vertex has ° at least 3. Then the maximum possible value of n is ?","id":"q5-g-is-undirected-graph-with-n-vertices-and-25-edges-such-that-each-vertex-has-at-least-3-then-the-maximum-possible-value-of-n-is"},{"level":6,"text":"a) 16","id":"a-16"},{"level":6,"text":"b) 17","id":"b-17"},{"level":6,"text":"c) 16.66","id":"c-1666"},{"level":6,"text":"d) 16.67","id":"d-1667"},{"level":6,"text":"Q6) Minimum no. of vertices possible in a simple graph if 41 edges and ° of each vertex is at most 5?","id":"q6-minimum-no-of-vertices-possible-in-a-simple-graph-if-41-edges-and-of-each-vertex-is-at-most-5"},{"level":6,"text":"Q7) Which of the following ° sequence represent a simple directed graph?","id":"q7-which-of-the-following-sequence-represent-a-simple-directed-graph"},{"level":6,"text":"a) {2, 3, 3, 4, 4, 5}","id":"a-2-3-3-4-4-5"},{"level":6,"text":"b) {2, 3, 4, 4, 5}","id":"b-2-3-4-4-5"},{"level":6,"text":"c) {3, 3, 3, 1}","id":"c-3-3-3-1"},{"level":6,"text":"d) {1, 3, 3, 4, 5, 6, 6}","id":"d-1-3-3-4-5-6-6"},{"level":6,"text":"e) {2, 3, 3, 3, 3}","id":"e-2-3-3-3-3"},{"level":6,"text":"f) {6, 6, 6, 6, 4, 3, 3, 0}","id":"f-6-6-6-6-4-3-3-0"},{"level":6,"text":"g) {6, 5, 5, 4, 3, 3, 2, 2, 2}","id":"g-6-5-5-4-3-3-2-2-2"},{"level":6,"text":"Q8) A simple graph $G$ has 30 edges and $G^c$ has 36 edges, the number of vertices in G will be?","id":"q8-a-simple-graph-g-has-30-edges-and-gc-has-36-edges-the-number-of-vertices-in-g-will-be"},{"level":6,"text":"Q9) A simple graph $G$ has 56 edges and $G^C$ has 80 edges, the number of vertices in G will be?","id":"q9-a-simple-graph-g-has-56-edges-and-gc-has-80-edges-the-number-of-vertices-in-g-will-be"},{"level":6,"text":"Q10) $G → |v| = 8 ; |E| = 12$","id":"q10-g-v-8-e-12"},{"level":6,"text":"$|E(G^C| = ?$","id":"egc"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -21566,7 +21566,7 @@ $|E(G^C| = 8(7)/2 - 12 = 28 - 12 = 16$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 828,
-    backlinks: ["moc-engineering-mathematics","graph-theory","stack"],
+    backlinks: ["moc-engineering-mathematics","graph-theory","stack","graph-traversal","graph-traversal","graph-traversal","graph-traversal"],
     links: ["dsa","maths","graph","treedm"],
     outline: [{"level":2,"text":"Walks, Paths, Circuits And Cycle","id":"walks-paths-circuits-and-cycle"},{"level":3,"text":"Walk","id":"walk"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Open Walk","id":"open-walk"},{"level":3,"text":"Closed Walk","id":"closed-walk"},{"level":3,"text":"Trail","id":"trail"},{"level":3,"text":"Open Trail","id":"open-trail"},{"level":3,"text":"Closed Trail / Circuit","id":"closed-trail-circuit"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Path","id":"path"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Cycle","id":"cycle"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Connectedness","id":"connectedness"},{"level":4,"text":"Connected Graph","id":"connected-graph"},{"level":4,"text":"Components","id":"components"},{"level":2,"text":"Special Graph Traversals","id":"special-graph-traversals"},{"level":3,"text":"Euler Graphs","id":"euler-graphs"},{"level":3,"text":"Hamiltonian Graphs","id":"hamiltonian-graphs"},{"level":4,"text":"Dirac’s Theorem","id":"diracs-theorem"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Graph Coloring","id":"graph-coloring"},{"level":3,"text":"Chromatic Number $\\chi(G)$","id":"chromatic-number-chig"},{"level":6,"text":"Q1) A connected planar graph has 10 vertices and 15 edges. How many regions does it have?","id":"q1-a-connected-planar-graph-has-10-vertices-and-15-edges-how-many-regions-does-it-have"},{"level":6,"text":"Q2) What is the chromatic number of a bipartite graph?","id":"q2-what-is-the-chromatic-number-of-a-bipartite-graph"},{"level":6,"text":"Q3) Which condition is necessarily for a graph to be connected?","id":"q3-which-condition-is-necessarily-for-a-graph-to-be-connected"},{"level":6,"text":"a) A graph with 6 vertices and 10 edges","id":"a-a-graph-with-6-vertices-and-10-edges"},{"level":6,"text":"b) A graph with 7 vertices and 14 edges","id":"b-a-graph-with-7-vertices-and-14-edges"},{"level":6,"text":"c) A graph with 8 vertices and 22 edges","id":"c-a-graph-with-8-vertices-and-22-edges"},{"level":6,"text":"d) A graph with 9 vertices and 28 edges","id":"d-a-graph-with-9-vertices-and-28-edges"},{"level":6,"text":"Q4) Which of the following graphs are planer?","id":"q4-which-of-the-following-graphs-are-planer"}],
     content: `Type : #Note    
@@ -21762,7 +21762,7 @@ G2 : Planer
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1773,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","group-theory","group-theory"],
     links: ["maths"],
     outline: [{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Fundamental Properties and Hierarchy of Algebraic Systems","id":"fundamental-properties-and-hierarchy-of-algebraic-systems"},{"level":3,"text":"Closure Property & Algebraic Structure","id":"closure-property-algebraic-structure"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Concept: Associative Property (Semi-Group)","id":"concept-associative-property-semi-group"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Q1) For the set of Natural Numbers ($\\mathbb{N}$), an operator is defined as $a  b = a^b$. What is the highest algebraic system it forms?","id":"q1-for-the-set-of-natural-numbers-mathbbn-an-operator-is-defined-as-a-b-ab-what-is-the-highest-algebraic-system-it-forms"},{"level":3,"text":"Concept: Identity Element (Monoid)","id":"concept-identity-element-monoid"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Q2) For the set of Integers ($\\mathbb{Z}$), an operator is defined as $a  b = \\max(a, b)$. What structure does it form?","id":"q2-for-the-set-of-integers-mathbbz-an-operator-is-defined-as-a-b-maxa-b-what-structure-does-it-form"},{"level":3,"text":"Concept: Inverse Property (Group)","id":"concept-inverse-property-group"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Q3) An Abelian group is defined with the operator $a  b = \\frac{a \\times b}{3}$. What is the identity element, and what is the inverse of 6?","id":"q3-an-abelian-group-is-defined-with-the-operator-a-b-fraca-times-b3-what-is-the-identity-element-and-what-is-the-inverse-of-6"},{"level":3,"text":"Concept: Commutative Property (Abelian Group)","id":"concept-commutative-property-abelian-group"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Finite Groups and Modular Arithmetic","id":"finite-groups-and-modular-arithmetic"},{"level":3,"text":"Concept: Order of a Group","id":"concept-order-of-a-group"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"Example: Complex Roots of Unity","id":"example-complex-roots-of-unity"},{"level":3,"text":"Concept: Addition and Multiplication Modulo","id":"concept-addition-and-multiplication-modulo"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"Example: $Z_4 = \\{0, 1, 2, 3\\}$ under $+_4$","id":"example-z4-0-1-2-3-under-4"},{"level":2,"text":"Subgroups and Lagrange's Theorem","id":"subgroups-and-lagranges-theorem"},{"level":3,"text":"Concept: Subgroups","id":"concept-subgroups"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":3,"text":"Concept: Lagrange's Theorem","id":"concept-lagranges-theorem"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"Q4) Let $G$ be a group with 15 elements. Let $L$ be a subgroup of $G$. It is known that $L \\neq G$ and $|L| \\geq 4$. What is the exact size of $L$?","id":"q4-let-g-be-a-group-with-15-elements-let-l-be-a-subgroup-of-g-it-is-known-that-l-neq-g-and-l-geq-4-what-is-the-exact-size-of-l"},{"level":2,"text":"Element Properties and Cyclic Groups","id":"element-properties-and-cyclic-groups"},{"level":3,"text":"Concept: Order of an Element","id":"concept-order-of-an-element"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"Example: In $Z_4$ under $+_4$","id":"example-in-z4-under-4"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Concept: Generators and Cyclic Groups","id":"concept-generators-and-cyclic-groups"},{"level":4,"text":"Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"Example: Generators in $Z_4$","id":"example-generators-in-z4"}],
     content: `Type : #Note    
@@ -22143,7 +22143,7 @@ A4)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 141,
-    backlinks: [],
+    backlinks: ["health-insurances","health-insurances","health-insurances","health-insurances"],
     links: ["finance","financial-planning","udemy","health-insurance"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Common Myths/Excuses","id":"common-mythsexcuses"},{"level":3,"text":"Checklist for Health Insurance","id":"checklist-for-health-insurance"}],
     content: `Type : #Note    
@@ -22216,7 +22216,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 368,
-    backlinks: ["moc-data-structures-and-algorithms"],
+    backlinks: ["moc-data-structures-and-algorithms","heap-tree","heap-tree","heap-tree"],
     links: ["dsa","complete-binary-tree","sort"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Insertion in Heap","id":"insertion-in-heap"},{"level":6,"text":"Q1) A max-heap is a heap where the value of each parent is greater than or equal to the value of its children. Which of the following is a max-heap? (GATE 2011) (1 Marks)","id":"q1-a-max-heap-is-a-heap-where-the-value-of-each-parent-is-greater-than-or-equal-to-the-value-of-its-children-which-of-the-following-is-a-max-heap-gate-2011-1-marks"},{"level":6,"text":"Q2) Consider a binary max-heap implemented using an array. Which one of the following array represents a binary max-heap? (GATE 2009) (2 Marks)","id":"q2-consider-a-binary-max-heap-implemented-using-an-array-which-one-of-the-following-array-represents-a-binary-max-heap-gate-2009-2-marks"},{"level":6,"text":"(A) 23,17,14,6,13,10,1,12,7,5","id":"a-2317146131011275"},{"level":6,"text":"(B) 23,17,14,6,13,10,1,5,7,12","id":"b-2317146131015712"},{"level":6,"text":"(C) 23,17,14,7,13,10,1,5,6,12","id":"c-2317147131015612"},{"level":6,"text":"(D) 23,17,14,7,13,10,1,12,5,7","id":"d-2317147131011257"},{"level":6,"text":"Q3) Consider any array representation of an n element binary heap where the elements are stored from index 1 to index n of the array. For the element stored at index i of the array (i ≤ n) , the index of the parent is(GATE - 2001) (1 Marks) (Cognizant 2020)","id":"q3-consider-any-array-representation-of-an-n-element-binary-heap-where-the-elements-are-stored-from-index-1-to-index-n-of-the-array-for-the-element-stored-at-index-i-of-the-array-i-n-the-index-of-the-parent-isgate-2001-1-marks-cognizant-2020"},{"level":6,"text":"(A) i-1","id":"a-i-1"},{"level":6,"text":"(B) $\\empheql\\lfloor \\frac{i}{2} \\rfloor$","id":"b-empheqllfloor-fraci2-rfloor"},{"level":6,"text":"(C) $\\empheql\\lceil \\frac{i}{2} \\rceil$","id":"c-empheqllceil-fraci2-rceil"},{"level":6,"text":"(D) (i+1)/2","id":"d-i12"},{"level":6,"text":"Q4) The elements 32, 15, 20, 30, 12, 25, 16, are inserted one by one in the given order into a MaxHeap. The resultant MaxHeap is ? (GATE 2004) (1 Marks)","id":"q4-the-elements-32-15-20-30-12-25-16-are-inserted-one-by-one-in-the-given-order-into-a-maxheap-the-resultant-maxheap-is-gate-2004-1-marks"},{"level":6,"text":"Q5) Consider the following array of elements.  (89,19,50,17,12,15,2,5,7,11,6,9,100)  The minimum number of interchanges needed to convert it into a max-heap is? (GATE 2015) (1 Marks)","id":"q5-consider-the-following-array-of-elements-8919501712152571169100-the-minimum-number-of-interchanges-needed-to-convert-it-into-a-max-heap-is-gate-2015-1-marks"},{"level":6,"text":"(A) 4","id":"a-4"},{"level":6,"text":"(B) 5","id":"b-5"},{"level":6,"text":"(C) 2","id":"c-2"},{"level":6,"text":"(D) 3","id":"d-3"}],
     content: `Type : #Note    
@@ -22829,7 +22829,7 @@ input          stored value         interpreted as
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 280,
-    backlinks: ["moc-data-structures-and-algorithms"],
+    backlinks: ["moc-data-structures-and-algorithms","insertion-sort","insertion-sort","insertion-sort"],
     links: ["dsa","sort","merge-sort","selection-sort","bubble-sort"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -22922,7 +22922,7 @@ print(l)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 867,
-    backlinks: ["java-overview"],
+    backlinks: ["java-overview","java-installation-and-path-setup","java-installation-and-path-setup","java-installation-and-path-setup"],
     links: ["java","oops","java-overview"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 Why This Topic Exists","id":"why-this-topic-exists"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"📍 Where It Is Used","id":"where-it-is-used"},{"level":2,"text":"🔄 Core Idea","id":"core-idea"},{"level":2,"text":"🧩 Intuition (Simple Explanation)","id":"intuition-simple-explanation"},{"level":2,"text":"⚙️ Syntax / Structure","id":"syntax-structure"},{"level":2,"text":"🔑 Key Points (Exam-Oriented)","id":"key-points-exam-oriented"},{"level":2,"text":"⚖️ Differences / Comparisons (VERY IMPORTANT)","id":"differences-comparisons-very-important"},{"level":2,"text":"💻 Standard Program Pattern (MOST IMPORTANT)","id":"standard-program-pattern-most-important"},{"level":6,"text":"Verification Process","id":"verification-process"},{"level":2,"text":"🧠 Logic Breakdown","id":"logic-breakdown"},{"level":2,"text":"⚠️ Common Mistakes","id":"common-mistakes"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 PYQ Patterns (CRITICAL)","id":"pyq-patterns-critical"},{"level":2,"text":"❓ Questions (Practice / PYQ)","id":"questions-practice-pyq"},{"level":6,"text":"Q1) What error message indicates that the Java Path is not set?","id":"q1-what-error-message-indicates-that-the-java-path-is-not-set"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"⚡ Revision Trigger (1-Liner)","id":"revision-trigger-1-liner"},{"level":2,"text":"📌 References","id":"references"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -23162,7 +23162,7 @@ Install JDK → Copy \`bin\` Path → Paste in Environment Variables → Verify 
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1054,
-    backlinks: ["java-installation-and-path-setup","jvm-architecture","oops-features"],
+    backlinks: ["java-installation-and-path-setup","jvm-architecture","oops-features","java-overview","java-overview","java-overview","java-overview"],
     links: ["java","oops","java-installation-and-path-setup","datatypes"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 Why This Topic Exists","id":"why-this-topic-exists"},{"level":2,"text":"🧠 Key Features of Java","id":"key-features-of-java"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"📍 Where It Is Used","id":"where-it-is-used"},{"level":2,"text":"🔄 Core Idea","id":"core-idea"},{"level":2,"text":"🧩 Intuition (Simple Explanation)","id":"intuition-simple-explanation"},{"level":2,"text":"⚙️ Syntax / Structure","id":"syntax-structure"},{"level":3,"text":"Comments","id":"comments"},{"level":3,"text":"Program Basic Syntax","id":"program-basic-syntax"},{"level":2,"text":"🔑 Key Points (Exam-Oriented)","id":"key-points-exam-oriented"},{"level":2,"text":"⚖️ Differences / Comparisons (VERY IMPORTANT)","id":"differences-comparisons-very-important"},{"level":2,"text":"💻 Standard Program Pattern (MOST IMPORTANT)","id":"standard-program-pattern-most-important"},{"level":2,"text":"🧠 Logic Breakdown","id":"logic-breakdown"},{"level":2,"text":"Execution Flow","id":"execution-flow"},{"level":2,"text":"⚠️ Common Mistakes","id":"common-mistakes"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 PYQ Patterns (CRITICAL)","id":"pyq-patterns-critical"},{"level":2,"text":"❓ Questions (Practice / PYQ)","id":"questions-practice-pyq"},{"level":6,"text":"Q1) Why is the main method static?","id":"q1-why-is-the-main-method-static"},{"level":6,"text":"Q2) What happens if you omit String args?","id":"q2-what-happens-if-you-omit-string-args"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"⚡ Revision Trigger (1-Liner)","id":"revision-trigger-1-liner"},{"level":2,"text":"📌 References","id":"references"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -23423,7 +23423,7 @@ Write in \`.java\`, \`javac\` to translate, \`java\` to run.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 871,
-    backlinks: ["oops-features"],
+    backlinks: ["oops-features","jvm-architecture","jvm-architecture","jvm-architecture"],
     links: ["java","oops","java-overview"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 Why This Topic Exists","id":"why-this-topic-exists"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"📍 Where It Is Used","id":"where-it-is-used"},{"level":2,"text":"🔄 Core Idea","id":"core-idea"},{"level":2,"text":"🧩 Intuition (Simple Explanation)","id":"intuition-simple-explanation"},{"level":2,"text":"⚙️ Syntax / Structure","id":"syntax-structure"},{"level":2,"text":"🔑 Key Points (Exam-Oriented)","id":"key-points-exam-oriented"},{"level":2,"text":"⚖️ Differences / Comparisons (VERY IMPORTANT)","id":"differences-comparisons-very-important"},{"level":2,"text":"💻 Standard Program Pattern (MOST IMPORTANT)","id":"standard-program-pattern-most-important"},{"level":2,"text":"🧠 Logic Breakdown","id":"logic-breakdown"},{"level":2,"text":"⚠️ Common Mistakes","id":"common-mistakes"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 PYQ Patterns (CRITICAL)","id":"pyq-patterns-critical"},{"level":2,"text":"❓ Questions (Practice / PYQ)","id":"questions-practice-pyq"},{"level":6,"text":"Q1) What is the role of the Program Counter (PC) Register?","id":"q1-what-is-the-role-of-the-program-counter-pc-register"},{"level":6,"text":"Q2) Why does Java use both an Interpreter and a JIT Compiler?","id":"q2-why-does-java-use-both-an-interpreter-and-a-jit-compiler"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"⚡ Revision Trigger (1-Liner)","id":"revision-trigger-1-liner"},{"level":2,"text":"📌 References","id":"references"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -23673,7 +23673,7 @@ Load (Class Loader) → Store (Memory Areas) → Execute (Interpreter/JIT).
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 3688,
-    backlinks: ["moc-logic-and-philosophy","digital-logic-basics","logical-operators","normal-form-sop-and-pos","primary-logical-operators-across-different-domains"],
+    backlinks: ["moc-logic-and-philosophy","digital-logic-basics","logical-operators","normal-form-sop-and-pos","primary-logical-operators-across-different-domains","k-map","k-map","k-map","k-map"],
     links: ["maths","dld","gate"],
     outline: [{"level":4,"text":"Problem with other methods of Minimization :","id":"problem-with-other-methods-of-minimization"},{"level":2,"text":"Karnaugh Map","id":"karnaugh-map"},{"level":3,"text":"Structure of a K-Map","id":"structure-of-a-k-map"},{"level":6,"text":"Example : for 4 literals : abcd (Normal Form, SOP and POS#SOP / DNF (General Form)|SOP)","id":"example-for-4-literals-abcd-normal-form-sop-and-possop-dnf-general-formsop"},{"level":6,"text":"Example : for 3 literals : abc (Normal Form, SOP and POS#SOP / DNF (General Form)|SOP)","id":"example-for-3-literals-abc-normal-form-sop-and-possop-dnf-general-formsop"},{"level":3,"text":"For n > 4 no. of variables (never asked in GATE yet)","id":"for-n-4-no-of-variables-never-asked-in-gate-yet"},{"level":2,"text":"K-Map for Normal Form, SOP and POS#POS / CNF (General Form)|POS","id":"k-map-for-normal-form-sop-and-pospos-cnf-general-formpos"},{"level":3,"text":"Minimal Function","id":"minimal-function"},{"level":3,"text":"Rules of Grouping","id":"rules-of-grouping"},{"level":4,"text":"Don't Care Condition","id":"dont-care-condition"},{"level":6,"text":"Examples","id":"examples"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Example : f(a,b,c) : ∑ m{1, 2, 3, 4, 5}. Find the no. of PI and EPI. Also find the no. of unique minimal expressions possible and the literal count of the minimal expression.","id":"example-fabc-m1-2-3-4-5-find-the-no-of-pi-and-epi-also-find-the-no-of-unique-minimal-expressions-possible-and-the-literal-count-of-the-minimal-expression"},{"level":6,"text":"Q1) Consider the minterm list form of a Boolean function F given below.","id":"q1-consider-the-minterm-list-form-of-a-boolean-function-f-given-below"},{"level":6,"text":"F(P, Q, R, S) = ∑ m(0, 2, 5, 7, 9, 11) + d(3, 8, 10, 12, 14)","id":"fp-q-r-s-m0-2-5-7-9-11-d3-8-10-12-14"},{"level":6,"text":"Here, m denotes a minterm and d denotes a don't care term. The no. of EPI of the function F is — . (GATE 2018) (2 Marks)","id":"here-m-denotes-a-minterm-and-d-denotes-a-dont-care-term-the-no-of-epi-of-the-function-f-is-gate-2018-2-marks"},{"level":6,"text":"Q2) The total no. of PI of the function f(w, x, y, z) = ∑ m(0, 2, 4, 5, 6, 10) is — . (GATE 2015) (1 Marks)","id":"q2-the-total-no-of-pi-of-the-function-fw-x-y-z-m0-2-4-5-6-10-is-gate-2015-1-marks"},{"level":6,"text":"Q3) Which are the essential PI of the following boolean expression (GATE 2004) (1 Marks)","id":"q3-which-are-the-essential-pi-of-the-following-boolean-expression-gate-2004-1-marks"},{"level":6,"text":"f(a, b, c) = a'c + ac' + b'c","id":"fa-b-c-ac-ac-bc"},{"level":6,"text":"Q4) Consider the function given below","id":"q4-consider-the-function-given-below"},{"level":6,"text":"Find the no. of PI, EPI, unique minimal expressions possible, literal count of the minimal expression.","id":"find-the-no-of-pi-epi-unique-minimal-expressions-possible-literal-count-of-the-minimal-expression"},{"level":6,"text":"Q5) Given f(a, b, c, d) = ∑ m (0, 1, 2, 3, 7, 8, 10) + ∑ d(5, 6, 11, 15), where d represents don't care condition in Karnaugh Maps. Which of the following is a minimum POS form of f(a, b, c, d)? (GATE 2017) (2 Marks)","id":"q5-given-fa-b-c-d-m-0-1-2-3-7-8-10-d5-6-11-15-where-d-represents-dont-care-condition-in-karnaugh-maps-which-of-the-following-is-a-minimum-pos-form-of-fa-b-c-d-gate-2017-2-marks"},{"level":6,"text":"a) f = (a' +d') (b' + d)","id":"a-f-a-d-b-d"},{"level":6,"text":"b) f = (a' + d) (b + d)","id":"b-f-a-d-b-d"},{"level":6,"text":"c) f = (a + d) (b' + d)","id":"c-f-a-d-b-d"},{"level":6,"text":"d) f = (a + d') (b' + d)","id":"d-f-a-d-b-d"},{"level":6,"text":"Q6) Consider the following minterm expression for F :","id":"q6-consider-the-following-minterm-expression-for-f"},{"level":6,"text":"F(P, Q, R, S) = ∑ (0, 2, 5, 7, 8,10, 13, 15).","id":"fp-q-r-s-0-2-5-7-810-13-15"},{"level":6,"text":"The minterm 2, 7, 8, 13 are do no care terms. The minimum SOP form of F is ? (GATE 2014) (2 Marks)","id":"the-minterm-2-7-8-13-are-do-no-care-terms-the-minimum-sop-form-of-f-is-gate-2014-2-marks"},{"level":6,"text":"a) QS' + Q'S","id":"a-qs-qs"},{"level":6,"text":"b) Q'S' + QS","id":"b-qs-qs"},{"level":6,"text":"c) Q'R'S' + Q'RS' + QR'S + QRS","id":"c-qrs-qrs-qrs-qrs"},{"level":6,"text":"d) P'Q'S' + P'QS + PQS + PQ'S'","id":"d-pqs-pqs-pqs-pqs"},{"level":6,"text":"Q7) What is the minimal form of Karnaugh Map shown below? Assume that D are don't care terms. (GATE 2012) (2 Marks)","id":"q7-what-is-the-minimal-form-of-karnaugh-map-shown-below-assume-that-d-are-dont-care-terms-gate-2012-2-marks"},{"level":6,"text":"(A) b'd","id":"a-bd"},{"level":6,"text":"(B) bʼdʼ + bʼcʼ","id":"b-bd-bc"},{"level":6,"text":"(C) bʼdʼ + aʼbʼcʼdʼ","id":"c-bd-abcd"},{"level":6,"text":"(D) bʼdʼ + bʼcʼ + cʼdʼ","id":"d-bd-bc-cd"},{"level":6,"text":"Q8) Consider the following Boolean function of four variables : (GATE 2007)(2 Marks)","id":"q8-consider-the-following-boolean-function-of-four-variables-gate-20072-marks"},{"level":6,"text":"f (w, x, y, z) = Σ (1,3,4,6,9,11,12,14)","id":"f-w-x-y-z-13469111214"},{"level":6,"text":"The function is:","id":"the-function-is"},{"level":6,"text":"(A) independent of one variable.","id":"a-independent-of-one-variable"},{"level":6,"text":"(B) independent of two variables.","id":"b-independent-of-two-variables"},{"level":6,"text":"(C) independent of three variables.","id":"c-independent-of-three-variables"},{"level":6,"text":"(D) dependent on all the variables.","id":"d-dependent-on-all-the-variables"},{"level":6,"text":"Q9) let f(A,B) = A' + B. Simplified expression for function f(f(x + y), y), z) is ? (GATE 2002) (2 Marks)","id":"q9-let-fab-a-b-simplified-expression-for-function-ffx-y-y-z-is-gate-2002-2-marks"},{"level":6,"text":"a) x' + z","id":"a-x-z"},{"level":6,"text":"b) xyz","id":"b-xyz"},{"level":6,"text":"c) xy' + z","id":"c-xy-z"},{"level":6,"text":"d) None of these","id":"d-none-of-these"},{"level":6,"text":"Q10) Consider a function f(a, b, c) = ∑ m(3, 5, 6) is being minimized to A + BC. Then what are the don't care conditions?","id":"q10-consider-a-function-fa-b-c-m3-5-6-is-being-minimized-to-a-bc-then-what-are-the-dont-care-conditions"},{"level":6,"text":"a) d(2, 4)","id":"a-d2-4"},{"level":6,"text":"b) d(2, 7)","id":"b-d2-7"},{"level":6,"text":"c) d(4, 7)","id":"c-d4-7"},{"level":6,"text":"d) d(2, 4, 7)","id":"d-d2-4-7"},{"level":6,"text":"Q11) Consider three 4-variable functions f1, f2 and f3, which are expressed in ∑ of minterms as :","id":"q11-consider-three-4-variable-functions-f1-f2-and-f3-which-are-expressed-in-of-minterms-as"},{"level":6,"text":"f1 = (0,2, 5,8,14)","id":"f1-02-5814"},{"level":6,"text":"f2=(2,3,6,8,14,15)","id":"f223681415"},{"level":6,"text":"f3 =(2,7,11,14)","id":"f3-271114"},{"level":6,"text":"For the following circuit with one AND GATE and one XOR GATE, the output function f can be expressed as: (GATE 2019) (2 Marks)","id":"for-the-following-circuit-with-one-and-gate-and-one-xor-gate-the-output-function-f-can-be-expressed-as-gate-2019-2-marks"},{"level":6,"text":"a) Σ(7, 8, 11)","id":"a-7-8-11"},{"level":6,"text":"b) Σ(2, 7, 8, 11, 14)","id":"b-2-7-8-11-14"},{"level":6,"text":"c) Σ(2, 14)","id":"c-2-14"},{"level":6,"text":"d) Σ(0, 2, 3, 5, 6, 7, 8, 11, 14, 15)","id":"d-0-2-3-5-6-7-8-11-14-15"},{"level":6,"text":"Q12) Given f1, f3 and f in canonical SOP form (in decimal) for the circuit given below","id":"q12-given-f1-f3-and-f-in-canonical-sop-form-in-decimal-for-the-circuit-given-below"},{"level":6,"text":"f1 = ∑ m(4, 5, 6, 7, 8)","id":"f1-m4-5-6-7-8"},{"level":6,"text":"f3 = ∑ m (1, 6, 15)","id":"f3-m-1-6-15"},{"level":6,"text":"f = ∑ m(1, 6, 8, 15)","id":"f-m1-6-8-15"},{"level":6,"text":"then f2 is? (GATE 2008) (1 Mark)","id":"then-f2-is-gate-2008-1-mark"},{"level":6,"text":"Α) Σm (4, 6)","id":"m-4-6"},{"level":6,"text":"Β)Σ (4, 8)","id":"4-8"},{"level":6,"text":"C)Σm(6,8)","id":"cm68"},{"level":6,"text":"D)Σ(4, 6, 8)","id":"d4-6-8"},{"level":6,"text":"Q13) Consider the K-Map given below, where x represents \"don't care condition\", blank represents 0. Assume for all inputs (a, b, c, d) the respective complements (a', b', c', d') are also available. The above logic is implemented 2 input NOR gates only. The minimum no. of gates required is — . (GATE 2017) (1 Mark)","id":"q13-consider-the-k-map-given-below-where-x-represents-dont-care-condition-blank-represents-0-assume-for-all-inputs-a-b-c-d-the-respective-complements-a-b-c-d-are-also-available-the-above-logic-is-implemented-2-input-nor-gates-only-the-minimum-no-of-gates-required-is-gate-2017-1-mark"}],
     content: `Type : #Note    
@@ -24147,7 +24147,7 @@ Hence only 1 NOR Gate is required
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 602,
-    backlinks: ["ethical-hacking","setting-up-virtual-machine-or-lab"],
+    backlinks: ["ethical-hacking","setting-up-virtual-machine-or-lab","kali-linux-overview","kali-linux-overview","kali-linux-overview"],
     links: ["linux","cybersec","ethical-hacking"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Why Linux?","id":"why-linux"},{"level":2,"text":"Basic Linux Commands","id":"basic-linux-commands"},{"level":3,"text":"Ways to Open a Terminal Emulator","id":"ways-to-open-a-terminal-emulator"},{"level":3,"text":"Increase Decrease Text Size:","id":"increase-decrease-text-size"}],
     content: `Type : #Note    
@@ -24282,7 +24282,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 766,
-    backlinks: ["programming"],
+    backlinks: ["programming","language-translators","language-translators","language-translators","language-translators"],
     links: ["language","errors","c","python","setting-up-virtual-machine-or-lab","java"],
     outline: [{"level":2,"text":"1. Assembler","id":"1-assembler"},{"level":2,"text":"2. Compiler","id":"2-compiler"},{"level":3,"text":"Pipeline A (Most common)","id":"pipeline-a-most-common"},{"level":3,"text":"Pipeline B","id":"pipeline-b"},{"level":2,"text":"3. Interpreter","id":"3-interpreter"},{"level":3,"text":"Step 1 : Compilation to Bytecode","id":"step-1-compilation-to-bytecode"},{"level":3,"text":"Step 2 : Execution by Virtual Machine","id":"step-2-execution-by-virtual-machine"},{"level":3,"text":"Bytecode v/s Assembly Language","id":"bytecode-vs-assembly-language"},{"level":2,"text":"VM inside VM (Nested Virtualization)","id":"vm-inside-vm-nested-virtualization"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -24496,7 +24496,7 @@ Eg :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 618,
-    backlinks: ["programming"],
+    backlinks: ["programming","languages","languages","languages","languages","languages"],
     links: ["language","c","oops","python","markdown"],
     outline: [{"level":2,"text":"A. Spoken Languages","id":"a-spoken-languages"},{"level":2,"text":"B. Written Languages","id":"b-written-languages"},{"level":2,"text":"C. Sign Languages","id":"c-sign-languages"},{"level":2,"text":"A. Low-Level Languages","id":"a-low-level-languages"},{"level":3,"text":"I. Machine Language","id":"i-machine-language"},{"level":3,"text":"II. Assembly Language","id":"ii-assembly-language"},{"level":2,"text":"B. High-Level Programming Languages","id":"b-high-level-programming-languages"},{"level":3,"text":"I. Procedural Programming Paradigm","id":"i-procedural-programming-paradigm"},{"level":3,"text":"II. Object-Oriented Programming (OOPs) Paradigm","id":"ii-object-oriented-programming-oops-paradigm"},{"level":3,"text":"III. Functional Programming Paradigm","id":"iii-functional-programming-paradigm"},{"level":3,"text":"IV. Logic Programming Paradigm","id":"iv-logic-programming-paradigm"},{"level":2,"text":"C. Declarative / Domain - Oriented Languages","id":"c-declarative-domain-oriented-languages"},{"level":2,"text":"D. Constraint-Based / Logic Languages","id":"d-constraint-based-logic-languages"},{"level":2,"text":"E. Markup / Description Languages (Declarative, Non-Programming)","id":"e-markup-description-languages-declarative-non-programming"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -24735,7 +24735,7 @@ Example:
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 77,
-    backlinks: ["generative-ai"],
+    backlinks: ["generative-ai","large-language-model","large-language-model","large-language-model"],
     links: ["workshop","gen-ai","llm"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -24790,7 +24790,7 @@ TPU - Tensor processing Unit
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1288,
-    backlinks: ["elasticity-of-demand"],
+    backlinks: ["elasticity-of-demand","law-of-demand","law-of-demand"],
     links: ["finance"],
     outline: [{"level":2,"text":"Core Definition","id":"core-definition"},{"level":2,"text":"Ceteris Paribus Assumptions","id":"ceteris-paribus-assumptions"},{"level":3,"text":"Constants in Demand Analysis","id":"constants-in-demand-analysis"},{"level":2,"text":"Demand Representation","id":"demand-representation"},{"level":3,"text":"Demand Schedule","id":"demand-schedule"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Demand Curve","id":"demand-curve"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Key Characteristics","id":"key-characteristics"},{"level":3,"text":"Inverse Nature","id":"inverse-nature"},{"level":3,"text":"Qualitative Statement","id":"qualitative-statement"},{"level":3,"text":"No Proportional Relationship","id":"no-proportional-relationship"},{"level":3,"text":"One-Sided Relationship","id":"one-sided-relationship"},{"level":2,"text":"Law of Diminishing Marginal Utility(DMU)","id":"law-of-diminishing-marginal-utilitydmu"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Substitution Effect","id":"substitution-effect"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Income Effect","id":"income-effect"},{"level":2,"text":"Additional Customers","id":"additional-customers"},{"level":2,"text":"Different Uses","id":"different-uses"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Theory of Consumer Behaviour","id":"theory-of-consumer-behaviour"},{"level":3,"text":"General Overview","id":"general-overview"},{"level":3,"text":"Giffen Goods","id":"giffen-goods"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Status Symbol Goods (Veblen Goods)","id":"status-symbol-goods-veblen-goods"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Fear of Shortage","id":"fear-of-shortage"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Consumer Ignorance","id":"consumer-ignorance"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Fashion Related Goods","id":"fashion-related-goods"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Necessities of Life","id":"necessities-of-life"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Change in Weather","id":"change-in-weather"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -25051,7 +25051,7 @@ The Law of Demand states an inverse relationship between price and quantity dema
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1420,
-    backlinks: [],
+    backlinks: ["law-of-supply","law-of-supply"],
     links: ["finance"],
     outline: [{"level":2,"text":"Ceteris Paribus (Assumptions)","id":"ceteris-paribus-assumptions"},{"level":2,"text":"Supply Representation","id":"supply-representation"},{"level":3,"text":"Supply Schedule","id":"supply-schedule"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Supply Curve","id":"supply-curve"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Important Characteristics of the Law","id":"important-characteristics-of-the-law"},{"level":3,"text":"Positive Nature","id":"positive-nature"},{"level":3,"text":"Qualitative Statement","id":"qualitative-statement"},{"level":3,"text":"No Proportional Relationship","id":"no-proportional-relationship"},{"level":3,"text":"One-Sided Nature","id":"one-sided-nature"},{"level":2,"text":"Main Drivers of the Law of Supply","id":"main-drivers-of-the-law-of-supply"},{"level":3,"text":"1. Profit Motive","id":"1-profit-motive"},{"level":3,"text":"2. Change in Number of Firms","id":"2-change-in-number-of-firms"},{"level":3,"text":"3. Change in Stock (Inventory Management)","id":"3-change-in-stock-inventory-management"},{"level":2,"text":"Logical Flow of Supply Response","id":"logical-flow-of-supply-response"},{"level":4,"text":"Production vs. Supply Relationship","id":"production-vs-supply-relationship"},{"level":6,"text":"Example: Dry Fruit Market During Festive Season","id":"example-dry-fruit-market-during-festive-season"},{"level":2,"text":"1. Future Expectations of Price Changes","id":"1-future-expectations-of-price-changes"},{"level":2,"text":"2. Agricultural Goods","id":"2-agricultural-goods"},{"level":2,"text":"3. Perishable Goods","id":"3-perishable-goods"},{"level":2,"text":"4. Rare and Artistic Articles","id":"4-rare-and-artistic-articles"},{"level":2,"text":"5. Backward Countries/Regions","id":"5-backward-countriesregions"},{"level":2,"text":"Comparative Summary of Exceptions","id":"comparative-summary-of-exceptions"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Example: The Milk Vendor's Dilemma","id":"example-the-milk-vendors-dilemma"}],
     content: `Type : #Note    
@@ -25296,7 +25296,7 @@ A milk vendor has $100$ liters of milk. The market price drops from $\\$2$ to $\
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 442,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","line-covering","line-covering","line-covering"],
     links: ["maths","graph"],
     outline: [{"level":6,"text":"Example 1","id":"example-1"},{"level":6,"text":"Example 2","id":"example-2"},{"level":2,"text":"Minimal Line Covering","id":"minimal-line-covering"},{"level":6,"text":"Example 1","id":"example-1"},{"level":2,"text":"Minimum Line Covering","id":"minimum-line-covering"},{"level":6,"text":"Example 1","id":"example-1"},{"level":6,"text":"Example 2","id":"example-2"},{"level":2,"text":"Independent Line Set","id":"independent-line-set"},{"level":6,"text":"Example 1","id":"example-1"},{"level":6,"text":"Example 2","id":"example-2"},{"level":3,"text":"Maximal Independent Line Set","id":"maximal-independent-line-set"},{"level":6,"text":"Example 2","id":"example-2"},{"level":3,"text":"Maximum Independent Line Set","id":"maximum-independent-line-set"},{"level":6,"text":"Example 2","id":"example-2"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -25418,7 +25418,7 @@ $$\\alpha_{1} + \\beta_{1} = |v|$$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 3534,
-    backlinks: ["moc-data-structures-and-algorithms","binary-tree-traversal","data-structures-basics","pointersc","treedsa"],
+    backlinks: ["moc-data-structures-and-algorithms","binary-tree-traversal","data-structures-basics","pointersc","treedsa","linked-list","linked-list"],
     links: ["dsa","data-structures-basics"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Implementation of Linked List","id":"implementation-of-linked-list"},{"level":3,"text":"Advantages of a Linked List","id":"advantages-of-a-linked-list"},{"level":3,"text":"Disadvantages of a Linked List","id":"disadvantages-of-a-linked-list"},{"level":5,"text":"Q) Write a C-style pseudocode for traversing a link list iteratively, where pointer head have the address of the first node of the list?","id":"q-write-a-c-style-pseudocode-for-traversing-a-link-list-iteratively-where-pointer-head-have-the-address-of-the-first-node-of-the-list"},{"level":5,"text":"Q) Write a C-style pseudocode for traversing a link list recursively, where pointer head have the address of the first node of the list?","id":"q-write-a-c-style-pseudocode-for-traversing-a-link-list-recursively-where-pointer-head-have-the-address-of-the-first-node-of-the-list"},{"level":5,"text":"Q) Write a C-style pseudocode for searching a key in a link list iteratively where pointer head have the address of the first node of the list?","id":"q-write-a-c-style-pseudocode-for-searching-a-key-in-a-link-list-iteratively-where-pointer-head-have-the-address-of-the-first-node-of-the-list"},{"level":5,"text":"Q) Write a C-style pseudocode for searching a key in a list recursively, where pointer head have the address of the first node of the list?","id":"q-write-a-c-style-pseudocode-for-searching-a-key-in-a-list-recursively-where-pointer-head-have-the-address-of-the-first-node-of-the-list"},{"level":5,"text":"Q) Write a C-style pseudocode for inserting a node with a key on the starting of linked list?","id":"q-write-a-c-style-pseudocode-for-inserting-a-node-with-a-key-on-the-starting-of-linked-list"},{"level":5,"text":"Q) Write a C-style pseudocode for inserting a node with a key after a location in a link-list?","id":"q-write-a-c-style-pseudocode-for-inserting-a-node-with-a-key-after-a-location-in-a-link-list"},{"level":5,"text":"Q) Write a C-style pseudocode for deleting a node from the starting of the link-list?","id":"q-write-a-c-style-pseudocode-for-deleting-a-node-from-the-starting-of-the-link-list"},{"level":5,"text":"Q) Write a C-Style pseudocode for deleting a node after a given location from the starting of the link-list?","id":"q-write-a-c-style-pseudocode-for-deleting-a-node-after-a-given-location-from-the-starting-of-the-link-list"},{"level":5,"text":"Q) Write a C-style pseudocode for the reversal of a linked list iteratively?","id":"q-write-a-c-style-pseudocode-for-the-reversal-of-a-linked-list-iteratively"},{"level":5,"text":"Q) Write a C-style pseudocode for the reversal of a linked list recursively?","id":"q-write-a-c-style-pseudocode-for-the-reversal-of-a-linked-list-recursively"},{"level":5,"text":"Q) The following C function takes a single-linked list of integers as a parameter and rearranges the elements of the list. The function is called with the list containing the integers 1, 2, 3, 4, 5, 6, 7 in the given order. What will be the contents of the list after the function completes execution?","id":"q-the-following-c-function-takes-a-single-linked-list-of-integers-as-a-parameter-and-rearranges-the-elements-of-the-list-the-function-is-called-with-the-list-containing-the-integers-1-2-3-4-5-6-7-in-the-given-order-what-will-be-the-contents-of-the-list-after-the-function-completes-execution"},{"level":5,"text":"Q) The Following C function takes a simply linked list as input argument. It modifies the list by moving the last element to the front of the list and returns the modified list. Some part of the code is left blank. Choose the correct alternative to replace the blank line.","id":"q-the-following-c-function-takes-a-simply-linked-list-as-input-argument-it-modifies-the-list-by-moving-the-last-element-to-the-front-of-the-list-and-returns-the-modified-list-some-part-of-the-code-is-left-blank-choose-the-correct-alternative-to-replace-the-blank-line"},{"level":5,"text":"Q) What is the output of the following function for start pointing to first node of following linked list? 1->2->3->4->5->6","id":"q-what-is-the-output-of-the-following-function-for-start-pointing-to-first-node-of-following-linked-list-1-2-3-4-5-6"},{"level":2,"text":"Header Link List","id":"header-link-list"},{"level":2,"text":"Circular Linked List","id":"circular-linked-list"},{"level":2,"text":"Header Circular Linked List","id":"header-circular-linked-list"},{"level":2,"text":"Doubly Link List","id":"doubly-link-list"},{"level":5,"text":"Q Consider the following function that takes reference to head of a Doubly Linked List as parameter. Assume that a node of doubly linked list has previous pointer as previous and next pointer as next.","id":"q-consider-the-following-function-that-takes-reference-to-head-of-a-doubly-linked-list-as-parameter-assume-that-a-node-of-doubly-linked-list-has-previous-pointer-as-previous-and-next-pointer-as-next"},{"level":5,"text":"Assume that reference of head of following doubly linked list is passed to above function 1 <--> 2 <--> 3 <--> 4 <--> 5 <--> 6","id":"assume-that-reference-of-head-of-following-doubly-linked-list-is-passed-to-above-function-1-2-3-4-5-6"},{"level":5,"text":"What should be the modified linked list after the function call?","id":"what-should-be-the-modified-linked-list-after-the-function-call"},{"level":2,"text":"Circular Doubly Linked List","id":"circular-doubly-linked-list"},{"level":2,"text":"Header Circular Doubly Linked List","id":"header-circular-doubly-linked-list"},{"level":2,"text":"Polynomial Representation Using Linked List","id":"polynomial-representation-using-linked-list"}],
     content: `Type : #Note    
@@ -26351,7 +26351,7 @@ int main() {
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 491,
-    backlinks: ["ethical-hacking"],
+    backlinks: ["ethical-hacking","linux-foundation","linux-foundation"],
     links: ["linux","cybersec"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Chapter Objectives:","id":"chapter-objectives"},{"level":2,"text":"3 Major Linux Distribution Families","id":"3-major-linux-distribution-families"},{"level":3,"text":"Fedora","id":"fedora"},{"level":3,"text":"CentOS and CentOS Stream","id":"centos-and-centos-stream"}],
     content: `Type : #Note    
@@ -26453,7 +26453,7 @@ Linux continues to evolve as developers and contributors identify new needs and 
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 2592,
-    backlinks: ["moc-logic-and-philosophy","combinational-circuits","digital-logic-basics","logical-operators"],
+    backlinks: ["moc-logic-and-philosophy","combinational-circuits","digital-logic-basics","logical-operators","logic-gates","logic-gates"],
     links: ["dld","digital-logic-basics","logical-operators","primary-logical-operators-across-different-domains"],
     outline: [{"level":3,"text":"$Idempotent$ $Law$","id":"idempotent-law"},{"level":3,"text":"$Associative$ $Law$","id":"associative-law"},{"level":3,"text":"$Commutative$ $Law$","id":"commutative-law"},{"level":3,"text":"$Distributive$ $Law$","id":"distributive-law"},{"level":3,"text":"$De-Morgan$ $Law$","id":"de-morgan-law"},{"level":3,"text":"$Identity$ $Law$","id":"identity-law"},{"level":3,"text":"$Complementation$ $Law$","id":"complementation-law"},{"level":3,"text":"$Involution$ $Law$","id":"involution-law"},{"level":4,"text":"OR Gate Satisfies all three core laws:","id":"or-gate-satisfies-all-three-core-laws"},{"level":4,"text":"AND Gate Satisfies all three core laws:","id":"and-gate-satisfies-all-three-core-laws"},{"level":4,"text":"NOR Gate Satisfies only Commutative Law:","id":"nor-gate-satisfies-only-commutative-law"},{"level":4,"text":"NAND Gate Satisfies only Commutative Law:","id":"nand-gate-satisfies-only-commutative-law"},{"level":4,"text":"XOR Gate Satisfies only Associative and Commutative Law:","id":"xor-gate-satisfies-only-associative-and-commutative-law"},{"level":4,"text":"XNOR Gate Satisfies only Associative and Commutative Law:","id":"xnor-gate-satisfies-only-associative-and-commutative-law"},{"level":2,"text":"Relation between XOR and XNOR","id":"relation-between-xor-and-xnor"},{"level":2,"text":"Partially Functionally Complete","id":"partially-functionally-complete"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q1)</span> For a Boolean variable x, which of the following statements is/are FALSE? <span style=\"color:rgb(255, 192, 0)\">(Gate 2024 CS) (1 Mark) (MSQ)</span>","id":"span-stylecolorrgb0-176-240q1span-for-a-boolean-variable-x-which-of-the-following-statements-isare-false-span-stylecolorrgb255-192-0gate-2024-cs-1-mark-msqspan"},{"level":6,"text":"(a) x . 1 = x","id":"a-x-1-x"},{"level":6,"text":"(b) x + 1 = x","id":"b-x-1-x"},{"level":6,"text":"(c) x . x = 0","id":"c-x-x-0"},{"level":6,"text":"(d) x + x' =1","id":"d-x-x-1"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q2)</span> Consider the following logic circuit diagram. Which is/are the CORRECT option(s) for the output function F? <span style=\"color:rgb(255, 192, 0)\">(GATE 2025)</span>","id":"span-stylecolorrgb0-176-240q2span-consider-the-following-logic-circuit-diagram-which-isare-the-correct-options-for-the-output-function-f-span-stylecolorrgb255-192-0gate-2025span"},{"level":6,"text":"A) X Y'","id":"a-x-y"},{"level":6,"text":"B) X' + Y' +XY'","id":"b-x-y-xy"},{"level":6,"text":"C) X'Y' + X'+XY'","id":"c-xy-xxy"},{"level":6,"text":"D) X + Y'","id":"d-x-y"},{"level":6,"text":"Q3) Consider the Boolean Operator with the following properties. (GATE 2018) (1 Marks)","id":"q3-consider-the-boolean-operator-with-the-following-properties-gate-2018-1-marks"},{"level":6,"text":"x # 0 = x","id":"x-0-x"},{"level":6,"text":"x # 1 = x'","id":"x-1-x"},{"level":6,"text":"x # x = 0","id":"x-x-0"},{"level":6,"text":"x # x' = 1","id":"x-x-1"},{"level":6,"text":"Then x # y is equivalent to ?","id":"then-x-y-is-equivalent-to"},{"level":6,"text":"a) xy' + x'y","id":"a-xy-xy"},{"level":6,"text":"b) xy' + x'y'","id":"b-xy-xy"},{"level":6,"text":"c) x'y + xy","id":"c-xy-xy"},{"level":6,"text":"d) xy + x'y'","id":"d-xy-xy"},{"level":6,"text":"Q4) The binary operator # is defined by the following truth table.","id":"q4-the-binary-operator-is-defined-by-the-following-truth-table"},{"level":6,"text":"Which of the following is true about the binary operator # ? (GATE 2015) (1 Marks)","id":"which-of-the-following-is-true-about-the-binary-operator-gate-2015-1-marks"},{"level":6,"text":"a) Both commutative and associative","id":"a-both-commutative-and-associative"},{"level":6,"text":"b) Commutative but not associative","id":"b-commutative-but-not-associative"},{"level":6,"text":"c) Not commutative but associative","id":"c-not-commutative-but-associative"},{"level":6,"text":"d) Neither commutative not associative","id":"d-neither-commutative-not-associative"},{"level":6,"text":"Q5) Let ⊕ denote EX-OR operation. Let 1 and 0 denote the binary constants. Consider the following Boolean expression for F over two variables P and Q.","id":"q5-let-denote-ex-or-operation-let-1-and-0-denote-the-binary-constants-consider-the-following-boolean-expression-for-f-over-two-variables-p-and-q"},{"level":6,"text":"F(P, Q) = ((1 ⊕ P) ⊕ (P ⊕ Q)) ⊕ ((P ⊕ Q) ⊕ (Q ⊕ 0))","id":"fp-q-1-p-p-q-p-q-q-0"},{"level":6,"text":"The equivalent expression for F is ? (GATE 2014) (2 Marks)","id":"the-equivalent-expression-for-f-is-gate-2014-2-marks"},{"level":6,"text":"A) P + Q","id":"a-p-q"},{"level":6,"text":"B) (P + Q)'","id":"b-p-q"},{"level":6,"text":"C) P ⊕ Q","id":"c-p-q"},{"level":6,"text":"D) (P ⊕ Q)'","id":"d-p-q"},{"level":6,"text":"Q6) What is the Boolean expression for the output f of the combinational circuit of NOR gates given below? (GATE 2010) (1 Marks)","id":"q6-what-is-the-boolean-expression-for-the-output-f-of-the-combinational-circuit-of-nor-gates-given-below-gate-2010-1-marks"},{"level":6,"text":"Q7) What is the minimum no. of NAND gates required to implement a 2 - input Exclusive OR function without any other logic gate? (GATE 2004) (1 Marks)","id":"q7-what-is-the-minimum-no-of-nand-gates-required-to-implement-a-2-input-exclusive-or-function-without-any-other-logic-gate-gate-2004-1-marks"},{"level":6,"text":"a) 3","id":"a-3"},{"level":6,"text":"b) 4","id":"b-4"},{"level":6,"text":"c) 5","id":"c-5"},{"level":6,"text":"d) 6","id":"d-6"},{"level":6,"text":"Q8) Which of the following is functionally complete?","id":"q8-which-of-the-following-is-functionally-complete"},{"level":6,"text":"a) ⊕ , not","id":"a-not"},{"level":6,"text":"b) ⊕ , 1, +","id":"b-1"},{"level":6,"text":"c) ⊕ , 1, not","id":"c-1-not"},{"level":6,"text":"d) ⊙ , 1, not","id":"d-1-not"},{"level":6,"text":"Q9) f(a, b) = a' + b is functionally complete?","id":"q9-fa-b-a-b-is-functionally-complete"},{"level":6,"text":"Q10) Consider the operations (GATE 2015) (2 Marks)","id":"q10-consider-the-operations-gate-2015-2-marks"},{"level":6,"text":"f(X, Y, Z) = X'YZ + X'Y + Y'Z'","id":"fx-y-z-xyz-xy-yz"},{"level":6,"text":"g(X, Y, Z) = X'YZ + X'YZ' + XY","id":"gx-y-z-xyz-xyz-xy"},{"level":6,"text":"Which of the following is correct?","id":"which-of-the-following-is-correct"},{"level":6,"text":"(A) Both {f} and {g} are functionally complete","id":"a-both-f-and-g-are-functionally-complete"},{"level":6,"text":"(B) Only {f} is functionally complete","id":"b-only-f-is-functionally-complete"},{"level":6,"text":"(C) Only {g} is functionally complete","id":"c-only-g-is-functionally-complete"},{"level":6,"text":"(D) Neither {f} nor {g} is functionally complete","id":"d-neither-f-nor-g-is-functionally-complete"}],
     content: `Type : #Note    
@@ -26877,7 +26877,7 @@ f is functionally complete.
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 266,
-    backlinks: ["moc-logic-and-philosophy"],
+    backlinks: ["moc-logic-and-philosophy","logic-introduction","logic-introduction","logic-introduction","logic-introduction"],
     links: ["maths","gate","arguments","dld","set-theory","propositions","logical-operators","predicate-logic"],
     outline: [{"level":2,"text":"Propositions|Prepositions","id":"propositionsprepositions"},{"level":2,"text":"Logical Operators / Connectives","id":"logical-operators-connectives"},{"level":2,"text":"Rules of Inference","id":"rules-of-inference"},{"level":2,"text":"Arguments","id":"arguments"},{"level":2,"text":"Quantifiers","id":"quantifiers"},{"level":2,"text":"Predicate Properties","id":"predicate-properties"},{"level":2,"text":"Translations","id":"translations"}],
     content: `Type : #Note    
@@ -26970,7 +26970,7 @@ More in Detail in [[Predicate Logic]]
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 3258,
-    backlinks: ["moc-logic-and-philosophy","digital-logic-basics","logic-gates","logic-introduction","primary-logical-operators-across-different-domains"],
+    backlinks: ["moc-logic-and-philosophy","digital-logic-basics","logic-gates","logic-introduction","primary-logical-operators-across-different-domains","logical-operators","logical-operators","logical-operators","logical-operators"],
     links: ["maths","operators","dld","language","propositions","primary-logical-operators-across-different-domains","k-map","logic-gates"],
     outline: [{"level":2,"text":"Propositions Variables","id":"propositions-variables"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"Types of Logical Operators","id":"types-of-logical-operators"},{"level":3,"text":"Primary","id":"primary"},{"level":4,"text":"Properties","id":"properties"},{"level":3,"text":"Secondary","id":"secondary"},{"level":4,"text":"Precedence Order","id":"precedence-order"},{"level":4,"text":"Truth Table","id":"truth-table"},{"level":4,"text":"Implication","id":"implication"},{"level":4,"text":"Biconditional / Double Implication / Equivalence","id":"biconditional-double-implication-equivalence"},{"level":4,"text":"Properties :","id":"properties"},{"level":6,"text":"Q1) Check the following","id":"q1-check-the-following"},{"level":6,"text":"i) Is $→$ distributive over $∧$ ?","id":"i-is-distributive-over"},{"level":6,"text":"ii) Is $∧$ distributive over $→$ ?","id":"ii-is-distributive-over"},{"level":6,"text":"iii) Is $→$ distributive over $⊕$ ?","id":"iii-is-distributive-over"},{"level":6,"text":"iv) Is $⊕$ distributive over $→$ ?","id":"iv-is-distributive-over"},{"level":6,"text":"Q2) Consider | as a new Operator. Its Truth Table is given below.","id":"q2-consider-as-a-new-operator-its-truth-table-is-given-below"},{"level":6,"text":"Check:","id":"check"},{"level":6,"text":"a) Is | commutative?","id":"a-is-commutative"},{"level":6,"text":"b) Is | associative?","id":"b-is-associative"},{"level":6,"text":"c) Does | hold Idempotent law?","id":"c-does-hold-idempotent-law"},{"level":6,"text":"Q3) Check :","id":"q3-check"},{"level":6,"text":"a) P → Q ≡ Q' → P'","id":"a-p-q-q-p"},{"level":6,"text":"b) Q → P ≡ P' → Q'","id":"b-q-p-p-q"},{"level":6,"text":"c) P ↔ Q ≡ P' ↔ Q'","id":"c-p-q-p-q"},{"level":6,"text":"d) P' ↔ Q ≡ P ↔ Q'","id":"d-p-q-p-q"},{"level":6,"text":"e) (P → Q) ∧ (Q → R) → (P → R)","id":"e-p-q-q-r-p-r"},{"level":6,"text":"f) P → (Q ∧ R) ≡ (P → Q) ∧ (P → R)","id":"f-p-q-r-p-q-p-r"},{"level":6,"text":"Q4) Translate the following English sentences into Logic form","id":"q4-translate-the-following-english-sentences-into-logic-form"},{"level":6,"text":"a) a = 0 is necessary for ab = 0","id":"a-a-0-is-necessary-for-ab-0"},{"level":6,"text":"b) For a = 0, ab = 0 is necessary","id":"b-for-a-0-ab-0-is-necessary"},{"level":6,"text":"c) For a = 0, ab = 0 is sufficient","id":"c-for-a-0-ab-0-is-sufficient"},{"level":6,"text":"d) Only if you have a degree, you get Job","id":"d-only-if-you-have-a-degree-you-get-job"},{"level":6,"text":"e) If you have degree, you get job","id":"e-if-you-have-degree-you-get-job"},{"level":6,"text":"f) If it rains, then I don't carry umbrella","id":"f-if-it-rains-then-i-dont-carry-umbrella"},{"level":6,"text":"g) If a matrix is invertible, then its determinant is non-zero.","id":"g-if-a-matrix-is-invertible-then-its-determinant-is-non-zero"},{"level":6,"text":"h) A number is divisible by 4 only if it is even.","id":"h-a-number-is-divisible-by-4-only-if-it-is-even"},{"level":6,"text":"i) Being a citizen is necessary for voting.","id":"i-being-a-citizen-is-necessary-for-voting"},{"level":6,"text":"j) For a function to be continuous, differentiability is sufficient.","id":"j-for-a-function-to-be-continuous-differentiability-is-sufficient"},{"level":6,"text":"k) If a graph is bipartite, then it has no odd cycle.","id":"k-if-a-graph-is-bipartite-then-it-has-no-odd-cycle"},{"level":6,"text":"l) A password is valid only if it has at least 8 characters.","id":"l-a-password-is-valid-only-if-it-has-at-least-8-characters"},{"level":6,"text":"m) For the system to be stable, bounded input is necessary.","id":"m-for-the-system-to-be-stable-bounded-input-is-necessary"},{"level":6,"text":"n) If the server crashes, the service is unavailable.","id":"n-if-the-server-crashes-the-service-is-unavailable"},{"level":6,"text":"o) A student passes the exam only if they clear the cutoff.","id":"o-a-student-passes-the-exam-only-if-they-clear-the-cutoff"},{"level":6,"text":"p) For encryption to be secure, randomness is sufficient.","id":"p-for-encryption-to-be-secure-randomness-is-sufficient"},{"level":6,"text":"q) If the switch is on, then the light glows.","id":"q-if-the-switch-is-on-then-the-light-glows"},{"level":6,"text":"r) A process is deadlocked only if all four Coffman conditions hold.","id":"r-a-process-is-deadlocked-only-if-all-four-coffman-conditions-hold"},{"level":6,"text":"s) For a number to be prime, being greater than 1 is necessary.","id":"s-for-a-number-to-be-prime-being-greater-than-1-is-necessary"},{"level":6,"text":"t) If the cache is full, then eviction occurs.","id":"t-if-the-cache-is-full-then-eviction-occurs"},{"level":6,"text":"u) A graph is connected only if there exists a path between every pair of vertices.","id":"u-a-graph-is-connected-only-if-there-exists-a-path-between-every-pair-of-vertices"},{"level":6,"text":"v) For authentication, possession of a token is sufficient.","id":"v-for-authentication-possession-of-a-token-is-sufficient"},{"level":6,"text":"w) If the program has a syntax error, it fails to compile.","id":"w-if-the-program-has-a-syntax-error-it-fails-to-compile"},{"level":6,"text":"x) Access is granted only if the credentials are valid.","id":"x-access-is-granted-only-if-the-credentials-are-valid"},{"level":6,"text":"y) For data transmission, error correction is necessary.","id":"y-for-data-transmission-error-correction-is-necessary"},{"level":6,"text":"z) If the temperature drops below zero, water freezes.","id":"z-if-the-temperature-drops-below-zero-water-freezes"},{"level":6,"text":"Q5) What is the converse of following Assertion? I stay only if you go","id":"q5-what-is-the-converse-of-following-assertion-i-stay-only-if-you-go"},{"level":6,"text":"a) I stay if you go","id":"a-i-stay-if-you-go"},{"level":6,"text":"b) If I stay then you go","id":"b-if-i-stay-then-you-go"},{"level":6,"text":"c) if you do not go then I do not stay","id":"c-if-you-do-not-go-then-i-do-not-stay"},{"level":6,"text":"d) if I do not stay then you go","id":"d-if-i-do-not-stay-then-you-go"},{"level":6,"text":"Q6) If X then Y unless Z is represented by which formula in logic?","id":"q6-if-x-then-y-unless-z-is-represented-by-which-formula-in-logic"},{"level":6,"text":"a) (X ∧ ¬ Z) → Y","id":"a-x-z-y"},{"level":6,"text":"b) (X ∧ Y) → ¬ Z","id":"b-x-y-z"},{"level":6,"text":"c) X → (Y ∧ ¬ Z)","id":"c-x-y-z"},{"level":6,"text":"d) (X → Y) ∧ ¬ Z","id":"d-x-y-z"},{"level":6,"text":"Q7) Represent : You cannot ride a roller coaster if you are under 4 feet tall unless you are more than 16 years old","id":"q7-represent-you-cannot-ride-a-roller-coaster-if-you-are-under-4-feet-tall-unless-you-are-more-than-16-years-old"},{"level":6,"text":"P : You can ride roller coaster","id":"p-you-can-ride-roller-coaster"},{"level":6,"text":"Q : You are under 4 feet tall","id":"q-you-are-under-4-feet-tall"},{"level":6,"text":"R : You are more than 16 years old","id":"r-you-are-more-than-16-years-old"},{"level":6,"text":"Q8) Which option is correct?","id":"q8-which-option-is-correct"},{"level":6,"text":"P : Good Mobile Phones are not cheap","id":"p-good-mobile-phones-are-not-cheap"},{"level":6,"text":"Q : Cheap mobile phone are not good","id":"q-cheap-mobile-phone-are-not-good"},{"level":6,"text":"L : P implies Q","id":"l-p-implies-q"},{"level":6,"text":"M : Q implies P","id":"m-q-implies-p"},{"level":6,"text":"N : P is equivalent to Q","id":"n-p-is-equivalent-to-q"},{"level":6,"text":"a) Only L is true","id":"a-only-l-is-true"},{"level":6,"text":"b) Only M is true","id":"b-only-m-is-true"},{"level":6,"text":"c) Only N is true","id":"c-only-n-is-true"},{"level":6,"text":"d) L, M & N are true","id":"d-l-m-n-are-true"},{"level":6,"text":"Q9) The integer x ≥ 2 which satisfies ¬ ((P → Q) ∧ (¬ R ∨ ¬ S)) is —","id":"q9-the-integer-x-2-which-satisfies-p-q-r-s-is"},{"level":6,"text":"P : x ∈ {8, 9 10, 11, 12}","id":"p-x-8-9-10-11-12"},{"level":6,"text":"Q : x is a composite number","id":"q-x-is-a-composite-number"},{"level":6,"text":"R : x is a perfect square","id":"r-x-is-a-perfect-square"},{"level":6,"text":"S : x is a prime number","id":"s-x-is-a-prime-number"},{"level":6,"text":"Q10) It is not raining and it is pleasant and it is not pleasant only if it is raining and it is cold","id":"q10-it-is-not-raining-and-it-is-pleasant-and-it-is-not-pleasant-only-if-it-is-raining-and-it-is-cold"},{"level":6,"text":"P : It is raining","id":"p-it-is-raining"},{"level":6,"text":"Q : It is cold","id":"q-it-is-cold"},{"level":6,"text":"R : It is pleasant","id":"r-it-is-pleasant"},{"level":6,"text":"Q11) P : Every Prime Order Group is Cyclic . Then which of the following is True","id":"q11-p-every-prime-order-group-is-cyclic-then-which-of-the-following-is-true"},{"level":6,"text":"a) Every cyclic group is of prime order","id":"a-every-cyclic-group-is-of-prime-order"},{"level":6,"text":"b) if group if not cyclic then its order is not prime","id":"b-if-group-if-not-cyclic-then-its-order-is-not-prime"},{"level":6,"text":"c) if group is not of prime order then it is not cyclic","id":"c-if-group-is-not-of-prime-order-then-it-is-not-cyclic"},{"level":6,"text":"Q12) P : I Stay ; Q : You Go","id":"q12-p-i-stay-q-you-go"},{"level":6,"text":"a) I stay only if you go","id":"a-i-stay-only-if-you-go"},{"level":6,"text":"b) I stay is necessary for you go","id":"b-i-stay-is-necessary-for-you-go"},{"level":6,"text":"c) I don't stay if you don't go","id":"c-i-dont-stay-if-you-dont-go"},{"level":6,"text":"d)  You go follow from I stay","id":"d-you-go-follow-from-i-stay"},{"level":6,"text":"e) I stay if you go","id":"e-i-stay-if-you-go"},{"level":6,"text":"f) I stay iff you go","id":"f-i-stay-iff-you-go"},{"level":6,"text":"g) I stay is necessary and sufficient for you go","id":"g-i-stay-is-necessary-and-sufficient-for-you-go"},{"level":6,"text":"h) I stay unless you go","id":"h-i-stay-unless-you-go"},{"level":6,"text":"i) I stay is sufficient for you go","id":"i-i-stay-is-sufficient-for-you-go"},{"level":6,"text":"j) I stay when you go","id":"j-i-stay-when-you-go"},{"level":6,"text":"k) I stay but you go","id":"k-i-stay-but-you-go"},{"level":6,"text":"l) Either I stay or you go","id":"l-either-i-stay-or-you-go"},{"level":6,"text":"m) I don't stay implies you go","id":"m-i-dont-stay-implies-you-go"}],
     content: `Type : #Note    
@@ -27513,7 +27513,7 @@ m) P' → Q
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 150,
-    backlinks: ["fpya","finance"],
+    backlinks: ["fpya","finance","magic-of-compounding","magic-of-compounding","magic-of-compounding","magic-of-compounding"],
     links: ["finance","financial-planning","udemy","compounding"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -27588,7 +27588,7 @@ This was done by *Warren Buffet*. His biography is also called *The Snowball*.
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1022,
-    backlinks: ["markdown"],
+    backlinks: ["markdown","markdown-basic","markdown-basic"],
     links: ["language","markdown"],
     outline: [{"level":2,"text":"header 2","id":"header-2"},{"level":3,"text":"header 3","id":"header-3"},{"level":4,"text":"header 4","id":"header-4"},{"level":5,"text":"header 5","id":"header-5"},{"level":6,"text":"header 6","id":"header-6"},{"level":2,"text":"header 2","id":"header-2"},{"level":3,"text":"header 3","id":"header-3"},{"level":4,"text":"header 4","id":"header-4"},{"level":5,"text":"header 5","id":"header-5"},{"level":6,"text":"header 6","id":"header-6"},{"level":2,"text":"Bulleted Lists","id":"bulleted-lists"},{"level":2,"text":"Numbered Lists","id":"numbered-lists"},{"level":2,"text":"Check Box","id":"check-box"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -27966,7 +27966,7 @@ here:
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 290,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","matching","matching","matching"],
     links: ["maths","graph","treedm"],
     outline: [{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Maximal Matching","id":"maximal-matching"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Maximum Matching","id":"maximum-matching"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Perfect Matching","id":"perfect-matching"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -28062,7 +28062,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 223,
-    backlinks: ["moc-engineering-mathematics","matrix"],
+    backlinks: ["moc-engineering-mathematics","matrix","matrix-qs","matrix-qs","matrix-qs"],
     links: ["maths","questions"],
     outline: [{"level":6,"text":"Q1) if $C_{33} = B_{32} A_{23}$ . Find the no. of multiplications and additions.","id":"q1-if-c33-b32-a23-find-the-no-of-multiplications-and-additions"},{"level":6,"text":"Q2) Find $AB$ for two non-null matrices $A$ and $B$.","id":"q2-find-ab-for-two-non-null-matrices-a-and-b"},{"level":6,"text":"Q3) if $A_{m(m+5)}$ & $B_{n(11-n)}$ and both $AB$ and $BA$ exist. Calculate m, n.","id":"q3-if-amm5-bn11-n-and-both-ab-and-ba-exist-calculate-m-n"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -28173,7 +28173,7 @@ if $BA$ exists ⇒ 11 - n = m ⇒ m + n = 11 ….(Eq ii)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1481,
-    backlinks: [],
+    backlinks: ["matrix","matrix"],
     links: ["maths","face-alignment","arcface","coordinate-geometry","matrix-qs"],
     outline: [{"level":2,"text":"Important Types","id":"important-types"},{"level":4,"text":"Case 1 : $A_{mn}+B_{mn}$ : RECTANGULAR","id":"case-1-amnbmn-rectangular"},{"level":4,"text":"Case 2 : $A_{nn}+B_{nn}$ : SQUARE","id":"case-2-annbnn-square"},{"level":3,"text":"Properties of Addition of Matrices","id":"properties-of-addition-of-matrices"},{"level":3,"text":"Properties of Multiplication of Matrices","id":"properties-of-multiplication-of-matrices"},{"level":3,"text":"Properties of Symmetric Matrix","id":"properties-of-symmetric-matrix"},{"level":3,"text":"Properties of a Skew Symmetric Matrix","id":"properties-of-a-skew-symmetric-matrix"},{"level":3,"text":"One of the possible skew-symmetric matrix","id":"one-of-the-possible-skew-symmetric-matrix"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Properties of a Orthogonal Matrix","id":"properties-of-a-orthogonal-matrix"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -28511,7 +28511,7 @@ If $A$ is Orthogonal then →
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 151,
-    backlinks: ["moc-data-structures-and-algorithms","insertion-sort","recursion"],
+    backlinks: ["moc-data-structures-and-algorithms","insertion-sort","recursion","merge-sort","merge-sort"],
     links: ["dsa","sort"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -28620,7 +28620,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1072,
-    backlinks: ["algorithm-basics","bayes-theorem","face-detection","face-embedding","face-matching","graph-theory","probability-introduction"],
+    backlinks: ["algorithm-basics","bayes-theorem","face-detection","face-embedding","face-matching","graph-theory","probability-introduction","multi-object-tracking","multi-object-tracking"],
     links: ["research","computer-vision","face-matching","face-detection","graph-theory","bayes-theorem","algorithm-basics","probability-introduction"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 What Problem Does This Solve?","id":"what-problem-does-this-solve"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"🔄 Input → Output","id":"input-output"},{"level":2,"text":"🧩 Intuition (Explain Like I’m 12)","id":"intuition-explain-like-im-12"},{"level":2,"text":"⚙️ How It Works (Simple → Detailed)","id":"how-it-works-simple-detailed"},{"level":3,"text":"Core Components","id":"core-components"},{"level":3,"text":"Key Methods","id":"key-methods"},{"level":4,"text":"SORT (2016)","id":"sort-2016"},{"level":4,"text":"DeepSORT (2017)","id":"deepsort-2017"},{"level":4,"text":"ByteTrack (2022)","id":"bytetrack-2022"},{"level":4,"text":"OC-SORT (2022)","id":"oc-sort-2022"},{"level":4,"text":"BoT-SORT (2022)","id":"bot-sort-2022"},{"level":4,"text":"StrongSORT (2023)","id":"strongsort-2023"},{"level":3,"text":"Tracking Metrics","id":"tracking-metrics"},{"level":4,"text":"MOTA","id":"mota"},{"level":4,"text":"IDF1","id":"idf1"},{"level":4,"text":"HOTA","id":"hota"},{"level":3,"text":"Track Lifecycle","id":"track-lifecycle"},{"level":3,"text":"System-Level View","id":"system-level-view"},{"level":2,"text":"⚠️ Limitations (Why This Alone Is Not Enough)","id":"limitations-why-this-alone-is-not-enough"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 Related Models / Methods","id":"related-models-methods"},{"level":2,"text":"📚 Related Papers","id":"related-papers"},{"level":2,"text":"❓ Questions","id":"questions"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"📌 References","id":"references"}],
     content: `Type : #Note    
@@ -29092,7 +29092,7 @@ int main(){
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 537,
-    backlinks: ["continuec","loop"],
+    backlinks: ["continuec","loop","nestedloopc"],
     links: ["c","loop","control-structuresc"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Examples :","id":"examples"},{"level":6,"text":"Q1) WAP to print the table of numbers 1 to 10","id":"q1-wap-to-print-the-table-of-numbers-1-to-10"},{"level":6,"text":"Q2) Find the Output","id":"q2-find-the-output"},{"level":6,"text":"Q3) WAP to input any natural number & find the sum of its digits","id":"q3-wap-to-input-any-natural-number-find-the-sum-of-its-digits"},{"level":6,"text":"Q4) WAP to reverse a given natural number","id":"q4-wap-to-reverse-a-given-natural-number"}],
     content: `Type : #Note    
@@ -29316,7 +29316,7 @@ int main(){
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 843,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","network-reliability","network-reliability","network-reliability"],
     links: ["graph","maths","treedm"],
     outline: [{"level":2,"text":"Disconnection in Graphs","id":"disconnection-in-graphs"},{"level":3,"text":"Concept of Graph Disconnection","id":"concept-of-graph-disconnection"},{"level":4,"text":"Vertex Removal","id":"vertex-removal"},{"level":4,"text":"Edge Removal","id":"edge-removal"},{"level":2,"text":"Cut-Vertex / Articulation Point","id":"cut-vertex-articulation-point"},{"level":3,"text":"Connectivity Impact","id":"connectivity-impact"},{"level":6,"text":"Examples","id":"examples"},{"level":2,"text":"Cut-Edge / Bridge","id":"cut-edge-bridge"},{"level":3,"text":"Single Edge Connectivity","id":"single-edge-connectivity"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Cut-Sets","id":"cut-sets"},{"level":3,"text":"Concept of Cut-Set","id":"concept-of-cut-set"},{"level":4,"text":"Minimal Disconnection Set","id":"minimal-disconnection-set"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Edge Connectivity ($\\lambda(G)$)","id":"edge-connectivity-lambdag"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Vertex Connectivity ($\\kappa(G)$)","id":"vertex-connectivity-kappag"},{"level":3,"text":"Definition and Bounds","id":"definition-and-bounds"},{"level":4,"text":"Comparison of Connectivity","id":"comparison-of-connectivity"},{"level":6,"text":"Q1) Fill the table","id":"q1-fill-the-table"}],
     content: `Type : #Note    
@@ -29484,7 +29484,7 @@ Consider a graph $G$ with edges $E = \\{(1,2), (2,3), (3,4), (4,1), (2,4)\\}$.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 555,
-    backlinks: ["ethical-hacking"],
+    backlinks: ["ethical-hacking","networking-basics","networking-basics"],
     links: ["linux","cybersec"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Why Networking?","id":"why-networking"},{"level":3,"text":"What is the Internet?","id":"what-is-the-internet"}],
     content: `Type : #Note    
@@ -29616,7 +29616,7 @@ WiFi Routers < Local Routers < ISP Routers.
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 2767,
-    backlinks: ["moc-logic-and-philosophy"],
+    backlinks: ["moc-logic-and-philosophy","normal-form-sop-and-pos","normal-form-sop-and-pos","normal-form-sop-and-pos"],
     links: ["maths","dld","k-map"],
     outline: [{"level":2,"text":"SOP / DNF (General Form)","id":"sop-dnf-general-form"},{"level":2,"text":"POS / CNF (General Form)","id":"pos-cnf-general-form"},{"level":2,"text":"Minterms or Boolean Terms (m)","id":"minterms-or-boolean-terms-m"},{"level":2,"text":"PDNF / Canonical SOP","id":"pdnf-canonical-sop"},{"level":2,"text":"Maxterms (M)","id":"maxterms-m"},{"level":2,"text":"PCNF / Canonical POS","id":"pcnf-canonical-pos"},{"level":2,"text":"Unified Problem-Solving Strategy","id":"unified-problem-solving-strategy"},{"level":2,"text":"Key Equivalences","id":"key-equivalences"},{"level":2,"text":"SOP → CSOP (Canonical SOP / PDNF)","id":"sop-csop-canonical-sop-pdnf"},{"level":2,"text":"POS → CPOS (Canonical POS / PCNF)","id":"pos-cpos-canonical-pos-pcnf"},{"level":2,"text":"CSOP → CPOS","id":"csop-cpos"},{"level":2,"text":"CPOS → CSOP","id":"cpos-csop"},{"level":2,"text":"SOP ↔ POS (General Conversion)","id":"sop-pos-general-conversion"},{"level":2,"text":"Truth Table Based Conversion (Universal Method)","id":"truth-table-based-conversion-universal-method"},{"level":2,"text":"Summary Rules","id":"summary-rules"},{"level":6,"text":"Q1) Consider the following truth table and write maxterm and minterms for the same.","id":"q1-consider-the-following-truth-table-and-write-maxterm-and-minterms-for-the-same"},{"level":6,"text":"Q2) Which of the following propositional logic formulas is True when exactly two of p, q & r are True","id":"q2-which-of-the-following-propositional-logic-formulas-is-true-when-exactly-two-of-p-q-r-are-true"},{"level":6,"text":"a) ((p ↔ q) ∧ r ) ∨ (p ∧ q ∧ ~r)","id":"a-p-q-r-p-q-r"},{"level":6,"text":"b) (<sub></sub> ~(p ↔ q) ∧ r) ∨ (p ∧ q ∧ ~r)","id":"b-subsub-p-q-r-p-q-r"},{"level":6,"text":"c) ((p → q) ∧ r) ∨ (p ∧ q ∧ ~r)","id":"c-p-q-r-p-q-r"},{"level":6,"text":"d) (~(p ↔ q) ∧ r) ∧ (p ∧ q ∧ ~r)","id":"d-p-q-r-p-q-r"},{"level":2,"text":"SOP / POS / Normal Forms","id":"sop-pos-normal-forms"},{"level":2,"text":"Minterms and Maxterms","id":"minterms-and-maxterms"},{"level":2,"text":"Canonical Forms","id":"canonical-forms"},{"level":2,"text":"Tautology / Contradiction / Contingency","id":"tautology-contradiction-contingency"},{"level":2,"text":"Index Notation","id":"index-notation"},{"level":2,"text":"Conversions","id":"conversions"},{"level":2,"text":"Fast Problem-Solving Rules","id":"fast-problem-solving-rules"},{"level":2,"text":"Key Identities","id":"key-identities"}],
     content: `Type : #Note    
@@ -30084,7 +30084,7 @@ Hence b is the correct option
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 263,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","number-system","number-system"],
     links: ["maths","complex-numbers"],
     outline: [{"level":2,"text":"Natural Numbers (N)","id":"natural-numbers-n"},{"level":2,"text":"Whole Numbers (W)","id":"whole-numbers-w"},{"level":2,"text":"Integers (I) or (Z)","id":"integers-i-or-z"},{"level":2,"text":"Rational Numbers (Q)","id":"rational-numbers-q"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Irrational Numbers (Q' / $I_r$)","id":"irrational-numbers-q-ir"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Real Numbers (R)","id":"real-numbers-r"},{"level":2,"text":"Complex Numbers (C)","id":"complex-numbers-c"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -30168,7 +30168,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 986,
-    backlinks: [],
+    backlinks: ["oops-features","oops-features","oops-features"],
     links: ["java","oops","java-overview","jvm-architecture"],
     outline: [{"level":2,"text":"🧠 In One Sentence","id":"in-one-sentence"},{"level":2,"text":"🎯 Why This Topic Exists","id":"why-this-topic-exists"},{"level":2,"text":"📍 Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"📍 Where It Is Used","id":"where-it-is-used"},{"level":2,"text":"🔄 Core Idea","id":"core-idea"},{"level":2,"text":"🧩 Intuition (Simple Explanation)","id":"intuition-simple-explanation"},{"level":2,"text":"🔑 Key Points (Exam-Oriented)","id":"key-points-exam-oriented"},{"level":3,"text":"4 Pillars of OOP (Exam Ready)","id":"4-pillars-of-oop-exam-ready"},{"level":4,"text":"1. DB System Concepts#Data Abstraction|Abstraction","id":"1-db-system-conceptsdata-abstractionabstraction"},{"level":4,"text":"2. Encapsulation","id":"2-encapsulation"},{"level":4,"text":"3. Inheritance","id":"3-inheritance"},{"level":4,"text":"4. Polymorphism","id":"4-polymorphism"},{"level":2,"text":"⚖️ Differences / Comparisons (VERY IMPORTANT)","id":"differences-comparisons-very-important"},{"level":2,"text":"💻 Standard Program Pattern (MOST IMPORTANT)","id":"standard-program-pattern-most-important"},{"level":2,"text":"🧠 Logic Breakdown","id":"logic-breakdown"},{"level":2,"text":"⚠️ Common Mistakes","id":"common-mistakes"},{"level":2,"text":"🧠 Key Terms","id":"key-terms"},{"level":2,"text":"🔗 Connections","id":"connections"},{"level":2,"text":"📄 PYQ Patterns (CRITICAL)","id":"pyq-patterns-critical"},{"level":2,"text":"❓ Questions (Practice / PYQ)","id":"questions-practice-pyq"},{"level":6,"text":"Q1) How does OOP achieve code reusability?","id":"q1-how-does-oop-achieve-code-reusability"},{"level":2,"text":"📝 Summary","id":"summary"},{"level":2,"text":"⚡ Revision Trigger (1-Liner)","id":"revision-trigger-1-liner"},{"level":2,"text":"📌 References","id":"references"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -30390,7 +30390,7 @@ OOP is about **A.E.I.O.** ([[DB System Concepts#Data Abstraction|Abstraction]], 
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 3942,
-    backlinks: ["pointersc","primary-datatypesc","python-operators","questions-on-minimization","simple-ifc","c"],
+    backlinks: ["pointersc","primary-datatypesc","python-operators","questions-on-minimization","simple-ifc","c","operatorsc"],
     links: ["c","treedsa","datatypes","primary-datatypesc","operators","primary-logical-operators-across-different-domains"],
     outline: [{"level":2,"text":"1. Arithmetic Operators","id":"1-arithmetic-operators"},{"level":6,"text":"Examples :","id":"examples"},{"level":6,"text":"Examples :","id":"examples"},{"level":3,"text":"Rules for Arithmetic Operators","id":"rules-for-arithmetic-operators"},{"level":3,"text":"Precedence Rule","id":"precedence-rule"},{"level":3,"text":"Associative Rule","id":"associative-rule"},{"level":2,"text":"2. Assignment Operator","id":"2-assignment-operator"},{"level":6,"text":"Examples :","id":"examples"},{"level":3,"text":"Cascading of Assignment Operator","id":"cascading-of-assignment-operator"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Swapping values of two variables with the help of a third variable","id":"swapping-values-of-two-variables-with-the-help-of-a-third-variable"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Swapping values of two variables without a third variable","id":"swapping-values-of-two-variables-without-a-third-variable"},{"level":6,"text":"Examples :","id":"examples"},{"level":2,"text":"3. Relational Operators","id":"3-relational-operators"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Associativity of Relational Operators","id":"associativity-of-relational-operators"},{"level":6,"text":"Examples","id":"examples"},{"level":3,"text":"Precedence of Relational and Arithmetic Operators","id":"precedence-of-relational-and-arithmetic-operators"},{"level":6,"text":"Examples :","id":"examples"},{"level":2,"text":"4. Logical Operators","id":"4-logical-operators"},{"level":6,"text":"Examples :","id":"examples"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Short Circuiting in Logical Operators","id":"short-circuiting-in-logical-operators"},{"level":6,"text":"Examples :","id":"examples"},{"level":3,"text":"Precedence of Logical Operators","id":"precedence-of-logical-operators"},{"level":6,"text":"Examples :","id":"examples"},{"level":3,"text":"Associativity of Logical Operators","id":"associativity-of-logical-operators"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"5. Increment Operator","id":"5-increment-operator"},{"level":6,"text":"Examples :","id":"examples"},{"level":3,"text":"Precedence","id":"precedence"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Associativity of Increment Operator","id":"associativity-of-increment-operator"},{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"6. Decrement Operator","id":"6-decrement-operator"},{"level":2,"text":"7. Shortcut Operator","id":"7-shortcut-operator"},{"level":6,"text":"Examples :","id":"examples"},{"level":3,"text":"Precedence of Shorthand Operators","id":"precedence-of-shorthand-operators"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"8. Ternary Operator","id":"8-ternary-operator"},{"level":3,"text":"Syntax :","id":"syntax"},{"level":6,"text":"Example : Finding the greatest of 2 numbers","id":"example-finding-the-greatest-of-2-numbers"},{"level":6,"text":"Example : Finding the greatest of 3 numbers using 2 other variables","id":"example-finding-the-greatest-of-3-numbers-using-2-other-variables"},{"level":3,"text":"Nesting of Conditional Operator","id":"nesting-of-conditional-operator"},{"level":3,"text":"Associativity of Ternary Operator","id":"associativity-of-ternary-operator"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"9. sizeof Operator","id":"9-sizeof-operator"},{"level":3,"text":"Rules","id":"rules"},{"level":6,"text":"Examples : Based on Turbo C compiler","id":"examples-based-on-turbo-c-compiler"},{"level":3,"text":"Associativity of sizeof operator","id":"associativity-of-sizeof-operator"},{"level":2,"text":"10.  Type Casting Operator","id":"10-type-casting-operator"},{"level":2,"text":"11. Comma Operator","id":"11-comma-operator"},{"level":3,"text":"Associativity of Comma Operator","id":"associativity-of-comma-operator"},{"level":3,"text":"Precedence of Comma Operator","id":"precedence-of-comma-operator"},{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q1)</span> If int takes 2 bytes then","id":"span-stylecolorrgb0-176-240q1span-if-int-takes-2-bytes-then"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q2)</span> int x = 3/3/3/3;. what is the value of x?","id":"span-stylecolorrgb0-176-240q2span-int-x-3333-what-is-the-value-of-x"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q3)</span> int x = 3 + 3  4  3 / 6 / 4  3 - 2;. what is the value of x?","id":"span-stylecolorrgb0-176-240q3span-int-x-3-3-4-3-6-4-3-2-what-is-the-value-of-x"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q4)</span> int x = (13 / 4  3) % 5 + 1;. what is the value of x?","id":"span-stylecolorrgb0-176-240q4span-int-x-13-4-3-5-1-what-is-the-value-of-x"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q5)</span> x -= y + 1 is same as","id":"span-stylecolorrgb0-176-240q5span-x-y-1-is-same-as"},{"level":6,"text":"a) x = x - y + 1","id":"a-x-x-y-1"},{"level":6,"text":"b) x = x - y - 1","id":"b-x-x-y-1"},{"level":6,"text":"c) Compiler Dependent","id":"c-compiler-dependent"},{"level":6,"text":"d) none","id":"d-none"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q6)</span> Solve :","id":"span-stylecolorrgb0-176-240q6span-solve"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">i)</span> a = 2 ? 3 ? 4 : 5 : 7 ? 6 : 8","id":"span-stylecolorrgb0-176-240ispan-a-2-3-4-5-7-6-8"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">ii</span><span style=\"color:rgb(0, 176, 240)\"><span style=\"color:rgb(0, 176, 240)\">)</span></span> a = 0 ? 7 ? 2 : 3 : 4","id":"span-stylecolorrgb0-176-240iispanspan-stylecolorrgb0-176-240span-stylecolorrgb0-176-240spanspan-a-0-7-2-3-4"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">iii)</span> a = 3 ? 2 ? 5 : 4 ? 6 : 7 : 1","id":"span-stylecolorrgb0-176-240iiispan-a-3-2-5-4-6-7-1"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">iv)</span> a = 3 ? 2 ? 5 ? 4 : 1 : 8 : 9","id":"span-stylecolorrgb0-176-240ivspan-a-3-2-5-4-1-8-9"}],
     content: `Type : #Note    
@@ -31176,7 +31176,7 @@ a = <span style="color:rgb(146, 208, 80)">4</span>
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 400,
-    backlinks: ["moc-logic-and-philosophy","basicsc","logical-operators","operatorsc","primary-logical-operators-across-different-domains","programming","python-operators","questions-on-minimization"],
+    backlinks: ["moc-logic-and-philosophy","basicsc","logical-operators","operatorsc","primary-logical-operators-across-different-domains","programming","python-operators","questions-on-minimization","operators","operators","operators"],
     links: ["language","c","python"],
     outline: [{"level":2,"text":"1. Arithmetic Operators","id":"1-arithmetic-operators"},{"level":2,"text":"2. Relational Operators","id":"2-relational-operators"},{"level":2,"text":"3. Logical Operators","id":"3-logical-operators"},{"level":2,"text":"4. Assignment Operators","id":"4-assignment-operators"},{"level":2,"text":"5. Unary Operators","id":"5-unary-operators"},{"level":2,"text":"6. Bitwise Operators","id":"6-bitwise-operators"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"7. Conditional / Ternary Operator","id":"7-conditional-ternary-operator"}],
     content: `Type : #Note    
@@ -31312,7 +31312,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 2504,
-    backlinks: [],
+    backlinks: ["pattern-questionsc","pattern-questionsc","pattern-questionsc","pattern-questionsc"],
     links: ["c","loop","jump-statements","conditional","control-structuresc"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Q1)","id":"q1"},{"level":6,"text":"Q2)","id":"q2"},{"level":6,"text":"Q3)","id":"q3"},{"level":6,"text":"Q4)","id":"q4"},{"level":6,"text":"Q5)","id":"q5"},{"level":6,"text":"Q6)","id":"q6"},{"level":6,"text":"Q7","id":"q7"},{"level":6,"text":"Q8)","id":"q8"},{"level":6,"text":"Q9)","id":"q9"},{"level":6,"text":"Q10)","id":"q10"},{"level":6,"text":"Q11)","id":"q11"},{"level":6,"text":"Q12)","id":"q12"},{"level":6,"text":"Q13)","id":"q13"},{"level":6,"text":"Q14)","id":"q14"},{"level":6,"text":"Q15)","id":"q15"},{"level":6,"text":"Q17)","id":"q17"},{"level":6,"text":"Q18)","id":"q18"}],
     content: `Type : #Note    
@@ -32072,7 +32072,7 @@ int main(){
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 248,
-    backlinks: ["moc-engineering-mathematics","coin"],
+    backlinks: ["moc-engineering-mathematics","coin","permutation-combination-formulas","permutation-combination-formulas","permutation-combination-formulas"],
     links: ["maths","probability"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -32211,7 +32211,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 641,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","planer-non-planer-graphs","planer-non-planer-graphs","planer-non-planer-graphs"],
     links: ["maths","dsa"],
     outline: [{"level":3,"text":"Planar Graph","id":"planar-graph"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Non-Planar Graph","id":"non-planar-graph"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Kuratowski’s Theorem","id":"kuratowskis-theorem"},{"level":3,"text":"Isomorphic graphs","id":"isomorphic-graphs"},{"level":6,"text":"Example : Planer isomorphic graph","id":"example-planer-isomorphic-graph"},{"level":6,"text":"Example : Non-Planer isomorphic graph","id":"example-non-planer-isomorphic-graph"},{"level":6,"text":"Example : Isomorphic Graphs","id":"example-isomorphic-graphs"},{"level":6,"text":"Example : non-isomorphic graphs","id":"example-non-isomorphic-graphs"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Euler’s Formula","id":"eulers-formula"},{"level":4,"text":"Connected Planer Graph","id":"connected-planer-graph"},{"level":6,"text":"Example","id":"example"},{"level":4,"text":"Disconnected Planer Graph","id":"disconnected-planer-graph"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Q1) How many simple non-isomorphic graphs are possible with :","id":"q1-how-many-simple-non-isomorphic-graphs-are-possible-with"},{"level":6,"text":"a) 4 vertices and 2 edges?","id":"a-4-vertices-and-2-edges"},{"level":6,"text":"b) 4 vertices and 3 edges","id":"b-4-vertices-and-3-edges"},{"level":6,"text":"c) 5 vertices and 3 edges","id":"c-5-vertices-and-3-edges"},{"level":6,"text":"Q2) How many simple non-isomorphic graphs are possible with 6 vertices and 6 edges such that ° of every vertex must be same?","id":"q2-how-many-simple-non-isomorphic-graphs-are-possible-with-6-vertices-and-6-edges-such-that-of-every-vertex-must-be-same"},{"level":6,"text":"Q3) How many simple non-isomorphic graphs are possible with 8 vertices and 8 edges such that ° of every vertex must be same?","id":"q3-how-many-simple-non-isomorphic-graphs-are-possible-with-8-vertices-and-8-edges-such-that-of-every-vertex-must-be-same"}],
     content: `Type : #Note    
@@ -32366,7 +32366,7 @@ A3)  3
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 352,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","pmf","pmf","pmf"],
     links: ["statistics","probability"],
     outline: [{"level":2,"text":"Probability Mass Function (PMF)","id":"probability-mass-function-pmf"},{"level":3,"text":"Definition","id":"definition"},{"level":4,"text":"Properties","id":"properties"},{"level":3,"text":"Example: Tossing Two Coins","id":"example-tossing-two-coins"},{"level":4,"text":"Experiment","id":"experiment"},{"level":4,"text":"Sample Space","id":"sample-space"},{"level":4,"text":"Define Random Variable","id":"define-random-variable"},{"level":4,"text":"Possible Values","id":"possible-values"},{"level":4,"text":"PMF Table","id":"pmf-table"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Probability Distribution","id":"probability-distribution"},{"level":3,"text":"Definition","id":"definition"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Distribution Function (CDF)","id":"distribution-function-cdf"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Example: CDF for Above Case","id":"example-cdf-for-above-case"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Continuous Random Variable","id":"continuous-random-variable"},{"level":3,"text":"Definition","id":"definition"},{"level":2,"text":"Probability Density Function (PDF)","id":"probability-density-function-pdf"},{"level":3,"text":"Definition","id":"definition"},{"level":4,"text":"Properties","id":"properties"},{"level":3,"text":"Example: Uniform Distribution","id":"example-uniform-distribution"},{"level":4,"text":"Given","id":"given"},{"level":4,"text":"Verify","id":"verify"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Learning Flow","id":"learning-flow"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -32564,7 +32564,7 @@ $$f(x) = \\begin{cases}
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 574,
-    backlinks: [],
+    backlinks: ["pointers-and-functionsc"],
     links: ["c","pointersc"],
     outline: [{"level":2,"text":"Core Function Argument Methods","id":"core-function-argument-methods"},{"level":3,"text":"Call by Value","id":"call-by-value"},{"level":3,"text":"Call by Reference","id":"call-by-reference"},{"level":2,"text":"Detailed Analysis: The Swapping Problem","id":"detailed-analysis-the-swapping-problem"},{"level":3,"text":"Swapping using Call by Value (Ineffective)","id":"swapping-using-call-by-value-ineffective"},{"level":3,"text":"Swapping using Call by Reference (Effective)","id":"swapping-using-call-by-reference-effective"},{"level":6,"text":"Example: Memory Visualization","id":"example-memory-visualization"},{"level":2,"text":"Syntactic Requirements for Call by Reference","id":"syntactic-requirements-for-call-by-reference"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -32712,7 +32712,7 @@ In Call by Reference:
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1118,
-    backlinks: ["dynamic-memory-allocationc","pointers-and-functionsc"],
+    backlinks: ["dynamic-memory-allocationc","pointers-and-functionsc","pointersc","pointersc","pointersc","pointersc"],
     links: ["c","dsa","language","datatypes","operatorsc","errors","linked-list","treedsa","array"],
     outline: [{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Why do we need to specify the datatypes|datatype every time we are Tokens.c#2. Declaration|declaring a pointer?","id":"why-do-we-need-to-specify-the-datatypesdatatype-every-time-we-are-tokensc2-declarationdeclaring-a-pointer"},{"level":3,"text":"What will happen if we try to store a datatypes|datatype of a different type instead of the one we declared?","id":"what-will-happen-if-we-try-to-store-a-datatypesdatatype-of-a-different-type-instead-of-the-one-we-declared"},{"level":3,"text":"What will happen if we try to print using the memory address and not the name of the pointer?","id":"what-will-happen-if-we-try-to-print-using-the-memory-address-and-not-the-name-of-the-pointer"},{"level":3,"text":"Uses","id":"uses"},{"level":2,"text":"Pointer to Pointer","id":"pointer-to-pointer"},{"level":6,"text":"Example :","id":"example"},{"level":5,"text":"Addition / Subtraction","id":"addition-subtraction"},{"level":5,"text":"Illegal Operations","id":"illegal-operations"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Pointers and Array|Arrays","id":"pointers-and-arrayarrays"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Special Pointer Types","id":"special-pointer-types"},{"level":6,"text":"Q1) How to define a pointer?","id":"q1-how-to-define-a-pointer"},{"level":6,"text":"Q2) How to initialize a pointer?","id":"q2-how-to-initialize-a-pointer"},{"level":6,"text":"Q3) How to dereference a pointer?","id":"q3-how-to-dereference-a-pointer"},{"level":6,"text":"Q4) What are the 2 operators be related to pointer?","id":"q4-what-are-the-2-operators-be-related-to-pointer"},{"level":6,"text":"Q5) What is the output of this Q. Let the address of x be 2000. Address of p be 4000. Address of p1 be 6000.","id":"q5-what-is-the-output-of-this-q-let-the-address-of-x-be-2000-address-of-p-be-4000-address-of-p1-be-6000"}],
     content: `Type : #Note    
@@ -32989,7 +32989,7 @@ printf("%p", *&*&**&*p1);  // 5
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 1754,
-    backlinks: ["moc-engineering-mathematics","relations"],
+    backlinks: ["moc-engineering-mathematics","relations","poset","poset","poset"],
     links: ["set","maths"],
     outline: [{"level":2,"text":"Partially Ordered Set (POSET)","id":"partially-ordered-set-poset"},{"level":3,"text":"Definition of POSET","id":"definition-of-poset"},{"level":4,"text":"Properties of Partial Order","id":"properties-of-partial-order"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Comparability in POSET","id":"comparability-in-poset"},{"level":3,"text":"Comparable Elements","id":"comparable-elements"},{"level":3,"text":"Incomparable Elements","id":"incomparable-elements"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Hasse Diagram","id":"hasse-diagram"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Construction Rules","id":"construction-rules"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Lattice Theory","id":"lattice-theory"},{"level":3,"text":"Definition of Lattice","id":"definition-of-lattice"},{"level":2,"text":"Types of Lattice","id":"types-of-lattice"},{"level":3,"text":"Bounded Unbounded Lattices","id":"bounded-unbounded-lattices"},{"level":4,"text":"Least Upper Bound / Supremum / LUB / Join / ∨","id":"least-upper-bound-supremum-lub-join"},{"level":4,"text":"Greatest Lower Bound / Infimum / GLB / Meet / ∧","id":"greatest-lower-bound-infimum-glb-meet"},{"level":6,"text":"Example","id":"example"},{"level":4,"text":"Lattice","id":"lattice"},{"level":6,"text":"Example","id":"example"},{"level":4,"text":"Upper Bound","id":"upper-bound"},{"level":4,"text":"Lower Bound","id":"lower-bound"},{"level":4,"text":"Unbounded Lattice","id":"unbounded-lattice"},{"level":6,"text":"Example","id":"example"},{"level":4,"text":"Bounded Lattice","id":"bounded-lattice"},{"level":3,"text":"Complement and Distributive Lattices","id":"complement-and-distributive-lattices"},{"level":4,"text":"Complemented Lattice","id":"complemented-lattice"},{"level":5,"text":"Complement of an Element","id":"complement-of-an-element"},{"level":6,"text":"Key Properties:","id":"key-properties"},{"level":6,"text":"Example","id":"example"},{"level":4,"text":"Distributive Lattice","id":"distributive-lattice"},{"level":5,"text":"Distributive Laws","id":"distributive-laws"},{"level":6,"text":"Key Properties and Theorems:","id":"key-properties-and-theorems"},{"level":6,"text":"Example : Distributive Lattice","id":"example-distributive-lattice"},{"level":6,"text":"Example : Non-distributive Lattice","id":"example-non-distributive-lattice"},{"level":4,"text":"Boolean Lattice (Boolean Algebra)","id":"boolean-lattice-boolean-algebra"},{"level":6,"text":"Properties of Boolean Lattices:","id":"properties-of-boolean-lattices"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Q1) Consider a Partial order relation and convert into Hasse Diagram. $R$ = {(1, 1), (1, 2), (1, 3), (1, 6), (2, 2), (2, 6), (3, 3), (3, 6), (6, 6)}","id":"q1-consider-a-partial-order-relation-and-convert-into-hasse-diagram-r-1-1-1-2-1-3-1-6-2-2-2-6-3-3-3-6-6-6"},{"level":6,"text":"Q2) Study the following hasse diagrams and find which of the following are valid?","id":"q2-study-the-following-hasse-diagrams-and-find-which-of-the-following-are-valid"},{"level":6,"text":"a) !Pasted image 20260321171117.png","id":"a-pasted-image-20260321171117png"},{"level":6,"text":"b) !Pasted image 20260321171140.png","id":"b-pasted-image-20260321171140png"},{"level":6,"text":"c) !Pasted image 20260321171450.png","id":"c-pasted-image-20260321171450png"},{"level":6,"text":"d) !Pasted image 20260321171459.png","id":"d-pasted-image-20260321171459png"},{"level":6,"text":"e) !Pasted image 20260321171510.png","id":"e-pasted-image-20260321171510png"},{"level":6,"text":"f) !Pasted image 20260321171706.png","id":"f-pasted-image-20260321171706png"},{"level":6,"text":"g) !Pasted image 20260321171719.png","id":"g-pasted-image-20260321171719png"},{"level":6,"text":"i) !Pasted image 20260321171737.png","id":"i-pasted-image-20260321171737png"},{"level":6,"text":"j) !Pasted image 20260321171944.png","id":"j-pasted-image-20260321171944png"},{"level":6,"text":"k) !Pasted image 20260321171954.png","id":"k-pasted-image-20260321171954png"},{"level":6,"text":"l) !Pasted image 20260321172005.png","id":"l-pasted-image-20260321172005png"},{"level":6,"text":"Q4) Let X = {2,3,6,12,24}, Let ≤ be the partial order defined by x ≤ y, if x divides y. Number of edges as in the Hasse diagram of (X, ≤) is.","id":"q4-let-x-2361224-let-be-the-partial-order-defined-by-x-y-if-x-divides-y-number-of-edges-as-in-the-hasse-diagram-of-x-is"},{"level":6,"text":"a) 3","id":"a-3"},{"level":6,"text":"(b) 4","id":"b-4"},{"level":6,"text":"(c) 9","id":"c-9"},{"level":6,"text":"(d) None of the above","id":"d-none-of-the-above"},{"level":6,"text":"Q5) Find which of the following is a lattice and Boolean Algebra","id":"q5-find-which-of-the-following-is-a-lattice-and-boolean-algebra"},{"level":6,"text":"(1) $\\\\\\{1,2,3,4,6,9\\\\\\}, /$","id":"1-123469"},{"level":6,"text":"(2) $\\\\\\{2,3,4,6,12\\\\\\}, /$","id":"2-234612"},{"level":6,"text":"(3) $\\\\\\{1,2,3,5,30\\\\\\}, /$","id":"3-123530"},{"level":6,"text":"(4) $\\\\\\{1,2,3,6,9,18\\\\\\}, /$","id":"4-1236918"},{"level":6,"text":"(5) $\\\\\\{2,3,4,9,12,18\\\\\\}, /$","id":"5-23491218"},{"level":6,"text":"(6) $R, <= $","id":"6-r"},{"level":6,"text":"(7) $P(A), ⊆ , A = \\\\\\{1,2,3\\\\\\}$","id":"7-pa-a-123"},{"level":6,"text":"Q6) Consider the following hasse diagram, find which of the following is true?","id":"q6-consider-the-following-hasse-diagram-find-which-of-the-following-is-true"},{"level":6,"text":"a) subset {a, b, c, g} is a lattice","id":"a-subset-a-b-c-g-is-a-lattice"},{"level":6,"text":"b) subset {a, b, f, g} is a lattice","id":"b-subset-a-b-f-g-is-a-lattice"},{"level":6,"text":"c) subset {a, d, e, g} is a lattice","id":"c-subset-a-d-e-g-is-a-lattice"},{"level":6,"text":"d) subset {a, c, e, g} is a lattice","id":"d-subset-a-c-e-g-is-a-lattice"}],
     content: `Type : #Note    
@@ -33312,7 +33312,7 @@ A6) a, c
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1055,
-    backlinks: ["moc-logic-and-philosophy","logic-introduction"],
+    backlinks: ["moc-logic-and-philosophy","logic-introduction","predicate-logic","predicate-logic"],
     links: ["maths","well-formed-formula"],
     outline: [{"level":2,"text":"Why Predicate Logic?","id":"why-predicate-logic"},{"level":2,"text":"Basic Components","id":"basic-components"},{"level":3,"text":"Domain (Universe of Discourse)","id":"domain-universe-of-discourse"},{"level":3,"text":"Variables","id":"variables"},{"level":3,"text":"Predicates","id":"predicates"},{"level":3,"text":"Atomic Formula","id":"atomic-formula"},{"level":2,"text":"Quantifiers","id":"quantifiers"},{"level":3,"text":"Universal Quantifier (∀)","id":"universal-quantifier"},{"level":3,"text":"Existential Quantifier (∃)","id":"existential-quantifier"},{"level":2,"text":"Quantifier Scope","id":"quantifier-scope"},{"level":2,"text":"Free and Bound Variables","id":"free-and-bound-variables"},{"level":2,"text":"Well Formed Formula (well formed formula|wff) in Predicate Logic","id":"well-formed-formula-well-formed-formulawff-in-predicate-logic"},{"level":2,"text":"Negation of Quantifiers (Very Important)","id":"negation-of-quantifiers-very-important"},{"level":2,"text":"Order of Quantifiers / Nested Quantifiers","id":"order-of-quantifiers-nested-quantifiers"},{"level":3,"text":"Combination Cases","id":"combination-cases"},{"level":4,"text":"1. ∀ x ∀ y (P(x, y))","id":"1-x-y-px-y"},{"level":4,"text":"2. ∃ x ∃ y (P(x, y))","id":"2-x-y-px-y"},{"level":4,"text":"3. ∀ x ∃ y (P(x, y))","id":"3-x-y-px-y"},{"level":4,"text":"4. ∃ y ∀ x (P(x, y))","id":"4-y-x-px-y"},{"level":4,"text":"5. ∃ x ∀ y (P(x , y))","id":"5-x-y-px-y"},{"level":4,"text":"6. ∀ y ∃ x (P (x, y))","id":"6-y-x-p-x-y"},{"level":2,"text":"Predicate Logic vs Propositional Logic","id":"predicate-logic-vs-propositional-logic"},{"level":2,"text":"Translation Examples","id":"translation-examples"},{"level":2,"text":"Implication inside Predicate Logic","id":"implication-inside-predicate-logic"},{"level":2,"text":"Common Mistakes (Exam Traps)","id":"common-mistakes-exam-traps"},{"level":2,"text":"Validity and Satisfiability","id":"validity-and-satisfiability"},{"level":2,"text":"Relation to Boolean Algebra","id":"relation-to-boolean-algebra"},{"level":2,"text":"GATE / LEEE Exam Tips","id":"gate-leee-exam-tips"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -33604,7 +33604,7 @@ True
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1799,
-    backlinks: ["char-functionsc","datatypesc","operatorsc","c"],
+    backlinks: ["char-functionsc","datatypesc","operatorsc","c","primary-datatypesc","primary-datatypesc"],
     links: ["c","datatypes","questions","operatorsc"],
     outline: [{"level":2,"text":"int","id":"int"},{"level":3,"text":"What if any no. outside this range is given?","id":"what-if-any-no-outside-this-range-is-given"},{"level":3,"text":"Modifiers for int","id":"modifiers-for-int"},{"level":4,"text":"1. unsigned","id":"1-unsigned"},{"level":4,"text":"2. long","id":"2-long"},{"level":4,"text":"3. unsigned long","id":"3-unsigned-long"},{"level":4,"text":"4. short","id":"4-short"},{"level":4,"text":"5. unsigned short","id":"5-unsigned-short"},{"level":4,"text":"6. There are more like : long long int and its unsigned.","id":"6-there-are-more-like-long-long-int-and-its-unsigned"},{"level":2,"text":"float","id":"float"},{"level":3,"text":"No modifiers for float","id":"no-modifiers-for-float"},{"level":2,"text":"double","id":"double"},{"level":3,"text":"Modifiers for double","id":"modifiers-for-double"},{"level":4,"text":"long","id":"long"},{"level":3,"text":"C is an expanding language","id":"c-is-an-expanding-language"},{"level":2,"text":"char","id":"char"},{"level":3,"text":"Specifiers","id":"specifiers"},{"level":3,"text":"modifiers for char","id":"modifiers-for-char"},{"level":4,"text":"unsigned","id":"unsigned"},{"level":4,"text":"signed","id":"signed"},{"level":3,"text":"ASCII Codes","id":"ascii-codes"},{"level":6,"text":"So if we cant store 2 characters than why is extended ASCII of 8 bits?","id":"so-if-we-cant-store-2-characters-than-why-is-extended-ascii-of-8-bits"},{"level":2,"text":"void","id":"void"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"_Bool","id":"bool"},{"level":3,"text":"Value Rules","id":"value-rules"},{"level":6,"text":"Examples :","id":"examples"},{"level":3,"text":"Modifiers for _Bool","id":"modifiers-for-bool"},{"level":3,"text":"Boolean Expressions produce int","id":"boolean-expressions-produce-int"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Using _Bool in Conditions","id":"using-bool-in-conditions"},{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"Q1) What will be the output","id":"q1-what-will-be-the-output"}],
     content: `Type : #Note    
@@ -34001,7 +34001,7 @@ The result is **implementation-dependent** because:
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 1062,
-    backlinks: ["moc-logic-and-philosophy","digital-logic-basics","logic-gates","logical-operators","operatorsc","questions-on-minimization","set-theory"],
+    backlinks: ["moc-logic-and-philosophy","digital-logic-basics","logic-gates","logical-operators","operatorsc","questions-on-minimization","set-theory","primary-logical-operators-across-different-domains","primary-logical-operators-across-different-domains","primary-logical-operators-across-different-domains","primary-logical-operators-across-different-domains"],
     links: ["maths","operators","set","dld","k-map","logical-operators"],
     outline: [{"level":2,"text":"Truth Value Representation","id":"truth-value-representation"},{"level":2,"text":"Truth Table","id":"truth-table"},{"level":3,"text":"Basic Properties :","id":"basic-properties"},{"level":4,"text":"1. Commutative Law","id":"1-commutative-law"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"},{"level":4,"text":"2. Associative Law","id":"2-associative-law"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"},{"level":4,"text":"3. Distributive Law","id":"3-distributive-law"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"},{"level":4,"text":"4. Identity Law","id":"4-identity-law"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"},{"level":4,"text":"5. Complement","id":"5-complement"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"},{"level":3,"text":"Derived Properties","id":"derived-properties"},{"level":4,"text":"1. Idempotent Law","id":"1-idempotent-law"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"},{"level":4,"text":"2. Absorption Law","id":"2-absorption-law"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"},{"level":6,"text":"Proof in Boolean Algebra","id":"proof-in-boolean-algebra"},{"level":4,"text":"3. Law of double Complement or Involution","id":"3-law-of-double-complement-or-involution"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"},{"level":4,"text":"4. De-Morgan's Law","id":"4-de-morgans-law"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"},{"level":4,"text":"5. Domination Law","id":"5-domination-law"},{"level":5,"text":"Logic","id":"logic"},{"level":5,"text":"Boolean Algebra","id":"boolean-algebra"},{"level":5,"text":"Set Theory","id":"set-theory"}],
     content: `Type : #Note    
@@ -34244,7 +34244,7 @@ Hence Proved
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 577,
-    backlinks: [],
+    backlinks: ["printpy","printpy"],
     links: ["python"],
     outline: [{"level":2,"text":"objects in python","id":"objects-in-python"},{"level":2,"text":"Printing Numbers & Expressions","id":"printing-numbers-expressions"},{"level":2,"text":"Multi-value printing behaviour","id":"multi-value-printing-behaviour"}],
     content: `Type : #Note    
@@ -34370,7 +34370,7 @@ print("Hello", end=" "); print("World")  # Hello World
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 392,
-    backlinks: ["moc-engineering-mathematics","bayes-theorem","box-urn-bag-type-problems","face-detection","face-embedding","face-matching","facenet","multi-object-tracking","probability-keywords","random-variable-overview","set-theory"],
+    backlinks: ["moc-engineering-mathematics","bayes-theorem","box-urn-bag-type-problems","face-detection","face-embedding","face-matching","facenet","multi-object-tracking","probability-keywords","random-variable-overview","set-theory","probability-introduction","probability-introduction","probability-introduction","probability-introduction"],
     links: ["probability","gate","coin","dice","set","face-detection","face-matching","multi-object-tracking","bayes-theorem","set-theory"],
     outline: [{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Representation","id":"representation"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -34494,7 +34494,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 996,
-    backlinks: ["moc-engineering-mathematics","event-operations"],
+    backlinks: ["moc-engineering-mathematics","event-operations","probability-keywords","probability-keywords"],
     links: ["probability","event-operations","probability-introduction","conditional-probability"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Q1) Let A and B be two events such that P(A ∪ B)' = 1/6, P(A ∩ B) = 1/6 and P(A') = 1/4. Where A' stands for the complement of the event A. The event A and B are","id":"q1-let-a-and-b-be-two-events-such-that-pa-b-16-pa-b-16-and-pa-14-where-a-stands-for-the-complement-of-the-event-a-the-event-a-and-b-are"},{"level":6,"text":"A) Independent but not equally likely","id":"a-independent-but-not-equally-likely"},{"level":6,"text":"B) Independent and equally likely","id":"b-independent-and-equally-likely"},{"level":6,"text":"C) Mutually exclusion and independent","id":"c-mutually-exclusion-and-independent"},{"level":6,"text":"D) Equally likely but not independent","id":"d-equally-likely-but-not-independent"},{"level":6,"text":"Q2) Let A and B be two events in a probability space with P(A)=0.3,P(B)=0.5,and P(A ∩ B)=0.1. Which of the following statements is/are TRUE?","id":"q2-let-a-and-b-be-two-events-in-a-probability-space-with-pa03pb05and-pa-b01-which-of-the-following-statements-isare-true"},{"level":6,"text":"A) P(A ∩ B') = 0.2, where B' is the complement of the event B","id":"a-pa-b-02-where-b-is-the-complement-of-the-event-b"},{"level":6,"text":"B) The two events A and B are independent","id":"b-the-two-events-a-and-b-are-independent"},{"level":6,"text":"C) P(AUB) =0.7","id":"c-paub-07"},{"level":6,"text":"D) P(A' ∩ B') = 0.4, where A' and B' are the complements of the events A and B, respectively","id":"d-pa-b-04-where-a-and-b-are-the-complements-of-the-events-a-and-b-respectively"},{"level":6,"text":"Q3) Consider two events E1 and E2 such that P(E1) = 1/2 , P(E2) = 1/3 and P(E1 ∩ E2) = 1/5. Which of the following statements is true?","id":"q3-consider-two-events-e1-and-e2-such-that-pe1-12-pe2-13-and-pe1-e2-15-which-of-the-following-statements-is-true"},{"level":6,"text":"a) P(E1 U E2) = 2/3","id":"a-pe1-u-e2-23"},{"level":6,"text":"b) E1 and E2 are independent","id":"b-e1-and-e2-are-independent"},{"level":6,"text":"c) E1 and E2 are not independent","id":"c-e1-and-e2-are-not-independent"},{"level":6,"text":"d) P(E1/E2) =4/5","id":"d-pe1e2-45"},{"level":6,"text":"Q4) E1 and E2 are events in a probability space satisfying the following constraints P(E1) = P(E2); P(E1 U E2) = 1; E1 and E2 are independent then P(E1)=","id":"q4-e1-and-e2-are-events-in-a-probability-space-satisfying-the-following-constraints-pe1-pe2-pe1-u-e2-1-e1-and-e2-are-independent-then-pe1"},{"level":6,"text":"a) 0","id":"a-0"},{"level":6,"text":"b) 1/4","id":"b-14"},{"level":6,"text":"c) 1/2","id":"c-12"},{"level":6,"text":"d) 1","id":"d-1"},{"level":6,"text":"Q5) Let P(E) denote the probability of an event E. Given P(A) =1,P(B) = 1/2 ; the values of P(A/B) and P(B/A) respectively are","id":"q5-let-pe-denote-the-probability-of-an-event-e-given-pa-1pb-12-the-values-of-pab-and-pba-respectively-are"},{"level":6,"text":"a) 1/4 , 1/2","id":"a-14-12"},{"level":6,"text":"b) 1/2 , 1/4","id":"b-12-14"},{"level":6,"text":"c) 1/2 , 1","id":"c-12-1"},{"level":6,"text":"d) 1 , 1/2","id":"d-1-12"},{"level":6,"text":"Q6) If P and Q are two random events, then the following is TRUE","id":"q6-if-p-and-q-are-two-random-events-then-the-following-is-true"},{"level":6,"text":"a) Independence of P and Q implies that probability (P ∩ Q)=0","id":"a-independence-of-p-and-q-implies-that-probability-p-q0"},{"level":6,"text":"b) Probability (P U Q) ≥ Probability (P) + Probability (Q)","id":"b-probability-p-u-q-probability-p-probability-q"},{"level":6,"text":"c) If P and Q are mutually exclusive, then they must be independent","id":"c-if-p-and-q-are-mutually-exclusive-then-they-must-be-independent"},{"level":6,"text":"d) Probability (P ∩ Q) ≤ Probability (P)","id":"d-probability-p-q-probability-p"},{"level":6,"text":"Q7) Suppose A and B are two independent events with probabilities P(A) ≠ 0 and P(B) ≠ 0. Let A' and B' be their complements. Which one of the following statements is FALSE?","id":"q7-suppose-a-and-b-are-two-independent-events-with-probabilities-pa-0-and-pb-0-let-a-and-b-be-their-complements-which-one-of-the-following-statements-is-false"},{"level":6,"text":"a) P(A ∩ B) =P(A)P(B)","id":"a-pa-b-papb"},{"level":6,"text":"b) P(A|B) =P(A)","id":"b-pab-pa"},{"level":6,"text":"c) P(AUB) =P(A)+P(B)","id":"c-paub-papb"},{"level":6,"text":"d) P(A' ∩ B') = P(A') · P(B')","id":"d-pa-b-pa-pb"},{"level":6,"text":"Q8) X and Y are two random independent events. It known that P(X) = 0.40 and P(X U Y') = 0.7 Which one of the following is the value of P(X U Y)?","id":"q8-x-and-y-are-two-random-independent-events-it-known-that-px-040-and-px-u-y-07-which-one-of-the-following-is-the-value-of-px-u-y"},{"level":6,"text":"a) 0.7","id":"a-07"},{"level":6,"text":"b) 0.5","id":"b-05"},{"level":6,"text":"c) 0.4","id":"c-04"},{"level":6,"text":"d) 0.3","id":"d-03"},{"level":6,"text":"Q9) Let E and F be two independent events the probability that exactly one of them occurs is 11/25 and probability of none of them occurring is 2/25. If P(T) denotes the probability of occurrence of the event T, then?","id":"q9-let-e-and-f-be-two-independent-events-the-probability-that-exactly-one-of-them-occurs-is-1125-and-probability-of-none-of-them-occurring-is-225-if-pt-denotes-the-probability-of-occurrence-of-the-event-t-then"},{"level":6,"text":"a) P(E) = 4/5 ; P(F) = 3/5","id":"a-pe-45-pf-35"},{"level":6,"text":"b) P(E) = 1/5 ; P(F) = 2/5","id":"b-pe-15-pf-25"},{"level":6,"text":"c) P(E) = 2/5 ; P(F) = 1/5","id":"c-pe-25-pf-15"},{"level":6,"text":"d) P(E) = 3/5 ; P(F) = 4/5","id":"d-pe-35-pf-45"}],
     content: `Type : #Note    
@@ -34655,7 +34655,7 @@ Now match from the options
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 202,
-    backlinks: [],
+    backlinks: ["processing-units-or-processors"],
     links: ["processors"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"General Purpose","id":"general-purpose"},{"level":3,"text":"1. CPU","id":"1-cpu"},{"level":3,"text":"2. APU","id":"2-apu"},{"level":3,"text":"3. MPU","id":"3-mpu"},{"level":3,"text":"4. MCU","id":"4-mcu"},{"level":2,"text":"Parallel & Graphics Processing","id":"parallel-graphics-processing"},{"level":3,"text":"1. GPU","id":"1-gpu"},{"level":3,"text":"2. SPU","id":"2-spu"},{"level":3,"text":"3. PPU","id":"3-ppu"},{"level":3,"text":"4. VPU","id":"4-vpu"},{"level":3,"text":"5. GPGPU","id":"5-gpgpu"}],
     content: `Type : #Note    
@@ -34741,7 +34741,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 62,
-    backlinks: ["moc-ai-and-machine-learning","coding-assistant","tools-with-claude-code","conditional","loop"],
+    backlinks: ["moc-ai-and-machine-learning","coding-assistant","tools-with-claude-code","conditional","loop","programming","programming","programming","programming"],
     links: ["language","c","python","markdown","languages","language-translators","errors","operators"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #tag    
@@ -34813,7 +34813,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 280,
-    backlinks: ["agenticai"],
+    backlinks: ["agenticai","prompts"],
     links: ["ai"],
     outline: [{"level":2,"text":"→ Subtopic","id":"subtopic"},{"level":3,"text":"→ Concept / explanation","id":"concept-explanation"},{"level":4,"text":"→ Detailed explanation","id":"detailed-explanation"},{"level":6,"text":"→ Examples always","id":"examples-always"},{"level":6,"text":"Example","id":"example"},{"level":6,"text":"Q1) Question text","id":"q1-question-text"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -34967,7 +34967,7 @@ Return clean Markdown formatted specifically for Obsidian.
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 427,
-    backlinks: ["moc-logic-and-philosophy","logic-introduction","logical-operators"],
+    backlinks: ["moc-logic-and-philosophy","logic-introduction","logical-operators","propositions","propositions","propositions"],
     links: ["maths","paradox"],
     outline: [{"level":3,"text":"Examples :","id":"examples"},{"level":3,"text":"Liar's Paradox","id":"liars-paradox"},{"level":6,"text":"Other Examples :","id":"other-examples"},{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"Qs)","id":"qs"}],
     content: `Type : #Note    
@@ -35061,7 +35061,7 @@ Status : #complete
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1193,
-    backlinks: [],
+    backlinks: ["python-basics","python-basics","python-basics","python-basics"],
     links: ["language","python","datatypes"],
     outline: [{"level":3,"text":"Variable Naming Rules","id":"variable-naming-rules"},{"level":3,"text":"Arithmetic","id":"arithmetic"},{"level":3,"text":"Relational (Comparison) — always return bool","id":"relational-comparison-always-return-bool"},{"level":3,"text":"Assignment Shorthand","id":"assignment-shorthand"},{"level":3,"text":"Logical","id":"logical"},{"level":3,"text":"Implicit (automatic)","id":"implicit-automatic"},{"level":3,"text":"Explicit (manual) —Type Casting","id":"explicit-manual-type-casting"}],
     content: `Type : #Note    
@@ -35343,7 +35343,7 @@ multi-line comment
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 374,
-    backlinks: [],
+    backlinks: ["python-input","python-input"],
     links: ["python","python-type-conversion-type-casting"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":3,"text":"Basic Syntax","id":"basic-syntax"},{"level":3,"text":"Always Returns String","id":"always-returns-string"},{"level":3,"text":"Fix — Cast at Input Time","id":"fix-cast-at-input-time"},{"level":3,"text":"Practical Example","id":"practical-example"},{"level":3,"text":"Program Structure: Input → Process → Output","id":"program-structure-input-process-output"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -35449,7 +35449,7 @@ Most Python programs follow this 3-step flow:
     created: "2026-05-19",
     modified: "2026-05-19",
     wordCount: 2356,
-    backlinks: [],
+    backlinks: ["python-libraries","python-libraries","python-libraries"],
     links: ["python","language","ai"],
     outline: [{"level":2,"text":"MENTAL MODEL","id":"mental-model"},{"level":2,"text":"1. re — Regex (Pattern Matching)","id":"1-re-regex-pattern-matching"},{"level":2,"text":"2. json — JSON Parser","id":"2-json-json-parser"},{"level":2,"text":"3. os — Operating System Interface","id":"3-os-operating-system-interface"},{"level":2,"text":"4. datetime — Date and Time","id":"4-datetime-date-and-time"},{"level":2,"text":"5. python-dotenv — Environment Variable Loader","id":"5-python-dotenv-environment-variable-loader"},{"level":2,"text":"6. requests — HTTP Calls","id":"6-requests-http-calls"},{"level":2,"text":"7. pandas — Data Manipulation","id":"7-pandas-data-manipulation"},{"level":2,"text":"8. openai — OpenAI API Client","id":"8-openai-openai-api-client"},{"level":2,"text":"9. langchain — LLM App Framework","id":"9-langchain-llm-app-framework"},{"level":2,"text":"10. sentence-transformers — Text Embeddings","id":"10-sentence-transformers-text-embeddings"},{"level":2,"text":"11. chromadb — Vector Database","id":"11-chromadb-vector-database"},{"level":2,"text":"QUICK REFERENCE","id":"quick-reference"},{"level":2,"text":"PRODUCTION PATTERN — Everything Together","id":"production-pattern-everything-together"}],
     content: `Type : #Note    
@@ -36145,7 +36145,7 @@ This is what production looks like — not one library, all of them working toge
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 609,
-    backlinks: [],
+    backlinks: ["python-operators","python-operators","python-operators"],
     links: ["python","datatypes","operators","operatorsc"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"Terminology","id":"terminology"},{"level":3,"text":"1. Arithmetic Operators","id":"1-arithmetic-operators"},{"level":3,"text":"2. Relational (Comparison) Operators","id":"2-relational-comparison-operators"},{"level":3,"text":"3. Assignment Operators","id":"3-assignment-operators"},{"level":3,"text":"4. Logical Operators","id":"4-logical-operators"},{"level":4,"text":"not — flips the value","id":"not-flips-the-value"},{"level":4,"text":"and — True only if BOTH are True","id":"and-true-only-if-both-are-true"},{"level":4,"text":"or — True if AT LEAST ONE is True","id":"or-true-if-at-least-one-is-true"},{"level":4,"text":"Combined with expressions","id":"combined-with-expressions"},{"level":3,"text":"Operator Precedence (informal)","id":"operator-precedence-informal"}],
     content: `Type : #Note       
@@ -36297,7 +36297,7 @@ Operators in Python perform operations on values. Arithmetic operators handle ma
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 490,
-    backlinks: ["python-input"],
+    backlinks: ["python-input","python-type-conversion-type-casting","python-type-conversion-type-casting","python-type-conversion-type-casting"],
     links: ["python","datatypes","type-conversionc"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"Type Conversion — Implicit (Automatic)","id":"type-conversion-implicit-automatic"},{"level":3,"text":"When Implicit Conversion FAILS","id":"when-implicit-conversion-fails"},{"level":3,"text":"Type Casting — Explicit (Manual)","id":"type-casting-explicit-manual"},{"level":4,"text":"int to float","id":"int-to-float"},{"level":4,"text":"number to string","id":"number-to-string"},{"level":3,"text":"When Casting FAILS","id":"when-casting-fails"}],
     content: `Type : #Note       
@@ -36424,7 +36424,7 @@ Python handles type mixing in two ways. Implicit conversion happens automaticall
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 613,
-    backlinks: [],
+    backlinks: ["python-variables-data-types","python-variables-data-types","python-variables-data-types"],
     links: ["python","datatypes"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"What is a Variable?","id":"what-is-a-variable"},{"level":3,"text":"Operators#4. Assignment Operators|Assignment Operators","id":"operators4-assignment-operatorsassignment-operators"},{"level":3,"text":"Printing Variables","id":"printing-variables"},{"level":3,"text":"5 Primary Data Types","id":"5-primary-data-types"},{"level":3,"text":"Strings — Three Valid Syntaxes","id":"strings-three-valid-syntaxes"},{"level":3,"text":"Variable Naming Rules","id":"variable-naming-rules"},{"level":3,"text":"Keywords — Reserved Words","id":"keywords-reserved-words"}],
     content: `Type : #Note       
@@ -36543,7 +36543,7 @@ A variable is a named memory slot that holds a value. Python automatically deter
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1237,
-    backlinks: ["moc-logic-and-philosophy"],
+    backlinks: ["moc-logic-and-philosophy","questions-on-minimization","questions-on-minimization"],
     links: ["maths","primary-logical-operators-across-different-domains","operators","operatorsc"],
     outline: [{"level":6,"text":"Q1) $P + Q + P'$","id":"q1-p-q-p"},{"level":6,"text":"Q2) $P ∨ (P' ∨ Q)$","id":"q2-p-p-q"},{"level":6,"text":"Q3) $P ∧ (Q ∧ P')$","id":"q3-p-q-p"},{"level":6,"text":"Q4) $(P ∨ Q) . (P ∨ Q')$","id":"q4-p-q-p-q"},{"level":6,"text":"Q5) $(P ∧ Q) ∨ (P ∧ Q')$","id":"q5-p-q-p-q"},{"level":6,"text":"Q6) $P Q R + P' Q' R + P Q R$","id":"q6-p-q-r-p-q-r-p-q-r"},{"level":6,"text":"Q7) $P ∧ Q ∧ P ∧ R ∧ S'$","id":"q7-p-q-p-r-s"},{"level":6,"text":"Q8) $P ∧ Q ∨ (P ∧ Q ∧ (R ∧ S ∧ T))$","id":"q8-p-q-p-q-r-s-t"},{"level":6,"text":"Q9) $1 + PQ + P'Q + P' Q' R' + P' Q S'$","id":"q9-1-pq-pq-p-q-r-p-q-s"},{"level":6,"text":"Q10) $A ∪ (B - C) = (A ∪ B) - (A ∪ C)$","id":"q10-a-b-c-a-b-a-c"},{"level":6,"text":"Q11) $(A ∧ B) ∨ (A ∧ B')$","id":"q11-a-b-a-b"},{"level":6,"text":"Q12) $(A ∨ B) ∧ (A ∨ B)'$","id":"q12-a-b-a-b"},{"level":6,"text":"Q13) $A ∪ (A' ∩ B) ∪ (A ∩ B')$","id":"q13-a-a-b-a-b"},{"level":6,"text":"Q14) $\\overline{\\overline{\\overline{A.B}.A}.\\overline{\\overline{A.B}.B}}$","id":"q14-overlineoverlineoverlineabaoverlineoverlineabb"},{"level":6,"text":"Q15) $AB + AB' + A'B$","id":"q15-ab-ab-ab"},{"level":6,"text":"Q16) $(A ∨ C) ∧ (A' ∨ B)$","id":"q16-a-c-a-b"},{"level":6,"text":"Q17) $A - (A - B)$","id":"q17-a-a-b"},{"level":6,"text":"Q18) $B ∩ (A ∪ B)$","id":"q18-b-a-b"},{"level":6,"text":"Q19) $(P ∩  Q ∩ R) ∪ (P^C ∩ Q ∩ R) ∪ Q^C ∪ R^C$","id":"q19-p-q-r-pc-q-r-qc-rc"},{"level":6,"text":"Q20) $x'y' + xy + x'y$","id":"q20-xy-xy-xy"},{"level":6,"text":"Q21) $(P + Q')(PQ' + PR)(P'R' + Q')$","id":"q21-p-qpq-prpr-q"},{"level":6,"text":"Q22) $PQ + P'QR + P'QR'S$","id":"q22-pq-pqr-pqrs"},{"level":6,"text":"Q23) Which of the following is a Tautology?","id":"q23-which-of-the-following-is-a-tautology"},{"level":6,"text":"a) (a ∨ b) → (b ∧ c)","id":"a-a-b-b-c"},{"level":6,"text":"b) (a ∧ b) → (b ∨ c)","id":"b-a-b-b-c"},{"level":6,"text":"c) (a ∨ b) → (b → c)","id":"c-a-b-b-c"},{"level":6,"text":"d) (a → b) → (b → c)","id":"d-a-b-b-c"},{"level":6,"text":"Q24) Let $(p → q) → r$ be a contradiction then $(r → p) → q$ is ?","id":"q24-let-p-q-r-be-a-contradiction-then-r-p-q-is"},{"level":6,"text":"a) Tautology","id":"a-tautology"},{"level":6,"text":"b) Contradiction","id":"b-contradiction"},{"level":6,"text":"c) Always True when p is False","id":"c-always-true-when-p-is-false"},{"level":6,"text":"d) always True when q is True","id":"d-always-true-when-q-is-true"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -36887,7 +36887,7 @@ So, (d) is correct
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 620,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","random-variable-overview","random-variable-overview","random-variable-overview","random-variable-overview"],
     links: ["probability","statistics","set","probability-introduction"],
     outline: [{"level":2,"text":"Function Concept (Foundation)","id":"function-concept-foundation"},{"level":3,"text":"Definition","id":"definition"},{"level":4,"text":"Structure","id":"structure"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Random Variable (RV)","id":"random-variable-rv"},{"level":3,"text":"Definition","id":"definition"},{"level":4,"text":"Mathematical Form","id":"mathematical-form"},{"level":4,"text":"Components","id":"components"},{"level":4,"text":"Key Idea","id":"key-idea"},{"level":3,"text":"Example: Two Coins (Number of Heads)","id":"example-two-coins-number-of-heads"},{"level":4,"text":"Sample Space","id":"sample-space"},{"level":4,"text":"Define RV","id":"define-rv"},{"level":4,"text":"Mapping","id":"mapping"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Simplified Representation","id":"simplified-representation"},{"level":4,"text":"Values Taken by RV","id":"values-taken-by-rv"},{"level":2,"text":"Type of Mapping","id":"type-of-mapping"},{"level":3,"text":"Allowed","id":"allowed"},{"level":3,"text":"Not Allowed","id":"not-allowed"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Discrete Random Variable","id":"discrete-random-variable"},{"level":3,"text":"Definition","id":"definition"},{"level":4,"text":"Important Note","id":"important-note"},{"level":3,"text":"Example: Dice rolled until 3 appears","id":"example-dice-rolled-until-3-appears"},{"level":4,"text":"Sample Space","id":"sample-space"},{"level":4,"text":"Define RV","id":"define-rv"},{"level":4,"text":"Values","id":"values"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Key Insight: Countability","id":"key-insight-countability"},{"level":2,"text":"Multiple Random Variables","id":"multiple-random-variables"},{"level":3,"text":"Concept","id":"concept"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Function of Random Variable","id":"function-of-random-variable"},{"level":3,"text":"Property","id":"property"},{"level":2,"text":"Domain & Range","id":"domain-range"},{"level":3,"text":"Domain","id":"domain"},{"level":3,"text":"Range","id":"range"},{"level":2,"text":"Probability at a Point","id":"probability-at-a-point"},{"level":3,"text":"Concept","id":"concept"},{"level":3,"text":"Example","id":"example"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Probability in a Range","id":"probability-in-a-range"},{"level":3,"text":"Concept","id":"concept"},{"level":3,"text":"Example","id":"example"},{"level":4,"text":"Solution","id":"solution"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Example: Inequality","id":"example-inequality"},{"level":4,"text":"Values Included","id":"values-included"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Converting Inequalities","id":"converting-inequalities"},{"level":3,"text":"Process","id":"process"},{"level":3,"text":"Example","id":"example"},{"level":4,"text":"Solve","id":"solve"},{"level":4,"text":"Valid Values","id":"valid-values"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -37220,7 +37220,7 @@ Y=g(X)Y = g(X)Y=g(X)
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1080,
-    backlinks: ["moc-engineering-mathematics","rank-of-a-matrix"],
+    backlinks: ["moc-engineering-mathematics","rank-of-a-matrix","rank-of-a-matrix-qs","rank-of-a-matrix-qs","rank-of-a-matrix-qs"],
     links: ["maths","questions"],
     outline: [{"level":6,"text":"Q1. $$\\begin{bmatrix}","id":"q1-beginbmatrix"},{"level":6,"text":"i) Highest order minor =","id":"i-highest-order-minor"},{"level":6,"text":"ii) No. of minors of order 2 × 2 =","id":"ii-no-of-minors-of-order-2-2"},{"level":6,"text":"iii) No. of minors of order 1 × 1 =","id":"iii-no-of-minors-of-order-1-1"},{"level":6,"text":"Q2. $$\\begin{bmatrix}","id":"q2-beginbmatrix"},{"level":6,"text":"i) Highest order minor =","id":"i-highest-order-minor"},{"level":6,"text":"ii) No. of minors of order 3 × 3 =","id":"ii-no-of-minors-of-order-3-3"},{"level":6,"text":"iii) No. of minors of order 2 × 2 =","id":"iii-no-of-minors-of-order-2-2"},{"level":6,"text":"iv) No. of minors of order 1 × 1 =","id":"iv-no-of-minors-of-order-1-1"},{"level":6,"text":"Q3. $$\\begin{bmatrix}","id":"q3-beginbmatrix"},{"level":6,"text":"i) Highest order minor =","id":"i-highest-order-minor"},{"level":6,"text":"ii) No. of minors of 3 × 3 =","id":"ii-no-of-minors-of-3-3"},{"level":6,"text":"iii) No. of minors of 2 × 2 =","id":"iii-no-of-minors-of-2-2"},{"level":6,"text":"iv) No. of minors of 1 × 1 =","id":"iv-no-of-minors-of-1-1"},{"level":6,"text":"Q4) Calculate $ρ (AB)$ for $$A=\\begin{bmatrix}","id":"q4-calculate-ab-for-abeginbmatrix"},{"level":6,"text":"Q5) Calculate the Rank of A $$A=\\begin{bmatrix}","id":"q5-calculate-the-rank-of-a-abeginbmatrix"},{"level":6,"text":"Q6) Calculate the Rank of A$$A=\\begin{bmatrix}","id":"q6-calculate-the-rank-of-aabeginbmatrix"},{"level":6,"text":"Q7) Calculate the Rank of A$$A=\\begin{bmatrix}","id":"q7-calculate-the-rank-of-aabeginbmatrix"},{"level":6,"text":"Q8) Calculate the Rank of A $$A=\\begin{bmatrix}","id":"q8-calculate-the-rank-of-a-abeginbmatrix"},{"level":6,"text":"Q9) Calculate the Rank of A $$A=\\begin{bmatrix}","id":"q9-calculate-the-rank-of-a-abeginbmatrix"},{"level":6,"text":"Q10) Calculate the Rank of a Matrix A$$A=\\begin{bmatrix}","id":"q10-calculate-the-rank-of-a-matrix-aabeginbmatrix"},{"level":6,"text":"Q11) Calculate the $ρ(A) + ρ (adj(B)) + ρ (CC^T)$","id":"q11-calculate-the-a-adjb-cct"},{"level":6,"text":"$A_ {4 × 4 }$ → non-singular matrix","id":"a-4-4-non-singular-matrix"},{"level":6,"text":"$B_ {4 × 4 }$ → rank = 3","id":"b-4-4-rank-3"},{"level":6,"text":"$C_ {4 × 4 }$ → non-singular matrix","id":"c-4-4-non-singular-matrix"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -37470,7 +37470,7 @@ $⇒ ρ(A) + ρ (adj(B)) + ρ (CC^T) = 4 + 1 + 4 = 9$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 934,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","rank-of-a-matrix","rank-of-a-matrix"],
     links: ["maths","rank-of-a-matrix-qs"],
     outline: [{"level":6,"text":"Eg 1 : $$\\begin{bmatrix}","id":"eg-1-beginbmatrix"},{"level":6,"text":"i) Highest order minor =","id":"i-highest-order-minor"},{"level":6,"text":"ii) No. of minors of order 2 × 2 =","id":"ii-no-of-minors-of-order-2-2"},{"level":6,"text":"iii) No. of minors of order 1 × 1 =","id":"iii-no-of-minors-of-order-1-1"},{"level":3,"text":"Properties of Rank","id":"properties-of-rank"},{"level":3,"text":"Not Elementary Transformation but ρ will not change","id":"not-elementary-transformation-but-will-not-change"},{"level":6,"text":"Eg 2: $$A=\\begin{bmatrix}","id":"eg-2-abeginbmatrix"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -37637,7 +37637,7 @@ step 2 : $ρ(A)=2$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 179,
-    backlinks: [],
+    backlinks: ["rate-of-interest","rate-of-interest","rate-of-interest"],
     links: ["finance","compounding"],
     outline: [{"level":2,"text":"Type of Rate of Interest","id":"type-of-rate-of-interest"},{"level":3,"text":"Nominal Rate of Interest ($i_{nr}$)","id":"nominal-rate-of-interest-inr"},{"level":3,"text":"Effective Rate of Interest ($i_{eff}$)","id":"effective-rate-of-interest-ieff"},{"level":6,"text":"Example : What is the effective rate corresponding to 18% compounded daily? Assume 1 year is equal to 360 days.","id":"example-what-is-the-effective-rate-corresponding-to-18-compounded-daily-assume-1-year-is-equal-to-360-days"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Example : What rate of interest compounded annually is the same as the rate of interest of 8% compounded quarterly?","id":"example-what-rate-of-interest-compounded-annually-is-the-same-as-the-rate-of-interest-of-8-compounded-quarterly"}],
     content: `Type : #Note    
@@ -37718,7 +37718,7 @@ $i_{eff_{a}} = i_{eff_{q}}$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1588,
-    backlinks: ["moc-data-structures-and-algorithms","stack"],
+    backlinks: ["moc-data-structures-and-algorithms","stack","recursion","recursion","recursion"],
     links: ["dsa","treedsa","stack","binary-tree-traversal","merge-sort","algorithm-basics"],
     outline: [{"level":2,"text":"Fibonacci Series","id":"fibonacci-series"},{"level":2,"text":"Tower of Hanoi / Brahma","id":"tower-of-hanoi-brahma"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"Previous Qs are in Stack#Questions|Stack - Questions","id":"previous-qs-are-in-stackquestionsstack-questions"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q16)</span> Find the output of the following pseudo codes","id":"span-stylecolorrgb0-176-240q16span-find-the-output-of-the-following-pseudo-codes"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q17)</span> Find the output of the following pseudo code:","id":"span-stylecolorrgb0-176-240q17span-find-the-output-of-the-following-pseudo-code"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q18)</span> Find the output of the following pseudo code on n = 6?","id":"span-stylecolorrgb0-176-240q18span-find-the-output-of-the-following-pseudo-code-on-n-6"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q19)</span> Consider the following recursive C function that takes two arguments","id":"span-stylecolorrgb0-176-240q19span-consider-the-following-recursive-c-function-that-takes-two-arguments"},{"level":6,"text":"What is the return value of the function foo when it is called as foo (345, 10)? <span style=\"color:rgb(255, 192, 0)\">(GATE - 2011) (2 Marks)</span>","id":"what-is-the-return-value-of-the-function-foo-when-it-is-called-as-foo-345-10-span-stylecolorrgb255-192-0gate-2011-2-marksspan"},{"level":6,"text":"(A) 345","id":"a-345"},{"level":6,"text":"(B) 12","id":"b-12"},{"level":6,"text":"(C) 5","id":"c-5"},{"level":6,"text":"(D) 3","id":"d-3"},{"level":6,"text":"What is the return value of the function foo when it is called as foo(513, 2)? <span style=\"color:rgb(255, 192, 0)\">(GATE - 2011) (2 Marks)</span>","id":"what-is-the-return-value-of-the-function-foo-when-it-is-called-as-foo513-2-span-stylecolorrgb255-192-0gate-2011-2-marksspan"},{"level":6,"text":"(A) 9","id":"a-9"},{"level":6,"text":"(B) 8","id":"b-8"},{"level":6,"text":"(C) 5","id":"c-5"},{"level":6,"text":"(D) 2","id":"d-2"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q20)</span> Consider the following ANSI C function :int SomeFunction (int x, int y) <span style=\"color:rgb(255, 192, 0)\">(GATE - 2021) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q20span-consider-the-following-ansi-c-function-int-somefunction-int-x-int-y-span-stylecolorrgb255-192-0gate-2021-2-marksspan"},{"level":6,"text":"The value returned by SomeFunction(15, 255) is _ _ _ _ .","id":"the-value-returned-by-somefunction15-255-is"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q21)</span> Consider the following ANSI C program <span style=\"color:rgb(255, 192, 0)\">(GATE - 2021) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q21span-consider-the-following-ansi-c-program-span-stylecolorrgb255-192-0gate-2021-2-marksspan"},{"level":6,"text":"The output of the program upon execution is _ _ _ _","id":"the-output-of-the-program-upon-execution-is"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q22)</span> Consider the following recursive C function. If get (6) function is being called in main() then how many times will the get () function be invoked before returning to the main ()? <span style=\"color:rgb(255, 192, 0)\">GATE - 2015) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q22span-consider-the-following-recursive-c-function-if-get-6-function-is-being-called-in-main-then-how-many-times-will-the-get-function-be-invoked-before-returning-to-the-main-span-stylecolorrgb255-192-0gate-2015-2-marksspan"},{"level":6,"text":"(A) 15","id":"a-15"},{"level":6,"text":"(B) 25","id":"b-25"},{"level":6,"text":"(C) 35","id":"c-35"},{"level":6,"text":"(D) 45","id":"d-45"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -38090,7 +38090,7 @@ g(6) → 25
     created: "2026-05-12",
     modified: "2026-05-12",
     wordCount: 1215,
-    backlinks: ["relational-calculus","relational-model"],
+    backlinks: ["relational-calculus","relational-model","relational-algebra","relational-algebra"],
     links: ["dbms","relational-model","relational-calculus"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":3,"text":"Relational Algebra","id":"relational-algebra"},{"level":2,"text":"Importance","id":"importance"},{"level":2,"text":"Types of Operations","id":"types-of-operations"},{"level":3,"text":"1. Unary Operations","id":"1-unary-operations"},{"level":4,"text":"Selection (σ)","id":"selection"},{"level":5,"text":"Syntax","id":"syntax"},{"level":6,"text":"Example : Select employees having salary greater than 30000","id":"example-select-employees-having-salary-greater-than-30000"},{"level":6,"text":"Example : Select employees from department 4 having salary 30000 OR employees from department 5 having salary 50000","id":"example-select-employees-from-department-4-having-salary-30000-or-employees-from-department-5-having-salary-50000"},{"level":4,"text":"Cascade of Selection","id":"cascade-of-selection"},{"level":5,"text":"Property (Commutative)","id":"property-commutative"},{"level":4,"text":"Projection (π)","id":"projection"},{"level":5,"text":"Syntax","id":"syntax"},{"level":6,"text":"Example : Display first name, last name and salary of employees","id":"example-display-first-name-last-name-and-salary-of-employees"},{"level":6,"text":"Example : Display SSN and salary of employees","id":"example-display-ssn-and-salary-of-employees"},{"level":4,"text":"Rename (ρ)","id":"rename"},{"level":5,"text":"Syntax (Rename Attributes)","id":"syntax-rename-attributes"},{"level":5,"text":"Syntax (Rename Relation)","id":"syntax-rename-relation"},{"level":2,"text":"Sequence of Operations","id":"sequence-of-operations"},{"level":6,"text":"Example : Display first name, last name and salary of employees in department 4","id":"example-display-first-name-last-name-and-salary-of-employees-in-department-4"},{"level":3,"text":"2. Binary Operations","id":"2-binary-operations"},{"level":4,"text":"Union (∪)","id":"union"},{"level":5,"text":"Conditions for Union Compatibility","id":"conditions-for-union-compatibility"},{"level":5,"text":"Syntax","id":"syntax"},{"level":6,"text":"Example : Retrieve the SSN of all employees who either work in department 5 or directly supervise an employee who works in department 5","id":"example-retrieve-the-ssn-of-all-employees-who-either-work-in-department-5-or-directly-supervise-an-employee-who-works-in-department-5"},{"level":4,"text":"Intersection (∩)","id":"intersection"},{"level":5,"text":"Syntax","id":"syntax"},{"level":6,"text":"Example : Retrieve the SSN of employees who work on both Project 1 and Project 2","id":"example-retrieve-the-ssn-of-employees-who-work-on-both-project-1-and-project-2"},{"level":4,"text":"Difference (−)","id":"difference"},{"level":5,"text":"Syntax","id":"syntax"},{"level":5,"text":"Property","id":"property"},{"level":4,"text":"Cartesian Product (×)","id":"cartesian-product"},{"level":5,"text":"Syntax","id":"syntax"},{"level":5,"text":"Result","id":"result"},{"level":6,"text":"Cardinality :","id":"cardinality"},{"level":6,"text":"Degree :","id":"degree"},{"level":4,"text":"Join (⨝)","id":"join"},{"level":5,"text":"Syntax","id":"syntax"},{"level":6,"text":"Example : Retrieve manager details of each department","id":"example-retrieve-manager-details-of-each-department"},{"level":5,"text":"Types of Join","id":"types-of-join"},{"level":4,"text":"Division (÷)","id":"division"},{"level":6,"text":"Example : Retrieve names of employees who work on all projects that John Smith works on","id":"example-retrieve-names-of-employees-who-work-on-all-projects-that-john-smith-works-on"}],
     content: `Type : #Note    
@@ -38498,7 +38498,7 @@ Relational Algebra → HOW (Procedural)
     created: "2026-05-12",
     modified: "2026-05-12",
     wordCount: 646,
-    backlinks: ["relational-algebra"],
+    backlinks: ["relational-algebra","relational-calculus","relational-calculus"],
     links: ["dbms","relational-algebra"],
     outline: [{"level":2,"text":"General Form","id":"general-form"},{"level":2,"text":"Syntax Structure","id":"syntax-structure"},{"level":2,"text":"Example 1","id":"example-1"},{"level":3,"text":"Relational Algebra","id":"relational-algebra"},{"level":3,"text":"Tuple Relational Calculus","id":"tuple-relational-calculus"},{"level":2,"text":"Example 2","id":"example-2"},{"level":3,"text":"Relational Algebra","id":"relational-algebra"},{"level":3,"text":"Tuple Relational Calculus","id":"tuple-relational-calculus"},{"level":2,"text":"Example 3","id":"example-3"},{"level":3,"text":"Tuple Relational Calculus","id":"tuple-relational-calculus"},{"level":2,"text":"General Form","id":"general-form"},{"level":2,"text":"Example 1","id":"example-1"},{"level":3,"text":"Domain Relational Calculus","id":"domain-relational-calculus"},{"level":2,"text":"Example 2","id":"example-2"},{"level":3,"text":"Domain Relational Calculus","id":"domain-relational-calculus"}],
     content: `Type : #Note    
@@ -38744,7 +38744,7 @@ Relational Algebra → HOWRelational Calculus → WHATTRC → Tuple VariablesDRC
     created: "2026-05-12",
     modified: "2026-05-12",
     wordCount: 1352,
-    backlinks: ["relational-algebra","set-theory"],
+    backlinks: ["relational-algebra","set-theory","relational-model","relational-model"],
     links: ["dbms","set-theory","relations","relational-algebra"],
     outline: [{"level":2,"text":"Relation","id":"relation"},{"level":2,"text":"Tuple","id":"tuple"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"Attribute","id":"attribute"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"Degree of Relation","id":"degree-of-relation"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"Domain","id":"domain"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"Relation Schema","id":"relation-schema"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"Relation Instance / State","id":"relation-instance-state"},{"level":2,"text":"Keys","id":"keys"},{"level":3,"text":"Super Key","id":"super-key"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"Candidate Key","id":"candidate-key"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"Primary Key","id":"primary-key"},{"level":3,"text":"Alternate Key","id":"alternate-key"},{"level":3,"text":"Composite Key","id":"composite-key"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"Foreign Key","id":"foreign-key"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"Integrity Constraints","id":"integrity-constraints"},{"level":3,"text":"Entity Integrity","id":"entity-integrity"},{"level":3,"text":"Referential Integrity","id":"referential-integrity"},{"level":3,"text":"Domain Constraints","id":"domain-constraints"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Key Constraints","id":"key-constraints"},{"level":2,"text":"Characteristics of Relations","id":"characteristics-of-relations"},{"level":3,"text":"1. Atomic Values (1NF Property)","id":"1-atomic-values-1nf-property"},{"level":3,"text":"2. No Duplicate Tuples (Rows)","id":"2-no-duplicate-tuples-rows"},{"level":3,"text":"3. Unique Attribute Names","id":"3-unique-attribute-names"},{"level":3,"text":"4. Ordering of Tuples","id":"4-ordering-of-tuples"},{"level":3,"text":"5. Ordering of Attributes","id":"5-ordering-of-attributes"},{"level":6,"text":"Example:","id":"example"},{"level":3,"text":"6. Formal View of a Relation","id":"6-formal-view-of-a-relation"},{"level":3,"text":"7. Tuple Representation","id":"7-tuple-representation"},{"level":3,"text":"8. Values from Domains","id":"8-values-from-domains"},{"level":3,"text":"9. NULL Values","id":"9-null-values"},{"level":3,"text":"10. Meaning of a Relation","id":"10-meaning-of-a-relation"},{"level":6,"text":"Example:","id":"example"},{"level":2,"text":"Advantages of the Relational Model","id":"advantages-of-the-relational-model"},{"level":2,"text":"Limitations of the Relational Model","id":"limitations-of-the-relational-model"},{"level":2,"text":"Relational Model Notations","id":"relational-model-notations"},{"level":6,"text":"Example : Company Database Tables","id":"example-company-database-tables"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -39186,7 +39186,7 @@ Stores information about employee dependents.
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 2491,
-    backlinks: ["moc-engineering-mathematics","functions","relational-model"],
+    backlinks: ["moc-engineering-mathematics","functions","relational-model","relations","relations","relations"],
     links: ["maths","set","poset","set-theory"],
     outline: [{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Properties","id":"properties"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Number of Relations","id":"number-of-relations"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"1. Complement of a Relation","id":"1-complement-of-a-relation"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"2. Inverse Relation","id":"2-inverse-relation"},{"level":3,"text":"Set Theory#Cardinality and Laws|Cardinality","id":"set-theorycardinality-and-lawscardinality"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"3. Composition of Relations","id":"3-composition-of-relations"},{"level":2,"text":"Representation of Relations","id":"representation-of-relations"},{"level":3,"text":"1. Set Representation","id":"1-set-representation"},{"level":3,"text":"2. Matrix Representation","id":"2-matrix-representation"},{"level":3,"text":"3. Directed Graph (Digraph)","id":"3-directed-graph-digraph"},{"level":2,"text":"Diagonal Relation","id":"diagonal-relation"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Reflexive Relation","id":"reflexive-relation"},{"level":3,"text":"Irreflexive Relations","id":"irreflexive-relations"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Symmetric Relation","id":"symmetric-relation"},{"level":3,"text":"Antisymmetric Relation","id":"antisymmetric-relation"},{"level":3,"text":"Asymmetric Relation","id":"asymmetric-relation"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Transitive Relation","id":"transitive-relation"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Warshall's Algorithm (used to find Transitive Relations#Closures of Relations|Closures)","id":"warshalls-algorithm-used-to-find-transitive-relationsclosures-of-relationsclosures"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Equivalence Relation","id":"equivalence-relation"},{"level":3,"text":"Equivalence Class","id":"equivalence-class"},{"level":3,"text":"Partition of Set","id":"partition-of-set"},{"level":6,"text":"Example : Consider A = {1, 2, 3, 4, 5} an equivalence relation R on A , R = {(1,1),(2,2),(3,3),(4,4),(5,5),(1,4),(4,1),(2,5),(5,2)} find the partition of a set A, defined by R.","id":"example-consider-a-1-2-3-4-5-an-equivalence-relation-r-on-a-r-112233445514412552-find-the-partition-of-a-set-a-defined-by-r"},{"level":3,"text":"POSET|Partial Order Relation","id":"posetpartial-order-relation"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"Total Order Relation","id":"total-order-relation"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Closures of Relations","id":"closures-of-relations"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Types of Closures","id":"types-of-closures"},{"level":2,"text":"Questions","id":"questions"},{"level":6,"text":"Q1) Let $R = {(1,1), (1,2), (2,1), (2,2), (3,3)}$ be a relation on $A={1,2,3}$. Is it antisymmetric?","id":"q1-let-r-11-12-21-22-33-be-a-relation-on-a123-is-it-antisymmetric"},{"level":6,"text":"Q2) How many reflexive relations are possible on a set with 3 elements?","id":"q2-how-many-reflexive-relations-are-possible-on-a-set-with-3-elements"}],
     content: `Type : #Note    
@@ -39644,7 +39644,7 @@ A2) $2^{n^2-n} = 2^{3^2-3} = 2^{9-3} = 2^6 = 64$.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1033,
-    backlinks: [],
+    backlinks: ["research-rating"],
     links: ["research"],
     outline: [{"level":3,"text":"1. Research Topic Rating — 8.5 / 10","id":"1-research-topic-rating-85-10"},{"level":3,"text":"2. Application Ratings + Monetization Potential","id":"2-application-ratings-monetization-potential"},{"level":3,"text":"3. Using Claude to Generate a Research Report Instead of Reading Papers — No. This is a Bad Idea.","id":"3-using-claude-to-generate-a-research-report-instead-of-reading-papers-no-this-is-a-bad-idea"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note #Research       
@@ -39757,7 +39757,7 @@ This approach takes 2–3 days total and gives you a genuine, defensible underst
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 392,
-    backlinks: ["moc-data-structures-and-algorithms","insertion-sort","sorting"],
+    backlinks: ["moc-data-structures-and-algorithms","insertion-sort","sorting","selection-sort","selection-sort","selection-sort"],
     links: ["sort","dsa","sorting"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Selection Sort(Analysis)","id":"selection-sortanalysis"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q1)</span> Which one of the following is the tightest upper bound that represents the number of swaps required to sort n numbers using selection sort? <span style=\"color:rgb(255, 192, 0)\">(Gate-2013) (1 Marks)</span>","id":"span-stylecolorrgb0-176-240q1span-which-one-of-the-following-is-the-tightest-upper-bound-that-represents-the-number-of-swaps-required-to-sort-n-numbers-using-selection-sort-span-stylecolorrgb255-192-0gate-2013-1-marksspan"},{"level":6,"text":"What is the number of swaps required to sort n elements using selection sort, in the worst case? <span style=\"color:rgb(255, 192, 0)\">(Gate-2009) (1 Marks)</span>","id":"what-is-the-number-of-swaps-required-to-sort-n-elements-using-selection-sort-in-the-worst-case-span-stylecolorrgb255-192-0gate-2009-1-marksspan"},{"level":6,"text":"A) O(log n)","id":"a-olog-n"},{"level":6,"text":"B) O(n)","id":"b-on"},{"level":6,"text":"C) O(n log n)","id":"c-on-log-n"},{"level":6,"text":"D) O(n<sup>2</sup>)","id":"d-onsup2sup"}],
     content: `Type : #Note    
@@ -39872,7 +39872,7 @@ In selection sort for each iteration we do 1 swap in the worst case. Hence, in t
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 391,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","sequence-and-series","sequence-and-series"],
     links: ["maths"],
     outline: [{"level":2,"text":"General term","id":"general-term"},{"level":2,"text":"Sum of first n terms","id":"sum-of-first-n-terms"},{"level":2,"text":"General term","id":"general-term"},{"level":2,"text":"Sum of first n terms","id":"sum-of-first-n-terms"},{"level":2,"text":"Infinite GP (|r| < 1)","id":"infinite-gp-r-1"},{"level":2,"text":"Arithmetic Mean (AM)","id":"arithmetic-mean-am"},{"level":2,"text":"Geometric Mean (GM)","id":"geometric-mean-gm"},{"level":2,"text":"Harmonic Mean (HM)","id":"harmonic-mean-hm"},{"level":2,"text":"Insert k AMs between a and b","id":"insert-k-ams-between-a-and-b"},{"level":2,"text":"Insert k GMs between a and b","id":"insert-k-gms-between-a-and-b"},{"level":2,"text":"Sum of GP type","id":"sum-of-gp-type"},{"level":2,"text":"Telescoping series (pattern)","id":"telescoping-series-pattern"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -40056,7 +40056,7 @@ Example:
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 1887,
-    backlinks: ["moc-engineering-mathematics","facenet","functions","logic-introduction","probability-introduction","relational-model","relations"],
+    backlinks: ["moc-engineering-mathematics","facenet","functions","logic-introduction","probability-introduction","relational-model","relations","set-theory","set-theory","set-theory"],
     links: ["set","maths","primary-logical-operators-across-different-domains","facenet","relational-model","discrete-mathematics-introduction","probability-introduction"],
     outline: [{"level":2,"text":"Introduction to Sets","id":"introduction-to-sets"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"Membership","id":"membership"},{"level":3,"text":"Representation of Sets","id":"representation-of-sets"},{"level":4,"text":"Roster or Tabular Form","id":"roster-or-tabular-form"},{"level":6,"text":"Example","id":"example"},{"level":4,"text":"Set-Builder Form","id":"set-builder-form"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Some Common Sets","id":"some-common-sets"},{"level":2,"text":"Types of Sets","id":"types-of-sets"},{"level":3,"text":"Finite and Infinite Sets","id":"finite-and-infinite-sets"},{"level":3,"text":"Empty Set / Null Set ($ϕ$)","id":"empty-set-null-set"},{"level":3,"text":"Universal Set","id":"universal-set"},{"level":3,"text":"Subsets, Proper Subsets & Supersets","id":"subsets-proper-subsets-supersets"},{"level":3,"text":"Equality of Sets","id":"equality-of-sets"},{"level":3,"text":"Power Set","id":"power-set"},{"level":3,"text":"Countable & Uncountable Sets","id":"countable-uncountable-sets"},{"level":2,"text":"Set Operations","id":"set-operations"},{"level":3,"text":"Union ($A \\cup B$)","id":"union-a-cup-b"},{"level":3,"text":"Intersection ($A \\cap B$)","id":"intersection-a-cap-b"},{"level":3,"text":"Complement ($A'$ or $A^c$ or $\\overline{A}$)","id":"complement-a-or-ac-or-overlinea"},{"level":3,"text":"Disjoint Sets","id":"disjoint-sets"},{"level":3,"text":"Difference ($A - B$)","id":"difference-a-b"},{"level":3,"text":"Symmetric Difference ($A \\oplus B$)","id":"symmetric-difference-a-oplus-b"},{"level":2,"text":"Cardinality and Laws","id":"cardinality-and-laws"},{"level":3,"text":"Cardinality Principles","id":"cardinality-principles"},{"level":3,"text":"Important Identities","id":"important-identities"},{"level":6,"text":"Q1) For any set A, which of the following are true?","id":"q1-for-any-set-a-which-of-the-following-are-true"},{"level":6,"text":"a) ϕ ∈ A","id":"a-a"},{"level":6,"text":"b) ϕ ⊆ A","id":"b-a"},{"level":6,"text":"c) ϕ ∈ $2^A$","id":"c-2a"},{"level":6,"text":"d) ϕ ⊆ $2^A$","id":"d-2a"},{"level":6,"text":"e) A ∈ $2^A$","id":"e-a-2a"},{"level":6,"text":"f) A ⊆ $2^A$","id":"f-a-2a"},{"level":6,"text":"Q2) If ϕ is an empty set. Then $|P(P(P(ϕ)))|$ = — ?","id":"q2-if-is-an-empty-set-then-ppp"},{"level":6,"text":"Q3) The cardinality of a power set of {0, 1, 2, … , 10} is — .","id":"q3-the-cardinality-of-a-power-set-of-0-1-2-10-is"},{"level":6,"text":"Q4) For a set A, the power set of A is denoted by $2^A$. If A = {5, {6}, {7}}, which of the following options are true.","id":"q4-for-a-set-a-the-power-set-of-a-is-denoted-by-2a-if-a-5-6-7-which-of-the-following-options-are-true"},{"level":6,"text":"I) ϕ ∈ $2^A$","id":"i-2a"},{"level":6,"text":"II) ϕ ⊆ $2^A$","id":"ii-2a"},{"level":6,"text":"III) {5, {6}} ∈ $2^A$","id":"iii-5-6-2a"},{"level":6,"text":"IV) {5, {6}} ⊆ $2^A$","id":"iv-5-6-2a"},{"level":6,"text":"(A) I and III only","id":"a-i-and-iii-only"},{"level":6,"text":"(B) II and III only","id":"b-ii-and-iii-only"},{"level":6,"text":"(C) I, II and III only","id":"c-i-ii-and-iii-only"},{"level":6,"text":"(D) I, II and IV only","id":"d-i-ii-and-iv-only"},{"level":6,"text":"Q5) Let P(S) denotes the power set of set S. Which of the following is always true?","id":"q5-let-ps-denotes-the-power-set-of-set-s-which-of-the-following-is-always-true"},{"level":6,"text":"a) P(P(S)) = P(S)","id":"a-pps-ps"},{"level":6,"text":"b) P(S) ∩ P(P(S)) = { ϕ }","id":"b-ps-pps"},{"level":6,"text":"(c) P(S) ∩ S = P(S)","id":"c-ps-s-ps"},{"level":6,"text":"(d) S ∉ P(S)","id":"d-s-ps"},{"level":6,"text":"Q6) The number of elements in the powerset P(S) of the set S = {{ ϕ }, 1, {2, 3}} is","id":"q6-the-number-of-elements-in-the-powerset-ps-of-the-set-s-1-2-3-is"},{"level":6,"text":"Q7) Consider the following statements?","id":"q7-consider-the-following-statements"},{"level":6,"text":"a) Finite union of finite sets(disjoint) is — (finite/infinite)","id":"a-finite-union-of-finite-setsdisjoint-is-finiteinfinite"},{"level":6,"text":"b) Finite union of Infinite sets(disjoint) is — (finite/infinite)","id":"b-finite-union-of-infinite-setsdisjoint-is-finiteinfinite"},{"level":6,"text":"c) Infinite union of finite sets(distinct) is — (finite/infinite)","id":"c-infinite-union-of-finite-setsdistinct-is-finiteinfinite"},{"level":6,"text":"d) if after finite number of union result is infinite set, then at least one of the input set(disjoint) is infinite (T / F)","id":"d-if-after-finite-number-of-union-result-is-infinite-set-then-at-least-one-of-the-input-setdisjoint-is-infinite-t-f"},{"level":6,"text":"e) if after finite number of union result is infinite set, then all of the input set is infinite (T / F)","id":"e-if-after-finite-number-of-union-result-is-infinite-set-then-all-of-the-input-set-is-infinite-t-f"},{"level":6,"text":"f) Finite intersection of finite sets is — (finite/infinite)","id":"f-finite-intersection-of-finite-sets-is-finiteinfinite"},{"level":6,"text":"g) Finite intersection of Infinite sets is — (finite/infinite)","id":"g-finite-intersection-of-infinite-sets-is-finiteinfinite"},{"level":6,"text":"h) If after finite number of intersection result is infinite set, then at least one of the input set is infinite (T / F)","id":"h-if-after-finite-number-of-intersection-result-is-infinite-set-then-at-least-one-of-the-input-set-is-infinite-t-f"},{"level":6,"text":"i) If after finite number of intersection result is infinite set, then all of the input set is infinite (T / F)","id":"i-if-after-finite-number-of-intersection-result-is-infinite-set-then-all-of-the-input-set-is-infinite-t-f"},{"level":6,"text":"Q8) Which of the following is true?","id":"q8-which-of-the-following-is-true"},{"level":6,"text":"(i) (A - B) - C = A- (C- B)","id":"i-a-b-c-a-c-b"},{"level":6,"text":"(ii) (A-B) -C=(A-C)-B","id":"ii-a-b-ca-c-b"},{"level":6,"text":"(ii) (A - B) - C = A - (B n C)","id":"ii-a-b-c-a-b-n-c"},{"level":6,"text":"(iv) (A ∩ B) - (B ∩ C) = {A - (A ∩ C)} - (A - B)","id":"iv-a-b-b-c-a-a-c-a-b"},{"level":6,"text":"a) i & iii","id":"a-i-iii"},{"level":6,"text":"c) i, ii, iv","id":"c-i-ii-iv"},{"level":6,"text":"b) ii & iv","id":"b-ii-iv"},{"level":6,"text":"d) ii & iii","id":"d-ii-iii"},{"level":6,"text":"Q9) let p, q and r be sets let @ denotes the symmetric difference defined as p @ q = (p ∪ q) - (p ∩ q)?","id":"q9-let-p-q-and-r-be-sets-let-denotes-the-symmetric-difference-defined-as-p-q-p-q-p-q"},{"level":6,"text":"I) p @ (q ∩ r) = (p @ q) n (p @ r)","id":"i-p-q-r-p-q-n-p-r"},{"level":6,"text":"II) p ∩ (q ∩ r) = (p ∩ q) @ (p @ r)","id":"ii-p-q-r-p-q-p-r"},{"level":6,"text":"a) I only","id":"a-i-only"},{"level":6,"text":"b) II only","id":"b-ii-only"},{"level":6,"text":"c) neither I nor II","id":"c-neither-i-nor-ii"},{"level":6,"text":"d) both I and II","id":"d-both-i-and-ii"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -40382,7 +40382,7 @@ A9) c) neither I nor II
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 699,
-    backlinks: ["ethical-hacking","language-translators"],
+    backlinks: ["ethical-hacking","language-translators","setting-up-virtual-machine-or-lab","setting-up-virtual-machine-or-lab"],
     links: ["cybersec","ethical-hacking","kali-linux-overview"],
     outline: [{"level":3,"text":"VMware","id":"vmware"},{"level":3,"text":"VirtualBox","id":"virtualbox"},{"level":3,"text":"🪟 Hyper-V (Microsoft)","id":"hyper-v-microsoft"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"🦩 QEMU (with KVM on Linux)","id":"qemu-with-kvm-on-linux"},{"level":3,"text":"Why not WSL instead of Virtual Machine?","id":"why-not-wsl-instead-of-virtual-machine"},{"level":4,"text":"Pros of WSL","id":"pros-of-wsl"},{"level":4,"text":"But here’s the catch","id":"but-heres-the-catch"}],
     content: `Type : #Note    
@@ -40745,7 +40745,7 @@ if (5 = x);    // compile-time error
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 353,
-    backlinks: ["moc-engineering-mathematics"],
+    backlinks: ["moc-engineering-mathematics","simple-interest-compound-interest","simple-interest-compound-interest","simple-interest-compound-interest"],
     links: ["maths","finance"],
     outline: [{"level":2,"text":"Formula","id":"formula"},{"level":2,"text":"Amount","id":"amount"},{"level":2,"text":"Key Results","id":"key-results"},{"level":2,"text":"Annual Compounding","id":"annual-compounding"},{"level":2,"text":"Compounded $n$ times per year","id":"compounded-n-times-per-year"},{"level":2,"text":"Continuous Compounding (advanced)","id":"continuous-compounding-advanced"},{"level":2,"text":"Difference between CI and SI (2 years)","id":"difference-between-ci-and-si-2-years"},{"level":2,"text":"Difference between CI and SI (3 years)","id":"difference-between-ci-and-si-3-years"},{"level":2,"text":"Growth factor","id":"growth-factor"},{"level":2,"text":"Depreciation","id":"depreciation"},{"level":2,"text":"Successive percentage change","id":"successive-percentage-change"},{"level":2,"text":"If amount doubles (CI)","id":"if-amount-doubles-ci"},{"level":2,"text":"If amount triples","id":"if-amount-triples"},{"level":2,"text":"For small $R$","id":"for-small-r"},{"level":2,"text":"Rule of 72 (approx doubling time)","id":"rule-of-72-approx-doubling-time"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -40910,7 +40910,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 77,
-    backlinks: [],
+    backlinks: ["software"],
     links: ["operating-system"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Application Software","id":"application-software"},{"level":2,"text":"System Software","id":"system-software"}],
     content: `Type : #Note    
@@ -40981,7 +40981,7 @@ Eg : Operating System, Linker, Loader
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 208,
-    backlinks: ["moc-data-structures-and-algorithms","algorithm-basics","bubble-sort","face-matching","selection-sort"],
+    backlinks: ["moc-data-structures-and-algorithms","algorithm-basics","bubble-sort","face-matching","selection-sort","sorting","sorting"],
     links: ["dsa","sort","selection-sort","bubble-sort","face-matching","algorithm-basics"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -41067,7 +41067,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 2740,
-    backlinks: ["moc-data-structures-and-algorithms","data-structures-basics","dynamic-memory-allocationc","recursion"],
+    backlinks: ["moc-data-structures-and-algorithms","data-structures-basics","dynamic-memory-allocationc","recursion","stack","stack","stack"],
     links: ["dsa","recursion","algorithm-basics","graph-traversal","data-structures-basics"],
     outline: [{"level":2,"text":"Application of Stack","id":"application-of-stack"},{"level":2,"text":"Static(Array) Implementation of Stack","id":"staticarray-implementation-of-stack"},{"level":2,"text":"Dynamic(Linked List) Implementation of Stack","id":"dynamiclinked-list-implementation-of-stack"},{"level":2,"text":"Postfix Notation using Stack","id":"postfix-notation-using-stack"},{"level":3,"text":"Infix to Postfix:","id":"infix-to-postfix"},{"level":3,"text":"Prefix to Postfix:","id":"prefix-to-postfix"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q1)</span> Q Choose the correct alternatives (more than one may be correct) and write the corresponding letters only: The following sequence of operations is performed on a stack:","id":"span-stylecolorrgb0-176-240q1span-q-choose-the-correct-alternatives-more-than-one-may-be-correct-and-write-the-corresponding-letters-only-the-following-sequence-of-operations-is-performed-on-a-stack"},{"level":6,"text":"PUSH (10), PUSH (20), POP, PUSH (10), PUSH (20), POP, POP, POP, PUSH (20), POP.","id":"push-10-push-20-pop-push-10-push-20-pop-pop-pop-push-20-pop"},{"level":6,"text":"The sequence of values popped out is ? <span style=\"color:rgb(255, 192, 0)\">(GATE - 1991) (2 Marks)</span>","id":"the-sequence-of-values-popped-out-is-span-stylecolorrgb255-192-0gate-1991-2-marksspan"},{"level":6,"text":"a) 20,10,20,10,20","id":"a-2010201020"},{"level":6,"text":"b) 20,20,10,10,20","id":"b-2020101020"},{"level":6,"text":"c) 10,20,20,10,20","id":"c-1020201020"},{"level":6,"text":"d) 20,20,10,20,10","id":"d-2020102010"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q2)</span> Which of the following is true about linked list implementation of stack?","id":"span-stylecolorrgb0-176-240q2span-which-of-the-following-is-true-about-linked-list-implementation-of-stack"},{"level":6,"text":"(A) In push operation, if new nodes are inserted at the beginning of linked list, then in pop operation, nodes must be removed from end.","id":"a-in-push-operation-if-new-nodes-are-inserted-at-the-beginning-of-linked-list-then-in-pop-operation-nodes-must-be-removed-from-end"},{"level":6,"text":"(B) In push operation, if new nodes are inserted at the end, then in pop operation, nodes must be removed from the beginning.","id":"b-in-push-operation-if-new-nodes-are-inserted-at-the-end-then-in-pop-operation-nodes-must-be-removed-from-the-beginning"},{"level":6,"text":"(C) Both of the above","id":"c-both-of-the-above"},{"level":6,"text":"(D) None of the above","id":"d-none-of-the-above"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q3</span><span style=\"color:rgb(0, 176, 240)\">)</span> A single array A1 ... MAXSIZE is used to implement two stacks. The two stacks grow from opposite ends of the array. Variables top<sub>1</sub> and top<sub>2</sub> (top<sub>1</sub>< top<sub>2</sub>) point to the location of the topmost element in each of the stacks. If the space is to be used efficiently, the condition for \"stack full\" is<span style=\"color:rgb(255, 192, 0)\"> (G</span><span style=\"color:rgb(255, 192, 0)\">ATE - 2004) (2 Marks) Asked in Goldman Sachs 2018</span>","id":"span-stylecolorrgb0-176-240q3spanspan-stylecolorrgb0-176-240span-a-single-array-a1-maxsize-is-used-to-implement-two-stacks-the-two-stacks-grow-from-opposite-ends-of-the-array-variables-topsub1sub-and-topsub2sub-topsub1sub-topsub2sub-point-to-the-location-of-the-topmost-element-in-each-of-the-stacks-if-the-space-is-to-be-used-efficiently-the-condition-for-stack-full-isspan-stylecolorrgb255-192-0-gspanspan-stylecolorrgb255-192-0ate-2004-2-marks-asked-in-goldman-sachs-2018span"},{"level":6,"text":"(A) (top<sub>1</sub> = MAXSIZE/2) and (top<sub>2</sub> = MAXSIZE/2+1)","id":"a-topsub1sub-maxsize2-and-topsub2sub-maxsize21"},{"level":6,"text":"(B) top<sub>1</sub> + top<sub>2</sub> = MAXSIZE","id":"b-topsub1sub-topsub2sub-maxsize"},{"level":6,"text":"(C) (top<sub>1</sub> = MAXSIZE/2) or (top<sub>2</sub> = MAXSIZE)","id":"c-topsub1sub-maxsize2-or-topsub2sub-maxsize"},{"level":6,"text":"(D) top<sub>1</sub>= top<sub>2</sub>-1","id":"d-topsub1sub-topsub2sub-1"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q4)</span> Let S be a stack of size n >= 1. Starting with the empty stack, suppose we push the first n natural numbers in sequence, and then perform n pop operations. Assume that Push and Pop operation take X seconds each, and Y seconds elapse between the end of one such stack operation and the start of the next operation. For m >= 1, define the stack-life of m as the time elapsed from the end of Push(m) to the start of the pop operation that removes m from S. The average stack-life of an element of this stack is <span style=\"color:rgb(255, 192, 0)\">(GATE - 2003) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q4span-let-s-be-a-stack-of-size-n-1-starting-with-the-empty-stack-suppose-we-push-the-first-n-natural-numbers-in-sequence-and-then-perform-n-pop-operations-assume-that-push-and-pop-operation-take-x-seconds-each-and-y-seconds-elapse-between-the-end-of-one-such-stack-operation-and-the-start-of-the-next-operation-for-m-1-define-the-stack-life-of-m-as-the-time-elapsed-from-the-end-of-pushm-to-the-start-of-the-pop-operation-that-removes-m-from-s-the-average-stack-life-of-an-element-of-this-stack-is-span-stylecolorrgb255-192-0gate-2003-2-marksspan"},{"level":6,"text":"(A) n(X+ Y)","id":"a-nx-y"},{"level":6,"text":"(B) 3Y + 2X","id":"b-3y-2x"},{"level":6,"text":"(C) n(X + Y)-X","id":"c-nx-y-x"},{"level":6,"text":"(D) Y + 2X","id":"d-y-2x"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q5)</span> Which of the following permutations can be obtained in the output (in the same order) using a stack assuming that the input is the sequence 1, 2, 3, 4, 5 in that order? <span style=\"color:rgb(255, 192, 0)\">(GATE - 1994) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q5span-which-of-the-following-permutations-can-be-obtained-in-the-output-in-the-same-order-using-a-stack-assuming-that-the-input-is-the-sequence-1-2-3-4-5-in-that-order-span-stylecolorrgb255-192-0gate-1994-2-marksspan"},{"level":6,"text":"a) 3, 4, 5, 1, 2","id":"a-3-4-5-1-2"},{"level":6,"text":"b) 3, 4, 5, 2, 1","id":"b-3-4-5-2-1"},{"level":6,"text":"c) 1, 5, 2, 3, 4","id":"c-1-5-2-3-4"},{"level":6,"text":"d) 5, 4, 3, 1, 2","id":"d-5-4-3-1-2"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q6)</span> If the input sequence is 5, 4, 3, 2, 1 then identify the wrong stack permutation (possible pop sequence)?","id":"span-stylecolorrgb0-176-240q6span-if-the-input-sequence-is-5-4-3-2-1-then-identify-the-wrong-stack-permutation-possible-pop-sequence"},{"level":6,"text":"a) 4, 2, 1, 3, 5","id":"a-4-2-1-3-5"},{"level":6,"text":"b) 5, 2, 3, 4, 1","id":"b-5-2-3-4-1"},{"level":6,"text":"c) 4, 5, 1, 2, 3","id":"c-4-5-1-2-3"},{"level":6,"text":"d) 3, 4, 5, 2, 1","id":"d-3-4-5-2-1"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q7)</span> Assume that the operators +, -, x are left associative and ^ is right associative. The order of precedence (from highest to lowest) is ^, x, +, -. The postfix expression corresponding to the infix expression a + b x c -d ^ e ^ f is<span style=\"color:rgb(255, 192, 0)\"> (GATE - 2004) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q7span-assume-that-the-operators-x-are-left-associative-and-is-right-associative-the-order-of-precedence-from-highest-to-lowest-is-x-the-postfix-expression-corresponding-to-the-infix-expression-a-b-x-c-d-e-f-isspan-stylecolorrgb255-192-0-gate-2004-2-marksspan"},{"level":6,"text":"(A) a b c x + d e f ^ ^ -","id":"a-a-b-c-x-d-e-f"},{"level":6,"text":"(B) a b c x + de ^ f ^ -","id":"b-a-b-c-x-de-f"},{"level":6,"text":"(C) ab + c × d - e ^f ^","id":"c-ab-c-d-e-f"},{"level":6,"text":"(D) - + a x b c ^ ^ d e f","id":"d-a-x-b-c-d-e-f"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q8)</span> The postfix expression for the infix expression A + B  ( C + D ) / F + D  E is: <span style=\"color:rgb(255, 192, 0)\">(GATE - 1995) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q8span-the-postfix-expression-for-the-infix-expression-a-b-c-d-f-d-e-is-span-stylecolorrgb255-192-0gate-1995-2-marksspan"},{"level":6,"text":"a) A B + C D +  F / D + E","id":"a-a-b-c-d-f-d-e"},{"level":6,"text":"b) A B C D +  F / D E  + +","id":"b-a-b-c-d-f-d-e"},{"level":6,"text":"c) A  B + C D / F  D E + +","id":"c-a-b-c-d-f-d-e"},{"level":6,"text":"d) A +  B C D / F  D E + +","id":"d-a-b-c-d-f-d-e"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q9)</span> Consider an expression log(x!) , convert it into both prefix and postfix notation.","id":"span-stylecolorrgb0-176-240q9span-consider-an-expression-logx-convert-it-into-both-prefix-and-postfix-notation"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q10)</span> Compute the postfix equivalent of the following expression. <span style=\"color:rgb(255, 192, 0)\">(GATE - 1998) (2 Marks)</span>","id":"span-stylecolorrgb0-176-240q10span-compute-the-postfix-equivalent-of-the-following-expression-span-stylecolorrgb255-192-0gate-1998-2-marksspan"},{"level":6,"text":"3  log (x + 1) - a/2","id":"3-log-x-1-a2"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q11)</span> The result evaluating the postfix expression 10 5 + 60 6 /  8 - is? <span style=\"color:rgb(255, 192, 0)\">(GATE - 2015) (1 Marks)</span>","id":"span-stylecolorrgb0-176-240q11span-the-result-evaluating-the-postfix-expression-10-5-60-6-8-is-span-stylecolorrgb255-192-0gate-2015-1-marksspan"},{"level":6,"text":"(A) 284","id":"a-284"},{"level":6,"text":"(B) 213","id":"b-213"},{"level":6,"text":"(C) 142","id":"c-142"},{"level":6,"text":"(D) 71","id":"d-71"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q12)</span> The following postfix expression with single digit operands is evaluated using a stack 8 2 3 ^ / 2 3  + 5 1  - .Note that ^ is the exponentiation operator. The top two elements of the stack after the first  is evaluated are: <span style=\"color:rgb(255, 192, 0)\">(GATE - 2007) (2 Marks)  Asked in Hexaware 2017 </span>","id":"span-stylecolorrgb0-176-240q12span-the-following-postfix-expression-with-single-digit-operands-is-evaluated-using-a-stack-8-2-3-2-3-5-1-note-that-is-the-exponentiation-operator-the-top-two-elements-of-the-stack-after-the-first-is-evaluated-are-span-stylecolorrgb255-192-0gate-2007-2-marks-asked-in-hexaware-2017-span"},{"level":6,"text":"(A) 6, 1","id":"a-6-1"},{"level":6,"text":"(B) 5, 7","id":"b-5-7"},{"level":6,"text":"(C) 3, 2","id":"c-3-2"},{"level":6,"text":"(D) 1, 5","id":"d-1-5"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q13)</span> The result evaluating the postfix expression:   8 2 3  1 / + 4 1  2 / +","id":"span-stylecolorrgb0-176-240q13span-the-result-evaluating-the-postfix-expression-8-2-3-1-4-1-2"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q14)</span> The result evaluating the prefix expression","id":"span-stylecolorrgb0-176-240q14span-the-result-evaluating-the-prefix-expression"},{"level":6,"text":"+ + 8 /  2 3 1 /  4 1 2","id":"8-2-3-1-4-1-2"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q15)</span> to evaluate an expression without any embedded function calls: <span style=\"color:rgb(255, 192, 0)\">(GATE - 2002) (1 Marks)</span>","id":"span-stylecolorrgb0-176-240q15span-to-evaluate-an-expression-without-any-embedded-function-calls-span-stylecolorrgb255-192-0gate-2002-1-marksspan"},{"level":6,"text":"(A) One Stack is enough","id":"a-one-stack-is-enough"},{"level":6,"text":"(B) Two Stacks are needed","id":"b-two-stacks-are-needed"},{"level":6,"text":"(C) As many stacks as the height of the expression tree are needed","id":"c-as-many-stacks-as-the-height-of-the-expression-tree-are-needed"},{"level":6,"text":"(D) A Turing machine is needed is the general case","id":"d-a-turing-machine-is-needed-is-the-general-case"},{"level":6,"text":"All other Qs are in Recursion#Questions|Recursion - Questions","id":"all-other-qs-are-in-recursionquestionsrecursion-questions"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -41493,7 +41493,7 @@ _<span style="color:rgb(146, 208, 80)">3 x 1 + log * a 2 / -</span>_
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 658,
-    backlinks: ["ethical-hacking"],
+    backlinks: ["ethical-hacking","stages-of-hacking","stages-of-hacking","stages-of-hacking"],
     links: ["linux","cybersec"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"Basic Exploitation & Backdooring Tools","id":"basic-exploitation-backdooring-tools"}],
     content: `Type : #Note    
@@ -41637,7 +41637,7 @@ Tools:
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 521,
-    backlinks: ["char-functionsc","escape-sequencesc","switch-casec","c"],
+    backlinks: ["char-functionsc","escape-sequencesc","switch-casec","c","stringsc"],
     links: ["c","datatypes","array","escape-sequencesc"],
     outline: [{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"1. Using string literals (recommended)","id":"1-using-string-literals-recommended"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"2. Manual initialization","id":"2-manual-initialization"},{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"scanf(\"%s\", str);","id":"scanfs-str"},{"level":6,"text":"Examples :","id":"examples"},{"level":2,"text":"fgets()  (Best)","id":"fgets-best"},{"level":6,"text":"Examples :","id":"examples"},{"level":2,"text":"gets() (Never Use)","id":"gets-never-use"},{"level":2,"text":"printf()","id":"printf"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"puts()","id":"puts"},{"level":6,"text":"Example :","id":"example"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"Important String Functions","id":"important-string-functions"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":3,"text":"❌ Using string as format string","id":"using-string-as-format-string"}],
     content: `Type : #Note    
@@ -41868,7 +41868,7 @@ Give examples of each string function
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 417,
-    backlinks: [],
+    backlinks: ["supply-function","supply-function"],
     links: ["finance"],
     outline: [{"level":2,"text":"Supply Function","id":"supply-function"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"1) Individual Supply Function","id":"1-individual-supply-function"},{"level":3,"text":"2) Market Supply Function","id":"2-market-supply-function"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Supply Schedule","id":"supply-schedule"},{"level":3,"text":"Definition","id":"definition"},{"level":3,"text":"1) Individual Supply Schedule","id":"1-individual-supply-schedule"},{"level":6,"text":"Example","id":"example"},{"level":3,"text":"2) Market Supply Schedule","id":"2-market-supply-schedule"},{"level":6,"text":"Example","id":"example"}],
     content: `Type : #Note    
@@ -42016,7 +42016,7 @@ Assumes a market with two firms: Firm A and Firm B.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1544,
-    backlinks: [],
+    backlinks: ["supply","supply"],
     links: ["finance"],
     outline: [{"level":4,"text":"Detailed Breakdown of Supply","id":"detailed-breakdown-of-supply"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Key Elements of Supply","id":"key-elements-of-supply"},{"level":3,"text":"Determinants of a Supply Definition","id":"determinants-of-a-supply-definition"},{"level":2,"text":"Stock vs. Supply","id":"stock-vs-supply"},{"level":3,"text":"Concept of Stock","id":"concept-of-stock"},{"level":3,"text":"Concept of Supply","id":"concept-of-supply"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Types of Supply","id":"types-of-supply"},{"level":3,"text":"Individual Supply","id":"individual-supply"},{"level":3,"text":"Market Supply","id":"market-supply"},{"level":2,"text":"The Supply Process","id":"the-supply-process"},{"level":3,"text":"Workflow of Supply","id":"workflow-of-supply"},{"level":2,"text":"1. Price of the Given Commodity","id":"1-price-of-the-given-commodity"},{"level":3,"text":"Direct Relationship","id":"direct-relationship"},{"level":4,"text":"Mechanism of Profit Maximization","id":"mechanism-of-profit-maximization"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"2. Prices of Other Goods","id":"2-prices-of-other-goods"},{"level":3,"text":"Competitive Supply","id":"competitive-supply"},{"level":4,"text":"Shift in Production","id":"shift-in-production"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"3. Prices of Factors of Production (Input Prices)","id":"3-prices-of-factors-of-production-input-prices"},{"level":3,"text":"Cost of Production Impact","id":"cost-of-production-impact"},{"level":4,"text":"Inverse Relationship with Supply","id":"inverse-relationship-with-supply"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"4. State of Technology","id":"4-state-of-technology"},{"level":3,"text":"Efficiency and Productivity","id":"efficiency-and-productivity"},{"level":4,"text":"Technological Advancement","id":"technological-advancement"},{"level":2,"text":"5. Government Policy (Taxation and Subsidies)","id":"5-government-policy-taxation-and-subsidies"},{"level":3,"text":"Fiscal Impact","id":"fiscal-impact"},{"level":4,"text":"Taxes","id":"taxes"},{"level":4,"text":"Subsidies","id":"subsidies"},{"level":2,"text":"6. Goals of the Firm","id":"6-goals-of-the-firm"},{"level":3,"text":"Strategic Objectives","id":"strategic-objectives"},{"level":2,"text":"7. Number of Firms in the Market","id":"7-number-of-firms-in-the-market"},{"level":3,"text":"Direct Relationship","id":"direct-relationship"},{"level":2,"text":"8. Future Expectations Regarding Price","id":"8-future-expectations-regarding-price"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"9. Infrastructure (Transport and Communication)","id":"9-infrastructure-transport-and-communication"},{"level":6,"text":"Q1) Why does a producer increase supply when prices rise?","id":"q1-why-does-a-producer-increase-supply-when-prices-rise"}],
     content: `Type : #Note    
@@ -43103,7 +43103,7 @@ A4) c) Operator
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 188,
-    backlinks: [],
+    backlinks: ["tools-with-claude-code"],
     links: ["ai","programming"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"}],
     content: `Type : #Note    
@@ -43181,7 +43181,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 2818,
-    backlinks: ["dbms-basics"],
+    backlinks: ["dbms-basics","transactions-and-concurrency-control","transactions-and-concurrency-control"],
     links: ["dbms","dbms-basics"],
     outline: [{"level":3,"text":"Atomicity","id":"atomicity"},{"level":3,"text":"Consistency","id":"consistency"},{"level":3,"text":"Isolation","id":"isolation"},{"level":3,"text":"Durability","id":"durability"},{"level":2,"text":"Serial Schedule","id":"serial-schedule"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"Non-Serial Schedule","id":"non-serial-schedule"},{"level":6,"text":"Example :","id":"example"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Conclusion of Schedules","id":"conclusion-of-schedules"},{"level":3,"text":"Serializability","id":"serializability"},{"level":4,"text":"Conflicting Instructions :","id":"conflicting-instructions"},{"level":4,"text":"Conflict Equivalent :","id":"conflict-equivalent"},{"level":6,"text":"Example : Conflict Equivalent Schedules","id":"example-conflict-equivalent-schedules"},{"level":4,"text":"Conflict Serializable","id":"conflict-serializable"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q1)</span> Which of the following is NOT a part of the ACID properties of database transactions?","id":"span-stylecolorrgb0-176-240q1span-which-of-the-following-is-not-a-part-of-the-acid-properties-of-database-transactions"},{"level":6,"text":"(a) Atomicity","id":"a-atomicity"},{"level":6,"text":"(b) Consistency","id":"b-consistency"},{"level":6,"text":"(c) Isolation","id":"c-isolation"},{"level":6,"text":"(d) Deadlock-freedom","id":"d-deadlock-freedom"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q2)</span> If the transaction is in which of the state what we can guarantee that data base is in consistent state.","id":"span-stylecolorrgb0-176-240q2span-if-the-transaction-is-in-which-of-the-state-what-we-can-guarantee-that-data-base-is-in-consistent-state"},{"level":6,"text":"a) aborted","id":"a-aborted"},{"level":6,"text":"b) committed","id":"b-committed"},{"level":6,"text":"c) both aborted & committed","id":"c-both-aborted-committed"},{"level":6,"text":"d) none","id":"d-none"},{"level":6,"text":"<span style=\"color:rgb(0, 176, 240)\">Q3)</span> The following schedule is suffering from ?","id":"span-stylecolorrgb0-176-240q3span-the-following-schedule-is-suffering-from"},{"level":6,"text":"a) Lost Update Problem","id":"a-lost-update-problem"},{"level":6,"text":"b) Unrepeatable read problem","id":"b-unrepeatable-read-problem"},{"level":6,"text":"c) Both A and B","id":"c-both-a-and-b"},{"level":6,"text":"d) Neither A nor B","id":"d-neither-a-nor-b"},{"level":6,"text":"Q4) Which of the following scenario may lead to unrecoverable error in a database system?","id":"q4-which-of-the-following-scenario-may-lead-to-unrecoverable-error-in-a-database-system"},{"level":6,"text":"(A) A transaction writes a data item after it is read by an uncommitted transaction","id":"a-a-transaction-writes-a-data-item-after-it-is-read-by-an-uncommitted-transaction"},{"level":6,"text":"(B) A transaction reads a data item after it is read by an uncommitted transaction","id":"b-a-transaction-reads-a-data-item-after-it-is-read-by-an-uncommitted-transaction"},{"level":6,"text":"(C) A transaction reads a data item after it is written by a committed transaction","id":"c-a-transaction-reads-a-data-item-after-it-is-written-by-a-committed-transaction"},{"level":6,"text":"(D) A transaction reads a data item after it is written by an uncommitted transaction","id":"d-a-transaction-reads-a-data-item-after-it-is-written-by-an-uncommitted-transaction"},{"level":6,"text":"Q5) Consider a schedule of transactions T1 and T2. Here, RX stands for Read(X) and WX stands for Write(X). Which one of the following schedules is conflict equivalent to the above schedule?","id":"q5-consider-a-schedule-of-transactions-t1-and-t2-here-rx-stands-for-readx-and-wx-stands-for-writex-which-one-of-the-following-schedules-is-conflict-equivalent-to-the-above-schedule"},{"level":6,"text":"a)","id":"a"},{"level":6,"text":"b)","id":"b"},{"level":6,"text":"c)","id":"c"},{"level":6,"text":"d)","id":"d"},{"level":6,"text":"Q6) Let Ri(z) and Wi(z) denote read and write operations on a data element z by transaction Ti, respectively. Consider the schedule S with four transactions. S: R4(x) R2(x) R3(x) R1(y) W1(y) W2(x) W3(y) R4(y) Which one of the following serial schedules is conflict equivalent to S?","id":"q6-let-riz-and-wiz-denote-read-and-write-operations-on-a-data-element-z-by-transaction-ti-respectively-consider-the-schedule-s-with-four-transactions-s-r4x-r2x-r3x-r1y-w1y-w2x-w3y-r4y-which-one-of-the-following-serial-schedules-is-conflict-equivalent-to-s"},{"level":6,"text":"(а) Т1 → Т3 → Т4 → Т2","id":"1-3-4-2"},{"level":6,"text":"(b) Т1 → Т4 → Т3 → Т2","id":"b-1-4-3-2"},{"level":6,"text":"(с) Т4 → Т1 → Т3 → Т2","id":"4-1-3-2"},{"level":6,"text":"(d) Т3 → T1 → Т4 → Т2","id":"d-3-t1-4-2"},{"level":6,"text":"Q7) Let ri(z) and wi(z) denote read and write operations respectively on a data item z by a transaction Ti. Consider the following two schedules.","id":"q7-let-riz-and-wiz-denote-read-and-write-operations-respectively-on-a-data-item-z-by-a-transaction-ti-consider-the-following-two-schedules"},{"level":6,"text":"S1 : r1(x) r1(y) r2(x) r2(y) w2(y) w1(x)","id":"s1-r1x-r1y-r2x-r2y-w2y-w1x"},{"level":6,"text":"S2 : r1(x) r2(x) r2(y) w2(y) r1(y) w1(x)","id":"s2-r1x-r2x-r2y-w2y-r1y-w1x"},{"level":6,"text":"Which one of the following options is correct?","id":"which-one-of-the-following-options-is-correct"},{"level":6,"text":"a) S1 is conflict serializable, and S2 is not conflict serializable","id":"a-s1-is-conflict-serializable-and-s2-is-not-conflict-serializable"},{"level":6,"text":"b) S1 is not conflict serializable, and S2 is conflict serializable","id":"b-s1-is-not-conflict-serializable-and-s2-is-conflict-serializable"},{"level":6,"text":"c) Both S1 and S2 are conflict serializable","id":"c-both-s1-and-s2-are-conflict-serializable"},{"level":6,"text":"d) Neither S1 nor S2 is conflict serializable","id":"d-neither-s1-nor-s2-is-conflict-serializable"}],
     content: `Type : #Note    
@@ -43619,7 +43619,7 @@ S2 is conflict serializable as it doesn't form a cycle
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 530,
-    backlinks: ["moc-engineering-mathematics","graph-traversal","matching","network-reliability"],
+    backlinks: ["moc-engineering-mathematics","graph-traversal","matching","network-reliability","treedm","treedm","treedm","treedm","treedm"],
     links: ["maths","dsa","graph","set"],
     outline: [{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Tree Parameters","id":"tree-parameters"},{"level":4,"text":"Eccentricity $e(v)$","id":"eccentricity-ev"},{"level":4,"text":"Radius $r(G)$","id":"radius-rg"},{"level":4,"text":"Diameter $d(G)$","id":"diameter-dg"},{"level":4,"text":"Center","id":"center"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Spanning Trees","id":"spanning-trees"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Spanning Forest","id":"spanning-forest"},{"level":6,"text":"Q1) Let T be a tree with 10 vertices. The sum of the degrees of all vertices in T is?","id":"q1-let-t-be-a-tree-with-10-vertices-the-sum-of-the-degrees-of-all-vertices-in-t-is"}],
     content: `Type : #Note    
@@ -43751,7 +43751,7 @@ $|v| = 10$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 300,
-    backlinks: ["moc-data-structures-and-algorithms","binary-tree","data-structures-basics","operatorsc","pointersc","recursion"],
+    backlinks: ["moc-data-structures-and-algorithms","binary-tree","data-structures-basics","operatorsc","pointersc","recursion","treedsa","treedsa","treedsa","treedsa"],
     links: ["dsa","graph","maths","array","linked-list"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Tree Fundamentals and Terminology","id":"tree-fundamentals-and-terminology"},{"level":3,"text":"Basic Definitions","id":"basic-definitions"},{"level":3,"text":"Structural Terms","id":"structural-terms"}],
     content: `Type : #Note    
@@ -43847,7 +43847,7 @@ Status : #complete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 646,
-    backlinks: ["moc-engineering-mathematics","arcface","face-embedding"],
+    backlinks: ["moc-engineering-mathematics","arcface","face-embedding","trigonometric-formulas","trigonometric-formulas"],
     links: ["maths","arcface","face-embedding"],
     outline: [{"level":2,"text":"Sine Rule","id":"sine-rule"},{"level":2,"text":"Cosine Rule","id":"cosine-rule"},{"level":2,"text":"Area using trig","id":"area-using-trig"},{"level":2,"text":"Periodicity","id":"periodicity"},{"level":2,"text":"Even-Odd Properties","id":"even-odd-properties"},{"level":2,"text":"Complementary Angles","id":"complementary-angles"},{"level":2,"text":"🔗 Connections","id":"connections"}],
     content: `Type : #Note    
@@ -44035,7 +44035,7 @@ $$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 729,
-    backlinks: ["python-type-conversion-type-casting","c"],
+    backlinks: ["python-type-conversion-type-casting","c","type-conversionc"],
     links: ["c","datatypes","datatypesc"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Types of Type Conversion in C","id":"types-of-type-conversion-in-c"},{"level":3,"text":"1. Implicit Type Conversion (Automatic)","id":"1-implicit-type-conversion-automatic"},{"level":4,"text":"Order of Type Promotion (Low → High) for Numeric Values","id":"order-of-type-promotion-low-high-for-numeric-values"},{"level":6,"text":"Examples :","id":"examples"},{"level":4,"text":"Data Loss Possibility : Truncate","id":"data-loss-possibility-truncate"},{"level":6,"text":"Example :","id":"example"},{"level":3,"text":"2. Explicit Type Conversion (Type Casting)","id":"2-explicit-type-conversion-type-casting"},{"level":6,"text":"Examples :","id":"examples"},{"level":6,"text":"Q1) What is type conversion?","id":"q1-what-is-type-conversion"},{"level":6,"text":"Q2) What is implicit type conversion?","id":"q2-what-is-implicit-type-conversion"},{"level":6,"text":"Q3) What is explicit type conversion?","id":"q3-what-is-explicit-type-conversion"},{"level":6,"text":"Q4) What will be the value of x?","id":"q4-what-will-be-the-value-of-x"},{"level":6,"text":"Q5) What will be the value of x?","id":"q5-what-will-be-the-value-of-x"},{"level":6,"text":"Q6) What will be the value of x?","id":"q6-what-will-be-the-value-of-x"},{"level":6,"text":"Q7) What will be the value of x?","id":"q7-what-will-be-the-value-of-x"},{"level":6,"text":"Q8) What will be the value of z?","id":"q8-what-will-be-the-value-of-z"},{"level":6,"text":"Q9) Which conversion may cause data loss?","id":"q9-which-conversion-may-cause-data-loss"},{"level":6,"text":"Q10) Arrange in increasing order of type promotion.","id":"q10-arrange-in-increasing-order-of-type-promotion"}],
     content: `Type : #Note    
@@ -44260,7 +44260,7 @@ char → short → int → long → float → double → long double
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1227,
-    backlinks: [],
+    backlinks: ["underworld-system-and-organized-crime","underworld-system-and-organized-crime","underworld-system-and-organized-crime","underworld-system-and-organized-crime"],
     links: ["pakistan","india","terrorism"],
     outline: [{"level":2,"text":"Foundations of Organized Crime in Mumbai","id":"foundations-of-organized-crime-in-mumbai"},{"level":3,"text":"Structural Preconditions for Crime Emergence","id":"structural-preconditions-for-crime-emergence"},{"level":4,"text":"Economic Drivers","id":"economic-drivers"},{"level":4,"text":"Geographic Advantage","id":"geographic-advantage"},{"level":4,"text":"Governance Gaps","id":"governance-gaps"},{"level":3,"text":"Causal Model: Crime Emergence","id":"causal-model-crime-emergence"},{"level":2,"text":"Dance Bars as Crime Ecosystems","id":"dance-bars-as-crime-ecosystems"},{"level":3,"text":"Functional Role","id":"functional-role"},{"level":3,"text":"Mechanism of Conflict Generation","id":"mechanism-of-conflict-generation"},{"level":4,"text":"Cause","id":"cause"},{"level":4,"text":"Mechanism","id":"mechanism"},{"level":4,"text":"Result","id":"result"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Recruitment Architecture of Gangs","id":"recruitment-architecture-of-gangs"},{"level":3,"text":"Recruitment System Model","id":"recruitment-system-model"},{"level":3,"text":"Prison-Based Recruitment Engine","id":"prison-based-recruitment-engine"},{"level":4,"text":"Why Prisons?","id":"why-prisons"},{"level":3,"text":"Psychological Conversion Model","id":"psychological-conversion-model"},{"level":4,"text":"Stage 1: Isolation","id":"stage-1-isolation"},{"level":4,"text":"Stage 2: Support Injection","id":"stage-2-support-injection"},{"level":4,"text":"Stage 3: Dependency","id":"stage-3-dependency"},{"level":4,"text":"Stage 4: Loyalty Lock-in","id":"stage-4-loyalty-lock-in"},{"level":6,"text":"Q1) Why are prisons ideal recruitment hubs?","id":"q1-why-are-prisons-ideal-recruitment-hubs"},{"level":2,"text":"Crime Journalism — Information Risk System","id":"crime-journalism-information-risk-system"},{"level":3,"text":"Information Flow Model","id":"information-flow-model"},{"level":3,"text":"Structural Risk Sources","id":"structural-risk-sources"},{"level":6,"text":"Q1) Why don’t crime journalists seek “both sides”?","id":"q1-why-dont-crime-journalists-seek-both-sides"},{"level":2,"text":"Mafia vs Terrorism — System-Level Distinction","id":"mafia-vs-terrorism-system-level-distinction"},{"level":3,"text":"Ideological vs Economic Systems","id":"ideological-vs-economic-systems"},{"level":3,"text":"System Model Comparison","id":"system-model-comparison"},{"level":6,"text":"Q1) Can mafia become terrorism?","id":"q1-can-mafia-become-terrorism"},{"level":2,"text":"Evolution of Dawood Ibrahim","id":"evolution-of-dawood-ibrahim"},{"level":3,"text":"Lifecycle Model of a Crime Lord","id":"lifecycle-model-of-a-crime-lord"},{"level":4,"text":"Phase 1: Entry (Petty Crime)","id":"phase-1-entry-petty-crime"},{"level":4,"text":"Phase 2: Network Integration","id":"phase-2-network-integration"},{"level":4,"text":"Phase 3: Expansion","id":"phase-3-expansion"},{"level":4,"text":"Phase 4: Domination","id":"phase-4-domination"},{"level":4,"text":"Phase 5: Stabilization","id":"phase-5-stabilization"},{"level":3,"text":"Growth Mechanism","id":"growth-mechanism"},{"level":2,"text":"Power Transition: Old Mafia → New Mafia","id":"power-transition-old-mafia-new-mafia"},{"level":3,"text":"Structural Shift Model","id":"structural-shift-model"},{"level":3,"text":"Key Difference","id":"key-difference"},{"level":2,"text":"Political Entry Failure of Gangsters","id":"political-entry-failure-of-gangsters"},{"level":3,"text":"Case Mechanism: Haji Mastan","id":"case-mechanism-haji-mastan"},{"level":4,"text":"Cause","id":"cause"},{"level":4,"text":"Barrier","id":"barrier"},{"level":4,"text":"Result","id":"result"},{"level":6,"text":"Q1) Why do criminals fail in politics?","id":"q1-why-do-criminals-fail-in-politics"},{"level":2,"text":"Dawood’s Operational Ecosystem","id":"dawoods-operational-ecosystem"},{"level":3,"text":"Multi-Layer Network Model","id":"multi-layer-network-model"},{"level":3,"text":"Economic Engine Model","id":"economic-engine-model"},{"level":2,"text":"Fake Currency System — Economic Warfare Model","id":"fake-currency-system-economic-warfare-model"},{"level":3,"text":"Operational Flow","id":"operational-flow"},{"level":3,"text":"Impact Mechanism","id":"impact-mechanism"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Karachi Safe Haven — Strategic Geography","id":"karachi-safe-haven-strategic-geography"},{"level":3,"text":"Why Safe Havens Work","id":"why-safe-havens-work"},{"level":4,"text":"Conditions","id":"conditions"},{"level":3,"text":"Escape Failure Model","id":"escape-failure-model"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Fear Dynamics — Core Power Instability","id":"fear-dynamics-core-power-instability"},{"level":3,"text":"Dual-State Model","id":"dual-state-model"},{"level":4,"text":"External Layer","id":"external-layer"},{"level":4,"text":"Internal Layer","id":"internal-layer"},{"level":3,"text":"Instability Equation","id":"instability-equation"},{"level":6,"text":"Q1) Why are powerful gangsters insecure?","id":"q1-why-are-powerful-gangsters-insecure"},{"level":2,"text":"Criminal Psychology — Behavioral Model","id":"criminal-psychology-behavioral-model"},{"level":3,"text":"Core Traits","id":"core-traits"},{"level":3,"text":"Death Denial Syndrome","id":"death-denial-syndrome"},{"level":4,"text":"Definition","id":"definition"},{"level":4,"text":"Occurrence","id":"occurrence"},{"level":6,"text":"Q1) Do criminals actually fear death?","id":"q1-do-criminals-actually-fear-death"},{"level":2,"text":"Dawood vs Rahman Daku — Power Topology","id":"dawood-vs-rahman-daku-power-topology"},{"level":3,"text":"Structural Comparison","id":"structural-comparison"},{"level":3,"text":"Core Insight Model","id":"core-insight-model"},{"level":3,"text":"Territory Dominance Model","id":"territory-dominance-model"},{"level":6,"text":"Example","id":"example"},{"level":2,"text":"Underworld Economy — Parallel System","id":"underworld-economy-parallel-system"},{"level":3,"text":"Economic Scale","id":"economic-scale"},{"level":3,"text":"System Model","id":"system-model"},{"level":2,"text":"Global Organized Crime Models","id":"global-organized-crime-models"},{"level":3,"text":"Yakuza System","id":"yakuza-system"},{"level":3,"text":"General Principle","id":"general-principle"},{"level":2,"text":"Loyalty vs Money — Control Model","id":"loyalty-vs-money-control-model"},{"level":3,"text":"Types of Operatives","id":"types-of-operatives"},{"level":3,"text":"Insight","id":"insight"},{"level":2,"text":"Information Economy of Underworld","id":"information-economy-of-underworld"},{"level":3,"text":"Informers as Currency","id":"informers-as-currency"},{"level":3,"text":"Flow Model","id":"flow-model"},{"level":6,"text":"Q1) Why are informers critical?","id":"q1-why-are-informers-critical"},{"level":2,"text":"Power Stability Theory","id":"power-stability-theory"},{"level":3,"text":"Why All Dons Decline","id":"why-all-dons-decline"},{"level":4,"text":"Internal Factors","id":"internal-factors"},{"level":4,"text":"External Factors","id":"external-factors"},{"level":3,"text":"Decline Model","id":"decline-model"},{"level":2,"text":"Integrated Underworld System Model","id":"integrated-underworld-system-model"}],
     content: `Type : #Note #podcast       
@@ -44965,7 +44965,7 @@ Information → Sustains Advantage
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 836,
-    backlinks: ["dynamic-memory-allocationc"],
+    backlinks: ["dynamic-memory-allocationc","void-pointerc"],
     links: ["c","errors"],
     outline: [{"level":2,"text":"Operations and Limitations","id":"operations-and-limitations"},{"level":3,"text":"1. Assignment","id":"1-assignment"},{"level":3,"text":"2. Dereferencing","id":"2-dereferencing"},{"level":4,"text":"Reason:","id":"reason"},{"level":3,"text":"Summary - void pointer","id":"summary-void-pointer"},{"level":3,"text":"3. Pointer Arithmetic","id":"3-pointer-arithmetic"},{"level":3,"text":"4. Type Safety Risk","id":"4-type-safety-risk"},{"level":3,"text":"5. Function Pointer Limitation","id":"5-function-pointer-limitation"},{"level":3,"text":"Validity of Operations","id":"validity-of-operations"},{"level":2,"text":"Memory Allocation and Usage","id":"memory-allocation-and-usage"},{"level":3,"text":"malloc() and calloc()","id":"malloc-and-calloc"},{"level":4,"text":"Important:","id":"important"},{"level":3,"text":"Generic Programming","id":"generic-programming"},{"level":2,"text":"Example","id":"example"},{"level":2,"text":"Key Question","id":"key-question"},{"level":3,"text":"Q1) Why can we not dereference a void pointer directly?","id":"q1-why-can-we-not-dereference-a-void-pointer-directly"},{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Explanation","id":"explanation"},{"level":2,"text":"Why It Matters","id":"why-it-matters"},{"level":2,"text":"Summary","id":"summary"}],
     content: `Type : #Note    
@@ -45220,7 +45220,7 @@ int main() {
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 1142,
-    backlinks: ["moc-logic-and-philosophy","predicate-logic"],
+    backlinks: ["moc-logic-and-philosophy","predicate-logic","well-formed-formula","well-formed-formula"],
     links: ["maths"],
     outline: [{"level":6,"text":"Q1) Which of the following is a wff?","id":"q1-which-of-the-following-is-a-wff"},{"level":6,"text":"a) $((P → Q) ∧ (Q → R)) → (P → R)$","id":"a-p-q-q-r-p-r"},{"level":6,"text":"b) $(P → Q) → ( ¬ P → ¬ Q)$","id":"b-p-q-p-q"},{"level":6,"text":"c) $(P ∧ ( ¬ P ∨ ¬ Q)) → Q$","id":"c-p-p-q-q"},{"level":6,"text":"d) $(P → R) ∨ (Q → R) → ((P ∨ Q) → R)$","id":"d-p-r-q-r-p-q-r"},{"level":6,"text":"e) $¬ P ∧ Q$","id":"e-p-q"},{"level":6,"text":"f) $P → Q → R$","id":"f-p-q-r"},{"level":6,"text":"Q2) Consider 2 wff in propositional logic. Check if they are satisfiable and valid or not.","id":"q2-consider-2-wff-in-propositional-logic-check-if-they-are-satisfiable-and-valid-or-not"},{"level":6,"text":"F1 : P → ¬ P","id":"f1-p-p"},{"level":6,"text":"F2 : (P → ¬ P) ∨ (¬ P → P)","id":"f2-p-p-p-p"},{"level":2,"text":"Well Formed Formula (wff)","id":"well-formed-formula-wff"},{"level":2,"text":"Truth-Based Classification of wff","id":"truth-based-classification-of-wff"},{"level":2,"text":"Logical Relationships","id":"logical-relationships"},{"level":2,"text":"Negation-Based Tests","id":"negation-based-tests"},{"level":2,"text":"Counting Results (for n variables)","id":"counting-results-for-n-variables"},{"level":2,"text":"Probability Results","id":"probability-results"},{"level":2,"text":"Problem-Solving Strategy","id":"problem-solving-strategy"}],
     content: `Type : #Note    
@@ -45430,7 +45430,7 @@ F2 : (P → ¬ P) ∨ ( ¬ P → P)
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 1184,
-    backlinks: ["breakc","continuec","control-structuresc","do-whilec","forc","loop"],
+    backlinks: ["breakc","continuec","control-structuresc","do-whilec","forc","loop","whilec","whilec"],
     links: ["c","loop","operating-system","control-structuresc"],
     outline: [{"level":6,"text":"Examples :","id":"examples"},{"level":6,"text":"Q1) Find the Output","id":"q1-find-the-output"},{"level":6,"text":"Q2) Find the Output","id":"q2-find-the-output"},{"level":6,"text":"Q3) Find the Output. What will be the output if we swap the statements in the loop.","id":"q3-find-the-output-what-will-be-the-output-if-we-swap-the-statements-in-the-loop"},{"level":6,"text":"Q4) WAP to find the sum of 1st n natural no.","id":"q4-wap-to-find-the-sum-of-1st-n-natural-no"},{"level":6,"text":"Q5) WAP to find sum of 1st n even natural no.","id":"q5-wap-to-find-sum-of-1st-n-even-natural-no"},{"level":6,"text":"Q6) WAP to find sum of 1st n odd natural no.","id":"q6-wap-to-find-sum-of-1st-n-odd-natural-no"},{"level":6,"text":"Q7) WAP to print table of a given number.","id":"q7-wap-to-print-table-of-a-given-number"},{"level":6,"text":"Q8) WAP to print the factorial of a given number","id":"q8-wap-to-print-the-factorial-of-a-given-number"}],
     content: `Type : #Note    
@@ -45811,7 +45811,7 @@ return 0;
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 279,
-    backlinks: ["moc-computer-vision-and-surveillance"],
+    backlinks: ["moc-computer-vision-and-surveillance","architecture"],
     links: [],
     outline: [{"level":2,"text":"System Overview","id":"system-overview"},{"level":2,"text":"Architecture Components","id":"architecture-components"},{"level":3,"text":"Input Layer","id":"input-layer"},{"level":3,"text":"Detection Layer","id":"detection-layer"},{"level":3,"text":"Tracking Layer","id":"tracking-layer"},{"level":3,"text":"Cross-Camera Re-ID Layer","id":"cross-camera-re-id-layer"},{"level":3,"text":"Output Layer","id":"output-layer"},{"level":2,"text":"Technology Stack","id":"technology-stack"},{"level":2,"text":"Key Design Decisions","id":"key-design-decisions"},{"level":2,"text":"Open Questions","id":"open-questions"},{"level":2,"text":"References","id":"references"}],
     content: `Type : #Research    
@@ -45899,7 +45899,7 @@ A multi-camera surveillance system that detects persons of interest across non-o
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 285,
-    backlinks: [],
+    backlinks: ["benchmarks"],
     links: [],
     outline: [{"level":2,"text":"Benchmark Datasets","id":"benchmark-datasets"},{"level":2,"text":"Evaluation Metrics","id":"evaluation-metrics"},{"level":3,"text":"Re-Identification","id":"re-identification"},{"level":3,"text":"Tracking","id":"tracking"},{"level":2,"text":"Baseline Results (Literature)","id":"baseline-results-literature"},{"level":2,"text":"Our Results","id":"our-results"},{"level":2,"text":"Open Questions","id":"open-questions"},{"level":2,"text":"References","id":"references"}],
     content: `Type : #Research    
@@ -45974,7 +45974,7 @@ Status : #draft
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 248,
-    backlinks: [],
+    backlinks: ["implementation-log"],
     links: [],
     outline: [{"level":2,"text":"Log Format","id":"log-format"},{"level":2,"text":"Log Entries","id":"log-entries"},{"level":3,"text":"2026-05-11 — Project Initialised","id":"2026-05-11-project-initialised"},{"level":2,"text":"Environment Setup","id":"environment-setup"},{"level":2,"text":"Milestones","id":"milestones"},{"level":2,"text":"Known Issues","id":"known-issues"},{"level":2,"text":"Decisions Made","id":"decisions-made"},{"level":2,"text":"Open Questions","id":"open-questions"}],
     content: `Type : #Research    
@@ -46055,7 +46055,7 @@ Dependencies:
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 374,
-    backlinks: ["moc-computer-vision-and-surveillance"],
+    backlinks: ["moc-computer-vision-and-surveillance","literature-review"],
     links: [],
     outline: [{"level":2,"text":"Core Problem Areas","id":"core-problem-areas"},{"level":2,"text":"Key Papers","id":"key-papers"},{"level":3,"text":"Detection","id":"detection"},{"level":3,"text":"Tracking","id":"tracking"},{"level":3,"text":"Re-Identification","id":"re-identification"},{"level":3,"text":"Multi-Camera Systems","id":"multi-camera-systems"},{"level":2,"text":"Identified Gaps in Literature","id":"identified-gaps-in-literature"},{"level":2,"text":"Open Questions","id":"open-questions"},{"level":2,"text":"Papers to Read Next","id":"papers-to-read-next"},{"level":2,"text":"References","id":"references"}],
     content: `Type : #Research    
@@ -46142,7 +46142,7 @@ Status : #draft
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 263,
-    backlinks: [],
+    backlinks: ["paper-draft"],
     links: [],
     outline: [{"level":2,"text":"Abstract (Draft)","id":"abstract-draft"},{"level":2,"text":"1. Introduction","id":"1-introduction"},{"level":2,"text":"2. Related Work","id":"2-related-work"},{"level":2,"text":"3. Methodology","id":"3-methodology"},{"level":3,"text":"3.1 Detection","id":"31-detection"},{"level":3,"text":"3.2 Single-Camera Tracking","id":"32-single-camera-tracking"},{"level":3,"text":"3.3 Appearance Feature Extraction","id":"33-appearance-feature-extraction"},{"level":3,"text":"3.4 Cross-Camera Re-Identification","id":"34-cross-camera-re-identification"},{"level":3,"text":"3.5 Global ID Assignment","id":"35-global-id-assignment"},{"level":2,"text":"4. Experiments","id":"4-experiments"},{"level":3,"text":"4.1 Datasets","id":"41-datasets"},{"level":3,"text":"4.2 Evaluation Metrics","id":"42-evaluation-metrics"},{"level":3,"text":"4.3 Results","id":"43-results"},{"level":3,"text":"4.4 Ablation Study","id":"44-ablation-study"},{"level":2,"text":"5. Discussion","id":"5-discussion"},{"level":2,"text":"6. Conclusion","id":"6-conclusion"},{"level":2,"text":"References","id":"references"}],
     content: `Type : #Research    
@@ -46240,7 +46240,7 @@ We propose a real-time pipeline for multi-camera person re-identification that e
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 303,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","a-desolated-guy","a-desolated-guy"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"}],
     content: `Type : #creativity    
@@ -46315,7 +46315,7 @@ This poem captures the chaos of a mind overwhelmed by pressure, exhaustion, and 
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 252,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","beyond-now","beyond-now"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46376,7 +46376,7 @@ This poem expresses the ache of loving someone from a distance while fearing tha
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 180,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","burnt-petals","burnt-petals"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46421,7 +46421,7 @@ This poem traces the journey from idealized love to painful awareness. It shows 
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 207,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","cancer","cancer"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46478,7 +46478,7 @@ This poem portrays a body collapsing under the weight of past choices and a mind
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 136,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","death","death"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46522,7 +46522,7 @@ This poem approaches death not as terror, but as a complete erasure of weight, d
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 210,
-    backlinks: ["about-me","moc-writing-and-creativity","poetry-index"],
+    backlinks: ["about-me","moc-writing-and-creativity","poetry-index","fragments-of-a-fading-mind","fragments-of-a-fading-mind"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46586,7 +46586,7 @@ This poem captures the experience of feeling broken without knowing exactly when
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 589,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","his-story","his-story"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46720,7 +46720,7 @@ This poem exposes the slow destruction caused by emotional neglect and impossibl
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 263,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","human-paradox","human-paradox"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46789,7 +46789,7 @@ This poem questions the strange contradictions of human behavior—our intellige
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 224,
-    backlinks: ["arcface","coordinate-geometry","face-alignment"],
+    backlinks: ["arcface","coordinate-geometry","face-alignment","poetry-matrix","poetry-matrix"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46854,7 +46854,7 @@ This poem challenges the blind faith placed in formal education and questions wh
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 267,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","modern-madness","modern-madness"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46914,7 +46914,7 @@ This poem presents a harsh snapshot of a world drowning in contradiction and mis
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 201,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","my-best-friend","my-best-friend"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -46971,7 +46971,7 @@ This poem captures grief in its quietest form—the small moments, the empty spa
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 119,
-    backlinks: ["moc-writing-and-creativity"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","poetry-index"],
     links: ["poetry","a-desolated-guy","fragments-of-a-fading-mind","the-weight-of-yesterday","shadows-of-adulthood","strength-in-solitude","system","beyond-now","burnt-petals","that-friend","my-best-friend","cancer","human-paradox","death","modern-madness","his-story","the-cursed-child","the-next-chapter"],
     outline: [{"level":2,"text":"Dark / Mental Health","id":"dark-mental-health"},{"level":2,"text":"Love / Heartbreak","id":"love-heartbreak"},{"level":2,"text":"Grief & Loss","id":"grief-loss"},{"level":2,"text":"Existential / Philosophy","id":"existential-philosophy"},{"level":2,"text":"Identity & Social Pressure","id":"identity-social-pressure"},{"level":2,"text":"Growth & Transition","id":"growth-transition"}],
     content: `Type : #creativity
@@ -47026,7 +47026,7 @@ A collection of my poems exploring emotion, loss, identity, society, and growth.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 215,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","shadows-of-adulthood","shadows-of-adulthood"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -47081,7 +47081,7 @@ This poem reflects the quiet fatigue that often accompanies growing up—the mom
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 222,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","strength-in-solitude","strength-in-solitude"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -47131,7 +47131,7 @@ This poem speaks from a place of hard-earned realism—where dependence fades an
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 164,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","system","system"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -47182,7 +47182,7 @@ This poem exposes the quiet violence of an education system that measures worth 
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 218,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","that-friend","that-friend"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -47238,7 +47238,7 @@ This poem captures the quiet pain of being the one who still cares when a bond b
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 218,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","the-cursed-child","the-cursed-child"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -47298,7 +47298,7 @@ This poem voices the anguish of a child trapped between obedience and selfhood. 
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 172,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","the-next-chapter","the-next-chapter"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -47344,7 +47344,7 @@ This poem marks a moment of quiet resolve—the point where dependence gives way
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 310,
-    backlinks: ["moc-writing-and-creativity","poetry-index"],
+    backlinks: ["moc-writing-and-creativity","poetry-index","the-weight-of-yesterday","the-weight-of-yesterday"],
     links: ["poetry"],
     outline: [{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `Type : #creativity
@@ -47414,7 +47414,7 @@ This poem portrays the past as an ever-present companion—one that does not fad
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 215,
-    backlinks: [],
+    backlinks: ["4th-sem-exams"],
     links: ["college"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote       
@@ -47468,7 +47468,7 @@ Source :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 2199,
-    backlinks: ["aec"],
+    backlinks: ["aec","aec-2","aec-2"],
     links: ["college","aec-aec"],
     outline: [{"level":3,"text":"PYQ Paper: 2024-25","id":"pyq-paper-2024-25"},{"level":3,"text":"PYQ Paper: 2023-24","id":"pyq-paper-2023-24"},{"level":3,"text":"PYQ Paper: 2022-23","id":"pyq-paper-2022-23"},{"level":3,"text":"The \"Guaranteed Easy\" List (From PYQs)","id":"the-guaranteed-easy-list-from-pyqs"},{"level":4,"text":"1. Op-Amp Applications (High Priority - Appears in Q5, Q8)","id":"1-op-amp-applications-high-priority-appears-in-q5-q8"},{"level":4,"text":"2. Power Amplifiers (High Priority - Appears in Q4, Q6)","id":"2-power-amplifiers-high-priority-appears-in-q4-q6"},{"level":4,"text":"3. Feedback Topologies (High Priority - Appears in Q6)","id":"3-feedback-topologies-high-priority-appears-in-q6"},{"level":4,"text":"4. Current Mirror (High Priority - Appears in Q4, Q8)","id":"4-current-mirror-high-priority-appears-in-q4-q8"},{"level":3,"text":"Your \"Life or Death\" Plan","id":"your-life-or-death-plan"},{"level":4,"text":"PYQ Year: 2024-25","id":"pyq-year-2024-25"},{"level":4,"text":"PYQ Year: 2023-24","id":"pyq-year-2023-24"},{"level":4,"text":"PYQ Year: 2022-23","id":"pyq-year-2022-23"},{"level":3,"text":"2. Stability Analysis: Does the Pattern Change?","id":"2-stability-analysis-does-the-pattern-change"},{"level":3,"text":"3. Unique Topics (The \"Wildcards\")","id":"3-unique-topics-the-wildcards"}],
     content: `Type : #RawNote #classes          
@@ -48019,7 +48019,7 @@ These topics appeared only once in the last three years. Prioritize the stable t
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 8579,
-    backlinks: [],
+    backlinks: ["aec","aec"],
     links: ["college","aec-2"],
     outline: [{"level":2,"text":"1-2 Marks → Short Direct Qs","id":"1-2-marks-short-direct-qs"},{"level":2,"text":"5-7 Marks → draw a standard circuit and derive the key expression for its gain, frequency, etc.","id":"5-7-marks-draw-a-standard-circuit-and-derive-the-key-expression-for-its-gain-frequency-etc"},{"level":2,"text":"5-7 Marks → Calculate everything","id":"5-7-marks-calculate-everything"},{"level":2,"text":"3-5 Marks → Differentiate Template","id":"3-5-marks-differentiate-template"},{"level":2,"text":"5 marks → Short Notes → slightly less common but still important topics","id":"5-marks-short-notes-slightly-less-common-but-still-important-topics"},{"level":3,"text":"📄 Paper: Jan 2023","id":"paper-jan-2023"},{"level":3,"text":"📄 Paper: Dec 2023-2024","id":"paper-dec-2023-2024"},{"level":3,"text":"📄 Paper: 2024-25","id":"paper-2024-25"},{"level":3,"text":"Tier 1: High Frequency (Guaranteed Topics)","id":"tier-1-high-frequency-guaranteed-topics"},{"level":3,"text":"Tier 2: Medium Frequency (Likely Topics)","id":"tier-2-medium-frequency-likely-topics"},{"level":3,"text":"Tier 3: Low Frequency (Wildcard Topics)","id":"tier-3-low-frequency-wildcard-topics"},{"level":2,"text":"✅ JAN 2023 PAPER – EASY / LOW-MEM / NO-DERIVATION","id":"jan-2023-paper-easy-low-mem-no-derivation"},{"level":3,"text":"Q1 (10 × 1 marks)","id":"q1-10-1-marks"},{"level":3,"text":"Q2–Q7 (10 marks each)","id":"q2q7-10-marks-each"},{"level":3,"text":"Q8 (4 × 5 marks, attempt any 2)","id":"q8-4-5-marks-attempt-any-2"},{"level":2,"text":"✅ DEC 2023–24 PAPER – EASY / LOW-MEM / NO-DERIVATION","id":"dec-202324-paper-easy-low-mem-no-derivation"},{"level":3,"text":"Q1 (10 × 1 marks)","id":"q1-10-1-marks"},{"level":3,"text":"Q2–Q7","id":"q2q7"},{"level":3,"text":"Q8 (short notes / problems, any 2)","id":"q8-short-notes-problems-any-2"},{"level":2,"text":"✅ 2024–25 PAPER – EASY / LOW-MEM / NO-DERIVATION","id":"202425-paper-easy-low-mem-no-derivation"},{"level":3,"text":"Q1 (10 × 1 marks)","id":"q1-10-1-marks"},{"level":3,"text":"Q2–Q7","id":"q2q7"},{"level":3,"text":"Q8 (short notes / problems, any 2)","id":"q8-short-notes-problems-any-2"},{"level":2,"text":"🔎 Super-Condensed “Easy Bank” Across All Papers","id":"super-condensed-easy-bank-across-all-papers"},{"level":3,"text":"✅ Q1 Easy Topics (all 1-mark theory)","id":"q1-easy-topics-all-1-mark-theory"},{"level":3,"text":"✅ Other Easy Theory/Numerical","id":"other-easy-theorynumerical"},{"level":3,"text":"✅ Q1 Easy Theory Topics","id":"q1-easy-theory-topics"},{"level":3,"text":"✅ Other Easy Theory/Numerical Topics","id":"other-easy-theorynumerical-topics"},{"level":3,"text":"✅ Q1 Easy Theory Topics","id":"q1-easy-theory-topics"},{"level":3,"text":"✅ Other Easy Topics","id":"other-easy-topics"},{"level":3,"text":"✅ Q1 Easy Topics (all 1-mark theory)","id":"q1-easy-topics-all-1-mark-theory"},{"level":3,"text":"✅ Other Easy Theory/Numerical","id":"other-easy-theorynumerical"},{"level":3,"text":"✅ Q1 Easy Theory Topics","id":"q1-easy-theory-topics"},{"level":3,"text":"✅ Other Easy Theory/Numerical Topics","id":"other-easy-theorynumerical-topics"},{"level":3,"text":"✅ Q1 Easy Theory Topics","id":"q1-easy-theory-topics"},{"level":3,"text":"✅ Other Easy Topics","id":"other-easy-topics"},{"level":3,"text":"👉 The examiner is moving away from device-level analog","id":"the-examiner-is-moving-away-from-device-level-analog"},{"level":3,"text":"📌 Chapter 4 — BJT","id":"chapter-4-bjt"},{"level":3,"text":"📌 Chapter 5 — Biasing","id":"chapter-5-biasing"},{"level":3,"text":"📌 Chapter 6 — BJT AC Analysis","id":"chapter-6-bjt-ac-analysis"},{"level":3,"text":"📌 Chapter 7 & 8 — FET / MOSFET (only basics)","id":"chapter-7-8-fet-mosfet-only-basics"},{"level":3,"text":"📌 Chapter 9 — Frequency Response","id":"chapter-9-frequency-response"},{"level":3,"text":"📌 Chapter 10 — Op-Amp","id":"chapter-10-op-amp"},{"level":3,"text":"📌 Chapter 11 — Op-Amp Applications","id":"chapter-11-op-amp-applications"},{"level":3,"text":"📌 Chapter 12 — Power Amplifiers","id":"chapter-12-power-amplifiers"},{"level":3,"text":"📌 Extra Short Notes","id":"extra-short-notes"},{"level":3,"text":"🟩 Neso = Main Source","id":"neso-main-source"},{"level":3,"text":"🟨 All About Electronics = Backup/clarification tool","id":"all-about-electronics-backupclarification-tool"},{"level":2,"text":"Syllabus and PYQs","id":"syllabus-and-pyqs"},{"level":2,"text":"Notes","id":"notes"}],
     content: `Type : #RawNote #classes           
@@ -49283,7 +49283,7 @@ Your exam is **academic**, so:
     created: "2026-05-12",
     modified: "2026-05-12",
     wordCount: 1720,
-    backlinks: [],
+    backlinks: ["dbms-exam-strategy-analysis","dbms-exam-strategy-analysis"],
     links: ["dbms","college"],
     outline: [{"level":3,"text":"Phase 1 — Guaranteed Marks","id":"phase-1-guaranteed-marks"},{"level":3,"text":"Phase 2 — Q1 Short Answers","id":"phase-2-q1-short-answers"},{"level":3,"text":"Phase 3 — 5-Mark Questions","id":"phase-3-5-mark-questions"},{"level":3,"text":"Phase 4 — If Time Left","id":"phase-4-if-time-left"},{"level":3,"text":"⚠️ Gaps — Read from Navathe (Ch. 20–21)","id":"gaps-read-from-navathe-ch-2021"},{"level":2,"text":"Q1 — Short Answers (1 mark each)","id":"q1-short-answers-1-mark-each"},{"level":2,"text":"Q2–Q7 — 5-mark Questions","id":"q2q7-5-mark-questions"},{"level":2,"text":"Q8 — Short Notes (any two, 5 marks each)","id":"q8-short-notes-any-two-5-marks-each"},{"level":2,"text":"⚠️ Three Repeated Problems (exact same)","id":"three-repeated-problems-exact-same"},{"level":2,"text":"DBMS PYQ Analysis (2021-22 to 2024-25)","id":"dbms-pyq-analysis-2021-22-to-2024-25"},{"level":2,"text":"Appeared 4 Times — Non-Negotiable","id":"appeared-4-times-non-negotiable"},{"level":2,"text":"Appeared 3 Times","id":"appeared-3-times"},{"level":2,"text":"Appeared 2 Times","id":"appeared-2-times"},{"level":2,"text":"Appeared Once","id":"appeared-once"},{"level":2,"text":"Never Asked (skip entirely)","id":"never-asked-skip-entirely"},{"level":2,"text":"Notes Coverage Gap","id":"notes-coverage-gap"},{"level":2,"text":"Study Flow for Today/Tonight","id":"study-flow-for-todaytonight"}],
     content: `Type : #RawNote       
@@ -49667,7 +49667,7 @@ Your notes cover everything asked in PYQs **except**:
     created: "2026-05-13",
     modified: "2026-05-13",
     wordCount: 5838,
-    backlinks: [],
+    backlinks: ["dbms-numerical-detailed-notes","dbms-numerical-detailed-notes"],
     links: ["dbms","college"],
     outline: [{"level":2,"text":"1. Attribute Closure (X⁺)","id":"1-attribute-closure-x"},{"level":2,"text":"2. Finding Candidate Keys","id":"2-finding-candidate-keys"},{"level":2,"text":"3. Minimal Cover (Canonical Cover)","id":"3-minimal-cover-canonical-cover"},{"level":2,"text":"4. Normalization — 2NF, 3NF, BCNF","id":"4-normalization-2nf-3nf-bcnf"},{"level":3,"text":"Understanding 1NF","id":"understanding-1nf"},{"level":3,"text":"Understanding 2NF","id":"understanding-2nf"},{"level":3,"text":"Understanding 3NF","id":"understanding-3nf"},{"level":3,"text":"Understanding BCNF","id":"understanding-bcnf"},{"level":2,"text":"5. Lossless Join Test","id":"5-lossless-join-test"},{"level":2,"text":"6. Dependency Preservation Test","id":"6-dependency-preservation-test"},{"level":2,"text":"7. Relational Algebra Queries","id":"7-relational-algebra-queries"},{"level":2,"text":"8. Tuple Relational Calculus (TRC)","id":"8-tuple-relational-calculus-trc"},{"level":2,"text":"9. Schedule Analysis — Recoverable, Cascadeless, Strict","id":"9-schedule-analysis-recoverable-cascadeless-strict"},{"level":2,"text":"10. Conflict Serializability — Precedence Graph","id":"10-conflict-serializability-precedence-graph"},{"level":2,"text":"Quick Reference — What to Do When You See Each Problem Type","id":"quick-reference-what-to-do-when-you-see-each-problem-type"}],
     content: `Type : #Note    
@@ -50223,7 +50223,7 @@ When a problem gives you FDs and asks for keys, start by classifying attributes 
     created: "2026-05-13",
     modified: "2026-05-13",
     wordCount: 1798,
-    backlinks: [],
+    backlinks: ["dbms-numerical-notes","dbms-numerical-notes","dbms-numerical-notes"],
     links: ["dbms","college"],
     outline: [{"level":2,"text":"1. Attribute Closure (X⁺)","id":"1-attribute-closure-x"},{"level":2,"text":"2. Finding Candidate Keys","id":"2-finding-candidate-keys"},{"level":2,"text":"3. Minimal Cover","id":"3-minimal-cover"},{"level":2,"text":"4. Normalization","id":"4-normalization"},{"level":3,"text":"2NF","id":"2nf"},{"level":3,"text":"3NF","id":"3nf"},{"level":3,"text":"BCNF","id":"bcnf"},{"level":3,"text":"The Doctor Problem (exact PYQ — 23-24, 24-25)","id":"the-doctor-problem-exact-pyq-23-24-24-25"},{"level":3,"text":"R(A,B,C,D,E) Problem (exact PYQ — 23-24, 24-25)","id":"rabcde-problem-exact-pyq-23-24-24-25"},{"level":2,"text":"5. Lossless Join Test","id":"5-lossless-join-test"},{"level":2,"text":"6. Dependency Preservation Test","id":"6-dependency-preservation-test"},{"level":2,"text":"7. Relational Algebra — Key Patterns","id":"7-relational-algebra-key-patterns"},{"level":2,"text":"8. TRC — Tuple Relational Calculus","id":"8-trc-tuple-relational-calculus"},{"level":2,"text":"9. Schedule Analysis","id":"9-schedule-analysis"},{"level":3,"text":"Step 1 — Find all write-read pairs","id":"step-1-find-all-write-read-pairs"},{"level":3,"text":"Recoverable","id":"recoverable"},{"level":3,"text":"Cascadeless (ACA)","id":"cascadeless-aca"},{"level":3,"text":"Strict","id":"strict"},{"level":3,"text":"PYQ Schedules — S3, S4, S5","id":"pyq-schedules-s3-s4-s5"},{"level":2,"text":"10. Conflict Serializability — Precedence Graph","id":"10-conflict-serializability-precedence-graph"},{"level":2,"text":"Quick Decision Table","id":"quick-decision-table"}],
     content: `Type : #Note    
@@ -50602,7 +50602,7 @@ Graph: T1 → T2 AND T2 → T1 → **CYCLE → NOT conflict serializable** ✗
     created: "2026-05-13",
     modified: "2026-05-13",
     wordCount: 2554,
-    backlinks: [],
+    backlinks: ["dbms-short-notes-q8","dbms-short-notes-q8","dbms-short-notes-q8"],
     links: ["dbms","college"],
     outline: [{"level":2,"text":"★★ Appeared 2 Times","id":"appeared-2-times"},{"level":3,"text":"Constraints on Specialization / Generalization Hierarchies","id":"constraints-on-specialization-generalization-hierarchies"},{"level":2,"text":"★ Appeared Once — From 2021-22","id":"appeared-once-from-2021-22"},{"level":3,"text":"Anomalies in DBMS","id":"anomalies-in-dbms"},{"level":3,"text":"Physical and Logical Data Independence","id":"physical-and-logical-data-independence"},{"level":3,"text":"Transitive Dependency","id":"transitive-dependency"},{"level":3,"text":"De-normalization","id":"de-normalization"},{"level":2,"text":"★ Appeared Once — From 2023-24 Back Paper","id":"appeared-once-from-2023-24-back-paper"},{"level":3,"text":"Deadlock Prevention Protocols","id":"deadlock-prevention-protocols"},{"level":3,"text":"System Lock Tables","id":"system-lock-tables"},{"level":3,"text":"Query Graph","id":"query-graph"},{"level":3,"text":"Dirty Read Problem","id":"dirty-read-problem"},{"level":2,"text":"★ Appeared Once — From 2023-24 Regular","id":"appeared-once-from-2023-24-regular"},{"level":3,"text":"Data Warehousing Characteristics","id":"data-warehousing-characteristics"},{"level":3,"text":"Multiversion Concurrency Control (MVCC)","id":"multiversion-concurrency-control-mvcc"},{"level":3,"text":"Selectivity + Cost Estimates in Query Optimization","id":"selectivity-cost-estimates-in-query-optimization"},{"level":2,"text":"★ Appeared Once — From 2024-25","id":"appeared-once-from-2024-25"},{"level":3,"text":"Data Fragmentation","id":"data-fragmentation"},{"level":2,"text":"Thomas's Write Rule","id":"thomass-write-rule"},{"level":3,"text":"Data Marts","id":"data-marts"}],
     content: `Type : #Note    
@@ -51118,7 +51118,7 @@ T1's write would have been immediately overwritten by T2's write anyway — abor
     created: "2026-05-12",
     modified: "2026-05-12",
     wordCount: 2486,
-    backlinks: [],
+    backlinks: ["dbms-short-qs-q1","dbms-short-qs-q1","dbms-short-qs-q1"],
     links: ["dbms","college"],
     outline: [{"level":2,"text":"★★★ Appeared 3 Times — Highest Priority","id":"appeared-3-times-highest-priority"},{"level":3,"text":"1. NULL Values — Why Handling is Difficult","id":"1-null-values-why-handling-is-difficult"},{"level":3,"text":"2. DB Schema vs State (Intention vs Extension)","id":"2-db-schema-vs-state-intention-vs-extension"},{"level":3,"text":"3. JOIN Operations","id":"3-join-operations"},{"level":2,"text":"★★ Appeared 2 Times — High Priority","id":"appeared-2-times-high-priority"},{"level":3,"text":"4. Entity Integrity + Referential Integrity","id":"4-entity-integrity-referential-integrity"},{"level":3,"text":"5. Informal Guidelines for Relational Schema Design","id":"5-informal-guidelines-for-relational-schema-design"},{"level":3,"text":"6. Dangling Tuple","id":"6-dangling-tuple"},{"level":2,"text":"★ Appeared Once — Know These Cold","id":"appeared-once-know-these-cold"},{"level":3,"text":"7. 3-Tier Architecture of DBMS","id":"7-3-tier-architecture-of-dbms"},{"level":3,"text":"8. DBMS vs Traditional File System","id":"8-dbms-vs-traditional-file-system"},{"level":3,"text":"9. Types of Relationships in DBMS","id":"9-types-of-relationships-in-dbms"},{"level":3,"text":"10. Data Abstraction Levels","id":"10-data-abstraction-levels"},{"level":3,"text":"11. TRC and DRC (Short Definitions)","id":"11-trc-and-drc-short-definitions"},{"level":3,"text":"12. Aggregation and Atomicity","id":"12-aggregation-and-atomicity"},{"level":3,"text":"13. FD vs Multivalued Dependency","id":"13-fd-vs-multivalued-dependency"},{"level":3,"text":"14. Integrity Rules in DBMS","id":"14-integrity-rules-in-dbms"},{"level":3,"text":"15. Defining / Manipulating / Sharing a Database","id":"15-defining-manipulating-sharing-a-database"},{"level":3,"text":"16. Relationship Instance vs Type vs Set","id":"16-relationship-instance-vs-type-vs-set"},{"level":3,"text":"17. Attribute Closure (X⁺)","id":"17-attribute-closure-x"},{"level":3,"text":"18. Serializability for Concurrency Control","id":"18-serializability-for-concurrency-control"},{"level":3,"text":"19. Stored vs Derived Attributes","id":"19-stored-vs-derived-attributes"},{"level":3,"text":"20. Lossless Join Property","id":"20-lossless-join-property"},{"level":3,"text":"21. Search Algorithms for SELECT","id":"21-search-algorithms-for-select"},{"level":3,"text":"22. View Equivalent Schedules","id":"22-view-equivalent-schedules"},{"level":3,"text":"23. Read-item / Write-item Operations","id":"23-read-item-write-item-operations"},{"level":3,"text":"24. Distributed DB Transparency Features","id":"24-distributed-db-transparency-features"},{"level":3,"text":"25. DBMS Capabilities","id":"25-dbms-capabilities"},{"level":3,"text":"26. Database Utilities","id":"26-database-utilities"},{"level":3,"text":"27. Relationally Complete","id":"27-relationally-complete"},{"level":3,"text":"28. Recursive Relationship Type","id":"28-recursive-relationship-type"},{"level":3,"text":"29. Join Dependency + 5NF","id":"29-join-dependency-5nf"},{"level":3,"text":"30. Constrained vs Unconstrained Write","id":"30-constrained-vs-unconstrained-write"},{"level":3,"text":"31. Shadow Paging Recovery","id":"31-shadow-paging-recovery"}],
     content: `Type : #Note    
@@ -51790,7 +51790,7 @@ Apply the **basic timestamp ordering protocol** to each operation. For each oper
     created: "2026-05-14",
     modified: "2026-05-14",
     wordCount: 847,
-    backlinks: [],
+    backlinks: ["dm-pyq-analysis","dm-pyq-analysis","dm-pyq-analysis"],
     links: ["maths","college"],
     outline: [{"level":2,"text":"Highest Priority","id":"highest-priority"},{"level":3,"text":"1. Propositions & Logical Operators","id":"1-propositions-logical-operators"},{"level":3,"text":"2. Predicate Logic & Quantifiers","id":"2-predicate-logic-quantifiers"},{"level":3,"text":"3. Mathematical Induction","id":"3-mathematical-induction"},{"level":3,"text":"4. Relations","id":"4-relations"},{"level":3,"text":"5. Warshall Algorithm","id":"5-warshall-algorithm"},{"level":3,"text":"6. POSET + Hasse Diagram","id":"6-poset-hasse-diagram"},{"level":3,"text":"7. Lattice","id":"7-lattice"},{"level":2,"text":"Medium Priority","id":"medium-priority"},{"level":3,"text":"8. Functions","id":"8-functions"},{"level":3,"text":"9. Pigeonhole Principle","id":"9-pigeonhole-principle"},{"level":2,"text":"Highest Priority","id":"highest-priority"},{"level":3,"text":"1. Generating Functions","id":"1-generating-functions"},{"level":3,"text":"2. Recurrence Relations","id":"2-recurrence-relations"},{"level":3,"text":"3. Recursive Algorithms","id":"3-recursive-algorithms"},{"level":2,"text":"Low Priority","id":"low-priority"},{"level":3,"text":"4. Divide and Conquer Recurrences","id":"4-divide-and-conquer-recurrences"},{"level":2,"text":"Highest Priority","id":"highest-priority"},{"level":3,"text":"1. Boolean Algebra","id":"1-boolean-algebra"},{"level":3,"text":"2. Boolean Expressions","id":"2-boolean-expressions"},{"level":3,"text":"3. CNF & DNF","id":"3-cnf-dnf"},{"level":3,"text":"4. Lattice Theory","id":"4-lattice-theory"},{"level":2,"text":"Medium Priority","id":"medium-priority"},{"level":3,"text":"5. Principle of Duality","id":"5-principle-of-duality"},{"level":2,"text":"Low Priority / Mostly Skip","id":"low-priority-mostly-skip"},{"level":3,"text":"6. Groups","id":"6-groups"},{"level":3,"text":"7. Rings","id":"7-rings"},{"level":3,"text":"8. Fields","id":"8-fields"},{"level":3,"text":"9. Group Codes","id":"9-group-codes"},{"level":3,"text":"10. Switching Circuits","id":"10-switching-circuits"},{"level":2,"text":"Highest Priority","id":"highest-priority"},{"level":3,"text":"1. Basic Graph Theory","id":"1-basic-graph-theory"},{"level":3,"text":"2. Euler Graphs","id":"2-euler-graphs"},{"level":3,"text":"3. Hamiltonian Graphs","id":"3-hamiltonian-graphs"},{"level":3,"text":"4. Trees","id":"4-trees"},{"level":3,"text":"5. Graph Coloring","id":"5-graph-coloring"},{"level":3,"text":"6. Planar Graphs","id":"6-planar-graphs"},{"level":3,"text":"7. Dijkstra Algorithm","id":"7-dijkstra-algorithm"},{"level":3,"text":"8. Kruskal Algorithm","id":"8-kruskal-algorithm"},{"level":2,"text":"Medium Priority","id":"medium-priority"},{"level":3,"text":"9. BFS & DFS","id":"9-bfs-dfs"},{"level":2,"text":"Low Priority","id":"low-priority"},{"level":3,"text":"10. Matching","id":"10-matching"},{"level":3,"text":"11. Line Covering","id":"11-line-covering"},{"level":3,"text":"12. Network Reliability","id":"12-network-reliability"},{"level":3,"text":"13. Prim’s Algorithm","id":"13-prims-algorithm"}],
     content: `Type : #Note    
@@ -52137,7 +52137,7 @@ $1+x+x^2+x^3+\\cdots=\\frac{1}{1-x}$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 688,
-    backlinks: [],
+    backlinks: ["dsuc-3rd-sem"],
     links: ["college"],
     outline: [{"level":2,"text":"2024-25","id":"2024-25"},{"level":2,"text":"2023-24","id":"2023-24"},{"level":2,"text":"2022-2023","id":"2022-2023"},{"level":2,"text":"Tier-S: Very High Priority (Repeated in ALL papers + appears in latest)","id":"tier-s-very-high-priority-repeated-in-all-papers-appears-in-latest"},{"level":2,"text":"Tier-A: High Priority (Repeated in 2 papers & appears in latest)","id":"tier-a-high-priority-repeated-in-2-papers-appears-in-latest"},{"level":2,"text":"Tier-B: Medium Priority (Appears only once but syllabus-relevant)","id":"tier-b-medium-priority-appears-only-once-but-syllabus-relevant"},{"level":2,"text":"Tier-C: Low / Rare (Never appeared in any paper but in syllabus)","id":"tier-c-low-rare-never-appeared-in-any-paper-but-in-syllabus"},{"level":3,"text":"MUST STUDY FIRST (MOST LIKELY ON 11th):","id":"must-study-first-most-likely-on-11th"},{"level":3,"text":"NEXT:","id":"next"},{"level":3,"text":"OPTIONAL (If time remains):","id":"optional-if-time-remains"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote       
@@ -52330,7 +52330,7 @@ Index : Unique identifiers to each array element: range 0 to size-1
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 2065,
-    backlinks: [],
+    backlinks: ["ee-module-i-pyqs","ee-module-i-pyqs"],
     links: ["college","finance"],
     outline: [{"level":6,"text":"Q1, 4)","id":"q1-4"},{"level":6,"text":"A1, 4)","id":"a1-4"},{"level":6,"text":"Q2)","id":"q2"},{"level":6,"text":"A2)","id":"a2"},{"level":6,"text":"Q3)","id":"q3"},{"level":6,"text":"A3)","id":"a3"},{"level":6,"text":"Q5)","id":"q5"},{"level":6,"text":"A5)","id":"a5"},{"level":6,"text":"Q6)","id":"q6"},{"level":6,"text":"A6)","id":"a6"},{"level":6,"text":"Q7)","id":"q7"},{"level":6,"text":"A7)","id":"a7"},{"level":6,"text":"Q8)","id":"q8"},{"level":6,"text":"A8)","id":"a8"},{"level":6,"text":"Q9, 10)","id":"q9-10"},{"level":6,"text":"A9)","id":"a9"},{"level":6,"text":"Q10)","id":"q10"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote       
@@ -52708,7 +52708,7 @@ c) inferior product
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 2947,
-    backlinks: [],
+    backlinks: ["ee-module-ii-pyqs","ee-module-ii-pyqs"],
     links: ["college","finance"],
     outline: [{"level":6,"text":"Q1)","id":"q1"},{"level":6,"text":"A1)","id":"a1"},{"level":6,"text":"I)","id":"i"},{"level":6,"text":"II)","id":"ii"},{"level":6,"text":"Q2, Q1.III)","id":"q2-q1iii"},{"level":6,"text":"Q3)","id":"q3"},{"level":6,"text":"A3)","id":"a3"},{"level":6,"text":"Q4)","id":"q4"},{"level":6,"text":"A4)","id":"a4"},{"level":6,"text":"Q5)","id":"q5"},{"level":6,"text":"A5. I, II, III)","id":"a5-i-ii-iii"},{"level":6,"text":"Q6)","id":"q6"},{"level":6,"text":"A6)","id":"a6"},{"level":6,"text":"I)","id":"i"},{"level":6,"text":"II)","id":"ii"},{"level":6,"text":"III)","id":"iii"},{"level":6,"text":"Q7)","id":"q7"},{"level":6,"text":"A7)","id":"a7"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":6,"text":"Q8)","id":"q8"},{"level":6,"text":"A8)","id":"a8"}],
     content: `Type : #RawNote       
@@ -53226,7 +53226,7 @@ Revenue
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 610,
-    backlinks: [],
+    backlinks: ["ee-module-iii-pyqs","ee-module-iii-pyqs"],
     links: ["college","finance"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":6,"text":"Q1)","id":"q1"},{"level":6,"text":"A1)","id":"a1"}],
     content: `Type : #RawNote       
@@ -53343,7 +53343,7 @@ $$Price \\propto \\frac{1}{Demand} \\propto Supply$$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 299,
-    backlinks: [],
+    backlinks: ["ee-module-iv-pyqs","ee-module-iv-pyqs"],
     links: ["college","finance"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote       
@@ -53448,7 +53448,7 @@ Source :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1492,
-    backlinks: [],
+    backlinks: ["engineering-economics","engineering-economics"],
     links: ["college","finance"],
     outline: [{"level":2,"text":"🔴 Numericals First (15–20 marks guaranteed)","id":"numericals-first-1520-marks-guaranteed"},{"level":3,"text":"1. Elasticity of Demand","id":"1-elasticity-of-demand"},{"level":3,"text":"2. Present Worth Method","id":"2-present-worth-method"},{"level":3,"text":"3. Depreciation — SLM Only","id":"3-depreciation-slm-only"},{"level":3,"text":"4. Break Even Analysis","id":"4-break-even-analysis"},{"level":3,"text":"5. Compound Interest / Effective Interest Rate","id":"5-compound-interest-effective-interest-rate"},{"level":2,"text":"🟡 Theory Second (Q1 + Short Notes)","id":"theory-second-q1-short-notes"},{"level":3,"text":"1. Law of Demand","id":"1-law-of-demand"},{"level":3,"text":"2. Law of Supply","id":"2-law-of-supply"},{"level":3,"text":"3. National Income","id":"3-national-income"},{"level":3,"text":"4. Laws of Returns","id":"4-laws-of-returns"},{"level":3,"text":"5. Market Structures","id":"5-market-structures"},{"level":3,"text":"6. Cost Concepts","id":"6-cost-concepts"},{"level":2,"text":"🟢 Don't Spend Much Time On","id":"dont-spend-much-time-on"},{"level":3,"text":"Foundations _(Medium Priority)_","id":"foundations-medium-priority"},{"level":3,"text":"Demand _(Very High Priority)_","id":"demand-very-high-priority"},{"level":3,"text":"Supply _(High Priority)_","id":"supply-high-priority"},{"level":3,"text":"Market Equilibrium _(Very High Priority)_","id":"market-equilibrium-very-high-priority"},{"level":3,"text":"National Income _(Medium Priority)_","id":"national-income-medium-priority"},{"level":3,"text":"Production Theory _(High Priority)_","id":"production-theory-high-priority"},{"level":3,"text":"Cost and Revenue _(Very High Priority)_","id":"cost-and-revenue-very-high-priority"},{"level":3,"text":"Banking _(Low Priority)_","id":"banking-low-priority"},{"level":3,"text":"Market Structures _(Medium Priority)_","id":"market-structures-medium-priority"},{"level":3,"text":"Price Determination _(Medium Priority)_","id":"price-determination-medium-priority"},{"level":3,"text":"Break Even Analysis _(Very High Priority)_","id":"break-even-analysis-very-high-priority"},{"level":3,"text":"Inflation _(Low–Medium Priority)_","id":"inflation-lowmedium-priority"},{"level":3,"text":"Time Value of Money _(Very High Priority)_","id":"time-value-of-money-very-high-priority"},{"level":3,"text":"Cash Flow _(High Priority)_","id":"cash-flow-high-priority"},{"level":3,"text":"Project Evaluation _(Very High Priority)_","id":"project-evaluation-very-high-priority"},{"level":3,"text":"Cost Benefit Analysis _(Low Priority)_","id":"cost-benefit-analysis-low-priority"},{"level":3,"text":"Depreciation _(Very High Priority)_","id":"depreciation-very-high-priority"},{"level":3,"text":"Final _(Low Priority)_","id":"final-low-priority"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote       
@@ -54025,7 +54025,7 @@ About **70% of exam marks come from just these areas:**
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1189,
-    backlinks: [],
+    backlinks: ["flat-exam-analysis"],
     links: ["college"],
     outline: [{"level":2,"text":"Goal: Module 1","id":"goal-module-1"},{"level":2,"text":"Goal: Module 2","id":"goal-module-2"},{"level":2,"text":"Goal: Module 3 + Revision","id":"goal-module-3-revision"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote       
@@ -54435,7 +54435,7 @@ These are repeated directly in your papers.
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 125,
-    backlinks: [],
+    backlinks: ["flat-notes-2"],
     links: ["college"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote       
@@ -54502,7 +54502,7 @@ Source :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1186,
-    backlinks: [],
+    backlinks: ["flat-notes"],
     links: ["college"],
     outline: [{"level":3,"text":"Computation","id":"computation"},{"level":3,"text":"FSM : Finite State Machine","id":"fsm-finite-state-machine"},{"level":3,"text":"Components of FSA (Finite State Automata)","id":"components-of-fsa-finite-state-automata"},{"level":3,"text":"Elements of FSN","id":"elements-of-fsn"},{"level":3,"text":"Representation of FSA","id":"representation-of-fsa"},{"level":4,"text":"State","id":"state"},{"level":5,"text":"Types :","id":"types"},{"level":4,"text":"Transition","id":"transition"},{"level":5,"text":"State Diagram","id":"state-diagram"},{"level":5,"text":"Transition Table","id":"transition-table"},{"level":3,"text":"Finite Automaton","id":"finite-automaton"},{"level":3,"text":"Language of Automaton","id":"language-of-automaton"},{"level":3,"text":"Formal Language Theory","id":"formal-language-theory"},{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"},{"level":3,"text":"Strings","id":"strings"},{"level":6,"text":"Example :","id":"example"},{"level":4,"text":"Length of the String","id":"length-of-the-string"},{"level":4,"text":"Operations on String","id":"operations-on-string"},{"level":5,"text":"1. Concatenation","id":"1-concatenation"},{"level":5,"text":"2. Kleen Closure","id":"2-kleen-closure"},{"level":5,"text":"3. Positive Closure","id":"3-positive-closure"},{"level":6,"text":"Example :","id":"example"}],
     content: `Type : #RawNote       
@@ -55041,7 +55041,7 @@ w = $q_{0}abba$
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 1329,
-    backlinks: [],
+    backlinks: ["java-exam"],
     links: ["college"],
     outline: [{"level":2,"text":"Key Ideas","id":"key-ideas"},{"level":2,"text":"Note","id":"note"}],
     content: `Type : #RawNote       
@@ -55449,7 +55449,7 @@ Source :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 825,
-    backlinks: [],
+    backlinks: ["pyq-analysisjava","pyq-analysisjava"],
     links: ["java","college"],
     outline: [],
     content: `Type : #Note    
@@ -55745,7 +55745,7 @@ EXTRACTION TRACE TABLE
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 186,
-    backlinks: [],
+    backlinks: ["leee"],
     links: ["gate"],
     outline: [{"level":2,"text":"System Rules (Non-Negotiable)","id":"system-rules-non-negotiable"},{"level":2,"text":"Resource Links","id":"resource-links"},{"level":3,"text":"Lectures","id":"lectures"},{"level":3,"text":"Practice Resources","id":"practice-resources"}],
     content: `Type : #RawNote       
@@ -61672,8 +61672,8 @@ Tags : [[GATE]]
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 13,
-    backlinks: ["moc-ai-and-machine-learning","moc-computer-vision-and-surveillance","moc-startup-thinking","vaibhav-sinsity-claude-workshop","ai-briefing-2026-05-21","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","ai-jobs-automation","france","ai-career-adaptation-framework","agenticai","coding-assistant","context-engineering","prompts","python-libraries","tools-with-claude-code","gen-ai"],
-    links: ["ai-tools","gen-ai","llm"],
+    backlinks: ["moc-ai-and-machine-learning","moc-computer-vision-and-surveillance","moc-startup-thinking","vaibhav-sinsity-claude-workshop","ai-briefing-2026-05-21","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","ai-jobs-automation","france","ai-career-adaptation-framework","agenticai","coding-assistant","context-engineering","prompts","python-libraries","tools-with-claude-code","gen-ai","ai"],
+    links: ["ai-tools","gen-ai","llm","moc-ai-and-machine-learning","moc-computer-vision-and-surveillance","moc-startup-thinking","vaibhav-sinsity-claude-workshop","ai-briefing-2026-05-21","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","ai-jobs-automation","france","ai-career-adaptation-framework","agenticai","coding-assistant","context-engineering","prompts","python-libraries","tools-with-claude-code"],
     outline: [],
     content: `# AI Tools
 [[AI Tools]]
@@ -61710,7 +61710,7 @@ Tags : [[GATE]]
     modified: "2026-04-11",
     wordCount: 0,
     backlinks: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-28","news-2026-05-30","news-2026-06-02","news-2026-06-03","news-2026-06-04"],
-    links: [],
+    links: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-28","news-2026-05-30","news-2026-06-02","news-2026-06-03","news-2026-06-04"],
     outline: [],
     content: ``
   },
@@ -61725,7 +61725,7 @@ Tags : [[GATE]]
     modified: "2026-04-11",
     wordCount: 0,
     backlinks: ["moc-startup-thinking","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","strategic-brand-building-and-consumer-market-penetration"],
-    links: [],
+    links: ["moc-startup-thinking","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","strategic-brand-building-and-consumer-market-penetration"],
     outline: [],
     content: ``
   },
@@ -61739,8 +61739,8 @@ Tags : [[GATE]]
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 70,
-    backlinks: ["moc-data-structures-and-algorithms","moc-languages","1st-c-program","array","basicsc","binary-tree","breakc","char-functionsc","complex-pointersc","continuec","control-structuresc","datatypesc","do-whilec","dynamic-memory-allocationc","else-if-ladderc","escape-sequencesc","forc","if-elsec","input-outputconsolec","language-translators","languages","nested-ifc","nestedloopc","operatorsc","operators","pattern-questionsc","pointers-and-functionsc","pointersc","primary-datatypesc","programming","simple-ifc","stringsc","switch-casec","syllabusc","tokensc","type-conversionc","void-pointerc","whilec","conditional","loop"],
-    links: ["language","gate","basicsc","syllabusc","tokensc","datatypesc","primary-datatypesc","type-conversionc","stringsc","operatorsc","input-outputconsolec","escape-sequencesc","1st-c-program","control-structuresc","simple-ifc","if-elsec","nested-ifc","else-if-ladderc","switch-casec"],
+    backlinks: ["moc-data-structures-and-algorithms","moc-languages","1st-c-program","array","basicsc","binary-tree","breakc","char-functionsc","complex-pointersc","continuec","control-structuresc","datatypesc","do-whilec","dynamic-memory-allocationc","else-if-ladderc","escape-sequencesc","forc","if-elsec","input-outputconsolec","language-translators","languages","nested-ifc","nestedloopc","operatorsc","operators","pattern-questionsc","pointers-and-functionsc","pointersc","primary-datatypesc","programming","simple-ifc","stringsc","switch-casec","syllabusc","tokensc","type-conversionc","void-pointerc","whilec","conditional","loop","c","c"],
+    links: ["language","gate","basicsc","syllabusc","tokensc","datatypesc","primary-datatypesc","type-conversionc","stringsc","operatorsc","input-outputconsolec","escape-sequencesc","1st-c-program","control-structuresc","simple-ifc","if-elsec","nested-ifc","else-if-ladderc","switch-casec","moc-data-structures-and-algorithms","moc-languages","algorithm-basics","array","avl-tree","basic-problems-of-an-economy","bayes-theorem","binary-search-tree","binary-tree-traversal","binary-tree","box-urn-bag-type-problems","breakc","calculus-formulas","cards","char-functionsc","coin","complementation","complete-binary-tree","complex-numbers","complex-pointersc","conditional-probability","context-engineering","continuec","coordinate-geometry","data-models","data-structures-basics","db-3-level-architecture","db-languages","db-system-concepts","db-users-administrators","dbms-architecture","dbms-basics","dbms-interface","demand-function","demand","determinants-qs","determinants","dice","digital-logic-basics","discrete-mathematics-introduction","distributions","do-whilec","duality","dynamic-memory-allocationc","economics","elasticity-of-demand","elasticity-of-supply","er-model","errors","ethical-hacking","event-operations","exponential-and-logarithm-formulas","forc","fpya","functions","generative-ai","geometric-formulas-and-theorem","graph-theory","graph-traversal","group-theory","heap-tree","insertion-sort","java-installation-and-path-setup","java-overview","jvm-architecture","k-map","kali-linux-overview","language-translators","languages","law-of-demand","law-of-supply","line-covering","linked-list","logic-gates","logic-introduction","logical-operators","magic-of-compounding","markdown-basic","matching","matrix-qs","matrix","nestedloopc","network-reliability","normal-form-sop-and-pos","number-system","oops-features","operators","pattern-questionsc","permutation-combination-formulas","planer-non-planer-graphs","pmf","pointers-and-functionsc","pointersc","poset","predicate-logic","primary-logical-operators-across-different-domains","printpy","probability-introduction","probability-keywords","programming","propositions","python-basics","python-input","python-operators","python-type-conversion-type-casting","python-variables-data-types","questions-on-minimization","random-variable-overview","rank-of-a-matrix-qs","rank-of-a-matrix","rate-of-interest","recursion","relational-algebra","relational-calculus","relational-model","relations","selection-sort","sequence-and-series","set-theory","setting-up-virtual-machine-or-lab","simple-interest-compound-interest","stack","stages-of-hacking","supply-function","supply","transactions-and-concurrency-control","treedm","treedsa","trigonometric-formulas","underworld-system-and-organized-crime","void-pointerc","well-formed-formula","whilec","a-desolated-guy","beyond-now","burnt-petals","cancer","death","fragments-of-a-fading-mind","his-story","human-paradox","poetry-matrix","modern-madness","my-best-friend","poetry-index","shadows-of-adulthood","strength-in-solitude","system","that-friend","the-cursed-child","the-next-chapter","the-weight-of-yesterday","aec-2","aec","dbms-numerical-notes","dbms-short-notes-q8","dbms-short-qs-q1","dm-pyq-analysis","conditional","loop","creativity-template","dsa-pattern"],
     outline: [],
     content: `Date :  2026-01-30
 Tags :   [[C]] ; [[Language]] ; [[GATE]]
@@ -61797,7 +61797,7 @@ Tags :   [[C]] ; [[Language]] ; [[GATE]]
     modified: "2026-03-18",
     wordCount: 0,
     backlinks: ["plastic-stress-whitening"],
-    links: [],
+    links: ["plastic-stress-whitening"],
     outline: [],
     content: ``
   },
@@ -61812,7 +61812,7 @@ Tags :   [[C]] ; [[Language]] ; [[GATE]]
     modified: "2026-02-25",
     wordCount: 0,
     backlinks: ["madhubala"],
-    links: [],
+    links: ["madhubala"],
     outline: [],
     content: ``
   },
@@ -61827,7 +61827,7 @@ Tags :   [[C]] ; [[Language]] ; [[GATE]]
     modified: "2026-03-16",
     wordCount: 0,
     backlinks: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","cafe-coffee-day"],
-    links: [],
+    links: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","cafe-coffee-day"],
     outline: [],
     content: ``
   },
@@ -61842,7 +61842,7 @@ Tags :   [[C]] ; [[Language]] ; [[GATE]]
     modified: "2025-10-30",
     wordCount: 0,
     backlinks: ["4th-sem-exams","aec-2","aec","dbms-exam-strategy-analysis","dbms-numerical-detailed-notes","dbms-numerical-notes","dbms-short-notes-q8","dbms-short-qs-q1","dm-pyq-analysis","dsuc-3rd-sem","ee-module-i-pyqs","ee-module-ii-pyqs","ee-module-iii-pyqs","ee-module-iv-pyqs","engineering-economics","flat-exam-analysis","flat-notes-2","flat-notes","java-exam","pyq-analysisjava"],
-    links: [],
+    links: ["4th-sem-exams","aec-2","aec","dbms-exam-strategy-analysis","dbms-numerical-detailed-notes","dbms-numerical-notes","dbms-short-notes-q8","dbms-short-qs-q1","dm-pyq-analysis","dsuc-3rd-sem","ee-module-i-pyqs","ee-module-ii-pyqs","ee-module-iii-pyqs","ee-module-iv-pyqs","engineering-economics","flat-exam-analysis","flat-notes-2","flat-notes","java-exam","pyq-analysisjava"],
     outline: [],
     content: ``
   },
@@ -61857,7 +61857,7 @@ Tags :   [[C]] ; [[Language]] ; [[GATE]]
     modified: "2025-10-22",
     wordCount: 0,
     backlinks: ["moc-finance","magic-of-compounding","rate-of-interest"],
-    links: [],
+    links: ["moc-finance","magic-of-compounding","rate-of-interest"],
     outline: [],
     content: ``
   },
@@ -61872,7 +61872,7 @@ Tags :   [[C]] ; [[Language]] ; [[GATE]]
     modified: "2026-03-28",
     wordCount: 0,
     backlinks: ["moc-computer-vision-and-surveillance","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","arcface","cnn","face-alignment","face-detection","face-embedding","face-matching","facenet","facial-angles","multi-object-tracking"],
-    links: [],
+    links: ["moc-computer-vision-and-surveillance","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","arcface","cnn","face-alignment","face-detection","face-embedding","face-matching","facenet","facial-angles","multi-object-tracking"],
     outline: [],
     content: ``
   },
@@ -61886,8 +61886,8 @@ Tags :   [[C]] ; [[Language]] ; [[GATE]]
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 37,
-    backlinks: ["moc-languages","control-structuresc","do-whilec","else-if-ladderc","if-elsec","nested-ifc","pattern-questionsc","simple-ifc","switch-casec"],
-    links: ["programming","c","simple-ifc","if-elsec","nested-ifc","else-if-ladderc","switch-casec"],
+    backlinks: ["moc-languages","control-structuresc","do-whilec","else-if-ladderc","if-elsec","nested-ifc","pattern-questionsc","simple-ifc","switch-casec","conditional"],
+    links: ["programming","c","simple-ifc","if-elsec","nested-ifc","else-if-ladderc","switch-casec","moc-languages","control-structuresc","do-whilec","pattern-questionsc"],
     outline: [],
     content: `Date :  2026-02-17  
 Tags :   [[Programming]]
@@ -61933,7 +61933,7 @@ Tags :   [[Programming]]
     modified: "2025-11-04",
     wordCount: 0,
     backlinks: ["moc-cybersecurity","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","ethical-hacking","kali-linux-overview","linux-foundation","networking-basics","setting-up-virtual-machine-or-lab","stages-of-hacking"],
-    links: [],
+    links: ["moc-cybersecurity","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","ethical-hacking","kali-linux-overview","linux-foundation","networking-basics","setting-up-virtual-machine-or-lab","stages-of-hacking"],
     outline: [],
     content: ``
   },
@@ -61948,7 +61948,7 @@ Tags :   [[Programming]]
     modified: "2026-02-14",
     wordCount: 0,
     backlinks: ["moc-languages","array","char-functionsc","datatypesc","java-overview","operatorsc","pointersc","primary-datatypesc","python-basics","python-operators","python-type-conversion-type-casting","python-variables-data-types","stringsc","type-conversionc"],
-    links: [],
+    links: ["moc-languages","array","char-functionsc","datatypesc","java-overview","operatorsc","pointersc","primary-datatypesc","python-basics","python-operators","python-type-conversion-type-casting","python-variables-data-types","stringsc","type-conversionc"],
     outline: [],
     content: ``
   },
@@ -61963,7 +61963,7 @@ Tags :   [[Programming]]
     modified: "2025-12-27",
     wordCount: 0,
     backlinks: ["moc-database-systems","data-models","db-3-level-architecture","db-languages","db-system-concepts","db-users-administrators","dbms-architecture","dbms-basics","dbms-interface","er-model","functional-dependency","relational-algebra","relational-calculus","relational-model","transactions-and-concurrency-control","dbms-exam-strategy-analysis","dbms-numerical-detailed-notes","dbms-numerical-notes","dbms-short-notes-q8","dbms-short-qs-q1"],
-    links: [],
+    links: ["moc-database-systems","data-models","db-3-level-architecture","db-languages","db-system-concepts","db-users-administrators","dbms-architecture","dbms-basics","dbms-interface","er-model","functional-dependency","relational-algebra","relational-calculus","relational-model","transactions-and-concurrency-control","dbms-exam-strategy-analysis","dbms-numerical-detailed-notes","dbms-numerical-notes","dbms-short-notes-q8","dbms-short-qs-q1"],
     outline: [],
     content: ``
   },
@@ -61978,7 +61978,7 @@ Tags :   [[Programming]]
     modified: "2026-02-26",
     wordCount: 0,
     backlinks: ["israel-vs-iran","israel"],
-    links: [],
+    links: ["israel-vs-iran","israel"],
     outline: [],
     content: ``
   },
@@ -61993,7 +61993,7 @@ Tags :   [[Programming]]
     modified: "2025-12-28",
     wordCount: 0,
     backlinks: ["moc-digital-logic","moc-engineering-mathematics","moc-logic-and-philosophy","adder","combinational-circuits","complementation","digital-logic-basics","duality","k-map","logic-gates","logic-introduction","logical-operators","normal-form-sop-and-pos","primary-logical-operators-across-different-domains"],
-    links: [],
+    links: ["moc-digital-logic","moc-engineering-mathematics","moc-logic-and-philosophy","adder","combinational-circuits","complementation","digital-logic-basics","duality","k-map","logic-gates","logic-introduction","logical-operators","normal-form-sop-and-pos","primary-logical-operators-across-different-domains"],
     outline: [],
     content: ``
   },
@@ -62008,7 +62008,7 @@ Tags :   [[Programming]]
     modified: "2025-11-25",
     wordCount: 0,
     backlinks: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-languages","algorithm-basics","array","avl-tree","binary-search-tree","binary-tree-traversal","binary-tree","bubble-sort","complete-binary-tree","data-structures-basics","graph-theory","graph-traversal","heap-tree","insertion-sort","linked-list","merge-sort","planer-non-planer-graphs","pointersc","recursion","selection-sort","sorting","stack","treedm","treedsa","dsa-pattern"],
-    links: [],
+    links: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-languages","algorithm-basics","array","avl-tree","binary-search-tree","binary-tree-traversal","binary-tree","bubble-sort","complete-binary-tree","data-structures-basics","graph-theory","graph-traversal","heap-tree","insertion-sort","linked-list","merge-sort","planer-non-planer-graphs","pointersc","recursion","selection-sort","sorting","stack","treedm","treedsa","dsa-pattern","dsa-qs"],
     outline: [],
     content: ``
   },
@@ -62023,7 +62023,7 @@ Tags :   [[Programming]]
     modified: "2026-03-16",
     wordCount: 0,
     backlinks: ["news-2026-05-24","news-2026-05-28","news-2026-05-31","news-2026-06-02","cafe-coffee-day"],
-    links: [],
+    links: ["news-2026-05-24","news-2026-05-28","news-2026-05-31","news-2026-06-02","cafe-coffee-day"],
     outline: [],
     content: ``
   },
@@ -62037,8 +62037,8 @@ Tags :   [[Programming]]
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 34,
-    backlinks: ["moc-engineering-mathematics","moc-finance","moc-startup-thinking","basic-problems-of-an-economy","demand-function","demand","economics","elasticity-of-demand","elasticity-of-supply","fpya","health-insurances","law-of-demand","law-of-supply","magic-of-compounding","rate-of-interest","simple-interest-compound-interest","supply-function","supply","ee-module-i-pyqs","ee-module-ii-pyqs","ee-module-iii-pyqs","ee-module-iv-pyqs","engineering-economics"],
-    links: ["fpya","health-insurance","magic-of-compounding"],
+    backlinks: ["moc-engineering-mathematics","moc-finance","moc-startup-thinking","basic-problems-of-an-economy","demand-function","demand","economics","elasticity-of-demand","elasticity-of-supply","fpya","health-insurances","law-of-demand","law-of-supply","magic-of-compounding","rate-of-interest","simple-interest-compound-interest","supply-function","supply","ee-module-i-pyqs","ee-module-ii-pyqs","ee-module-iii-pyqs","ee-module-iv-pyqs","engineering-economics","finance"],
+    links: ["fpya","health-insurance","magic-of-compounding","moc-engineering-mathematics","moc-finance","moc-startup-thinking","basic-problems-of-an-economy","demand-function","demand","economics","elasticity-of-demand","elasticity-of-supply","health-insurances","law-of-demand","law-of-supply","rate-of-interest","simple-interest-compound-interest","supply-function","supply","ee-module-i-pyqs","ee-module-ii-pyqs","ee-module-iii-pyqs","ee-module-iv-pyqs","engineering-economics"],
     outline: [],
     content: `Date :  2026-01-30  
 Tags :   [[Finance]]  
@@ -62082,7 +62082,7 @@ Tags :   [[Finance]]
     modified: "2025-10-22",
     wordCount: 0,
     backlinks: ["moc-finance","fpya","health-insurances","magic-of-compounding"],
-    links: [],
+    links: ["moc-finance","fpya","health-insurances","magic-of-compounding"],
     outline: [],
     content: ``
   },
@@ -62127,7 +62127,7 @@ Tags :   [[Finance]]
     modified: "2025-11-25",
     wordCount: 0,
     backlinks: ["moc-data-structures-and-algorithms","moc-database-systems","moc-digital-logic","moc-engineering-mathematics","moc-languages","moc-logic-and-philosophy","algorithm-basics","basicsc","data-structures-basics","dbms-basics","digital-logic-basics","discrete-mathematics-introduction","k-map","logic-introduction","probability-introduction","leee","c"],
-    links: [],
+    links: ["moc-data-structures-and-algorithms","moc-database-systems","moc-digital-logic","moc-engineering-mathematics","moc-languages","moc-logic-and-philosophy","algorithm-basics","basicsc","data-structures-basics","dbms-basics","digital-logic-basics","discrete-mathematics-introduction","k-map","logic-introduction","probability-introduction","leee","c"],
     outline: [],
     content: ``
   },
@@ -62142,7 +62142,7 @@ Tags :   [[Finance]]
     modified: "2026-05-11",
     wordCount: 1,
     backlinks: ["moc-ai-and-machine-learning","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-27","news-2026-05-28","news-2026-05-31","news-2026-06-09","ai-tools","generative-ai","large-language-model","ai"],
-    links: ["ai"],
+    links: ["ai","moc-ai-and-machine-learning","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-27","news-2026-05-28","news-2026-05-31","news-2026-06-09","ai-tools","generative-ai","large-language-model"],
     outline: [],
     content: `[[AI]]`
   },
@@ -62157,7 +62157,7 @@ Tags :   [[Finance]]
     modified: "2026-02-25",
     wordCount: 0,
     backlinks: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","france","israel-vs-iran","israel"],
-    links: [],
+    links: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","france","israel-vs-iran","israel"],
     outline: [],
     content: ``
   },
@@ -62172,7 +62172,7 @@ Tags :   [[Finance]]
     modified: "2026-03-26",
     wordCount: 0,
     backlinks: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","binary-tree","data-structures-basics","graph-theory","graph-traversal","line-covering","matching","network-reliability","treedm","treedsa"],
-    links: [],
+    links: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","binary-tree","data-structures-basics","graph-theory","graph-traversal","line-covering","matching","network-reliability","treedm","treedsa"],
     outline: [],
     content: ``
   },
@@ -62202,7 +62202,7 @@ Tags :   [[Finance]]
     modified: "2025-10-22",
     wordCount: 0,
     backlinks: ["moc-finance","health-insurances","finance","insurance"],
-    links: [],
+    links: ["moc-finance","health-insurances","finance","insurance"],
     outline: [],
     content: ``
   },
@@ -62217,7 +62217,7 @@ Tags :   [[Finance]]
     modified: "2026-02-21",
     wordCount: 0,
     backlinks: ["chhatrapati-shivaji-maharaj","madhubala"],
-    links: [],
+    links: ["chhatrapati-shivaji-maharaj","madhubala"],
     outline: [],
     content: ``
   },
@@ -62232,7 +62232,7 @@ Tags :   [[Finance]]
     modified: "2025-10-19",
     wordCount: 0,
     backlinks: ["moc-startup-thinking"],
-    links: [],
+    links: ["moc-startup-thinking"],
     outline: [],
     content: ``
   },
@@ -62247,7 +62247,7 @@ Tags :   [[Finance]]
     modified: "2026-02-21",
     wordCount: 0,
     backlinks: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","chhatrapati-shivaji-maharaj","psychology-of-love-narcissism-toxic-love-male-identity","beef-and-hindus","madhubala","underworld-system-and-organized-crime"],
-    links: [],
+    links: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","chhatrapati-shivaji-maharaj","psychology-of-love-narcissism-toxic-love-male-identity","beef-and-hindus","madhubala","underworld-system-and-organized-crime"],
     outline: [],
     content: ``
   },
@@ -62261,7 +62261,7 @@ Tags :   [[Finance]]
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 4,
-    backlinks: [],
+    backlinks: ["insurance"],
     links: ["health-insurance"],
     outline: [],
     content: `# Health
@@ -62278,7 +62278,7 @@ Tags :   [[Finance]]
     modified: "2025-10-18",
     wordCount: 0,
     backlinks: ["moc-ai-and-machine-learning","generative-ai"],
-    links: [],
+    links: ["moc-ai-and-machine-learning","generative-ai"],
     outline: [],
     content: ``
   },
@@ -62293,7 +62293,7 @@ Tags :   [[Finance]]
     modified: "2026-04-03",
     wordCount: 0,
     backlinks: ["moc-languages","java-installation-and-path-setup","java-overview","jvm-architecture","language-translators","oops-features","pyq-analysisjava"],
-    links: [],
+    links: ["moc-languages","java-installation-and-path-setup","java-overview","jvm-architecture","language-translators","oops-features","pyq-analysisjava"],
     outline: [],
     content: ``
   },
@@ -62308,7 +62308,7 @@ Tags :   [[Finance]]
     modified: "2026-02-14",
     wordCount: 0,
     backlinks: ["moc-languages","breakc","continuec","control-structuresc","do-whilec","pattern-questionsc"],
-    links: [],
+    links: ["moc-languages","breakc","continuec","control-structuresc","do-whilec","pattern-questionsc"],
     outline: [],
     content: ``
   },
@@ -62323,7 +62323,7 @@ Tags :   [[Finance]]
     modified: "2026-02-21",
     wordCount: 0,
     backlinks: ["chhatrapati-shivaji-maharaj"],
-    links: [],
+    links: ["chhatrapati-shivaji-maharaj"],
     outline: [],
     content: ``
   },
@@ -62338,7 +62338,7 @@ Tags :   [[Finance]]
     modified: "2026-01-07",
     wordCount: 0,
     backlinks: ["moc-languages","moc-logic-and-philosophy","basicsc","errors","language-translators","languages","logical-operators","markdown-basic","operators","pointersc","programming","python-basics","python-libraries","c","markdown"],
-    links: [],
+    links: ["moc-languages","moc-logic-and-philosophy","basicsc","errors","language-translators","languages","logical-operators","markdown-basic","operators","pointersc","programming","python-basics","python-libraries","c","markdown"],
     outline: [],
     content: ``
   },
@@ -62353,7 +62353,7 @@ Tags :   [[Finance]]
     modified: "2025-11-04",
     wordCount: 0,
     backlinks: ["moc-cybersecurity","ethical-hacking","kali-linux-overview","linux-foundation","networking-basics","stages-of-hacking"],
-    links: [],
+    links: ["moc-cybersecurity","ethical-hacking","kali-linux-overview","linux-foundation","networking-basics","stages-of-hacking"],
     outline: [],
     content: ``
   },
@@ -62368,7 +62368,7 @@ Tags :   [[Finance]]
     modified: "2025-10-20",
     wordCount: 0,
     backlinks: ["moc-ai-and-machine-learning","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-26","news-2026-05-31","news-2026-06-09","france","coding-assistant","large-language-model","ai"],
-    links: [],
+    links: ["moc-ai-and-machine-learning","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-26","news-2026-05-31","news-2026-06-09","france","coding-assistant","large-language-model","ai"],
     outline: [],
     content: ``
   },
@@ -62382,8 +62382,8 @@ Tags :   [[Finance]]
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 37,
-    backlinks: ["moc-languages","array","breakc","continuec","control-structuresc","do-whilec","forc","nestedloopc","pattern-questionsc","whilec"],
-    links: ["programming","c","whilec","do-whilec","forc","nestedloopc"],
+    backlinks: ["moc-languages","array","breakc","continuec","control-structuresc","do-whilec","forc","nestedloopc","pattern-questionsc","whilec","loop"],
+    links: ["programming","c","whilec","do-whilec","forc","nestedloopc","moc-languages","array","breakc","continuec","control-structuresc","pattern-questionsc"],
     outline: [],
     content: `Date :  2026-02-15  
 Tags :   [[Programming]]
@@ -62413,8 +62413,8 @@ Tags :   [[Programming]]
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 16,
-    backlinks: ["moc-languages","languages","markdown-basic","programming"],
-    links: ["language","markdown-basic"],
+    backlinks: ["moc-languages","languages","markdown-basic","programming","markdown"],
+    links: ["language","markdown-basic","moc-languages","languages","programming"],
     outline: [],
     content: `Date :  2026-03-12  
 Tags :   [[Language]]  
@@ -62436,7 +62436,7 @@ Tags :   [[Language]]
     modified: "2026-03-16",
     wordCount: 0,
     backlinks: ["cafe-coffee-day"],
-    links: [],
+    links: ["cafe-coffee-day"],
     outline: [],
     content: ``
   },
@@ -62451,7 +62451,7 @@ Tags :   [[Language]]
     modified: "2026-01-09",
     wordCount: 0,
     backlinks: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-logic-and-philosophy","arguments","calculus-formulas","complementation","complex-numbers","coordinate-geometry","determinants-qs","determinants","discrete-mathematics-introduction","duality","exponential-and-logarithm-formulas","functions","geometric-formulas-and-theorem","graph-theory","graph-traversal","group-theory","k-map","line-covering","logic-introduction","logical-operators","matching","matrix-qs","matrix","network-reliability","normal-form-sop-and-pos","number-system","permutation-combination-formulas","planer-non-planer-graphs","poset","predicate-logic","primary-logical-operators-across-different-domains","propositions","questions-on-minimization","rank-of-a-matrix-qs","rank-of-a-matrix","relations","sequence-and-series","set-theory","simple-interest-compound-interest","treedm","treedsa","trigonometric-formulas","well-formed-formula","dm-pyq-analysis","probability","set"],
-    links: [],
+    links: ["moc-data-structures-and-algorithms","moc-engineering-mathematics","moc-logic-and-philosophy","arguments","calculus-formulas","complementation","complex-numbers","coordinate-geometry","determinants-qs","determinants","discrete-mathematics-introduction","duality","exponential-and-logarithm-formulas","functions","geometric-formulas-and-theorem","graph-theory","graph-traversal","group-theory","k-map","line-covering","logic-introduction","logical-operators","matching","matrix-qs","matrix","network-reliability","normal-form-sop-and-pos","number-system","permutation-combination-formulas","planer-non-planer-graphs","poset","predicate-logic","primary-logical-operators-across-different-domains","propositions","questions-on-minimization","rank-of-a-matrix-qs","rank-of-a-matrix","relations","sequence-and-series","set-theory","simple-interest-compound-interest","treedm","treedsa","trigonometric-formulas","well-formed-formula","dm-pyq-analysis","probability","set"],
     outline: [],
     content: ``
   },
@@ -62466,7 +62466,7 @@ Tags :   [[Language]]
     modified: "2026-08-07",
     wordCount: 0,
     backlinks: ["news-2026-05-27","news-2026-05-28","news-2026-05-30","news-2026-05-31","cnn"],
-    links: [],
+    links: ["news-2026-05-27","news-2026-05-28","news-2026-05-30","news-2026-05-31","cnn"],
     outline: [],
     content: ``
   },
@@ -62481,7 +62481,7 @@ Tags :   [[Language]]
     modified: "2026-08-07",
     wordCount: 0,
     backlinks: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09"],
-    links: [],
+    links: ["news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09"],
     outline: [],
     content: ``
   },
@@ -62496,7 +62496,7 @@ Tags :   [[Language]]
     modified: "2026-04-03",
     wordCount: 0,
     backlinks: ["moc-languages","java-installation-and-path-setup","java-overview","jvm-architecture","languages","oops-features"],
-    links: [],
+    links: ["moc-languages","java-installation-and-path-setup","java-overview","jvm-architecture","languages","oops-features"],
     outline: [],
     content: ``
   },
@@ -62511,7 +62511,7 @@ Tags :   [[Language]]
     modified: "2026-01-30",
     wordCount: 0,
     backlinks: ["moc-operating-systems","1st-c-program","software","whilec"],
-    links: [],
+    links: ["moc-operating-systems","1st-c-program","software","whilec"],
     outline: [],
     content: ``
   },
@@ -62526,7 +62526,7 @@ Tags :   [[Language]]
     modified: "2026-05-11",
     wordCount: 0,
     backlinks: ["underworld-system-and-organized-crime"],
-    links: [],
+    links: ["underworld-system-and-organized-crime"],
     outline: [],
     content: ``
   },
@@ -62541,7 +62541,7 @@ Tags :   [[Language]]
     modified: "2026-05-11",
     wordCount: 0,
     backlinks: ["how-to-read-a-paper","multi-camera-spatiotemporal-deep-learning-framework-for-real-time-abnormal-behavior-detection-in-dense-urban-environments","news-2026-05-21"],
-    links: [],
+    links: ["how-to-read-a-paper","multi-camera-spatiotemporal-deep-learning-framework-for-real-time-abnormal-behavior-detection-in-dense-urban-environments","news-2026-05-21"],
     outline: [],
     content: ``
   },
@@ -62556,7 +62556,7 @@ Tags :   [[Language]]
     modified: "2026-05-11",
     wordCount: 20,
     backlinks: ["propositions"],
-    links: [],
+    links: ["propositions"],
     outline: [],
     content: `Date :  2026-02-20  
 ~ ***Yash Agrawall*** ~  
@@ -62627,7 +62627,7 @@ Tags :   [[Language]]
     modified: "2026-05-11",
     wordCount: 0,
     backlinks: ["moc-writing-and-creativity","a-desolated-guy","beyond-now","burnt-petals","cancer","death","fragments-of-a-fading-mind","his-story","human-paradox","poetry-matrix","modern-madness","my-best-friend","poetry-index","shadows-of-adulthood","strength-in-solitude","system","that-friend","the-cursed-child","the-next-chapter","the-weight-of-yesterday"],
-    links: [],
+    links: ["moc-writing-and-creativity","a-desolated-guy","beyond-now","burnt-petals","cancer","death","fragments-of-a-fading-mind","his-story","human-paradox","poetry-matrix","modern-madness","my-best-friend","poetry-index","shadows-of-adulthood","strength-in-solitude","system","that-friend","the-cursed-child","the-next-chapter","the-weight-of-yesterday"],
     outline: [],
     content: ``
   },
@@ -62641,8 +62641,8 @@ Tags :   [[Language]]
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 13,
-    backlinks: ["moc-engineering-mathematics","bayes-theorem","box-urn-bag-type-problems","cards","coin","conditional-probability","dice","event-operations","permutation-combination-formulas","pmf","probability-introduction","probability-keywords","random-variable-overview"],
-    links: ["maths"],
+    backlinks: ["moc-engineering-mathematics","bayes-theorem","box-urn-bag-type-problems","cards","coin","conditional-probability","dice","event-operations","permutation-combination-formulas","pmf","probability-introduction","probability-keywords","random-variable-overview","probability"],
+    links: ["maths","moc-engineering-mathematics","bayes-theorem","box-urn-bag-type-problems","cards","coin","conditional-probability","dice","event-operations","permutation-combination-formulas","pmf","probability-introduction","probability-keywords","random-variable-overview"],
     outline: [],
     content: `Date :  2026-04-14  
 Tags :  [[Maths]]   
@@ -62662,7 +62662,7 @@ Tags :  [[Maths]]
     modified: "2026-05-11",
     wordCount: 0,
     backlinks: ["processing-units-or-processors"],
-    links: [],
+    links: ["processing-units-or-processors"],
     outline: [],
     content: ``
   },
@@ -62692,7 +62692,7 @@ Tags :  [[Maths]]
     modified: "2026-01-15",
     wordCount: 0,
     backlinks: ["moc-languages","language-translators","languages","operators","printpy","programming","python-basics","python-input","python-libraries","python-operators","python-type-conversion-type-casting","python-variables-data-types"],
-    links: [],
+    links: ["moc-languages","language-translators","languages","operators","printpy","programming","python-basics","python-input","python-libraries","python-operators","python-type-conversion-type-casting","python-variables-data-types"],
     outline: [],
     content: ``
   },
@@ -62707,7 +62707,7 @@ Tags :  [[Maths]]
     modified: "2026-02-25",
     wordCount: 0,
     backlinks: ["france"],
-    links: [],
+    links: ["france"],
     outline: [],
     content: ``
   },
@@ -62722,7 +62722,7 @@ Tags :  [[Maths]]
     modified: "2026-01-19",
     wordCount: 0,
     backlinks: ["determinants-qs","matrix-qs","primary-datatypesc","rank-of-a-matrix-qs"],
-    links: [],
+    links: ["determinants-qs","matrix-qs","primary-datatypesc","rank-of-a-matrix-qs","recursion","stack"],
     outline: [],
     content: ``
   },
@@ -62752,7 +62752,7 @@ Tags :  [[Maths]]
     modified: "2026-02-21",
     wordCount: 0,
     backlinks: ["chhatrapati-shivaji-maharaj","beef-and-hindus"],
-    links: [],
+    links: ["chhatrapati-shivaji-maharaj","beef-and-hindus"],
     outline: [],
     content: ``
   },
@@ -62767,7 +62767,7 @@ Tags :  [[Maths]]
     modified: "2026-05-10",
     wordCount: 0,
     backlinks: ["moc-computer-vision-and-surveillance","multi-camera-spatiotemporal-deep-learning-framework-for-real-time-abnormal-behavior-detection-in-dense-urban-environments","ai-briefing-2026-05-21","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","arcface","cnn","face-alignment","face-detection","face-embedding","face-matching","facenet","facial-angles","future-works-research","multi-object-tracking","research-rating","research-template"],
-    links: [],
+    links: ["moc-computer-vision-and-surveillance","multi-camera-spatiotemporal-deep-learning-framework-for-real-time-abnormal-behavior-detection-in-dense-urban-environments","ai-briefing-2026-05-21","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-25","news-2026-05-26","news-2026-05-27","news-2026-05-28","news-2026-05-29","news-2026-05-30","news-2026-05-31","news-2026-06-02","news-2026-06-03","news-2026-06-04","news-2026-06-06","news-2026-06-09","arcface","cnn","face-alignment","face-detection","face-embedding","face-matching","facenet","facial-angles","future-works-research","multi-object-tracking","research-rating","architecture","benchmarks","implementation-log","literature-review","paper-draft","research-template"],
     outline: [],
     content: ``
   },
@@ -62782,7 +62782,7 @@ Tags :  [[Maths]]
     modified: "2026-03-28",
     wordCount: 0,
     backlinks: ["moc-computer-vision-and-surveillance","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-28","news-2026-05-31","arcface","facenet","facial-angles","future-works-research"],
-    links: [],
+    links: ["moc-computer-vision-and-surveillance","news-2026-05-21","news-2026-05-23","news-2026-05-24","news-2026-05-28","news-2026-05-31","arcface","facenet","facial-angles","future-works-research"],
     outline: [],
     content: ``
   },
@@ -62796,8 +62796,8 @@ Tags :  [[Maths]]
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 13,
-    backlinks: ["moc-engineering-mathematics","moc-logic-and-philosophy","functions","poset","primary-logical-operators-across-different-domains","probability-introduction","random-variable-overview","relations","set-theory","treedm"],
-    links: ["maths"],
+    backlinks: ["moc-engineering-mathematics","moc-logic-and-philosophy","functions","poset","primary-logical-operators-across-different-domains","probability-introduction","random-variable-overview","relations","set-theory","treedm","set"],
+    links: ["maths","moc-engineering-mathematics","moc-logic-and-philosophy","functions","poset","primary-logical-operators-across-different-domains","probability-introduction","random-variable-overview","relations","set-theory","treedm"],
     outline: [],
     content: `Date :  2026-03-22  
 Tags :  [[Maths]]  
@@ -62817,7 +62817,7 @@ Tags :  [[Maths]]
     modified: "2025-12-23",
     wordCount: 0,
     backlinks: ["moc-data-structures-and-algorithms","bubble-sort","heap-tree","insertion-sort","merge-sort","selection-sort","sorting"],
-    links: [],
+    links: ["moc-data-structures-and-algorithms","bubble-sort","heap-tree","insertion-sort","merge-sort","selection-sort","sorting"],
     outline: [],
     content: ``
   },
@@ -62832,7 +62832,7 @@ Tags :  [[Maths]]
     modified: "2026-04-18",
     wordCount: 0,
     backlinks: ["moc-engineering-mathematics","pmf","random-variable-overview"],
-    links: [],
+    links: ["moc-engineering-mathematics","pmf","random-variable-overview"],
     outline: [],
     content: ``
   },
@@ -62847,7 +62847,7 @@ Tags :  [[Maths]]
     modified: "2026-05-11",
     wordCount: 0,
     backlinks: ["underworld-system-and-organized-crime"],
-    links: [],
+    links: ["underworld-system-and-organized-crime"],
     outline: [],
     content: ``
   },
@@ -62862,7 +62862,7 @@ Tags :  [[Maths]]
     modified: "2025-10-22",
     wordCount: 0,
     backlinks: ["fpya","health-insurances","magic-of-compounding"],
-    links: [],
+    links: ["fpya","health-insurances","magic-of-compounding"],
     outline: [],
     content: ``
   },
@@ -62877,7 +62877,7 @@ Tags :  [[Maths]]
     modified: "2026-05-09",
     wordCount: 0,
     backlinks: ["psychology-of-love-narcissism-toxic-love-male-identity"],
-    links: [],
+    links: ["psychology-of-love-narcissism-toxic-love-male-identity"],
     outline: [],
     content: ``
   },
@@ -62892,7 +62892,7 @@ Tags :  [[Maths]]
     modified: "2025-10-18",
     wordCount: 0,
     backlinks: ["moc-ai-and-machine-learning","ai-tools","generative-ai","large-language-model"],
-    links: [],
+    links: ["moc-ai-and-machine-learning","ai-tools","generative-ai","large-language-model"],
     outline: [],
     content: ``
   },
@@ -62970,7 +62970,7 @@ Status : #incomplete
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 24,
-    backlinks: [],
+    backlinks: ["creativity-template"],
     links: [],
     outline: [],
     content: `Type : #creativity
@@ -63009,7 +63009,7 @@ Status: #draft
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 108,
-    backlinks: [],
+    backlinks: ["dsa-pattern","dsa-pattern"],
     links: ["dsa"],
     outline: [{"level":2,"text":"Core Idea","id":"core-idea"},{"level":2,"text":"Recognition Clues","id":"recognition-clues"},{"level":2,"text":"Why It Works","id":"why-it-works"},{"level":2,"text":"Generic Algorithm","id":"generic-algorithm"},{"level":2,"text":"Complexity","id":"complexity"},{"level":2,"text":"Common Mistakes","id":"common-mistakes"},{"level":2,"text":"Variations","id":"variations"},{"level":2,"text":"Related Concepts","id":"related-concepts"},{"level":2,"text":"Representative Problems","id":"representative-problems"},{"level":2,"text":"References","id":"references"}],
     content: `Type : #Note
@@ -63111,7 +63111,7 @@ Typical Space :
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 139,
-    backlinks: [],
+    backlinks: ["dsa-qs"],
     links: [],
     outline: [{"level":2,"text":"Understanding","id":"understanding"},{"level":2,"text":"Constraints","id":"constraints"},{"level":2,"text":"Initial Approach","id":"initial-approach"},{"level":2,"text":"Solution","id":"solution"},{"level":3,"text":"Pattern","id":"pattern"},{"level":3,"text":"Algorithm","id":"algorithm"},{"level":3,"text":"Complexity","id":"complexity"},{"level":2,"text":"Code","id":"code"},{"level":2,"text":"Mistakes","id":"mistakes"},{"level":2,"text":"Key Insight","id":"key-insight"},{"level":2,"text":"Related Notes","id":"related-notes"},{"level":3,"text":"Concepts","id":"concepts"},{"level":3,"text":"Patterns","id":"patterns"},{"level":3,"text":"Problems","id":"problems"},{"level":2,"text":"Questions","id":"questions"},{"level":2,"text":"References","id":"references"}],
     content: `Type : #DSAProblem
@@ -63371,7 +63371,7 @@ Source :
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 190,
-    backlinks: [],
+    backlinks: ["research-template"],
     links: ["research"],
     outline: [{"level":2,"text":"In One Sentence","id":"in-one-sentence"},{"level":2,"text":"What Problem Does This Solve?","id":"what-problem-does-this-solve"},{"level":2,"text":"Where Does It Fit in the System?","id":"where-does-it-fit-in-the-system"},{"level":2,"text":"Input → Output","id":"input-output"},{"level":2,"text":"Intuition","id":"intuition"},{"level":2,"text":"How It Works (Simple → Detailed)","id":"how-it-works-simple-detailed"},{"level":2,"text":"Limitations","id":"limitations"},{"level":2,"text":"Key Terms","id":"key-terms"},{"level":2,"text":"Connections","id":"connections"},{"level":2,"text":"Related Models / Methods","id":"related-models-methods"},{"level":2,"text":"Related Papers","id":"related-papers"},{"level":2,"text":"Potential Applications","id":"potential-applications"},{"level":2,"text":"Questions","id":"questions"},{"level":6,"text":"Q1)","id":"q1"},{"level":6,"text":"A1)","id":"a1"},{"level":2,"text":"Summary","id":"summary"},{"level":2,"text":"References","id":"references"}],
     content: `Type : #Research

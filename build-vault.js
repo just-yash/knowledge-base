@@ -254,11 +254,31 @@ for (const { fullPath, relPath, filename, topFolder, subFolders, id, stub, ext }
   };
 }
 
-// Third pass: backlinks
+// Third pass: backlinks & tag note link compilation
 for (const note of Object.values(notes)) {
   for (const targetId of note.links) {
     if (notes[targetId] && !notes[targetId].backlinks.includes(note.id)) {
       notes[targetId].backlinks.push(note.id);
+    }
+  }
+}
+
+// Tag notes pass: populate outgoing links for notes in '08 - Tags'
+const allNoteList = Object.values(notes);
+for (const note of allNoteList) {
+  if (note.folder === '08 - Tags' || (note.path && note.path.join('/').includes('08 - Tags'))) {
+    const tagTitle = note.title.replace(/\.md$/i, '').trim().toLowerCase();
+    const slugT = tagTitle.replace(/\s+/g, '-');
+
+    for (const other of allNoteList) {
+      if (other.id === note.id) continue;
+      const isMatch = (other.links && other.links.includes(note.id)) ||
+                      (other.tags && other.tags.some(tg => tg.toLowerCase() === tagTitle || tg.toLowerCase() === slugT)) ||
+                      (other.content && (other.content.toLowerCase().includes(`[[${tagTitle}]]`) || other.content.toLowerCase().includes(`#${tagTitle}`) || other.content.toLowerCase().includes(`#${slugT}`)));
+      if (isMatch) {
+        if (!note.links.includes(other.id)) note.links.push(other.id);
+        if (!other.backlinks.includes(note.id)) other.backlinks.push(other.id);
+      }
     }
   }
 }

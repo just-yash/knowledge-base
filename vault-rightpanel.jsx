@@ -150,7 +150,34 @@ const BacklinksSection = ({ note, onNavigate }) => {
 // ─── Outgoing Links ───────────────────────────────────────────────────────────
 const OutgoingLinksSection = ({ note, onNavigate }) => {
   const [open, setOpen] = useStateRP(true);
-  const links = note?.links || [];
+
+  const links = React.useMemo(() => {
+    if (!note) return [];
+    const directLinks = note.links || [];
+    const isTagFolder = (note.folder === '08 - Tags') || (note.path && note.path.join('/').includes('08 - Tags'));
+    if (!isTagFolder) return directLinks;
+
+    const tagTitle = note.title.replace(/\.md$/i, '').trim().toLowerCase();
+    const slugT = tagTitle.replace(/\s+/g, '-');
+    const allNotes = Object.values(window.VAULT_NOTES || {});
+
+    const taggedIds = allNotes.filter(n => {
+      if (n.id === note.id) return false;
+      if (n.links && n.links.includes(note.id)) return true;
+      if (n.backlinks && n.backlinks.includes(note.id)) return true;
+      if (n.tags && n.tags.some(tg => {
+        const l = tg.toLowerCase();
+        return l === tagTitle || l === slugT;
+      })) return true;
+      if (n.content) {
+        const lc = n.content.toLowerCase();
+        if (lc.includes(`[[${tagTitle}]]`) || lc.includes(`#${tagTitle}`) || lc.includes(`#${slugT}`)) return true;
+      }
+      return false;
+    }).map(n => n.id);
+
+    return Array.from(new Set([...directLinks, ...taggedIds]));
+  }, [note?.id, note?.links]);
 
   return (
     <div style={{ borderBottom: '1px solid var(--border)' }}>
