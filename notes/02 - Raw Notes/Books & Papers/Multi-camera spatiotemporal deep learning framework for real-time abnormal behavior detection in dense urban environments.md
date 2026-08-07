@@ -6,9 +6,6 @@ Source : [Research Paper](https://www.nature.com/articles/s41598-025-12388-7)
 ~ ***Yash Agrawall*** ~     
 
 ---
-# Multi-camera spatiotemporal deep learning framework for real-time abnormal behavior detection in dense urban environments
-
----
 ## 1st  Pass 
 
 - Reason of detection failings : occlusion, dynamic scene changes, high computational inefficiency. 
@@ -16,29 +13,7 @@ Source : [Research Paper](https://www.nature.com/articles/s41598-025-12388-7)
 
 - 
 
-
-
-
----
-## Note
-
-
-
-
-
-
 ---
 # Questions 
 
-
-
-
 ----
-# Summary
-
-
-
-
-
----
-# References 

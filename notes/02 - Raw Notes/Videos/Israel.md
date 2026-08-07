@@ -6,9 +6,6 @@ Source : [Akash Banerjee (Deshbhakt)](https://youtu.be/_FAhU-pUkHI?si=ZhOp-23Q4j
 ~ ***Yash Agrawall*** ~  
 
 ---
-# India-Israel Relations: A Shifting Dynamic
-
----
 ## PM Modi's Visit to Israel
 
 - **Historic Address:** Prime Minister Modi became the first Indian Prime Minister to address the Knesset, Israel's parliament.
@@ -55,24 +52,7 @@ Source : [Akash Banerjee (Deshbhakt)](https://youtu.be/_FAhU-pUkHI?si=ZhOp-23Q4j
     - India also hesitated to sign a UN statement against West Bank expansion.
 - **Potential for Coercion:** Questions are raised about whether India is being pressured by the US to engage with Israel or if there's a risk of India becoming compromised or influenced by Israeli software, similar to alleged US influence over Israel.
 
-
-
-
-
----
-# Questions
-
-
-
-
-
 ---
 # References 
 
-
-
 ----
-# Summary
-
-
-

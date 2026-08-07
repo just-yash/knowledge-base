@@ -7,24 +7,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Magic of Compounding
 
 > "Compounding Interest is the 8th Wonder of the World. He who understands it, earns it. He who doesn't, pays it."
@@ -46,17 +28,3 @@ Maturity Amount: **4900 Cr**
 This was done by *Warren Buffet*. His biography is also called *The Snowball*.
 
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

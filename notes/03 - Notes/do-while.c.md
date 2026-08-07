@@ -94,24 +94,6 @@ while(x++);
 - On standard-compliant compilers, result is unpredictable.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # [[while.c|while]] & `do-while` have same power
 -  [[while.c|while]] & `do-while` loops have same power  
 - Any program which can be made from `do-while` [[loop]] can also be made from [[while.c|while]] [[loop]], and vice-versa.  
@@ -171,12 +153,6 @@ while (i < 10);
 |No trailing semicolon|Requires semicolon|
 
 ---
-# Questions
-
-
-
-
----
 # Summary 
 - `do-while` is an **exit-controlled loop** in C.
     
@@ -201,9 +177,6 @@ while (i < 10);
 - Only **unsigned integers** guarantee wraparound behavior.
     
 - `continue` in a `do-while` loop transfers control directly to the **condition check**, not the top of the loop body.
-
-
-
 
 ---
 # References 

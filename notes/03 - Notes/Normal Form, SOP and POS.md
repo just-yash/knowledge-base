@@ -297,23 +297,7 @@ To convert POS / CNF to Canonical POS / PCNF :
 - f1 ≡ f2 iff PDNF(f1) ≡ PDNF(f2) or PCNF(f1) ≡ PCNF(f2)
 - Total no. of minterms + Total no. of maxterms = 2<sup>n</sup>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-# Questions
-
 ###### Q1) Consider the following truth table and write maxterm and minterms for the same. 
 
 | x   | y   | f(x,y) |
@@ -353,14 +337,6 @@ d) (p'q + pq')rpqr' ≡ 0
 Hence b is the correct option  
 
 ---
-
-
-
-
-
----
-# Summary 
-
 ## SOP / POS / Normal Forms
 - SOP (Sum of Products) ≡ DNF (Disjunctive Normal Form)
 - POS (Product of Sums) ≡ CNF (Conjunctive Normal Form)
@@ -444,9 +420,6 @@ Hence b is the correct option
 - PCNF ≡ Canonical POS
 - Total minterms + total maxterms = 2ⁿ
 - f₁ ≡ f₂ ⇔ PDNF(f₁) ≡ PDNF(f₂) ⇔ PCNF(f₁) ≡ PCNF(f₂)
-
-
-
 
 ---
 # References 

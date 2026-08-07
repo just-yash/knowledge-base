@@ -6,10 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Calculus Quick Important Formulas 
-
----
-
 # LIMITS (BASICS)
 
 - $$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
@@ -181,9 +177,3 @@ Order of priority:
 - $$\int x^n dx = \frac{x^{n+1}}{n+1}$$
 - $$\int u\,dv = uv - \int v\,du$$
 ---
-# Questions
-
-
-
----
-# References 

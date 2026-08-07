@@ -79,12 +79,4 @@ President of France on Trump, India, Modi, Tech & Future
 ---
 # References 
 
-
-
-
-
 ----
-# Summary
-
-
-

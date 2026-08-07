@@ -7,37 +7,4 @@ Date :  2026-02-20
 
 1. [[Propositions#Liar's Paradox|Liar's Paradox]]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-# Questions
-
-
-
-
-
----
-# References 

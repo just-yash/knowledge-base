@@ -219,7 +219,6 @@ Hence Proved
 - For minimization use these properties 
 - Use [[K-Map]] for bigger expressions
 
-
 ---
 # References 
 
@@ -227,7 +226,3 @@ Hence Proved
 2. [[Logical Operators]]
 
 ---
-# Questions 
-
-
-

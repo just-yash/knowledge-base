@@ -134,9 +134,6 @@ Source : [How to read a paper : S. Keshav](https://web.stanford.edu/class/ee384m
 14. Find a key paper that you failed to find earlier  
 
 ---
-# Related Work 
-
----
 ## Reading to Review 
 
 1. Timothy Roscoe’s : “Writing reviews for systems conferences”

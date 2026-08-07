@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~   
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Generative AI
 - **AI** = Imitates human intelligence.
 - **Generative AI** = Imitates human _creativity_.
@@ -69,7 +51,3 @@ If AI were a brain, generative AI would be its _imagination_.
 1. [NxtWave Generative AI Mega Workshop](https://webinar.ccbp.in/webinars/ai-workshop)
 2. ChatGPT
 ---
-# Questions 
-
-
-

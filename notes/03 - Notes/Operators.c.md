@@ -94,7 +94,6 @@ z = x + y;    // z = 5 + 2 = 7
 x + y = z;    // SyntaxError
 ```
 
-
 ### Cascading of Assignment Operator
 - Associativity of Assignment operator is from Right to Left ( ← ) .
 Here `2` is first assigned to `z` ; then the value of `z` is assigned to `y` ; then the value of `y` is assigned to `x`
@@ -176,7 +175,6 @@ d = 1 > 1
 d = 0
 */
 
-
 int a = 5, b = 5, c = 5, d;
 d = a == b == c
 printf("%d", d);
@@ -210,7 +208,6 @@ d = 1 + 5 > 2
 d = 6 > 2
 d = 1
 */
-
 
 int x = 1 < 0 == 0;
 printf("%d", x);
@@ -264,7 +261,6 @@ z = x != y;
 z = 5 != 2
 z = 1
 */ 
-
 
 z = x = !y;
 
@@ -619,35 +615,8 @@ y = (x = 3, 5, 7);    // x = 3 ; y = 7
 | 14               | Assignment                                       | `=` `+=` `-=` `*=` `/=` `%=` `<<=` `>>=` `&=` `^=` `\|=` | Right ← Left  |
 | 15 (Lowest)      | Comma operator                                   | `,`                                                      | Left → Right  |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
-# Questions
 ###### <span style="color:rgb(0, 176, 240)">Q1)</span> If int takes 2 bytes then  
 ```
 ```c
@@ -762,8 +731,6 @@ a = <span style="color:rgb(146, 208, 80)">4</span>
 - `sizeof` usually does not evaluate its operand.
 - Type casting explicitly converts one data type to another.
 - C performs no overflow or bounds checking, which can cause wraparound behavior.
-
-
 
 ---
 # References 

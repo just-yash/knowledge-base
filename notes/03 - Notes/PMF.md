@@ -137,25 +137,6 @@ $$f(x) = \begin{cases}
     - RV → PDF → CDF
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
 # Summary
 
 - Random variables convert outcomes into numbers
@@ -166,20 +147,4 @@ $$f(x) = \begin{cases}
     - Coin toss (discrete)
     - Uniform distribution (continuous)
 
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

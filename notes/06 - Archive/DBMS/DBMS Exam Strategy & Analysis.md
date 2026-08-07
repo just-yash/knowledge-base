@@ -5,9 +5,6 @@ Tags :  [[DBMS]] ; [[College]]
 ~ ***Yash Agrawall*** ~     
 
 ---
-# DBMS Exam Strategy & Analysis
-
----
 ### Phase 1 — Guaranteed Marks
 
 **1. Normalization**
@@ -242,10 +239,6 @@ For tomorrow, the first two (dangling tuple, data mining) are the easiest to pic
 These three are essentially guaranteed tomorrow. Solve them tonight.
 
 ---
-## DBMS PYQ Analysis (2021-22 to 2024-25)
-
----
-
 ## Appeared 4 Times — Non-Negotiable
 
 |Topic|Papers|Q#|

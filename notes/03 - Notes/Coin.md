@@ -123,9 +123,6 @@ Method 2 (PnC):
   $\frac{1}{2^6} = \frac{1}{64}$  
 
 ---
-# Questions
-
----
 ###### Q1) A fair coin is tossed N times. The probability that Head does not turn up in any of the tosses is 
 ###### a) $\frac{1}{2}^{N-1}$
 ###### b)  $-\frac{1}{2}^{N-1}$
@@ -229,13 +226,6 @@ P($H_{R} \cap H_{S}$) = 0.28
 P($T_{R} \cap T_{S}$) = 0.18     
 P($H_{R} \cap T_{S}$) = 0.30     
 P($T_{R} \cap H_{s}$) = 0.24    
-
----
-
-
-
-
-
 
 ---
 # References 

@@ -136,22 +136,6 @@ int main(){
 
 ```
 
-
-
-
-
-
-
-
-
-
-
----
-# Questions
-
-
-
-
 ---
 # Summary 
 
@@ -180,8 +164,6 @@ int main(){
 - `break` cannot be labeled in C.
     
 - For decision-based problems (e.g., prime checking), computation and output must be separated.
-
-
 
 ---
 # References 

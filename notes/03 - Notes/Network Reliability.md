@@ -89,24 +89,6 @@ Consider a graph $G$ with edges $E = \{(1,2), (2,3), (3,4), (4,1), (2,4)\}$.
 | $\{(2,3), (3,4)\}$ | Yes | Yes | Yes |
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## Vertex Connectivity ($\kappa(G)$)
 
 ### Definition and Bounds
@@ -121,8 +103,6 @@ Consider a graph $G$ with edges $E = \{(1,2), (2,3), (3,4), (4,1), (2,4)\}$.
     Where $\delta(G)$ is the [[Graph Theory#^8fe17a|minimum degree]] of the graph.
     
 ---
-# Questions
-
 ###### Q1) Fill the table 
 
 | [[Graph]] →                                                                                  | ![[Pasted image 20260327191945.png]] | ![[Pasted image 20260327191955.png]] | ![[Pasted image 20260327192006.png]]                                                      | ![[Pasted image 20260327192018.png]]                                                |
@@ -135,7 +115,6 @@ Consider a graph $G$ with edges $E = \{(1,2), (2,3), (3,4), (4,1), (2,4)\}$.
 ---
 # Summary 
 
-
 - **Articulation Point**: A vertex whose removal increases the number of connected components.
     
 - **Bridge**: An edge whose removal increases the number of connected components.
@@ -146,8 +125,6 @@ Consider a graph $G$ with edges $E = \{(1,2), (2,3), (3,4), (4,1), (2,4)\}$.
     
 - **Relation**: $\kappa(G) \le \lambda(G) \le \delta(G)$ (minimum degree).
     
-
-
 
 ---
 # References 

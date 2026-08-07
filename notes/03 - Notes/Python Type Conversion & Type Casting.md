@@ -5,9 +5,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~     
 
 ---
-# Type Conversion & Type Casting in Python
-
----
 ## Key Ideas 
 
 - **Type Conversion (Implicit)**: Python auto-converts types in expressions — no manual action needed

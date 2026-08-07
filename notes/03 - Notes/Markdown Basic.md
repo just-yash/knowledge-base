@@ -18,7 +18,6 @@ Status : #complete
 ##### header 5
 ###### header 6
 
-
 Total 6 headings available
 ```
 # header 1
@@ -27,7 +26,6 @@ Total 6 headings available
 #### header 4
 ##### header 5
 ###### header 6
-
 
 Total 6 headings available  
 
@@ -318,10 +316,7 @@ or
 ***
  (Use three in minimum) 
 
-
 ---
----
-
 # Automatic Date and Time Inserter
 
 used in templates  
@@ -330,24 +325,6 @@ used in templates
 {{Date}} {{Time}}
 (its not case sensetive)
 ```
-
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
 
 ---
 # Tags
@@ -364,7 +341,3 @@ here:
  [Blog Notes with interactive mode](https://blog.webdevsimplified.com/2023-06/markdown-crash-course/)
 
 ---
-# Questions 
-
-
-

@@ -67,21 +67,6 @@ print(k)
 - **Comparison with Efficient Algorithms**: Heap Sort and Merge Sort are preferred in real-world applications and are used in sorting libraries of languages like Python and Java.
 - **Best Case**: Best case scenario → list is already sorted; Bubble sort has a time complexity of O(n) ↔ Benefit over algorithms that continue their full sorting process even in best cases.
 
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
 ---
 # References 
 

@@ -226,7 +226,6 @@ EXTRACTION TRACE TABLE
 
 ---
 
-
 22.  [[jdbc.ppt]]
 
 23. [[Module 5 - JDBC.ppt.pdf]]
@@ -238,7 +237,3 @@ EXTRACTION TRACE TABLE
 2. [[Java Notes CSE 14.pdf]]
 
 ---
-# Questions 
-
-
-

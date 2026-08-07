@@ -229,20 +229,3 @@ Write in `.java`, `javac` to translate, `java` to run.
     
 2. YouTube Video : [https://youtu.be/8WHa281XYEg](https://www.google.com/search?q=https://youtu.be/8WHa281XYEg)
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

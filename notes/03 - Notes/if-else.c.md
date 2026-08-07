@@ -235,34 +235,8 @@ printf("abc");
 - Prefer constant on left side
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Usability in ternary operators
 - we can use `if-else` in [[Operators.c#8. Ternary Operator|ternary operator]].
-
-
-
----
-# Questions
-
-
-
 
 ---
 # Summary 
@@ -277,8 +251,6 @@ printf("abc");
 - Floating-point values should not be compared using `==`.
 - Integer literals with leading `0` are treated as octal; `0x` indicates hexadecimal.
 - we can use `if-else` in [[Operators.c#8. Ternary Operator|ternary operator]].
-
-
 
 ---
 # References 

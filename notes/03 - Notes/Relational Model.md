@@ -189,9 +189,6 @@ Student(DeptID) references Department(DeptID)
 - Two distinct tuples at any state of relation cannot have identical values for the attributes in the key 
 
 ---
-## Characteristics of Relations
-
----
 ### 1. Atomic Values (1NF Property)
 
 - Each cell contains an atomic (indivisible) value
@@ -402,19 +399,6 @@ DEPENDENT(Essn, Dependent_name, Sex, Bdate, Relationship)
 ```
 
 Stores information about employee dependents.
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 ## 🔗 Connections

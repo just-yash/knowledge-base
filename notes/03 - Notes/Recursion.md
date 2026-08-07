@@ -43,7 +43,6 @@ This can be implemented in two ways:
 	- No. of additions becomes O(n-1)
 	- No. of function calls becomes O(n) (or zero recursion at all)
 
-
 | n                         | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
 | ------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | f(n)                      | 0   | 1   | 1   | 2   | 3   | 5   | 8   | 13  | 21  | 34  | 55  |
@@ -77,52 +76,7 @@ This can be implemented in two ways:
 - Total no. of disk movements to shift $n$ no. of disks = $2^n-1$
 - Total no. of function calls = $2^{n+1}-1$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
-
-
-
-
-
-
-
-
-
----
-# Questions
-
 ###### Previous Qs are in [[Stack#Questions|Stack - Questions]]
 
 ###### <span style="color:rgb(0, 176, 240)">Q16)</span> Find the output of the following pseudo codes
@@ -162,7 +116,6 @@ void fun(int x)
 }
 ```
 
-
 <span style="color:rgb(146, 208, 80)">1  2  3  4</span>
 ![[Pasted image 20260103190053.png]]
 
@@ -191,8 +144,6 @@ void fun(int x)
 fun(3) = <span style="color:rgb(146, 208, 80)">3 2 1 1 1 2 1 1 1 2 3 2 1 1 1 2 1 1 1 2 3</span>
 fun(2) = 2 1 1 1 2 1 1 1 2
 fun(1) = 1 1 1
-
-
 
 ![[Pasted image 20260103192720.png]]
 
@@ -332,18 +283,6 @@ g(4) → 11
 g(5) → 17
 g(6) → 25
 ![[Pasted image 20260113001928.png]]
-
----
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 ## 🔗 Connections

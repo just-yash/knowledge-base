@@ -239,7 +239,6 @@ $C_{out} = ab + ac_{in} + bc_{in}$
 	- Can only perform addition 
 
 ---
-# Questions 
 ###### Q1) A half adder is implemented with XOR and AND gates. A full Combinational Circuit is implemented with two half Combinational Circuits and one OR gate. The propagation delay of an XOR gate is twice that of an AND/OR gate. The propagation delay of an AND/OR gate is 1.2 microseconds. A 4-bit ripple-carry binary Combinational Circuit is implemented by using four full Combinational Circuits. The total propagation time of this 4-bit binary Combinational Circuit in microseconds is___. (GATE 2015) (2 Marks)
 
 A1) 12   
@@ -260,14 +259,6 @@ So:
 
 Total delay =    
 4.8 + (3 × 2.4) = **12 µs**    
-
----
-
-
-
-
-
-
 
 ---
 # References 

@@ -25,9 +25,6 @@ Status : #complete
 | Delete    | $O(\log_{2}{n})$ | $O(n)$     |
 
 ---
-## Deletion of elements 
-
----
 ### Case 1 : Deleting Leaf Nodes 
 
 - Its the easiest as there is no dependency, so we can simply remove it.  
@@ -47,9 +44,6 @@ Status : #complete
 ## Traversal of BST 
 
 - If any of the order is given, draw it and match with the options
-
----
-# Questions
 
 ---
 ###### Q1) While inserting the elements 71, 65, 84, 69, 67, 83 in an empty BST in the sequence shown, the number in the lowest level is ? (GATE 2015) (1 Marks)

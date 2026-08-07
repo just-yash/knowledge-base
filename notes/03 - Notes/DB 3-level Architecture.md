@@ -34,9 +34,6 @@ Two Types :
 - Easier than [[#Logical]]
 
 ---
-## Disadvantages of 3-level Architecture 
-
----
 ### Increased Complexity 
 - Requires managing 3 separate layers 
 - Mapping between them adds complexity 
@@ -69,9 +66,4 @@ Two Types :
 
 1. [[Database Management System (DBMS) - CSE 14th.pdf]]
 
-
 ---
-# Questions 
-
-
-

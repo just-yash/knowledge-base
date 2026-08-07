@@ -5,24 +5,6 @@ Tags :   [[Processors]]
 Status : #incomplete     
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Processors
 ## General Purpose
 ### 1. CPU
@@ -58,9 +40,6 @@ Status : #incomplete
 - General Purpose GPU 
 - Using GPUs for non-graphic computation (scientific, AI, etc. ).
 
-
-
-
 ---
 # Questions
 
@@ -68,6 +47,4 @@ Status : #incomplete
 2. Difference between i-GPUs and d-GPUs.
 3. 
 
-
 ---
-# References

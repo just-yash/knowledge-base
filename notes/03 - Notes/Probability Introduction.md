@@ -69,24 +69,6 @@ Status : #complete
 - E2 = Exactly 2 H should occur = {HH}
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Mental Mode to solve Qs 
 
 - Identify these attributes : 
@@ -108,7 +90,3 @@ Status : #complete
 1. [YouTube One Shot](https://www.youtube.com/live/MOYnKrMYScg?si=GwBe87_jwHx3jynJ)
 2. [[Set Theory]]
 ---
-# Questions 
-
-
-

@@ -25,16 +25,5 @@ Source :
 | Database Management System             | PCCS4205 | 13-05-2026 | 0800 - 1100 |
 | Discrete Mathematics (Open Elective)   | OEMA6208 | 15-05-2026 | 0800 - 1100 |
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
----
 # Questions
 ----
-# Summary
----
-# References 

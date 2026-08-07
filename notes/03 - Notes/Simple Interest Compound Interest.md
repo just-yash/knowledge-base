@@ -6,10 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Simple Interest and Compound Interest 
-
----
-
 # BASIC TERMS
 
 - Principal: $P$  
@@ -132,21 +128,3 @@ Status : #complete
 - $$A = P e^{\frac{RT}{100}}$$
 
 ---
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

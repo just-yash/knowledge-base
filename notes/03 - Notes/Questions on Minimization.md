@@ -289,38 +289,6 @@ $(r → p) → q$ ⇒ $(r' + p)' + q$ = $rp' + q$
 So, (d) is correct
 
 ---
-
-
-
-
-
-
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
 # References 
 
 1. [YouTube Lecture](https://youtu.be/Pt3ZDjmg5P8?si=KuVu40Nzu-P09a9f)
@@ -328,7 +296,3 @@ So, (d) is correct
 3. [[Operators]]
 4. [[Operators.c]]
 ---
-# Questions 
-
-
-

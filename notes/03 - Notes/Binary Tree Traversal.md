@@ -69,7 +69,6 @@ Tree :
 ![[Pasted image 20260410070833.png]]   
 Postorder : d e b f g c a   
 
-
 ---
 ## Level Order Traversal 
 - Left to Right ; Top to Bottom 
@@ -95,18 +94,7 @@ Postorder : d e b f g c a
     
 - **Efficiency:** Search time is $O(\log n)$ on average, but can become $O(n)$ if the tree is skewed.
 
-
-
-
-
-
-
-
-
-
 ---
-# Questions
-
 ###### Q1) Which of the following binary tree has its order inorder and preorder traversal as BCAD and ABCD, respectively? (GATE 2004) (1 Marks)
 ![[Pasted image 20260408195452.png]]
 

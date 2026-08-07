@@ -247,24 +247,6 @@ $$
 - $a_{ij}=i^m-j^m$ : $1 ≤ m ≤ ∞$   
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Every Matrix is a sum of a symmetric and skew-symmetric Matrix  
 
 $$
@@ -310,14 +292,6 @@ If $A$ is Orthogonal then →
 # Questions
 
 [[Matrix Qs]]
-
-
-
----
-# Summary 
-
-
-
 
 ---
 # References 

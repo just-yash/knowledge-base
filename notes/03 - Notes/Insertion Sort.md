@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Insertion Sort
 - **Process**: Removes one element from the input at a time, finds its correct position in the sorted list and inserts it there.
 - **Repetition**: Process repeats until no input elements are left
@@ -62,19 +44,4 @@ print(l)
 - Best quadratic algorithm ([[Selection Sort]] and [[Bubble Sort]]) → Performs well on small data and is more efficient than them.
 - Practical Use : Despite its inefficiency on large lists ; It is useful for smaller or nearly sorted datasets.
 
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

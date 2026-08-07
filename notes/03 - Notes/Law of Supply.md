@@ -186,24 +186,6 @@ In underdeveloped economies or regions with severe resource constraints, the Law
 |**Backward Regions**|Resource/Infrastructure gap|No capacity to increase production|
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ###### Example: The Milk Vendor's Dilemma
 
 A milk vendor has $100$ liters of milk. The market price drops from $\$2$ to $\$1$ per liter.
@@ -211,20 +193,6 @@ A milk vendor has $100$ liters of milk. The market price drops from $\$2$ to $\$
 - According to the Law of Supply, the vendor should decrease supply.
     
 - However, because milk is a **perishable good**, the vendor will try to sell all $100$ liters even at the lower price of $\$1$ because by tomorrow, the milk will spoil and be worth $\$0$.
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

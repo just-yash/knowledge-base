@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Selection Sort
 - Divides the input list into two part
 	- a sorted sub-list of items which is built up from left to right at the front(left) of the list.
@@ -67,7 +49,6 @@ print(l)
 - Algorithmic Approach: Selection-based sort
 
 ---
-# Questions
 ###### <span style="color:rgb(0, 176, 240)">Q1)</span> Which one of the following is the tightest upper bound that represents the number of swaps required to sort n numbers using selection sort? <span style="color:rgb(255, 192, 0)">(Gate-2013) (1 Marks)</span>
 
 or 
@@ -84,14 +65,6 @@ or
 The Q is not asking the time complexity.
 Its asking the no. of swaps required. 
 In selection sort for each iteration we do 1 swap in the worst case. Hence, in the worst case we will do n no. of swaps. 
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

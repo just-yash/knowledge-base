@@ -162,12 +162,6 @@ If consumers expect the price of cars to rise in the future, the current demand 
 - More equal distribution typically increases demand for consumer goods.
 
 ---
-# Questions
-
-
-
-
----
 # Summary 
 - **Price:** Inverse relationship with demand.
 - **Substitutes:** Direct relationship between price of substitute and demand for given good.

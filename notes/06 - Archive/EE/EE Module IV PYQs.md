@@ -5,18 +5,6 @@ Source :
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
 # EE Module 4 PYQs
 # MODULE IV: Time Value of Money, Depreciation, Project Evaluation
 
@@ -37,8 +25,6 @@ Source :
 | 13     | Cost-benefit analysis                        | 1         | (2023 Q8d)                               |
 | 14     | Cash flow diagram                            | 1         | (2024 Q8b)                               |
 
-
-
 ---
 # References 
 
@@ -46,7 +32,3 @@ Source :
 ---
 # Questions
 ----
-# Summary
-
-
-

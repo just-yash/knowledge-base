@@ -6,24 +6,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Sorting
 ![[animation of sorting algorithms.gif]]
 - The process of arranging data (numbers or characters) in a specific order (increasing or decreasing).  
@@ -41,23 +23,6 @@ Status : #incomplete
 1. [[Selection Sort]]
 2. [[Bubble Sort]]
 
-
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
 ---
 ## 🔗 Connections
 
@@ -66,7 +31,6 @@ Status : #incomplete
 
 ---
 # References 
-
 
 1. [Algorithm - Sorting](https://youtu.be/aaHL0KygWqE?si=vEcTIZAy8mSysOMF&t=1618)
 2. [Algorithm Book](cormen-introduction-to-algorithms.pdf)

@@ -190,20 +190,3 @@ OOP is about **A.E.I.O.** ([[DB System Concepts#Data Abstraction|Abstraction]], 
     
 2. YouTube Video : [Features of Object Oriented Programming Language](http://www.youtube.com/watch?v=CK6xn21bFFI)
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

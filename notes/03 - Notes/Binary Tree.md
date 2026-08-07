@@ -68,8 +68,6 @@ For a Binary Tree of height $H = 3$:
 - **Min Nodes:** $3 + 1 = 4$
     
 ---
-# Questions
-
 ###### Q1) Let T be a binary search tree with 15 nodes. The minimum and maximum possible heights of T are  ___ (GATE 2017) (1 Marks)
 ###### (A) 4 and 15 respectively
 ###### (B) 3 and 14 respectively
@@ -116,17 +114,6 @@ A4) b) $2^{h-1}+1$
 
 A5) (A) $0$  
 - If every node is a descendant of itself and can have only odd no. of descendants ⇒ apart from the node itself, there shall be 2 or 0 nodes for every node. So no node can have a single child
-
----
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

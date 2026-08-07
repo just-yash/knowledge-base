@@ -205,25 +205,6 @@ int main() {
     
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
 ## Summary
 
 - `void*` is a **generic pointer** that can hold any address.
@@ -237,9 +218,3 @@ int main() {
 - Reduces **type safety**, so must be used carefully.
     
 ---
-# References
----
-# Questions 
-
-
-

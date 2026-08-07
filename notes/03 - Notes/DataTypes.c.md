@@ -75,9 +75,7 @@ typedef int marks;
 marks m1;
 ```
 
-
 ---
-# Questions
 ###### Q1) Which of the following is a derived data type?  
 ###### a) int  
 ###### b) float  
@@ -113,7 +111,6 @@ A3) c) unsigned float f;
 
 A4) b) only 0 or 1
 
-
 ---
 # Summary 
 - Data type determines kind of data, memory size, and allowed operations.
@@ -124,8 +121,4 @@ A4) b) only 0 or 1
 - Type modifiers alter size or sign of basic types.
 - Actual size of data types depends on compiler and architecture.
 
-
-
-
 ---
-# References

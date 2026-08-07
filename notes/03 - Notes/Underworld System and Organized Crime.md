@@ -6,9 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Indian Underworld & Dawood Ibrahim 
-
----
 ## Foundations of Organized Crime in Mumbai
 
 ### Structural Preconditions for Crime Emergence

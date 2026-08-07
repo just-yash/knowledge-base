@@ -26,9 +26,6 @@ Each data model has 3 main components:
     - ###### Example: primary key, uniqueness
 
 ---
-## Types of Data Models
-
----
 ### 1. Hierarchical Model
 
 - Data is organized in a **tree (relay) structure**
@@ -62,9 +59,6 @@ Each data model has 3 main components:
 - Easy to use
 - Reduces redundancy
 - Based on rows (tuples) and columns (attributes)
-
----
-## Classification of Data Models
 
 ---
 ### 1. Object-Based Models
@@ -117,9 +111,4 @@ Each data model has 3 main components:
 
 1. [[Database Management System (DBMS) - CSE 14th.pdf]]
 
-
 ---
-# Questions 
-
-
-

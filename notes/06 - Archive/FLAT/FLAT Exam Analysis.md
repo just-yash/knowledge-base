@@ -339,16 +339,7 @@ These are repeated directly in your papers.
 | 20   | Formal Definition of CFG                  | 2         | 2021–22 Q1(d); 2023–24 Q1(d)                                                                  |
 
 ---
-## Key Ideas 
-
-
-
-
----
 ## Note
-
-
-
 
 ---
 
@@ -358,7 +349,6 @@ These are repeated directly in your papers.
 |Tier 2 (Very Important)|CNF, Ambiguous Grammar, Thompson Construction|
 |Tier 3 (Easy Marks)|Short Notes, Definitions, Comparisons|
 |Tier 4 (Low ROI)|Deep Theory, Complexity Classes, Proof-heavy topics|
-
 
 ---
 # References 
@@ -372,7 +362,3 @@ These are repeated directly in your papers.
 ---
 # Questions
 ----
-# Summary
-
-
-

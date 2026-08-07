@@ -35,24 +35,6 @@ Status : #complete
 	- 3 ← → 4   (ab'c ← → a'bc')
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Orthogonal 
 - If the compliment and the dual of the function are same
 - f <sup>c</sup>  = f <sup>d</sup> 
@@ -68,7 +50,6 @@ Status : #complete
 	- so naturally there can be only half the total no. of mutually exclusive pairs as it also has to be neutral
 
 ---
-# Questions
 ###### Q1) Which of the following functions are self-dual and orthogonal?
 ###### a) f(a, b, c) = ∑m(0, 3)
 ###### b) f(a, b, c) = ∑ m(0, 1, 6, 7)
@@ -89,14 +70,6 @@ d) neutral and no multiple terms from the same mutually exclusive pair, hence it
 ###### d) $2^{2^{(n-1)}}$
 
 A2) d
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

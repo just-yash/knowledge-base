@@ -6,31 +6,12 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~  
   
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Linux Foundation
 ## Chapter Objectives:
 - Discuss the role of the Linux Foundation.
 - Appreciate the learning opportunities provided by the Linux Foundation's training program.
 - Describe the software environment required for this course.
 - Describe the three major Linux distribution families.
-
 
 ## 3 Major Linux Distribution Families 
 Linux continues to evolve as developers and contributors identify new needs and create solutions to address them. In some cases, this innovation leads to the creation of an entirely new distribution. In others, it results in extensions or variations built on top of existing distributions, further expanding the families that already exist.
@@ -69,19 +50,6 @@ Linux continues to evolve as developers and contributors identify new needs and 
 - It uses the DPKG-based APT package manager (using apt, apt-get, apt-cache, etc.,) to install, update, and remove packages in the system.
 - Ubuntu has been widely used for cloud deployments.
 - While Ubuntu is built on top of Debian and is GNOME-based under the hood, it differs visually from the interface on standard Debian, as well as other distributions
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

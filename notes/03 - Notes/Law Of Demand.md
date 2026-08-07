@@ -202,25 +202,6 @@ The Law of Demand states an inverse relationship between price and quantity dema
 - **Umbrellas** and **raincoats** during the rainy season.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
 # Summary
 
 - **Law of Demand** defines an **inverse relationship** between price and quantity demanded.
@@ -245,7 +226,3 @@ The Law of Demand states an inverse relationship between price and quantity dema
 2. [YouTube Lecture : Reasons of Law of Demand](https://youtu.be/_M14wRb-vXU?si=SV5TDQ5chAQBnwQ8)
 3. [YouTube Lecture : Exceptions to Law of Demand](https://youtu.be/ztoDSwHdVOQ?si=o542R2cnj_eBA4J0)
 ---
-# Questions 
-
-
-

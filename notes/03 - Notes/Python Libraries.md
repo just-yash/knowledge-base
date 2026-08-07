@@ -6,9 +6,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~     
 
 ---
-# Python Libraries 
-
----
 ## MENTAL MODEL
 
 ```
@@ -672,12 +669,3 @@ for _, row in df.iterrows():
 
 This is what production looks like — not one library, all of them working together.
 ---
-# Questions 
-
-
-
-
-
-
----
-# References 

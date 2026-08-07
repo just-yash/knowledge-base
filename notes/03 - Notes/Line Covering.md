@@ -69,39 +69,8 @@ Status : #complete
 - Line Independent Number($\beta_{1}$) : 3
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 - [[Line Covering#^7a0b90|Line Covering Number]]($\alpha_{1}$) + [[Line Covering#^d10cb2|Line Independent Number]]($\beta_{1}$) = $|v|$ (total no. of vertices)
 $$\alpha_{1} + \beta_{1} = |v|$$
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

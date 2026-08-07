@@ -233,24 +233,6 @@ void *ptr;
 ```
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## `_Bool`
 
 - Introduced in **C99**
@@ -305,21 +287,7 @@ if (ready) {
 }
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-# Questions
 ###### Q1) What will be the output 
 ```c
 char x = 'A';
@@ -327,7 +295,6 @@ char y = 'B';
 char z = x + y;
 printf("%c",z);
 ```
-
 
 A1)  
 `'A' = 65`
@@ -338,7 +305,6 @@ The result is **implementation-dependent** because:
 - `char` may be signed or unsigned
 - Signed overflow is undefined
 - Printing `%c` may produce a non-ASCII or non-printable character
-
 
 ---
 # Summary 
@@ -375,8 +341,6 @@ The result is **implementation-dependent** because:
 - Relational and logical operators produce `int`.
     
 - C performs **no bounds checking**, making it fast but error-prone.
-
-
 
 ---
 # References 

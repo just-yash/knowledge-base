@@ -104,7 +104,6 @@ Source :
 
 ![[Pasted image 20260328151222.png]]
 
-
 ---
 ###### Q2)
 
@@ -343,25 +342,11 @@ c) inferior product
 | 10  | Concept / indicator of national income (MCQ/conceptual) | 2   | (2024 Q1c, 2024 Q3b) |
 | --- | ------------------------------------------------------- | --- | -------------------- |
 
-
-
 ---
 
 # References 
 
 1. [[EE.pdf]]
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
----
 # Questions
 ----
-# Summary
-
-
-

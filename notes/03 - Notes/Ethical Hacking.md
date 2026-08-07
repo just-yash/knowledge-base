@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Ethical Hacking
 - Job of an Hacker is to reverse engineer systems so that they can know how they work and how they can be broken; the intent determines whether this activity is ethical or malicious.
 - Historically, malicious hackers were sometimes called _crackers_, though the term is rarely used in modern cybersecurity discourse.
@@ -69,22 +51,6 @@ Status : #complete
 - Website Hacking Concepts
 - Webapp Hacking 
 - Live CTF Playgrounds
-
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

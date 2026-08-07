@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Kali Linux Overview
 - Linux is an operating system which works on smartphones, cars, supercomputers, home appliances, home desktops, etc. 
 - Linux is the **most popular operating system** in the world
@@ -41,7 +23,6 @@ Status : #complete
 - Light Weight
 
 ![[Pasted image 20251113182358.png]]
-
 
 | Command Line Interface (CLI)         | Graphical User Interface (GUI)         |
 | ------------------------------------ | -------------------------------------- |
@@ -101,19 +82,6 @@ Status : #complete
 - keyboard shortcut : `Ctrl + Alt + T`
 ### Increase Decrease Text Size:
 `Ctrl + +` or `Ctrl + -`
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

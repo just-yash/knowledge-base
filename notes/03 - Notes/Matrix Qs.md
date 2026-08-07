@@ -43,56 +43,6 @@ if $BA$ exists ⇒ 11 - n = m ⇒ m + n = 11 ….(Eq ii)
 ⇒ n = 8
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
 # References 
 
 [[2 - Zettelkasten/C - Notes/Eng. Maths/Linear Algebra/Matrix]]

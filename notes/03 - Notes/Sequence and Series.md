@@ -6,10 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~      
 
 ---
-# Sequence and Series 
-
----
-
 # BASIC DEFINITIONS
 
 - Sequence: ordered list → $a_1, a_2, a_3, \dots$
@@ -151,21 +147,3 @@ Example:
 - $$AM \ge GM \ge HM$$
 
 ---
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

@@ -6,9 +6,6 @@ Source :  [Mohak Mangal](https://youtu.be/bYWOWwVQtBo?si=xFDeIrq9vPVyAaTp)
 ~ ***Yash Agrawall*** ~  
 
 ---
-# The Tragic Downfall of Café Coffee Day (CCD)
-
----
 ## The Disappearance of VG Siddhartha
 
 - **Sudden Disappearance:** VG Siddhartha, founder of India's largest coffee chain, went missing on July 29, 2019, after instructing his driver to drop him off at a bridge over the Netravati River near Mangalore.
@@ -47,22 +44,7 @@ Source :  [Mohak Mangal](https://youtu.be/bYWOWwVQtBo?si=xFDeIrq9vPVyAaTp)
 - **Debt Reduction:** The company engaged in aggressive asset sales, including selling the Global Village Tech Park to Blackstone for ₹2,700 crore and shedding unprofitable coffee outlets.
 - **Survival:** Through restructuring, the company successfully reduced its massive debt significantly within four years.
 
-
----
-# References
-
-
-
 ---
 # Questions
 
-
-
 ----
-# Summary
-
-
-
-
-
-

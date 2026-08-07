@@ -73,7 +73,6 @@ Status : #complete
 
 ![[Pasted image 20260317212340.png]]
 
-
 ### Assumptions
 
 - The amount of Resources are **fixed**.
@@ -122,20 +121,6 @@ Status : #complete
 
 ###### Example : 
 ![[Pasted image 20260318014009.png]]
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

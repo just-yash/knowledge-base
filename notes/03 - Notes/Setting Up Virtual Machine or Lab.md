@@ -56,24 +56,6 @@ Virtualization is the process of **running a virtual computer system in a layer 
 **Verdict:** Great for Windows-only environments; not ideal if you want to run Linux or multi-OS labs.
     
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ### 🦩 **QEMU (with KVM on Linux)**
 
 **Best for:** Advanced users, penetration testers, and researchers.  
@@ -117,24 +99,8 @@ WSL - Windows Subsystem for Linux
 |Lightweight sandbox, scripting|**WSL 2**|
 |Complete OS isolation & snapshots|**Virtual Machine**|
 
-
-
 `sudo`  == administrative privileges and permissions
 `apt` == update or package manager
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

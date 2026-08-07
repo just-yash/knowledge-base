@@ -30,24 +30,6 @@ The same structure applies to any valid combination.
 - This is very important for [[Algorithm Basics#^f7c166|Complexity]]
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ###### Examples : 
 ```c
 for (i = 1; i <= 3; i++){
@@ -73,17 +55,7 @@ abc abc
 ```
 - `printf("\n")` is in the scope of the outer loop
 
-
-
-
-
-
-
-
-
-
 ---
-# Questions
 ###### Q1) WAP to print the table of numbers 1 to 10
 
 A1)
@@ -164,15 +136,6 @@ int main(){
 }
 ```
 
-
-
-
-
-
-
-
-
-
 ---
 # Summary 
 
@@ -201,8 +164,6 @@ int main(){
 - Loop conditions must be evaluated carefully; non-zero values (including pointers) are treated as `true`.
     
 - Incorrect placement of statements can change which loop they belong to due to scope rules.
-
-
 
 ---
 # References 

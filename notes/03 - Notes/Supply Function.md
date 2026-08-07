@@ -58,24 +58,6 @@ Where:
     - $F$: Infrastructure (Transport and Communication).
         
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## Supply Schedule
 
 ### Definition
@@ -119,17 +101,3 @@ Assumes a market with two firms: Firm A and Firm B.
 |5|25|50|75|
 
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

@@ -13,7 +13,4 @@ Tags :   [[Programming]]
 - [[for.c]]
 - [[nested_loop.c]]
 
-
 ---
-# References 
-

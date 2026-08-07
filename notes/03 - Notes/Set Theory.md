@@ -182,8 +182,6 @@ Status : #complete
 - [[Primary Logical Operators Across Different Domains]]
 
 ---
-# Questions
-
 ###### Q1) For any set A, which of the following are true?
 ###### a) ϕ ∈ A
 ###### b) ϕ ⊆ A

@@ -188,21 +188,3 @@ $\left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$
   $$lbh$$
 
 ---
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

@@ -199,8 +199,6 @@ Similarly,
 - Neither nor ≡ ↓ 
 
 ---
-# Questions
-
 ###### Q1) Check the following 
 ###### i) Is $→$ distributive over $∧$ ?
 ###### ii) Is $∧$ distributive over $→$ ?
@@ -507,7 +505,6 @@ m) P' → Q
 | No          | Yes         |                   |
 | No          | No          | $→$               |
 
-
 - Formulas
 
 | Operator    | Formula           |
@@ -517,8 +514,6 @@ m) P' → Q
 | XOR         | $P'Q + PQ'$       |
 | Implication | $P' +Q$           |
 | Equivalence | $P'Q' + PQ$       |
-
-
 
 ---
 # References 

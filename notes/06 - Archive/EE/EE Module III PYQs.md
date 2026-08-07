@@ -20,18 +20,6 @@ Source :
 | 8      | Inflation (concept/types)                                       | 1         | (2022 Q8d)                     |
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
 # Module III Answers
 
 ###### Q1) 
@@ -63,7 +51,6 @@ I, III)
 $$Q_d = Q_s$$​
 **Diagram:** 
 
-
 - Point of intersection of demand and supply curve is the equilibrium point
 - At equilibrium: Price = Equilibrium price, Quantity = Equilibrium quantity
 
@@ -87,12 +74,6 @@ $$Price \propto \frac{1}{Demand} \propto Supply$$
 - No perfectly competitive market is found in reality, though it is used as a theoretical concept
 - price > eq price → excess supply → excess demand will decrease → price will again reach eq price
 
-
-
-
-
-
-
 ---
 # References 
 
@@ -100,7 +81,3 @@ $$Price \propto \frac{1}{Demand} \propto Supply$$
 ---
 # Questions
 ----
-# Summary
-
-
-

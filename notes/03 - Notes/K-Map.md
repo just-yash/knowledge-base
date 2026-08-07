@@ -156,7 +156,6 @@ Status : #complete
 - Here instead of taking the center 4 cells, consider 4 × 2 cells
 - a'bc' + ac'd + abc + a'cd
 
-
 |      | ab  | a'b' | a'b | ab  | ab' |
 | ---- | --- | ---- | --- | --- | --- |
 | cd   |     | 00   | 01  | 11  | 10  |
@@ -187,24 +186,6 @@ Status : #complete
 - A Prime Implicant is Essential if it contains at least one minterm that is not covered by any other PI.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ###### Example : f(a,b,c) : ∑ m{1, 2, 3, 4, 5}. Find the no. of PI and EPI. Also find the no. of unique minimal expressions possible and the literal count of the minimal expression. 
 
 |     | ab  |  a'b' |   a'b |   ab |   ab' |
@@ -220,9 +201,7 @@ No. of unique minimal expressions possible : 2
 Minimal Expression : {a'b + ab' + a'c} , {a'b + ab' + b'c} 
 Literal Count of minimal Expression : 6
 
-
 ---
-# Questions
 ###### Q1) Consider the minterm list form of a Boolean function F given below. 
 ###### F(P, Q, R, S) = ∑ m(0, 2, 5, 7, 9, 11) + d(3, 8, 10, 12, 14)
 ###### Here, m denotes a minterm and d denotes a don't care term. The no. of EPI of the function F is — . (GATE 2018) (2 Marks)
@@ -448,12 +427,6 @@ boolean expression : a'c
 using NOR gate : (a + c')' .
 It is given that the complements are already available ⇒ we don't have to make c'.   
 Hence only 1 NOR Gate is required  
-
----
-# Summary 
-
-
-
 
 ---
 # References 

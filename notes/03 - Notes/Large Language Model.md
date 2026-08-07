@@ -6,24 +6,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Large Language Model
 
 ![[Screenshot 2025-10-20 180039.png]]
@@ -39,7 +21,3 @@ TPU - Tensor processing Unit
 1. [NxtWave Generative AI Mega Workshop](https://webinar.ccbp.in/webinars/ai-workshop)
 2. ChatGPT
 ---
-# Questions 
-
-
-

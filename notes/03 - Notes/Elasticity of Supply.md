@@ -76,25 +76,6 @@ Status : #complete
     
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
 ## Examples and Solved Problems
 
 ###### Example: Basic Calculation
@@ -132,22 +113,4 @@ Status : #complete
         
 - **Result**: $E_s > 1$ (More than Unitary Elastic).
 
-
-
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

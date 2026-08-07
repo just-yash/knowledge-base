@@ -6,24 +6,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Software
 - Collection of Programs
 - Two Types
@@ -38,21 +20,4 @@ Eg : Games, Anti-Virus, MS-Office, Calculator, etc
 
 Eg : Operating System, Linker, Loader
 
-
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

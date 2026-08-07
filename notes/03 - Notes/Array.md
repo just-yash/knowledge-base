@@ -307,12 +307,7 @@ int disp[2][4]={10,11,12,13,14,15,16,17};
 | **Deletion at Arbitrary Position**                                    | O(n)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **Space Complexity**                                                  | O(n)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-
-
-
 ---
-# Questions
-
 ###### <span style="color:rgb(0, 176, 240)">Q1)</span> Let the base address of the first element of the array is 250 and each element of the array occupies 3 bytes in the memory, then address of the fifth element of a one- dimensional array a[10] ?
 <span style="color:rgb(0, 176, 240)">A1)</span>  
 B = 250  
@@ -524,16 +519,6 @@ unsigned int main(){
 	printf("%d", y[i]);
 }
 ```
-
----
-
-
-
-
-
-
-
-
 
 ---
 # References 

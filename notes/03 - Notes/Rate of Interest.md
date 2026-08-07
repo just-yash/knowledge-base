@@ -26,24 +26,6 @@ Soln :
 $i_{eff} = {(1 + \frac{0.18}{360})}^{360}-1$ = 0.19716 = 19.72%
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ###### Example : What rate of interest compounded annually is the same as the rate of interest of 8% compounded quarterly? 
 
 Soln :    
@@ -52,17 +34,3 @@ $i_{eff_{a}} = i_{eff_{q}}$
 ⇒ $()  
 
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

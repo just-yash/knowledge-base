@@ -23,20 +23,6 @@ Status : #incomplete
 3. Convert the truth table in minimized boolean expression using K-map 
 4. Draw the logic circuit for the above obtained o/p expression 
 
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
 ---
 # References 
 

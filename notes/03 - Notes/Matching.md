@@ -41,41 +41,9 @@ Status : #complete
 - A [[Tree_DM]] doesn't have a perfect match 
 - for a [[Graph Theory#Complete Graph ($K_n$)|Complete Graph]] $K_n$ :
 	- no. of perfect matchings are : $$\frac{[(2n)!]}{n! \times 2^n}$$
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
 
 ---
 ![[Pasted image 20260328015452.png]]
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

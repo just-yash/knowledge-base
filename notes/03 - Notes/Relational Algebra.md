@@ -12,8 +12,6 @@ Status : #complete
 - They provide a mathematical foundation for the relational model.
     
 ---
-## Core Idea
-
 ### Relational Algebra
 
 - Procedural query language
@@ -29,9 +27,6 @@ Status : #complete
 - SQL is based on relational algebra concepts
 - Helps understand [[DBMS]] internals and joins
     
----
-# Relational Algebra Operations
-
 ---
 ## Types of Operations
 

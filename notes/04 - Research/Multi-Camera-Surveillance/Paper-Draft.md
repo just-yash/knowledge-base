@@ -42,23 +42,11 @@ We propose a real-time pipeline for multi-camera person re-identification that e
 ### 3.2 Single-Camera Tracking
 ### 3.3 Appearance Feature Extraction
 ### 3.4 Cross-Camera Re-Identification
-### 3.5 Global ID Assignment
-
----
 ## 4. Experiments
 
 ### 4.1 Datasets
 ### 4.2 Evaluation Metrics
 ### 4.3 Results
-### 4.4 Ablation Study
-
----
-## 5. Discussion
-
----
-## 6. Conclusion
-
----
 ## References
 
 > [Populate from Literature Review]

@@ -6,9 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~     
 
 ---
-# DBMS Numerical Notes
-
----
 ## 1. Attribute Closure (X⁺)
 
 **Algorithm:**

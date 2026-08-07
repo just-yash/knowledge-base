@@ -235,7 +235,6 @@ We can see that now the determinant is a Upper Triangular Matrix
 $⇒ Δ = (x+3a)*(1* (x-a) * (x-a) * (x-a)$
 $⇒ Δ = (x+3a) * (x-a)^{3}$
 
-
 $$ii) Δ=\begin{vmatrix}
 4 & 3 & 3 & 3 \\
 3 & 4 & 3 & 3 \\
@@ -271,7 +270,6 @@ Step 3:
 We can see that now the determinant is a Upper Triangular Matrix 
 $⇒ Δ = 13 * 1 * 1 * 1 * 1$
 $⇒ Δ = 13$
-
 
 $$iii) Δ = \begin{vmatrix}
 1+x & 2 & 3 & 4 \\
@@ -442,46 +440,8 @@ $|adj(adj(adj(A)))|= |A|^{(n-1)^{3}}=|A|^{(6-1)^3}=|A|^{125}$
 $⇒ |adj(adj(adj(A)))|= (\frac{3}{2^6})^{125} =(\frac{3}{64})^{125}$ 
 
 ---
-
-
-
-
-
-
-
-
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
 # References 
 
 1. [[Determinants]]
 
 ---
-# Questions 
-
-
-

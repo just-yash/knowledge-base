@@ -576,7 +576,6 @@ These are the questions where:
 
 This is the “minimum pain, decent marks” zone.
 
-
 ---
 # 📌 **AY 2024–25 (Latest Paper — Highest Priority)**
 
@@ -609,9 +608,6 @@ This is the “minimum pain, decent marks” zone.
 |**Q8(d)**|**Op-Amp Output Current**|Ideal conditions (virtual ground), Ohm’s Law based solving.|
 
 ---
-
----
-
 # 📌 **AY 2023–24 Paper (Medium Priority — Strong Repetition With 2024-25)**
 
 ### ✅ Q1 Easy Theory Topics
@@ -642,9 +638,6 @@ This is the “minimum pain, decent marks” zone.
 |**Q8(d)**|**Output Current Using Op-Amp Ideal Laws**|Virtual ground + resistor network reasoning.|
 
 ---
-
----
-
 # 📌 **January 2023 Paper (Lower Priority but Still Relevant Concepts)**
 
 ### ✅ Q1 Easy Theory Topics
@@ -675,9 +668,6 @@ This is the “minimum pain, decent marks” zone.
 |**Q8(d)**|**BJT Cascode Connection**|Purpose: high gain + high bandwidth.|
 
 ---
-
----
-
 # 📌 PATTERN ANALYSIS (Are these theory questions stable or new each year?)
 
 |Topic Pattern|Behavior|
@@ -768,9 +758,6 @@ This is the “minimum pain, decent marks” zone.
 |**Q8(d)**|**Op-Amp Output Current**|Ideal conditions (virtual ground), Ohm’s Law based solving.|
 
 ---
-
----
-
 # 📌 **AY 2023–24 Paper (Medium Priority — Strong Repetition With 2024-25)**
 
 ### ✅ Q1 Easy Theory Topics
@@ -801,9 +788,6 @@ This is the “minimum pain, decent marks” zone.
 |**Q8(d)**|**Output Current Using Op-Amp Ideal Laws**|Virtual ground + resistor network reasoning.|
 
 ---
-
----
-
 # 📌 **January 2023 Paper (Lower Priority but Still Relevant Concepts)**
 
 ### ✅ Q1 Easy Theory Topics
@@ -834,9 +818,6 @@ This is the “minimum pain, decent marks” zone.
 |**Q8(d)**|**BJT Cascode Connection**|Purpose: high gain + high bandwidth.|
 
 ---
-
----
-
 # 📌 PATTERN ANALYSIS (Are these theory questions stable or new each year?)
 
 |Topic Pattern|Behavior|
@@ -853,9 +834,6 @@ This is the “minimum pain, decent marks” zone.
 The theory questions are **not random. They rotate a stable set of 10–12 recurring conceptual topics**, especially in the **latest two papers**.
 
 ---
-
----
-
 # 📌 QUICK SUMMARY TABLE
 
 (so you can study efficiently)
@@ -1099,7 +1077,6 @@ These repeat **every single year.**
 📌 **Total estimated Neso playlist time if watched at 1.5x speed:** **10–14 hours**  
 📌 **Marks coverage:** **50+ easily**
 
-
 ---
 
 # ❌ 2) What NOT to Watch from Neso Academy
@@ -1130,7 +1107,6 @@ Also skip:
 
 Because your exam is **theory + derivations + diagrams**, not numerical design.
 
-
 ---
 
 # 🧠 3) Do You Need the First Playlist?
@@ -1157,14 +1133,9 @@ Your exam is **academic**, so:
 
 ### 🟩 Neso = Main Source
 
-### 🟨 All About Electronics = Backup/clarification tool
-
----
-
 # 🏁 Final Strategy
 
 `1) Watch Neso Academy for all core topics. 2) Make notes EXACTLY like your teacher’s structure. 3) Only if a topic feels confusing → check the same topic from All About Electronics.`
-
 
 ---
 
@@ -1179,12 +1150,10 @@ Your exam is **academic**, so:
 - 50+ marks achievable with confidence
 
 ---
-# References 
 ## Syllabus and PYQs
 - [[AEC.pdf]]
 ## Notes
 - [[AEC COMPLETE TILL 1 NOV 2025.pdf]]
 
 - [[AEC 2|AEC 2]]
-
 

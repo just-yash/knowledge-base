@@ -6,10 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Coordinate Geometry 
-
----
-
 # BASIC FORMULAS
 
 ## Distance Formula
@@ -179,10 +175,6 @@ Status : #complete
   $$y^2 = 4ax$$
 
 ---
-# Questions
-
-
----
 ## 🔗 Connections
 
 - Landmark points in face alignment exist in 2D coordinate space → [[Face Alignment]]
@@ -190,4 +182,3 @@ Status : #complete
 - 2D transformations (rotation/translation) are affine operations → [[Matrix]]
 
 ---
-# References 

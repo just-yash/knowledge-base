@@ -11,9 +11,6 @@ Status : #complete
 The **ER Model** is a high-level conceptual data model used to design the structure of a database using entities, attributes, and relationships.
 
 ---
-## Basic Concepts
-
----
 ### 1. Entity
 
 - A real-world object or thing
@@ -172,9 +169,6 @@ The **ER Model** is a high-level conceptual data model used to design the struct
 ![[Pasted image 20260410045940.png]]
 
 ---
-## Extended / Enhanced ER (EER) Concepts
-
----
 ### 1. Superclass and Subclass (inheritance)
 
 - Superclass : General entity 
@@ -253,9 +247,6 @@ The **ER Model** is a high-level conceptual data model used to design the struct
 
 ###### Example:
 - EMP-Manager derived from Employee and Manager
-
----
-# Questions
 
 ---
 ###### Q1) A person has account in bank, bank operates on different counter, person gets loan from counter. Draw ER Model diagram 

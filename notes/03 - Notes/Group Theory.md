@@ -302,25 +302,6 @@ A4)
     
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
 ### Concept: Generators and Cyclic Groups
 
 #### Detailed explanation
@@ -348,21 +329,4 @@ A4)
     
 - Because $Z_4$ has generators, it is a Cyclic Group.
 
-
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

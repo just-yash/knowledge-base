@@ -6,9 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# DB Languages
-
----
 ## DDL 
 - Data Definition Language 
 - Used to define and modify database structure ([[DB System Concepts#Schemas|schema]])
@@ -71,7 +68,3 @@ Two Types :
 1. [[Database Management System (DBMS) - CSE 14th.pdf]]
 
 ---
-# Questions 
-
-
-

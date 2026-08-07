@@ -139,52 +139,6 @@ strlen("Hello");   // 5
 ```
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
 # Questions
 
 in fgets
@@ -205,14 +159,4 @@ what do you mean by dangerous
 
 Give examples of each string function 
 
-
-
 ---
-# Summary 
-
-
-
-
-
----
-# References

@@ -6,10 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Random Variable
-
----
-
 ## Function Concept (Foundation)
 
 ### Definition
@@ -280,25 +276,6 @@ Y=g(X)Y = g(X)Y=g(X)
 - $P = \frac{1}{4}$
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
 # Summary
 
 - Random Variable = function from sample space to real numbers
@@ -317,7 +294,3 @@ Y=g(X)Y = g(X)Y=g(X)
 1. [YouTube Lecture](https://www.youtube.com/live/lLHhl747gkk?si=pLt2uoqZlNvZiJE5)
 2. [[Probability Introduction]]
 ---
-# Questions 
-
-
-

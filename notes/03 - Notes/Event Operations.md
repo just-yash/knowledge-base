@@ -6,9 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# [[Probability Introduction#Event of a Random Experiment|Event]] Operations for 2 Events
-
----
 ## [[Set Theory#Union ($A cup B$)|Union]] of Events 
 
 - Let $A$ and $B$ are two events from a Sample Space obtained by a Random Experiment, Union of $A$ and $B$ consists of all the elements in $A$ and $B$ 
@@ -196,24 +193,6 @@ $$P\left( \frac{B}{A} \right) = P(B)$$
 - P(E1 ∩ E2 ∩ E3 …. ∩ En) = P(E1)P(E2)P(E3)...P(En)
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Event Operations for 3 Events 
 
 - All can be done if Venn Diagram is drawn and each segment is identified 
@@ -224,9 +203,6 @@ $$P(A \cup B \cup C) = P(A)+P(B)+P(C)-P(A\cap B) - P(B \cap C) - P(C \cap A) + P
 $$P(A \cap B) + P(B \cap C) + P(C \cap A) - 3P(A \cap B \cap C)$$
 - Exactly one of A or B or C should occur 
 $$P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(B \cap C) - 2P(C \cap A) + 3P(A \cap B \cap C)$$
-
----
-# Questions 
 
 ---
 ###### Q1) Let S be a sample space of two mutually exclusive events A and B be such that A U B = S. If P(.) denotes the probability of the event, the maximum value of P(A)P(B) is?  (GATE 2014) (2 M)

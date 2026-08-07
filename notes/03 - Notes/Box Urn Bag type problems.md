@@ -39,11 +39,6 @@ Solution :   b) 1/6
 Blue → 10  ; Black → 20 ; Red → 30       
 $\frac{10}{60}\times \frac{20}{60} \times \frac{30}{60} \times 3!$ = 1/6         
 
-
-
----
-# Questions
-
 ---
 ###### Q1) A box contains 10 screws, 3 of which are defective. Two screws are drawn at random with replacement. The probability that non of the two screws will be defective. 
 ###### a) 100% 
@@ -105,7 +100,6 @@ D) $\frac{1}{2} + \frac{1}{2} \times \frac{1}{3} = \frac{2}{3}$
 
 A6) a) 65/156     
 $\frac{5}{12}\times \frac{6}{13} + \frac{7}{12} \times \frac{5}{13}=\frac{65}{156}$     
-
 
 ---
 # References 

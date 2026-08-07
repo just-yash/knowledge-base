@@ -6,10 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~      
 
 ---
-# Complex Numbers 
-
----
-
 # BASIC DEFINITION
 
 - A complex number:
@@ -154,16 +150,3 @@ Status : #complete
 
 - $$[r(\cos\theta + i\sin\theta)]^n = r^n(\cos n\theta + i\sin n\theta)$$
 ---
-# Questions
-
-
-
-
-
-
-
-
----
-# References 
-
-

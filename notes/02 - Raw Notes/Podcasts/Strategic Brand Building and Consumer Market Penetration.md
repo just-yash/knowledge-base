@@ -6,9 +6,6 @@ Source : [Raj Shamani : Suyash Saraf(Dot&Key)](https://youtu.be/q1hvfs-VL5U?si=d
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Strategic Brand Building and Consumer Market Penetration
-
----
 # Brand Building Masterclass — BPC (Beauty & Personal Care)
 
 > Insights from Suyash Saraf, Founder & CEO of Dot & Key Skincare and Hyperscale Ventures
@@ -448,15 +445,3 @@ Own Website → Amazon/Flipkart → Nykaa → Quick Commerce (12–18 months lat
 - Category volume research tool: **Helium 10** (Amazon)
 - Trend sizing tool: **Google Trends**
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
----
-# Questions 
-
-
-

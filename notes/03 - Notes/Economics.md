@@ -63,7 +63,6 @@ The scope defines the area of study and the specific activities covered within e
 ### Core Assumption
 - Assumes that **macroeconomic variables** in an economy remain constant.
 
-
 ---
 ## Macroeconomics
 - deals with economic activity as a whole, focusing on the entire economic system rather than individual parts.
@@ -92,24 +91,6 @@ The scope defines the area of study and the specific activities covered within e
 - Assumes that the allocation of resources, distribution of output, and relative prices are given.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## Microeconomics v/s Macroeconomics 
 
 ### Fundamental Differences
@@ -129,21 +110,6 @@ The scope defines the area of study and the specific activities covered within e
 - **Perspective:**
     - **Micro:** Bottom-up view of the economy.
     - **Macro:** Top-down view of the economy.
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

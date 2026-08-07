@@ -51,9 +51,6 @@ t1[Ename] = t2[Ename]
 ```
 
 ---
-# Trivial and Non-Trivial FD
-
----
 ## Trivial FD
 
 A dependency is trivial if:
@@ -169,9 +166,6 @@ B → C
 
 ⊨ A → C
 ```
-
----
-# Additional Inference Rules
 
 ---
 ## 4. Decomposition Rule
@@ -394,12 +388,3 @@ F⁺ → All derivable dependencies
 - Frequently asked in exams
 
 ---
-# Questions 
-
-
-
-
-
-
----
-# References 

@@ -91,12 +91,7 @@ for (int i = 0; i < 3; i++)
 |Exits switch|❌|✅|
 |Control strength|Weak|Strong|
 
-
-
-
 ---
-# Questions
-
 ###### Q1) Find the output
 ```c
 for (i = 1; i <= 10; i++){
@@ -154,8 +149,6 @@ A2) `1 2 3 4 `
 - Order of `continue` and `break` statements is critical and can completely change output.
     
 - `continue` provides fine-grained iteration control, whereas `break` performs immediate loop termination.
-
-
 
 ---
 # References 

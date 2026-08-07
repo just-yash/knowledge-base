@@ -57,18 +57,6 @@ Source :  [Raj Shamani : Mark Mason](https://youtu.be/ig1VtIEFkcI?si=DTGJv1hsCCT
 > To date better women, become a better person 
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
 ## Manipulation Tactic everyone should know 
 
 ### Social Proof 
@@ -112,34 +100,6 @@ Source :  [Raj Shamani : Mark Mason](https://youtu.be/ig1VtIEFkcI?si=DTGJv1hsCCT
 	1. This is addictive to humans 
 	2. They enjoy the thrill 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-# Questions
-
-
-
-
-
 ---
 # References
 ----
-# Summary
-
-
-

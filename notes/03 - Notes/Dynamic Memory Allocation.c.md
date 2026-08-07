@@ -110,25 +110,6 @@ A1) Both functions return a `void*` (generic pointer) because the compiler doesn
 A2) The memory block becomes "orphaned" in the heap. The program can no longer access or free it, resulting in a **memory leak**, which can eventually exhaust the system's available memory.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
 # Summary
 
 - **DMA** happens at runtime using the **Heap**; **Static allocation** happens at compile time using the **Stack**.
@@ -152,7 +133,3 @@ A2) The memory block becomes "orphaned" in the heap. The program can no longer a
 
 - [[void pointer.c]]
 ---
-# Questions 
-
-
-

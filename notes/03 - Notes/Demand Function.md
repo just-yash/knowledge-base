@@ -109,7 +109,6 @@ A **Demand Schedule** is a tabular statement showing the different quantities of
   </tbody>
 </table>
 
-
 ---
 ## 4. Demand Curve
 
@@ -134,20 +133,6 @@ The **Demand Curve** is the graphical representation of the demand schedule, sho
 - $D_A →$ Individual Demand Curve of Household $A$   
 - $D_B →$ Individual Demand Curve of Household $B$  
 - $D_M →$ Market Demand Curve  : $D_M = D_A + D_B$
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

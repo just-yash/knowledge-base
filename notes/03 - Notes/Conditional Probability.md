@@ -37,9 +37,6 @@ P(A' ∩ B) = P(B - A) = P(B) - P(B ∩ A) = 2/3 - 1/4 = 5/12
 > Best way to solve is by Venn Diagrams 
 
 ---
-# Questions
-
----
 ###### Q1) It is given that the events A and B are such that P(A) = 1/4, P(A|B) = 1/2 and P(B|A) = 2/3, then P(B) is ? 
 ###### a) 1/6
 ###### b) 1/3

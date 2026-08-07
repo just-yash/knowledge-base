@@ -6,24 +6,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Tools With Claude Code
 
 | Name         | Purpose                               |
@@ -44,22 +26,4 @@ Status : #incomplete
 | WebSearch    | search the web                        |
 | Write        | Write to a file                       |
 
-
-
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

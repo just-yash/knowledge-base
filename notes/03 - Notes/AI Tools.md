@@ -172,9 +172,4 @@ Status : #incomplete
 
 1. [NxtWave Generative AI Mega Workshop](https://webinar.ccbp.in/webinars/ai-workshop)
 
-
 ---
-# Questions 
-
-
-

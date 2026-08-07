@@ -7,24 +7,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Health Insurance
 ### Common Myths/Excuses 
 - *"I'm healthy."*
@@ -42,19 +24,4 @@ Status : #incomplete
 3. Cashless Facility 
 	- 
 
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

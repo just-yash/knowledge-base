@@ -8,27 +8,7 @@ Phase :
 ---
 # {{Title}}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ----
 # Questions 
 
-
-
-
 ----
-# References 

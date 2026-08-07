@@ -33,17 +33,3 @@ What does great output look like? what does a bad output look like?
 What are the boundaries, rules, non-negotiables?  
 
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

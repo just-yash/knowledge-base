@@ -82,7 +82,6 @@ When the Switch is closed, the circuit short circuits and current doesn't pass t
 - Obeys : All core Boolean Laws
 - Violates : None
 
-
 ---
 # OR Gate
 - It implements Logical Disjunction
@@ -266,12 +265,7 @@ No. of NOR/NAND Gates required to build other logic gates :
 - Implement any digital circuit with support of logic 0 or 1 as a input line 
 - cant use complemented form
 
-
-
-
-
 ---
-# Questions
 ###### <span style="color:rgb(0, 176, 240)">Q1)</span> For a Boolean variable x, which of the following statements is/are FALSE? <span style="color:rgb(255, 192, 0)">(Gate 2024 CS) (1 Mark) (MSQ)</span>
 ###### (a) x . 1 = x
 ###### (b) x + 1 = x
@@ -377,7 +371,6 @@ f(a, a) = a' + a = 1
 f(b, a) = b' + a    
 f(a, 1) = 1    
 
-
 ---
 ###### Q10) Consider the operations (GATE 2015) (2 Marks)
 ###### f(X, Y, Z) = X'YZ + X'Y + Y'Z'
@@ -394,13 +387,6 @@ f(x, x, z) = x'xz + x'x + x'z' = x'z'  (NOR)
 f is functionally complete.     
 
 {g} is not complete.     
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

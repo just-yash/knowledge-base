@@ -6,9 +6,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~     
 
 ---
-# Agentic AI
-
----
 ## Core Idea 
 
 An **agentic AI system** is an LLM-powered agent that can perceive its environment, plan multi-step actions, use tools, and execute tasks autonomously — without requiring a human to issue every instruction.

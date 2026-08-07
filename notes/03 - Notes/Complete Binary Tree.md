@@ -5,7 +5,6 @@ Tags :  [[DSA]]
 Status : #complete     
 ~ ***Yash Agrawall*** ~  
 
-
 ---
 # Complete Binary Tree 
 
@@ -18,10 +17,6 @@ Status : #complete
 - Right child of the node K are at 2 × K + 1 index 
 - The parent of K is lower bound (K/2)
 - Easiest way to implement this is [[Array]]
-
-
----
-# Questions
 
 ---
 ###### Q1) Let LASTPOST, LASTIN and LASTPRE denote the last vertex visited in a post order, inorder and preorder traversal, respectively of a complete binary tree. Which of the following is always true? (GATE 2000) (1 Mark)

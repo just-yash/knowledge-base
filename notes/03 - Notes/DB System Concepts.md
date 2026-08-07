@@ -6,9 +6,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# DB System Concepts
-
----
 ## Data Model 
 - Collection of models used to describe the structure of DB 
 - Defines : 
@@ -108,9 +105,6 @@ User → Compiler → Optimizer → Execution → Storage
 Utilities are tools provided by DBMS to perform maintenance, optimization, and data management tasks.
 
 ---
-## Types of Utilities
-
----
 ### 1. Loading
 
 - Used to load existing data files into the database
@@ -151,10 +145,4 @@ Utilities are tools provided by DBMS to perform maintenance, optimization, and d
 
 1. [[Database Management System (DBMS) - CSE 14th.pdf]]
 
-
-
 ---
-# Questions 
-
-
-

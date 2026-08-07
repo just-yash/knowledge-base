@@ -18,7 +18,6 @@ Status : #incomplete
 - The symbol “$∴$” means **therefore**
 - {P1, P2, P3, P4, …. Pn} $\vdash$ C
 
-
 ---
 ## Validity of an Argument    
 
@@ -184,7 +183,6 @@ Status : #incomplete
 - Arguments themselves are neither true nor false  
   
 ---
-# Questions
 ###### Q1) Check if the Conclusion is a valid conclusion or not.
 ###### P1 : If it rains, children will not play.
 ###### P2 : It rains.
@@ -428,13 +426,6 @@ S : H'
 C : T'  
 ((h' + T' + M)(M' + H)(H'))' + (T')  
 ⇒ hTM' + MH' + H + T' = T' + hM + M+ H = T' + M + H  
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

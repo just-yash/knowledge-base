@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Programming
 
 - ## [[C]]
@@ -38,22 +20,4 @@ Status : #complete
 	- [[Errors]]
 	- [[Operators]]
 
-
-
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

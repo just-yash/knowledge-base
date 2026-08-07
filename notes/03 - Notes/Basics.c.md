@@ -89,12 +89,6 @@ Status : #complete
 - Indentations in C are purely for aesthetics → readability. They have no meaning. Compiler only check for `;`.
 
 ---
-# Questions
-
-
-
-
----
 # Summary 
 - C is a procedural, case-sensitive programming language created in 1972.
 - Used for OS, embedded systems, system utilities, databases, and performance-critical software.

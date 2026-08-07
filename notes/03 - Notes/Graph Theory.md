@@ -26,7 +26,6 @@ A graph $G = (V, E)$ consists of a non-empty set of vertices $V$ and a set of ed
 
 - **Simple Graph:** A graph with no self-loops or parallel edges.
 
-
 - **Undirected Edge:** When an edge has no direction i.e. $E_1 = (V_1,V_2) = (V_2, V_1)$ 
 - **Directed Edge:** When an edge has a direction i.e. $(V_1,V_2) \neq (V_2, V_1)$ 
 ###### Example 
@@ -51,9 +50,6 @@ A graph $G = (V, E)$ consists of a non-empty set of vertices $V$ and a set of ed
 - **Trivial Graph:** A graph consisting of only one vertex and no edges. ^e04fc8
 ###### Example 
 ![[Pasted image 20260323170439.png]]
-
----
-## Complete Graphs and Degrees
 
 ---
 ### Complete Graph ($K_n$)
@@ -161,9 +157,6 @@ To check further : use **Havel-Hakimi Theorem**
 5. It all zero in the end → it is a valid graph sequence 
  
 ---
-## Advanced Graph Classifications
-
----
 ### Bipartite Graphs (2 partition graphs)
 
 - A graph where the vertex set $V$ can be partitioned into two disjoint sets $V_1$ and $V_2$ such that every edge connects a vertex in $V_1$ to a vertex in $V_2$ but the edges don't connect vertices of the same set.
@@ -201,24 +194,6 @@ To check further : use **Havel-Hakimi Theorem**
 ![[Pasted image 20260326033139.png]]
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## Complement of a Graph ($\bar{G}$)
 
 The complement $\bar{G}$ of a simple graph $G$ has the same vertices as $G$, but an edge exists in $\bar{G}$ if and only if it does **not** exist in $G$.
@@ -230,9 +205,7 @@ The complement $\bar{G}$ of a simple graph $G$ has the same vertices as $G$, but
 ###### Example 
 ![[Pasted image 20260326033715.png]]
 
-
 ---
-# Questions
 ###### Q1) A simple graph G contains 21 edges, 3 vertices of degree 4 and all remaining vertices are of degree 2. Then number of vertices |v| is?
 
 A1) 18  
@@ -356,13 +329,6 @@ $|E(G^C| = 8(7)/2 - 12 = 28 - 12 = 16$
 - Graph matching is the core of → [[Multi-Object Tracking]] (tracklets are nodes, associations are edges)
 - Graph traversal algorithms connect to → [[Graph Traversal]]
 - Bipartite matching is used in data association → [[Algorithm Basics]]
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

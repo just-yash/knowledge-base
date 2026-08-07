@@ -81,20 +81,3 @@ Directly: **don't do this**. Here's exactly why.
 
 This approach takes 2–3 days total and gives you a genuine, defensible understanding of the literature — not a summarized version you half-understand and can't defend in a viva or peer review.
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

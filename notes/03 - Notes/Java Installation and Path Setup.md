@@ -208,20 +208,3 @@ Install JDK → Copy `bin` Path → Paste in Environment Variables → Verify wi
     
 2. YouTube Video : [YouTube Lecture](https://www.google.com/search?q=https://youtu.be/oA7kW3OiHTY)
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

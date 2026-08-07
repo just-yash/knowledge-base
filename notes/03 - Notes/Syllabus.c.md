@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
   
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Syllabus.c
 1. [[Basics.c|Introduction to C]]
 2. Keywords in C
@@ -45,22 +27,4 @@ Status : #complete
 18. Pointers
 19. File Handling
 
-
-
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

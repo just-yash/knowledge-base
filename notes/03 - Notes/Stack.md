@@ -148,28 +148,6 @@ There are three common Notations:
 5. After popping out the necessary elements, push the value after evaluating the formed expression back into the stack.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-# [[Recursion]]
-
----
-# Questions
 ###### <span style="color:rgb(0, 176, 240)">Q1)</span> Q Choose the correct alternatives (more than one may be correct) and write the corresponding letters only: The following sequence of operations is performed on a stack:
 ###### PUSH (10), PUSH (20), POP, PUSH (10), PUSH (20), POP, POP, POP, PUSH (20), POP. 
 ###### The sequence of values popped out is ? <span style="color:rgb(255, 192, 0)">(GATE - 1991) (2 Marks)</span>
@@ -376,27 +354,6 @@ _<span style="color:rgb(146, 208, 80)">3 x 1 + log * a 2 / -</span>_
 ###### (D) A Turing machine is needed is the general case
 
 <span style="color:rgb(0, 176, 240)">A15)</span>   <span style="color:rgb(146, 208, 80)">(A) One Stack is enough </span>
-
----
-###### All other Qs are in [[Recursion#Questions|Recursion - Questions]]
-
-
-
-
-
-
-
-
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 ## 🔗 Connections

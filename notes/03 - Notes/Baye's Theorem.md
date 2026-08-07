@@ -6,8 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Questions
-
 ###### Q1) Computers are supplied to an institution according to following information. 
 
 | Company | % of computer supplied | Probability of being detected |

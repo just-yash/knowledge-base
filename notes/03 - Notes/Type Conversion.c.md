@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Type Conversion.c
 - Converting a value from one data type to another. 
 
@@ -47,7 +29,6 @@ double c = a + b;        // c = 7.5 ; b = 2.5 ; a = 5
 
 char a = 10, b = 20;
 int c = a + b;           // c = 30 (int) ; a = 10(char) ; b = 20(char)
-
 
 float x = 3.2;           // x = 3.2f (By default 3.2 is considered as a double)
 ```
@@ -99,31 +80,7 @@ y = 2
 */ 
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-# Questions
 ###### Q1) What is type conversion?
 
 Type conversion is the process of converting a value from one data type to another.
@@ -192,8 +149,6 @@ Conversion from larger data type to smaller data type.
 
 char → short → int → long → float → double → long double
 
-
-
 ---
 # Summary 
 - Type conversion changes a value from one data type to another.
@@ -209,4 +164,3 @@ char → short → int → long → float → double → long double
 - Implicit conversion from larger type to smaller type may cause data loss.
 
 ---
-# References

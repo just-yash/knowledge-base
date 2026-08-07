@@ -6,9 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# DB Users & Administrators
-
----
 ## DBA (Database Administrator) (The 1st User)
 
 - Authorised access to the DB
@@ -60,9 +57,4 @@ The End User can be of Different Types :
 
 1. [[Database Management System (DBMS) - CSE 14th.pdf]]
 
-
 ---
-# Questions 
-
-
-

@@ -6,12 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Graph Traversal
-
----
-## Walks, Paths, Circuits And Cycle
-
----
 ### Walk
 - A finite alternating sequence of vertices and edges
 - beginning and ending with vertices
@@ -73,9 +67,6 @@ Status : #complete
 - Maximal connected subgraphs of a disconnected graph.
     
 ---
-## Special Graph Traversals
-
----
 ### Euler Graphs
 
 A graph that contains an **Euler Circuit** (traverses every edge exactly once and returns to the start).
@@ -93,24 +84,6 @@ A graph that contains a **Hamiltonian Cycle** (visits every vertex exactly once 
 #### Dirac’s Theorem
 - If $G$ is a simple graph with $n$ vertices ($n \geq 3$) and the degree of every vertex is at least $n/2$, then $G$ is Hamiltonian.
     
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
 ---
 ## Graph Coloring
 
@@ -130,8 +103,6 @@ The minimum number of colors required to color the vertices of a graph such that
 - [[Tree_DM]] : $\chi(G) = 2$
   
 ---
-# Questions 
-
 ###### Q1) A connected planar graph has 10 vertices and 15 edges. How many regions does it have?
 
 A1) Using Euler's Formula: $V - E + R = 2$.
@@ -177,7 +148,4 @@ G2 : Planer
 |Circuit|❌|✅|✅|
 |Cycle|❌|❌|✅|
 
-
-
 ---
-# References

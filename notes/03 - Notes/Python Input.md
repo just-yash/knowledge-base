@@ -6,9 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~     
 
 ---
-# Input in Python
-
----
 ## Core Idea 
 
 `input()` pauses program execution, waits for user to type, and **always returns a string** — regardless of what was typed. For numeric input, type cast immediately using `int()` or `float()`.
@@ -18,8 +15,6 @@ age = int(input("Enter age: "))   # standard pattern for numeric input
 ```
 
 ---
-## Explanation 
-
 ### Basic Syntax
 
 ```python

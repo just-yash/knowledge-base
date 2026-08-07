@@ -185,42 +185,8 @@ Example:
 - Python shows characteristics of 3GL, 4GL, and limited 5GL styles.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Basic Components of Every Programming Language
 1. Language Translator 
 2. Library → Set of predefined functions
 
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

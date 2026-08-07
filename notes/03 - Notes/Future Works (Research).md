@@ -70,20 +70,3 @@ Status : #incomplete
 
 > All applications share the same core pipeline (detection → embedding → matching → tracking → ReID), but differ in the final application layer and evaluation metrics.
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

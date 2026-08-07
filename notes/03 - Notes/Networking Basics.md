@@ -6,24 +6,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Networking Basics
 Networking is the basics of the whole internet. Its how computers interact with each other.
 ### Why Networking? 
@@ -99,21 +81,4 @@ WiFi Routers < Local Routers < ISP Routers.
 	- Port 80 : HTTP : Hyper Text Transfer Protocol
 	- Port 443 : Hyper Text Transfer Protocol Secure.
 
-
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

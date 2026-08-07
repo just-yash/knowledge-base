@@ -15,32 +15,10 @@ Status : #complete
 	- Min Heap : The value at N is less than the value at any of the children of N 
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## Insertion in Heap 
 
 - Insert the elements in order as long as the condition for it being a heap is satisfied 
 - When the condition breaks, swap the elements 
-
-
----
-# Questions
 
 ---
 ###### Q1) A max-heap is a heap where the value of each parent is greater than or equal to the value of its children. Which of the following is a max-heap? (GATE 2011) (1 Marks)

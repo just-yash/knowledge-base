@@ -23,18 +23,6 @@ Source : [YouTube Podcast : Abhi And Niyu](https://youtu.be/FR3liBlMOlc?si=ys_bj
 - Different historical narratives taught for convenience divide society and hinder national unity.
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
 # Distinguishing Mughals and Marathas
 
 - The argument that both were simply expanding empires is refuted.
@@ -101,20 +89,6 @@ Source : [YouTube Podcast : Abhi And Niyu](https://youtu.be/FR3liBlMOlc?si=ys_bj
 - If Shivaji Maharaj were alive, he would first address internal divisions and those who misuse his name for votes but neglect his forts.
 - "Swarajya" is a continuous process, not a destination, requiring the participation of every "Mawale" (citizen).
 - Teaching Shivaji Maharaj's history is vital for children, parents, police officers, and political leaders to prevent his legacy from becoming merely history.
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

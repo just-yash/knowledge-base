@@ -6,9 +6,6 @@ Source : [Mohak Mangal](https://youtu.be/7ySNFEMl1yY?si=7PEq8k9UfwahM-1l)
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Madhubala: A Tragic Life
-
----
 ## Early Life and Background
 
 - Born Mumtaz Jahan Begum Dehlavi on February 14, 1933.
@@ -120,24 +117,7 @@ Source : [Mohak Mangal](https://youtu.be/7ySNFEMl1yY?si=7PEq8k9UfwahM-1l)
 - An American magazine featured her on its cover with the headline, "The Biggest Star in the World And She’s Not In Beverly Hills."
 - Her life, much like her films, was both blockbusting and tragic, yet her work continues to resonate, securing her place as one of India's greatest stars.
 
-
-
-
----
-# Questions
-
-
-
-
-
 ---
 # References 
 
-
-
-
 ----
-# Summary
-
-
-

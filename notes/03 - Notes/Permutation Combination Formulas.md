@@ -6,9 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Permutation Combination Formulas
-
----
 # FACTORIAL
 
 - Definition:
@@ -19,7 +16,6 @@ Status : #complete
 
 - Recursive form:
   $$n! = n \cdot (n-1)!$$
-
 
 # PERMUTATIONS (ORDER MATTERS)
 
@@ -34,7 +30,6 @@ Status : #complete
 
 - With identical objects:
   $$\frac{n!}{p_1! \cdot p_2! \cdot \dots \cdot p_k!}$$ $$\frac {(\sum _{i = 1} ^{k} p_{i})!}{\prod^{k}_{i = 1} p_{i}!}$$
-
 
 # COMBINATIONS (ORDER DOES NOT MATTER)
 
@@ -53,12 +48,10 @@ Status : #complete
 - Pascal identity:
   $$^nC_r = ^{n-1}C_r + ^{n-1}C_{r-1}$$
 
-
 # COMBINATIONS WITH REPETITION
 
 - Formula:
   $$^{n+r-1}C_r$$
-
 
 # SPECIAL CASES
 
@@ -71,12 +64,10 @@ Status : #complete
 - Derangements:
   $$!n = n! \left(1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \dots \right)$$
 
-
 # [[probability]] CONNECTION
 
 - Basic probability:
   $$P(E) = \frac{\text{favorable outcomes}}{\text{total outcomes}}$$
-
 
 # IMPORTANT PATTERNS
 
@@ -88,7 +79,6 @@ Status : #complete
 
 - Distribution (stars and bars):
   $$^{n+r-1}C_r$$
-
 
 # CORE FORMULAS SUMMARY
 
@@ -107,20 +97,3 @@ Status : #complete
 - Circular:
   $$(n-1)!$$
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

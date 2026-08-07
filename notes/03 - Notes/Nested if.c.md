@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Nested if.c
 - A nested `if` means an `if` statement placed inside another `if` or `else` block.
 - It is used when a decision depends on multiple conditions evaluated in sequence.
@@ -113,29 +95,7 @@ int main(){
 
 - nested if can cause errors, hence its always wiser to use [[Operators.c#4. Logical Operators|logical operators]] wherever we can.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-# Questions
 ###### Q1) WAP to input marks of a student in 3 subjects, Student is pass if mark in all subjects are greater than 50, if any 2 then compartment else fail.
 
 ```c
@@ -173,13 +133,6 @@ int main(){
 	return 0;
 }
 ```
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

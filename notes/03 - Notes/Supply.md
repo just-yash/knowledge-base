@@ -239,24 +239,6 @@ Not all firms prioritize immediate profit maximization.
 - **Expected Price Fall:** If sellers expect prices to crash, they will increase current supply to sell off stock before the value drops.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## 9. Infrastructure (Transport and Communication)
 
 - **Developed Infrastructure:** Good roads and communication networks reduce transportation costs and time delays.
@@ -264,22 +246,9 @@ Not all firms prioritize immediate profit maximization.
 - **Supply Impact:** Better infrastructure lowers the cost of reaching the market, thereby increasing supply.
 
 ---
-# Questions
-
 ###### Q1) Why does a producer increase supply when prices rise?
 
 A1) A producer increases supply because higher prices (assuming costs remain constant) lead to higher profit margins. The objective of most firms is profit maximization, and selling more at a higher price achieves this.
-
----
-
-
-
-
----
-# Summary 
-
-
-
 
 ---
 # References 

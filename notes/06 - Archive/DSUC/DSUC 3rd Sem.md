@@ -20,7 +20,6 @@ Source :
 ## 2022-2023
 ![[Pasted image 20251209204723.png]]![[Pasted image 20251209204729.png]]
 
-
 ---
 # PRIORITY LEVELS — BASED ON REPEAT FREQUENCY + LATEST WEIGHT
 
@@ -143,16 +142,5 @@ Index : Unique identifiers to each array element: range 0 to size-1
 - deleting elements
 - edit/update elements
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
----
 # Questions
 ----
-# Summary
----
-# References 

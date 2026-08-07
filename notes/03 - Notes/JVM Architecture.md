@@ -218,20 +218,3 @@ Load (Class Loader) → Store (Memory Areas) → Execute (Interpreter/JIT).
     
 2. YouTube Video : [YouTube Lecture](https://www.google.com/search?q=https://youtu.be/ro-1Km_AC7I)
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

@@ -6,9 +6,6 @@ Source : [Raj Shamani : Vaibhav Sinsity](https://youtu.be/kKNoBH0iE1k?si=HxT_VeG
 ~ ***Yash Agrawall*** ~     
 
 ---
-# AI, Jobs & Agents — How to Win in the Age of Automation (Figuring Out AI Podcast)
-
----
 ## Key Ideas 
 
 - 80% of white-collar jobs have high AI automation potential (Anthropic's "Observed Exposure" index)

@@ -80,30 +80,6 @@ int main(){
 }
 ```
 
-
-
-
-
-
-
-
-
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
 ---
 # References 
 

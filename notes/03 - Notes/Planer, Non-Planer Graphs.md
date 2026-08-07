@@ -53,24 +53,6 @@ Status : #complete
 - 
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ### Euler’s Formula
 
 #### Connected Planer Graph
@@ -99,13 +81,7 @@ $K$ → No. of connected components
 - V = 9 ; E = 9 ; R = 4 ; K = 3
 - 9 - 9 + 4 - 3 = 1
 
-
-
-
-
 ---
-# Questions
-
 ###### Q1) How many simple non-isomorphic graphs are possible with :
 ###### a) 4 vertices and 2 edges? 
 ###### b) 4 vertices and 3 edges
@@ -132,11 +108,3 @@ A3)  3
 ![[Pasted image 20260327222801.png]]   
 
 ---
-# Summary 
-
-
-
-
-
----
-# References

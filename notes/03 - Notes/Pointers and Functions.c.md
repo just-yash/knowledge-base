@@ -96,25 +96,6 @@ In Call by Reference:
     
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
 # Summary
 
 - **Call by Value:** Simple but cannot modify original data; uses more memory for large structures due to copying.
@@ -132,7 +113,3 @@ In Call by Reference:
 
 - [[pointers.c]]
 ---
-# Questions 
-
-
-

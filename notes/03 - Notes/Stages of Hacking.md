@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Stages of Hacking
 > To know your enemy, you must become your enemy.
 >> ~ Sun Tzu (Great Chinese Warrior)
@@ -109,21 +91,6 @@ Tools:
 		- scheduled tasks
 - Modifying timestamps (timestomping)
 - remove malware from obvious locations
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

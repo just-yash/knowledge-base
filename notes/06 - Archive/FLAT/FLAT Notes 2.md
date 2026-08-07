@@ -5,18 +5,6 @@ Source :
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
 # FLAT Notes 2
 
 - Symbols : Anything used to represent something 
@@ -35,19 +23,4 @@ Source :
 	- tokens : alphabets/symbols 
 	- 
 
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

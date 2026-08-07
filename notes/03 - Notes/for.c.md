@@ -43,24 +43,6 @@ for (A; B; C)
 6. Go back to step 2
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ###### Examples : 
 ```c
 // Q. WAP to print abc 10 times using for loop
@@ -136,19 +118,6 @@ for (i = 1; i <= 10; printf("%d", ++i));
 
 ```
 
-
-
-
-
-
-
-
----
-# Questions
-
-
-
-
 ---
 # Summary 
 
@@ -185,8 +154,6 @@ for (i = 1; i <= 10; printf("%d", ++i));
 - Misuse of the comma operator in the condition can cause subtle logic errors.
     
 - `for(;;)` creates an infinite loop.
-
-
 
 ---
 # References 

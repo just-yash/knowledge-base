@@ -127,16 +127,5 @@ Source :
 	- Exceptions are caused by user errors or unforeseen programmatic issues that can be handled 
 	- Errors represent conditions beyond the control of the programmer
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
----
 # Questions
 ----
-# Summary
----
-# References 

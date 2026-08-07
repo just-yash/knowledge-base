@@ -41,7 +41,6 @@ More in Detail in [[Logical Operators|Logical Operators]]
 - Using relations to solve or find more relations
 - Applications of it is used in [[Arguments]]
 
-
 ---
 ## Arguments
 
@@ -77,7 +76,3 @@ More in Detail in [[Predicate Logic]]
 1. [YouTube Lecture](https://youtu.be/fzvnQciBJOs?si=6GxYLmVlQnhBbcQP)
 
 ---
-# Questions 
-
-
-

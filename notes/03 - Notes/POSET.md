@@ -218,10 +218,7 @@ A prime example of a Boolean lattice is the power set of any set $S$, ordered by
 ###### Example 
 ![[Pasted image 20260322181553.png]]
 
-
 ---
-# Questions
-
 ###### Q1) Consider a Partial order relation and convert into Hasse Diagram. $R$ = {(1, 1), (1, 2), (1, 3), (1, 6), (2, 2), (2, 6), (3, 3), (3, 6), (6, 6)}
 
 A1) 
@@ -241,7 +238,6 @@ A1)
 ###### j) ![[Pasted image 20260321171944.png]]
 ###### k) ![[Pasted image 20260321171954.png]]
 ###### l) ![[Pasted image 20260321172005.png]]
-
 
 A3) 
 a : valid  
@@ -299,10 +295,6 @@ A5)
 ###### d) subset {a, c, e, g} is a lattice
 
 A6) a, c 
-
----
-# Summary
-
 
 ---
 # References

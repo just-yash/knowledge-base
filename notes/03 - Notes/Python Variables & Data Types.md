@@ -6,9 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~     
 
 ---
-# Variables & Data Types in Python
-
----
 ## Key Ideas 
 
 - A variable = a named memory location that stores a value

@@ -144,32 +144,8 @@ if (5 = x);    // compile-time error
 ```
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Usability in ternary operators
 - we cannot use Simple if in [[Operators.c#8. Ternary Operator|ternary operator]] as [[Operators.c#8. Ternary Operator|ternary operator]] should have both `if` and `else`.
-
----
-# Questions
-
-
-
 
 ---
 # Summary 

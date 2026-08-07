@@ -148,24 +148,6 @@ printf("%d", *(p + 1));       // 20
 ```
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ### Special Pointer Types
 
 | **Type**                         | **Description**                                          | **Key Note for Exams**                                                                                                                              |
@@ -175,19 +157,7 @@ printf("%d", *(p + 1));       // 20
 | **Wild Pointer**                 | An uninitialized pointer.                                | Danger! Points to an arbitrary memory location.                                                                                                     |
 | **Dangling Pointer**             | Points to a memory location that has been freed/deleted. | Occurs after `free(ptr)` if `ptr` isn't set to `NULL`.                                                                                              |
 
-
-
-
-
-
-
-
-
-
-
 ---
-# Questions
-
 ###### Q1) How to define a pointer?
 
 A1) `int *ptr;` or `int* ptr;`
@@ -252,13 +222,4 @@ printf("%p", **&*&p);      // 5
 printf("%p", *&*&**&*p1);  // 5
 ```
 
-
 ---
-# Summary 
-
-
-
-
-
----
-# References

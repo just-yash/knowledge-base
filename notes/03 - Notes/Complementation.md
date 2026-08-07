@@ -15,7 +15,6 @@ Status : #complete
 	- f( a , b , c , d , 0 , 1 , + , . ) ⇔ f'( a' , b' , c' , d' , 1 , 0 , . , + )
 
 ---
-# Questions
 ###### Q1) Consider the following Boolean expression F = (X + Y + Z)(X' + Y)(Y' + Z). Which of the following Boolean expression is/are equivalent to F' (complement of F)?
 ###### a) (X' + Y' + Z')(X + Y')(Y + Z')
 ###### b) XY' + Z'
@@ -32,13 +31,4 @@ b) XY' + Z' = (100)(101)(000)(010)(100)(110) = ∑ m(5, 6, 0, 2, 4)
 c) (X + Z')(Y' + Z') = (0 0 1)(0 1 1)(0 1 1)(1 1 1) = ∏ M(1, 3, 7)
 d) XY' + YZ' + X'Y'Z' = (100)(101)(010)(110)(000) = ∑ m(0, 2, 4, 5, 6)
 
-
 ---
-# Summary 
-
-
-
-
-
----
-# References

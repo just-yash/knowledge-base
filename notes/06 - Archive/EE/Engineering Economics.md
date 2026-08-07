@@ -463,19 +463,6 @@ If you master these perfectly, **60/60 becomes realistic**:
 - Depreciation methods
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
-
 # Important Note
 
 When making notes, **not every topic should have the same length**.
@@ -513,12 +500,6 @@ About **70% of exam marks come from just these areas:**
 1. [[EE.pdf]]
 2. [[EENOTESBYSIR.pdf]]
 
-
-
 ---
 # Questions
 ----
-# Summary
-
-
-

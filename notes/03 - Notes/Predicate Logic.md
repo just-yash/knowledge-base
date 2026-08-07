@@ -246,24 +246,6 @@ True
 - Validity questions often use counterexamples
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Summary
 - Predicate Logic extends Propositional Logic
 - Quantifiers give power and complexity
@@ -276,7 +258,3 @@ True
 
 1. [YouTube Lecture](https://youtu.be/BPI-o44e4s8?si=iMJEulVDKtte7L3D)
 ---
-# Questions 
-
-
-

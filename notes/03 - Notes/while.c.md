@@ -35,7 +35,6 @@ while (expression)
 
 > This is why its called entry controlled.
 
-
 ---
 ###### Examples : 
 ```c
@@ -129,15 +128,7 @@ printf("%d ", i);
 - step 2 : if `true` print `(i)` 
 - step 3 : go to step 1
 
-
-
-
-
-
-
-
 ---
-# Questions
 ###### Q1) Find the Output
 ```c
 int i = 1;
@@ -311,13 +302,6 @@ return 0;
 }
 ```
 
-
-
-
-
-
-
-
 ---
 # Summary 
 
@@ -337,8 +321,6 @@ return 0;
 	- Whether a formula can replace iteration
 
 > A `while` loop is simple syntax wrapped around dangerously powerful control flow.
-
-
 
 ---
 # References 

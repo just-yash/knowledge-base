@@ -161,24 +161,6 @@ The local Buffer is common for every executing transaction. Every Transaction be
 |         | write(A) |
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## Conclusion of Schedules 
 - We do not have any method of proof that a schedule is consistent
 - But we can understand that a serial schedule is always consistent
@@ -224,7 +206,6 @@ Instructions are said to be conflicting to each other if these three conditions 
 - A schedule S is conflict serializable, if it is conflict equivalent to a serial schedule
 
 ---
-# Questions
 ###### <span style="color:rgb(0, 176, 240)">Q1)</span> Which of the following is NOT a part of the ACID properties of database transactions?
 ###### (a) Atomicity 
 ###### (b) Consistency 
@@ -405,18 +386,6 @@ S1 is not conflict serializable as it forms a cycle
 
 S2 is conflict serializable as it doesn't form a cycle
 ![[Pasted image 20260307225852.png]]
-
----
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

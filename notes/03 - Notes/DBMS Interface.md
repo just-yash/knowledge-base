@@ -60,9 +60,4 @@ Status : #complete
 
 1. [[Database Management System (DBMS) - CSE 14th.pdf]]
 
-
 ---
-# Questions 
-
-
-

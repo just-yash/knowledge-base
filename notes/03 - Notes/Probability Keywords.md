@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Keyword List
 
 | Operation | Keywords | Formula |
@@ -38,9 +20,6 @@ Status : #complete
 | **Union (A ∪ B ∪ C)** | - at least one of A, B, C | P(A)+P(B)+P(C) − P(AB) − P(BC) − P(CA) + P(ABC) |
 | **Exactly One (A, B, C)** | - exactly one of A, B, C <br> - only one occurs | P(A)+P(B)+P(C) − 2[P(AB)+P(BC)+P(CA)] + 3P(ABC) |
 | **Exactly Two (A, B, C)** | - exactly two occur | P(AB)+P(BC)+P(CA) − 3P(ABC) |
-
----
-# Questions
 
 ---
 ###### Q1) Let A and B be two events such that P(A ∪ B)' = 1/6, P(A ∩ B) = 1/6 and P(A') = 1/4. Where A' stands for the complement of the event A. The event A and B are 

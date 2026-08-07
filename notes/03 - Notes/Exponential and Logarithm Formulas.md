@@ -6,10 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~      
 
 ---
-# Exponential and Logarithm Formulas 
-
----
-
 # EXPONENTIAL LAWS
 
 - Product rule:

@@ -96,7 +96,6 @@ Rationale
 | 1    | 8      | 14                   | -1                      | 3      |
 | 1    | 9      | 13                   | -2                      | 3      |
 
-
 Explanation based on standard notes
 
 - Stage I ends where Average Product ($AP$) is maximum
@@ -115,7 +114,6 @@ Explanation based on standard notes
 
 - When a given proportionate change in all inputs leads to a greater proportionate change in output, it is known as Increasing Returns to Scale
 - It is also known as Economies of Scale
-
 
 **Example:**
 
@@ -182,7 +180,6 @@ Explanation based on standard notes
 $$Q = f(\text{Land, Labour,Capital, Organization})$$
 
 - where $Q$ = output
-
 
 **Short Run Production Function:**
 
@@ -474,24 +471,11 @@ $$MC = \frac{\Delta TVC}{\Delta Q}$$$$MC=\frac{\Delta TVC}{\Delta Q}$$​
 Opportunity cost
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
 ###### Q8) 
 | 8   | Income received from the sale of output is knows as ___ (Revenue / Expenses)              | 1   | (2022 Q1g) |
 | --- | ----------------------------------------------------------------------------- | --- | ---------- |
 ###### A8) 
 Revenue  
-
 
 ---
 # References 
@@ -501,7 +485,3 @@ Revenue
 ---
 # Questions
 ----
-# Summary
-
-
-

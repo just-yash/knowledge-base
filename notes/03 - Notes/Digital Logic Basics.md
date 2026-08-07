@@ -39,10 +39,7 @@ Electronic Systems are generally of two types:
 	- Eg: ICs
 - Less Cost
 
-
 - Used in Communication, business, transactions, traffic control. space guidance, medical treatment, weather forecasting, the internet and many other commercial, industrial and scientific enterprises.
-
-
 
 #### Disadvantages of Digital System
 - Only Analog Signal is available in the real world
@@ -139,24 +136,6 @@ W = ac' + ab + a'b'c
 ![[Pasted image 20251228182025.png]]
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Syllabus
 1. [[Logic Gates]]
 	1. NOT
@@ -199,21 +178,6 @@ W = ac' + ab + a'b'c
 		2. Floating Point Representation
 			1. Single Precision
 			2. Double Precision
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

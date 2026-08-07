@@ -5,24 +5,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Dice
 
 | no. of rolls / dice | n(S) |
@@ -95,9 +77,6 @@ P(22) = 10/1296
 S = {(1, 1, 1, 3) , (1, 1, 2, 2) , …. }          
 n(S) = $\frac{4!}{3!}+\frac{4!}{2!\times 2!}=4 + 6 = 10$       
 P(6) = 10/1296    
-
----
-# Questions
 
 ---
 ###### Q1) Four fair six-sided dice are rolled. The probability that the sum of the results being 22 is x/1296. The value of x is ?  (GATE-2014) (CS-Set 1)

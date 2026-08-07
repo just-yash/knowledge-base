@@ -111,23 +111,6 @@ if (isalpha(c) && isupper(c))
 ```
 - Short-circuiting applied normally.
 
-
-
-
-
-
-
-
-
-
-
-
----
-# Questions
-
-
-
-
 ---
 # Summary 
 - Declared in `<ctype.h>`
@@ -143,8 +126,6 @@ if (isalpha(c) && isupper(c))
 - Safer and more portable than manual ASCII comparisons
     
 - Arguments should be cast to `unsigned char` to avoid undefined behavior
-
-
 
 ---
 # References 

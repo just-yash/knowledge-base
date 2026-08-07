@@ -83,24 +83,6 @@ Hello    World
 - Hex escape sequences continue until a non-hex character is found.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # `\0` v/s `0` v/s `NULL`
 
 These three look similar but have **different meanings and uses** in C.
@@ -116,26 +98,4 @@ These three look similar but have **different meanings and uses** in C.
 '\0' != NULL;    // different concept
 ```
 
-
-
-
-
-
-
-
-
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

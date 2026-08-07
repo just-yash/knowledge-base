@@ -25,9 +25,6 @@ b) 4/52 + 12/52 = 16/52
 c) 1 - 16/52 = 36/52       
 
 ---
-# Questions
-
----
 ###### Q1) Two cards are drawn at random in succession with replacement from a deck of 52 well shuffled cards, probability of getting both 'Aces' is ? 
 ###### a) 1/169 
 ###### b) 2/169 

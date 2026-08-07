@@ -6,9 +6,6 @@ Status : #incomplete
 ~ ***Yash Agrawall*** ~     
 
 ---
-# CNN 
-
----
 ## Core Idea 
 
 - Convolution Neural Network
@@ -28,41 +25,4 @@ Status : #incomplete
 	- hierarchical visual features 
 - CNNs do not require manual feature extraction 
 
-
-
-
-
-
-
-
-
 ---
-## Explanation 
-
-
-
-
-
-
-
-
-
-
-
----
-## Why It Matters 
-
-
-
-
-
----
-# Questions 
-
-
-
-
-
-
----
-# References 

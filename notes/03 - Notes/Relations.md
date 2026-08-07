@@ -6,9 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~   
 
 ---
-# Cartesian Product
-
----
 ### Definition
 
 - The Cartesian product of two sets $A$ and $B$, denoted $A \times B$, is the set of all ordered pairs $(a, b)$ where $a \in A$ and $b \in B$. $$A \times B = \\\{(a, b) \mid a \in A \text{ and } b \in B\\\}$$
@@ -24,9 +21,6 @@ Status : #complete
 - Let $A = \\\{1, 2\\\}$, $B = \\\{a, b, c\\\}$.
 - $A \times B = {(1, a), (1, b), (1, c), (2, a), (2, b), (2, c)}$
 - $|A \times B| = 2 \times 3 = 6$
-
----
-# Relation
 
 ---
 ### Definition
@@ -45,9 +39,6 @@ Status : #complete
 ###### Example
 - Let $A = {1, 2}$. $A \times A = {(1, 1), (1, 2), (2, 1), (2, 2)}$.
 - Total relations on $A = 2^{2^2} = 2^4 = 16$.
-
----
-# Operations on Relations
 
 ---
 ## 1. Complement of a Relation
@@ -81,9 +72,6 @@ $$\overline{R} = (A \times B) - R$$
 ## 3. Composition of Relations
 
 - If $R$ is a relation from $A$ to $B$, and $S$ is a relation from $B$ to $C$, the composite relation $S \circ R$ from $A$ to $C$ is: $$S \circ R = {(a, c) \mid a \in A, c \in C, \exists \text{ b} \in B \text{ such that } (a, b) \in R \text{ and } (b, c) \in S}$$
----
-## Representation of Relations
-
 ---
 ### 1. Set Representation
 
@@ -142,9 +130,6 @@ $$
 </table>
 
 ---
-# Properties of Relations
-
----
 ### Reflexive Relation
 
 - $$\forall a \in A, (a, a) \in R$$
@@ -186,7 +171,6 @@ $$
 	- {(1,1), (1,2), (2,1), (2,2)} : Neither Reflexive not Irreflexive
 	- {(1,1), (2,2), (3,3), (1,3), (2,1)} : Reflexive
 	- {(1,3), (2,1), (2,3), (3,2)} : Irreflexive
-
 
 ---
 ### Symmetric Relation
@@ -338,7 +322,6 @@ $R = \\\{(a,a),(a,c),(b,b),(c,a),(c,b)\\\}$
   </tr>
 </table>
 
-
 ---
 ### Equivalence Relation
 
@@ -403,7 +386,6 @@ $A = \\\{1, 2, 4, 8\\\}; [A, /] ; / = \\\{(a, b) | (a, b) \in R \text{ and } \fr
  &  &  & (8, 8)
 \end{bmatrix}$$
 
-
 ---
 ## Closures of Relations
 
@@ -419,8 +401,6 @@ $A = \\\{1, 2, 4, 8\\\}; [A, /] ; / = \\\{(a, b) | (a, b) \in R \text{ and } \fr
 
 ---
 
-## Questions
-
 ###### Q1) Let $R = {(1,1), (1,2), (2,1), (2,2), (3,3)}$ be a relation on $A={1,2,3}$. Is it antisymmetric?
 
 A1) No. Here $(1,2) \in R$ and $(2,1) \in R$, but $1 \neq 2$. It violates the definition of antisymmetry.
@@ -429,13 +409,6 @@ A1) No. Here $(1,2) \in R$ and $(2,1) \in R$, but $1 \neq 2$. It violates the de
 ###### Q2) How many reflexive relations are possible on a set with 3 elements?
 
 A2) $2^{n^2-n} = 2^{3^2-3} = 2^{9-3} = 2^6 = 64$.
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

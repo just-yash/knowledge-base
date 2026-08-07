@@ -148,7 +148,6 @@ $$
   </tr>
 </table>
 
-
 ---
 ### 3. Unitary Elastic Demand
 
@@ -253,7 +252,6 @@ $$
 | $( >1 )$         | Elastic       | Strong response  |
 | $( <1 )$         | Inelastic     | Weak response    |
 
-
 ---
 # Income Elasticity of Demand
 
@@ -344,24 +342,6 @@ Interpretation:
 Goods like tobacco and alcohol generally have **inelastic demand**.
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Summary
 
 - Elasticity of demand measures the **responsiveness of demand** to changes in economic factors.
@@ -374,7 +354,3 @@ Goods like tobacco and alcohol generally have **inelastic demand**.
 
 1. [YouTube Lecture](https://youtu.be/SwLFp5F2MAc?si=MfHGAzzWQo5nz3Z1)
 ---
-# Questions 
-
-
-

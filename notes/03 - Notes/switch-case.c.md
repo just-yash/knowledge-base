@@ -332,24 +332,6 @@ switch (x > y)
 > for ranges, `else-if` is more suitable
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Difference between [[else-if ladder.c|else-if ladder]] & `switch-case`
 
 | [[else-if ladder.c\|else-if ladder]]                  | `switch-case`                                                                     |
@@ -360,23 +342,6 @@ switch (x > y)
 | 4. not well structured → uses a lot of curly brackets | 4. well structured → use curly brackets only once                                 |
 | 5. more powerfull                                     | 5. less powerfull                                                                 |
 | 6. Slower compared to `switch-case`                   | 6. Faster compared to `else-if ladder`                                            |
-
-
-
-
-
-
-
-
-
-
-
-
----
-# Questions
-
-
-
 
 ---
 # Summary 
@@ -398,8 +363,6 @@ switch (x > y)
 - Logical operators cannot be used inside `case`
     
 - Nested `switch` statements are allowed
-
-
 
 ---
 # References 

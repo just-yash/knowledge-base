@@ -116,26 +116,3 @@ Return clean Markdown formatted specifically for Obsidian.
 ```
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
-
-
----
-# Questions

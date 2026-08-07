@@ -163,8 +163,3 @@ A2) They provide persistent, real-time visual verification of vehicle movements,
 - **Global Impact:** Conflict in this region threatens the Strait of Hormuz, a critical energy corridor for 20% of global oil.
     
 ---
-# References
-
-
-
-

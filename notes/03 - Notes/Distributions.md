@@ -6,10 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Probability Distributions
-
----
-
 ## Discrete Distributions
 
 ## Bernoulli Distribution
@@ -200,20 +196,3 @@ Status : #complete
     
 - Normal → symmetric bell curve
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters
----
-# Questions
----
-# References 

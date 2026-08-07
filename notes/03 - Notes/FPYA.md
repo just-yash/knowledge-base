@@ -7,24 +7,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~    
  
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Personal Financial Planning
 
 ## Course Objective:
@@ -38,17 +20,3 @@ Status : #complete
 - Buying and Renting
 
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

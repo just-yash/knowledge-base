@@ -6,9 +6,6 @@ Source : [Dhruv Rathe](https://youtu.be/rygbPO6hM9Y?si=mDBGh37pL4P1uBCI)
 ~ ***Yash Agrawall*** ~  
 
 ---
-# Dietary Practices and Philosophy in Hindu Traditions
-
----
 ## Scriptural Perspectives on Meat Consumption
 
 ### Contradictory Directives in Ancient Texts
@@ -158,19 +155,6 @@ Source : [Dhruv Rathe](https://youtu.be/rygbPO6hM9Y?si=mDBGh37pL4P1uBCI)
     
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
-
 # References
 
 - **Mahabharata:** Anushasana Parva, Vana Parva, Udyoga Parva, Drona Parva.
@@ -183,8 +167,4 @@ Source : [Dhruv Rathe](https://youtu.be/rygbPO6hM9Y?si=mDBGh37pL4P1uBCI)
     
 - **Books:** _The East and the West_ by Swami Vivekananda; _The Untouchables_ by Dr. B.R. Ambedkar.
 
-
-
-
 ---
-# Questions

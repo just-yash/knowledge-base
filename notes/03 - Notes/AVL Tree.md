@@ -73,9 +73,6 @@ Similarly for R
 | Delete    | $O\log{n}$   | $O\log{n}$ |
 
 ---
-# Questions
-
----
 ###### Q1) What is the maximum height of any AVL tree with 7 nodes? Assume that the height of a tree with a single node is 0. (GATE 2009)(1 Mark)
 ###### a) 2
 ###### b) 3

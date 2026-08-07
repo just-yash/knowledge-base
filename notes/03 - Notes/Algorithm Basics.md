@@ -78,23 +78,6 @@ int main()
 
 - First we do Theoretical (Asymptotic) Analysis than we do Practical (A Posterior) Analysis
 
-
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
 ---
 ## 🔗 Connections
 

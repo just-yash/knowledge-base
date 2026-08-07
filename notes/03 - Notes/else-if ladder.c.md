@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # else-if ladder.c
 An `else if` ladder is a multi-way conditional control structure that checks conditions sequentially from top to bottom and executes only the first block whose condition evaluates to non-zero.
 
@@ -97,11 +79,7 @@ else if (marks >= 90)
 - Ordering Matters
 - only one block executes
 
-
-
-
 ---
-# Questions
 ###### Q1) WAP to print grade of student in range of marks is given below : 
 ###### 60 - 69 → D  
 ###### 70 - 79 → C  
@@ -130,11 +108,6 @@ int main(){
 }
 ```
 
-
-
-
-
-
 ---
 # Summary 
 
@@ -153,9 +126,6 @@ int main(){
 - The final `else` block is optional and acts as a default case.
     
 - `else-if` ladders are preferred over nested `if` when conditions are mutually exclusive.
-
-
-
 
 ---
 # References 

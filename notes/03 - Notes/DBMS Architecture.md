@@ -64,9 +64,4 @@ Client → Application Server → DB Server → Response back
 
 1. [[Database Management System (DBMS) - CSE 14th.pdf]]
 
-
 ---
-# Questions 
-
-
-

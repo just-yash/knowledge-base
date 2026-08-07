@@ -84,40 +84,8 @@ Status : #complete
 | `>>`             | Right Shift |
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## 7. Conditional / Ternary Operator
 - Shorthand for if-else
 - Depends on the Language
 
 ---
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
----
-# References

@@ -71,24 +71,6 @@ Status : #complete
 - $r + \mu = e$ (total no. of edges)
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## Spanning Forest 
 - **Spanning Forest**: A collection of spanning trees for each connected component of a disconnected graph.
 - For a disconnected graph of total $n$ vertices and $k$ [[Graph Theory#Graph Components|components]] : 
@@ -97,8 +79,6 @@ Status : #complete
 	- $r + \mu = e$ (total no. of e)
 
 ---
-# Questions
-
 ###### Q1) Let T be a tree with 10 vertices. The sum of the degrees of all vertices in T is? 
 
 A1) 18  
@@ -106,14 +86,4 @@ $|v| = 10$
 ⇒ $|E| = 10 - 1 = 9$   
 ⇒ $∑ deg(G) = 2 \times  9 = 18$    
 
-
-
 ---
-# Summary 
-
-
-
-
-
----
-# References

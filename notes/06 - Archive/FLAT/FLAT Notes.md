@@ -217,18 +217,6 @@ w = $q_{0}abba$
 | $\epsilon$ | epsilon         |
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
 ### Strings 
 
 - A finite sequence of symbols chosen from some alphabets 
@@ -279,19 +267,6 @@ w = $q_{0}abba$
 
 1. $S = S^*$
 
-
-
----
-# Questions
-
-
-
-
-
 ---
 # References
 ----
-# Summary
-
-
-

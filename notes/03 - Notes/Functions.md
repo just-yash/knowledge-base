@@ -37,9 +37,6 @@ Status : #complete
 3. **Many-to-One**: Multiple elements in $A$ can map to the same element in $B$; this is still a valid function.
 
 ---
-## Types of Functions
-
----
 ### Injection / One-to-One Function
 - A function $f: A \to B$ is injective if distinct elements in $A$ map to distinct elements in $B$.
 - **Condition**: $|A| \le |B|$ must hold for an injection to exist.
@@ -74,9 +71,6 @@ A function $f: A \to B$ is surjective if every element in the codomain $B$ has a
 - Total no. of bijective functions possible = $4! = 24$
 
 ---
-## Special Functions and Operations
-
----
 ### Composition of Functions
 Given $f: A \to B$ and $g: B \to C$, the composition $(g \circ f)(x)$ is defined as $g(f(x))$.
 - **Domain of $g \circ f$**: Set $A$.
@@ -91,7 +85,6 @@ If $f: A \to B$ is a bijection, then $f^{-1}: B \to A$ is defined by:
 $$f^{-1}(y) = x \iff f(x) = y$$
 
 ---
-# Questions
 ###### Q1) Let $X$ and $Y$ denote two sets containing 2 and 20 distinct objects respectively and $F$ denote the set of all possible functions defined from $X$ and $Y$. Let $f$ be randomly chosen from $F$. The probability of $f$ being one-to-one is ?
 
 A1) $19/20$   
@@ -131,13 +124,6 @@ g(h(x)) = g(x/(x-1)) = 1 - (x/(x-1)) = 1/1-x
 h(g(x)) = h(1-x) = (1-x)/(1-x-1) = (x-1)/x   
 g(h(x)) / h(g(x)) = {1/1-x} / {(x-1)/x} = {1/1-x} × {x/x-1} = - x / (1 - x)$^2$     
 h(x) / g(x) = - x / (1 - x)$^2$     
-
----
-# Summary 
-
-
-
- 
 
 ---
 # References 

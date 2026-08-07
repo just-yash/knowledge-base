@@ -92,21 +92,6 @@ The different types of data structures that we are going to study, they are the 
 6. [[Graph]]
 7. [[Hashing]]
 
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
 ---
 # References 
 

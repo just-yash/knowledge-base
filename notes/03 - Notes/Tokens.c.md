@@ -190,36 +190,13 @@ Examples :
 - sizeof : `sizeof`
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## 5. Special Symbols - Punctuators / Separators
 - characters used for structure.
 
 Examples : 
 `(` `)` `{` `}` `[` `]` `;` `,` `#`
 
-
-
-
-
 ---
-# Questions
 ###### Q1) Which of the following is **not** a valid identifier?  
 ###### a) `_count`  
 ###### b) `total_sum`  
@@ -266,8 +243,6 @@ A4) c) Operator
 - Initialization is the first assignment to a variable.
 - Literals are fixed values; variables store values.
 - Variables generally evaluate to lvalues; literals evaluate to rvalues.
-
-
 
 ---
 # References 

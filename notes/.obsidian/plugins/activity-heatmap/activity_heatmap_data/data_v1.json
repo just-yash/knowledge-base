@@ -12876,19 +12876,19 @@
       "fileSize": 11314
     },
     "03 - Notes/Logic Introduction.md": {
-      "mtime": 1778766038311,
-      "wordCount": 268,
-      "fileSize": 2333
+      "mtime": 1786132927063,
+      "wordCount": 265,
+      "fileSize": 2315
     },
     "01 - MOCs/MOC - Engineering Mathematics.md": {
-      "mtime": 1786105811322,
+      "mtime": 1786132902778,
       "wordCount": 786,
       "fileSize": 5697
     },
     "01 - MOCs/MOC - Writing and Creativity.md": {
-      "mtime": 1786116593859,
+      "mtime": 1786132902788,
       "wordCount": 402,
-      "fileSize": 2513
+      "fileSize": 2571
     },
     "01 - MOCs/MOC - Computer Vision and Surveillance.md": {
       "mtime": 1786105811320,
@@ -12906,7 +12906,7 @@
       "fileSize": 76197
     },
     "01 - MOCs/MOC - Languages.md": {
-      "mtime": 1786105811323,
+      "mtime": 1786132902786,
       "wordCount": 346,
       "fileSize": 2405
     },
@@ -12916,9 +12916,9 @@
       "fileSize": 731
     },
     "03 - Notes/char functions.c.md": {
-      "mtime": 1778522678319,
-      "wordCount": 540,
-      "fileSize": 5134
+      "mtime": 1786132926506,
+      "wordCount": 537,
+      "fileSize": 5101
     },
     "05 - Creativity/Poetry/Poetry Index.md": {
       "mtime": 1778522679451,
@@ -12926,14 +12926,14 @@
       "fileSize": 731
     },
     "06 - Archive/JAVA/PYQ Analysis_JAVA.md": {
-      "mtime": 1778522679503,
-      "wordCount": 827,
-      "fileSize": 7388
+      "mtime": 1786132927640,
+      "wordCount": 824,
+      "fileSize": 7370
     },
     "06 - Archive/EE/Engineering Economics.md": {
-      "mtime": 1778522679528,
-      "wordCount": 1493,
-      "fileSize": 10355
+      "mtime": 1786132927583,
+      "wordCount": 1483,
+      "fileSize": 10300
     },
     "03 - Notes/Exponential and Logarithm Formulas.md": {
       "mtime": 1778522678492,
@@ -12971,9 +12971,9 @@
       "fileSize": 4115
     },
     "03 - Notes/Multi-Object Tracking.md": {
-      "mtime": 1778522678666,
+      "mtime": 1786132903078,
       "wordCount": 1074,
-      "fileSize": 7067
+      "fileSize": 7323
     },
     "03 - Notes/Trigonometric Formulas.md": {
       "mtime": 1778522679088,
@@ -12986,24 +12986,24 @@
       "fileSize": 3625
     },
     "03 - Notes/Graph Theory.md": {
-      "mtime": 1778522678562,
+      "mtime": 1786132903037,
       "wordCount": 2065,
-      "fileSize": 11153
+      "fileSize": 11522
     },
     "03 - Notes/Baye's Theorem.md": {
-      "mtime": 1778522678273,
-      "wordCount": 588,
-      "fileSize": 3682
+      "mtime": 1786132926441,
+      "wordCount": 586,
+      "fileSize": 3669
     },
     "03 - Notes/Probability Introduction.md": {
-      "mtime": 1778522678905,
+      "mtime": 1786132903128,
       "wordCount": 394,
-      "fileSize": 2442
+      "fileSize": 2556
     },
     "03 - Notes/Matrix.md": {
-      "mtime": 1778522678658,
-      "wordCount": 1483,
-      "fileSize": 8757
+      "mtime": 1786132927065,
+      "wordCount": 1468,
+      "fileSize": 8663
     },
     "03 - Notes/Sorting.md": {
       "mtime": 1778522679028,
@@ -13016,24 +13016,24 @@
       "fileSize": 9621
     },
     "03 - Notes/Recursion.md": {
-      "mtime": 1778522678954,
+      "mtime": 1786132903184,
       "wordCount": 1589,
-      "fileSize": 9052
+      "fileSize": 9410
     },
     "03 - Notes/Stack.md": {
-      "mtime": 1778522679031,
-      "wordCount": 2741,
-      "fileSize": 16072
+      "mtime": 1786132927213,
+      "wordCount": 2711,
+      "fileSize": 15857
     },
     "03 - Notes/Relational Model.md": {
-      "mtime": 1778599848594,
+      "mtime": 1786132903199,
       "wordCount": 1353,
-      "fileSize": 8701
+      "fileSize": 9129
     },
     "03 - Notes/Coordinate Geometry.md": {
-      "mtime": 1778522678371,
-      "wordCount": 482,
-      "fileSize": 2729
+      "mtime": 1786132926518,
+      "wordCount": 472,
+      "fileSize": 2667
     },
     "01 - MOCs/MOC - AI and Machine Learning.md": {
       "mtime": 1786116663884,
@@ -13041,7 +13041,7 @@
       "fileSize": 1749
     },
     "01 - MOCs/MOC - Data Structures and Algorithms.md": {
-      "mtime": 1786105811321,
+      "mtime": 1786132902771,
       "wordCount": 473,
       "fileSize": 3255
     },
@@ -13066,9 +13066,9 @@
       "fileSize": 1886
     },
     "01 - MOCs/MOC - Logic and Philosophy.md": {
-      "mtime": 1778522678114,
+      "mtime": 1786132902786,
       "wordCount": 414,
-      "fileSize": 2749
+      "fileSize": 2823
     },
     "01 - MOCs/MOC - Operating Systems.md": {
       "mtime": 1786105811323,
@@ -13081,29 +13081,29 @@
       "fileSize": 3165
     },
     "02 - Raw Notes/Books & Papers/How to Read a Paper.md": {
-      "mtime": 1786105811325,
-      "wordCount": 973,
-      "fileSize": 5914
+      "mtime": 1786132926202,
+      "wordCount": 969,
+      "fileSize": 5741
     },
     "02 - Raw Notes/Podcasts/France.md": {
-      "mtime": 1778522678166,
+      "mtime": 1786132902933,
       "wordCount": 843,
-      "fileSize": 5544
+      "fileSize": 5634
     },
     "02 - Raw Notes/Podcasts/Chhatrapati Shivaji Maharaj.md": {
-      "mtime": 1778522678169,
+      "mtime": 1786132902932,
       "wordCount": 1207,
-      "fileSize": 8033
+      "fileSize": 8155
     },
     "02 - Raw Notes/Podcasts/Psychology of Love - Narcissism, Toxic Love & Male Identity.md": {
-      "mtime": 1778522678173,
+      "mtime": 1786132902933,
       "wordCount": 1212,
-      "fileSize": 10390
+      "fileSize": 10535
     },
     "02 - Raw Notes/Podcasts/Strategic Brand Building and Consumer Market Penetration.md": {
-      "mtime": 1778522678177,
+      "mtime": 1786132902933,
       "wordCount": 2334,
-      "fileSize": 15646
+      "fileSize": 16108
     },
     "02 - Raw Notes/Videos/Beef and Hindus.md": {
       "mtime": 1778522678183,
@@ -13141,9 +13141,9 @@
       "fileSize": 1376
     },
     "02 - Raw Notes/Classes/Workshops/Vaibhav Sinsity Claude Workshop.md": {
-      "mtime": 1786115786621,
+      "mtime": 1786132902808,
       "wordCount": 951,
-      "fileSize": 6903
+      "fileSize": 7548
     },
     "03 - Notes/Adder.md": {
       "mtime": 1786130536673,
@@ -13161,119 +13161,119 @@
       "fileSize": 5484
     },
     "03 - Notes/Arguments.md": {
-      "mtime": 1778764159665,
-      "wordCount": 2207,
-      "fileSize": 10361
+      "mtime": 1786132926394,
+      "wordCount": 2202,
+      "fileSize": 10328
     },
     "03 - Notes/Array.md": {
-      "mtime": 1778522678252,
-      "wordCount": 3882,
-      "fileSize": 32224
+      "mtime": 1786132926404,
+      "wordCount": 3879,
+      "fileSize": 32195
     },
     "03 - Notes/AVL Tree.md": {
-      "mtime": 1778522678256,
-      "wordCount": 528,
-      "fileSize": 2849
+      "mtime": 1786132926415,
+      "wordCount": 525,
+      "fileSize": 2832
     },
     "03 - Notes/Basic Problems of an Economy.md": {
-      "mtime": 1778522678262,
-      "wordCount": 735,
-      "fileSize": 5075
+      "mtime": 1786132926422,
+      "wordCount": 729,
+      "fileSize": 5033
     },
     "03 - Notes/Basics.c.md": {
-      "mtime": 1778522678266,
-      "wordCount": 644,
-      "fileSize": 4261
+      "mtime": 1786132926432,
+      "wordCount": 641,
+      "fileSize": 4241
     },
     "03 - Notes/Binary Search Tree.md": {
-      "mtime": 1778522678276,
-      "wordCount": 1114,
-      "fileSize": 5935
+      "mtime": 1786132926449,
+      "wordCount": 1106,
+      "fileSize": 5888
     },
     "03 - Notes/Binary Tree Traversal.md": {
-      "mtime": 1778522678282,
-      "wordCount": 820,
-      "fileSize": 5085
+      "mtime": 1786132926457,
+      "wordCount": 818,
+      "fileSize": 5062
     },
     "03 - Notes/Binary Tree.md": {
-      "mtime": 1778522678287,
-      "wordCount": 689,
-      "fileSize": 3870
+      "mtime": 1786132926465,
+      "wordCount": 683,
+      "fileSize": 3830
     },
     "03 - Notes/Box Urn Bag type problems.md": {
-      "mtime": 1778522678291,
-      "wordCount": 683,
-      "fileSize": 4274
+      "mtime": 1786132926476,
+      "wordCount": 680,
+      "fileSize": 4254
     },
     "03 - Notes/break.c.md": {
-      "mtime": 1778522678298,
-      "wordCount": 503,
-      "fileSize": 3287
+      "mtime": 1786132926486,
+      "wordCount": 500,
+      "fileSize": 3255
     },
     "03 - Notes/Cards.md": {
-      "mtime": 1778522678302,
-      "wordCount": 295,
-      "fileSize": 1706
+      "mtime": 1786132926496,
+      "wordCount": 292,
+      "fileSize": 1689
     },
     "03 - Notes/Calculus Formulas.md": {
-      "mtime": 1778522678308,
-      "wordCount": 511,
-      "fileSize": 3125
+      "mtime": 1786132926496,
+      "wordCount": 499,
+      "fileSize": 3048
     },
     "03 - Notes/Bubble Sort.md": {
-      "mtime": 1778522678312,
-      "wordCount": 338,
-      "fileSize": 2363
+      "mtime": 1786132926495,
+      "wordCount": 332,
+      "fileSize": 2321
     },
     "03 - Notes/Coin.md": {
-      "mtime": 1778522678322,
-      "wordCount": 1041,
-      "fileSize": 6500
+      "mtime": 1786132926508,
+      "wordCount": 1037,
+      "fileSize": 6473
     },
     "03 - Notes/Coding Assistant.md": {
-      "mtime": 1778522678328,
-      "wordCount": 427,
-      "fileSize": 2668
+      "mtime": 1786132926507,
+      "wordCount": 421,
+      "fileSize": 2619
     },
     "03 - Notes/Combinational Circuits.md": {
-      "mtime": 1778522678331,
-      "wordCount": 198,
-      "fileSize": 1313
+      "mtime": 1786132926508,
+      "wordCount": 192,
+      "fileSize": 1272
     },
     "03 - Notes/Complete Binary Tree.md": {
-      "mtime": 1778522678337,
-      "wordCount": 315,
-      "fileSize": 1685
+      "mtime": 1786132926509,
+      "wordCount": 312,
+      "fileSize": 1666
     },
     "03 - Notes/Complex Pointers.c.md": {
-      "mtime": 1778522678340,
-      "wordCount": 1154,
-      "fileSize": 7465
+      "mtime": 1786132926510,
+      "wordCount": 1151,
+      "fileSize": 7448
     },
     "03 - Notes/Complementation.md": {
-      "mtime": 1778522678345,
-      "wordCount": 359,
-      "fileSize": 1549
+      "mtime": 1786132926509,
+      "wordCount": 352,
+      "fileSize": 1503
     },
     "03 - Notes/Complex Numbers.md": {
-      "mtime": 1778522678351,
-      "wordCount": 413,
-      "fileSize": 2612
+      "mtime": 1786132926509,
+      "wordCount": 403,
+      "fileSize": 2546
     },
     "03 - Notes/Conditional Probability.md": {
-      "mtime": 1778522678355,
-      "wordCount": 1225,
-      "fileSize": 6485
+      "mtime": 1786132926510,
+      "wordCount": 1222,
+      "fileSize": 6468
     },
     "03 - Notes/Context Engineering.md": {
-      "mtime": 1778522678359,
-      "wordCount": 149,
-      "fileSize": 898
+      "mtime": 1786132926510,
+      "wordCount": 141,
+      "fileSize": 845
     },
     "03 - Notes/continue.c.md": {
-      "mtime": 1778522678362,
-      "wordCount": 542,
-      "fileSize": 3314
+      "mtime": 1786132926518,
+      "wordCount": 540,
+      "fileSize": 3296
     },
     "03 - Notes/Control Structures.c.md": {
       "mtime": 1778522678366,
@@ -13281,9 +13281,9 @@
       "fileSize": 857
     },
     "03 - Notes/Data Models.md": {
-      "mtime": 1778589866537,
-      "wordCount": 357,
-      "fileSize": 2238
+      "mtime": 1786132926529,
+      "wordCount": 342,
+      "fileSize": 2153
     },
     "03 - Notes/Data Structures Basics.md": {
       "mtime": 1778522678381,
@@ -13291,9 +13291,9 @@
       "fileSize": 5156
     },
     "03 - Notes/DB 3-level Architecture.md": {
-      "mtime": 1778522678385,
+      "mtime": 1786132902979,
       "wordCount": 250,
-      "fileSize": 1694
+      "fileSize": 1771
     },
     "03 - Notes/DataTypes.c.md": {
       "mtime": 1778522678391,
@@ -13301,9 +13301,9 @@
       "fileSize": 3102
     },
     "03 - Notes/DB Languages.md": {
-      "mtime": 1778522678394,
+      "mtime": 1786132902980,
       "wordCount": 279,
-      "fileSize": 2107
+      "fileSize": 2184
     },
     "03 - Notes/DB System Concepts.md": {
       "mtime": 1778522678401,
@@ -13436,9 +13436,9 @@
       "fileSize": 4019
     },
     "03 - Notes/Functions.md": {
-      "mtime": 1778776275354,
+      "mtime": 1786132903034,
       "wordCount": 940,
-      "fileSize": 5349
+      "fileSize": 5495
     },
     "03 - Notes/Facial Angles.md": {
       "mtime": 1778522678546,
@@ -13446,24 +13446,24 @@
       "fileSize": 3276
     },
     "03 - Notes/Future Works (Research).md": {
-      "mtime": 1778522678550,
+      "mtime": 1786132903035,
       "wordCount": 339,
-      "fileSize": 2353
+      "fileSize": 2442
     },
     "03 - Notes/Generative AI.md": {
-      "mtime": 1778522678553,
+      "mtime": 1786132903036,
       "wordCount": 242,
-      "fileSize": 2135
+      "fileSize": 2210
     },
     "03 - Notes/Geometric Formulas and Theorem.md": {
-      "mtime": 1778522678559,
+      "mtime": 1786132903036,
       "wordCount": 537,
-      "fileSize": 3298
+      "fileSize": 3506
     },
     "03 - Notes/Graph Traversal.md": {
-      "mtime": 1778522678564,
+      "mtime": 1786132903037,
       "wordCount": 829,
-      "fileSize": 4904
+      "fileSize": 5086
     },
     "03 - Notes/Group Theory.md": {
       "mtime": 1778522678568,
@@ -13486,119 +13486,119 @@
       "fileSize": 2230
     },
     "03 - Notes/Insertion Sort.md": {
-      "mtime": 1778522678581,
-      "wordCount": 281,
-      "fileSize": 1719
+      "mtime": 1786132926914,
+      "wordCount": 261,
+      "fileSize": 1592
     },
     "03 - Notes/Input Output(Console).c.md": {
-      "mtime": 1778522678583,
-      "wordCount": 613,
-      "fileSize": 5107
+      "mtime": 1786132926902,
+      "wordCount": 595,
+      "fileSize": 4969
     },
     "03 - Notes/Java Installation and Path Setup.md": {
-      "mtime": 1778522678586,
-      "wordCount": 869,
-      "fileSize": 5990
+      "mtime": 1786132926942,
+      "wordCount": 851,
+      "fileSize": 5891
     },
     "03 - Notes/Java Overview.md": {
-      "mtime": 1778522678590,
-      "wordCount": 1056,
-      "fileSize": 7106
+      "mtime": 1786132926953,
+      "wordCount": 1038,
+      "fileSize": 7007
     },
     "03 - Notes/JVM Architecture.md": {
-      "mtime": 1778522678593,
-      "wordCount": 873,
-      "fileSize": 6340
+      "mtime": 1786132926964,
+      "wordCount": 855,
+      "fileSize": 6241
     },
     "03 - Notes/Kali Linux Overview.md": {
-      "mtime": 1778522678597,
-      "wordCount": 603,
-      "fileSize": 3577
+      "mtime": 1786132926982,
+      "wordCount": 585,
+      "fileSize": 3463
     },
     "03 - Notes/Languages.md": {
-      "mtime": 1778522678600,
-      "wordCount": 619,
-      "fileSize": 4022
+      "mtime": 1786132927002,
+      "wordCount": 599,
+      "fileSize": 3894
     },
     "03 - Notes/K-Map.md": {
-      "mtime": 1778522678605,
-      "wordCount": 3689,
-      "fileSize": 17164
+      "mtime": 1786132926974,
+      "wordCount": 3672,
+      "fileSize": 17058
     },
     "03 - Notes/Large Language Model.md": {
-      "mtime": 1778522678607,
-      "wordCount": 79,
-      "fileSize": 550
+      "mtime": 1786132927010,
+      "wordCount": 64,
+      "fileSize": 460
     },
     "03 - Notes/Law Of Demand.md": {
-      "mtime": 1778522678612,
-      "wordCount": 1290,
-      "fileSize": 9018
+      "mtime": 1786132927020,
+      "wordCount": 1275,
+      "fileSize": 8927
     },
     "03 - Notes/Language Translators.md": {
-      "mtime": 1778522678614,
-      "wordCount": 767,
-      "fileSize": 5779
+      "mtime": 1786132926994,
+      "wordCount": 747,
+      "fileSize": 5617
     },
     "03 - Notes/Line Covering.md": {
-      "mtime": 1778522678617,
-      "wordCount": 443,
-      "fileSize": 2607
+      "mtime": 1786132927042,
+      "wordCount": 425,
+      "fileSize": 2494
     },
     "03 - Notes/Law of Supply.md": {
-      "mtime": 1778522678621,
-      "wordCount": 1421,
-      "fileSize": 9561
+      "mtime": 1786132927032,
+      "wordCount": 1403,
+      "fileSize": 9447
     },
     "03 - Notes/Linked List.md": {
-      "mtime": 1778522678624,
-      "wordCount": 3535,
-      "fileSize": 24243
+      "mtime": 1786132927050,
+      "wordCount": 3517,
+      "fileSize": 24128
     },
     "03 - Notes/Linux Foundation.md": {
-      "mtime": 1778522678628,
-      "wordCount": 492,
-      "fileSize": 3175
+      "mtime": 1786132927061,
+      "wordCount": 474,
+      "fileSize": 3061
     },
     "03 - Notes/Logic Gates.md": {
-      "mtime": 1778763946224,
-      "wordCount": 2593,
-      "fileSize": 11748
+      "mtime": 1786132927062,
+      "wordCount": 2588,
+      "fileSize": 11710
     },
     "03 - Notes/Logical Operators.md": {
-      "mtime": 1778763739745,
-      "wordCount": 3259,
-      "fileSize": 16782
+      "mtime": 1786132927063,
+      "wordCount": 3257,
+      "fileSize": 16766
     },
     "03 - Notes/Magic of Compounding.md": {
-      "mtime": 1778522678641,
-      "wordCount": 151,
-      "fileSize": 1103
+      "mtime": 1786132927063,
+      "wordCount": 131,
+      "fileSize": 977
     },
     "03 - Notes/Markdown Basic.md": {
-      "mtime": 1786131679803,
-      "wordCount": 1022,
-      "fileSize": 8163
+      "mtime": 1786132927064,
+      "wordCount": 1006,
+      "fileSize": 8065
     },
     "03 - Notes/Matching.md": {
-      "mtime": 1778522678648,
-      "wordCount": 291,
-      "fileSize": 1735
+      "mtime": 1786132927064,
+      "wordCount": 273,
+      "fileSize": 1621
     },
     "03 - Notes/Matrix Qs.md": {
-      "mtime": 1778522678651,
-      "wordCount": 224,
-      "fileSize": 1126
+      "mtime": 1786132927065,
+      "wordCount": 205,
+      "fileSize": 991
     },
     "03 - Notes/Merge Sort.md": {
-      "mtime": 1778522678655,
-      "wordCount": 152,
-      "fileSize": 1031
+      "mtime": 1786132927065,
+      "wordCount": 132,
+      "fileSize": 872
     },
     "03 - Notes/Nested if.c.md": {
-      "mtime": 1778522678660,
-      "wordCount": 526,
-      "fileSize": 3097
+      "mtime": 1786132927066,
+      "wordCount": 509,
+      "fileSize": 2971
     },
     "03 - Notes/nested_loop.c.md": {
       "mtime": 1778522678663,
@@ -13606,64 +13606,64 @@
       "fileSize": 3120
     },
     "03 - Notes/Network Reliability.md": {
-      "mtime": 1778522678668,
+      "mtime": 1786132903079,
       "wordCount": 844,
-      "fileSize": 6543
+      "fileSize": 6697
     },
     "03 - Notes/Networking Basics.md": {
-      "mtime": 1778522678671,
+      "mtime": 1786132903080,
       "wordCount": 556,
-      "fileSize": 3398
+      "fileSize": 3516
     },
     "03 - Notes/Normal Form, SOP and POS.md": {
-      "mtime": 1778781746077,
+      "mtime": 1786132903087,
       "wordCount": 2768,
-      "fileSize": 13139
+      "fileSize": 13593
     },
     "03 - Notes/Number System.md": {
-      "mtime": 1778522678678,
+      "mtime": 1786132903087,
       "wordCount": 265,
-      "fileSize": 1575
+      "fileSize": 1646
     },
     "03 - Notes/OOPs Features.md": {
-      "mtime": 1778522678681,
+      "mtime": 1786132903089,
       "wordCount": 988,
-      "fileSize": 9293
+      "fileSize": 9502
     },
     "03 - Notes/Operators.c.md": {
-      "mtime": 1786105811336,
+      "mtime": 1786132903097,
       "wordCount": 3943,
       "fileSize": 21903
     },
     "03 - Notes/Operators.md": {
-      "mtime": 1786105811337,
+      "mtime": 1786132903104,
       "wordCount": 401,
       "fileSize": 2620
     },
     "03 - Notes/Permutation Combination Formulas.md": {
-      "mtime": 1778522678691,
+      "mtime": 1786132903112,
       "wordCount": 250,
-      "fileSize": 1837
+      "fileSize": 1963
     },
     "03 - Notes/Planer, Non-Planer Graphs.md": {
-      "mtime": 1778522678694,
+      "mtime": 1786132903113,
       "wordCount": 642,
-      "fileSize": 3773
+      "fileSize": 3914
     },
     "03 - Notes/PMF.md": {
-      "mtime": 1778522678696,
+      "mtime": 1786132903104,
       "wordCount": 353,
-      "fileSize": 2185
+      "fileSize": 2369
     },
     "03 - Notes/Pattern Questions.c.md": {
-      "mtime": 1778522678699,
+      "mtime": 1786132903112,
       "wordCount": 2505,
-      "fileSize": 13765
+      "fileSize": 14511
     },
     "03 - Notes/Pointers and Functions.c.md": {
-      "mtime": 1778522678875,
+      "mtime": 1786132903114,
       "wordCount": 576,
-      "fileSize": 3570
+      "fileSize": 3708
     },
     "03 - Notes/pointers.c.md": {
       "mtime": 1778522678878,
@@ -13671,19 +13671,19 @@
       "fileSize": 7717
     },
     "03 - Notes/POSET.md": {
-      "mtime": 1778777849503,
+      "mtime": 1786132903111,
       "wordCount": 1755,
-      "fileSize": 10351
+      "fileSize": 10660
     },
     "03 - Notes/Predicate Logic.md": {
-      "mtime": 1786105811337,
+      "mtime": 1786132903121,
       "wordCount": 1057,
       "fileSize": 6327
     },
     "03 - Notes/Primary DataTypes.c.md": {
-      "mtime": 1778522678894,
+      "mtime": 1786132903122,
       "wordCount": 1800,
-      "fileSize": 10187
+      "fileSize": 10570
     },
     "03 - Notes/Print_py.md": {
       "mtime": 1786105811338,
@@ -13691,64 +13691,64 @@
       "fileSize": 4236
     },
     "03 - Notes/Primary Logical Operators Across Different Domains.md": {
-      "mtime": 1778757845395,
+      "mtime": 1786132903128,
       "wordCount": 1064,
-      "fileSize": 6273
+      "fileSize": 6506
     },
     "03 - Notes/Processing Units or Processors.md": {
-      "mtime": 1778522678909,
+      "mtime": 1786132903130,
       "wordCount": 203,
-      "fileSize": 1223
+      "fileSize": 1295
     },
     "03 - Notes/Probability Keywords.md": {
-      "mtime": 1778522678914,
+      "mtime": 1786132903129,
       "wordCount": 997,
-      "fileSize": 4865
+      "fileSize": 5012
     },
     "03 - Notes/Programming.md": {
-      "mtime": 1778522678917,
+      "mtime": 1786132903131,
       "wordCount": 63,
-      "fileSize": 411
+      "fileSize": 469
     },
     "03 - Notes/Prompts.md": {
-      "mtime": 1778522678918,
+      "mtime": 1786132903132,
       "wordCount": 281,
-      "fileSize": 1929
+      "fileSize": 2069
     },
     "03 - Notes/Propositions.md": {
-      "mtime": 1778757178431,
+      "mtime": 1786132903139,
       "wordCount": 428,
-      "fileSize": 2443
+      "fileSize": 2523
     },
     "03 - Notes/Python Basics.md": {
-      "mtime": 1786105811338,
+      "mtime": 1786132903147,
       "wordCount": 1194,
       "fileSize": 7326
     },
     "03 - Notes/Questions on Minimization.md": {
-      "mtime": 1778522678933,
+      "mtime": 1786132903181,
       "wordCount": 1239,
-      "fileSize": 5743
+      "fileSize": 6077
     },
     "03 - Notes/Random Variable Overview.md": {
-      "mtime": 1778522678938,
+      "mtime": 1786132903182,
       "wordCount": 622,
-      "fileSize": 3877
+      "fileSize": 4200
     },
     "03 - Notes/Rank of a Matrix Qs.md": {
-      "mtime": 1778522678943,
+      "mtime": 1786132903182,
       "wordCount": 1081,
-      "fileSize": 4921
+      "fileSize": 5157
     },
     "03 - Notes/Rank of a Matrix.md": {
-      "mtime": 1778522678946,
+      "mtime": 1786132903183,
       "wordCount": 935,
-      "fileSize": 4699
+      "fileSize": 4852
     },
     "03 - Notes/Rate of Interest.md": {
-      "mtime": 1778522678949,
+      "mtime": 1786132903184,
       "wordCount": 180,
-      "fileSize": 1114
+      "fileSize": 1181
     },
     "03 - Notes/Relational Algebra and Calculus.md": {
       "mtime": 1778599789606,
@@ -13776,9 +13776,9 @@
       "fileSize": 4805
     },
     "03 - Notes/Relations.md": {
-      "mtime": 1778775469519,
+      "mtime": 1786132903206,
       "wordCount": 2492,
-      "fileSize": 14357
+      "fileSize": 14801
     },
     "03 - Notes/Simple if.c.md": {
       "mtime": 1778522679017,
@@ -13796,109 +13796,109 @@
       "fileSize": 513
     },
     "03 - Notes/Stages of Hacking.md": {
-      "mtime": 1778522679035,
-      "wordCount": 659,
-      "fileSize": 4046
+      "mtime": 1786132927221,
+      "wordCount": 641,
+      "fileSize": 3931
     },
     "03 - Notes/Strings.c.md": {
-      "mtime": 1778522679041,
-      "wordCount": 522,
-      "fileSize": 3359
+      "mtime": 1786132927233,
+      "wordCount": 504,
+      "fileSize": 3220
     },
     "03 - Notes/Supply Function.md": {
-      "mtime": 1778522679044,
-      "wordCount": 418,
-      "fileSize": 2861
+      "mtime": 1786132927241,
+      "wordCount": 398,
+      "fileSize": 2735
     },
     "03 - Notes/Supply.md": {
-      "mtime": 1778522679049,
-      "wordCount": 1545,
-      "fileSize": 10287
+      "mtime": 1786132927252,
+      "wordCount": 1527,
+      "fileSize": 10174
     },
     "03 - Notes/switch-case.c.md": {
-      "mtime": 1778522679051,
-      "wordCount": 1105,
-      "fileSize": 8014
+      "mtime": 1786132927261,
+      "wordCount": 1090,
+      "fileSize": 7908
     },
     "03 - Notes/Syllabus.c.md": {
-      "mtime": 1778522679056,
-      "wordCount": 102,
-      "fileSize": 646
+      "mtime": 1786132927268,
+      "wordCount": 82,
+      "fileSize": 516
     },
     "03 - Notes/Tokens.c.md": {
-      "mtime": 1778522679060,
-      "wordCount": 1265,
-      "fileSize": 8161
+      "mtime": 1786132927277,
+      "wordCount": 1251,
+      "fileSize": 8070
     },
     "03 - Notes/Tools With Claude Code.md": {
-      "mtime": 1778522679063,
-      "wordCount": 189,
-      "fileSize": 1260
+      "mtime": 1786132927283,
+      "wordCount": 169,
+      "fileSize": 1130
     },
     "03 - Notes/Tree_DM.md": {
-      "mtime": 1778522679068,
-      "wordCount": 531,
-      "fileSize": 3072
+      "mtime": 1786132927303,
+      "wordCount": 512,
+      "fileSize": 2951
     },
     "03 - Notes/Tree_DSA.md": {
-      "mtime": 1778522679074,
-      "wordCount": 301,
-      "fileSize": 1875
+      "mtime": 1786132927311,
+      "wordCount": 283,
+      "fileSize": 1759
     },
     "03 - Notes/Transactions and Concurrency Control.md": {
-      "mtime": 1778522679080,
-      "wordCount": 2819,
-      "fileSize": 16505
+      "mtime": 1786132927294,
+      "wordCount": 2801,
+      "fileSize": 16392
     },
     "03 - Notes/Type Conversion.c.md": {
-      "mtime": 1778522679083,
-      "wordCount": 730,
-      "fileSize": 3940
+      "mtime": 1786132927332,
+      "wordCount": 714,
+      "fileSize": 3816
     },
     "03 - Notes/Underworld System and Organized Crime.md": {
-      "mtime": 1778522679092,
-      "wordCount": 1228,
-      "fileSize": 9252
+      "mtime": 1786132927345,
+      "wordCount": 1221,
+      "fileSize": 9209
     },
     "03 - Notes/void pointer.c.md": {
-      "mtime": 1778522679098,
-      "wordCount": 838,
-      "fileSize": 5510
+      "mtime": 1786132927356,
+      "wordCount": 820,
+      "fileSize": 5402
     },
     "03 - Notes/while.c.md": {
-      "mtime": 1786105811340,
-      "wordCount": 1185,
-      "fileSize": 6544
+      "mtime": 1786132927357,
+      "wordCount": 1183,
+      "fileSize": 6169
     },
     "03 - Notes/well formed formula.md": {
-      "mtime": 1778764755101,
-      "wordCount": 1143,
-      "fileSize": 6637
+      "mtime": 1786132927357,
+      "wordCount": 1139,
+      "fileSize": 6610
     },
     "04 - Research/Multi-Camera-Surveillance/Implementation-Log.md": {
-      "mtime": 1778522679370,
+      "mtime": 1786132903254,
       "wordCount": 250,
-      "fileSize": 1533
+      "fileSize": 1601
     },
     "04 - Research/Multi-Camera-Surveillance/Benchmarks.md": {
-      "mtime": 1778522679374,
+      "mtime": 1786132903253,
       "wordCount": 287,
-      "fileSize": 1738
+      "fileSize": 1800
     },
     "04 - Research/Multi-Camera-Surveillance/Paper-Draft.md": {
-      "mtime": 1778522679379,
-      "wordCount": 265,
-      "fileSize": 1935
+      "mtime": 1786132927358,
+      "wordCount": 246,
+      "fileSize": 1829
     },
     "04 - Research/Multi-Camera-Surveillance/Architecture.md": {
-      "mtime": 1778522679383,
+      "mtime": 1786132903252,
       "wordCount": 281,
-      "fileSize": 1885
+      "fileSize": 1960
     },
     "04 - Research/Multi-Camera-Surveillance/Literature-Review.md": {
-      "mtime": 1778522679394,
+      "mtime": 1786132903255,
       "wordCount": 376,
-      "fileSize": 2457
+      "fileSize": 2531
     },
     "05 - Creativity/Poetry/A Desolated Guy.md": {
       "mtime": 1778522679396,
@@ -13906,14 +13906,14 @@
       "fileSize": 1803
     },
     "05 - Creativity/Poetry/Beyond Now.md": {
-      "mtime": 1778522679401,
+      "mtime": 1786132903256,
       "wordCount": 254,
-      "fileSize": 1437
+      "fileSize": 1485
     },
     "05 - Creativity/Poetry/Burnt Petals.md": {
-      "mtime": 1778522679406,
+      "mtime": 1786132903256,
       "wordCount": 182,
-      "fileSize": 1045
+      "fileSize": 1077
     },
     "05 - Creativity/Poetry/Cancer.md": {
       "mtime": 1778522679412,
@@ -13996,39 +13996,39 @@
       "fileSize": 16946
     },
     "06 - Archive/AEC/AEC.md": {
-      "mtime": 1778522679491,
-      "wordCount": 8581,
-      "fileSize": 76197
+      "mtime": 1786132927518,
+      "wordCount": 8563,
+      "fileSize": 76071
     },
     "06 - Archive/DSUC/DSUC 3rd Sem.md": {
-      "mtime": 1778522679495,
-      "wordCount": 689,
-      "fileSize": 5991
+      "mtime": 1786132927533,
+      "wordCount": 676,
+      "fileSize": 5927
     },
     "06 - Archive/JAVA/Java Exam.md": {
-      "mtime": 1778522679498,
-      "wordCount": 1330,
-      "fileSize": 8720
+      "mtime": 1786132927632,
+      "wordCount": 1317,
+      "fileSize": 8657
     },
     "06 - Archive/EE/EE Module I PYQs.md": {
-      "mtime": 1778522679507,
-      "wordCount": 2066,
-      "fileSize": 15710
+      "mtime": 1786132927544,
+      "wordCount": 2056,
+      "fileSize": 15659
     },
     "06 - Archive/EE/EE Module II PYQs.md": {
-      "mtime": 1778522679517,
-      "wordCount": 2948,
-      "fileSize": 19299
+      "mtime": 1786132927553,
+      "wordCount": 2938,
+      "fileSize": 19243
     },
     "06 - Archive/EE/EE Module III PYQs.md": {
-      "mtime": 1778522679520,
-      "wordCount": 611,
-      "fileSize": 4777
+      "mtime": 1786132927561,
+      "wordCount": 601,
+      "fileSize": 4718
     },
     "06 - Archive/EE/EE Module IV PYQs.md": {
-      "mtime": 1778522679525,
-      "wordCount": 300,
-      "fileSize": 2127
+      "mtime": 1786132927568,
+      "wordCount": 290,
+      "fileSize": 2073
     },
     "06 - Archive/LEEE/LEEE.md": {
       "mtime": 1778522679531,
@@ -14036,19 +14036,19 @@
       "fileSize": 1756
     },
     "06 - Archive/FLAT/FLAT Exam Analysis.md": {
-      "mtime": 1778522679534,
-      "wordCount": 1190,
-      "fileSize": 10547
+      "mtime": 1786132927591,
+      "wordCount": 1183,
+      "fileSize": 10507
     },
     "06 - Archive/FLAT/FLAT Notes 2.md": {
-      "mtime": 1778522679538,
-      "wordCount": 125,
-      "fileSize": 699
+      "mtime": 1786132927597,
+      "wordCount": 110,
+      "fileSize": 607
     },
     "06 - Archive/FLAT/FLAT Notes.md": {
-      "mtime": 1778522679545,
-      "wordCount": 1187,
-      "fileSize": 7320
+      "mtime": 1786132927614,
+      "wordCount": 1174,
+      "fileSize": 7245
     },
     "07 - Annexure/Excalidraw/Drawing 2025-12-23 1327.excalidraw.md": {
       "mtime": 1778522679797,
@@ -14081,19 +14081,19 @@
       "fileSize": 61
     },
     "08 - Tags/C.md": {
-      "mtime": 1778522679903,
-      "wordCount": 72,
-      "fileSize": 504
+      "mtime": 1786132927712,
+      "wordCount": 63,
+      "fileSize": 445
     },
     "08 - Tags/conditional.md": {
-      "mtime": 1778522679906,
-      "wordCount": 39,
-      "fileSize": 259
+      "mtime": 1786132927712,
+      "wordCount": 30,
+      "fileSize": 200
     },
     "08 - Tags/Finance.md": {
-      "mtime": 1778522679910,
-      "wordCount": 36,
-      "fileSize": 235
+      "mtime": 1786132927724,
+      "wordCount": 27,
+      "fileSize": 176
     },
     "08 - Tags/Gen AI.md": {
       "mtime": 1778522679914,
@@ -14106,9 +14106,9 @@
       "fileSize": 30
     },
     "08 - Tags/loop.md": {
-      "mtime": 1778522679921,
-      "wordCount": 39,
-      "fileSize": 251
+      "mtime": 1786132927725,
+      "wordCount": 36,
+      "fileSize": 234
     },
     "08 - Tags/Markdown.md": {
       "mtime": 1778522679924,
@@ -14116,49 +14116,49 @@
       "fileSize": 113
     },
     "08 - Tags/Paradox.md": {
-      "mtime": 1778522679928,
-      "wordCount": 22,
-      "fileSize": 179
+      "mtime": 1786132927735,
+      "wordCount": 16,
+      "fileSize": 118
     },
     "08 - Tags/probability.md": {
-      "mtime": 1778522679929,
+      "mtime": 1786132903324,
       "wordCount": 15,
-      "fileSize": 89
+      "fileSize": 97
     },
     "08 - Tags/Set.md": {
-      "mtime": 1778522679934,
+      "mtime": 1786132903323,
       "wordCount": 15,
-      "fileSize": 79
+      "fileSize": 86
     },
     "09 - Templates/Academic Notes Template.md": {
-      "mtime": 1778522679937,
-      "wordCount": 38,
-      "fileSize": 250
+      "mtime": 1786132927736,
+      "wordCount": 17,
+      "fileSize": 108
     },
     "09 - Templates/Creativity Template.md": {
-      "mtime": 1778522679941,
-      "wordCount": 26,
-      "fileSize": 153
+      "mtime": 1786132927736,
+      "wordCount": 19,
+      "fileSize": 95
     },
     "09 - Templates/MOC Template.md": {
-      "mtime": 1786105811345,
-      "wordCount": 99,
-      "fileSize": 671
+      "mtime": 1786132927737,
+      "wordCount": 80,
+      "fileSize": 475
     },
     "09 - Templates/Research Template.md": {
-      "mtime": 1778522679964,
-      "wordCount": 192,
-      "fileSize": 1003
+      "mtime": 1786132927737,
+      "wordCount": 184,
+      "fileSize": 954
     },
     "09 - Templates/Startup Template.md": {
-      "mtime": 1778522679968,
-      "wordCount": 25,
-      "fileSize": 163
+      "mtime": 1786132927737,
+      "wordCount": 22,
+      "fileSize": 129
     },
     "09 - Templates/Raw Notes Template.md": {
-      "mtime": 1778522679971,
-      "wordCount": 35,
-      "fileSize": 219
+      "mtime": 1786132927737,
+      "wordCount": 19,
+      "fileSize": 124
     },
     "08 - Tags/Research.md": {
       "mtime": 1778419381812,
@@ -14436,9 +14436,9 @@
       "fileSize": 0
     },
     "03 - Notes/Relational Algebra.md": {
-      "mtime": 1778604107966,
+      "mtime": 1786132903192,
       "wordCount": 1216,
-      "fileSize": 7358
+      "fileSize": 7752
     },
     "03 - Notes/Relational Calculus.md": {
       "mtime": 1778604373066,
@@ -14451,19 +14451,19 @@
       "fileSize": 16469
     },
     "06 - Archive/DBMS/DBMS Short Notes (Q8).md": {
-      "mtime": 1778637215647,
+      "mtime": 1786132903294,
       "wordCount": 2555,
-      "fileSize": 17845
+      "fileSize": 18347
     },
     "06 - Archive/DBMS/DBMS Short Qs (Q1).md": {
-      "mtime": 1778619504050,
+      "mtime": 1786132903301,
       "wordCount": 2488,
-      "fileSize": 16731
+      "fileSize": 17210
     },
     "06 - Archive/DBMS/DBMS Exam Strategy & Analysis.md": {
-      "mtime": 1778612939457,
-      "wordCount": 1721,
-      "fileSize": 14214
+      "mtime": 1786132927519,
+      "wordCount": 1706,
+      "fileSize": 14129
     },
     "03 - Notes/Functional Dependency.md": {
       "mtime": 1778618310757,
@@ -14471,9 +14471,9 @@
       "fileSize": 4265
     },
     "06 - Archive/DBMS/DBMS Numerical Notes.md": {
-      "mtime": 1778631392604,
-      "wordCount": 1800,
-      "fileSize": 11030
+      "mtime": 1786132927520,
+      "wordCount": 1795,
+      "fileSize": 11002
     },
     "06 - Archive/DBMS/Mock Paper DBMS.md": {
       "mtime": 1778623943691,
@@ -14481,9 +14481,9 @@
       "fileSize": 9932
     },
     "06 - Archive/DBMS/DBMS Numerical Detailed Notes.md": {
-      "mtime": 1778631527960,
-      "wordCount": 5840,
-      "fileSize": 34632
+      "mtime": 1786132927519,
+      "wordCount": 5837,
+      "fileSize": 34617
     },
     "06 - Archive/Mercer Interview/OOPs Python.md": {
       "mtime": 1786019385769,
@@ -14526,9 +14526,9 @@
       "fileSize": 0
     },
     "06 - Archive/DM/DM PYQ Analysis.md": {
-      "mtime": 1778780396939,
-      "wordCount": 849,
-      "fileSize": 4642
+      "mtime": 1786132927521,
+      "wordCount": 844,
+      "fileSize": 4617
     },
     "03 - Notes/Darwin + Mercer MMB.md": {
       "mtime": 1779013951585,
@@ -14541,9 +14541,9 @@
       "fileSize": 8928
     },
     "03 - Notes/Python Libraries.md": {
-      "mtime": 1779213348094,
+      "mtime": 1786132903160,
       "wordCount": 2358,
-      "fileSize": 18455
+      "fileSize": 19138
     },
     "Private/Profile/Untitled.md": {
       "mtime": 1779215158782,
@@ -14556,7 +14556,7 @@
       "fileSize": 3165
     },
     "02 - Raw Notes/Videos/AI Career Adaptation Framework.md": {
-      "mtime": 1786105811334,
+      "mtime": 1786132902940,
       "wordCount": 1383,
       "fileSize": 12051
     },
@@ -14566,7 +14566,7 @@
       "fileSize": 6844
     },
     "02 - Raw Notes/News & Updates/ai-briefing-2026-05-21.md": {
-      "mtime": 1786105811326,
+      "mtime": 1786132902817,
       "wordCount": 3361,
       "fileSize": 28849
     },
@@ -14576,19 +14576,19 @@
       "fileSize": 2592
     },
     "00 - Home/README.md": {
-      "mtime": 1786127779081,
+      "mtime": 1786132902760,
       "wordCount": 2316,
-      "fileSize": 18595
+      "fileSize": 18907
     },
     "00 - Home/About Me.md": {
-      "mtime": 1786129059136,
+      "mtime": 1786132902759,
       "wordCount": 831,
-      "fileSize": 5540
+      "fileSize": 5650
     },
     "02 - Raw Notes/News & Updates/news-2026-05-21.md": {
-      "mtime": 1786105811327,
-      "wordCount": 1515,
-      "fileSize": 15158
+      "mtime": 1786132926204,
+      "wordCount": 1508,
+      "fileSize": 15012
     },
     "Private/Journal/A - Daily/2026-05-21.md": {
       "mtime": 1779388652532,
@@ -14601,9 +14601,9 @@
       "fileSize": 0
     },
     "02 - Raw Notes/News & Updates/news-2026-05-23.md": {
-      "mtime": 1786105811327,
-      "wordCount": 1518,
-      "fileSize": 15164
+      "mtime": 1786132926205,
+      "wordCount": 1511,
+      "fileSize": 15028
     },
     "Private/Journal/A - Daily/2026-05-23.md": {
       "mtime": 1779595714611,
@@ -14611,9 +14611,9 @@
       "fileSize": 4094
     },
     "02 - Raw Notes/News & Updates/news-2026-05-24.md": {
-      "mtime": 1786105811328,
-      "wordCount": 1468,
-      "fileSize": 14553
+      "mtime": 1786132926205,
+      "wordCount": 1461,
+      "fileSize": 14418
     },
     "Private/Journal/A - Daily/2026-05-24.md": {
       "mtime": 1779591060659,
@@ -14626,9 +14626,9 @@
       "fileSize": 2046
     },
     "06 - Archive/4th Sem Exams.md": {
-      "mtime": 1786105811341,
-      "wordCount": 216,
-      "fileSize": 1416
+      "mtime": 1786132927498,
+      "wordCount": 203,
+      "fileSize": 1313
     },
     "Private/Journal/A - Daily/2026-05-25.md": {
       "mtime": 1779682806209,
@@ -14636,19 +14636,19 @@
       "fileSize": 4678
     },
     "02 - Raw Notes/News & Updates/news-2026-05-25.md": {
-      "mtime": 1786105811328,
-      "wordCount": 1389,
-      "fileSize": 13384
+      "mtime": 1786132926206,
+      "wordCount": 1382,
+      "fileSize": 13258
     },
     "02 - Raw Notes/Books & Papers/Multi-camera spatiotemporal deep learning framework for real-time abnormal behavior detection in dense urban environments.md": {
-      "mtime": 1786105811325,
-      "wordCount": 84,
-      "fileSize": 690
+      "mtime": 1786132926202,
+      "wordCount": 59,
+      "fileSize": 459
     },
     "03 - Notes/CNN.md": {
-      "mtime": 1786105811335,
-      "wordCount": 102,
-      "fileSize": 760
+      "mtime": 1786132926507,
+      "wordCount": 85,
+      "fileSize": 575
     },
     "08 - Tags/ML.md": {
       "mtime": 1786105811343,
@@ -14661,9 +14661,9 @@
       "fileSize": 5969
     },
     "02 - Raw Notes/News & Updates/news-2026-05-26.md": {
-      "mtime": 1786105811328,
-      "wordCount": 1489,
-      "fileSize": 14058
+      "mtime": 1786132926206,
+      "wordCount": 1482,
+      "fileSize": 13925
     },
     "Projects/Start Up Ideas/Coffee/Zaffee_FSSAI_Razorpay_Setup.md": {
       "mtime": 1779821753452,
@@ -14681,12 +14681,12 @@
       "fileSize": 5545
     },
     "02 - Raw Notes/News & Updates/news-2026-05-27.md": {
-      "mtime": 1786105811329,
+      "mtime": 1786132902863,
       "wordCount": 1583,
       "fileSize": 16446
     },
     "02 - Raw Notes/Podcasts/AI Jobs Automation.md": {
-      "mtime": 1786105811333,
+      "mtime": 1786132902932,
       "wordCount": 1523,
       "fileSize": 9707
     },
@@ -14696,7 +14696,7 @@
       "fileSize": 5596
     },
     "02 - Raw Notes/News & Updates/news-2026-05-28.md": {
-      "mtime": 1786105811329,
+      "mtime": 1786132902872,
       "wordCount": 1646,
       "fileSize": 16610
     },
@@ -14716,12 +14716,12 @@
       "fileSize": 5707
     },
     "02 - Raw Notes/News & Updates/news-2026-05-29.md": {
-      "mtime": 1786105811330,
+      "mtime": 1786132902877,
       "wordCount": 1413,
       "fileSize": 13937
     },
     "02 - Raw Notes/News & Updates/news-2026-05-30.md": {
-      "mtime": 1786105811330,
+      "mtime": 1786132902883,
       "wordCount": 1638,
       "fileSize": 15169
     },
@@ -14731,7 +14731,7 @@
       "fileSize": 5511
     },
     "02 - Raw Notes/News & Updates/news-2026-05-31.md": {
-      "mtime": 1786105811331,
+      "mtime": 1786132902890,
       "wordCount": 1485,
       "fileSize": 14400
     },
@@ -14741,7 +14741,7 @@
       "fileSize": 4794
     },
     "02 - Raw Notes/News & Updates/news-2026-06-02.md": {
-      "mtime": 1786105811331,
+      "mtime": 1786132902897,
       "wordCount": 1560,
       "fileSize": 15246
     },
@@ -14756,7 +14756,7 @@
       "fileSize": 5411
     },
     "02 - Raw Notes/News & Updates/news-2026-06-03.md": {
-      "mtime": 1786105811332,
+      "mtime": 1786132902904,
       "wordCount": 1556,
       "fileSize": 15737
     },
@@ -14766,12 +14766,12 @@
       "fileSize": 5188
     },
     "02 - Raw Notes/News & Updates/news-2026-06-04.md": {
-      "mtime": 1786105811332,
+      "mtime": 1786132902911,
       "wordCount": 1514,
       "fileSize": 14145
     },
     "02 - Raw Notes/News & Updates/news-2026-06-06.md": {
-      "mtime": 1786105811332,
+      "mtime": 1786132902917,
       "wordCount": 1588,
       "fileSize": 15939
     },
@@ -14786,7 +14786,7 @@
       "fileSize": 3729
     },
     "03 - Notes/Python Variables & Data Types.md": {
-      "mtime": 1786105811340,
+      "mtime": 1786132903180,
       "wordCount": 615,
       "fileSize": 3841
     },
@@ -14796,17 +14796,17 @@
       "fileSize": 3475
     },
     "03 - Notes/Python Operators.md": {
-      "mtime": 1786105811339,
+      "mtime": 1786132903166,
       "wordCount": 610,
       "fileSize": 3572
     },
     "03 - Notes/Python Type Conversion & Type Casting.md": {
-      "mtime": 1786105811339,
+      "mtime": 1786132903174,
       "wordCount": 491,
       "fileSize": 3085
     },
     "03 - Notes/Python Input.md": {
-      "mtime": 1786105811339,
+      "mtime": 1786132903153,
       "wordCount": 376,
       "fileSize": 2489
     },
@@ -14816,7 +14816,7 @@
       "fileSize": 7163
     },
     "02 - Raw Notes/News & Updates/news-2026-06-09.md": {
-      "mtime": 1786105811333,
+      "mtime": 1786132902925,
       "wordCount": 1444,
       "fileSize": 14403
     },
@@ -15351,14 +15351,14 @@
       "fileSize": 5016
     },
     "09 - Templates/DSA Qs.md": {
-      "mtime": 1786105811344,
+      "mtime": 1786132903347,
       "wordCount": 140,
       "fileSize": 857
     },
     "09 - Templates/DSA Pattern.md": {
-      "mtime": 1786105811344,
-      "wordCount": 110,
-      "fileSize": 665
+      "mtime": 1786132927736,
+      "wordCount": 107,
+      "fileSize": 559
     },
     "Private/Insights/Tracker.md": {
       "mtime": 1785085146265,
@@ -16095,8 +16095,8 @@
       "fileSize": 318371
     },
     "2026-08-08": {
-      "wordCount": 9,
-      "fileSize": 161
+      "wordCount": 1219,
+      "fileSize": 32697
     }
   }
 }

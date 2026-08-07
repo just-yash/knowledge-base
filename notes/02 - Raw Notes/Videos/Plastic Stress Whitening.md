@@ -29,36 +29,10 @@ Source : [Vitek Innovation](https://youtu.be/Ad1ue2UhRvo?si=5UT9bXf-GEN1nrnp)
 - **Polypropylene:** High tendency to turn white when bent due to high polymer chain mobility.
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
-
 # Summary
 
 - **Stress Whitening:** The phenomenon where bent plastic turns white due to micro-voids called **crazes**.
 - **Light Scattering:** Microscopic voids alter light reflection, creating a white appearance.
 - **Chemical Stability:** The chemical composition of the polymer remains unchanged during stress whitening.
 
-
-
 ---
-# References 
-
-
-
-
-
----
-# Questions 
-
-
-

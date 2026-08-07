@@ -48,8 +48,6 @@ Status : #complete
 	- Truth Value : `False`
 
 ---
-# Questions
-
 ###### Qs)
 - `4 is a Prime Number`
 	- Proposition
@@ -73,7 +71,6 @@ Status : #complete
 	- Proposition
 - `Someday it will rain`
 	- Not Proposition : Ambiguity 
-
 
 ---
 # References 

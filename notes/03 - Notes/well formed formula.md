@@ -46,7 +46,6 @@ Status : #complete
 - p is Satisfiable & ¬ p is Unsatisfiable ≡ p is Tautology 
 - ¬ p is Satisfiable & p is Unsatisfiable ≡ p is Contradiction
 
-
 > Questions related to tautology, contradiction, and contingency can be solved  
     accurately using truth tables.
     
@@ -62,7 +61,6 @@ Status : #complete
 - Probability that an expression selected at random is Unsatisfiable = 1 / 2<sup>2<sup>n</sup></sup>
 
 ---
-# Questions
 ###### Q1) Which of the following is a wff?
 ###### a) $((P → Q) ∧ (Q → R)) → (P → R)$
 ###### b) $(P → Q) → ( ¬ P → ¬ Q)$
@@ -127,7 +125,6 @@ F2 : (P → ¬ P) ∨ ( ¬ P → P)
 - Hence F2 is both satisfiable and valid
 
 ---
-# Summary 
 ## Well Formed Formula (wff)
 - A wff is defined **syntactically**, not semantically
 - Truth (tautology / contradiction) is **independent** of being a wff
@@ -186,9 +183,6 @@ F2 : (P → ¬ P) ∨ ( ¬ P → P)
 - wff checking → structural (syntax + parentheses)
 - Validity / satisfiability → semantic (truth table / Boolean reduction)
 - Truth table method is always correct and sufficient
-
-
-
 
 ---
 # References 

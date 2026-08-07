@@ -125,7 +125,3 @@ According to Structure
 2. [[Database Management System (DBMS) - CSE 14th.pdf]]
 
 ---
-# Questions 
-
-
-

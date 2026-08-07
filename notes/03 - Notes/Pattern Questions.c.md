@@ -14,7 +14,6 @@ Status : #complete
 4. Apply separate loops to print characters and spaces.
    (Steps 2 and 3 may be interchanged depending on the pattern.)
 
-
 ---
 **Every pattern problem is just this:**
 
@@ -27,24 +26,6 @@ Status : #complete
 > Each row must be solvable independently. If a row depends on previous rows → you’re doing it wrong (for patterns). 
 > Try solving mathematically.
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # How to think?
 1. **Count rows**
 2. **Pick one row in the middle**
@@ -56,8 +37,6 @@ Status : #complete
 Loops come **last**, not first.
 
 ---
-# Questions
-
 ###### Q1) 
 ```c
 |
@@ -682,7 +661,6 @@ int main(){
 }
 ```
 
-
 ---
 # Summary 
 
@@ -735,8 +713,6 @@ int main(){
 
 > **Golden rule:**  
 > If you can describe a row using math, you can print the pattern.
-
-
 
 ---
 # References 

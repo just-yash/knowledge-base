@@ -9,19 +9,9 @@ Status : #incomplete
 
 > Why does this MOC exist? 
 
-
 > What problem does it solve? 
 
-
 > What does mastering this domain enable?
-
-
----
-# Main Areas 
-
-
-
-
 
 ---
 # Study Flow 
@@ -33,35 +23,8 @@ WHERE contains(file.folder, "03 - Notes")
 SORT file.mtime DESC
 ```
 
-
-
-
----
-# Related Tags 
-
-
-
-
-
----
-# Related Research 
-
-
-
-
----
-# Related Projects 
-
-
-
-
-
 ---
 # Open Questions
 > What do you still not understand in this domain? What would the next paper or project need to address?
 
-
 ---
-# References 
-
-

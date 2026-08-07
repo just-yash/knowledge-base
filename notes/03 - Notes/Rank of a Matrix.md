@@ -114,41 +114,8 @@ step 1 : Check if its in valid RE form : yes it is
 step 2 : $ρ(A)=2$ 
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
-
-
-
-
----
 # Questions
 
 [[Rank of a Matrix Qs]]
 
-
 ---
-# Summary 
-
-
-
-
-
----
-# References

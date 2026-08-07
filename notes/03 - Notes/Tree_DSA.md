@@ -15,25 +15,6 @@ Status : #complete
 ![[Pasted image 20260402033532.png]]
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
-
 ## Tree Fundamentals and Terminology
 
 ### Basic Definitions
@@ -61,21 +42,6 @@ Status : #complete
 - **Height/Depth/Level:**
     - By default, the **Root is at Height 0** (or Level 0).
     - The height of a node is the number of edges from that node to the root.
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

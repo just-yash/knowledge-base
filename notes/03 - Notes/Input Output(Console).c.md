@@ -49,8 +49,6 @@ printf("%o", 0100);   // 100
 printf("%x", 0x100);  // 100
 ```
 
-
-
 ---
 # Output Functions
 - `printf()`
@@ -88,24 +86,6 @@ printf(100);          // Error
 printf("100");        // 100
 printf("100",100);    // 100  // Extra arguments to `printf` are ignored if no format specifiers exist.
 ```
-
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
 
 ---
 # Input Function
@@ -157,42 +137,6 @@ input          stored value         interpreted as
 0x10               16                 hexadecimal
 */ 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
 
 ---
 # References 

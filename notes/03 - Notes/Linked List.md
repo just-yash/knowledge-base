@@ -6,24 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~  
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Linked List
 >Its like a train
 >>the engine is the main node and the coaches are the subsequent nodes
@@ -335,7 +317,6 @@ Node *move_to_front(Node *head)
 	return head;
 }
 
-
 (A) q =NULL; p->next = head; head = p;
 (B) q->next = NULL; head = p; p->next = head;
 (C) head =p; p->next = q; q->next = NULL;
@@ -354,7 +335,6 @@ void fun(struct node* start)
 		fun(start->next->next);
 	printf("%d ", start->data);
 }
-
 
 (A) 146641
 (B) 135135
@@ -899,19 +879,6 @@ int main() {
 # Space Complexity
 - Linked list storage → **O(n)**
 - Extra memory for pointers → **more overhead than arrays.**
----
-# Questions
-
-
-
-
----
-# Summary 
-
-
-
-
-
 ---
 # References 
 

@@ -282,7 +282,3 @@ Certain combinations are syntactically valid but logically impossible in C, lead
     
 - [YouTube Video Reference](https://www.google.com/search?q=https://youtu.be/0an69DcHsT0)
 ---
-# Questions 
-
-
-

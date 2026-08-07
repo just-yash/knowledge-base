@@ -6,10 +6,6 @@ Status : #complete
 ~ ***Yash Agrawall*** ~     
 
 ---
-# DM PYQ Analysis 
-
----
-
 # Module I — Logic, Relations, Functions, Posets
 
 ## Highest Priority
