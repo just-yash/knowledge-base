@@ -32,16 +32,23 @@ const OutlineSection = ({ note, onHeadingClick }) => {
         <div style={{ padding: '2px 0 8px' }}>
           {note.outline.map((item, i) => {
             const isActive = item.id === activeId;
-            // Indent per level: h2=14, h3=24, h4=34, h5=44, h6=54
-            const INDENT = { 2: 14, 3: 24, 4: 34, 5: 44, 6: 54 };
-            const indent = INDENT[item.level] ?? 14;
-            // Visual weight decreases with depth
-            const color = isActive ? 'var(--text-primary)'
-              : item.level === 2 ? 'var(--text-secondary)'
-              : item.level === 3 ? 'var(--text-secondary)'
+            // Indent per level: h1=12, h2=24, h3=36, h4=48, h5=60, h6=72
+            const indent = 12 + (Math.max(1, Math.min(6, item.level)) - 1) * 12;
+            
+            // Visual weight & size decrease with depth
+            const color = isActive
+              ? 'var(--accent)'
+              : item.level === 1
+              ? 'var(--text-primary)'
+              : item.level === 2
+              ? 'var(--text-primary)'
+              : item.level === 3
+              ? 'var(--text-secondary)'
               : 'var(--text-muted)';
-            const fontSize = item.level === 2 ? 13.5 : item.level === 3 ? 12.5 : 12;
-            const fontWeight = item.level <= 3 ? 500 : 400;
+
+            const fontSize = item.level === 1 ? 13.5 : item.level === 2 ? 13 : item.level === 3 ? 12.5 : 12;
+            const fontWeight = item.level === 1 ? 650 : item.level === 2 ? 600 : item.level === 3 ? 500 : 400;
+
             return (
               <button
                 key={i}
@@ -49,7 +56,7 @@ const OutlineSection = ({ note, onHeadingClick }) => {
                 onClick={() => onHeadingClick(item.id)}
                 style={{
                   display: 'block', width: '100%', border: 'none',
-                  padding: `3px 14px 3px ${isActive ? indent - 2 : indent}px`,
+                  padding: `3.5px 14px 3.5px ${isActive ? indent - 2 : indent}px`,
                   textAlign: 'left', cursor: 'pointer', fontSize,
                   borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
                   background: isActive ? 'var(--bg-active)' : 'none',
