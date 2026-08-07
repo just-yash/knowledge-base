@@ -808,16 +808,7 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
       if (href.startsWith('#') && href.length > 1) {
         e.preventDefault();
         const rawTarget = href.slice(1);
-        const headingId = decodeURIComponent(rawTarget).toLowerCase();
-        
-        const targetEl = el.querySelector(`[id="${rawTarget}"]`) || 
-                         el.querySelector(`[id="${headingId}"]`) ||
-                         el.querySelector(`[id*="${headingId.slice(0, 15)}"]`);
-        if (targetEl) {
-          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-          window.dispatchEvent(new CustomEvent('vault-scroll-to', { detail: { headingId: rawTarget } }));
-        }
+        window.dispatchEvent(new CustomEvent('vault-scroll-to', { detail: { headingId: rawTarget } }));
         return;
       }
 
@@ -972,13 +963,26 @@ const NoteEditor = ({
     if (scrollRef.current) scrollRef.current.scrollTop = 0;
   }, [currentNote]);
 
-  // Scroll to heading dispatched by right panel outline clicks
+  // Scroll to heading dispatched by TOC links, WikiLinks, or right panel outline
   React.useEffect(() => {
     const handler = (e) => {
-      const el = document.getElementById(e.detail?.headingId);
+      const rawTarget = e.detail?.headingId;
       const container = scrollRef.current;
-      if (!el || !container) return;
-      const top = el.getBoundingClientRect().top - container.getBoundingClientRect().top + container.scrollTop - 72;
+      if (!rawTarget || !container) return;
+
+      const decoded = decodeURIComponent(rawTarget).toLowerCase();
+      const slug = decoded.replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-{2,}/g, '-');
+
+      const el = document.getElementById(rawTarget) ||
+                 document.getElementById(decoded) ||
+                 document.getElementById(slug) ||
+                 container.querySelector(`[id="${rawTarget}"]`) ||
+                 container.querySelector(`[id="${decoded}"]`) ||
+                 container.querySelector(`[id="${slug}"]`) ||
+                 (slug ? container.querySelector(`[id*="${slug.slice(0, 15)}"]`) : null);
+
+      if (!el) return;
+      const top = el.getBoundingClientRect().top - container.getBoundingClientRect().top + container.scrollTop - 24;
       container.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
     };
     window.addEventListener('vault-scroll-to', handler);

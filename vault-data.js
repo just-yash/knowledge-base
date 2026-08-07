@@ -196,7 +196,7 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
     tags: [],
     created: "2026-08-07",
     modified: "2026-08-07",
-    wordCount: 2460,
+    wordCount: 2386,
     backlinks: [],
     links: [],
     outline: [{"level":2,"text":"Master Documentation: Product Requirements (PRD), Technical Architecture (TRD), & Developer Guide","id":"master-documentation-product-requirements-prd-technical-architecture-trd-developer-guide"},{"level":2,"text":"📋 Table of Contents","id":"table-of-contents"},{"level":2,"text":"1. Executive Summary & Vision","id":"1-executive-summary-vision"},{"level":2,"text":"2. Product Requirements Document (PRD)","id":"2-product-requirements-document-prd"},{"level":3,"text":"2.1 Problem Statement & Objectives","id":"21-problem-statement-objectives"},{"level":3,"text":"2.2 Target Audience & Primary Workflows","id":"22-target-audience-primary-workflows"},{"level":3,"text":"2.3 Feature Matrix & User Stories","id":"23-feature-matrix-user-stories"},{"level":2,"text":"3. Technical Requirements Document (TRD)","id":"3-technical-requirements-document-trd"},{"level":3,"text":"3.1 System Architecture & Zero-Bundler Philosophy","id":"31-system-architecture-zero-bundler-philosophy"},{"level":3,"text":"3.2 High-Level Data Flow & Compilation Pipeline","id":"32-high-level-data-flow-compilation-pipeline"},{"level":3,"text":"3.3 Data Structures & Schema Definitions (vault-data.js)","id":"33-data-structures-schema-definitions-vault-datajs"},{"level":4,"text":"NoteObject Schema","id":"noteobject-schema"},{"level":4,"text":"GraphNode & GraphEdge Schema","id":"graphnode-graphedge-schema"},{"level":2,"text":"4. Subsystem Deep Dives","id":"4-subsystem-deep-dives"},{"level":3,"text":"4.1 2D Canvas Force-Directed Knowledge Graph (vault-graph.jsx)","id":"41-2d-canvas-force-directed-knowledge-graph-vault-graphjsx"},{"level":3,"text":"4.2 Client-Side Obsidian Dataview Query Evaluator (vault-editor.jsx)","id":"42-client-side-obsidian-dataview-query-evaluator-vault-editorjsx"},{"level":3,"text":"4.3 Markdown Processing & Rendering Pipeline (vault-editor.jsx)","id":"43-markdown-processing-rendering-pipeline-vault-editorjsx"},{"level":3,"text":"4.4 Workspace Manager, Tab Handling, & Hash Router (vault-app.jsx)","id":"44-workspace-manager-tab-handling-hash-router-vault-appjsx"},{"level":3,"text":"4.5 File Explorer & Auto-Reveal Sidebar (vault-sidebar.jsx)","id":"45-file-explorer-auto-reveal-sidebar-vault-sidebarjsx"},{"level":3,"text":"4.6 Context Inspector, Outlines, & Backlinks (vault-rightpanel.jsx)","id":"46-context-inspector-outlines-backlinks-vault-rightpaneljsx"},{"level":3,"text":"4.7 Command Palette & Full-Text Search Engine (vault-app.jsx)","id":"47-command-palette-full-text-search-engine-vault-appjsx"},{"level":3,"text":"4.8 Theme Engine & Styling Architecture (index.html)","id":"48-theme-engine-styling-architecture-indexhtml"},{"level":2,"text":"5. Repository Structure & Directory Map","id":"5-repository-structure-directory-map"},{"level":2,"text":"6. Operations, Local Setup, & Maintenance","id":"6-operations-local-setup-maintenance"},{"level":3,"text":"6.1 Prerequisites","id":"61-prerequisites"},{"level":3,"text":"6.2 Building & Live Watching","id":"62-building-live-watching"},{"level":3,"text":"6.3 One-Click Deployment Pipeline (auto-sync.bat)","id":"63-one-click-deployment-pipeline-auto-syncbat"},{"level":2,"text":"7. Security, Privacy, & Exclusion Rules","id":"7-security-privacy-exclusion-rules"},{"level":2,"text":"8. Performance & Scalability Considerations","id":"8-performance-scalability-considerations"},{"level":2,"text":"9. License & Credits","id":"9-license-credits"}],
@@ -285,27 +285,7 @@ The platform provides a browser experience matching desktop Obsidian: interactiv
 
 The application utilizes a **Static Data + In-Browser JSX Runtime** architecture:
 
-\`\`\`
-+------------------------------------+
-|  Obsidian Markdown Vault (notes/)  |
-+------------------------------------+
-                  |
-                  v  (node build-vault.js)
-+------------------------------------+
-|   vault-data.js (JSON Global)      |
-|  - VAULT_NOTES    - VAULT_FOLDERS  |
-|  - GRAPH_NODES    - GRAPH_EDGES    |
-+------------------------------------+
-                  |
-                  v  (Loaded in index.html)
-+-----------------------------------------------------------------+
-|               Client-Side Browser Execution Runtime             |
-|  - React 18 & Babel Standalone (<script type="text/babel">)    |
-|  - HTML5 Canvas 2D Force-Directed Graph Engine                  |
-|  - Marked Parser + KaTeX Shielding + Client Dataview Engine     |
-+-----------------------------------------------------------------+
-\`\`\`
-
+![[Pasted image 20260807192239.png]]
 
 ### 3.2 High-Level Data Flow & Compilation Pipeline
 
@@ -61614,6 +61594,25 @@ Tags : [[GATE]]
 </div>`
   },
 
+  'pasted-image-20260807192239': {
+    id: 'pasted-image-20260807192239',
+    title: "Pasted image 20260807192239",
+    folder: "07 - Annexure",
+    path: ["07 - Annexure","Images","Pasted image 20260807192239"],
+    tags: ["image"],
+    created: "2026-08-07",
+    modified: "2026-08-07",
+    wordCount: 0,
+    backlinks: [],
+    links: [],
+    outline: [],
+    content: `# Pasted image 20260807192239
+
+<div style="text-align:center">
+<img src="notes/07 - Annexure/Images/Pasted image 20260807192239.png" alt="Pasted image 20260807192239" style="max-width:100%;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,0.3)" />
+</div>`
+  },
+
   'screenshot-2025-10-20-180039': {
     id: 'screenshot-2025-10-20-180039',
     title: "Screenshot 2025-10-20 180039",
@@ -66825,6 +66824,11 @@ const VAULT_FOLDERS = [
             "type": "asset"
           },
           {
+            "id": "pasted-image-20260807192239",
+            "name": "Pasted image 20260807192239",
+            "type": "asset"
+          },
+          {
             "id": "screenshot-2025-10-20-180039",
             "name": "Screenshot 2025-10-20 180039",
             "type": "asset"
@@ -70151,6 +70155,7 @@ const VAULT_ASSETS = {
   "Pasted image 20260508182815.png": "notes/07 - Annexure/Images/Pasted image 20260508182815.png",
   "Pasted image 20260508185202.png": "notes/07 - Annexure/Images/Pasted image 20260508185202.png",
   "Pasted image 20260806123443.png": "notes/07 - Annexure/Images/Pasted image 20260806123443.png",
+  "Pasted image 20260807192239.png": "notes/07 - Annexure/Images/Pasted image 20260807192239.png",
   "Screenshot 2025-10-20 180039.png": "notes/07 - Annexure/Images/Screenshot 2025-10-20 180039.png",
   "upscalemedia-transformed.webp": "notes/07 - Annexure/Images/upscalemedia-transformed.webp",
   "WhatsApp Image 2025-12-23 at 2.48.16 PM.jpeg": "notes/07 - Annexure/Images/WhatsApp Image 2025-12-23 at 2.48.16 PM.jpeg"
