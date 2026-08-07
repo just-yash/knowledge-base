@@ -9,32 +9,32 @@ A static, zero-runtime-bundle web application and digital garden that compiles a
 
 ## 📋 Table of Contents
 
-- [1. Executive Summary & Vision](#1-executive-summary--vision)
-- [2. Product Requirements Document (PRD)](#2-product-requirements-document-prd)
-  - [2.1 Problem Statement & Objectives](#21-problem-statement--objectives)
-  - [2.2 Target Audience & Primary Workflows](#22-target-audience--primary-workflows)
-  - [2.3 Feature Matrix & User Stories](#23-feature-matrix--user-stories)
-- [3. Technical Requirements Document (TRD)](#3-technical-requirements-document-trd)
-  - [3.1 System Architecture & Zero-Bundler Philosophy](#31-system-architecture--zero-bundler-philosophy)
-  - [3.2 High-Level Data Flow & Compilation Pipeline](#32-high-level-data-flow--compilation-pipeline)
-  - [3.3 Data Structures & Schema Definitions (`vault-data.js`)](#33-data-structures--schema-definitions-vault-datajs)
-- [4. Subsystem Deep Dives](#4-subsystem-deep-dives)
-  - [4.1 2D Canvas Force-Directed Knowledge Graph (`vault-graph.jsx`)](#41-2d-canvas-force-directed-knowledge-graph-vault-graphjsx)
-  - [4.2 Client-Side Obsidian Dataview Query Evaluator (`vault-editor.jsx`)](#42-client-side-obsidian-dataview-query-evaluator-vault-editorjsx)
-  - [4.3 Markdown Processing & Rendering Pipeline (`vault-editor.jsx`)](#43-markdown-processing--rendering-pipeline-vault-editorjsx)
-  - [4.4 Workspace Manager, Tab Handling, & Hash Router (`vault-app.jsx`)](#44-workspace-manager-tab-handling--hash-router-vault-appjsx)
-  - [4.5 File Explorer & Auto-Reveal Sidebar (`vault-sidebar.jsx`)](#45-file-explorer--auto-reveal-sidebar-vault-sidebarjsx)
-  - [4.6 Context Inspector, Outlines, & Backlinks (`vault-rightpanel.jsx`)](#46-context-inspector-outlines--backlinks-vault-rightpaneljsx)
-  - [4.7 Command Palette & Full-Text Search Engine (`vault-app.jsx`)](#47-command-palette--full-text-search-engine-vault-appjsx)
-  - [4.8 Theme Engine & Styling Architecture (`index.html`)](#48-theme-engine--styling-architecture-indexhtml)
-- [5. Repository Structure & Directory Map](#5-repository-structure--directory-map)
-- [6. Operations, Local Setup, & Maintenance](#6-operations-local-setup--maintenance)
-  - [6.1 Prerequisites](#61-prerequisites)
-  - [6.2 Building & Live Watching](#62-building--live-watching)
-  - [6.3 One-Click Deployment Pipeline (`auto-sync.bat`)](#63-one-click-deployment-pipeline-auto-syncbat)
-- [7. Security, Privacy, & Exclusion Rules](#7-security-privacy--exclusion-rules)
-- [8. Performance & Scalability Considerations](#8-performance--scalability-considerations)
-- [9. License & Credits](#9-license--credits)
+- [[#1. Executive Summary & Vision|1. Executive Summary & Vision]]
+- [[#2. Product Requirements Document (PRD)|2. Product Requirements Document (PRD)]]
+  - [[#2.1 Problem Statement & Objectives|2.1 Problem Statement & Objectives]]
+  - [[#2.2 Target Audience & Primary Workflows|2.2 Target Audience & Primary Workflows]]
+  - [[#2.3 Feature Matrix & User Stories|2.3 Feature Matrix & User Stories]]
+- [[#3. Technical Requirements Document (TRD)|3. Technical Requirements Document (TRD)]]
+  - [[#3.1 System Architecture & Zero-Bundler Philosophy|3.1 System Architecture & Zero-Bundler Philosophy]]
+  - [[#3.2 High-Level Data Flow & Compilation Pipeline|3.2 High-Level Data Flow & Compilation Pipeline]]
+  - [[#3.3 Data Structures & Schema Definitions (vault-data.js)|3.3 Data Structures & Schema Definitions (vault-data.js)]]
+- [[#4. Subsystem Deep Dives|4. Subsystem Deep Dives]]
+  - [[#4.1 2D Canvas Force-Directed Knowledge Graph (vault-graph.jsx)|4.1 2D Canvas Force-Directed Knowledge Graph (vault-graph.jsx)]]
+  - [[#4.2 Client-Side Obsidian Dataview Query Evaluator (vault-editor.jsx)|4.2 Client-Side Obsidian Dataview Query Evaluator (vault-editor.jsx)]]
+  - [[#4.3 Markdown Processing & Rendering Pipeline (vault-editor.jsx)|4.3 Markdown Processing & Rendering Pipeline (vault-editor.jsx)]]
+  - [[#4.4 Workspace Manager, Tab Handling, & Hash Router (vault-app.jsx)|4.4 Workspace Manager, Tab Handling, & Hash Router (vault-app.jsx)]]
+  - [[#4.5 File Explorer & Auto-Reveal Sidebar (vault-sidebar.jsx)|4.5 File Explorer & Auto-Reveal Sidebar (vault-sidebar.jsx)]]
+  - [[#4.6 Context Inspector, Outlines, & Backlinks (vault-rightpanel.jsx)|4.6 Context Inspector, Outlines, & Backlinks (vault-rightpanel.jsx)]]
+  - [[#4.7 Command Palette & Full-Text Search Engine (vault-app.jsx)|4.7 Command Palette & Full-Text Search Engine (vault-app.jsx)]]
+  - [[#4.8 Theme Engine & Styling Architecture (index.html)|4.8 Theme Engine & Styling Architecture (index.html)]]
+- [[#5. Repository Structure & Directory Map|5. Repository Structure & Directory Map]]
+- [[#6. Operations, Local Setup, & Maintenance|6. Operations, Local Setup, & Maintenance]]
+  - [[#6.1 Prerequisites|6.1 Prerequisites]]
+  - [[#6.2 Building & Live Watching|6.2 Building & Live Watching]]
+  - [[#6.3 One-Click Deployment Pipeline (auto-sync.bat)|6.3 One-Click Deployment Pipeline (auto-sync.bat)]]
+- [[#7. Security, Privacy, & Exclusion Rules|7. Security, Privacy, & Exclusion Rules]]
+- [[#8. Performance & Scalability Considerations|8. Performance & Scalability Considerations]]
+- [[#9. License & Credits|9. License & Credits]]
 
 ---
 

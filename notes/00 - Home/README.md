@@ -104,6 +104,7 @@ The application utilizes a **Static Data + In-Browser JSX Runtime** architecture
 +-----------------------------------------------------------------+
 ```
 
+
 ### 3.2 High-Level Data Flow & Compilation Pipeline
 
 1. **Compilation Phase (`build-vault.js`)**:
