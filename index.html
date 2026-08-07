@@ -124,43 +124,57 @@ button { font-family: inherit; }
   text-wrap: pretty;
 }
 
-/* H1 — large, accent blue, most prominent */
-.note-content h1 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1.75em; font-weight: 600;
-  color: oklch(78% 0.12 230);          /* bright blue */
-  margin: 0 0 0.65em; line-height: 1.25; letter-spacing: -0.022em;
-}
-/* H2 — coral/amber, section marker */
-.note-content h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1.18em; font-weight: 600;
-  color: oklch(74% 0.1 50);            /* warm amber */
-  margin: 2em 0 0.55em; padding-bottom: 0.35em;
-  border-bottom: 1px solid var(--border); letter-spacing: -0.01em;
-}
-/* H3 — soft green, sub-section */
-.note-content h3 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1em; font-weight: 600;
-  color: oklch(72% 0.1 155);           /* muted green */
-  margin: 1.5em 0 0.4em;
-}
-/* H4–H6 — lavender, tertiary */
+/* Headings H1–H6 — Distinct visual hierarchy & exact casing */
+.note-content h1, .note-content h2, .note-content h3,
 .note-content h4, .note-content h5, .note-content h6 {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.85em; font-weight: 600;
-  color: oklch(68% 0.08 280);          /* soft purple */
-  margin: 1.2em 0 0.35em; text-transform: none; letter-spacing: 0.02em;
+  text-transform: none !important;
 }
 
-/* Light theme heading overrides — slightly deeper versions */
+/* H1 — large, bright blue */
+.note-content h1 {
+  font-size: 1.75em; font-weight: 600;
+  color: oklch(78% 0.12 230);
+  margin: 0 0 0.65em; line-height: 1.25; letter-spacing: -0.022em;
+}
+/* H2 — warm amber (no bottom border line) */
+.note-content h2 {
+  font-size: 1.35em; font-weight: 600;
+  color: oklch(74% 0.1 50);
+  margin: 1.8em 0 0.5em; border-bottom: none; padding-bottom: 0; letter-spacing: -0.01em;
+}
+/* H3 — soft green */
+.note-content h3 {
+  font-size: 1.15em; font-weight: 600;
+  color: oklch(72% 0.1 155);
+  margin: 1.5em 0 0.4em;
+}
+/* H4 — soft magenta / purple */
+.note-content h4 {
+  font-size: 1.0em; font-weight: 600;
+  color: oklch(75% 0.11 310);
+  margin: 1.3em 0 0.35em;
+}
+/* H5 — soft teal / cyan */
+.note-content h5 {
+  font-size: 0.9em; font-weight: 600;
+  color: oklch(72% 0.09 200);
+  margin: 1.2em 0 0.3em;
+}
+/* H6 — muted warm grey */
+.note-content h6 {
+  font-size: 0.82em; font-weight: 600;
+  color: oklch(68% 0.06 0);
+  margin: 1.1em 0 0.25em;
+}
+
+/* Light theme heading overrides */
 [data-theme="light"] .note-content h1 { color: oklch(42% 0.14 230); }
 [data-theme="light"] .note-content h2 { color: oklch(48% 0.11 50);  }
 [data-theme="light"] .note-content h3 { color: oklch(44% 0.11 155); }
-[data-theme="light"] .note-content h4,
-[data-theme="light"] .note-content h5,
-[data-theme="light"] .note-content h6 { color: oklch(44% 0.09 280); }
+[data-theme="light"] .note-content h4 { color: oklch(46% 0.12 310); }
+[data-theme="light"] .note-content h5 { color: oklch(42% 0.10 200); }
+[data-theme="light"] .note-content h6 { color: oklch(42% 0.05 0);   }
 
 .note-content p  { margin: 0 0 0.9em; }
 .note-content ul, .note-content ol { margin: 0 0 0.9em 1.5em; }
@@ -503,13 +517,13 @@ html { transition: background-color 0.2s ease, color 0.2s ease; }
 <script src="vault-data.js"></script>
 
 <!-- 2. Components (JSX — load order matters: dependencies first) -->
-<script type="text/babel" src="vault-icons.jsx?v=11"></script>
-<script type="text/babel" src="tweaks-panel.jsx?v=11"></script>
-<script type="text/babel" src="vault-graph.jsx?v=11"></script>
-<script type="text/babel" src="vault-sidebar.jsx?v=11"></script>
-<script type="text/babel" src="vault-editor.jsx?v=11"></script>
-<script type="text/babel" src="vault-rightpanel.jsx?v=11"></script>
-<script type="text/babel" src="vault-app.jsx?v=11"></script>
+<script type="text/babel" src="vault-icons.jsx?v=12"></script>
+<script type="text/babel" src="tweaks-panel.jsx?v=12"></script>
+<script type="text/babel" src="vault-graph.jsx?v=12"></script>
+<script type="text/babel" src="vault-sidebar.jsx?v=12"></script>
+<script type="text/babel" src="vault-editor.jsx?v=12"></script>
+<script type="text/babel" src="vault-rightpanel.jsx?v=12"></script>
+<script type="text/babel" src="vault-app.jsx?v=12"></script>
 
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
