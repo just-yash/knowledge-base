@@ -54,13 +54,14 @@ function parseHeader(rawContent) {
       headerLines.push(lines[i]);
     }
     for (const line of headerLines) {
-      const m = line.match(/^([\w-]+)\s*:\s*(.+)/);
-      if (m) header[m[1].toLowerCase()] = m[2].trim();
+      const clean = line.replace(/\*\*/g, '').trim();
+      const m = clean.match(/^([\w\s-]+)\s*:\s*(.*)$/);
+      if (m && m[2].trim()) header[m[1].toLowerCase()] = m[2].trim();
     }
     return { header, body: lines.slice(bodyStart).join('\n').trim() };
   }
 
-  // Case B: Inline Top Metadata block (Type :, Date :, Tags :, Status :, ~ Signature ~)
+  // Case B: Top Metadata Header Block (Key: Value, **Key :**, Source :, ~ Signature ~)
   let metaEndIndex = -1;
   let hasTopMeta = false;
 
@@ -68,20 +69,21 @@ function parseHeader(rawContent) {
     const line = lines[i].trim();
     if (!line) continue;
 
-    // Divider or Heading ends the metadata header block
-    if (line === '---' || line.startsWith('#')) {
-      metaEndIndex = (line === '---') ? i + 1 : i;
+    // Divider (--- or ***) or Heading (#) ends the metadata header block
+    if (/^---+$|^\*\*\*+$|^___+$/.test(line) || line.startsWith('#')) {
+      metaEndIndex = /^---+$|^\*\*\*+$|^___+$/.test(line) ? i + 1 : i;
       break;
     }
 
-    const isKv = /^([\w-]+)\s*:\s*(.+)/.test(line);
-    const isSignature = /^~\s*\*?.*\*?\s*~$/.test(line) || line.startsWith('~');
+    const cleanLine = line.replace(/\*\*/g, '').trim();
+    const isKv = /^([\w\s-]+)\s*:\s*(.*)$/.test(cleanLine);
+    const isSignature = /^~.*~$/.test(cleanLine) || cleanLine.startsWith('~');
 
     if (isKv || isSignature) {
       hasTopMeta = true;
       if (isKv) {
-        const m = line.match(/^([\w-]+)\s*:\s*(.+)/);
-        if (m) header[m[1].toLowerCase()] = m[2].trim();
+        const m = cleanLine.match(/^([\w\s-]+)\s*:\s*(.*)$/);
+        if (m && m[2].trim()) header[m[1].toLowerCase()] = m[2].trim();
       }
     } else {
       break;
