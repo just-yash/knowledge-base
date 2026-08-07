@@ -61,7 +61,7 @@ const OutlineSection = ({ note, onHeadingClick }) => {
                 onMouseEnter={e => { if (!isActive) { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.background = 'var(--bg-hover)'; }}}
                 onMouseLeave={e => { if (!isActive) { e.currentTarget.style.color = color; e.currentTarget.style.background = 'none'; }}}
               >
-                {item.text}
+                {item.text.replace(/<[^>]*>/g, '').trim()}
               </button>
             );
           })}

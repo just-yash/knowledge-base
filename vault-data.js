@@ -188,11 +188,11 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
     tags: [],
     created: "2026-08-07",
     modified: "2026-08-07",
-    wordCount: 1088,
+    wordCount: 1028,
     backlinks: [],
     links: [],
-    outline: [{"level":2,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/compass.svg\" width=\"22\" height=\"22\" valign=\"middle\" /> Overview","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconscompasssvg-width22-height22-valignmiddle-overview"},{"level":2,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/cpu.svg\" width=\"22\" height=\"22\" valign=\"middle\" /> How it works under the hood","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconscpusvg-width22-height22-valignmiddle-how-it-works-under-the-hood"},{"level":3,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/share-2.svg\" width=\"18\" height=\"18\" valign=\"middle\" /> 1. Interactive Knowledge Graph (vault-graph.jsx)","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconsshare-2svg-width18-height18-valignmiddle-1-interactive-knowledge-graph-vault-graphjsx"},{"level":3,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/database.svg\" width=\"18\" height=\"18\" valign=\"middle\" /> 2. Client-side Dataview Engine (vault-editor.jsx)","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconsdatabasesvg-width18-height18-valignmiddle-2-client-side-dataview-engine-vault-editorjsx"},{"level":3,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-text.svg\" width=\"18\" height=\"18\" valign=\"middle\" /> 3. Markdown Parser & Reader (vault-editor.jsx)","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconsfile-textsvg-width18-height18-valignmiddle-3-markdown-parser-reader-vault-editorjsx"},{"level":3,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/search.svg\" width=\"18\" height=\"18\" valign=\"middle\" /> 4. Search & File Tree (vault-sidebar.jsx, vault-app.jsx)","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconssearchsvg-width18-height18-valignmiddle-4-search-file-tree-vault-sidebarjsx-vault-appjsx"},{"level":3,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/panel-right.svg\" width=\"18\" height=\"18\" valign=\"middle\" /> 5. Document Context Panel (vault-rightpanel.jsx)","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconspanel-rightsvg-width18-height18-valignmiddle-5-document-context-panel-vault-rightpaneljsx"},{"level":2,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/folder-tree.svg\" width=\"22\" height=\"22\" valign=\"middle\" /> Vault Structure","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconsfolder-treesvg-width22-height22-valignmiddle-vault-structure"},{"level":2,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/terminal.svg\" width=\"22\" height=\"22\" valign=\"middle\" /> Local Setup & Workflow","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconsterminalsvg-width22-height22-valignmiddle-local-setup-workflow"},{"level":3,"text":"Prerequisites","id":"prerequisites"},{"level":3,"text":"1. Build Vault Data","id":"1-build-vault-data"},{"level":3,"text":"2. Live Rebuilding While Writing in Obsidian","id":"2-live-rebuilding-while-writing-in-obsidian"},{"level":3,"text":"3. Local Preview","id":"3-local-preview"},{"level":2,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/upload-cloud.svg\" width=\"22\" height=\"22\" valign=\"middle\" /> Publishing to GitHub Pages","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconsupload-cloudsvg-width22-height22-valignmiddle-publishing-to-github-pages"},{"level":3,"text":"Quick Push (Windows)","id":"quick-push-windows"},{"level":3,"text":"Manual Push","id":"manual-push"},{"level":2,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shield.svg\" width=\"22\" height=\"22\" valign=\"middle\" /> Ignored & Private Folders","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconsshieldsvg-width22-height22-valignmiddle-ignored-private-folders"},{"level":2,"text":"<img src=\"https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/award.svg\" width=\"22\" height=\"22\" valign=\"middle\" /> License & Credits","id":"img-srchttpsrawgithubusercontentcomlucide-iconslucidemainiconsawardsvg-width22-height22-valignmiddle-license-credits"}],
-    content: `## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/compass.svg" width="22" height="22" valign="middle" /> Overview
+    outline: [{"level":2,"text":"🧭 Overview","id":"overview"},{"level":2,"text":"⚙ How it works under the hood","id":"how-it-works-under-the-hood"},{"level":3,"text":"🕸️ 1. Interactive Knowledge Graph (vault-graph.jsx)","id":"1-interactive-knowledge-graph-vault-graphjsx"},{"level":3,"text":"📊 2. Client-side Dataview Engine (vault-editor.jsx)","id":"2-client-side-dataview-engine-vault-editorjsx"},{"level":3,"text":"📝 3. Markdown Parser & Reader (vault-editor.jsx)","id":"3-markdown-parser-reader-vault-editorjsx"},{"level":3,"text":"🔍 4. Search & File Tree (vault-sidebar.jsx, vault-app.jsx)","id":"4-search-file-tree-vault-sidebarjsx-vault-appjsx"},{"level":3,"text":"📑 5. Document Context Panel (vault-rightpanel.jsx)","id":"5-document-context-panel-vault-rightpaneljsx"},{"level":2,"text":"📂 Vault Structure","id":"vault-structure"},{"level":2,"text":"🛠 Local Setup & Workflow","id":"local-setup-workflow"},{"level":3,"text":"Prerequisites","id":"prerequisites"},{"level":3,"text":"1. Build Vault Data","id":"1-build-vault-data"},{"level":3,"text":"2. Live Rebuilding While Writing in Obsidian","id":"2-live-rebuilding-while-writing-in-obsidian"},{"level":3,"text":"3. Local Preview","id":"3-local-preview"},{"level":2,"text":"🚀 Publishing to GitHub Pages","id":"publishing-to-github-pages"},{"level":3,"text":"Quick Push (Windows)","id":"quick-push-windows"},{"level":3,"text":"Manual Push","id":"manual-push"},{"level":2,"text":"🔒 Ignored & Private Folders","id":"ignored-private-folders"},{"level":2,"text":"📄 License & Credits","id":"license-credits"}],
+    content: `## 🧭 Overview
 
 This repository hosts my personal notes, structured around the **Zettelkasten** methodology and **Maps of Content (MOCs)**.
 
@@ -203,9 +203,9 @@ Instead of using a heavy framework like Next.js, Astro, or Hugo that requires co
 
 ---
 
-## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/cpu.svg" width="22" height="22" valign="middle" /> How it works under the hood
+## ⚙ How it works under the hood
 
-### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/share-2.svg" width="18" height="18" valign="middle" /> 1. Interactive Knowledge Graph (\`vault-graph.jsx\`)
+### 🕸️ 1. Interactive Knowledge Graph (\`vault-graph.jsx\`)
 - **Physics Simulation**: Uses a 2D physics loop that calculates electrostatic node repulsion, link spring tension, center gravity, and velocity dampening so nodes naturally spread out without overlapping.
 - **Theme Native**: The node colors, connection lines, background grid, and modal dialogs match the site's active light or dark theme automatically.
 - **Settings Control**:
@@ -219,7 +219,7 @@ Instead of using a heavy framework like Next.js, Astro, or Hugo that requires co
 
 ---
 
-### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/database.svg" width="18" height="18" valign="middle" /> 2. Client-side Dataview Engine (\`vault-editor.jsx\`)
+### 📊 2. Client-side Dataview Engine (\`vault-editor.jsx\`)
 Obsidian's Dataview plugin is essential for MOCs and index pages. Since static web pages don't have Obsidian's plugin runtime, I wrote a custom parser inside the frontend renderer:
 - Parses \`LIST\` and \`TABLE\` queries inside \`\`\`dataview code blocks.
 - Filters by folder path (\`WHERE contains(file.folder, "03 - Notes")\`), tags, or linked topics (\`FROM [[Topic]]\` / \`FROM #tag\`).
@@ -229,7 +229,7 @@ Obsidian's Dataview plugin is essential for MOCs and index pages. Since static w
 
 ---
 
-### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-text.svg" width="18" height="18" valign="middle" /> 3. Markdown Parser & Reader (\`vault-editor.jsx\`)
+### 📝 3. Markdown Parser & Reader (\`vault-editor.jsx\`)
 - **Multi-Tab Interface**: Open multiple notes simultaneously, switch between tabs, close tabs, and share direct note links via URL hashes (\`#note-title\`).
 - **Note Header Info**: Shows the folder path breadcrumb, modified date, estimated reading time, word count, and clickable tag chips.
 - **Wikilinks**: Resolves \`[[Note Title]]\`, \`[[Note Title|Custom Alias]]\`, and \`[[Note#Heading]]\` anchors across subfolders.
@@ -239,21 +239,21 @@ Obsidian's Dataview plugin is essential for MOCs and index pages. Since static w
 
 ---
 
-### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/search.svg" width="18" height="18" valign="middle" /> 4. Search & File Tree (\`vault-sidebar.jsx\`, \`vault-app.jsx\`)
+### 🔍 4. Search & File Tree (\`vault-sidebar.jsx\`, \`vault-app.jsx\`)
 - **Folder Tree**: A collapsible folder tree mirroring the Obsidian vault layout.
 - **Auto-Reveal**: Opening any note automatically expands its parent folders in the sidebar and scrolls to highlight the active file.
 - **Quick Search**: Press \`Cmd+K\` or \`Ctrl+K\` to open the search modal. Type \`#tag\` to filter notes by tag, or type keywords to search note titles and paths.
 
 ---
 
-### <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/panel-right.svg" width="18" height="18" valign="middle" /> 5. Document Context Panel (\`vault-rightpanel.jsx\`)
+### 📑 5. Document Context Panel (\`vault-rightpanel.jsx\`)
 - **Outline**: Live table of contents generated from document headings with scroll tracking.
 - **Backlinks & Outgoing Links**: Lists all incoming links and outgoing wikilinks.
 - **Related Notes**: Recommends related notes based on shared tag overlap.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/folder-tree.svg" width="22" height="22" valign="middle" /> Vault Structure
+## 📂 Vault Structure
 
 \`\`\`
 knowledge-base/
@@ -285,7 +285,7 @@ knowledge-base/
 
 ---
 
-## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/terminal.svg" width="22" height="22" valign="middle" /> Local Setup & Workflow
+## 🛠 Local Setup & Workflow
 
 ### Prerequisites
 Make sure you have **Node.js** (v16+) installed.
@@ -311,7 +311,7 @@ Then open \`http://localhost:3000\` in your browser.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/upload-cloud.svg" width="22" height="22" valign="middle" /> Publishing to GitHub Pages
+## 🚀 Publishing to GitHub Pages
 
 ### Quick Push (Windows)
 Run the batch script from the repository folder:
@@ -330,7 +330,7 @@ git push origin obsidian
 
 ---
 
-## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shield.svg" width="22" height="22" valign="middle" /> Ignored & Private Folders
+## 🔒 Ignored & Private Folders
 
 Any folders specified in \`SKIP_DIRS\` inside \`build-vault.js\` are ignored during the build step and will not be published:
 \`\`\`javascript
@@ -346,7 +346,7 @@ const SKIP_DIRS = new Set([
 
 ---
 
-## <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/award.svg" width="22" height="22" valign="middle" /> License & Credits
+## 📄 License & Credits
 
 Created by **Yash Agrawall** ([@just-yash](https://github.com/just-yash)).  
 Built with React, Babel Standalone, Marked.js, KaTeX, and Highlight.js.`
