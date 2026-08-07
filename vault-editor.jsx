@@ -982,7 +982,13 @@ const NoteEditor = ({
               <span style={{ fontSize:11, color:'var(--text-muted)' }}>{note.wordCount?.toLocaleString()} words</span>
               {(note.tags||[]).length > 0 && <span style={{ color:'var(--border)' }}>·</span>}
               <div style={{ display:'flex', flexWrap:'wrap', gap:4 }}>
-                {(note.tags||[]).map(t => <TagBadge key={t} label={t} />)}
+                {(note.tags||[]).map(t => (
+                  <TagBadge
+                    key={t}
+                    label={t}
+                    onClick={() => window.dispatchEvent(new CustomEvent('vault-search-tag', { detail: { tag: t } }))}
+                  />
+                ))}
               </div>
             </div>
 

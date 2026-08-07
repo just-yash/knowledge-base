@@ -162,7 +162,13 @@ const CommandPalette = ({ onClose, onNavigate, initialQuery = '' }) => {
                     </div>
                   </div>
                   <div style={{ display: 'flex', gap: 4 }}>
-                    {(note.tags || []).slice(0, 2).map(t => <TagBadge key={t} label={t} />)}
+                    {(note.tags || []).slice(0, 2).map(t => (
+                      <TagBadge
+                        key={t}
+                        label={t}
+                        onClick={(e) => { e.stopPropagation(); setCmdQuery('#' + t); }}
+                      />
+                    ))}
                   </div>
                 </button>
               ))}
