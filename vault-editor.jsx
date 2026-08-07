@@ -151,6 +151,33 @@ function renderDataviewBlock(code) {
 function ensureMarkedConfigured() {
   if (!window.marked || window.marked._dataviewConfigured) return;
   window.marked._dataviewConfigured = true;
+
+  try {
+    const highlightExtension = {
+      name: 'highlight',
+      level: 'inline',
+      start(src) { return src.indexOf('=='); },
+      tokenizer(src) {
+        const rule = /^==([^=\n]+)==/;
+        const match = rule.exec(src);
+        if (match) {
+          return {
+            type: 'highlight',
+            raw: match[0],
+            text: match[1],
+            tokens: this.lexer.inlineTokens(match[1])
+          };
+        }
+      },
+      renderer(token) {
+        return `<mark>${this.parser.parseInline(token.tokens)}</mark>`;
+      }
+    };
+    window.marked.use({ extensions: [highlightExtension] });
+  } catch (e) {
+    console.warn('Could not register highlight extension:', e);
+  }
+
   const renderer = new marked.Renderer();
 
   // ── Code blocks ──────────────────────────────────────────────────────────
@@ -767,11 +794,10 @@ const NoteContent = ({ note, onNoteNavigate, readingWidth, fontSize }) => {
     const withImgs = resolveObsidianEmbeds(rawContent);
     // 2. Shield $…$ and $$…$$ from marked so _ and * aren't mangled
     const { out: shielded, store } = shieldMath(withImgs);
-    // 3. Normalize asymmetric bold+italic tags (**_text**_ → ***text***) and Obsidian ==highlight== syntax
+    // 3. Normalize asymmetric bold+italic tags (**_text**_ → ***text***)
     const normalizedMd = shielded
       .replace(/\*\*_([^\n]+?)\*\*_/g, '***$1***')
-      .replace(/__\*([^\n]+?)__\*/g, '___$1___')
-      .replace(/==([^\n=]+?)==/g, '<mark>$1</mark>');
+      .replace(/__\*([^\n]+?)__\*/g, '___$1___');
     // 4. Parse markdown
     let html = marked.parse(normalizedMd);
     // 5. Restore math blocks (KaTeX auto-render will handle them in useEffect)
