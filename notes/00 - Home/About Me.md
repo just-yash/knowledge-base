@@ -101,7 +101,7 @@ I also study **finance** — not as an end in itself, but because building Zaffe
 
 ## Contact
 
-- **GitHub** — [just-yash](https://github.com/just-yash)
+- **GitHub** — [yashagrawall](https://github.com/yashagrawall)
 - **Email** — yashagrawall333@gmail.com
 - **Instagram** — [just._ yash](www.instagram.com/just._yash)
 

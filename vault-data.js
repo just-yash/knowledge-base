@@ -7,8 +7,8 @@ const VAULT_NOTES = {
     folder: "00 - Home",
     path: ["00 - Home","About Me"],
     tags: [],
-    created: "2026-05-20",
-    modified: "2026-05-20",
+    created: "2026-08-07",
+    modified: "2026-08-07",
     wordCount: 826,
     backlinks: [],
     links: ["moc-computer-vision-and-surveillance","moc-data-structures-and-algorithms","moc-database-systems","moc-digital-logic","moc-operating-systems","moc-engineering-mathematics","moc-languages","moc-ai-and-machine-learning","moc-cybersecurity","fragments-of-a-fading-mind","moc-writing-and-creativity","moc-finance","index"],
@@ -112,7 +112,7 @@ I also study **finance** — not as an end in itself, but because building Zaffe
 
 ## Contact
 
-- **GitHub** — [just-yash](https://github.com/just-yash)
+- **GitHub** — [yashagrawall](https://github.com/yashagrawall)
 - **Email** — yashagrawall333@gmail.com
 - **Instagram** — [just._ yash](www.instagram.com/just._yash)
 
@@ -197,7 +197,7 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
 
 A static, zero-runtime-bundle web application and digital garden that compiles a raw Obsidian Markdown vault into a browser viewer with an interactive 2D Canvas force-directed graph, a client-side **Obsidian Dataview** query engine, KaTeX math rendering, and multi-tab document navigation.
 
-**Live Deployment:** [just-yash.github.io/knowledge-base](https://just-yash.github.io/knowledge-base/)
+**Live Deployment:** [yashagrawall.github.io/knowledge-base](https://yashagrawall.github.io/knowledge-base/)
 
 ---
 
@@ -502,7 +502,7 @@ const SKIP_DIRS = new Set([
 
 ## 9. License & Credits
 
-- **Author**: Yash Agrawall ([@just-yash](https://github.com/just-yash))
+- **Author**: Yash Agrawall ([@yashagrawall](https://github.com/yashagrawall))
 - **Core Stack**: React 18, Babel Standalone, Canvas 2D, Marked.js, KaTeX, Highlight.js, Lucide Icons.
 - **License**: MIT License.`
   },

@@ -3,7 +3,7 @@
 
 A static, zero-runtime-bundle web application and digital garden that compiles a raw Obsidian Markdown vault into a browser viewer with an interactive 2D Canvas force-directed graph, a client-side **Obsidian Dataview** query engine, KaTeX math rendering, and multi-tab document navigation.
 
-**Live Deployment:** [just-yash.github.io/knowledge-base](https://just-yash.github.io/knowledge-base/)
+**Live Deployment:** [yashagrawall.github.io/knowledge-base](https://yashagrawall.github.io/knowledge-base/)
 
 ---
 
@@ -353,6 +353,6 @@ const SKIP_DIRS = new Set([
 
 ## 9. License & Credits
 
-- **Author**: Yash Agrawall ([@just-yash](https://github.com/just-yash))
+- **Author**: Yash Agrawall ([@yashagrawall](https://github.com/yashagrawall))
 - **Core Stack**: React 18, Babel Standalone, Canvas 2D, Marked.js, KaTeX, Highlight.js, Lucide Icons.
 - **License**: MIT License.

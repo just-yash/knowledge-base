@@ -912,7 +912,7 @@ const SocialIcon = ({ paths, size = 14 }) => (
 
 const SOCIAL_LINKS = [
   {
-    id: 'github', href: 'https://github.com/just-yash', title: 'GitHub',
+    id: 'github', href: 'https://github.com/yashagrawall', title: 'GitHub',
     icon: <SocialIcon paths={<><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3.28-.36 6.44-1.6 6.44-7.04A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.48a13.38 13.38 0 0 0-6 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77 5.44 5.44 0 0 0 3.56 8.5c0 5.4 3.16 6.64 6.44 7A4.8 4.8 0 0 0 9 18.8V22"/><path d="M9 18c-4.51 2-5-2-7-2"/></>} />,
   },
   {
