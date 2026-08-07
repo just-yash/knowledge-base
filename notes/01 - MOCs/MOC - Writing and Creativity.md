@@ -44,7 +44,7 @@ Mastering this domain enables building a personal writing brand, producing more 
 - [[Human Paradox]] — on the contradictions in human nature
 - [[Modern Madness]] — on the chaos and contradictions of modern life
 - [[System]] — on systems, structures, and their effects on the individual
-- [[03 - Notes/Matrix]] — on constructed reality and the systems that shape perception
+- [[05 - Creativity/Poetry/Matrix|Matrix]] — on constructed reality and the systems that shape perception
 
 ### Identity and Growth
 - [[Shadows of Adulthood]] — on the transition into adult life and its weight

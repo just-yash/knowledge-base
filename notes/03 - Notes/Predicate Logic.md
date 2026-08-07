@@ -1,7 +1,7 @@
 
 Type : #Note    
 Date :  2026-02-26    
-Tags : [[Maths]]   
+Tags : [[Maths]]     
 Status : #complete     
 ~ ***Yash Agrawall*** ~  
 

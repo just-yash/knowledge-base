@@ -26,7 +26,12 @@ Status : #incomplete
 ---
 # Study Flow 
 
-
+```dataview 
+LIST
+FROM [[]] OR [[]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
 
 
 

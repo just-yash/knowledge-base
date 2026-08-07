@@ -28,32 +28,12 @@ Mastering DBMS is required for GATE, enables designing efficient data storage fo
 ---
 # Study Flow 
 
-### Fundamentals
-- [[DBMS Basics]] — basic definitions, types of databases, and core terminology
-- [[DB System Concepts]] — the fundamental concepts underlying database system design
-- [[DB Users & Administrators]] — roles of users, DBAs, and their responsibilities
-
-### Architecture
-- [[DB 3-level Architecture]] — the three-schema architecture (external, conceptual, internal)
-- [[DBMS Architecture]] — DBMS component architecture and how queries are processed
-- [[DBMS Interface]] — types of database interfaces for users and programmers
-- [[DB Languages]] — DDL, DML, DCL and other database language categories
-
-### Data Modelling
-- [[Data Models]] — hierarchical, network, relational, and object-oriented data models
-- [[ER Model]] — entity-relationship modelling for database design
-- [[Relational Model]] — the relational model, tuples, attributes, and keys
-
-### Query Languages
-- [[Relational Algebra]] — procedural query languages underlying SQL
-- [[Relational Calculus]] - Non-procedural query language 
-
-### Normalization 
-- [[Functional Dependency]]
-
-
-### Advanced
-- [[Transactions and Concurrency Control]] — ACID properties, isolation levels, and concurrency mechanisms
+```dataview 
+LIST
+FROM [[DBMS]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
 
 ---
 # Related Tags 

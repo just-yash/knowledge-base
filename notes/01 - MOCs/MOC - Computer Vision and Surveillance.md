@@ -29,25 +29,12 @@ Mastering this domain produces a working prototype, a publishable research paper
 ---
 # Study Flow 
 
-### Research Planning
-- [[Research Rating]] — rating and evaluation framework for research progress
-
-### Core Pipeline
-- [[Face Detection]] — detecting faces in frames as the first pipeline stage
-- [[Face Alignment]] — aligning detected faces to a canonical pose before embedding
-- [[Face Embedding]] — converting aligned faces into vector representations
-- [[Face Matching]] — matching embeddings against a database for identification
-
-### Models
-- [[FaceNet]] — FaceNet architecture for face embedding using triplet loss
-- [[ArcFace]] — ArcFace additive angular margin loss for discriminative face embeddings
-- [[Multi-Object Tracking]] — multi-object tracking methods for following faces across frames
-
-### Concepts
-- [[Facial Angles]] — how facial pose angles affect recognition accuracy
-
-### Future Directions
-- [[Future Works (Research)]] — open problems and next steps for the multi-camera surveillance research
+```dataview 
+LIST
+FROM [[Computer Vision]] OR [[security]] 
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
 
 ---
 # Related Tags 

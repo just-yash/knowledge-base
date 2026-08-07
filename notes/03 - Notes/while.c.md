@@ -35,23 +35,6 @@ while (expression)
 
 > This is why its called entry controlled.
 
----
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
 
 ---
 ###### Examples : 

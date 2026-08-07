@@ -24,8 +24,12 @@ Mastering operating systems is required for GATE, provides the conceptual model 
 ---
 # Study Flow 
 
-### OS Foundations
-- [[Software]] — software categories: system software, application software, and their relationships
+```dataview 
+LIST
+FROM [[Operating System]] 
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
 
 ---
 # Related Tags 

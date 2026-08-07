@@ -26,17 +26,12 @@ Mastering cybersecurity enables penetration testing as a monetisable skill, stre
 ---
 # Study Flow 
 
-### Foundations
-- [[Networking Basics]] — how computers communicate — the foundation of all network security
-
-### Linux and Environment
-- [[Linux Foundation]] — Linux OS fundamentals and chapter-level objectives
-- [[Kali Linux Overview]] — Kali Linux as the primary penetration testing distribution
-- [[Setting Up Virtual Machine or Lab]] — setting up virtualised lab environments for safe hacking practice
-
-### Ethical Hacking Methodology
-- [[Ethical Hacking]] — the role of ethical hackers and the distinction between ethical and malicious intent
-- [[Stages of Hacking]] — the full methodology of a hacking engagement from reconnaissance to post-exploitation
+```dataview 
+LIST
+FROM [[CyberSec]] OR [[Linux]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
 
 ---
 # Related Tags 

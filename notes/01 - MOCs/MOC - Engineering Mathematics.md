@@ -84,6 +84,56 @@ Mastering engineering maths enables GATE cracking, provides the mathematical gro
 - [[Planer, Non-Planer Graphs]] — planarity, Euler's formula, and Kuratowski's theorem
 - [[Tree_DM]] — trees in the context of discrete mathematics and graph theory
 
+### Simple & Compound Interest
+```dataview 
+LIST
+FROM ([[Maths]] AND [[Finance]]) 
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+
+### Probability
+```dataview 
+LIST
+FROM [[probability]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+
+### Statistics
+```dataview 
+LIST
+FROM [[statistics]] 
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+
+### Graph Theory
+```dataview 
+LIST
+FROM [[Graph]] AND [[Maths]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+
+### Set Theory 
+
+```dataview 
+LIST
+FROM [[Set]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+
+### Linear Algebra
+
+```dataview 
+LIST
+FROM [[Maths]] and -([[probability]] or [[statistics]] or [[Set]] or [[Graph]] or [[DLD]])
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+
 ---
 # Related Tags 
 

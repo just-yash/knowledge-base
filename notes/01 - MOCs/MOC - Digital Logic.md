@@ -25,12 +25,12 @@ Mastering digital logic is required for GATE, underpins understanding of process
 ---
 # Study Flow 
 
-### Foundations
-- [[Digital Logic Basics]] — number systems, electrical engineering basics, and Boolean fundamentals
-
-### Combinational Circuits
-- [[Combinational Circuits]] — circuits whose output depends only on current inputs (no memory)
-- [[Adder]] — half adder and full adder circuit design and truth tables
+```dataview 
+LIST
+FROM [[DLD]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
 
 ---
 # Related Tags 

@@ -84,41 +84,69 @@ Source : [How to read a paper : S. Keshav](https://web.stanford.edu/class/ee384m
 	3) persevere and go on to the 3rd Pass 
 
 ---
-## Key Ideas 
-
-
-
-
----
-## Note
-
-
-
-
----
 ## 3rd Pass
 
-
-
-
-
-
-
-
+- Key : Attempt to re-implement the paper 
+	- making the same assumptions at the authors 
+	- re-create the work 
+- Compare this re-creation with the actual paper 
+- Identify paper’s innovations and its hidden failings and assumptions 
+- 3rd pass requires great attention to detail 
+- Identify and challenge every assumption in every statement 
+- Think about how you yourself would present a particular idea 
+	- sharp insight into the proof and presentation techniques in the paper 
+	- add this to your repertoire of tools 
+- Jot down ideas for future work 
+- Time : 
+	- 4-5 hours for beginners 
+	- 1-2 hour for experts 
+- At the end of this pass : 
+	- reconstruct the entire structure of the paper from memory 
+	- identify strong and week points 
+	- pinpoint 
+		- implicit assumptions 
+		- missing citations to meaningful work
+		- potential issues with experimental or analytical techniques 
 
 ---
-# Questions
+# Literature Survey 
 
+- Testing paper reading skills → doing a literature survey 
+- Read tens of papers (better if unfamiliar field)
 
+## What papers to read? 
 
+1. Academic Search Engine : [Google Scholar](https://scholar.google.com/) 
+2. search using some well-chosen keywords to find 3 to 5 recent papers in the area 
+3. Do [[#1st Pass]] on each paper to get a sense of the work 
+4. Read their related work sections 
+5. if you will get a thumbnail summary of the recent survey paper → Read it 
+6. If not, Find shared citations and repeated author names in the bibliography 
+7. These are key papers and researchers in that area 
+8. Download the key papers and set them aside 
+9. Go to the websites of the key researchers and see where they’ve published recently 
+	1. this will help you identify the top conferences in that field 
+	2. best researchers publish in the top conferences 
+10. Go to the website for these top conferences and look through their recent proceedings 
+11. A quick scan → identify recent high quality related work 
+12. First version of the survey : these papers + key papers you set aside earlier 
+13. Make two passes through these papers 
+14. Find a key paper that you failed to find earlier  
 
 ---
-# Summary 
-
-
-
-
+# Related Work 
 
 ---
-# References 
+## Reading to Review 
+
+1. Timothy Roscoe’s : “Writing reviews for systems conferences”
+
+## Reading to write a Technical paper 
+
+1. Henning Schulzrinne’s comprehensive web site 
+2. George Whiteside’s Excellent overview of the process 
+
+## Entire Spectrum of Research Skills 
+
+1. Simon Peyton Jones’ website 
 

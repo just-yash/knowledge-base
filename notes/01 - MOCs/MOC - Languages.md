@@ -28,60 +28,40 @@ Mastering these languages enables implementing the surveillance research system 
 # Study Flow 
 
 ### Language Theory
-- [[Programming]] — what programming is and the core concepts across languages
-- [[Languages]] — overview of programming languages and their classifications
-- [[Language Translators]] — compilers, interpreters, and assemblers
-- [[Operators]] — operator types across programming languages
-- [[Errors]] — types of programming errors (syntax, runtime, logical)
-- [[Markdown Basic]] — Markdown syntax for documentation and note-writing
-
-### C Programming — Foundations
-- [[Syllabus.c]] — C programming course syllabus and learning roadmap
-- [[1st C Program]] — writing and running the first C program
-- [[Basics.c]] — C language basics including structure and compilation
-- [[Tokens.c]] — tokens in C: keywords, identifiers, constants, operators
-- [[DataTypes.c]] — C data types and their memory representation
-- [[Primary DataTypes.c]] — primary data types: int, float, char, double
-- [[Escape Sequences.c]] — escape sequences for special characters in C
-- [[Input Output(Console).c]] — scanf and printf for console I/O in C
-- [[Type Conversion.c]] — implicit and explicit type conversion in C
-
-### C Programming — Control Flow
-- [[Simple if.c]] — simple if statement syntax and usage
-- [[if-else.c]] — if-else branching structure
-- [[Nested if.c]] — nested conditionals and their pitfalls
-- [[else-if ladder.c]] — else-if ladder for multiple conditions
-- [[switch-case.c]] — switch-case for multi-branch selection
-- [[for.c]] — for loop syntax and iteration patterns
-- [[while.c]] — while loop and its use cases
-- [[do-while.c]] — do-while loop guaranteeing at least one execution
-- [[break.c]] — break statement to exit loops
-- [[continue.c]] — continue statement to skip loop iterations
-- [[nested_loop.c]] — nested loops and pattern problems
-- [[Pattern Questions.c]] — classic pattern problems using nested loops
-
-### C Programming — Functions, Pointers, Memory
-- [[Control Structures.c]] — functions and structured programming in C
-- [[Operators.c]] — operator precedence and expressions in C
-- [[pointers.c]] — pointer declaration, dereferencing, and arithmetic
-- [[Complex Pointers.c]] — complex pointer declarations and pointer to pointer
-- [[void pointer.c]] — void pointers and generic programming in C
-- [[Pointers and Functions.c]] — passing pointers to functions and returning pointers
-- [[Dynamic Memory Allocation.c]] — malloc, calloc, realloc, free
-- [[char functions.c]] — string handling functions from string.h
-- [[Strings.c]] — string as char array, manipulation, and common operations
-
-### Java and OOP
-- [[Java Overview]] — Java as a platform-independent language and its history
-- [[Java Installation and Path Setup]] — setting up JDK, JRE, and PATH configuration
-- [[JVM Architecture]] — JVM components and how Java code executes
-- [[OOPs Features]] — the four pillars of OOP: encapsulation, inheritance, polymorphism, abstraction
-- [[PYQ Analysis_JAVA|Java PYQ Analysis]] — previous year question analysis for Java in academic context
-
-### Python
-- [[Python Basics]] — Python syntax, variables, and core language features
-- [[Print_py]] — Python print function and output formatting
-- [[Python Libraries]] 
+```dataview 
+LIST
+FROM [[Language]] 
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+### C Programming 
+```dataview 
+LIST
+FROM [[C]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+### Java Programming 
+```dataview 
+LIST
+FROM [[Java]] 
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+### Python Programming 
+```dataview 
+LIST
+FROM [[Python]] 
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+### Markdown Language
+```dataview 
+LIST
+FROM [[Markdown]] 
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
 
 ---
 # Related Tags 

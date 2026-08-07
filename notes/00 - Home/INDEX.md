@@ -36,7 +36,7 @@ This file is the master entry point to the entire vault. Every MOC below maps a 
 ## Personal and Creative
 
 - [[MOC - Writing and Creativity]] — poetry, published work, creative writing body of work
-- [[MOC - Zettelkasten Method]] — the system that organises this vault
+
 
 ---
 # Quick Navigation

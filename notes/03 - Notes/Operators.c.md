@@ -737,24 +737,6 @@ a = 5 ? 4 : 1
 a = <span style="color:rgb(146, 208, 80)">4</span>
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 # Summary 
 
 - Arithmetic operators perform mathematical calculations.

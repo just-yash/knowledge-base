@@ -27,18 +27,12 @@ Mastering AI enables building AI-powered products, contributing to research on m
 ---
 # Study Flow 
 
-### Fundamentals
-- [[Generative AI]] — how generative AI imitates human intelligence and its key categories
-- [[Large Language Model]] — what LLMs are, how they work, and their architecture
-
-### Prompting and Context Engineering
-- [[Prompts]] — prompt patterns and extraction techniques for working with AI
-- [[Context Engineering]] — managing and structuring context for effective AI outputs
-
-### Tools and Applications
-- [[AI Tools]] — survey of AI tools covered in workshop setting
-- [[Coding Assistant]] — LLM-based coding assistants and how they handle complex programming tasks
-- [[Tools With Claude Code]] — tool use patterns specific to Claude Code for agentic workflows
+```dataview 
+LIST
+FROM [[AI]] OR [[Gen AI]] OR [[LLM]] OR [[Programming]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
 
 ---
 # Related Tags 

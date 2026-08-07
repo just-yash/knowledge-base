@@ -54,6 +54,13 @@ Mastering DSA is essential for GATE preparation, technical interviews, and imple
 - [[Insertion Sort]] — insertion sort building sorted array incrementally
 - [[Merge Sort]] — divide-and-conquer merge sort with O(n log n) complexity
 
+```dataview 
+TABLE status AS "Status", pattern AS "Pattern"
+FROM [[DSA]]
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
+
 ---
 # Related Tags 
 

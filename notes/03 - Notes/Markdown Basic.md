@@ -77,7 +77,7 @@ or
 	- [X] checkbox 2
 ```
 - [ ] checkbox 1
-	- [x] checkbox 2
+	- [x] checkbox 2 ✅ 2026-07-25
 ---
 # Table
 ``` markdown
@@ -197,9 +197,11 @@ This is `code`
 
 ```markdown
 Text is ==highlight==
+
 Text is <mark>highlight</mark>
 ```
 Text is ==highlight==   
+
 Text is <mark>highlight</mark>   
 
 ---
@@ -320,6 +322,7 @@ or
 ---
 
 # Automatic Date and Time Inserter
+
 used in templates  
 
 ```markdown
@@ -347,6 +350,7 @@ used in templates
 
 ---
 # Tags
+
 used to link and separate notes  
 ```markdown
 [[tags]]

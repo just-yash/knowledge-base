@@ -1,7 +1,7 @@
 
 Type : #Note    
 Date :  2026-01-27  
-Tags :   [[Language]]  
+Tags :   [[Language]] ; [[C]] ; [[Python]]  
 Status : #complete     
 ~ ***Yash Agrawall*** ~  
 

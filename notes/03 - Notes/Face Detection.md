@@ -57,7 +57,7 @@ Status : #incomplete
 ---
 ### CNN-Based Detectors 
 - Convolutional Neural Network
-#### [[MTCNN]] 
+#### MTCNN
 - 2016 - present 
 - cascaded three-stage CNN : 
 	1. Proposal Net 

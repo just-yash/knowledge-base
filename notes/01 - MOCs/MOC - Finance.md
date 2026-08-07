@@ -27,29 +27,12 @@ Mastering finance enables pricing Zaffee correctly, understanding unit economics
 ---
 # Study Flow 
 
-### Economics Foundations
-- [[Economics]] — scope of economics and its major branches
-- [[Basic Problems of an Economy]] — the fundamental economic problems every system must solve
-
-### Demand
-- [[Demand]] — the concept of demand and what drives it
-- [[Law Of Demand]] — the inverse relationship between price and quantity demanded
-- [[Demand Function]] — mathematical representation of the demand relationship
-- [[Elasticity of Demand]] — how responsively demand changes with price
-
-### Supply
-- [[Supply]] — the concept of supply from a producer perspective
-- [[Law of Supply]] — the positive relationship between price and quantity supplied
-- [[Supply Function]] — mathematical representation of the supply relationship
-- [[Elasticity of Supply]] — how responsively supply changes with price
-
-### Personal Finance
-- [[FPYA]] — personal financial planning course notes (Indian context, Udemy)
-- [[Health Insurances]] — health insurance types, coverage, and selection criteria
-- [[Rate of Interest]] — types of interest rates and how they affect financial decisions
-
-### Compounding
-- [[Magic of Compounding]] — how compound interest builds wealth over time
+```dataview 
+LIST
+FROM [[Finance]] OR [[Financial Planning]] OR [[Compounding]] OR [[Health Insurance]] 
+WHERE contains(file.folder, "03 - Notes")
+SORT file.mtime DESC
+```
 
 ---
 # Related Tags 

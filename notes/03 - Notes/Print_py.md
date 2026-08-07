@@ -7,6 +7,7 @@ Status : #complete
 
 ---
 # Print_py
+
 Python `print()` function
 - built-in function 
 - Syntax:
@@ -37,24 +38,6 @@ The `flush` parameter controls when this buffered output is actually written.
 	- excessive flushing can slow down a program → use only when timely output is important
 
 ---
-## Core Idea 
-
-
-
-
----
-## Explanation 
-
-
-
-
----
-## Why It Matters 
-
-
-
-
----
 ## objects in python
 - written inside quotes → double or single → ' ' or " "
 ```python
@@ -71,21 +54,60 @@ print(This will also cause an error)
 print("Yash","Zettelkasten",sep = "'s ", end= "!!!\n")
 ```
 
+---
+## Printing Numbers & Expressions
 
+- numbers can be printed directly — no quotes needed
+- arithmetic expressions are evaluated before printing
+```python
+print(23)           # 23
+print(35 + 23)      # 58
+print(10 * 5)       # 50
+print(10 / 4)       # 2.5  → always float for division
+```
 
+- with quotes → treated as string literal, printed as-is
+- without quotes → treated as variable or expression, evaluated first
+```python
+name = "Yash"
+print("name")    # name   ← string literal
+print(name)      # Yash   ← variable value
+```
+
+---
+## Multi-value printing behaviour
+
+- comma-separated values → printed on **same line**, separated by `sep` (default: space)
+- separate `print()` calls → each on a **new line** (because `end='\n'` by default)
+
+```python
+print("Hello", "World")         # Hello World
+print("Hello")
+print("World")                  # Hello
+                                # World
+```
+
+- to print on same line without space:
+```python
+print("Hello", "World", sep="")     # HelloWorld
+print("Hello", end=" "); print("World")  # Hello World
+```
 
 ---
 # Questions
 
-
-
+- When does `flush=True` become a real bottleneck — at what output volume?
+- How does `print()` handle objects that don't have a `__str__` method?
+- What's the difference between `print(x)` and `sys.stdout.write(str(x))`?
 
 ---
 # Summary 
 
-
-
+`print()` is Python's built-in output function. It accepts any number of objects, converts them to strings, separates them with `sep` (default: space), and ends with `end` (default: newline). Numbers and expressions are evaluated before printing — quotes make something a literal string. Output is buffered by default; `flush=True` forces immediate write. The `file` parameter redirects output away from stdout entirely.
 
 
 ---
 # References
+
+1. [w3schools - print()](https://www.w3schools.com/python/ref_func_print.asp)
+2. [Apna College - Python Lecture 1](https://youtu.be/t2_Q2BRzeEE?si=owFdrXv11UvrsbGH)
