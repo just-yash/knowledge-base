@@ -83,27 +83,7 @@ The platform provides a browser experience matching desktop Obsidian: interactiv
 
 The application utilizes a **Static Data + In-Browser JSX Runtime** architecture:
 
-```
-+------------------------------------+
-|  Obsidian Markdown Vault (notes/)  |
-+------------------------------------+
-                  |
-                  v  (node build-vault.js)
-+------------------------------------+
-|   vault-data.js (JSON Global)      |
-|  - VAULT_NOTES    - VAULT_FOLDERS  |
-|  - GRAPH_NODES    - GRAPH_EDGES    |
-+------------------------------------+
-                  |
-                  v  (Loaded in index.html)
-+-----------------------------------------------------------------+
-|               Client-Side Browser Execution Runtime             |
-|  - React 18 & Babel Standalone (<script type="text/babel">)    |
-|  - HTML5 Canvas 2D Force-Directed Graph Engine                  |
-|  - Marked Parser + KaTeX Shielding + Client Dataview Engine     |
-+-----------------------------------------------------------------+
-```
-
+![[Pasted image 20260807192239.png]]
 
 ### 3.2 High-Level Data Flow & Compilation Pipeline
 
@@ -192,33 +172,7 @@ Since static sites lack Obsidian's Dataview plugin environment, `vault-editor.js
 
 ### 4.3 Markdown Processing & Rendering Pipeline (`vault-editor.jsx`)
 
-```
-Raw Markdown Content
-       |
-       v
-1. Code Block Shielding (`...` & ```...```)
-       |
-       v
-2. Obsidian Asset Embed Resolver (![[image.png]])
-       |
-       v
-3. KaTeX Math Shielding ($...$ & $$...$$)
-       |
-       v
-4. Marked.js Markdown Parsing (GFM, Callouts, Tables, Tasks)
-       |
-       v
-5. KaTeX Math Unshielding & DOM Rendering
-       |
-       v
-6. WikiLink Resolution ([[Note Title]] & [[Note#Heading|Alias]])
-       |
-       v
-7. Client-Side Dataview Codeblock Evaluation
-       |
-       v
-Final Rendered HTML
-```
+![[Pasted image 20260807193733.png]]
 
 ### 4.4 Workspace Manager, Tab Handling, & Hash Router (`vault-app.jsx`)
 

@@ -353,7 +353,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -384,8 +385,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2eafb8f6181eba51",
+  "active": "c9cabfdcce481db0",
   "lastOpenFiles": [
+    "07 - Annexure/Pasted image 20260807194323.png",
+    "07 - Annexure/Images/Pasted image 20260807193733.png",
+    "00 - Home/README.md",
+    "02 - Raw Notes/Pasted.md",
+    "07 - Annexure/Images/Pasted image 20260807192239.png",
     "08 - Tags/AI.md",
     "04 - Research/Multi-camera spatiotemporal deep learning framework for real-time abnormal behavior detection in dense urban environments.md",
     "01 - MOCs/MOC - AI and Machine Learning.md",
@@ -416,9 +422,6 @@
     "Private/00_COMMAND_CENTER.md",
     "Private/YOLO_production_setup_guide.md",
     "Private/MASTER_STRATEGIC_REPORT.md",
-    "Private/Templates/Daily Template.md",
-    "Private/Career/Job Applications/Remote Work Websites.md",
-    "09 - Templates/DSA Qs.md",
     "Private/Insights",
     "09 - Templates/Untitled",
     "Personal/Journal/A - Daily",
@@ -431,8 +434,6 @@
     "07 - Annexure/Images/Screenshot 2025-10-20 180039.png",
     "07 - Annexure/Images/upscalemedia-transformed.webp",
     "07 - Annexure/Images/Pasted image 20260508185202.png",
-    "07 - Annexure/Images/Pasted image 20260508182815.png",
-    "07 - Annexure/Images/Pasted image 20260508182015.png",
     "Maths.canvas"
   ]
 }
