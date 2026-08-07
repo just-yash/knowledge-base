@@ -221,26 +221,23 @@ button { font-family: inherit; }
 .note-content a:hover { border-bottom-color: var(--text-link); }
 
 .note-content blockquote {
-  border-left: 3px solid var(--accent);
-  margin: 0.8em 0;
-  padding: 0.2em 0 0.2em 1em;
-  color: var(--text-muted);
-  font-style: italic;
+  border-left: 2px solid var(--accent);
+  margin: 0.6em 0;
+  padding: 0 0 0 12px;
+  color: var(--text-primary);
+  font-style: normal;
   background: transparent;
 }
-.note-content blockquote p { margin: 0.3em 0; }
+.note-content blockquote p { margin: 0.25em 0; }
 .note-content blockquote p:first-child { margin-top: 0; }
 .note-content blockquote p:last-child { margin-bottom: 0; }
 
-/* Nested blockquotes */
+/* Nested blockquotes — match reference with vertical accent bars */
 .note-content blockquote blockquote {
-  border-left: 2px solid rgba(255, 255, 255, 0.22);
-  margin: 0.4em 0 0.4em 0.8em;
-  padding: 0.1em 0 0.1em 0.8em;
+  border-left: 2px solid var(--accent);
+  margin: 0.3em 0 0.3em 8px;
+  padding: 0 0 0 12px;
   background: transparent;
-}
-[data-theme="light"] .note-content blockquote blockquote {
-  border-left-color: rgba(0, 0, 0, 0.22);
 }
 
 .note-content hr { border: none; border-top: 1px solid var(--border); margin: 2em 0; }
@@ -543,16 +540,16 @@ html { transition: background-color 0.2s ease, color 0.2s ease; }
 <div id="root"></div>
 
 <!-- 1. Data (plain JS) -->
-<script src="vault-data.js?v=24"></script>
+<script src="vault-data.js?v=25"></script>
 
 <!-- 2. Components (JSX — load order matters: dependencies first) -->
-<script type="text/babel" src="vault-icons.jsx?v=24"></script>
-<script type="text/babel" src="tweaks-panel.jsx?v=24"></script>
-<script type="text/babel" src="vault-graph.jsx?v=24"></script>
-<script type="text/babel" src="vault-sidebar.jsx?v=24"></script>
-<script type="text/babel" src="vault-editor.jsx?v=24"></script>
-<script type="text/babel" src="vault-rightpanel.jsx?v=24"></script>
-<script type="text/babel" src="vault-app.jsx?v=24"></script>
+<script type="text/babel" src="vault-icons.jsx?v=25"></script>
+<script type="text/babel" src="tweaks-panel.jsx?v=25"></script>
+<script type="text/babel" src="vault-graph.jsx?v=25"></script>
+<script type="text/babel" src="vault-sidebar.jsx?v=25"></script>
+<script type="text/babel" src="vault-editor.jsx?v=25"></script>
+<script type="text/babel" src="vault-rightpanel.jsx?v=25"></script>
+<script type="text/babel" src="vault-app.jsx?v=25"></script>
 
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
