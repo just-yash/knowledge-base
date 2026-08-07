@@ -1,3 +1,4 @@
+
 Type : #RawNote       
 **Date :** 2026-05-07     
 **Tags :** [[AI]]        
@@ -640,11 +641,5 @@ AI leverage comes from:
     
 
 Not from merely “using ChatGPT.”
+
 ---
-## Key Ideas
----
-# Questions
-----
-# Summary
----
-# References 

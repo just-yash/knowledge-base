@@ -12886,9 +12886,9 @@
       "fileSize": 5697
     },
     "01 - MOCs/MOC - Writing and Creativity.md": {
-      "mtime": 1786105811324,
-      "wordCount": 518,
-      "fileSize": 3141
+      "mtime": 1786116593859,
+      "wordCount": 402,
+      "fileSize": 2513
     },
     "01 - MOCs/MOC - Computer Vision and Surveillance.md": {
       "mtime": 1786105811320,
@@ -13036,9 +13036,9 @@
       "fileSize": 2729
     },
     "01 - MOCs/MOC - AI and Machine Learning.md": {
-      "mtime": 1786107680343,
+      "mtime": 1786116663884,
       "wordCount": 279,
-      "fileSize": 1746
+      "fileSize": 1749
     },
     "01 - MOCs/MOC - Data Structures and Algorithms.md": {
       "mtime": 1786105811321,
@@ -13074,11 +13074,6 @@
       "mtime": 1786105811323,
       "wordCount": 235,
       "fileSize": 1582
-    },
-    "01 - MOCs/MOC - Startup Thinking.md": {
-      "mtime": 1778522678124,
-      "wordCount": 331,
-      "fileSize": 2094
     },
     "01 - MOCs/MOC - Zaffee Brand.md": {
       "mtime": 1778522678134,
@@ -13146,9 +13141,9 @@
       "fileSize": 1376
     },
     "02 - Raw Notes/Classes/Workshops/Vaibhav Sinsity Claude Workshop.md": {
-      "mtime": 1778522678216,
-      "wordCount": 962,
-      "fileSize": 6963
+      "mtime": 1786115786621,
+      "wordCount": 951,
+      "fileSize": 6903
     },
     "03 - Notes/Adder.md": {
       "mtime": 1778522678221,
@@ -13581,9 +13576,9 @@
       "fileSize": 1103
     },
     "03 - Notes/Markdown Basic.md": {
-      "mtime": 1786105811336,
+      "mtime": 1786113314185,
       "wordCount": 1024,
-      "fileSize": 8544
+      "fileSize": 8176
     },
     "03 - Notes/Matching.md": {
       "mtime": 1778522678648,
@@ -14576,19 +14571,19 @@
       "fileSize": 28849
     },
     "00 - Home/INDEX.md": {
-      "mtime": 1786105811318,
+      "mtime": 1786128711745,
       "wordCount": 319,
-      "fileSize": 2644
+      "fileSize": 2592
     },
     "00 - Home/README.md": {
-      "mtime": 1786112029483,
-      "wordCount": 2318,
-      "fileSize": 18588
+      "mtime": 1786127779081,
+      "wordCount": 2316,
+      "fileSize": 18595
     },
     "00 - Home/About Me.md": {
-      "mtime": 1779288130688,
-      "wordCount": 832,
-      "fileSize": 5523
+      "mtime": 1786129059136,
+      "wordCount": 831,
+      "fileSize": 5540
     },
     "02 - Raw Notes/News & Updates/news-2026-05-21.md": {
       "mtime": 1786105811327,
@@ -14676,9 +14671,9 @@
       "fileSize": 4463
     },
     "03 - Notes/Agentic_AI.md": {
-      "mtime": 1786105811334,
+      "mtime": 1786115324142,
       "wordCount": 548,
-      "fileSize": 3838
+      "fileSize": 3731
     },
     "Private/Journal/A - Daily/2026-05-27.md": {
       "mtime": 1779880145443,
@@ -16096,8 +16091,12 @@
       "fileSize": 142963
     },
     "2026-08-07": {
-      "wordCount": 39845,
-      "fileSize": 316794
+      "wordCount": 40010,
+      "fileSize": 318371
+    },
+    "2026-08-08": {
+      "wordCount": 1,
+      "fileSize": 101
     }
   }
 }

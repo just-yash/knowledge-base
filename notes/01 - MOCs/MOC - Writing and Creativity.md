@@ -17,19 +17,10 @@ Poetry files existed as isolated pieces with no unified index or thematic groupi
 Mastering this domain enables building a personal writing brand, producing more published work (following "Fragments of a Fading Mind"), using storytelling in Zaffee marketing, and developing the voice that makes Yash's public presence distinct.
 
 ---
-# Main Areas 
-
-- Published Work
-- Poetry — Isolation and Existence
-- Poetry — Society and Systems
-- Poetry — Identity and Growth
-- Poetry — Relationships and Loss
-
----
 # Study Flow 
 
 ### Published Work
-- [[Fragments of a Fading Mind]] — published on Amazon Kindle; the anchor piece of the writing portfolio
+- [Fragments of a Fading Mind](https://linktr.ee/Fragments_Of_A_Fading_Mind) — published on Amazon Kindle; the anchor piece of the writing portfolio
 - [[Poetry Index]] — master index of all poems written
 
 ### Isolation and Existence
@@ -60,27 +51,9 @@ Mastering this domain enables building a personal writing brand, producing more 
 ---
 # Related Tags 
 
-[[Poetry]]
-
----
-# Related Research 
-
--
-
----
-# Related Projects 
-
-- [[MOC - Zaffee Brand]]
-
----
-# Open Questions
-> What do you still not understand in this domain? What would the next paper or project need to address?
-
-- What is the through-line theme across all poems that could anchor the next book?
-- How do I use poetry and prose writing as a brand-building tool without it feeling performative?
-- What is the minimum output cadence — poems per month — that keeps writing as a compounding asset?
+- [[Poetry]]
 
 ---
 # References 
 
--
+- [poetry page : @fragments.of.yash](https://www.instagram.com/fragments.of.yash/)

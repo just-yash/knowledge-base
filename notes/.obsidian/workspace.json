@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 - Notes/Agentic_AI.md",
+                "file": "02 - Raw Notes/Classes/Workshops/Vaibhav Sinsity Claude Workshop.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -64,7 +64,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Agentic_AI"
+              "title": "Vaibhav Sinsity Claude Workshop"
             }
           },
           {
@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Home/README.md",
+                "file": "01 - MOCs/MOC - Writing and Creativity.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -88,11 +88,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "MOC - Writing and Creativity"
+            }
+          },
+          {
+            "id": "654035b0c9ce1b91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Home/About Me.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "About Me"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -140,7 +164,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "vaibhav",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -256,7 +280,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Home/README.md",
+                "file": "00 - Home/About Me.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -353,8 +377,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -385,20 +408,28 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c9cabfdcce481db0",
+  "active": "654035b0c9ce1b91",
   "lastOpenFiles": [
-    "07 - Annexure/Pasted image 20260807194323.png",
-    "07 - Annexure/Images/Pasted image 20260807193733.png",
+    "00 - Home/INDEX.md",
+    "00 - Home/About Me.md",
+    "05 - Creativity/Poetry/Fragments of a Fading Mind.md",
     "00 - Home/README.md",
-    "02 - Raw Notes/Pasted.md",
+    "01 - MOCs/MOC - Writing and Creativity.md",
+    "01 - MOCs/MOC - AI and Machine Learning.md",
+    "01 - MOCs/MOC - Startup Thinking.md",
+    "03 - Notes/Markdown Basic.md",
+    "02 - Raw Notes/Classes/Workshops/Vaibhav Sinsity Claude Workshop.md",
+    "03 - Notes/Agentic_AI.md",
+    "07 - Annexure/Images/Pasted image 20260807193733.png",
     "07 - Annexure/Images/Pasted image 20260807192239.png",
+    "03 - Notes/AVL Tree.md",
+    "07 - Annexure/Pasted image 20260807194323.png",
+    "02 - Raw Notes/Pasted.md",
     "08 - Tags/AI.md",
     "04 - Research/Multi-camera spatiotemporal deep learning framework for real-time abnormal behavior detection in dense urban environments.md",
-    "01 - MOCs/MOC - AI and Machine Learning.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/Template Based Dashboard for a Client.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/Skills for MARSH.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/MARSH in general.md",
-    "03 - Notes/Agentic_AI.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/SPARK Efficiency Report.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/SLOT Planner Tool.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)/SLOT Planner README.md",
@@ -412,16 +443,9 @@
     "Private/Profile/Yash Agrawall/Yash Agrawall.md",
     "Private/Career/Portfolio/MARSH (June' 2026 - July' 2026)",
     "Private/Profile/Yash Agrawall/Operating System for Device (Planned).md",
-    "Private/Profile/Yash Agrawall/Soft Skills.md",
-    "Private/Profile/Yash Agrawall/2 year roadmap.md",
-    "Private/Profile/Yash Agrawall/5th Semester.md",
     "Private/Profile/Yash Agrawall/IGIT_5th_Semester_Timetable.html",
     "07 - Annexure/Images/Pasted image 20260806123443.png",
-    "Private/Insights/Tracker.md",
     "Private/Profile/Yash Agrawall",
-    "Private/00_COMMAND_CENTER.md",
-    "Private/YOLO_production_setup_guide.md",
-    "Private/MASTER_STRATEGIC_REPORT.md",
     "Private/Insights",
     "09 - Templates/Untitled",
     "Personal/Journal/A - Daily",
@@ -433,7 +457,6 @@
     "07 - Annexure/Images/WhatsApp Image 2025-12-23 at 2.48.16 PM.jpeg",
     "07 - Annexure/Images/Screenshot 2025-10-20 180039.png",
     "07 - Annexure/Images/upscalemedia-transformed.webp",
-    "07 - Annexure/Images/Pasted image 20260508185202.png",
     "Maths.canvas"
   ]
 }

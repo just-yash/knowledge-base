@@ -42,12 +42,12 @@ SORT file.mtime DESC
 ---
 # Related Research 
 
--
+- 
 
 ---
 # Related Projects 
 
--
+- 
 
 ---
 # Open Questions
@@ -60,4 +60,4 @@ SORT file.mtime DESC
 ---
 # References 
 
--
+- 
