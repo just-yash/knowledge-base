@@ -516,7 +516,7 @@ const SKIP_DIRS = new Set([
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 263,
-    backlinks: ["about-me","index","moc-startup-thinking","moc-ai-and-machine-learning","moc-ai-and-machine-learning","moc-ai-and-machine-learning","moc-ai-and-machine-learning","moc-ai-and-machine-learning"],
+    backlinks: ["about-me","index","moc-ai-and-machine-learning","moc-ai-and-machine-learning","moc-ai-and-machine-learning","moc-ai-and-machine-learning","moc-ai-and-machine-learning"],
     links: ["ai","gen-ai","llm","programming","workshop","introduction"],
     outline: [{"level":1,"text":"Purpose","id":"purpose"},{"level":1,"text":"Main Areas","id":"main-areas"},{"level":1,"text":"Study Flow","id":"study-flow"},{"level":1,"text":"Related Tags","id":"related-tags"},{"level":1,"text":"Related Research","id":"related-research"},{"level":1,"text":"Related Projects","id":"related-projects"},{"level":1,"text":"Open Questions","id":"open-questions"},{"level":1,"text":"References","id":"references"}],
     content: `# Purpose 
@@ -556,12 +556,12 @@ SORT file.mtime DESC
 ---
 # Related Research 
 
--
+- 
 
 ---
 # Related Projects 
 
--
+- 
 
 ---
 # Open Questions
@@ -1134,8 +1134,8 @@ SORT file.mtime DESC
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 259,
-    backlinks: ["about-me","index","moc-startup-thinking","moc-finance","moc-finance","moc-finance","moc-finance"],
-    links: ["finance","financial-planning","compounding","health-insurance","moc-startup-thinking"],
+    backlinks: ["about-me","index","moc-finance","moc-finance","moc-finance","moc-finance"],
+    links: ["finance","financial-planning","compounding","health-insurance"],
     outline: [{"level":1,"text":"Purpose","id":"purpose"},{"level":1,"text":"Main Areas","id":"main-areas"},{"level":1,"text":"Study Flow","id":"study-flow"},{"level":1,"text":"Related Tags","id":"related-tags"},{"level":1,"text":"Related Research","id":"related-research"},{"level":1,"text":"Related Projects","id":"related-projects"},{"level":1,"text":"Open Questions","id":"open-questions"},{"level":1,"text":"References","id":"references"}],
     content: `# Purpose 
 
@@ -1443,78 +1443,6 @@ SORT file.mtime DESC
 -`
   },
 
-  'moc-startup-thinking': {
-    id: 'moc-startup-thinking',
-    title: "MOC - Startup Thinking",
-    folder: "01 - MOCs",
-    path: ["01 - MOCs","MOC - Startup Thinking"],
-    tags: [],
-    created: "2026-05-11",
-    modified: "2026-05-11",
-    wordCount: 315,
-    backlinks: ["moc-finance","moc-startup-thinking","moc-startup-thinking","moc-startup-thinking","moc-startup-thinking"],
-    links: ["business","ideas","finance","ai","moc-finance","moc-ai-and-machine-learning"],
-    outline: [{"level":1,"text":"Purpose","id":"purpose"},{"level":1,"text":"Main Areas","id":"main-areas"},{"level":1,"text":"Study Flow","id":"study-flow"},{"level":3,"text":"Skills and Wealth Building","id":"skills-and-wealth-building"},{"level":3,"text":"Product and Startup Ideas","id":"product-and-startup-ideas"},{"level":1,"text":"Related Tags","id":"related-tags"},{"level":1,"text":"Related Research","id":"related-research"},{"level":1,"text":"Related Projects","id":"related-projects"},{"level":1,"text":"Open Questions","id":"open-questions"},{"level":1,"text":"References","id":"references"}],
-    content: `# Purpose 
-
-> Why does this MOC exist? 
-This MOC maps startup thinking — from product ideas and skill monetisation to systems for building companies with limited capital — connecting entrepreneurial frameworks to real execution in Zaffee and beyond.
-
-> What problem does it solve? 
-Startup idea notes and execution frameworks were scattered with no unified view. This MOC connects idea validation, skill stacking, and financial planning into one actionable path.
-
-> What does mastering this domain enable?
-Mastering startup thinking enables generating and validating ideas fast, identifying which skills compound into income, building systems instead of one-off projects, and making strategic decisions under capital and time constraints as a student founder.
-
----
-# Main Areas 
-
-- Skills and Wealth Building
-- Product and Startup Ideas
-- Systems and Execution
-
----
-# Study Flow 
-
-### Skills and Wealth Building
-- [[1% Club]] — the 1% framework for building wealth and skills as a student with limited resources
-- [[Skills]] — skill mapping across AI, cybersecurity, and writing for rapid monetisation
-
-### Product and Startup Ideas
-- [[Financial App]] — idea note for a financial application product concept
-- [[Country Simulation]] — concept for a country simulation product or game
-
----
-# Related Tags 
-
-[[business]] ; [[Ideas]] ; [[Finance]] ; [[AI]]
-
----
-# Related Research 
-
--
-
----
-# Related Projects 
-
-- [[MOC - Zaffee Brand]]
-- [[MOC - Finance]]
-- [[MOC - AI and Machine Learning]]
-
----
-# Open Questions
-> What do you still not understand in this domain? What would the next paper or project need to address?
-
-- What is the correct framework for choosing which skill to monetise first — AI consulting, cybersecurity freelancing, or content?
-- How do student-founders in India build a track record without a portfolio of paying clients?
-- What is the minimum viable product for validating Zaffee demand before committing capital to inventory?
-
----
-# References 
-
--`
-  },
-
   'moc-writing-and-creativity': {
     id: 'moc-writing-and-creativity',
     title: "MOC - Writing and Creativity",
@@ -1523,10 +1451,10 @@ Mastering startup thinking enables generating and validating ideas fast, identif
     tags: [],
     created: "2026-08-07",
     modified: "2026-08-07",
-    wordCount: 502,
+    wordCount: 387,
     backlinks: ["about-me","index","moc-writing-and-creativity"],
-    links: ["fragments-of-a-fading-mind","poetry-index","a-desolated-guy","beyond-now","death","strength-in-solitude","the-weight-of-yesterday","cancer","human-paradox","modern-madness","system","shadows-of-adulthood","the-cursed-child","the-next-chapter","burnt-petals","his-story","my-best-friend","that-friend","poetry"],
-    outline: [{"level":1,"text":"Purpose","id":"purpose"},{"level":1,"text":"Main Areas","id":"main-areas"},{"level":1,"text":"Study Flow","id":"study-flow"},{"level":3,"text":"Published Work","id":"published-work"},{"level":3,"text":"Isolation and Existence","id":"isolation-and-existence"},{"level":3,"text":"Society and Systems","id":"society-and-systems"},{"level":3,"text":"Identity and Growth","id":"identity-and-growth"},{"level":3,"text":"Relationships and Loss","id":"relationships-and-loss"},{"level":1,"text":"Related Tags","id":"related-tags"},{"level":1,"text":"Related Research","id":"related-research"},{"level":1,"text":"Related Projects","id":"related-projects"},{"level":1,"text":"Open Questions","id":"open-questions"},{"level":1,"text":"References","id":"references"}],
+    links: ["poetry-index","a-desolated-guy","beyond-now","death","strength-in-solitude","the-weight-of-yesterday","cancer","human-paradox","modern-madness","system","shadows-of-adulthood","the-cursed-child","the-next-chapter","burnt-petals","his-story","my-best-friend","that-friend","poetry"],
+    outline: [{"level":1,"text":"Purpose","id":"purpose"},{"level":1,"text":"Study Flow","id":"study-flow"},{"level":3,"text":"Published Work","id":"published-work"},{"level":3,"text":"Isolation and Existence","id":"isolation-and-existence"},{"level":3,"text":"Society and Systems","id":"society-and-systems"},{"level":3,"text":"Identity and Growth","id":"identity-and-growth"},{"level":3,"text":"Relationships and Loss","id":"relationships-and-loss"},{"level":1,"text":"Related Tags","id":"related-tags"},{"level":1,"text":"References","id":"references"}],
     content: `# Purpose 
 
 > Why does this MOC exist? 
@@ -1539,19 +1467,10 @@ Poetry files existed as isolated pieces with no unified index or thematic groupi
 Mastering this domain enables building a personal writing brand, producing more published work (following "Fragments of a Fading Mind"), using storytelling in Zaffee marketing, and developing the voice that makes Yash's public presence distinct.
 
 ---
-# Main Areas 
-
-- Published Work
-- Poetry — Isolation and Existence
-- Poetry — Society and Systems
-- Poetry — Identity and Growth
-- Poetry — Relationships and Loss
-
----
 # Study Flow 
 
 ### Published Work
-- [[Fragments of a Fading Mind]] — published on Amazon Kindle; the anchor piece of the writing portfolio
+- [Fragments of a Fading Mind](https://linktr.ee/Fragments_Of_A_Fading_Mind) — published on Amazon Kindle; the anchor piece of the writing portfolio
 - [[Poetry Index]] — master index of all poems written
 
 ### Isolation and Existence
@@ -1582,30 +1501,12 @@ Mastering this domain enables building a personal writing brand, producing more 
 ---
 # Related Tags 
 
-[[Poetry]]
-
----
-# Related Research 
-
--
-
----
-# Related Projects 
-
-- [[MOC - Zaffee Brand]]
-
----
-# Open Questions
-> What do you still not understand in this domain? What would the next paper or project need to address?
-
-- What is the through-line theme across all poems that could anchor the next book?
-- How do I use poetry and prose writing as a brand-building tool without it feeling performative?
-- What is the minimum output cadence — poems per month — that keeps writing as a compounding asset?
+- [[Poetry]]
 
 ---
 # References 
 
--`
+- [poetry page : @fragments.of.yash](https://www.instagram.com/fragments.of.yash/)`
   },
 
   'how-to-read-a-paper': {
@@ -44904,7 +44805,7 @@ This poem approaches death not as terror, but as a complete erasure of weight, d
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 193,
-    backlinks: ["about-me","moc-writing-and-creativity","poetry-index"],
+    backlinks: ["about-me","poetry-index"],
     links: [],
     outline: [{"level":1,"text":"Fragments of a Fading Mind","id":"fragments-of-a-fading-mind"},{"level":3,"text":"Reflection","id":"reflection"},{"level":3,"text":"Links","id":"links"}],
     content: `# Fragments of a Fading Mind
@@ -59810,8 +59711,8 @@ EXTRACTION TRACE TABLE
     created: "2026-08-07",
     modified: "2026-08-07",
     wordCount: 13,
-    backlinks: ["moc-ai-and-machine-learning","moc-computer-vision-and-surveillance","moc-startup-thinking","ai-briefing-2026-05-21","gen-ai","ai"],
-    links: ["ai-tools","gen-ai","llm","moc-ai-and-machine-learning","moc-computer-vision-and-surveillance","moc-startup-thinking","ai-briefing-2026-05-21"],
+    backlinks: ["moc-ai-and-machine-learning","moc-computer-vision-and-surveillance","ai-briefing-2026-05-21","gen-ai","ai"],
+    links: ["ai-tools","gen-ai","llm","moc-ai-and-machine-learning","moc-computer-vision-and-surveillance","ai-briefing-2026-05-21"],
     outline: [{"level":1,"text":"AI Tools","id":"ai-tools"},{"level":1,"text":"Gen AI","id":"gen-ai"},{"level":1,"text":"LLM","id":"llm"}],
     content: `# AI Tools
 [[AI Tools]]
@@ -59862,8 +59763,8 @@ EXTRACTION TRACE TABLE
     created: "2026-04-11",
     modified: "2026-04-11",
     wordCount: 0,
-    backlinks: ["moc-startup-thinking"],
-    links: ["moc-startup-thinking"],
+    backlinks: [],
+    links: [],
     outline: [],
     content: ``
   },
@@ -60165,8 +60066,8 @@ EXTRACTION TRACE TABLE
     created: "2026-05-11",
     modified: "2026-05-11",
     wordCount: 23,
-    backlinks: ["moc-engineering-mathematics","moc-finance","moc-startup-thinking","finance"],
-    links: ["fpya","health-insurance","magic-of-compounding","moc-engineering-mathematics","moc-finance","moc-startup-thinking"],
+    backlinks: ["moc-engineering-mathematics","moc-finance","finance"],
+    links: ["fpya","health-insurance","magic-of-compounding","moc-engineering-mathematics","moc-finance"],
     outline: [{"level":1,"text":"Finance","id":"finance"},{"level":1,"text":"Questions","id":"questions"},{"level":1,"text":"Summary","id":"summary"},{"level":1,"text":"References","id":"references"}],
     content: `# Finance
 
@@ -60354,8 +60255,8 @@ EXTRACTION TRACE TABLE
     created: "2025-10-19",
     modified: "2025-10-19",
     wordCount: 0,
-    backlinks: ["moc-startup-thinking"],
-    links: ["moc-startup-thinking"],
+    backlinks: [],
+    links: [],
     outline: [],
     content: ``
   },
@@ -61665,11 +61566,6 @@ const VAULT_FOLDERS = [
       {
         "id": "moc-operating-systems",
         "name": "MOC - Operating Systems",
-        "type": "note"
-      },
-      {
-        "id": "moc-startup-thinking",
-        "name": "MOC - Startup Thinking",
         "type": "note"
       },
       {
@@ -65345,11 +65241,6 @@ const GRAPH_NODES = [
     "group": "moc"
   },
   {
-    "id": "moc-startup-thinking",
-    "label": "MOC - Startup Thinking",
-    "group": "moc"
-  },
-  {
     "id": "moc-writing-and-creativity",
     "label": "MOC - Writing and Creativity",
     "group": "moc"
@@ -66773,10 +66664,6 @@ const GRAPH_EDGES = [
     "target": "treedm"
   },
   {
-    "source": "moc-finance",
-    "target": "moc-startup-thinking"
-  },
-  {
     "source": "moc-logic-and-philosophy",
     "target": "logic-introduction"
   },
@@ -66831,14 +66718,6 @@ const GRAPH_EDGES = [
   {
     "source": "moc-logic-and-philosophy",
     "target": "operators"
-  },
-  {
-    "source": "moc-startup-thinking",
-    "target": "moc-ai-and-machine-learning"
-  },
-  {
-    "source": "moc-writing-and-creativity",
-    "target": "fragments-of-a-fading-mind"
   },
   {
     "source": "moc-writing-and-creativity",

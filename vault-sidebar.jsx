@@ -347,14 +347,14 @@ const LeftSidebar = ({
 }) => (
   <div style={{ display: 'flex', flexShrink: 0, height: '100%', overflow: 'hidden' }}>
     <div style={{
-      width: open ? 220 : 0,
+      width: open ? 280 : 0,
       flexShrink: 0, overflow: 'hidden',
       transition: 'width 0.22s cubic-bezier(0.4,0,0.2,1)',
       background: 'var(--bg-sidebar)',
       borderRight: '1px solid var(--border)',
       display: 'flex', flexDirection: 'column',
     }}>
-      <div style={{ width: 220, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
+      <div style={{ width: 280, display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
         <SidebarHeader
           onAutoReveal={onAutoReveal}
           onCollapseAll={onCollapseAll}
