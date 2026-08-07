@@ -9,7 +9,7 @@ const VAULT_NOTES = {
     tags: [],
     created: "2026-08-07",
     modified: "2026-08-07",
-    wordCount: 826,
+    wordCount: 825,
     backlinks: [],
     links: ["moc-computer-vision-and-surveillance","moc-data-structures-and-algorithms","moc-database-systems","moc-digital-logic","moc-operating-systems","moc-engineering-mathematics","moc-languages","moc-ai-and-machine-learning","moc-cybersecurity","fragments-of-a-fading-mind","moc-writing-and-creativity","moc-finance","index"],
     outline: [{"level":1,"text":"About Me","id":"about-me"},{"level":2,"text":"Who I Am","id":"who-i-am"},{"level":2,"text":"What I'm Building","id":"what-im-building"},{"level":3,"text":"🔬 Research — Multi-Camera Surveillance","id":"research-multi-camera-surveillance"},{"level":3,"text":"🧠 This Knowledge Base","id":"this-knowledge-base"},{"level":2,"text":"What I Know (and Am Learning)","id":"what-i-know-and-am-learning"},{"level":3,"text":"Core CS","id":"core-cs"},{"level":3,"text":"Programming Languages","id":"programming-languages"},{"level":3,"text":"AI and Machine Learning","id":"ai-and-machine-learning"},{"level":3,"text":"Cybersecurity","id":"cybersecurity"},{"level":2,"text":"How I Think","id":"how-i-think"},{"level":2,"text":"Beyond the Technical","id":"beyond-the-technical"},{"level":2,"text":"Right Now","id":"right-now"},{"level":2,"text":"Contact","id":"contact"}],
@@ -114,7 +114,7 @@ I also study **finance** — not as an end in itself, but because building Zaffe
 
 - **GitHub** — [yashagrawall](https://github.com/yashagrawall)
 - **Email** — yashagrawall333@gmail.com
-- **Instagram** — [just._ yash](www.instagram.com/just._yash)
+- **Instagram** — [yashagrawall](https://www.instagram.com/yashagrawall)
 
 ---
 
