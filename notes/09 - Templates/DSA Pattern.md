@@ -6,6 +6,10 @@ Status : #complete
 ~ ***Yash Agrawall*** ~
 
 ---
+# {{title}}
+
+---
+
 ## Core Idea
 
 > What is this pattern?

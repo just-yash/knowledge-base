@@ -6,4 +6,21 @@ Status: #draft
 ~ ***Yash Agrawall*** ~
 
 ---
+# {{title}}
+ 
+---
+
+
+
+
+  
+
+---
+# Reflection
+
+  
+  
+  
+
+---
 # Links

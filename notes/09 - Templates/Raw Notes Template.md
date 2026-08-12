@@ -6,6 +6,35 @@ Source :
 ~ ***Yash Agrawall*** ~     
 
 ---
+# {{title}}
+
+---
+## Key Ideas 
+
+
+
+
+
+---
+## Note
+
+
+
+
+
+
+---
 # Questions 
 
+
+
+
 ----
+# Summary
+
+
+
+
+
+---
+# References 
